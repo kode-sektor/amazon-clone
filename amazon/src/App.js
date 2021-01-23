@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import HomePage from "./containers/Homepage";
+import Home from "./containers/Home";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <div className="App">
             <Router>
                 <Switch>
-                    <Route path="/" exact component={HomePage} />
+                    <Route path="/" exact component={Home} />
                 </Switch>
             </Router>
         </div>
