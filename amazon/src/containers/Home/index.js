@@ -1,12 +1,13 @@
 import React from 'react'
+import Layout from '../../components/Layout/index'
 
 
-const HomePage = (props) => {
+const Home = (props) => {
   return(
-        <div>
+        <Layout>
             Home
-        </div>
+        </Layout>
     )
  }
 
-export default HomePage
+export default Home
