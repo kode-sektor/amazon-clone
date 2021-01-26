@@ -22,3 +22,16 @@
     width: 97px;
     height: 30px;
 }
+.nav__cart__icon {
+    display: flex;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    line-height: 44px;
+    color: #fff;
+    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-repeat: repeat-x;
+    background-position: -10px -340px;
+    width: 38px;
+    height: 26px;
+}
