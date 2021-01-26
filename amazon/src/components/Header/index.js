@@ -3,6 +3,8 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
     UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText
 } from "reactstrap";
 
+import './index.css'
+
 const Header = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -10,13 +12,13 @@ const Header = (props) => {
 
 	return (
 		<div>
-			<Navbar color="light" light expand="md">
-				<NavbarBrand href="/" className="sr-only">
-                    <a href="/ref=nav_logo" id="nav-logo-sprites" class="nav-logo-link nav-progressive-attribute" aria-label="Amazon.ca">
-                        <span class="nav-sprite nav-logo-base"></span>
-                        <span id="logo-ext" class="nav-sprite nav-logo-ext nav-progressive-content"></span>
-                        <span class="nav-logo-locale">.ca</span>
-                    </a>
+			<Navbar color="dark" light expand="md" className="navigationbar">
+				<NavbarBrand href="/" classsName="navigationbar__brand ssr-only">
+                    <span id="nav-logo-sprites" className="navigationbar__logo__link" aria-label="Amazon.ca">
+                        <span className="navigationbar__sprite"></span>
+                        <span id="logo-ext" class="navigationbar__nav__logo__ext"></span>
+                        <span clasNames="navigationbar__logo__locale">.ca</span>
+                    </span>
                 </NavbarBrand>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
