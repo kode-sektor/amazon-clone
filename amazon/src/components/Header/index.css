@@ -1,21 +1,26 @@
 .navigationbar__brand {
     position: relative;
-    padding : 4px 0 0;
+    padding: 0 7px 0 5px;
+    height: 50px;
+    color: #c45500;
+    height: 50px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: #fff;
 }
 .navigationbar__logo__link {
-    padding: 1px 8px 0 6px;
-    margin: 1px;
+    font-size: 14px;
+    color: #c45500;
     height: 50px;
-    cursor: pointer;
-    border: thin solid brown;
+    width: 100%;
+    padding: 1px 8px 0 6px;
 }
 .navigationbar__sprite {
     background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-position: 0 1000px;
-    background-repeat: repeat-x;
     background-repeat: no-repeat;
     margin-top: 12px;
-    pointer-events: none;
     float: left;
     text-indent: -500px;
     background-position: -10px -51px;
@@ -23,11 +28,7 @@
     height: 30px;
 }
 .nav__cart__icon {
-    display: flex;
     font-size: 14px;
-    font-family: inherit;
-    cursor: pointer;
-    line-height: 44px;
     color: #fff;
     background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-repeat: repeat-x;
@@ -35,3 +36,45 @@
     width: 38px;
     height: 26px;
 }
+.navigationbar__drop__categories {
+    padding: .375rem .75rem
+}
+.navigationbar__category__filter {
+    width: 50%;
+}
+.navigationbar__category__filter__search {
+    text-indent: -500px;
+    border-radius: 0 4px 4px 0;
+    width: 45px;
+    background-color: #f3a847;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/15/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-repeat: repeat-x;
+    background-position: 2px -280px;
+    cursor: pointer;
+}
+.navigationbar__category__filter__search > button {
+    border: 1px solid #ced4da;
+    color: #fff;
+    background: 0 0;
+    border: none;
+    text-indent: -10000px;
+}
+
+
+
+@media (min-width: 480px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}   
+
+@media (min-width: 1200px) {
+
+}
+    
