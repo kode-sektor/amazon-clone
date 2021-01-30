@@ -10,7 +10,7 @@ file rather than small ones. Your choice
 
 *   Amazon-clone v1.0 Default Stylesheet 
 *	Author: Kay (Full-stack web developer)
-*	Author Email: investorkay@gmail.com
+*	Author Email: kodesektor@gmail.com
 *	Author URI: www.codesector.com
 *	Template Name: Craf-t-y
 *   Start date: 1-18-2021
@@ -164,11 +164,17 @@ Otherwise it won't shrink.
     --link: #007BFF;
     --link-hover: #D9534F;
   
-  
-    /*shades of grey*/
-    --grey: #F6F6F6;
-    --light-grey: #efefef;
-    --mid-grey: #f2f2f2;
+	--color: #0F1111;
+	--bg-light-blue : #232f3e;
+	--bg-dark-blue : #131921;
+
+	/*shades of grey*/
+    --grey: #ccc;
+	--light-grey: #d6d6d6;
+	--mid-grey: #555;
+	
+	--grey-tone-1: #f3f3f3;
+	
     --black: #000;
     --white: #fff;
   
@@ -246,7 +252,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.3em;
 }
 header {
-	padding: 20px;
 }
 hr {
     border-top: 1px solid #e5e5e5;
