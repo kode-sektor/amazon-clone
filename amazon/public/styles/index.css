@@ -158,13 +158,16 @@ Otherwise it won't shrink.
 }
 :root {
     /*primary colours*/
-    --dark-slate-gray: #131921;
-    --slate-gray: #DEB406;
+	--dark-slate-gray: #131921;
+	--ochre: #febd69;
+	--ochre-2: #deb406;
+	--ochre-3: #f08804;
 
     --link: #007BFF;
-    --link-hover: #D9534F;
+    --link-hover: #d9534f;
   
 	--color: #0F1111;
+	--color-2 : #111;
 	--bg-light-blue : #232f3e;
 	--bg-dark-blue : #131921;
 
@@ -172,8 +175,10 @@ Otherwise it won't shrink.
     --grey: #ccc;
 	--light-grey: #d6d6d6;
 	--mid-grey: #555;
-	
+
 	--grey-tone-1: #f3f3f3;
+	--grey-tone-2:  #606060;
+	--grey-tone-3:  #a7acb2;
 	
     --black: #000;
     --white: #fff;

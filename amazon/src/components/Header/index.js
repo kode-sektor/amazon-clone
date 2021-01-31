@@ -69,18 +69,18 @@ const Header = (props) => {
                                     placeholder=""
                                 />
                                 <InputGroupAddon addonType="append" className="navigationbar__category__filter__search">
-                                    <Button className="">Go</Button>
+                                    <Button className="nav__search__submit__button">Go</Button>
                                 </InputGroupAddon>
                             </InputGroup>
                         </Form>
                         <Nav className="row ml-auto navbar__nav" navbar>
                             <NavItem className="col-xs-4">
-                                <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav caret>
+                                <UncontrolledDropdown inNavbar>
+                                    <DropdownToggle nav caret className="navigationbar__origin">
                                         <ReactCountryFlag
                                             countryCode="CA"
                                             svg
-                                            style={{ width: "25px", height: "25px" }}
+                                            style={{ width: "20px", height: "20px" }}
                                             title="US"
                                         />
                                     </DropdownToggle>
@@ -94,11 +94,12 @@ const Header = (props) => {
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem className="col-xs-4">
-                                <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav caret>
-                                        <span>Hello, Kay</span>
-                                        <br />
-                                        <span>Account &amp; Lists</span>
+                                <UncontrolledDropdown inNavbar>
+                                    <DropdownToggle nav caret className="navigationbar__delivery__link">
+                                        <span className="navigation__glow__ingress__block">
+                                            <span className="nav__line__1">Hello, Kay</span>
+                                            <span className="nav__line__2">Account &amp; Lists</span>
+                                        </span>
                                     </DropdownToggle>
                                     <DropdownMenu>
                                         <DropdownItem header>Header</DropdownItem>
@@ -110,30 +111,24 @@ const Header = (props) => {
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem className="col-xs-4">
-                                <UncontrolledDropdown nav inNavbar>
-                                    <DropdownToggle nav caret>
-                                        <span>Returns</span>
-                                        <br />
-                                        <span>& Orders</span>
-                                    </DropdownToggle>
-                                    <DropdownMenu>
-                                        <DropdownItem header>Header</DropdownItem>
-                                        <DropdownItem disabled>Action</DropdownItem>
-                                        <DropdownItem>Another Action</DropdownItem>
-                                        <DropdownItem divider />
-                                        <DropdownItem>Another Action</DropdownItem>
-                                    </DropdownMenu>
-                                </UncontrolledDropdown>
+                                <NavItem>
+                                    <NavLink href="/components/" className="navigationbar__delivery__link">
+                                        <span className="navigation__glow__ingress__block">
+                                            <span className="nav__line__1">Returns</span>
+                                            <span className="nav__line__2">& Orders</span>
+                                        </span>
+                                    </NavLink>
+                                </NavItem>
                             </NavItem>
                             <NavItem className="col-xs-4">
                                 <NavLink href="#" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
-                                    <span id="nav-cart-count-container">
+                                    <span className="nav__cart__count__container">
                                         <span id="nav-cart-count" aria-hidden="true" className="nav__cart__count">
                                             0
                                         </span>
                                         <span className="nav__cart__icon"></span>
                                     </span>
-                                    <span id="nav-cart-text-container" className="nav__cart__text">Cart</span>
+                                    <span className="nav__cart__text">Cart</span>
                                 </NavLink>
                             </NavItem>
                         </Nav>

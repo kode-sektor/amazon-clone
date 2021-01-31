@@ -11,6 +11,7 @@
 .navigationbar{
     flex : 1 1 100%;
     padding: 0;
+    font-size: 14px;
 }
 .navigationbar__brand {
     display: flex;
@@ -19,7 +20,6 @@
     padding: 0 7px 0 5px;
     height: 50px;
     color: #c45500;
-    border: 1px solid;
     border-radius: 2px;
 }
 .navigationbar__logo__locale {
@@ -84,56 +84,20 @@
 .nav__line__2 {
     display: inline-block;
     white-space: nowrap;
-    font-size: 14px;
     line-height: 15px;
     font-weight: 700;
     color: var(--white);
     padding-bottom: 1px;
 }
-.navigationbar__sprite {
-    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
-    background-position: 0 1000px;
-    background-repeat: no-repeat;
-    margin-top: 12px;
-    float: left;
-    text-indent: -500px;
-    background-position: -10px -51px;
-    width: 97px;
-    height: 30px;
-}
-.navigationbar__logo__glow__loc__icon {
-    font-size: 14px;
-    font-family: inherit;
-    cursor: pointer;
-    color: #d6d6d6;
-    line-height: 39px;
-    background-image: url(../../images//nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
-    background-repeat: repeat-x;
-    left: 2px;
-    top: 8px;
-    background-position: -71px -378px;
-    width: 15px;
-    height: 18px;
-    margin-top: 8px;
-}
-.nav__cart__icon {
-    font-size: 14px;
-    color: #fff;
-    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
-    background-repeat: repeat-x;
-    background-position: -10px -340px;
-    width: 38px;
-    height: 26px;
-}
+
 .navigationbar__drop__categories {
     text-overflow: ellipsis;
     font-size: 12px;
     line-height: 33px;
     min-width: 19px;
     border-radius: 0;
-    color : var(--mid-grey);
-    padding : 0 8.5px;
-
+    color: var(--mid-grey);
+    padding: 0 8.5px;
     position: relative;
     top: 3px;
     background-color: transparent !important;
@@ -143,9 +107,7 @@
     margin-left: 8px;
 }
 .nav__search__scope {
-    color: #0F1111;
-    font-family: inherit;
-    font-size: 14px;
+    color: var(--color);
     height: 40px;
     padding-left: 5px;
     border: 1px solid #cdcdcd;
@@ -156,15 +118,15 @@
     border-bottom: 1px solid var(--grey-tone-1);
 }
 .navigationbar__category__filter {
+    display: flex;
+    flex: 1 1 auto;
     width: auto;
     margin: 0 10px;
     height: 40px;
     border-radius: 4px 4px 4px 4px;
-    display: flex;
 }
 .category__filter__input {
     height: 40px;
-
     vertical-align: middle;
     border-radius: 3px;
     top: 0;
@@ -173,8 +135,7 @@
     line-height: 15px;
     padding: 7px 10px 10px 0;
     font-size: 15px;
-    color: #111;
-    outline: 0;
+    color: var(--color-2);
     box-shadow: none;
     text-indent: 8px;
     direction: ltr;
@@ -183,21 +144,136 @@
     text-indent: -500px;
     border-radius: 0 4px 4px 0;
     width: 45px;
-    background-color: #f3a847;
+    height: 40px;
+    background-color: var(--ochre);
     background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-repeat: repeat-x;
     background-position: 2px -280px;
-    cursor: pointer;
 }
-.navigationbar__category__filter__search > button {
+.nav__search__submit__button {
     border: 1px solid #ced4da;
-    color: #fff;
-    background: 0 0;
+    background: 0;
     border: none;
     text-indent: -10000px;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: var(--white);
 }
 .navbar__nav {
+    display: flex;
+    height: 60px;
+    min-width: auto;
+    text-decoration: none;
+    margin-top: 2px;
     margin-right: 0;
+    padding: 3px 0 0 0;
+}
+.navigationbar__origin {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+    padding: 0 9px 5px;
+    color: var(--light-grey);
+    justify-content: center;
+    align-items: center;
+    line-height: 44px;
+    top: 1px;
+    margin: 0 2px 0 1px;
+    padding-bottom: 5px;
+}
+.navigationbar__origin > img {
+    margin-top: 12px;
+    margin-right: 2px;
+}
+.navbar__nav .dropdown-toggle::after {
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid var(--grey-tone-2);
+    border-bottom-width: 0;
+    border-top-color: var(--grey-tone-3);
+    display: flex;
+    align-items: center;
+    margin: 18px 0 0 2px;
+}
+.navigationbar__sprite {
+    width: 97px;
+    height: 30px;
+    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-position: 0 1000px;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+    float: left;
+    text-indent: -500px;
+    background-position: -10px -51px;
+}
+.navigationbar__logo__glow__loc__icon {
+    cursor: pointer;
+    color: #d6d6d6;
+    line-height: 39px;
+    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-repeat: repeat-x;
+    left: 2px;
+    top: 8px;
+    background-position: -71px -378px;
+    width: 15px;
+    height: 18px;
+    margin-top: 8px;
+}
+.nav__cart {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    padding: 0 9px 11px 10px;
+    top: 1px;
+    height: 50px;
+    margin-left: 2px;
+    margin-right: 11px;
+}
+.nav__cart__count__container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    line-height: 44px;
+    padding-bottom: 1px;
+}
+.nav__cart__count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 13px;
+    right: auto;
+    top: 6px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+    width: 19px;
+    color: var(--ochre-3);
+    font-weight: 700;
+}
+.nav__cart__icon {
+    display: flex;
+    color: var(--white);
+    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-repeat: repeat-x;
+    background-position: -10px -340px;
+    width: 38px;
+    height: 26px;
+}
+.nav__cart__text {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    color: var(--white);
 }
 
 
