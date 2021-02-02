@@ -34,13 +34,13 @@ const Header = (props) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="navigationbar__delivery" navbar>
                             <NavItem>
-                                <NavLink href="/components/" className="navigationbar__delivery__link">
+                                <Button className="navigationbar__delivery__link">
                                     <span className="navigationbar__logo__glow__loc__icon"></span>
                                     <span className="navigation__glow__ingress__block">
                                         <span className="nav__line__1">Deliver to Ibiyemi</span>
                                         <span className="nav__line__2">Toronto M6G 1E2</span>
                                     </span>
-                                </NavLink>
+                                </Button>
                             </NavItem>
                         </Nav>
                         <Form className="navigationbar__category__filter">
@@ -54,10 +54,11 @@ const Header = (props) => {
                                             All
                                         </DropdownToggle>
                                         <DropdownMenu left>
-                                            <DropdownItem>Option 1</DropdownItem>
-                                            <DropdownItem>Option 2</DropdownItem>
-                                            <DropdownItem divider />
-                                            <DropdownItem>Reset</DropdownItem>
+                                            <select>
+                                                <option>Option 1</option>
+                                                <option>Option 1</option>
+                                                <option>Option 1</option>
+                                            </select>
                                         </DropdownMenu>
                                     </Dropdown>
                                 </InputGroupAddon>
@@ -73,7 +74,7 @@ const Header = (props) => {
                                 </InputGroupAddon>
                             </InputGroup>
                         </Form>
-                        <Nav className="row ml-auto navbar__nav" navbar>
+                        <Nav className="row navbar__nav" navbar>
                             <NavItem className="col-xs-4">
                                 <UncontrolledDropdown inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__origin">

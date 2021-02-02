@@ -179,6 +179,7 @@ Otherwise it won't shrink.
 	--grey-tone-1: #f3f3f3;
 	--grey-tone-2:  #606060;
 	--grey-tone-3:  #a7acb2;
+	--grey-tone-4:  #dadada;
 	
     --black: #000;
     --white: #fff;
@@ -192,6 +193,28 @@ Otherwise it won't shrink.
     --font-secondary: "Space Mono", Tahoma, Calibri, sans-serif;
     --font-tertiary: "Century Gothic", Tahoma, Calibri, sans-serif;
 
+}
+
+/* Fonts */
+@font-face {
+	font-family: "Amazon-Ember";
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.ttf');
+    font-weight: 300;
+}
+@font-face {
+	font-family: "Amazon-Ember";
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.eot');
+    font-weight: 300;
+}
+@font-face {
+	font-family: "Amazon-Ember";
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.woff');
+    font-weight: 300;
+}
+@font-face {
+	font-family: "Amazon-Ember";
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.otf');
+    font-weight: 300;
 }
 body {
 	font-weight: 400;

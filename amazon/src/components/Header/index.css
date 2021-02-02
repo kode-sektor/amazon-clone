@@ -15,9 +15,10 @@
 }
 .navigationbar__brand {
     display: flex;
+    margin: 1px;
     margin-left: 11px;
     position: relative;
-    padding: 0 7px 0 5px;
+    padding: 0 14px 0 5px;
     height: 50px;
     color: #c45500;
     border-radius: 2px;
@@ -56,11 +57,19 @@
     margin: 5px 2px 5px 0;
 }
 .navigationbar__delivery__link {
-    color: var(--light-grey);
-    line-height: 39px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    text-align: start;
+    color: var(--light-grey);
+    line-height: 39px;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.navigationbar__delivery__link:hover, 
+.navigationbar__delivery__link:focus {
+    opacity: 1;
+    box-shadow: none !important;
 }
 .navigation__glow__ingress__block {
     font-size: 14px;
@@ -89,7 +98,6 @@
     color: var(--white);
     padding-bottom: 1px;
 }
-
 .navigationbar__drop__categories {
     text-overflow: ellipsis;
     font-size: 12px;
@@ -105,6 +113,18 @@
 }
 .navigationbar__drop__categories::after {
     margin-left: 8px;
+}
+.nav__search__scope:hover, .nav__search__scope:focus {
+    background-color: var(--grey-tone-4) !important;
+    border-left-color: var(--grey-tone-4) !important;
+    border-top-color: var(--grey-tone-4) !important;
+    border-bottom-color: var(--grey-tone-4) !important;
+    box-shadow: none !important;
+}
+.navigationbar__drop__categories:hover, .navigationbar__drop__categories:focus {
+    color: var(--black) !important;
+    box-shadow: none !important;
+    opacity: 1;
 }
 .nav__search__scope {
     color: var(--color);
@@ -168,6 +188,7 @@
     text-decoration: none;
     margin-top: 2px;
     margin-right: 0;
+    margin-left: 10px;
     padding: 3px 0 0 0;
 }
 .navigationbar__origin {
@@ -249,7 +270,7 @@
     position: absolute;
     left: 13px;
     right: auto;
-    top: 6px;
+    top: 8px;
     line-height: 16px;
     text-align: center;
     font-size: 16px;
@@ -274,6 +295,12 @@
     align-items: center;
     padding-top: 14px;
     color: var(--white);
+}
+.navigationbar__brand:hover, .navigationbar__brand:focus,
+.navigationbar__origin:hover, .navigationbar__origin:focus,
+.navigationbar__delivery__link:hover, .navigationbar__delivery__link:focus,
+.nav__cart:hover, .nav__cart:focus {
+    box-shadow: 0px 0px 0px 1px #fff inset !important;
 }
 
 
