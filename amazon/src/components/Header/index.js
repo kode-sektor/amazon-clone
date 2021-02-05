@@ -54,10 +54,10 @@ const Header = (props) => {
                                             All
                                         </DropdownToggle>
                                         <DropdownMenu left>
-                                            <select>
-                                                <option>Option 1</option>
-                                                <option>Option 1</option>
-                                                <option>Option 1</option>
+                                            <select className="navigationbar__search__dropdown" title="Search In">
+                                                <option value="search-alias=aps">All Departments</option>
+                                                <option value="search-alias=alexa-skills">Alexa Skills</option>
+                                                <option value="search-alias=amazon-devices">Amazon Devices</option>
                                             </select>
                                         </DropdownMenu>
                                     </Dropdown>

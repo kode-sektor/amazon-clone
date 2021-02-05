@@ -180,6 +180,7 @@ Otherwise it won't shrink.
 	--grey-tone-2:  #606060;
 	--grey-tone-3:  #a7acb2;
 	--grey-tone-4:  #dadada;
+	--grey-tone-5:  #cdcdcd;
 	
     --black: #000;
     --white: #fff;
@@ -189,7 +190,7 @@ Otherwise it won't shrink.
   	/*font-size: 62.5%; make rem units base on 10*/
 
     /*font families*/
-    --font-primary: "Khand", Tahoma, Calibri, sans-serif;
+    --font-primary: "Amazon-Ember", Arial, sans-serif;
     --font-secondary: "Space Mono", Tahoma, Calibri, sans-serif;
     --font-tertiary: "Century Gothic", Tahoma, Calibri, sans-serif;
 
@@ -264,14 +265,6 @@ input:invalid {
 }
 select, option {
     cursor: pointer;
-}
-input, select {
-    padding-left: .2in;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    box-sizing: border-box;
-    border: none;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
