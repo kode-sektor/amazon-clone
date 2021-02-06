@@ -208,19 +208,19 @@ Otherwise it won't shrink.
 
 @font-face {
 	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember/amazon-ember-regular.ttf');
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.ttf');
 }
 @font-face {
 	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember/amazon-ember-regular.eot');
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.eot');
 }
 @font-face {
 	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember/amazon-ember-regular.woff');
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.woff');
 }
 @font-face {
 	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember/amazon-ember-regular.otf');
+	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.otf');
 }
 
 body {

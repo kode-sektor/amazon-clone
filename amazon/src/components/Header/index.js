@@ -13,16 +13,24 @@ import "./index.css";
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);    // search filter
-    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // search filter
+
+    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // flag dropdown
+    const [acctdropdownOpen, setAcctdropdownOpen] = useState(false);    // account filter
 
 	// Toggle dropdowns
     const toggle = () => setIsOpen(!isOpen);
     
     const filterToggle = () => setDropdownOpen(prevState => !prevState);
 
+    // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen);
     const flagdropdownEnter = () => setFlagdropdownOpen(true);
     const flagdropdownLeave = () => setFlagdropdownOpen(false);
+
+    // Acct dropdown
+    const acctdropdown = () => setAcctdropdownOpen(acctdropdownOpen => !acctdropdownOpen);
+    const acctdropdownEnter = () => setAcctdropdownOpen(true);
+    const acctdropdownLeave = () => setAcctdropdownOpen(false);
 
 	return (
 		<header className="page__header">
@@ -91,28 +99,28 @@ const Header = (props) => {
                                         <div className="nav__arrow null">
                                             <div className="nav__arrow__inner"></div>
                                         </div>
-                                        <div class="navigationbar__origin__menu__itemList">
-                                            <button class="navigationbar__origin__menu__link navigationbar__origin__menu__item">                          
-                                                <span class="navigationbar__origin__menu__text">
-                                                    <i class="icp__radio icp__radio__active"></i>English - EN
+                                        <div className="navigationbar__origin__menu__itemList">
+                                            <button className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                          
+                                                <span className="navigationbar__origin__menu__text">
+                                                    <i className="icp__radio icp__radio__active"></i>English - EN
                                                 </span>                          
                                             </button>                                  
-                                            <div class="navigationbar__divider"></div>                      
-                                            <button class="navigationbar__origin__menu__link navigationbar__origin__menu__item">
-                                                <span class="navigationbar__origin__menu__text">
-                                                    <i class="icp__radio"></i>Français - FR
+                                            <div className="navigationbar__divider"></div>                      
+                                            <button className="navigationbar__origin__menu__link navigationbar__origin__menu__item">
+                                                <span className="navigationbar__origin__menu__text">
+                                                    <i className="icp__radio"></i>Français - FR
                                                 </span>                         
                                             </button>                                  
-                                            <div class="navigationbar__divider"></div>                      
-                                            <span class="navigationbar__origin__menu__item"> 
-                                                <span class="navigationbar__origin__menu__text">
-                                                    <i class="icp__origin" style={{backgroundPosition : "0 -269px"}}></i>
+                                            <div className="navigationbar__divider"></div>                      
+                                            <span className="navigationbar__origin__menu__item"> 
+                                                <span className="navigationbar__origin__menu__text">
+                                                    <i className="icp__origin" style={{backgroundPosition : "0 -269px"}}></i>
                                                     You are shopping on Amazon.ca.
                                                 </span>                          
                                             </span>                                              
-                                            <a href="/gp/navigation-country/select-country/ref=icp_lop_mop_chg?ie=UTF8&amp;preferencesReturnUrl=%2F" class="navigationbar__origin__menu__link navigationbar__origin__menu__item" id="icp-flyout-mkt-change">                         
-                                                <span class="navigationbar__origin__menu__text">
-                                                    <div class="icp__origin__change__link">Change country/region.</div>
+                                            <a href="/gp/navigation-country/select-country/ref=icp_lop_mop_chg?ie=UTF8&amp;preferencesReturnUrl=%2F" class="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
+                                                <span className="navigationbar__origin__menu__text">
+                                                    <div className="icp__origin__change__link">Change country/region.</div>
                                                 </span>                          
                                             </a>                    
                                         </div>
@@ -120,7 +128,7 @@ const Header = (props) => {
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem className="col-xs-4">
-                                <UncontrolledDropdown inNavbar>
+                                <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__delivery__link">
                                         <span className="navigation__glow__ingress__block">
                                             <span className="nav__line__1">Hello, Kay</span>
@@ -128,11 +136,7 @@ const Header = (props) => {
                                         </span>
                                     </DropdownToggle>
                                     <DropdownMenu>
-                                        <DropdownItem header>Header</DropdownItem>
-                                        <DropdownItem disabled>Action</DropdownItem>
-                                        <DropdownItem>Another Action</DropdownItem>
-                                        <DropdownItem divider />
-                                        <DropdownItem>Another Action</DropdownItem>
+                                       
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </NavItem>
