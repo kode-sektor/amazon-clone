@@ -13,11 +13,16 @@ import "./index.css";
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);    // search filter
+    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // search filter
 
 	// Toggle dropdowns
     const toggle = () => setIsOpen(!isOpen);
     
     const filterToggle = () => setDropdownOpen(prevState => !prevState);
+
+    const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen);
+    const flagdropdownEnter = () => setFlagdropdownOpen(true);
+    const flagdropdownLeave = () => setFlagdropdownOpen(false);
 
 	return (
 		<header className="page__header">
@@ -49,18 +54,16 @@ const Header = (props) => {
                             </Label>
                             <InputGroup>
                                 <InputGroupAddon addonType="prepend">
-                                    <Dropdown isOpen={dropdownOpen} toggle={filterToggle} className="nav__search__scope">
-                                        <DropdownToggle className="navigationbar__drop__categories" caret>
+                                    <div className="nav__search__scope dropdown">
+                                        <span className="navigationbar__drop__categories dropdown-toggle btn btn-secondary" caret>
                                             All
-                                        </DropdownToggle>
-                                        <DropdownMenu left>
-                                            <select className="navigationbar__search__dropdown" title="Search In">
-                                                <option value="search-alias=aps">All Departments</option>
-                                                <option value="search-alias=alexa-skills">Alexa Skills</option>
-                                                <option value="search-alias=amazon-devices">Amazon Devices</option>
-                                            </select>
-                                        </DropdownMenu>
-                                    </Dropdown>
+                                        </span>
+                                        <select className="navigationbar__search__dropdown" title="Search In">
+                                            <option value="search-alias=aps">All Departments</option>
+                                            <option value="search-alias=alexa-skills">Alexa Skills</option>
+                                            <option value="search-alias=amazon-devices">Amazon Devices</option>
+                                        </select>
+                                    </div>
                                 </InputGroupAddon>
                                 <Input
                                     type="text"
@@ -76,21 +79,43 @@ const Header = (props) => {
                         </Form>
                         <Nav className="row navbar__nav" navbar>
                             <NavItem className="col-xs-4">
-                                <UncontrolledDropdown inNavbar>
+                                <UncontrolledDropdown onMouseOver={flagdropdownEnter}  onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown}  inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__origin">
                                         <ReactCountryFlag
                                             countryCode="CA"
                                             svg
                                             style={{ width: "20px", height: "20px" }}
-                                            title="US"
                                         />
                                     </DropdownToggle>
-                                    <DropdownMenu>
-                                        <DropdownItem header>Header</DropdownItem>
-                                        <DropdownItem disabled>Action</DropdownItem>
-                                        <DropdownItem>Another Action</DropdownItem>
-                                        <DropdownItem divider />
-                                        <DropdownItem>Another Action</DropdownItem>
+                                    <DropdownMenu className="navigationbar__origin__menu">
+                                        <div className="nav__arrow null">
+                                            <div className="nav__arrow__inner"></div>
+                                        </div>
+                                        <div class="navigationbar__origin__menu__itemList">
+                                            <button class="navigationbar__origin__menu__link navigationbar__origin__menu__item">                          
+                                                <span class="navigationbar__origin__menu__text">
+                                                    <i class="icp__radio icp__radio__active"></i>English - EN
+                                                </span>                          
+                                            </button>                                  
+                                            <div class="navigationbar__divider"></div>                      
+                                            <button class="navigationbar__origin__menu__link navigationbar__origin__menu__item">
+                                                <span class="navigationbar__origin__menu__text">
+                                                    <i class="icp__radio"></i>Français - FR
+                                                </span>                         
+                                            </button>                                  
+                                            <div class="navigationbar__divider"></div>                      
+                                            <span class="navigationbar__origin__menu__item"> 
+                                                <span class="navigationbar__origin__menu__text">
+                                                    <i class="icp__origin" style={{backgroundPosition : "0 -269px"}}></i>
+                                                    You are shopping on Amazon.ca.
+                                                </span>                          
+                                            </span>                                              
+                                            <a href="/gp/navigation-country/select-country/ref=icp_lop_mop_chg?ie=UTF8&amp;preferencesReturnUrl=%2F" class="navigationbar__origin__menu__link navigationbar__origin__menu__item" id="icp-flyout-mkt-change">                         
+                                                <span class="navigationbar__origin__menu__text">
+                                                    <div class="icp__origin__change__link">Change country/region.</div>
+                                                </span>                          
+                                            </a>                    
+                                        </div>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </NavItem>
