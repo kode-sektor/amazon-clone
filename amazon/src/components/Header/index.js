@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 import {
 	Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
 	UncontrolledDropdown, DropdownToggle, DropdownMenu, Dropdown, DropdownItem,
 	NavbarText, FormGroup, Label, Input, ButtonDropdown, Row, Col, Form,
     InputGroup, InputGroupAddon, Button
 } from "reactstrap";
+import AccountMenu from './AccountMenu/index.js'
 
-import ReactCountryFlag from "react-country-flag";
+import ReactCountryFlag from "react-country-flag"
 
-import "./index.css";
+import "./index.css"
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +88,7 @@ const Header = (props) => {
                         </Form>
                         <Nav className="row navbar__nav" navbar>
                             <NavItem className="col-xs-4">
-                                <UncontrolledDropdown onMouseOver={flagdropdownEnter}  onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown}  inNavbar>
+                                <UncontrolledDropdown onMouseOver={flagdropdownEnter}  onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__origin">
                                         <ReactCountryFlag
                                             countryCode="CA"
@@ -118,7 +119,7 @@ const Header = (props) => {
                                                     You are shopping on Amazon.ca.
                                                 </span>                          
                                             </span>                                              
-                                            <a href="/gp/navigation-country/select-country/ref=icp_lop_mop_chg?ie=UTF8&amp;preferencesReturnUrl=%2F" class="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
+                                            <a href="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
                                                 <span className="navigationbar__origin__menu__text">
                                                     <div className="icp__origin__change__link">Change country/region.</div>
                                                 </span>                          
@@ -135,8 +136,8 @@ const Header = (props) => {
                                             <span className="nav__line__2">Account &amp; Lists</span>
                                         </span>
                                     </DropdownToggle>
-                                    <DropdownMenu>
-                                       
+                                    <DropdownMenu className="nav__flyout__modal">
+                                        <AccountMenu />
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </NavItem>
@@ -145,7 +146,7 @@ const Header = (props) => {
                                     <NavLink href="/components/" className="navigationbar__delivery__link">
                                         <span className="navigation__glow__ingress__block">
                                             <span className="nav__line__1">Returns</span>
-                                            <span className="nav__line__2">& Orders</span>
+                                            <span className="nav__line__2">&amp; Orders</span>
                                         </span>
                                     </NavLink>
                                 </NavItem>

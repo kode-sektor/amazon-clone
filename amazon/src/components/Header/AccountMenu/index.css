@@ -1,0 +1,35 @@
+.navigationbar__account {
+    position: relative;
+}
+.navigationbar__account {
+    position: absolute;
+    top: -5px;
+    left: 546px;
+    width: 766px;
+    background: var(--white);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+    zoom: 1;
+    font-size: 13px;
+    font-family: inherit;
+    line-height: normal;
+    padding-bottom: 7px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid var(--grey-tone-6);
+    border: 3px solid magenta;
+}
+.navigationbar__account__flyout__content {
+    display: flex;
+    flex: 0 0 766px;
+    flex-flow: row nowrap;
+}
+.navigationbar__buy__again, .navigationbar__wishlist, .navigationbar__your__account {
+    flex: 1 1 0;
+}
+.navigationbar__buy__again {
+    margin: -1px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    box-shadow: -2px 2px 4px 0 rgba(0,0,0,.13);
+    background: var(--white);
+    overflow: hidden;
+}
