@@ -88,32 +88,6 @@ file rather than small ones. Your choice
 
 */
 
-/* NOTES ON FLEX:
-
-.element {
-	flex: 0 1 auto; // is the default
-	flex: 1;	// 1 1 0
-	flex: auto;	// 1 1 auto
-}
-
-setting height on container to a flex parent with elements that wrap gives issues
-
-flex: 0 0 200px;
-flex: 1 0 auto;
-
-That means:
-
-The first one will start at 200px wide.
-
-Then it won't grow nor shrink.
-
-The second one will start at the width given by the content.
-
-Then, if there is available space, it will grow to cover it.
-
-Otherwise it won't shrink. */
-
-
 
 /*1. LAYOUT
 ==============================================================================================================================================================*/
@@ -193,6 +167,9 @@ Otherwise it won't shrink. */
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 	
 	--link: #0066C0;
+	--mainlink: #007185;
+	--mainlinkhover: #c7511f;
+	--mainlinkfocus: #008299;
 
   	/*font-size: 62.5%; make rem units base on 10*/
 
@@ -289,6 +266,11 @@ h1, h2, h3, h4 {
 h1, h2, h3, h4 {
     text-rendering: optimizeLegibility
 }
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
 header {
 }
 hr {
@@ -312,22 +294,17 @@ html {
 
 /*Link styles*/
 
-a {
-	color: #34495e;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -o-transition: 300ms;
-    transition: 300ms;
+a, a:link, a:visited {
+    text-decoration: none;
+    color: var(--mainlink);
 }
-a:link {
-	/*style only unvisited links*/
-}
-a:link, a:visited {
-	background: url('img/underline') repeat-x left bottom;	/*Give links underline image*/
+a:focus {
+    text-decoration: none;
+    outline: 5px auto var(--mainlinkfocus);
 }
 a:hover,
 a:focus {
-    color: #d9534f;
+    color: var(--mainlinkhover);
     text-decoration: none;
     outline: none;
 }

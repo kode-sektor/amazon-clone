@@ -1,3 +1,9 @@
+Consider this as a notepad chronicling the processes and personal challenges in buiilding this application.
+
+The first obstacle I encountered was one I never even envisaged from the get-go: font. Apparently, Amazon makes use of 
+a proprietary font named "Amazon Ember". 
+
+
 FONT ISSUES
 
 The first hurdle I encountered was surprise, suprise : font family. Amazon uses a propietary font named "Amazon Ember". 

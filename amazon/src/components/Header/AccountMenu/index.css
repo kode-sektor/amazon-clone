@@ -34,3 +34,29 @@
     box-shadow: -2px 2px 4px 0 rgba(0,0,0,.13);
     background: var(--white);
 }
+.navigationbar__account__heading {
+    margin-bottom: 12px;
+}
+.navigationbar__recent__purchases {
+    margin-bottom: 4px;
+}
+.navigationbar__account__recent__purchases > li {
+    margin-bottom: 16px;
+}
+.navigationbar__recent__grid {
+    position: relative;
+}
+.navigationbar__recent__grid__inner {
+    display: flex;
+}
+.navigationbar__recent__avatar {
+    position: relative;
+    overflow: visible;
+    flex-basis: 87px;
+    border: thin solid green;
+    align-self: flex-start;
+}
+.navigationbar__recent__details {
+    position: relative;
+    flex: 1;
+}
