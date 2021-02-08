@@ -31,7 +31,6 @@ file rather than small ones. Your choice
 
 
 
-
 =====================================================================*/
 
 /*
@@ -89,7 +88,7 @@ file rather than small ones. Your choice
 
 */
 
-NOTES ON FLEX:
+/* NOTES ON FLEX:
 
 .element {
 	flex: 0 1 auto; // is the default
@@ -112,7 +111,7 @@ The second one will start at the width given by the content.
 
 Then, if there is available space, it will grow to cover it.
 
-Otherwise it won't shrink.
+Otherwise it won't shrink. */
 
 
 
@@ -223,12 +222,19 @@ Otherwise it won't shrink.
 	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.otf');
 }
 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
 body {
 	min-width: 320px;
 	color: #212529;
 	text-align: left;
 	background-color: #fff;
+	min-height: 100%
 }
+
 body > header > h1 {
 	font-size: 7w;	/*Heading is never too small or wider than document itself*/
 }
@@ -274,10 +280,14 @@ option {
 	padding: 0px 2px 1px;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 1.3em;
+    padding: 0;
+    margin: 0
+}
+h1, h2, h3, h4 {
+    padding-bottom: 4px
+}
+h1, h2, h3, h4 {
+    text-rendering: optimizeLegibility
 }
 header {
 }
@@ -309,7 +319,7 @@ a {
     -o-transition: 300ms;
     transition: 300ms;
 }
-a:link{
+a:link {
 	/*style only unvisited links*/
 }
 a:link, a:visited {
@@ -412,6 +422,13 @@ address {
 ==============================================================================================================================================================*/
 
 /*indicate valid / invalid inputs on focus*/
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit
+}
 
 input:required, input[required] {
 	background-image: url();
@@ -615,7 +632,7 @@ a.tooltip:hover span, a.tooltip:focus span {
 
 }
 
-.box{
+.box {
 	padding: 2.5em;
 	display: inline-block;
 	text-transform: uppercase;
@@ -623,11 +640,11 @@ a.tooltip:hover span, a.tooltip:focus span {
 	font-weight: bolder;
 	background: khaki;
 }
-.box{
+.box {
 	background: url('images/left_quote.png') no-repeat left top;
 	background: url('images/right_quote.png') no-repeat right bottom;
 }
-.box2{
+.box2 {
 	/*Same width horizontally; stretched out vertically*/
 
 	transform: scale(1, -1);
@@ -637,7 +654,8 @@ a.tooltip:hover span, a.tooltip:focus span {
 
 /*The simple idea of creating an arrow using a border is to first have an empty string 
 	positioned exactly where you want this arrow to be and first declare a BORDER OF TRANSPARENT.
-	Then the next thing is to give just ONE side of the border a visible color.*/
+	Then the next thing is to give just ONE side of the border a visible color.
+*/
 	
 p.abstract:after{
 	content: " You need to register to read the full article.";
@@ -648,12 +666,12 @@ p.abstract:after{
 	font-style: italic;
 }
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
 }

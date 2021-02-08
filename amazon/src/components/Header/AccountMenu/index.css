@@ -26,10 +26,11 @@
     flex: 1 1 0;
 }
 .navigationbar__buy__again {
+    overflow: hidden;
+    padding: 14px;
     margin: -1px;
     border: 1px solid #ccc;
     border-radius: 3px 0 0 3px;
     box-shadow: -2px 2px 4px 0 rgba(0,0,0,.13);
     background: var(--white);
-    overflow: hidden;
 }
