@@ -5,13 +5,19 @@ import {
 	NavbarText, FormGroup, Label, Input, ButtonDropdown, Row, Col, Form,
     InputGroup, InputGroupAddon, Button
 } from "reactstrap";
+
 import AccountMenu from './AccountMenu/index.js'
+import Modal from '../UI/Modal/index'
 
 import ReactCountryFlag from "react-country-flag"
 
 import "./index.css"
 
 const Header = (props) => {
+
+    const [modal, setModal] = useState('hide');
+    const toggleModal = () => setModal(!modal);
+
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);    // search filter
 
@@ -20,13 +26,20 @@ const Header = (props) => {
 
 	// Toggle dropdowns
     const toggle = () => setIsOpen(!isOpen);
-    
     const filterToggle = () => setDropdownOpen(prevState => !prevState);
 
     // Flag dropdown
-    const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen);
-    const flagdropdownEnter = () => setFlagdropdownOpen(true);
-    const flagdropdownLeave = () => setFlagdropdownOpen(false);
+    const flagdropdown = () => {
+        setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen);
+    } 
+    const flagdropdownEnter = () => {
+        setFlagdropdownOpen(true);
+        // setModal('show');
+    }
+    const flagdropdownLeave = () => {
+        setFlagdropdownOpen(false);
+        // setModal('hide');
+    }
 
     // Acct dropdown
     const acctdropdown = () => setAcctdropdownOpen(acctdropdownOpen => !acctdropdownOpen);
@@ -34,6 +47,7 @@ const Header = (props) => {
     const acctdropdownLeave = () => setAcctdropdownOpen(false);
 
 	return (
+        <>
 		<header className="page__header">
             <div className="navbelt">
                 <Navbar expand="md" className="navigationbar">
@@ -87,7 +101,7 @@ const Header = (props) => {
                             </InputGroup>
                         </Form>
                         <Nav className="row navbar__nav" navbar>
-                            <NavItem className="col-xs-4">
+                            <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')}>
                                 <UncontrolledDropdown onMouseOver={flagdropdownEnter}  onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__origin">
                                         <ReactCountryFlag
@@ -167,6 +181,10 @@ const Header = (props) => {
                 </Navbar>
             </div>
 		</header>
+
+        <Modal modal={modal}>
+        </Modal>
+        </>
 	);
 };
 
