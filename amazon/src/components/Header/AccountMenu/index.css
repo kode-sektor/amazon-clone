@@ -33,7 +33,7 @@
     background: var(--white);
 }
 .navigationbar__buy__again {
-    margin: -14px 1px -7px -14px;
+    margin: -15px 1px -8px -15px;
     padding-top: 28px;
     border: 1px solid var(--grey);
 }
@@ -103,6 +103,7 @@
     font-size: 13px;
     font-weight: 400;
     white-space: normal;
+    color: var(--grey-tone-8);
 }
 .navigationbar__account__empty__link:hover > span {
     color: var(--ochre-5);

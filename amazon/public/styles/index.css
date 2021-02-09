@@ -138,9 +138,21 @@ file rather than small ones. Your choice
 	--ochre-3: #f08804;
 	--ochre-4: #c45500;
 	--ochre-5: #e47911;
+	--ochre-6: #f0c14b;
+	--ochre-7: #a88734;
+	--ochre-8: #9c7e31;
+	--ochre-9: #846a29; 
+	--ochre-10: #e77600; 
+	--ochre-11: #f4d078;
+	--ochre-12: #f7dfa5;
+	--ochre-13: #f5d78e;
+	--ochre-14: #eeb933;
+	--ochre-15: #f1c861;
+
 
     --link: #007BFF;
-    --link-hover: #d9534f;
+	--link-hover: #d9534f;
+	--a: #c7511f;
   
 	--color: #0F1111;
 	--color-2 : #111;
@@ -167,6 +179,11 @@ file rather than small ones. Your choice
 	--grey-tone-12: #a2a6ac; 
 	--grey-tone-13: #8d9096; 
 	--grey-tone-14: #333;
+	--grey-tone-15:#eff1f3;
+	--grey-tone-16: #f7f8fa;
+	--grey-tone-17: #d9dce1;
+	--grey-tone-18: #e7eaf0;
+	--grey-tone-19: #e0e3e8;
 	
     --black: #000;
     --white: #fff;
@@ -215,7 +232,7 @@ body {
 	min-width: 320px;
 	color: #212529;
 	text-align: left;
-	background-color: #fff;
+	background-color: var(--white);
 	min-height: 100%
 }
 
@@ -312,12 +329,12 @@ a:focus {
 }
 a:active {
     text-decoration: underline;
-    color: #C7511F;
+    color: var(--a);
 }
 a:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: #C7511F;
+    color: var(--a);
 }
 li a {
 	display: block;
@@ -348,13 +365,52 @@ li a {
     text-decoration: none!important;
     vertical-align: middle;
 }
+.a__button__inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 29px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-radius: 2px;
+}
+.a__button .a__button__inner {
+    background: var(--grey-tone-15);
+    background: linear-gradient(to bottom, var(--grey-tone-16), var(--grey-tone-10));
+}
+.a__button__primary .a__button__inner {
+    background: var(--ochre-11);
+	background: linear-gradient(to bottom, var(--ochre-12), var(--ochre-6));
+	box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+	height: 20px !important;
+}
+.a__button:hover .a__button__inner {
+    background: var(--grey-tone-18);
+    background: linear-gradient(to bottom,var(--grey-tone-18), var(--grey-tone-17));
+}
+.a__button__primary:hover .a__button__inner {
+    background: var(--ochre-15);
+    background: linear-gradient(to bottom, var(--ochre-13), var(--ochre-14));
+}
+.a__button .a__button__text {
+    color: var(--color-2);
+}
 .a__button__primary {
-    background: #f0c14b;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
+    background: var(--ochre-6);
+    border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
+    color: var(--color-2);
+}
+.a__button__primary.a__button__focus, .a__button__primary:focus {
+    border-color: var(--ochre-10);
+}
+.a__button-primary.a__button__focus, .a__button__primary:focus, 
+.a__button__primary:hover, .a__button__primary:hover:active {
+	border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
 }
 .a__button.a__button__small {
     height: 22px;
+}
+.a__button__primary .a__button__text {
+    color: var(--color-2);
 }
 .a__button__inner {
     display: block;
@@ -365,15 +421,20 @@ li a {
     border-radius: 2px;
 }
 .a__button__primary .a__button__inner {
-    background: #f4d078;
-    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
-    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    background: var(--ochre-11);
+    background: linear-gradient(to bottom,var(--ochre-12),var(--ochre-6));
 }
 .a__button__primary .a__button__inner {
     box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
 }
 .a__button.a__button__small .a__button__inner {
 	height: 20px!important;
+}
+.a__button.a__button__small .a__button__text {
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+	padding: 0 6px 0 7px;
 }
 .a__button__input {
     position: absolute;

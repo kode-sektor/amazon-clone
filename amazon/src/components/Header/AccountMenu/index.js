@@ -50,7 +50,7 @@ const AccountMenu = () => {
                                                 <span className="a__button a__button__primary a__button__small">
                                                     <span className="a__button__inner">
                                                         <input name="submit.addToCart" className="a__button__input" type="submit" value="Add to Cart" />
-                                                        <span className="a-button-text" aria-hidden="true">Add to Cart</span>
+                                                        <span className="a__button__text" aria-hidden="true">Add to Cart</span>
                                                     </span>
                                                 </span>
                                             </form>
