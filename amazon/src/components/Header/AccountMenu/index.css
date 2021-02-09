@@ -3,7 +3,7 @@
 }
 .navigationbar__account {
     position: absolute;
-    top: -5px;
+    top: -11px;
     left: 546px;
     width: 766px;
     background: var(--white);
@@ -12,10 +12,10 @@
     font-size: 13px;
     font-family: inherit;
     line-height: normal;
+    padding: 14px;
     padding-bottom: 7px;
     border-radius: 3px 3px 3px 3px;
     border: 1px solid var(--grey-tone-6);
-    border: 3px solid magenta;
 }
 .navigationbar__account__flyout__content {
     display: flex;
@@ -25,14 +25,28 @@
 .navigationbar__buy__again, .navigationbar__wishlist, .navigationbar__your__account {
     flex: 1 1 0;
 }
-.navigationbar__buy__again {
+.navigationbar__buy__again, .navigationbar__wishlist, .navigationbar__your__account {
     overflow: hidden;
     padding: 14px;
     margin: -1px;
-    border: 1px solid #ccc;
     border-radius: 3px 0 0 3px;
-    box-shadow: -2px 2px 4px 0 rgba(0,0,0,.13);
     background: var(--white);
+}
+.navigationbar__buy__again {
+    margin: -14px 1px -7px -14px;
+    padding-top: 28px;
+    border: 1px solid var(--grey);
+}
+.navigationbar__wishlist {
+    padding-right: 0;
+    margin-right: 20px;
+}
+.navigationbar__your__account {
+    padding-left: 20px;
+    border-left: 1px solid var(--grey-tone-9);
+}
+.navigationbar__wishlist, .navigationbar__your__account {
+    padding-bottom: 0;
 }
 .navigationbar__account__heading {
     margin-bottom: 12px;
@@ -40,7 +54,7 @@
 .navigationbar__recent__purchases {
     margin-bottom: 4px;
 }
-.navigationbar__account__recent__purchases > li {
+.navigationbar__recent__purchases > li {
     margin-bottom: 16px;
 }
 .navigationbar__recent__grid {
@@ -53,10 +67,44 @@
     position: relative;
     overflow: visible;
     flex-basis: 87px;
-    border: thin solid green;
     align-self: flex-start;
 }
 .navigationbar__recent__details {
     position: relative;
     flex: 1;
 }
+
+/* Add to Cart */
+
+.navigationbar__cart__form {
+    padding-top: 4px;
+    margin-top: 0!important;
+    margin-bottom: 0;
+}
+
+/* Wishlist */
+
+.navigationbar__account__empty {
+    display: none;
+}
+.navigationbar__account__empty__link {
+    position: relative;
+    display: block;
+    clear: both;
+    font-family: inherit;
+    line-height: 16px;
+    padding: 0 0 7px;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.navigationbar__account__empty__link > span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    white-space: normal;
+}
+.navigationbar__account__empty__link:hover > span {
+    color: var(--ochre-5);
+    text-decoration: underline;
+}   

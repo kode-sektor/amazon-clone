@@ -137,6 +137,7 @@ file rather than small ones. Your choice
 	--ochre-2: #deb406;
 	--ochre-3: #f08804;
 	--ochre-4: #c45500;
+	--ochre-5: #e47911;
 
     --link: #007BFF;
     --link-hover: #d9534f;
@@ -145,6 +146,7 @@ file rather than small ones. Your choice
 	--color-2 : #111;
 	--bg-light-blue : #232f3e;
 	--bg-dark-blue : #131921;
+	--price-color : #b12704;
 
 	/*shades of grey*/
     --grey: #ccc;
@@ -160,6 +162,11 @@ file rather than small ones. Your choice
 	--grey-tone-7:  #ced4da; 
 	--grey-tone-8:  #444; 
 	--grey-tone-9:  #eee; 
+	--grey-tone-10: #e7e9ec; 
+	--grey-tone-11: #adb1b8; 
+	--grey-tone-12: #a2a6ac; 
+	--grey-tone-13: #8d9096; 
+	--grey-tone-14: #333;
 	
     --black: #000;
     --white: #fff;
@@ -221,9 +228,7 @@ body > header > h1 {
 ==============================================================================================================================================================*/
 
 input {
-	background-position: 0% 50%;
-	background-repeat: no-repeat;
-	padding-left: 15px;
+
 }
 input[type="button"] {
 	padding-left: 0;
@@ -298,19 +303,100 @@ a, a:link, a:visited {
     text-decoration: none;
     color: var(--mainlink);
 }
+a:active, a:hover {
+    outline: 0;
+}
 a:focus {
     text-decoration: none;
     outline: 5px auto var(--mainlinkfocus);
 }
-a:hover,
-a:focus {
-    color: var(--mainlinkhover);
-    text-decoration: none;
-    outline: none;
+a:active {
+    text-decoration: underline;
+    color: #C7511F;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #C7511F;
 }
 li a {
 	display: block;
 }
+.a__text__normal {
+    font-weight: 400!important;
+    font-style: normal!important;
+    text-transform: none!important;
+    text-decoration: none!important;
+}
+.a__size__base {
+    font-size: 14px!important;
+    line-height: 20px!important;
+}
+.a__color__price {
+    color: var(--price-color) !important;
+}
+.a__button {
+    background: var(--grey-tone-10);
+    border-radius: 3px;
+    border-color: var(--grey-tone-11) var(--grey-tone-12) var(--grey-tone-13);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    text-decoration: none!important;
+    vertical-align: middle;
+}
+.a__button__primary {
+    background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+.a__button.a__button__small {
+    height: 22px;
+}
+.a__button__inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 29px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+    border-radius: 2px;
+}
+.a__button__primary .a__button__inner {
+    background: #f4d078;
+    background: -webkit-linear-gradient(top,#f7dfa5,#f0c14b);
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+}
+.a__button__primary .a__button__inner {
+    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+}
+.a__button.a__button__small .a__button__inner {
+	height: 20px!important;
+}
+.a__button__input {
+    position: absolute;
+    background-color: transparent;
+    color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: .01;
+    outline: 0;
+    overflow: visible;
+    z-index: 20;
+}
+.see__more__link a {
+	font-size: 13px;
+	color: var(--grey-tone-14);
+	text-decoration: none;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: pink;
     font-size: .8em;
@@ -336,7 +422,7 @@ li a {
     font-weight: lighter;
 }
 a {
-	transition: .2s;
+	/transition: .2s;
 }
 
 /*Indicate downloadable docs
