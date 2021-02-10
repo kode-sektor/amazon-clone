@@ -15,8 +15,8 @@ import "./index.css"
 
 const Header = (props) => {
 
-    const [modal, setModal] = useState('hide');
-    const toggleModal = () => setModal(!modal);
+    const [modal, setModal] = useState('hide')
+    const toggleModal = () => setModal('hide')  // Hide Modal on hover on Modal itself 
 
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);    // search filter
@@ -182,7 +182,9 @@ const Header = (props) => {
             </div>
 		</header>
 
-        <Modal modal={modal}>
+        <Modal 
+            modal={modal}
+            toggleModal={() => toggleModal()}>
         </Modal>
         </>
 	);

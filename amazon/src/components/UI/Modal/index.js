@@ -1,19 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './index.css'
 
-const Modal = ({modal}) => {
+const Modal = (props) => {
+
+    const {modal, toggleModal} = props
+
 	return (
-		<section tabindex="-1" className={`modal__parent ${modal}`}>
-			<div class="">
-				<div className="modal fade show" role="dialog" tabindex="-1" style={{ display: "block" }}>
-					<div className="modal__dialog" role="document">
-						<div className="modal__content"></div>
-					</div>
-				</div>
-				<div className="modal__backdrop fade show"></div>
-			</div>
-		</section>
+		<div className={`modal ${modal}`} onMouseOver={toggleModal} role="dialog"></div>
 	);
 };
 
