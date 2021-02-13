@@ -101,7 +101,7 @@ const Header = (props) => {
                             </InputGroup>
                         </Form>
                         <Nav className="row navbar__nav" navbar>
-                            <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')}>
+                            <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')} onMouseLeave={() => setModal('hide')}>
                                 <UncontrolledDropdown onMouseOver={flagdropdownEnter}  onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__origin">
                                         <ReactCountryFlag

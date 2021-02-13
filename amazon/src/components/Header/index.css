@@ -277,6 +277,18 @@
     width: 240px;
     border-radius: 3px 3px 3px 3px;
 }
+/* .navigationbar__origin__menu.dropdown-menu::before {
+    content: "";
+    position: fixed;
+    display: block;
+    top: 99px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+} */
 .nav__arrow {
     position: absolute;
     top: -9px;
