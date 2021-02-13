@@ -142,7 +142,7 @@ const Header = (props) => {
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </NavItem>
-                            <NavItem className="col-xs-4">
+                            <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')} onMouseLeave={() => setModal('hide')}>
                                 <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
                                     <DropdownToggle nav caret className="navigationbar__delivery__link">
                                         <span className="navigation__glow__ingress__block">
@@ -150,7 +150,7 @@ const Header = (props) => {
                                             <span className="nav__line__2">Account &amp; Lists</span>
                                         </span>
                                     </DropdownToggle>
-                                    <DropdownMenu className="nav__flyout__modal">
+                                    <DropdownMenu className="navigationbar__account">
                                         <AccountMenu />
                                     </DropdownMenu>
                                 </UncontrolledDropdown>

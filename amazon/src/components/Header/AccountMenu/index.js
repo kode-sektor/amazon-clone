@@ -3,7 +3,7 @@ import './index.css'
 
 const AccountMenu = () => {
     return (
-        <div className="navigationbar__account nav__flyout">
+        <>
             <div className="nav__arrow null" style={{position: "absolute", left: "628px"}}>
                 <div className="nav__arrow__inner"></div>
             </div>
@@ -151,7 +151,7 @@ const AccountMenu = () => {
             <div className="nav-flyout-buffer-right"></div>
             <div className="nav-flyout-buffer-top" style={{left: "-266px"}}></div>
             <div className="nav-flyout-buffer-bottom" style={{left: "-266px"}}></div>
-        </div>
+        </>
     )
 }
 

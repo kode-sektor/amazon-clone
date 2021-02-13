@@ -82,7 +82,7 @@
     position: fixed !important;
     top: 63px;
     right: 0;
-    left: 0;
+    left: 0; 
     width: 100vw;
     float: none;
     height: calc(100vh - 60px);
@@ -91,6 +91,7 @@
     border: 0 !important;
     border-radius: 0 !important;
     background: rgba(0,0,0,.5);
+    margin: -3px 0 0;
 }
 .nav__line__1 {
     display: inline-block;

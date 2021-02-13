@@ -3,8 +3,8 @@
 }
 .navigationbar__account {
     position: absolute;
-    top: -11px;
-    left: 546px;
+    top: calc(100% - 3px);
+    left: -520px;
     width: 766px;
     background: var(--white);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
