@@ -49,7 +49,7 @@ const HeaderTop = () => {
                         <NavbarBrand href="/" className="navigationbar__brand ssr-only">
                             <span id="nav-logo-sprites"	className="navigationbar__logo__link" aria-label="Amazon.ca">
                                 <span className="navigationbar__sprite"></span>
-                                <span id="logo-ext" class="navigationbar__nav__logo__ext"></span>
+                                <span id="logo-ext" className="navigationbar__nav__logo__ext"></span>
                                 <span className="navigationbar__logo__locale">.ca</span>
                             </span>
                         </NavbarBrand>

@@ -1,0 +1,39 @@
+.nav__main {
+    display: flex;
+    padding-left: 11px;
+    background-color: var(--light-slate-gray);
+    border: 2px solid gold;
+}
+.nav__sprite__menu {
+	display: flex;
+	font-size: 25px;
+	color: var(--white);
+	border-radius: 3px;
+	align-items: center;
+	width: auto;
+	height: 39px;
+	border: 2px solid yellow;
+	text-decoration: none;
+	padding: 8px 9px 8px 9px;
+    background-color: transparent;
+}
+.nav__sprite__hamburger {
+	display: flex;
+	line-height: 1em;
+	font-size: 25px;
+	color: var(--white);
+	font-style: italic;
+	background-image: url(../../../images/nav-sprite-1.png);
+	background-repeat: repeat-x;
+	width: 17px;
+	height: 14px;
+	background-position: -172px -255px;
+}
+.nav__sprite__label {
+	line-height: 1em;
+	color: var(--white);
+	font-weight: 700;
+	font-size: 14px;
+	padding-left: 5px;
+	white-space: nowrap;
+}
