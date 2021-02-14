@@ -43,7 +43,7 @@ const HeaderTop = () => {
 
     return (
         <>
-            <header className="page__header">
+            <section className="page__header">
                 <div className="navbelt">
                     <Navbar expand="md" className="navigationbar">
                         <NavbarBrand href="/" className="navigationbar__brand ssr-only">
@@ -175,7 +175,7 @@ const HeaderTop = () => {
                         </Collapse>
                     </Navbar>
                 </div>
-            </header>
+            </section>
 
             <Modal 
                 modal={modal}
