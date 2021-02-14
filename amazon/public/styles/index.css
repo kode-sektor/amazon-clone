@@ -133,6 +133,8 @@ file rather than small ones. Your choice
 :root {
     /*primary colours*/
 	--dark-slate-gray: #131921;
+	--light-slate-gray: #232f3e;
+	
 	--ochre: #febd69;
 	--ochre-2: #deb406;
 	--ochre-3: #f08804;

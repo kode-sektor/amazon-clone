@@ -92,6 +92,7 @@
     border-radius: 0 !important;
     background: rgba(0,0,0,.5);
     margin: -3px 0 0;
+    border: 3px solid indigo !important;
 }
 .nav__line__1 {
     display: inline-block;
@@ -181,7 +182,7 @@
     text-indent: -500px;
     background-color: var(--ochre);
     border-radius: 0 4px 4px 0;
-    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-image: url(../../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-repeat: repeat-x;
     background-position: 2px -280px;
 }
@@ -278,18 +279,6 @@
     width: 240px;
     border-radius: 3px 3px 3px 3px;
 }
-/* .navigationbar__origin__menu.dropdown-menu::before {
-    content: "";
-    position: fixed;
-    display: block;
-    top: 99px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-    width: 100%;
-    background: rgba(0,0,0,0.5);
-} */
 .nav__arrow {
     position: absolute;
     top: -9px;
@@ -369,7 +358,7 @@
     height: 30px;
     margin-top: 12px;
     text-indent: -500px;
-    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-image: url(../../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-position: 0 1000px;
     background-repeat: no-repeat;
     background-position: -10px -51px;
@@ -384,12 +373,12 @@
     margin: 6px 0 9px 24px;
 }
 .icp__origin {
-    margin: 0 .5em 0 0;
     position: relative;
-    top: 4px;
     display: inline-block;
+    top: 4px;
     width: 17px;
     height: 13px;
+    margin: 0 .5em 0 0;
     background: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
 }
 .navigationbar__logo__glow__loc__icon {
@@ -401,7 +390,7 @@
     line-height: 39px;
     color: var(--light-grey);
     cursor: pointer;
-    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-image: url(../../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-repeat: repeat-x;
     background-position: -71px -378px;
 }
@@ -444,7 +433,7 @@
     width: 38px;
     height: 26px;
     color: var(--white);
-    background-image: url(../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-image: url(../../../images/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
     background-repeat: repeat-x;
     background-position: -10px -340px;
 }
