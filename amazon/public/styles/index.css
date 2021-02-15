@@ -134,7 +134,9 @@ file rather than small ones. Your choice
     /*primary colours*/
 	--dark-slate-gray: #131921;
 	--light-slate-gray: #232f3e;
-	
+
+	--green: #1a9901;
+
 	--ochre: #febd69;
 	--ochre-2: #deb406;
 	--ochre-3: #f08804;
@@ -150,6 +152,11 @@ file rather than small ones. Your choice
 	--ochre-13: #f5d78e;
 	--ochre-14: #eeb933;
 	--ochre-15: #f1c861;
+	--ochre-16: #c89411;
+	--ochre-17: #b0820f;
+	--ochre-18: #99710d;
+	--ochre-19: #f8e3ad;
+	--ochre-20: #eeba37;
 
 
     --link: #007BFF;
@@ -186,6 +193,7 @@ file rather than small ones. Your choice
 	--grey-tone-17: #d9dce1;
 	--grey-tone-18: #e7eaf0;
 	--grey-tone-19: #e0e3e8;
+	--grey-tone-20: #fcf3dc;
 	
     --black: #000;
     --white: #fff;
@@ -261,9 +269,6 @@ button {
 	border: none;
 	font-family: ;
 	transition: all .2s
-}
-button:hover, button:focus {
-	opacity: .7;
 }
 input:read:only {
 	color: gray;

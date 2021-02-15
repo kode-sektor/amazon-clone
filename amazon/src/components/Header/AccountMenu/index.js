@@ -4,7 +4,7 @@ import './index.css'
 const AccountMenu = () => {
     return (
         <>
-            <div className="nav__arrow null" style={{position: "absolute", left: "628px"}}>
+            <div className="nav__arrow null" style={{ left: "628px" }}>
                 <div className="nav__arrow__inner"></div>
             </div>
             <div className="navigationbar__account__flyout__content">

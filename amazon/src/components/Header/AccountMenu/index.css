@@ -2,20 +2,8 @@
     position: relative;
 }
 .navigationbar__account {
-    position: absolute;
-    top: calc(100% - 3px);
-    left: -522px;
+    left: -520px;
     width: 766px;
-    background: var(--white);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
-    zoom: 1;
-    font-size: 13px;
-    font-family: inherit;
-    line-height: normal;
-    padding: 14px;
-    padding-bottom: 7px;
-    border-radius: 3px 3px 3px 3px;
-    border: 1px solid var(--grey-tone-6);
 }
 .navigationbar__account__flyout__content {
     display: flex;

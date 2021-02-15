@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
     Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
@@ -10,10 +10,20 @@ import Menu from '../../UI/Menu/index.js'
 
 import './index.css'
 
+import primeLogo from '../../../images/prime-logo.png'
+import primeMarketing from '../../../images/prime-marketing.png'
+
+
 const Subheader = () => {
 
-    // Header when user is not logged in
+    const [primedropdownOpen, setPrimedropdownOpen] = useState(false);    // Prime dropdown
 
+    // Prime dropdown
+    const primedropdown = () => setPrimedropdownOpen(primedropdownOpen => !primedropdownOpen);
+    const primedropdownEnter = () => setPrimedropdownOpen(true);
+    const primedropdownLeave = () => setPrimedropdownOpen(false);
+
+    // Header when user is not logged in
 	const renderMenu = () => {
 		return (
 			<Menu
@@ -26,10 +36,11 @@ const Subheader = () => {
 					{ label: "Buy Again", href: "buy-again", icon: null },
 					{ label: "Customer Service", href: "customer-service", icon: null },
 					{ label: "Deals Store", href: "deals-store", icon: null },
+					{ label: "New Releases", href: "new-releases", icon: null }
 				]}
 			/>
 		);
-    };
+    }
 
 
     return (
@@ -40,14 +51,28 @@ const Subheader = () => {
             </Button>
             <Navbar expand="md" className="nav__main__menu">
                 <Nav className="mr-auto" navbar>
-                    <UncontrolledDropdown nav inNavbar>
+                    <UncontrolledDropdown onMouseOver={primedropdownEnter}  onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} toggle={primedropdown} nav inNavbar>
                         <DropdownToggle nav caret>
                             Prime
                         </DropdownToggle>
-                        <DropdownMenu right>
-                            <DropdownItem>Option 1</DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>Reset</DropdownItem>
+                        <DropdownMenu left className="nav__main__prime">
+                            <div class="nav__arrow null" style={{ left: "48.1094px" }}>
+                                <div class="nav__arrow__inner"></div>
+                            </div>
+                            <section className="nav__main__prime__inner">
+                                <div className="nav__main__prime__img">
+                                    <div class="nav__main__prime__logo">
+                                        <img src={primeLogo} alt="prime logo" />
+                                    </div>
+                                    <p class="nav__main__prime__content__copy">Get fast, free shipping on millions of items</p>
+                                    <div class="nav__main__prime__button__try">
+                                        <a href="/prime">Get Started</a>
+                                    </div>
+                                    <div class="nav__main__prime__bottom__img">
+                                        <img src={primeMarketing} alt="prime marketing" />
+                                    </div>
+                                </div>
+                            </section>
                         </DropdownMenu>
                     </UncontrolledDropdown>
                     { renderMenu() }

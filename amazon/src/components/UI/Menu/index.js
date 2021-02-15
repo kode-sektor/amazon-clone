@@ -8,7 +8,7 @@ const Menu = ({ menus }) => {
         menus.map(link => {
             return (
                 <NavItem>
-                <NavLink href={link.href}>{link.label}</NavLink>
+                    <NavLink href={link.href}>{link.label}</NavLink>
                 </NavItem>
             )
         })
