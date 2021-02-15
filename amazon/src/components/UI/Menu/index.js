@@ -5,9 +5,9 @@ import { NavItem, NavLink } from 'reactstrap'
 const Menu = ({ menus }) => {
 
     return (
-        menus.map(link => {
+        menus.map((link, i) => {
             return (
-                <NavItem>
+                <NavItem key={i}>
                     <NavLink href={link.href}>{link.label}</NavLink>
                 </NavItem>
             )

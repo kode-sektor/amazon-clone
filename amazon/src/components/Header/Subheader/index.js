@@ -4,7 +4,7 @@ import {
     Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
     UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem,
     NavbarText, Row, Button
-  } from 'reactstrap'
+} from 'reactstrap'
 
 import Menu from '../../UI/Menu/index.js'
 
@@ -14,7 +14,7 @@ import primeLogo from '../../../images/prime-logo.png'
 import primeMarketing from '../../../images/prime-marketing.png'
 
 
-const Subheader = () => {
+const Subheader = (props) => {
 
     const [primedropdownOpen, setPrimedropdownOpen] = useState(false);    // Prime dropdown
 
@@ -45,7 +45,8 @@ const Subheader = () => {
 
     return (
         <section className="nav__main">
-            <Button className="nav__sprite__menu">
+            <Button className="nav__sprite__menu" 
+                onClick={(props.showNav) ? props.onHideNav : props.onOpenNav}>
                 <span className="nav__sprite__hamburger"></span>
                 <span className="nav__sprite__label">All</span>
             </Button>
