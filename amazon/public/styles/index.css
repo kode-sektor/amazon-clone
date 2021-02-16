@@ -239,11 +239,10 @@ file rather than small ones. Your choice
     box-sizing: border-box
 }
 body {
-	min-width: 320px;
-	color: #212529;
-	text-align: left;
-	background-color: var(--white);
-	min-height: 100%
+	font-size: 14px;
+    line-height: 20px;
+	color: var(--color);
+    font-family: Arial,sans-serif;
 }
 
 body > header > h1 {

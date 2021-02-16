@@ -1,0 +1,101 @@
+.page__header > aside > div {
+    background-color: rgba(0, 0, 0, 0.8) !important; 
+}
+.page__header > aside > nav {
+    position: fixed;
+    flex-direction: column;
+    width: 365px;
+    height: 100%;
+    max-width: 365px !important;
+    box-shadow: 4px 0 10px 0 rgba(0,0,0,.4);
+    background-color: var(--white);
+    will-change: transform;
+}
+.side__nav__close__icon {
+    position: fixed;
+    display: flex;
+    left: 380px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url(../../../images/nav-sprite-1.png);
+    background-position: -190px -288px;
+    background-repeat: repeat-x;
+}
+.side__nav__customer__profile {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: var(--light-slate-gray);
+}
+.side__nav__avatar {
+    display: flex;
+    height: 25px;
+    width: 27px;
+    margin: 0 10px 0 36px;
+    background-image: url(../../../images/nav-sprite-1.png);
+    background-repeat: repeat-x;
+    background-position: -137px -340px;
+}
+.side__nav__customer__name {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 19px;
+    max-width: 90%;
+    line-height: 25px;
+    color: var(--white);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.side__nav__menu {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    height: calc(100vh - 50px);
+    padding-top: 7px;
+    border: thin solid indigo;
+}
+.side__nav__menu__title {
+    display: inline-block;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+    -webkit-tap-highlight-color: transparent;
+}
+.side__nav__menu__trending {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: scroll;
+    padding-top: 7px;
+    margin: 0;
+    padding-bottom: 30px;
+    line-height: 16px;
+    font-size: 14px;
+    will-change: transform;
+    visibility: visible;
+    border: 2px solid gray;
+}
+.side__nav__menu li {
+    list-style: none;
+    padding-bottom: 2px;
+}
+.side__nav__menu li a {
+    text-decoration: none;
+    display: flex;
+}
+.side__nav__item {
+    padding-right: 20px;
+    padding-left: 36px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+    color: var(--color-2);
+}
+a.side__nav__item {
+    color: var(--color-2);
+}
