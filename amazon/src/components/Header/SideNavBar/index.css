@@ -49,11 +49,18 @@
     text-overflow: ellipsis;
 }
 .side__nav__menu {
+    position: absolute;
     display: flex;
-    position: relative;
+    flex-flow: column;
     overflow-x: hidden;
-    height: calc(100vh - 50px);
+    overflow: scroll;
+    right: 0;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    margin: 0;
     padding-top: 7px;
+    padding-bottom: 30px;
     border: thin solid indigo;
 }
 .side__nav__menu__title {
@@ -65,37 +72,65 @@
     text-transform: capitalize;
     -webkit-tap-highlight-color: transparent;
 }
+.side__nav__menu__title.side__nav__item {
+    padding-bottom: 5px;
+}
 .side__nav__menu__trending {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    overflow: scroll;
-    padding-top: 7px;
-    margin: 0;
-    padding-bottom: 30px;
+    width: 100%;
     line-height: 16px;
     font-size: 14px;
     will-change: transform;
     visibility: visible;
-    border: 2px solid gray;
+
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--grey-tone-21);
 }
 .side__nav__menu li {
     list-style: none;
     padding-bottom: 2px;
 }
 .side__nav__menu li a {
-    text-decoration: none;
     display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
 }
 .side__nav__item {
     padding-right: 20px;
     padding-left: 36px;
     padding-top: 13px;
-    padding-bottom: 5px;
+    padding-bottom: 13px;
     color: var(--color-2);
 }
 a.side__nav__item {
     color: var(--color-2);
+}
+.side__nav__menu__icon__container {
+    display: flex;
+    width: 26px;
+    align-items: center;
+}
+.side__nav__menu__icon__globe {
+    position: relative;
+    display: inline-block;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+    background: url(../../../images/nav-sprite-2.png);
+    background-position: -77px -51px;
+}
+.side__nav__menu__icon__globe.side__nav__menu__icon__canada {
+    font-size: 14px;
+    line-height: 16px;
+    width: 18px;
+    height: 12px;
+    background-image: url(../../../images/nav-sprite-2.png);
+    background-position: 0 -60px;
 }
