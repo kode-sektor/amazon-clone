@@ -1,0 +1,52 @@
+.carousel.slide {
+    width: 100%;
+    max-width: 1500px;
+    max-height: 230px;
+    height: 300px;
+    margin: 0 auto;
+    border: 5px solid fuchsia;
+}
+.carousel-inner {
+    position: relative;
+    overflow: visible;
+    height: calc(100vh - 99px);
+    height: 100%;
+    margin-bottom: 0!important;
+    z-index: 0;
+    border: 2px solid coral;
+}
+.carousel-control-prev {
+    border: thin solid orange;
+}
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    max-height: 250px;
+    top: 0;
+    padding-left: 3px;
+    visibility: visible;
+    z-index: 10;
+    border: thin solid pink;
+}
+.carousel-control-next {
+    padding-left: 0;
+    padding-right: 3px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 34px;
+    height: 52px;
+    vertical-align: top;
+    outline: 0;
+    background-image: url(https://m.media-amazon.com/images/S/sash/ydDD9hnRfziI$y7.png);
+    background-size: 68px 52px;
+    background-position: 0 0;
+    transform: translate(-50%,-50%);
+    border: 2px solid red;
+}
+.carousel-control-next-icon {
+    background-position: -36px 0;
+}

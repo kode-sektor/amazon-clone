@@ -1,3 +1,6 @@
+.page__header > aside {
+    z-index: 100 !important;
+}
 .page__header > aside > div {
     background-color: rgba(0, 0, 0, 0.8) !important; 
 }
@@ -77,13 +80,12 @@
 }
 .side__nav__menu__trending {
     width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
     line-height: 16px;
     font-size: 14px;
     will-change: transform;
     visibility: visible;
-
-    padding-bottom: 5px;
-    margin-bottom: 5px;
     border-bottom: 1px solid var(--grey-tone-21);
 }
 .side__nav__menu li {

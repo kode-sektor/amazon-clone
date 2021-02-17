@@ -1,0 +1,8 @@
+.page__content {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: none;
+    min-width: 1000px;
+    margin-bottom: 0 !important;
+    background: var(--grey-tone-22);
+}
