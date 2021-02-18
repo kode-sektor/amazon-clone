@@ -34,7 +34,7 @@
     margin-top: 0;
     padding: 20px 0 15px 0;
     margin-bottom: 0;
-    background: #fff;
+    background: var(--white);
 }
 .sub__layout__inner > div {
     margin-bottom: 0 !important;
@@ -64,7 +64,7 @@
 .sub__layout__inner__header__greeting {
     padding-left: 75px;
 }
-.sub__layout__inner__header__name {
+.sub__layout__inner__header__title {
     margin-bottom: 0!important;
     display: block;
     overflow: hidden;
@@ -74,12 +74,13 @@
     font-size: 21px !important;
     line-height: 27.3px !important;
 }
-.sub__layout__inner__header__greeting p {
+.sub__layout__inner__header__reg {
     display: block;
     overflow: hidden;
     margin: 0 0 14px 0;
     line-height: 19px!important;
     font-size: 13px!important;
+    font-weight: normal;
     white-space: nowrap;
     margin-bottom: 0;
     text-overflow: ellipsis;
@@ -124,15 +125,10 @@
     height: 100%;
     width: 100%;
     z-index: 1;
-    color: #007185;
     text-decoration: none;
     background-color: rgba(0, 164, 180, 0.05);
 }
 .sub__layout__inner__innerwrap img {
-    vertical-align: top;
-    width: 120px;
-    height: 80px;
-    margin: 10px 5px 0px 5px !important;
     position: absolute;
     top: 0;
     right: 0;
@@ -140,20 +136,70 @@
     left: 0;
     max-width: 100%;
     max-height: 100%;
+    width: 120px;
+    height: 80px;
+    margin: 10px 5px 0px 5px !important;
 }
 .sub__layout__inner__categories figcaption {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    position: absolute;
+    bottom: 20px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     width: 100%;
     padding: 0px 10px;
-    text-align: center;
-    transform: translateY(50%);
-    position: absolute;
-    bottom: 20px;
+    max-height: 36px;
+    overflow: hidden;
     font-size: 12px!important;
     line-height: 18px!important;
-    max-height: 36px;
+    text-align: center;
+    text-overflow: ellipsis;
+    transform: translateY(50%);
+}
+.sub__layout__inner__body__recently__viewed {
+    position: relative;
+    height: 260px;
+    width: 260px;
+    margin: 15px auto;
+}
+.sub__layout__inner__body__recently__viewed > img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+.sub__layout__inner__timeline {
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+.sub__layout__inner__timelinedot {
+    float: right;
+    width: 10px;
+    height: 10px;
+    margin-right: 49%;
+    border-radius: 50%;
+    background-color: var(--ochre-21);
+}
+.sub__layout__inner__timelineline {
+    height: 10px;
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 4px;
+    background: linear-gradient(90deg,var(--grey-tone-22) 50%,rgba(234,237,237,0) 100%);
+}
+.sub__layout__inner__timelinedate  {
+    margin-bottom: 0;
+    text-align: center;
+}
+.sub__layout__card__grid__footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }

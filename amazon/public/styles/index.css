@@ -157,6 +157,7 @@ file rather than small ones. Your choice
 	--ochre-18: #99710d;
 	--ochre-19: #f8e3ad;
 	--ochre-20: #eeba37;
+	--ochre-21: #ffa724;
 
 
     --link: #007BFF;
@@ -285,6 +286,14 @@ select, option {
 }
 option {
 	padding: 0px 2px 1px;
+}
+h1, h2 {
+    padding-bottom: 4px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
 }
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
