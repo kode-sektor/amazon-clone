@@ -10,6 +10,7 @@ import card_gifting from '../../images/card_gifting.jpg'
 import electronics_headphones from '../../images/electronics_headphones.jpg'
 import home_kitchen from '../../images/home_kitchen.jpg'
 import your_orders from '../../images/your_orders.jpg'
+import desktop_small_big_card from '../../images/desktop_small_big_card.jpg'
 
 const Home = (props) => {
   return(
@@ -78,8 +79,8 @@ const Home = (props) => {
                             </h2>
                             <section className="sub__layout__inner__body">
                                 <a href="/gp/product/B07MM2RVM5">
-                                    <div className="sub__layout__inner__body__recently__viewed">
-                                        <img alt="Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights" src="https://m.media-amazon.com/images/I/41S4lanqmIL._AC_SL260_.jpg" class="hud-dashboard-card-v2-image"/>
+                                    <div className="sub__layout__inner__body__fluid__img">
+                                        <img alt="Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights" src="https://m.media-amazon.com/images/I/41S4lanqmIL._AC_SL260_.jpg"/>
                                     </div>
                                 </a>
                                 <div className="sub__layout__inner__timeline">
@@ -91,6 +92,38 @@ const Home = (props) => {
                                         <a href="/history">See your browsing history</a>
                                     </p>
                                 </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section className="sub__layout__card__grid">
+                        <div className="sub__layout__inner">
+                            <h2 className="sub__layout__inner__header">
+                                <span className="sub__layout__inner__header__title">Shop top-rated fashion</span>
+                            </h2>
+                            <section className="sub__layout__inner__body top__rated">
+                                <a href="/gp/product/B07MM2RVM5">
+                                    <div className="sub__layout__inner__body__top__rated">
+                                        <img src={desktop_small_big_card} className="landscape-image" alt="Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights" />
+                                    </div>
+                                </a>
+                            </section>
+                            <div className="sub__layout__inner__timeline">
+                                <p className="sub__layout__card__grid__footer">
+                                    <a href="/history">Shop Now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="sub__layout__card__grid gift">
+                        <div className="sub__layout__inner">
+                            <h2 className="sub__layout__inner__header">
+                                <span className="sub__layout__inner__header__title">Looking for a gift?</span>
+                            </h2>
+                            <section className="sub__layout__inner__body">
+                                <p>Find personalized gift ideas for everyone on your list.</p>
+                                <p className="sub__layout__card__grid__footer">
+                                    <a href="/history">Explore Now</a>
+                                </p>
                             </section>
                         </div>
                     </section>
