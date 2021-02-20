@@ -13,6 +13,8 @@ import electronics_headphones from '../../images/electronics_headphones.jpg'
 import home_kitchen from '../../images/home_kitchen.jpg'
 import your_orders from '../../images/your_orders.jpg'
 import desktop_small_big_card from '../../images/desktop_small_big_card.jpg'
+import desktop_deals_pets from '../../images/desktop_deals_pets.jpg'
+import home_and_kitchen from '../../images/home_and_kitchen.jpg'
 
 const Home = (props) => {
   return(
@@ -117,7 +119,48 @@ const Home = (props) => {
                             </section>
                         </div>
                     </section>
-                    <hr className="card__break" ></hr>
+
+                    <hr className="card__break"/>
+
+                    <section className="sub__layout__card__grid grid__half">
+                        <div className="prime__video">
+                            <h2 className="prime__video__header">
+                                <span className="prime__video__title">Prime Video: Recommended for you</span>
+                                <span className="prime__video__maintitle">John Wick 3: Parabellum</span>
+                            </h2>
+                            <section className="prime__video__ui__card">
+                                <div className="prime__video__img"></div>
+                                <a href="/">
+                                    <div className="prime__video__imgLink">
+                                        <img className="prime__video__image" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d1df7bdf7c76eec04489aa7931026362fed5284766e091f85c8594851526cd3d._RI_V_TTW_QL40_AC_SL792_.jpg" alt="John Wick 3: Parabellum"/>
+                                    </div>
+                                    <div className="prime__gradient"></div>
+                                </a>
+                            </section>
+                            <div className="sub__layout__inner__timeline">
+                                <p className="sub__layout__card__grid__footer">
+                                    <a href="/history">Shop Now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <Card_One
+                        title={"Shop our Pets store"}
+                        img={desktop_deals_pets}
+                        alt={"Shop our Pets store"}
+                        link={"/pet-deals"}
+                        linktxt={"See More"}
+                    />
+
+                    <Card_One
+                        title={"Shop deals in Home & Kitchen"}
+                        img={home_and_kitchen}
+                        alt={"Shop deals in Home & Kitchen"}
+                        link={"/home-and-kitchen"}
+                        linktxt={"Shop Now"}
+                    />
+
                 </div>
             </section>
         </Layout>

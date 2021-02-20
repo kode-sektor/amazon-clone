@@ -63,15 +63,15 @@
 .sub__layout__inner__header__greeting {
     padding-left: 75px;
 }
-.sub__layout__inner__header__title {
-    margin-bottom: 0!important;
+.sub__layout__inner__header__title, .prime__video__title {
     display: block;
     overflow: hidden;
+    line-height: 27.3px !important;
+    margin-bottom: 0!important;
     text-overflow: ellipsis;
     white-space: nowrap;
     padding-bottom: 0;
     font-size: 21px !important;
-    line-height: 27.3px !important;
 }
 .sub__layout__inner__header__reg {
     display: block;
@@ -232,7 +232,7 @@
     margin: auto;
     max-height: 100%;
     height: 100%;
-    max-width: 100%;
+    max-width: none;
 }
 .sub__layout__card__grid.gift {
     order: 1;
@@ -243,8 +243,86 @@
 }
 .card__break {
     flex: 1 0 100%;
-    height: 20px;
     display: block;
+    height: 20px;
+    order: 1;
     border: none;
     margin: 0;
+}
+.grid__half {
+    flex: 2 0 580px;
+    max-width: none;
+}
+.prime__video {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    color: var(--white);
+    background: var(--white);
+}
+.prime__video__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.prime__video__maintitle {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-size: 13px!important;
+    word-break: normal;
+    line-height: 1.3em !important;
+    white-space: normal;
+    color: var(--white);
+}
+
+.prime__video__ui__card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.prime__video__img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    -webkit-transform: scale(1.1);
+    -webkit-filter: blur(10px);
+    background-image: url(https://images-na.ssl-images-amazon.com/images/S/pv-target-images/d1df7bdf7c76eec04489aa7931026362fed5284766e091f85c8594851526cd3d._RI_V_TTW_QL40_AC_SL792_.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.prime__video__imgLink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;    
+    height: 100%;
+    width: 100%;
+}
+.prime__video__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.prime__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--black) 0, transparent 50%,var(--black));
+    margin-bottom: 0;
 }
