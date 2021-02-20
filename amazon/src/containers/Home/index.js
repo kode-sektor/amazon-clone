@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../../components/Layout/index'
 
+import { Card_One } from '../../components/UI/Card'
+
 import Slider from './Carousel'
 
 import './index.css'
@@ -95,25 +97,13 @@ const Home = (props) => {
                             </section>
                         </div>
                     </section>
-                    <section className="sub__layout__card__grid">
-                        <div className="sub__layout__inner">
-                            <h2 className="sub__layout__inner__header">
-                                <span className="sub__layout__inner__header__title">Shop top-rated fashion</span>
-                            </h2>
-                            <section className="sub__layout__inner__body top__rated">
-                                <a href="/gp/product/B07MM2RVM5">
-                                    <div className="sub__layout__inner__body__top__rated">
-                                        <img src={desktop_small_big_card} className="landscape-image" alt="Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights" />
-                                    </div>
-                                </a>
-                            </section>
-                            <div className="sub__layout__inner__timeline">
-                                <p className="sub__layout__card__grid__footer">
-                                    <a href="/history">Shop Now</a>
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+                    <Card_One
+                        title={"Shop top-rated fashion"}
+                        img={desktop_small_big_card}
+                        alt={"Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights"}
+                        link={"/history"}
+                        linktxt={"Shop Now"}
+                    />
                     <section className="sub__layout__card__grid gift">
                         <div className="sub__layout__inner">
                             <h2 className="sub__layout__inner__header">
@@ -127,6 +117,7 @@ const Home = (props) => {
                             </section>
                         </div>
                     </section>
+                    <hr className="card__break" ></hr>
                 </div>
             </section>
         </Layout>
