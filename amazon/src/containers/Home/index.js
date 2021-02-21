@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout/index'
 
-import { Card_One } from '../../components/UI/Card'
+import { Card_One, Card_Two } from '../../components/UI/Card'
 
 import Slider from './Carousel'
 
@@ -22,60 +22,35 @@ const Home = (props) => {
             <Slider />
             <section className="sub__layout">
                 <div className="sub__layout__card">
-                    <section className="sub__layout__card__grid">
-                        <div className="sub__layout__inner">
-                            <h2 className="sub__layout__inner__header">
-                                <a className="sub__layout__inner__header__avatar">
-                                    <img className="user__avatar" src={user_avatar} alt="profile image" />
-                                </a>
-                                <div className="sub__layout__inner__header__greeting">
-                                    <span className="sub__layout__inner__header__title">Hi, Kay</span>
-                                    <span className="sub__layout__inner__header__reg">Customer since 2020</span>
-                                </div>
-                            </h2>
-                            <section className="sub__layout__inner__body">
-                                <p className="sub__layout__inner__intro__text">Top links for you</p>
-                                <section className="sub__layout__inner__frame">
-                                    <figure className="sub__layout__inner__categories">
-                                        <div className="sub__layout__inner__categories__wrap">
-                                            <div className="sub__layout__inner__innerwrap">
-                                                <img alt="top categories recomendations" src={your_orders}/>
-                                                <a aria-label="top categories recomendations" href="https://www.amazon.ca/gp/css/order-history?"></a>
-                                            </div>
-                                            <figcaption>Your Orders</figcaption>
-                                        </div>
-                                    </figure>
-                                    <figure className="sub__layout__inner__categories">
-                                        <div className="sub__layout__inner__categories__wrap">
-                                            <div className="sub__layout__inner__innerwrap">
-                                                <img alt="top categories recomendations" src={card_gifting}/>
-                                                <a aria-label="top categories recomendations" href="https://www.amazon.ca/gp/css/order-history?"></a>
-                                            </div>
-                                            <figcaption>Gift Finder</figcaption>
-                                        </div>
-                                    </figure>
-                                    <figure className="sub__layout__inner__categories">
-                                        <div className="sub__layout__inner__categories__wrap">
-                                            <div className="sub__layout__inner__innerwrap">
-                                                <img alt="top categories recomendations" src={electronics_headphones}/>
-                                                <a aria-label="top categories recomendations" href="https://www.amazon.ca/gp/css/order-history?"></a>
-                                            </div>
-                                            <figcaption>Electronics</figcaption>
-                                        </div>
-                                    </figure>
-                                    <figure className="sub__layout__inner__categories">
-                                        <div className="sub__layout__inner__categories__wrap">
-                                            <div className="sub__layout__inner__innerwrap">
-                                                <img alt="top categories recomendations" src={home_kitchen}/>
-                                                <a aria-label="top categories recomendations" href="https://www.amazon.ca/gp/css/order-history?"></a>
-                                            </div>
-                                            <figcaption>Home &amp; Kitchen</figcaption>
-                                        </div>
-                                    </figure>
-                                </section>
-                            </section>
-                        </div>
-                    </section>
+                    <Card_One
+                        name="Kay"
+                        date={"2020"}
+                        img={[ 
+                            {
+                                avatar : user_avatar,
+                                img_one : { 
+                                    img : your_orders,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "top categories recomendations"
+                                },
+                                img_two : {
+                                    img : card_gifting,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "top categories recomendations"
+                                },
+                                img_three : {
+                                    img : electronics_headphones,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "top categories recomendations"
+                                },
+                                img_four : {
+                                    img : home_kitchen,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "top categories recomendations"
+                                }
+                            }
+                        ]}
+                    />
                     <section className="sub__layout__card__grid">
                         <div className="sub__layout__inner">
                             <h2 className="sub__layout__inner__header">
@@ -99,7 +74,7 @@ const Home = (props) => {
                             </section>
                         </div>
                     </section>
-                    <Card_One
+                    <Card_Two
                         title={"Shop top-rated fashion"}
                         img={desktop_small_big_card}
                         alt={"Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights"}
@@ -145,7 +120,7 @@ const Home = (props) => {
                         </div>
                     </section>
 
-                    <Card_One
+                    <Card_Two
                         title={"Shop our Pets store"}
                         img={desktop_deals_pets}
                         alt={"Shop our Pets store"}
@@ -153,7 +128,7 @@ const Home = (props) => {
                         linktxt={"See More"}
                     />
 
-                    <Card_One
+                    <Card_Two
                         title={"Shop deals in Home & Kitchen"}
                         img={home_and_kitchen}
                         alt={"Shop deals in Home & Kitchen"}
