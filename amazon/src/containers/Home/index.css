@@ -202,6 +202,9 @@
     padding: 0 20px;
     margin-bottom: 30px;
 }
+.sub__layout__card__grid__footer a {
+    color: var(--white);
+}
 .sub__layout__inner__body__ui__card {
     position: relative;
     text-align: center;
