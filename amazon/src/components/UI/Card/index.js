@@ -131,7 +131,7 @@ const Card_Four = ({title, text, catLink}) => {
 }
 
 
-const Card_Video = ({title, img }) => {
+const Card_Video = ({title, img, slug }) => {
     return (
         <section className="sub__layout__card__grid grid__half">
             <div className="prime__video">
@@ -150,7 +150,7 @@ const Card_Video = ({title, img }) => {
                 </section>
                 <div className="sub__layout__inner__timeline">
                     <p className="sub__layout__card__grid__footer">
-                        <a href={`/prime-video/${title}`}>Start watching on Prime Video</a>
+                        <a href={`/prime-video/${slug}`}>Start watching on Prime Video</a>
                     </p>
                 </div>
             </div>

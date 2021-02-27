@@ -329,3 +329,12 @@
     background: linear-gradient(180deg, var(--black) 0, transparent 50%,var(--black));
     margin-bottom: 0;
 }
+
+.secondary__layout {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    max-width: 1480px;
+    margin: 0 auto;
+    margin-bottom: 24px !important;
+}
