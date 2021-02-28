@@ -164,56 +164,66 @@ const Home = (props) => {
                 </section>
 
                 <section className="secondary__layout">
+
+                    <div className="secondary__slider">
+                        <div className="secondary__layout__inner">
+                            <header className="secondary__slider__header">
+                                <h2 className="secondary__slider__heading">Browse stores, programs, and more</h2>
+                                <a href="/" className="explore__more">Explore more</a>
+                            </header>
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: coupon_bubbler,
+                                        altText: "Coupons",
+                                        caption: "Coupons"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: warehouse_deals_bubbler,
+                                        altText: "Warehouse Deals",
+                                        caption: "Warehouse Deals"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: registry,
+                                        altText: "Registry",
+                                        caption: "Registry"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: outlets_hoveler,
+                                        altText: "Outlet",
+                                        caption: "Outlet"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: mozart_fr_bubbler,
+                                        altText: "Switch To French",
+                                        caption: "Switch To French"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: desktop_bubbler,
+                                        altText: "Subscribe & Save",
+                                        caption: "Subscribe & Save"
+                                    }
+                                ]}
+                            />
+                        </div>
+
+                    </div>
                         
-                    <Slider 
-                        type={"multiImage"}
-                        count={6}
-                        items={[
-                            {
-
-                                href: '/',
-                                src: coupon_bubbler,
-                                altText: "Coupons",
-                                caption: "Coupons"
-                            },
-                            {
-
-                                href: '/',
-                                src: warehouse_deals_bubbler,
-                                altText: "Warehouse Deals",
-                                caption: "Warehouse Deals"
-                            },
-                            {
-
-                                href: '/',
-                                src: registry,
-                                altText: "Registry",
-                                caption: "Registry"
-                            },
-                            {
-
-                                href: '/',
-                                src: outlets_hoveler,
-                                altText: "Outlet",
-                                caption: "Outlet"
-                            },
-                            {
-
-                                href: '/',
-                                src: mozart_fr_bubbler,
-                                altText: "Switch To French",
-                                caption: "Switch To French"
-                            },
-                            {
-
-                                href: '/',
-                                src: desktop_bubbler,
-                                altText: "Subscribe & Save",
-                                caption: "Subscribe & Save"
-                            }
-                        ]}
-                    />
-
                 </section>
 
             </section>

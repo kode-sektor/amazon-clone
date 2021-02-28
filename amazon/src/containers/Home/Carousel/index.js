@@ -5,20 +5,33 @@ import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCa
 import './index.css'
 
 
-const Slider = ({type, count, items}) => {
+const Slider = ({type, count, items, carouselClass}) => {
+
+	let itemLength = items.length
+
+	// Do this to avoid extra empty sliders because the default reactstrap 
+	// sliding mechanism relies on the length of the items supplied 
+
+	// And since you have a customised length of items squeezed into a single
+	// page slider, this compromises the expected number of sliders -- creating
+	// extra blanks
+
+	if (count) {
+		itemLength = Math.ceil(items.length / count)
+	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [animating, setAnimating] = useState(false);
 
 	const next = () => {
 		if (animating) return;
-		const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+		const nextIndex = activeIndex === itemLength - 1 ? 0 : activeIndex + 1;
 		setActiveIndex(nextIndex);
 	};
 
 	const previous = () => {
 		if (animating) return;
-		const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+		const nextIndex = activeIndex === 0 ? itemLength - 1 : activeIndex - 1;
 		setActiveIndex(nextIndex);
 	};
 
@@ -26,115 +39,54 @@ const Slider = ({type, count, items}) => {
 		if (animating) return;
 		setActiveIndex(newIndex);
 	};
-
-
-	let carouselItem = []
-
-	// const slides = (type==="multiImage") ?
-
-	// 	items.map((item, i) => {
-
-	// 		++i
-
-	// 		if ((i % count) === 1) {
-	// 			carouselItem = []
-	// 		}
-
-	// 		carouselItem.push(<a href={item.href}>
-	// 							<figure>
-	// 								<img src={item.src} alt={item.altText} />
-	// 								<figcaption>{item.caption}</figcaption>
-	// 							</figure>
-	// 						</a>)
-
-	// 		console.log(item.caption)
-
-	// 		if (i > 3) {
-	// 			return (
-	// 				<CarouselItem
-	// 					onExiting={() => setAnimating(true)}
-	// 					onExited={() => setAnimating(false)}
-	// 					key={item.src}
-	// 				>
-	// 					<a href={item.href}>
-	// 						<img src={item.src} alt={item.altText} />
-	// 					</a>
-	// 					<CarouselCaption
-	// 						captionText={item.caption}
-	// 						captionHeader={item.caption}
-	// 					/>
-	// 				</CarouselItem>
-	// 			)
-	// 		} else {
-	// 			if (i < 0) {
-	// 				return (
-	// 					<CarouselItem
-	// 						onExiting={() => setAnimating(true)}
-	// 						onExited={() => setAnimating(false)}
-	// 						key={item.src}
-	// 					>
-	// 						<a href={item.href}>
-	// 							<img src={item.src} alt={item.altText} />
-	// 						</a>
-	// 						<CarouselCaption
-	// 							captionText={item.caption}
-	// 							captionHeader={item.caption}
-	// 						/>
-	// 					</CarouselItem>
-	// 				)
-	// 			} else {
-	// 				return ""
-	// 			}
-	// 		}
-			
-			// if ((i % count) === 1 || i === count) {
-			// 	return(
-			// 		<CarouselItem
-			// 			onExiting={() => setAnimating(true)}
-			// 			onExited={() => setAnimating(false)}
-			// 			key={item.src}
-			// 		>
-			// 			{carouselItem}
-			// 			<CarouselCaption
-			// 				captionText={item.caption}
-			// 				captionHeader={item.caption}
-			// 			/>
-			// 		</CarouselItem>
-			// 	)
-			// } else {
-			// 	return ("")
-			// }
-
-		// }) 
-		
 	
 	const slide = () => {
 
 		let slides = []
+		let tempCarousel = []
 
+		// Condition to allow Carousel hold multiple images inside 1 carousel slide
 		if (type === "multiImage") {
 
-			items.forEach(item => {
-				slides = [ ...slides, 
+			items.forEach((item, index) => {
+				tempCarousel = [
+									...tempCarousel,
+									(
+										<li>
+											<a key={index} href={item.href}>
+												<figure>
+													<img src={item.src} alt={item.altText} />
+													<figcaption>{item.caption}</figcaption>
+												</figure>
+											</a>
+										</li>
+									)
+				]
+				
+				// Only wrap with <Carousel> once the number of multiple images reaches. 
+				// In this case (6). Or wrap on last cycle. That makes one screen-wide slider.
+				if ((((index + 1) % count) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
 								<CarouselItem
+									className={carouselClass ? carouselClass : ""}
 									onExiting={() => setAnimating(true)}
 									onExited={() => setAnimating(false)}
-									key={item.src}
+									key={index}
 								>
-									<a href={item.href}>
-										<img src={item.src} alt={item.altText} />
-									</a>
-									<CarouselCaption
-										captionText={item.caption}
-										captionHeader={item.caption}
-									/>
+									<ul className={`${carouselClass}__cards`}>{tempCarousel}</ul>
 								</CarouselItem>
-				]
+					]
+					tempCarousel = []
+				}
 			})
+
 		} else {
+			
 			slides = items.map((item) => {
 				return (
 					<CarouselItem
+						className={carouselClass ? carouselClass : ""}
 						onExiting={() => setAnimating(true)}
 						onExited={() => setAnimating(false)}
 						key={item.src}
@@ -150,9 +102,8 @@ const Slider = ({type, count, items}) => {
 				);
 			})
 		}
-
+		
 		return slides
-
 	}
 
 
@@ -163,18 +114,20 @@ const Slider = ({type, count, items}) => {
 			previous={previous}
 			interval={false}
 		>
-			<CarouselIndicators
+			{/* <CarouselIndicators
 				items={items}
 				activeIndex={activeIndex}
 				onClickHandler={goToIndex}
-			/>
+			/> */}
 			{slide()}
 			<CarouselControl
+				className={`${carouselClass}__control`}
 				direction="prev"
 				directionText="Previous"
 				onClickHandler={previous}
 			/>
 			<CarouselControl
+				className={`${carouselClass}__control`}
 				direction="next"
 				directionText="Next"
 				onClickHandler={next}
