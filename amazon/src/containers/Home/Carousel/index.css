@@ -121,8 +121,9 @@
     width: 45px;
     text-align: center;
     box-shadow: 0 1px 3px #888;
-    opacity: 1;
+    opacity: 0;
     -webkit-user-select: none;
+    transition: opacity 1s;
 }
 .secondary__carousel__control.carousel-control-prev {
     left: 0;
@@ -151,6 +152,9 @@
     background-image: url('../../../images/nav-sprite-3.png');
     background-position: -14px 0;
     transform: none;
+}
+.secondary__slider:hover .secondary__carousel__control {
+    opacity: .9;
 }
 .secondary__carousel__control .carousel-control-prev-icon {
     left: auto;

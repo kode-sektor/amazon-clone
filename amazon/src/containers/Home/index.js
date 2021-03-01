@@ -31,7 +31,21 @@ import registry from '../../images/stores-and-programs/registry.jpg'
 import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse_deals_bubbler.jpg'
 import coupon_bubbler from '../../images/stores-and-programs/coupon_bubbler.jpg'
 
-// import ultra_long_rgb_led_light_strips_50ft from '../../images/todays-deals/50ft_ultra_long_rgb_led_light_strips_50ft.jpg'
+import ultra_long_rgb_led_light_strips_50ft from '../../images/todays-deals/ultra_long_rgb_led_light_strips_50ft.jpg'
+import knee_brace_support from '../../images/todays-deals/cambivo_knee_brace_support.jpg'
+import columbia_and_winter_apparel_brands from '../../images/todays-deals/columbia_and_winter_apparel_brands.jpg'
+import DELOMO_smart_interactive_cat_toy_ball from '../../images/todays-deals/DELOMO_smart_interactive_cat_toy_ball.jpg'
+import govee_car_led_lights from '../../images/todays-deals/govee_car_led_lights.jpg'
+import hp_chromebooks from '../../images/todays-deals/hp_chromebooks.jpg'
+import SEALIGHT_H11_H8_H9_LED_headlight_bulbs from '../../images/todays-deals/SEALIGHT_H11_H8_H9_LED_headlight_bulbs.jpg'
+import SMD_5050_RGB_light_strips_with_bluetooth_controller from '../../images/todays-deals/SMD_5050_RGB_light_strips_with_bluetooth_controller.jpg'
+import stellar_floodlight_camera from '../../images/todays-deals/stellar_floodlight_camera.jpg'
+import ticarve_cleaning_gel_for_car_detailing from '../../images/todays-deals/ticarve_cleaning_gel_for_car_detailing.jpg'
+import TRMS_4000_counts_multimètre_voltage_tester from '../../images/todays-deals/TRMS_4000_counts_multimètre_voltage_tester.jpg'
+import vankyo_gaming_headset_CM7000 from '../../images/todays-deals/vankyo_gaming_headset_CM7000.jpg'
+import vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector from '../../images/todays-deals/vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector.jpg'
+import waailu_compatible_for_apple_watch from '../../images/todays-deals/waailu_compatible_for_apple_watch.jpg'
+import women_running_shoes_breathable_lightweight from '../../images/todays-deals/women_running_shoes_breathable_lightweight.jpg'
 
 
 
@@ -239,44 +253,107 @@ const Home = (props) => {
                                     {
 
                                         href: '/',
-                                        src: coupon_bubbler,
-                                        altText: "Coupons",
-                                        caption: "Coupons"
+                                        src: ultra_long_rgb_led_light_strips_50ft,
+                                        altText: "ultra long rgb led light strips 50ft",
+                                        caption: "ultra long rgb led light strips 50ft"
                                     },
                                     {
 
                                         href: '/',
-                                        src: warehouse_deals_bubbler,
-                                        altText: "Warehouse Deals",
-                                        caption: "Warehouse Deals"
+                                        src: knee_brace_support,
+                                        altText: "knee brace support",
+                                        caption: "knee brace support"
                                     },
                                     {
 
                                         href: '/',
-                                        src: registry,
-                                        altText: "Registry",
-                                        caption: "Registry"
+                                        src: columbia_and_winter_apparel_brands,
+                                        altText: "columbia and winter apparel brands",
+                                        caption: "columbia and winter apparel brands"
                                     },
                                     {
 
                                         href: '/',
-                                        src: outlets_hoveler,
-                                        altText: "Outlet",
-                                        caption: "Outlet"
+                                        src: DELOMO_smart_interactive_cat_toy_ball,
+                                        altText: "DELOMO smart interactive cat toy ball",
+                                        caption: "DELOMO smart interactive cat toy ball"
                                     },
                                     {
 
                                         href: '/',
-                                        src: mozart_fr_bubbler,
-                                        altText: "Switch To French",
-                                        caption: "Switch To French"
+                                        src: govee_car_led_lights,
+                                        altText: "govee car led lights",
+                                        caption: "govee car led lights"
                                     },
                                     {
 
                                         href: '/',
-                                        src: desktop_bubbler,
-                                        altText: "Subscribe & Save",
-                                        caption: "Subscribe & Save"
+                                        src: hp_chromebooks,
+                                        altText: "hp chromebooks",
+                                        caption: "hp chromebooks"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: SEALIGHT_H11_H8_H9_LED_headlight_bulbs,
+                                        altText: "SEALIGHT H11 H8 H9 LED headlight_bulbs",
+                                        caption: "SEALIGHT H11 H8 H9 LED headlight_bulbs"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: SMD_5050_RGB_light_strips_with_bluetooth_controller,
+                                        altText: "SMD 5050 RGB light strips with bluetooth controller",
+                                        caption: "SMD 5050 RGB light strips with bluetooth controller"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: stellar_floodlight_camera,
+                                        altText: "stellar floodlight camera",
+                                        caption: "stellar floodlight camera"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: ticarve_cleaning_gel_for_car_detailing,
+                                        altText: "ticarve cleaning gel for car detailing",
+                                        caption: "ticarve cleaning gel for car detailing"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: TRMS_4000_counts_multimètre_voltage_tester,
+                                        altText: "TRMS 4000 counts multimètre voltage tester",
+                                        caption: "TRMS 4000 counts multimètre voltage tester"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: vankyo_gaming_headset_CM7000,
+                                        altText: "vankyo gaming headset CM7000",
+                                        caption: "vankyo gaming headset CM7000"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector,
+                                        altText: "vansky 51 LEDs blacklight flashlight pets ultra violet urine and stain detector",
+                                        caption: "vansky 51 LEDs blacklight flashlight pets ultra violet urine and stain detector"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: waailu_compatible_for_apple_watch,
+                                        altText: "waailu compatible for apple watch",
+                                        caption: "waailu compatible for apple watch"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: women_running_shoes_breathable_lightweight,
+                                        altText: "women running shoes breathable lightweight",
+                                        caption: "women running shoes breathable lightweight"
                                     }
                                 ]}
                             />
