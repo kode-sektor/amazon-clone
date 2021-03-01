@@ -99,6 +99,17 @@
     text-align: center;
     min-width: 145px;
 }
+.secondary__carousel__cards figure {
+    position: relative;
+    height: 275px;
+    margin-bottom: 0;
+}
+.secondary__carousel__cards figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .secondary__carousel__control {
     display: inline;
     position: absolute;
@@ -146,4 +157,22 @@
 }
 .secondary__carousel__control .carousel-control-next-icon {
     background-position: 0 0;
+}
+.secondary__carousel__card {
+    text-align: left;
+}
+.secondary__carousel__price {
+    display: block;
+    font-weight: 400;
+    font-size: 17px !important;
+    line-height: 21.34px !important;
+    color: var(--black);
+}
+.secondary__carousel__oldprice {
+    display: block;
+    position: relative;
+    bottom: 2px;
+    font-weight: lighter;
+    color: #565959;
+    text-decoration: line-through;
 }

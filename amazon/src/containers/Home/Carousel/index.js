@@ -53,12 +53,19 @@ const Slider = ({type, count, items, carouselClass}) => {
 									...tempCarousel,
 									(
 										<li>
-											<a key={index} href={item.href}>
-												<figure>
+											<figure>
+												<a key={index} href={item.href}>
 													<img src={item.src} alt={item.altText} />
-													<figcaption>{item.caption}</figcaption>
-												</figure>
-											</a>
+												</a>
+												<figcaption>
+													{/* {item.caption} */}
+													<div className="secondary__carousel__card">
+														<span className="secondary__carousel__price">$188.99</span>
+														<span className="secondary__carousel__oldprice">$269.99</span>
+														<span className="secondary__carousel__deal">Deal has ended</span>
+													</div>
+												</figcaption>
+											</figure>
 										</li>
 									)
 				]
@@ -102,7 +109,7 @@ const Slider = ({type, count, items, carouselClass}) => {
 				);
 			})
 		}
-		
+
 		return slides
 	}
 

@@ -130,7 +130,6 @@ const Card_Four = ({title, text, catLink}) => {
     )
 }
 
-
 const Card_Video = ({title, img, slug }) => {
     return (
         <section className="sub__layout__card__grid grid__half">
@@ -157,7 +156,5 @@ const Card_Video = ({title, img, slug }) => {
         </section>
     )
 }
-
-
 
 export { Card_One, Card_Two, Card_Three, Card_Four, Card_Video }

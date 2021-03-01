@@ -31,6 +31,8 @@ import registry from '../../images/stores-and-programs/registry.jpg'
 import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse_deals_bubbler.jpg'
 import coupon_bubbler from '../../images/stores-and-programs/coupon_bubbler.jpg'
 
+// import ultra_long_rgb_led_light_strips_50ft from '../../images/todays-deals/50ft_ultra_long_rgb_led_light_strips_50ft.jpg'
+
 
 
 const Home = (props) => {
@@ -221,7 +223,64 @@ const Home = (props) => {
                                 ]}
                             />
                         </div>
+                    </div>
+                    <hr className="card__break"/>
+                    <div className="secondary__slider ">
+                        <div className="secondary__layout__inner deals">
+                            <header className="secondary__slider__header">
+                                <h2 className="secondary__slider__heading">Today's Deals</h2>
+                                <a href="/" className="explore__more">See all deals</a>
+                            </header>
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
 
+                                        href: '/',
+                                        src: coupon_bubbler,
+                                        altText: "Coupons",
+                                        caption: "Coupons"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: warehouse_deals_bubbler,
+                                        altText: "Warehouse Deals",
+                                        caption: "Warehouse Deals"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: registry,
+                                        altText: "Registry",
+                                        caption: "Registry"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: outlets_hoveler,
+                                        altText: "Outlet",
+                                        caption: "Outlet"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: mozart_fr_bubbler,
+                                        altText: "Switch To French",
+                                        caption: "Switch To French"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: desktop_bubbler,
+                                        altText: "Subscribe & Save",
+                                        caption: "Subscribe & Save"
+                                    }
+                                ]}
+                            />
+                        </div>
                     </div>
                         
                 </section>
