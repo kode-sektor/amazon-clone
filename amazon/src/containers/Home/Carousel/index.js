@@ -22,7 +22,6 @@ const Slider = ({type, count, items, carouselClass}) => {
 
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [animating, setAnimating] = useState(false);
-	
 
 	const next = () => {
 		if (animating) return;

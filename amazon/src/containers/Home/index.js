@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout/index'
 
-import { Card_One, Card_Two, Card_Three, Card_Four, Card_Video } from '../../components/UI/Card'
+import { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Video } from '../../components/UI/Card'
 
 import Slider from './Carousel'
 
@@ -46,6 +46,20 @@ import vankyo_gaming_headset_CM7000 from '../../images/todays-deals/vankyo_gamin
 import vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector from '../../images/todays-deals/vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector.jpg'
 import waailu_compatible_for_apple_watch from '../../images/todays-deals/waailu_compatible_for_apple_watch.jpg'
 import women_running_shoes_breathable_lightweight from '../../images/todays-deals/women_running_shoes_breathable_lightweight.jpg'
+
+import JUXIAO_bluetooth_led_lights_strip_for_bedroom from '../../images/related-items/JUXIAO_bluetooth_led_lights_strip_for_bedroom.jpg'
+import LED_light_strip_KIKO_color_changing_led_lights from '../../images/related-items/LED_light_strip_KIKO_color_changing_led_lights_21.3ft_x_6.5m.jpg'
+import LED_strip_lights from '../../images/related-items/LED_strip_lights_16.4ft.jpg'
+import LED_strip_lights_flexible_non_waterproof_50ft_x_15m from '../../images/related-items/LED_strip_lights_flexible_non_waterproof_50ft_x_15m.jpg'
+import LED_strip_lights_XProject_LED_lights_for_bedroom_65ft from '../../images/related-items/LED_strip_lights_XProject_LED_lights_for_bedroom_65.6ft.jpg'
+import Kokuji_LED_strip_lights_kit_656ft_x_20m from '../../images/related-items/Kokuji_LED_strip_lights_kit_65.6ft_x_20m.jpg'
+
+import evergreen_gssusa from '../../images/categories/evergreen_gssusa.jpg'
+import evergreen_kitchen from '../../images/categories/evergreen_kitchen.jpg'
+import evergreen_pillows from '../../images/categories/evergreen_pillows.jpg'
+import evergreen_earphones from '../../images/categories/evergreen_earphones.jpg'
+
+import listerine_cool_mint_antiseptic_mouthwash from '../../images/products/listerine_cool_mint_antiseptic_mouthwash.jpg'
 
 
 
@@ -239,7 +253,7 @@ const Home = (props) => {
                         </div>
                     </div>
                     <hr className="card__break"/>
-                    <div className="secondary__slider ">
+                    <div className="secondary__slider">
                         <div className="secondary__layout__inner deals">
                             <header className="secondary__slider__header">
                                 <h2 className="secondary__slider__heading">Today's Deals</h2>
@@ -359,7 +373,100 @@ const Home = (props) => {
                             />
                         </div>
                     </div>
-                        
+                    <hr className="card__break"/>
+                    <div className="secondary__slider">
+                        <div className="secondary__layout__inner deals">
+                            <header className="secondary__slider__header">
+                                <h2 className="secondary__slider__heading">Related to items that you've viewed</h2>
+                                <a href="/" className="explore__more">See more</a>
+                            </header>
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: JUXIAO_bluetooth_led_lights_strip_for_bedroom,
+                                        altText: "JUXIAO bluetooth led lights strip for bedroom",
+                                        caption: "JUXIAO bluetooth led lights strip for bedroom"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: LED_light_strip_KIKO_color_changing_led_lights,
+                                        altText: "LED light strip KIKO color changing led lights",
+                                        caption: "LED light strip KIKO color changing led lights"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: LED_strip_lights_flexible_non_waterproof_50ft_x_15m,
+                                        altText: "LED strip lights flexible non waterproof 50ft x 15m",
+                                        caption: "LED strip lights flexible non waterproof 50ft x 15m"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: LED_strip_lights_XProject_LED_lights_for_bedroom_65ft,
+                                        altText: "LED strip lights XProject LED lights for bedroom 65ft",
+                                        caption: "LED strip lights XProject LED lights for bedroom 65ft"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: Kokuji_LED_strip_lights_kit_656ft_x_20m,
+                                        altText: "Kokuji LED strip lights kit 656ft x 20m",
+                                        caption: "Kokuji LED strip lights kit 656ft x 20m"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: LED_strip_lights,
+                                        altText: "LED strip lights",
+                                        caption: "LED strip lights"
+                                    }
+                                ]}
+                            />
+                        </div>
+                    </div>
+                    <hr className="card__break"/>
+                    <Card_Five
+                        name="Kay"
+                        img={[ 
+                            {
+                                img_one : { 
+                                    img : evergreen_gssusa,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "Home"
+                                },
+                                img_two : {
+                                    img : evergreen_kitchen,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "Kitchen"
+                                },
+                                img_three : {
+                                    img : evergreen_pillows,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "Auto"
+                                },
+                                img_four : {
+                                    img : evergreen_earphones,
+                                    href : "https://www.amazon.ca/gp/css/order-history?",
+                                    alt : "Categories"
+                                }
+                            }
+                        ]}
+                    />
+                    <Card_Three
+                        title={"Shop top-rated fashion"}
+                        img={listerine_cool_mint_antiseptic_mouthwash}
+                        alt={"Listerine Cool Mint Antisteptic MouthWash - 1.5L"}
+                        link={"/history"}
+                        rating={5}
+                        linktxt={"See more products to review"}
+                    />
                 </section>
 
             </section>

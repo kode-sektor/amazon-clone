@@ -120,7 +120,7 @@
     line-height: 100px;
     width: 45px;
     text-align: center;
-    box-shadow: 0 1px 3px #888;
+    box-shadow: 0 1px 3px var(--grey-tone-24);
     opacity: 0;
     -webkit-user-select: none;
     transition: opacity 1s;
@@ -177,6 +177,6 @@
     position: relative;
     bottom: 2px;
     font-weight: lighter;
-    color: #565959;
+    color: var(--grey-tone-23);
     text-decoration: line-through;
 }
