@@ -61,6 +61,8 @@ import evergreen_earphones from '../../images/categories/evergreen_earphones.jpg
 
 import listerine_cool_mint_antiseptic_mouthwash from '../../images/products/listerine_cool_mint_antiseptic_mouthwash.jpg'
 
+import amazon_basics from '../../images/amazon-basics/mac-laptop-charging-iphone.jpg'
+
 
 
 const Home = (props) => {
@@ -466,6 +468,13 @@ const Home = (props) => {
                         link={"/history"}
                         rating={5}
                         linktxt={"See more products to review"}
+                    />
+                    <Card_Three
+                        title={"Amazon Basics"}
+                        img={amazon_basics}
+                        alt={"Amazon Basics"}
+                        link={"/history"}
+                        linktxt={"Shop the AmazonBasics store"}
                     />
                 </section>
 

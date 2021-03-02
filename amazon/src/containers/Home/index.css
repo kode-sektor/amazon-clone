@@ -232,9 +232,9 @@
     bottom: -9999px;
     left: -9999px;
     margin: auto;
-    max-height: 100%;
+    /* max-height: 100%;
     height: 100%;
-    max-width: none;
+    max-width: none; */
 }
 .sub__layout__card__grid.gift {
     margin-bottom: 10px;
@@ -334,13 +334,13 @@
     max-width: 1480px;
     margin: 0 auto;
     margin-bottom: 24px !important;
-        font-size: 13px !important;
+    font-size: 13px !important;
     line-height: 19px !important;
 }
 
 .secondary__slider {
-    flex: 1 0 100%;
     display: block;
+    flex: 1 0 100%;
     height: auto !important;
     min-height: 0 !important;
     padding-left: 10px;
@@ -362,21 +362,21 @@
 .secondary__slider__heading {
     width: auto;
     padding-bottom: 0;
-    white-space: nowrap;
     line-height: 1.5 !important;
     font-size: 21px;
     font-weight: 400;
     color: var(--grey-tone-8);
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
 .explore__more {
     display: block;
     overflow: hidden;
     width: auto;
-    text-align: right;
-    font-size: 14px;
     padding-left: 15px;
     line-height: 35px;
+    font-size: 14px;
+    text-align: right;
     text-overflow: ellipsis;
 }
 .deals .secondary__carousel__cards > li {
@@ -386,30 +386,30 @@
 
 .sub__layout__outlet .sub__layout__inner__frame {
     justify-content: space-between;
+    height: 275px;
     flex-grow: 1;
     padding: 0 20px;
     margin-bottom: 44px;
-    height: 275px;
     border: thin solid brown;
 }
 .sub__layout__outlet .sub__layout__inner__categories {
-    overflow: hidden;
     display: inline-block;
-    height: 50%;
-    margin-bottom: 8px !important;
+    overflow: hidden;
     flex-basis: 47.5%;
+    height: 50%;
     padding: 0 0 36px;
+    margin-bottom: 8px !important;
     margin: 0;
     border: thin solid thistle;
 }
 .sub__layout__outlet .sub__layout__inner__categories figcaption {
     display: inline-block;
     max-height: 38px;
+    width: auto;
     height: 36px;
     padding: 0;
     vertical-align: middle !important;
     text-align: start;
-    width: auto;
     color: var(--color);
     transform: translateY(40px);
 }
@@ -437,36 +437,35 @@
     text-align: center;
 }
 .star__rating {
-    background-image: url(https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png);
-    background-size: 400px 900px;
-    background-repeat: no-repeat;
     display: inline-block;
-    vertical-align: top;
     height: 35px;
     width: 38px;
+    vertical-align: top;
+    background-image: url('../../images/nav-sprite-4.png');
     background-position: -350px -705px;
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
 }
 .sub__layout__outlet .sub__layout__inner > div {
     display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    max-width: none;
     padding: 0 20px;
     margin-bottom: 20px !important;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: none;
     border: thin solid teal;
 }
 .sub__layout__outlet .sub__layout__card__grid__footer {
     position: static;
-    margin-bottom: 0;
     padding: 0;
+    margin-bottom: 0;
 }
 .sub__layout__outlet .sub__layout__card__grid__footer a {
-    line-height: 1.3em !important;
-    max-height: 1.3em;
-
     display: inline-block;
     width: 100%;
-    white-space: normal;
     height: auto;
+    line-height: 1.3em !important;
+    max-height: 1.3em;
+    white-space: normal;
 }

@@ -101,11 +101,15 @@ const Card_Three = ({title, img, alt, link, linktxt, rating}) => {
                             <img src={img} className="landscape-image" alt={alt} />
                         </div>
                     </a>
-                    <section className="sub__layout__inner__rating">
-                        {Array(rating).fill().map((_, i) => (
-                            <i className="star__rating"></i>
-                        ))}
-                    </section>
+                    { (rating) ? 
+                        <section className="sub__layout__inner__rating">
+                            {Array(rating).fill().map((_, i) => (
+                                <i className="star__rating"></i>
+                            ))}
+                        </section> 
+                        : 
+                        ""  
+                    }
                 </section>
                 <div className="sub__layout__inner__timeline">
                     <p className="sub__layout__card__grid__footer">
