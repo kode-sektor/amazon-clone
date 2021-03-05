@@ -23,7 +23,7 @@
     padding-left: 10px;
     padding-right: 10px;
     min-width: 290px;
-    max-width: 400px;
+    /* max-width: 400px; */
     border: 2px solid tan;
 }
 .sub__layout__inner {
@@ -34,9 +34,15 @@
     padding: 20px 0 15px 0;
     margin-bottom: 0;
     background: var(--white);
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 20px;
+    border: thin solid firebrick;
 }
-.sub__layout__inner > div {
-    position: relative;
+.sub__layout__inner__footer {
+    /* position: relative;
     margin-bottom: 0 !important;
     font-size: 13px !important;
     line-height: 19px !important;
@@ -44,7 +50,14 @@
     flex-flow: row wrap;
     max-width: 1480px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 0; */
+
+    padding: 0 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: thin solid green;
 }
 .sub__layout__inner__header {
     display: flex;
@@ -72,6 +85,14 @@
     padding-bottom: 0;
     font-size: 21px !important;
 }
+.sub__layout__inner__header__title {
+    display: block;
+    line-height: 1.3em !important;
+    max-height: 3.9em;
+    white-space: normal;
+    text-overflow: initial;
+    word-break: normal;
+}
 .sub__layout__inner__header__reg {
     display: block;
     overflow: hidden;
@@ -84,9 +105,15 @@
     text-overflow: ellipsis;
 }
 .sub__layout__inner__body {
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
     position: relative;
-    padding: 0 20px 56px 20px;
-    margin-bottom: 0;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 0 20px;
+    margin-bottom: 44px;
+    height: 275px;
+    border: 2px solid violet;
 }
 .sub__layout__inner__intro__text {
     display: block;
@@ -170,10 +197,6 @@
     max-width: 100%;
     max-height: 100%;
 }
-.sub__layout__inner__timeline {
-    margin-top: 8px;
-    margin-bottom: 4px;
-}
 .sub__layout__inner__timelinedot {
     float: right;
     width: 10px;
@@ -194,33 +217,54 @@
     text-align: center;
 }
 .sub__layout__card__grid__footer {
-    position: absolute;
+    /* position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
+    margin-bottom: 0;
+}
+.block__card .sub__layout__card__grid__footer {
+    position: static;
+    margin-bottom: 0;
+    padding: 0;
 }
 .sub__layout__card__grid__footer a {
     /color: var(--white);
 }
 .sub__layout__inner__body__ui__card {
     position: relative;
+    overflow: hidden;
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 20px;
     text-decoration: underline;
 }
-.sub__layout__inner__body.ui__card {
-    -webkit-box-direction: normal;
-    box-sizing: border-box;
+.block__card .sub__layout__inner__body {
     position: relative;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    padding: 0 20px;
-    margin-bottom: 44px;
-    height: 275px;
+    height: auto;
+    padding: 0 20px 56px 20px;
+    /* text-align: center !important; */
+    border: thin solid yellow;
+}
+.sub__layout__inner__link {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+}
+.block__card .sub__layout__inner__link {
+    height: auto;
+    width: auto;
+}
+.block__card .sub__layout__inner__link {
+    margin-bottom: 24px!important;
+    margin-top: 32px!important;
+    text-align: center!important;
+    border: thin solid yellow;
 }
 .landscape-image {
     text-align: center;
@@ -232,9 +276,12 @@
     bottom: -9999px;
     left: -9999px;
     margin: auto;
-    /* max-height: 100%;
-    height: 100%;
-    max-width: none; */
+    max-height: 100%;
+    max-width: none;
+    height: auto;
+}
+.block__card .landscape-image {
+    position: static;
 }
 .sub__layout__card__grid.gift {
     margin-bottom: 10px;
@@ -384,7 +431,7 @@
     min-width: 165px;
 }
 
-.sub__layout__outlet .sub__layout__inner__frame {
+.fluid__card .sub__layout__inner__frame {
     justify-content: space-between;
     height: 275px;
     flex-grow: 1;
@@ -392,7 +439,7 @@
     margin-bottom: 44px;
     border: thin solid brown;
 }
-.sub__layout__outlet .sub__layout__inner__categories {
+.fluid__card .sub__layout__inner__categories {
     display: inline-block;
     overflow: hidden;
     flex-basis: 47.5%;
@@ -402,7 +449,7 @@
     margin: 0;
     border: thin solid thistle;
 }
-.sub__layout__outlet .sub__layout__inner__categories figcaption {
+.fluid__card .sub__layout__inner__categories figcaption {
     display: inline-block;
     max-height: 38px;
     width: auto;
@@ -413,28 +460,36 @@
     color: var(--color);
     transform: translateY(40px);
 }
-.sub__layout__outlet .sub__layout__inner__innerwrap {
+.fluid__card .sub__layout__inner__innerwrap {
     width: auto;
     height: auto;
     margin: auto;
 }
-.sub__layout__outlet .sub__layout__inner__innerwrap img {
+.fluid__card .sub__layout__inner__innerwrap img {
     width: auto;
     height: auto;
     margin: 0 !important
 }
 
-.sub__layout__outlet .sub__layout__inner__body {
-    padding: 0 20px 56px 20px;
-    margin-bottom: 0;
-}
-.sub__layout__outlet .sub__layout__inner__body__ui__card {
-    margin-bottom: 24px !important;
+/* .fluid__card .sub__layout__inner__body {
+    padding: 0 20px;
+    margin-bottom: 44px;
+    height: 275px;
+
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+    border: thin solid pink;
+} */
+.fluid__card .sub__layout__inner__body__ui__card {
+    /* margin-bottom: 24px !important;
     margin-top: 32px !important;
-    text-align: center !important;
+    text-align: center !important; */
 }
 .sub__layout__inner__rating {
     text-align: center;
+    border: thin solid maroon;
 }
 .star__rating {
     display: inline-block;
@@ -446,7 +501,7 @@
     background-size: 400px 900px;
     background-repeat: no-repeat;
 }
-.sub__layout__outlet .sub__layout__inner > div {
+.fluid__card .sub__layout__inner > div {
     display: block;
     position: absolute;
     width: 100%;
@@ -456,12 +511,12 @@
     margin-bottom: 20px !important;
     border: thin solid teal;
 }
-.sub__layout__outlet .sub__layout__card__grid__footer {
+.fluid__card .sub__layout__card__grid__footer {
     position: static;
     padding: 0;
     margin-bottom: 0;
 }
-.sub__layout__outlet .sub__layout__card__grid__footer a {
+.fluid__card .sub__layout__card__grid__footer a {
     display: inline-block;
     width: 100%;
     height: auto;

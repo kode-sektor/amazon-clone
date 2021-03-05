@@ -62,6 +62,7 @@ import evergreen_earphones from '../../images/categories/evergreen_earphones.jpg
 import listerine_cool_mint_antiseptic_mouthwash from '../../images/products/listerine_cool_mint_antiseptic_mouthwash.jpg'
 
 import amazon_basics from '../../images/amazon-basics/mac-laptop-charging-iphone.jpg'
+import coffee_cup from '../../images/products/coffee-cup.jpg'
 
 
 
@@ -154,6 +155,7 @@ const Home = (props) => {
                             }
                         ]}
                         date={"Sun, Feb 14"}
+                        cardClass={"block__card"}
                     />
 
                     <Card_Three
@@ -468,6 +470,7 @@ const Home = (props) => {
                         link={"/history"}
                         rating={5}
                         linktxt={"See more products to review"}
+                        cardClass={"block__card"}
                     />
                     <Card_Three
                         title={"Amazon Basics"}
@@ -475,6 +478,15 @@ const Home = (props) => {
                         alt={"Amazon Basics"}
                         link={"/history"}
                         linktxt={"Shop the AmazonBasics store"}
+                        cardClass={"fluid__card"}
+                    />
+                    <Card_Three
+                        title={"Explore our Coffee Shop"}
+                        img={coffee_cup}
+                        alt={"Explore our Coffee Shop"}
+                        link={"/history"}
+                        linktxt={"Shop best-selling coffee"}
+                        cardClass={"fluid__card"}
                     />
                 </section>
 

@@ -60,9 +60,9 @@ const Card_One = ({name, date, img}) => {
     )
 }
 
-const Card_Two = ({title, img, date}) => {
+const Card_Two = ({title, img, date, cardClass=""}) => {
     return (
-        <section className="sub__layout__card__grid">
+        <section className={`sub__layout__card__grid ${cardClass}`}>
             <div className="sub__layout__inner">
                 <h2 className="sub__layout__inner__header">
                     <span className="sub__layout__inner__header__title">{title}</span>
@@ -78,25 +78,27 @@ const Card_Two = ({title, img, date}) => {
                         <div class="sub__layout__inner__timelineline"></div>
 
                         <p class="sub__layout__inner__timelinedate">{date}</p>
-                        <p className="sub__layout__card__grid__footer">
-                            <a href="/history">See your browsing history</a>
-                        </p>
                     </div>
                 </section>
+                <footer className="sub__layout__inner__footer">
+                    <p className="sub__layout__card__grid__footer">
+                        <a href="/history">See your browsing history</a>
+                    </p>
+                </footer>
             </div>
         </section>
     )
 }
 
-const Card_Three = ({title, img, alt, link, linktxt, rating}) => {
+const Card_Three = ({title, img, alt, link, linktxt, rating, cardClass=""}) => {
     return (
-        <section className="sub__layout__card__grid sub__layout__outlet">
+        <section className={`sub__layout__card__grid ${cardClass}`}>
             <div className="sub__layout__inner">
                 <h2 className="sub__layout__inner__header">
                     <span className="sub__layout__inner__header__title">{title}</span>
                 </h2>
-                <section className="sub__layout__inner__body ui__card">
-                    <a href="/gp/product/B07MM2RVM5">
+                <section className="sub__layout__inner__body">
+                    <a className="sub__layout__inner__link" href="/gp/product/B07MM2RVM5">
                         <div className="sub__layout__inner__body__ui__card">
                             <img src={img} className="landscape-image" alt={alt} />
                         </div>
@@ -104,18 +106,18 @@ const Card_Three = ({title, img, alt, link, linktxt, rating}) => {
                     { (rating) ? 
                         <section className="sub__layout__inner__rating">
                             {Array(rating).fill().map((_, i) => (
-                                <i className="star__rating"></i>
+                                <a href="/"><i className="star__rating"></i></a>
                             ))}
                         </section> 
                         : 
                         ""  
                     }
                 </section>
-                <div className="sub__layout__inner__timeline">
+                <footer className="sub__layout__inner__footer">
                     <p className="sub__layout__card__grid__footer">
                         <a href={link}>{linktxt}</a>
                     </p>
-                </div>
+                </footer>
             </div>
         </section>
     )
@@ -123,17 +125,19 @@ const Card_Three = ({title, img, alt, link, linktxt, rating}) => {
 
 const Card_Four = ({title, text, catLink}) => {
     return (
-        <section className="sub__layout__card__grid gift">
+        <section className="sub__layout__card__grid gift block__card">
             <div className="sub__layout__inner">
                 <h2 className="sub__layout__inner__header">
                     <span className="sub__layout__inner__header__title">{title}</span>
                 </h2>
                 <section className="sub__layout__inner__body">
                     <p>{text}</p>
+                </section>
+                <footer className="sub__layout__inner__footer">
                     <p className="sub__layout__card__grid__footer">
                         <a href={catLink}>Explore Now</a>
                     </p>
-                </section>
+                </footer>
             </div>
         </section>
     )
