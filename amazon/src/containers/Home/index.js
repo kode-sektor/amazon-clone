@@ -143,6 +143,7 @@ const Home = (props) => {
                                 }
                             }
                         ]}
+                        cardClass={"grid__card"}
                     />
 
                     <Card_Two 
