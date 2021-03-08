@@ -4,6 +4,7 @@ import Layout from '../../components/Layout/index'
 import { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Video } from '../../components/UI/Card'
 
 import Slider from './Carousel'
+import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 
 import './index.css'
 
@@ -200,7 +201,61 @@ const Home = (props) => {
 
                 <section className="secondary__layout">
 
-                    <div className="secondary__slider">
+                    <PrimaryCarousel 
+                        heading={"Browse stores, programs, and more"}
+                        link={"Explore more"}
+                        slider={<Slider 
+                                    type={"multiImage"}
+                                    carouselClass={"secondary__carousel"}
+                                    count={6}
+                                    items={[
+                                        {
+
+                                            href: '/',
+                                            src: coupon_bubbler,
+                                            altText: "Coupons",
+                                            caption: "Coupons"
+                                        },
+                                        {
+
+                                            href: '/',
+                                            src: warehouse_deals_bubbler,
+                                            altText: "Warehouse Deals",
+                                            caption: "Warehouse Deals"
+                                        },
+                                        {
+
+                                            href: '/',
+                                            src: registry,
+                                            altText: "Registry",
+                                            caption: "Registry"
+                                        },
+                                        {
+
+                                            href: '/',
+                                            src: outlets_hoveler,
+                                            altText: "Outlet",
+                                            caption: "Outlet"
+                                        },
+                                        {
+
+                                            href: '/',
+                                            src: mozart_fr_bubbler,
+                                            altText: "Switch To French",
+                                            caption: "Switch To French"
+                                        },
+                                        {
+
+                                            href: '/',
+                                            src: desktop_bubbler,
+                                            altText: "Subscribe & Save",
+                                            caption: "Subscribe & Save"
+                                        }
+                                    ]}
+                            />}
+                    />
+
+                    {/* <div className="secondary__slider">
                         <div className="secondary__layout__inner">
                             <header className="secondary__slider__header">
                                 <h2 className="secondary__slider__heading">Browse stores, programs, and more</h2>
@@ -256,7 +311,7 @@ const Home = (props) => {
                                 ]}
                             />
                         </div>
-                    </div>
+                    </div> */}
                     <hr className="card__break"/>
                     <div className="secondary__slider">
                         <div className="secondary__layout__inner deals">
