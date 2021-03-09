@@ -6,7 +6,9 @@ const PrimaryCarousel = ({heading, link, slider}) => {
             <div className="secondary__layout__inner">
                 <header className="secondary__slider__header">
                     <h2 className="secondary__slider__heading">{heading}</h2>
-                    <a href="/" className="explore__more">{link}</a>
+                    {
+                        link ? <a href="/" className="explore__more">{link}</a> : ""
+                    }
                 </header>
                 {slider}
             </div>

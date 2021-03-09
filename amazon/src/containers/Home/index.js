@@ -65,6 +65,19 @@ import listerine_cool_mint_antiseptic_mouthwash from '../../images/products/list
 import amazon_basics from '../../images/amazon-basics/mac-laptop-charging-iphone.jpg'
 import coffee_cup from '../../images/products/coffee-cup.jpg'
 
+import apekx from '../../images/products/APEKX-wireless-bluetooth-5.0-sports-earbuds.jpg'
+import basil_basket from '../../images/products/basil-cento-rear-basket-black.jpg'
+import rack_black from '../../images/products/mega-cooling-rack-black.jpg'
+import mirrycle from '../../images/products/mirrycle-incredibell-adjustabell-2-bike-bell.jpg'
+import wilton_cake_pan from '../../images/products/wilton-9-x-13-inch-oblong-cake-pan.jpg'
+import wilton_stick_8_cake_pan from '../../images/products/wilton-non-stick-8-inch-square-cake-pans.jpg'
+
+import wacom_intuos from '../../images/products/wacom-intuos-graphics-drawing-tablet-7.9-x-6.3-black-(CTL4100).jpg'
+import anker_4_port from '../../images/products/anker-4-port-USB-3.0-ultra-slim-data-hub-for-macbook-mac-pro-mini-iMac-surface-pro-XPS-notebook-PC-USB-flash.jpg'
+import logitech_C920x_pro_HD_webcam from '../../images/products/logitech-C920x-pro-HD-webcam.jpg'
+import nonda_USB_type_C_to_USB_3_adapter from '../../images/products/nonda-USB-type-C-to-USB-3.0-adapter.jpg'
+import LUTER_barberology_comb_clipper from '../../images/products/LUTER-barberology-comb-clipper.jpg'
+import sabrent_4_port_USB_3_hub from '../../images/products/sabrent-4-port-USB-3.0-hub-with-individual-LED-power-switches.jpg'
 
 
 const Home = (props) => {
@@ -146,7 +159,6 @@ const Home = (props) => {
                         ]}
                         cardClass={"grid__card"}
                     />
-
                     <Card_Two 
                         title={"Recently Viewed"}
                         img={[
@@ -159,7 +171,6 @@ const Home = (props) => {
                         date={"Sun, Feb 14"}
                         cardClass={"block__card"}
                     />
-
                     <Card_Three
                         title={"Shop top-rated fashion"}
                         img={desktop_small_big_card}
@@ -167,21 +178,17 @@ const Home = (props) => {
                         link={"/history"}
                         linktxt={"Shop Now"}
                     />
-                    
                     <Card_Four
                         title={"Looking for a gift?"}
                         text={"Find personalized gift ideas for everyone on your list."}
                         catLink={"/gifts"}
                     />
-
                     <hr className="card__break"/>
-
                     <Card_Video
                         title={"John Wick 3: Parabellum"}
                         slug={"John-Wick-3-Parabellum"}
                         img={john_wick_3}
                     />
-
                     <Card_Three
                         title={"Shop our Pets store"}
                         img={desktop_deals_pets}
@@ -189,7 +196,6 @@ const Home = (props) => {
                         link={"/pet-deals"}
                         linktxt={"See More"}
                     />
-
                     <Card_Three
                         title={"Shop deals in Home & Kitchen"}
                         img={home_and_kitchen}
@@ -200,67 +206,10 @@ const Home = (props) => {
                 </section>
 
                 <section className="secondary__layout">
-
                     <PrimaryCarousel 
                         heading={"Browse stores, programs, and more"}
                         link={"Explore more"}
-                        slider={<Slider 
-                                    type={"multiImage"}
-                                    carouselClass={"secondary__carousel"}
-                                    count={6}
-                                    items={[
-                                        {
-
-                                            href: '/',
-                                            src: coupon_bubbler,
-                                            altText: "Coupons",
-                                            caption: "Coupons"
-                                        },
-                                        {
-
-                                            href: '/',
-                                            src: warehouse_deals_bubbler,
-                                            altText: "Warehouse Deals",
-                                            caption: "Warehouse Deals"
-                                        },
-                                        {
-
-                                            href: '/',
-                                            src: registry,
-                                            altText: "Registry",
-                                            caption: "Registry"
-                                        },
-                                        {
-
-                                            href: '/',
-                                            src: outlets_hoveler,
-                                            altText: "Outlet",
-                                            caption: "Outlet"
-                                        },
-                                        {
-
-                                            href: '/',
-                                            src: mozart_fr_bubbler,
-                                            altText: "Switch To French",
-                                            caption: "Switch To French"
-                                        },
-                                        {
-
-                                            href: '/',
-                                            src: desktop_bubbler,
-                                            altText: "Subscribe & Save",
-                                            caption: "Subscribe & Save"
-                                        }
-                                    ]}
-                            />}
-                    />
-
-                    {/* <div className="secondary__slider">
-                        <div className="secondary__layout__inner">
-                            <header className="secondary__slider__header">
-                                <h2 className="secondary__slider__heading">Browse stores, programs, and more</h2>
-                                <a href="/" className="explore__more">Explore more</a>
-                            </header>
+                        slider={
                             <Slider 
                                 type={"multiImage"}
                                 carouselClass={"secondary__carousel"}
@@ -310,15 +259,13 @@ const Home = (props) => {
                                     }
                                 ]}
                             />
-                        </div>
-                    </div> */}
+                        }
+                    />
                     <hr className="card__break"/>
-                    <div className="secondary__slider">
-                        <div className="secondary__layout__inner deals">
-                            <header className="secondary__slider__header">
-                                <h2 className="secondary__slider__heading">Today's Deals</h2>
-                                <a href="/" className="explore__more">See all deals</a>
-                            </header>
+                    <PrimaryCarousel 
+                        heading={"Today's Deals"}
+                        link={"See all deals"}
+                        slider={
                             <Slider 
                                 type={"multiImage"}
                                 carouselClass={"secondary__carousel"}
@@ -431,15 +378,13 @@ const Home = (props) => {
                                     }
                                 ]}
                             />
-                        </div>
-                    </div>
+                        }
+                    />
                     <hr className="card__break"/>
-                    <div className="secondary__slider">
-                        <div className="secondary__layout__inner deals">
-                            <header className="secondary__slider__header">
-                                <h2 className="secondary__slider__heading">Related to items that you've viewed</h2>
-                                <a href="/" className="explore__more">See more</a>
-                            </header>
+                    <PrimaryCarousel 
+                        heading={"Related to items that you've viewed"}
+                        link={"See more"}
+                        slider={
                             <Slider 
                                 type={"multiImage"}
                                 carouselClass={"secondary__carousel"}
@@ -489,8 +434,8 @@ const Home = (props) => {
                                     }
                                 ]}
                             />
-                        </div>
-                    </div>
+                        }
+                    />
                     <hr className="card__break"/>
                     <Card_Five
                         name="Kay"
@@ -544,6 +489,63 @@ const Home = (props) => {
                         linktxt={"Shop best-selling coffee"}
                         cardClass={"fluid__card"}
                     />
+                    <hr className="card__break"/>
+                    <PrimaryCarousel 
+                        heading={"Inspired by your purchases"}
+                        slider={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: apekx,
+                                        altText: "APEKX wireless bluetooth 5.0 sports earbuds",
+                                        caption: "APEKX wireless bluetooth 5.0 sports earbuds"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: basil_basket,
+                                        altText: "basil cento rear basket black",
+                                        caption: "basil cento rear basket black"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: rack_black,
+                                        altText: "mega cooling rack black",
+                                        caption: "mega cooling rack black"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: wilton_cake_pan,
+                                        altText: "wilton 9-x-13 inch oblong cake pan",
+                                        caption: "wilton 9-x-13 inch oblong cake pan"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: mirrycle,
+                                        altText: "mirrycle-incredibell-adjustabell-2-bike-bell",
+                                        caption: "mirrycle-incredibell-adjustabell-2-bike-bell"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: wilton_stick_8_cake_pan,
+                                        altText: "wilton non stick 8 inch square cake pans",
+                                        caption: "wilton non stick 8 inch square cake pans"
+                                    }
+                                ]}
+                            />
+                        }
+                    />
+                    <hr className="card__break"/>
+                    
                 </section>
 
             </section>
