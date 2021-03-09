@@ -86,6 +86,15 @@ import starfrit_6_inch_mesh_strainer from '../../images/products/starfrit-092002
 import uniware_3_sphere_set_strainers from '../../images/products/uniware-3-sphere-set-strainers-green-orange-&-red.jpg'
 import masontops_kefir_caps_wide_mouth_mason_jar_lids from '../../images/products/masontops-kefir-caps-wide-mouth-mason-jar-lids.jpg'
 
+import vileda_easywring_power_refill from '../../images/products/vileda-easywring-power-refill.jpg'
+import grace_folly_trucker_hat_for_snapback_mesh_caps from '../../images/products/grace-folly-trucker-hat-for-snapback-mesh-caps.jpg'
+import vileda_easy_wring_refill from '../../images/products/vileda-easy-wring-refill.jpg'
+import hilroy_premium_black_stitch_book from '../../images/products/hilroy-premium-black-collection-stitch-book-7-1-8-x-9-1-8.jpg'
+import flex_fit_classic_snapback_hat from '../../images/products/flex-fit-mens-110-flexfit-classic-snapback-hat.jpg'
+import DECKY_flat_bill_trucker_cap_lack from '../../images/products/DECKY-6-panel-flat-bill-trucker-cap-black.jpg'
+
+
+
 
 const Home = (props) => {
 
@@ -656,6 +665,61 @@ const Home = (props) => {
                                         src: masontops_kefir_caps_wide_mouth_mason_jar_lids,
                                         altText: "masontops kefir caps wide mouth mason jar lids",
                                         caption: "masontops kefir caps wide mouth mason jar lids"
+                                    }
+                                ]}
+                            />
+                        }
+                    />
+                    <hr className="card__break"/>
+                    <PrimaryCarousel 
+                        heading={"Recommended items other customers often buy again"}
+                        slider={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: vileda_easywring_power_refill,
+                                        altText: "vileda easywring power refill",
+                                        caption: "vileda easywring power refill"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: grace_folly_trucker_hat_for_snapback_mesh_caps,
+                                        altText: "grace folly trucker hat for snapback mesh caps",
+                                        caption: "grace folly trucker hat for snapback mesh caps"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: vileda_easy_wring_refill,
+                                        altText: "vileda easy wring refill",
+                                        caption: "vileda easy wring refill"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: hilroy_premium_black_stitch_book,
+                                        altText: "hilroy premium black collection stitch book 7-1-8 x 9-1-8",
+                                        caption: "hilroy premium black collection stitch book 7-1-8 x 9-1-8"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: flex_fit_classic_snapback_hat,
+                                        altText: "flex fit mens 110 flexfit classic snapback hat",
+                                        caption: "flex fit mens 110 flexfit classic snapback hat"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: DECKY_flat_bill_trucker_cap_lack,
+                                        altText: "DECKY 6 panel flat bill trucker cap black",
+                                        caption: "DECKY 6 panel flat bill trucker cap black"
                                     }
                                 ]}
                             />
