@@ -545,7 +545,60 @@ const Home = (props) => {
                         }
                     />
                     <hr className="card__break"/>
-                    
+                    <PrimaryCarousel 
+                        heading={"Inspired by your shopping trends"}
+                        slider={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: wacom_intuos,
+                                        altText: "wacom intuos graphics drawing tablet 7.9 x 6.3 black (CTL4100)",
+                                        caption: "wacom intuos graphics drawing tablet 7.9 x 6.3 black (CTL4100)"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: anker_4_port,
+                                        altText: "anker 4 port USB 3.0 ultra slim data hub for macbook mac pro mini iMac surface pro XPS notebook PC USB flash",
+                                        caption: "anker 4 port USB 3.0 ultra slim data hub for macbook mac pro mini iMac surface pro XPS notebook PC USB flash"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: nonda_USB_type_C_to_USB_3_adapter,
+                                        altText: "nonda USB type C to USB 3.0 adapter",
+                                        caption: "nonda USB type C to USB 3.0 adapter"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: logitech_C920x_pro_HD_webcam,
+                                        altText: "logitech-C920x-pro-HD-webcam.jpg",
+                                        caption: "logitech-C920x-pro-HD-webcam.jpg"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: LUTER_barberology_comb_clipper,
+                                        altText: "LUTER barberology comb clipper",
+                                        caption: "LUTER barberology comb clipper"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: sabrent_4_port_USB_3_hub,
+                                        altText: "sabrent 4 port USB 3.0 hub with individual LED power switches",
+                                        caption: "sabrent 4 port USB 3.0 hub with individual LED power switches"
+                                    }
+                                ]}
+                            />
+                        }
+                    />
                 </section>
 
             </section>
