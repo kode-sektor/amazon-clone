@@ -8,59 +8,59 @@ import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 
 import './index.css'
 
-import user_avatar from '../../images/user_avatar.jpg'
-import card_gifting from '../../images/card_gifting.jpg'
-import electronics_headphones from '../../images/categories/electronics_headphones.jpg'
-import home_kitchen from '../../images/categories/home_kitchen.jpg'
-import your_orders from '../../images/your_orders.jpg'
-import desktop_small_big_card from '../../images/desktop_small_big_card.jpg'
-import desktop_deals_pets from '../../images/desktop_deals_pets.jpg'
-import home_and_kitchen from '../../images/home_and_kitchen.jpg'
-import sandwich_toaster from '../../images/products/sandwich_toaster.jpg'      
-import john_wick_3 from '../../images/videos/john_wick_3.jpg'      
+import user_avatar from '../../images/user-avatar.jpg'
+import card_gifting from '../../images/card-gifting.jpg'
+import electronics_headphones from '../../images/categories/electronics-headphones.jpg'
+import home_kitchen from '../../images/categories/home-kitchen.jpg'
+import your_orders from '../../images/your-orders.jpg'
+import desktop_small_big_card from '../../images/desktop-small-big-card.jpg'
+import desktop_deals_pets from '../../images/desktop-deals-pets.jpg'
+import home_and_kitchen from '../../images/home-and-kitchen.jpg'
+import sandwich_toaster from '../../images/products/sandwich-toaster.jpg'      
+import john_wick_3 from '../../images/videos/john-wick-3.jpg'      
 
-import hero_slider_1 from '../../images/sliders/hero_slider_1.jpg'
-import hero_slider_2 from '../../images/sliders/hero_slider_2.jpg'
-import hero_slider_3 from '../../images/sliders/hero_slider_3.jpg'
-import hero_slider_4 from '../../images/sliders/hero_slider_4.jpg'
-import hero_slider_5 from '../../images/sliders/hero_slider_5.jpg'
+import hero_slider_1 from '../../images/sliders/hero-slider-1.jpg'
+import hero_slider_2 from '../../images/sliders/hero-slider-2.jpg'
+import hero_slider_3 from '../../images/sliders/hero-slider-3.jpg'
+import hero_slider_4 from '../../images/sliders/hero-slider-4.jpg'
+import hero_slider_5 from '../../images/sliders/hero-slider-5.jpg'
 
-import desktop_bubbler from '../../images/stores-and-programs/desktop_bubbler.jpg'
-import mozart_fr_bubbler from '../../images/stores-and-programs/mozart_fr_bubbler.jpg'
-import outlets_hoveler from '../../images/stores-and-programs/outlets_hoveler.png'
+import desktop_bubbler from '../../images/stores-and-programs/desktop-bubbler.jpg'
+import mozart_fr_bubbler from '../../images/stores-and-programs/mozart-fr-bubbler.jpg'
+import outlets_hoveler from '../../images/stores-and-programs/outlets-hoveler.png'
 import registry from '../../images/stores-and-programs/registry.jpg'
-import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse_deals_bubbler.jpg'
-import coupon_bubbler from '../../images/stores-and-programs/coupon_bubbler.jpg'
+import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse-deals-bubbler.jpg'
+import coupon_bubbler from '../../images/stores-and-programs/coupon-bubbler.jpg'
 
-import ultra_long_rgb_led_light_strips_50ft from '../../images/todays-deals/ultra_long_rgb_led_light_strips_50ft.jpg'
-import knee_brace_support from '../../images/todays-deals/cambivo_knee_brace_support.jpg'
-import columbia_and_winter_apparel_brands from '../../images/todays-deals/columbia_and_winter_apparel_brands.jpg'
-import DELOMO_smart_interactive_cat_toy_ball from '../../images/todays-deals/DELOMO_smart_interactive_cat_toy_ball.jpg'
-import govee_car_led_lights from '../../images/todays-deals/govee_car_led_lights.jpg'
-import hp_chromebooks from '../../images/todays-deals/hp_chromebooks.jpg'
-import SEALIGHT_H11_H8_H9_LED_headlight_bulbs from '../../images/todays-deals/SEALIGHT_H11_H8_H9_LED_headlight_bulbs.jpg'
-import SMD_5050_RGB_light_strips_with_bluetooth_controller from '../../images/todays-deals/SMD_5050_RGB_light_strips_with_bluetooth_controller.jpg'
-import stellar_floodlight_camera from '../../images/todays-deals/stellar_floodlight_camera.jpg'
-import ticarve_cleaning_gel_for_car_detailing from '../../images/todays-deals/ticarve_cleaning_gel_for_car_detailing.jpg'
-import TRMS_4000_counts_multimètre_voltage_tester from '../../images/todays-deals/TRMS_4000_counts_multimètre_voltage_tester.jpg'
-import vankyo_gaming_headset_CM7000 from '../../images/todays-deals/vankyo_gaming_headset_CM7000.jpg'
-import vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector from '../../images/todays-deals/vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector.jpg'
-import waailu_compatible_for_apple_watch from '../../images/todays-deals/waailu_compatible_for_apple_watch.jpg'
-import women_running_shoes_breathable_lightweight from '../../images/todays-deals/women_running_shoes_breathable_lightweight.jpg'
+import ultra_long_rgb_led_light_strips_50ft from '../../images/todays-deals/ultra-long-rgb-led-light-strips-50ft.jpg'
+import knee_brace_support from '../../images/todays-deals/cambivo-knee-brace-support.jpg'
+import columbia_and_winter_apparel_brands from '../../images/todays-deals/columbia-and-winter-apparel-brands.jpg'
+import DELOMO_smart_interactive_cat_toy_ball from '../../images/todays-deals/DELOMO-smart-interactive-cat-toy-ball.jpg'
+import govee_car_led_lights from '../../images/todays-deals/govee-car-led-lights.jpg'
+import hp_chromebooks from '../../images/todays-deals/hp-chromebooks.jpg'
+import SEALIGHT_H11_H8_H9_LED_headlight_bulbs from '../../images/todays-deals/SEALIGHT-H11-H8-H9-LED-headlight-bulbs.jpg'
+import SMD_5050_RGB_light_strips_with_bluetooth_controller from '../../images/todays-deals/SMD-5050-RGB-light-strips-with-bluetooth-controller.jpg'
+import stellar_floodlight_camera from '../../images/todays-deals/stellar-floodlight-camera.jpg'
+import ticarve_cleaning_gel_for_car_detailing from '../../images/todays-deals/ticarve-cleaning-gel-for-car-detailing.jpg'
+import TRMS_4000_counts_multimètre_voltage_tester from '../../images/todays-deals/TRMS-4000-counts-multimètre-voltage-tester.jpg'
+import vankyo_gaming_headset_CM7000 from '../../images/todays-deals/vankyo-gaming-headset-CM7000.jpg'
+import vansky_51_LEDs_blacklight_flashlight_pets_ultra_violet_urine_and_stain_detector from '../../images/todays-deals/vansky-51-LEDs-blacklight-flashlight-pets-ultra-violet-urine-and-stain-detector.jpg'
+import waailu_compatible_for_apple_watch from '../../images/todays-deals/waailu-compatible-for-apple-watch.jpg'
+import women_running_shoes_breathable_lightweight from '../../images/todays-deals/women-running-shoes-breathable-lightweight.jpg'
 
-import JUXIAO_bluetooth_led_lights_strip_for_bedroom from '../../images/related-items/JUXIAO_bluetooth_led_lights_strip_for_bedroom.jpg'
-import LED_light_strip_KIKO_color_changing_led_lights from '../../images/related-items/LED_light_strip_KIKO_color_changing_led_lights_21.3ft_x_6.5m.jpg'
-import LED_strip_lights from '../../images/related-items/LED_strip_lights_16.4ft.jpg'
-import LED_strip_lights_flexible_non_waterproof_50ft_x_15m from '../../images/related-items/LED_strip_lights_flexible_non_waterproof_50ft_x_15m.jpg'
-import LED_strip_lights_XProject_LED_lights_for_bedroom_65ft from '../../images/related-items/LED_strip_lights_XProject_LED_lights_for_bedroom_65.6ft.jpg'
-import Kokuji_LED_strip_lights_kit_656ft_x_20m from '../../images/related-items/Kokuji_LED_strip_lights_kit_65.6ft_x_20m.jpg'
+import JUXIAO_bluetooth_led_lights_strip_for_bedroom from '../../images/related-items/JUXIAO-bluetooth-led-lights-strip-for-bedroom.jpg'
+import LED_light_strip_KIKO_color_changing_led_lights from '../../images/related-items/LED-light-strip-KIKO-color-changing-led-lights-21.3ft-x-6.5m.jpg'
+import LED_strip_lights from '../../images/related-items/LED-strip-lights-16.4ft.jpg'
+import LED_strip_lights_flexible_non_waterproof_50ft_x_15m from '../../images/related-items/LED-strip-lights-flexible-non-waterproof-50ft-x-15m.jpg'
+import LED_strip_lights_XProject_LED_lights_for_bedroom_65ft from '../../images/related-items/LED-strip-lights-XProject-LED-lights-for-bedroom-65.6ft.jpg'
+import Kokuji_LED_strip_lights_kit_656ft_x_20m from '../../images/related-items/Kokuji-LED-strip-lights-kit-65.6ft-x-20m.jpg'
 
-import evergreen_gssusa from '../../images/categories/evergreen_gssusa.jpg'
-import evergreen_kitchen from '../../images/categories/evergreen_kitchen.jpg'
-import evergreen_pillows from '../../images/categories/evergreen_pillows.jpg'
-import evergreen_earphones from '../../images/categories/evergreen_earphones.jpg'
+import evergreen_gssusa from '../../images/categories/evergreen-gssusa.jpg'
+import evergreen_kitchen from '../../images/categories/evergreen-kitchen.jpg'
+import evergreen_pillows from '../../images/categories/evergreen-pillows.jpg'
+import evergreen_earphones from '../../images/categories/evergreen-earphones.jpg'
 
-import listerine_cool_mint_antiseptic_mouthwash from '../../images/products/listerine_cool_mint_antiseptic_mouthwash.jpg'
+import listerine_cool_mint_antiseptic_mouthwash from '../../images/products/listerine-cool-mint-antiseptic-mouthwash.jpg'
 
 import amazon_basics from '../../images/amazon-basics/mac-laptop-charging-iphone.jpg'
 import coffee_cup from '../../images/products/coffee-cup.jpg'
@@ -93,15 +93,17 @@ import hilroy_premium_black_stitch_book from '../../images/products/hilroy-premi
 import flex_fit_classic_snapback_hat from '../../images/products/flex-fit-mens-110-flexfit-classic-snapback-hat.jpg'
 import DECKY_flat_bill_trucker_cap_lack from '../../images/products/DECKY-6-panel-flat-bill-trucker-cap-black.jpg'
 
+import family_game_night from '../../images/categories/family-game-night.jpg'
+import typing_on_mac from '../../images/categories/typing-on-mac.jpg'
+import woman_works_with_laptop from '../../images/categories/woman-works-with-laptop.jpg'
+import wall_tv from '../../images/categories/wall-tv.jpg'
 
 
 
 const Home = (props) => {
 
   return(
-
         <Layout>
-
             <Slider 
                 items={[
                     {
@@ -141,9 +143,7 @@ const Home = (props) => {
                     }
                 ]}
             />
-
             <section className="sub__layout">
-
                 <section className="sub__layout__card">
                     <Card_One
                         name="Kay"
@@ -220,7 +220,6 @@ const Home = (props) => {
                         linktxt={"Shop Now"}
                     />
                 </section>
-
                 <section className="secondary__layout">
                     <PrimaryCarousel 
                         heading={"Browse stores, programs, and more"}
@@ -724,6 +723,40 @@ const Home = (props) => {
                                 ]}
                             />
                         }
+                    />
+                    <hr className="card__break"/>
+                    <Card_Three
+                        title={"Electronics & Accessories"}
+                        img={wall_tv}
+                        alt={"Wall TV"}
+                        link={"/history"}
+                        linktxt={"Shop now"}
+                        cardClass={"fluid__card"}
+                    />
+                    <Card_Three
+                        title={"Upgrade your home office"}
+                        img={woman_works_with_laptop}
+                        alt={"woman works with laptop"}
+                        link={"/history"}
+                        linktxt={"Shop now"}
+                        cardClass={"fluid__card"}
+                    />
+                    <Card_Three
+                        title={"Discover like-new computers"}
+                        img={typing_on_mac}
+                        alt={"typing on mac"}
+                        link={"/history"}
+                        linktxt={"Shop Amazon Renewed"}
+                        cardClass={"fluid__card"}
+                    />
+                    <Card_Three
+                        title={"Family game night"}
+                        img={family_game_night}
+                        alt={"family game night"}
+                        link={"/history"}
+                        linktxt={"Shop now"}
+                        cardClass={"fluid__card"}
+                        supportingTxt={"Explore toys and games to play with the family."}
                     />
                 </section>
             </section>
