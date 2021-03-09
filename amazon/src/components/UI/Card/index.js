@@ -98,7 +98,7 @@ const Card_Three = ({title, img, alt, link, linktxt, rating, cardClass="", suppo
                     <span className="sub__layout__inner__header__title">{title}</span>
                 </h2>
                 <section className="sub__layout__inner__body">
-                    <a className="sub__layout__inner__link" href="/gp/product/B07MM2RVM5" style={supportingTxt ? {height: '260px'} : {height: '100%'}}>
+                    <a className={supportingTxt ? "sub__layout__inner__link supportingTxt" : "sub__layout__inner__link"} href="/gp/product/B07MM2RVM5">
                         <div className="sub__layout__inner__body__ui__card">
                             <img src={img} className="landscape-image" alt={alt} />
                         </div>

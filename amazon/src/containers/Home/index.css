@@ -300,6 +300,9 @@
     height: 100%;
     border: 1px solid green;
 }
+.sub__layout__inner__link.supportingTxt {
+    height: 260px;
+}
 .block__card .sub__layout__inner__link {
     height: auto;
     width: auto;
@@ -438,6 +441,9 @@
     padding-right: 10px;
     min-width: 290px;
     border: 2px solid yellow;
+}
+.secondary__slider.squished{
+    padding-right: 310px;
 }
 .secondary__layout__inner {
     margin-bottom: 0!important;

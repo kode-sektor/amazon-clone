@@ -98,6 +98,11 @@ import typing_on_mac from '../../images/categories/typing-on-mac.jpg'
 import woman_works_with_laptop from '../../images/categories/woman-works-with-laptop.jpg'
 import wall_tv from '../../images/categories/wall-tv.jpg'
 
+import luigi_mansion from '../../images/video-games/luigi-mansion-3-standard-edition.jpg'
+import mario_kart from '../../images/video-games/mario-kart-8-deluxe-switch-standard-edition.jpg'
+import nintendo_switch from '../../images/video-games/nintendo-switch-animal-crossing-new-horizons-edition.jpg'
+import super_mario from '../../images/video-games/super-mario-party-standard-edition.jpg'
+import animal_crossing from '../../images/video-games/animal-crossing-new-horizons-standard-edition.jpg'
 
 
 const Home = (props) => {
@@ -757,6 +762,55 @@ const Home = (props) => {
                         linktxt={"Shop now"}
                         cardClass={"fluid__card"}
                         supportingTxt={"Explore toys and games to play with the family."}
+                    />
+                    <hr className="card__break"/>
+                    <PrimaryCarousel 
+                        heading={"Most wished for in Video Games"}
+                        squished={true}
+                        slider={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={5}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: luigi_mansion,
+                                        altText: "luigi mansion 3 standard edition",
+                                        caption: "luigi mansion 3 standard edition"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: mario_kart,
+                                        altText: "mario kart 8 deluxe switch standard edition",
+                                        caption: "mario kart 8 deluxe switch standard edition"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: nintendo_switch,
+                                        altText: "nintendo switch animal crossing new horizons edition",
+                                        caption: "nintendo switch animal crossing new horizons edition"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: super_mario,
+                                        altText: "super mario party standard edition",
+                                        caption: "super mario party standard edition"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: animal_crossing,
+                                        altText: "animal crossing new horizons standard edition",
+                                        caption: "animal crossing new horizons standard edition"
+                                    }
+                                ]}
+                            />
+                        }
                     />
                 </section>
             </section>
