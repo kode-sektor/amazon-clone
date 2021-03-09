@@ -79,6 +79,13 @@ import nonda_USB_type_C_to_USB_3_adapter from '../../images/products/nonda-USB-t
 import LUTER_barberology_comb_clipper from '../../images/products/LUTER-barberology-comb-clipper.jpg'
 import sabrent_4_port_USB_3_hub from '../../images/products/sabrent-4-port-USB-3.0-hub-with-individual-LED-power-switches.jpg'
 
+import harold_fine_strainer_nylon_mesh from '../../images/products/harold-imports-company-double-ear-fine-strainer-nylon-mesh.jpg'
+import IMUSA_IMU_plastic_strainer_7_inch_black from '../../images/products/IMUSA-USA-IMU-71134-plastic-strainer-7-inch-black.jpg'
+import UINKE_mesh_strainer_colander_sieve from '../../images/products/UINKE-4-pcs-fine-mesh-strainer-colander-sieve-sifter.jpg'
+import starfrit_6_inch_mesh_strainer from '../../images/products/starfrit-092002-6-inch-mesh-strainer.jpg'
+import uniware_3_sphere_set_strainers from '../../images/products/uniware-3-sphere-set-strainers-green-orange-&-red.jpg'
+import masontops_kefir_caps_wide_mouth_mason_jar_lids from '../../images/products/masontops-kefir-caps-wide-mouth-mason-jar-lids.jpg'
+
 
 const Home = (props) => {
 
@@ -599,10 +606,63 @@ const Home = (props) => {
                             />
                         }
                     />
+                    <hr className="card__break"/>
+                    <PrimaryCarousel 
+                        heading={"Inspired by your shopping trends in Home, Garden & Tools"}
+                        slider={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"secondary__carousel"}
+                                count={6}
+                                items={[
+                                    {
+
+                                        href: '/',
+                                        src: harold_fine_strainer_nylon_mesh,
+                                        altText: "harold imports company double ear fine strainer nylon mesh",
+                                        caption: "harold imports company double ear fine strainer nylon mesh"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: IMUSA_IMU_plastic_strainer_7_inch_black,
+                                        altText: "IMUSA USA IMU 71134 plastic strainer 7 inch black",
+                                        caption: "IMUSA USA IMU 71134 plastic strainer 7 inch black"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: UINKE_mesh_strainer_colander_sieve,
+                                        altText: "UINKE 4 pcs fine mesh strainer colander sieve sifter",
+                                        caption: "UINKE 4 pcs fine mesh strainer colander sieve sifter"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: starfrit_6_inch_mesh_strainer,
+                                        altText: "starfrit 092002 6 inch mesh strainer",
+                                        caption: "starfrit 092002 6 inch mesh strainer"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: uniware_3_sphere_set_strainers,
+                                        altText: "uniware 3 sphere set strainers green orange & red",
+                                        caption: "uniware 3 sphere set strainers green orange & red"
+                                    },
+                                    {
+
+                                        href: '/',
+                                        src: masontops_kefir_caps_wide_mouth_mason_jar_lids,
+                                        altText: "masontops kefir caps wide mouth mason jar lids",
+                                        caption: "masontops kefir caps wide mouth mason jar lids"
+                                    }
+                                ]}
+                            />
+                        }
+                    />
                 </section>
-
             </section>
-
         </Layout>
     )
  }
