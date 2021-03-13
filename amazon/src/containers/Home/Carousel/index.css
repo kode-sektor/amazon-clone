@@ -6,6 +6,11 @@
     margin: 0 auto;
     border: 5px solid fuchsia;
 }
+.carousel__detailed .carousel.slide {
+    height: auto;
+    max-height: none;
+    margin-bottom: 24px !important;
+}
 .carousel-inner {
     position: relative;
     overflow: visible;
@@ -14,6 +19,11 @@
     margin-bottom: 0!important;
     z-index: 0;
     border: 2px solid coral;
+}
+.carousel__detailed .carousel-inner {
+    height: 324px;
+    width: auto;
+    margin: 0 40px;
 }
 .carousel-control-prev {
     border: thin solid orange;
@@ -59,7 +69,7 @@
     max-width: none;
     margin: 0 0 5px;
 }
-.secondary__carousel {
+.amzn__carousel {
     position: relative;
     left: 0px;
     margin-left: 0px;
@@ -74,13 +84,22 @@
     margin: 0;
     border: 3px solid brown;
 }
-.secondary__carousel__cards {
+.amzn__carousel__cards {
     position: relative;
     display: inline-block;
     margin: 0 0 14px;
     padding: 0;
 }
-.secondary__carousel__cards > li {
+.carousel__detailed .amzn__carousel__cards {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: visible;
+    letter-spacing: -4px;
+    border: 2px solid coral;
+}
+.amzn__carousel__cards > li {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -93,24 +112,24 @@
     text-align: center;
     list-style: none;
 }
-.secondary__carousel__cards > li a {
+.amzn__carousel__cards > li a {
     position: relative;
     display: inline-block;
     text-align: center;
     min-width: 145px;
 }
-.secondary__carousel__cards figure {
+.amzn__carousel__cards figure {
     position: relative;
     height: 275px;
     margin-bottom: 0;
 }
-.secondary__carousel__cards figcaption {
+.amzn__carousel__cards figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
 }
-.secondary__carousel__control {
+.amzn__carousel__control {
     display: inline;
     position: absolute;
     top: 55px;
@@ -120,25 +139,25 @@
     line-height: 100px;
     width: 45px;
     text-align: center;
-    box-shadow: 0 1px 3px var(--grey-tone-24);
+    box-shadow: 0 1px 3px var(--grey-tone-23);
     opacity: 0;
     -webkit-user-select: none;
     transition: opacity 1s;
 }
-.secondary__carousel__control.carousel-control-prev {
+.amzn__carousel__control.carousel-control-prev {
     left: 0;
     padding-right: 5px;
     border-radius: 0 3px 3px 0;
     clip: rect(-10px, 55px, 110px, 0);
 }
-.secondary__carousel__control.carousel-control-next {
+.amzn__carousel__control.carousel-control-next {
     right: 0;
     padding-left: 5px;
     border-radius: 3px 0 0 3px;
     clip: rect(-10px, 45px, 110px, -10px);
 }
-.secondary__carousel__control .carousel-control-prev-icon,
-.secondary__carousel__control .carousel-control-next-icon {
+.amzn__carousel__control .carousel-control-prev-icon,
+.amzn__carousel__control .carousel-control-next-icon {
     position: relative;
     display: inline-block;
     top: 50%;
@@ -153,30 +172,52 @@
     background-position: -14px 0;
     transform: none;
 }
-.secondary__slider:hover .secondary__carousel__control {
+.secondary__slider:hover .amzn__carousel__control {
     opacity: .9;
 }
-.secondary__carousel__control .carousel-control-prev-icon {
+.amzn__carousel__control .carousel-control-prev-icon {
     left: auto;
 }
-.secondary__carousel__control .carousel-control-next-icon {
+.amzn__carousel__control .carousel-control-next-icon {
     background-position: 0 0;
 }
-.secondary__carousel__card {
+.amzn__carousel__card {
     text-align: left;
 }
-.secondary__carousel__price {
+.amzn__carousel__price {
     display: block;
     font-weight: 400;
     font-size: 17px !important;
     line-height: 21.34px !important;
     color: var(--black);
 }
-.secondary__carousel__oldprice {
+.amzn__carousel__oldprice {
     display: block;
     position: relative;
     bottom: 2px;
     font-weight: lighter;
     color: var(--grey-tone-23);
     text-decoration: line-through;
+}
+.carousel__detailed {
+    position: relative;
+    display: block;
+    min-width: 940px;
+    outline: 2px solid pink;
+}
+.carousel__detailed__layout__inner {
+    padding: 10px 30px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    border: 2px solid green;
+    height: 100%;
+    width: 100%;
+}
+.carousel__detailed__slider__header {
+    margin: 0 0 20px;
+    font-size: 24px!important;
+    line-height: 32px!important;
+}
+.carousel__count {
+    margin-left: 2%;
 }

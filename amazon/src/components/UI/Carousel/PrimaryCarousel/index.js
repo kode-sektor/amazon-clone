@@ -2,10 +2,10 @@ import React from 'react'
 
 const PrimaryCarousel = ({heading, link, slider, squished}) => {
     return (
-        <div className={squished ? "secondary__slider squished" : "secondary__slider"}>
-            <div className="secondary__layout__inner">
-                <header className="secondary__slider__header">
-                    <h2 className="secondary__slider__heading">{heading}</h2>
+        <div className={squished ? "primary__slider squished" : "primary__slider"}>
+            <div className="primary__layout__inner">
+                <header className="primary__slider__header">
+                    <h2 className="primary__slider__heading">{heading}</h2>
                     {
                         link ? <a href="/" className="explore__more">{link}</a> : ""
                     }
@@ -13,7 +13,6 @@ const PrimaryCarousel = ({heading, link, slider, squished}) => {
                 {slider}
             </div>
         </div>
-
     )
 }
 

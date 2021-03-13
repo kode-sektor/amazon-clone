@@ -59,10 +59,10 @@ const Slider = ({type, count, items, carouselClass}) => {
 												</a>
 												<figcaption>
 													{/* {item.caption} */}
-													<div className="secondary__carousel__card">
-														<span className="secondary__carousel__price">$188.99</span>
-														<span className="secondary__carousel__oldprice">$269.99</span>
-														<span className="secondary__carousel__deal">Deal has ended</span>
+													<div className="amzn__carousel__card">
+														<span className="amzn__carousel__price">$188.99</span>
+														<span className="amzn__carousel__oldprice">$269.99</span>
+														<span className="amzn__carousel__deal">Deal has ended</span>
 													</div>
 												</figcaption>
 											</figure>
