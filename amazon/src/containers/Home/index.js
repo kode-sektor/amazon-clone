@@ -105,6 +105,13 @@ import nintendo_switch from '../../images/video-games/nintendo-switch-animal-cro
 import super_mario from '../../images/video-games/super-mario-party-standard-edition.jpg'
 import animal_crossing from '../../images/video-games/animal-crossing-new-horizons-standard-edition.jpg'
 
+import ameriwood_lumina from '../../images/products/ameriwood-home-lumina-fireplace-tv-stand-white.jpg'
+import modern_cube from '../../images/products/baxton-studio-siskal-modern-cube-ottoman-white-set-of-2.jpg'
+import monterey_tv_stand from '../../images/products/convenience-concepts-151401W-designs2Go-monterey-tv-stand.jpg'
+import frosted_endtable from '../../images/products/global-furniture-clear-frosted-occasional-end-table.jpg'
+import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
+import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
+
 
 const Home = (props) => {
 
@@ -767,37 +774,43 @@ const Home = (props) => {
                         <Slider 
                             type={"multiImage"}
                             carouselClass={"amzn__carousel"}
-                            count={5}
+                            count={6}
                             items={[
                                 {
                                     href: '/',
-                                    src: luigi_mansion,
-                                    altText: "luigi mansion 3 standard edition",
-                                    caption: "luigi mansion 3 standard edition"
+                                    src: faux_leather,
+                                    altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                    caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
                                 },
                                 {
                                     href: '/',
-                                    src: mario_kart,
-                                    altText: "mario kart 8 deluxe switch standard edition",
-                                    caption: "mario kart 8 deluxe switch standard edition"
+                                    src: leather_swivel,
+                                    altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                    caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)"
                                 },
                                 {
                                     href: '/',
-                                    src: nintendo_switch,
-                                    altText: "nintendo switch animal crossing new horizons edition",
-                                    caption: "nintendo switch animal crossing new horizons edition"
+                                    src: frosted_endtable,
+                                    altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                    caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs"
                                 },
                                 {
                                     href: '/',
-                                    src: super_mario,
-                                    altText: "super mario party standard edition",
-                                    caption: "super mario party standard edition"
+                                    src: monterey_tv_stand,
+                                    altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                    caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White"
                                 },
                                 {
                                     href: '/',
-                                    src: animal_crossing,
-                                    altText: "animal crossing new horizons standard edition",
-                                    caption: "animal crossing new horizons standard edition"
+                                    src: modern_cube,
+                                    altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                    caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                },
+                                {
+                                    href: '/',
+                                    src: ameriwood_lumina,
+                                    altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                    caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
                                 }
                             ]}
                         />

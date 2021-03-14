@@ -50,24 +50,34 @@ const Slider = ({type, count, items, carouselClass}) => {
 
 			items.forEach((item, index) => {
 				tempCarousel = [
-									...tempCarousel,
-									(
-										<li>
-											<figure>
-												<a key={index} href={item.href}>
-													<img src={item.src} alt={item.altText} />
-												</a>
-												<figcaption>
-													{/* {item.caption} */}
-													<div className="amzn__carousel__card">
-														<span className="amzn__carousel__price">$188.99</span>
-														<span className="amzn__carousel__oldprice">$269.99</span>
-														<span className="amzn__carousel__deal">Deal has ended</span>
-													</div>
-												</figcaption>
-											</figure>
-										</li>
-									)
+					...tempCarousel,
+					(
+						<li>
+							<figure>
+								<a key={index} href={item.href}>
+									<img src={item.src} alt={item.altText} />
+								</a>
+								<figcaption>
+									{item.caption ? 
+										(<a href={item.href}>
+											<div className="amzn__carousel__caption">{item.caption}</div>
+											<span className="amzn__carousel__star"></span>
+											<span className="amzn__carousel__count"> 1,833</span>
+											<span className="amzn__carousel__offers"></span>
+											<span className="a__color__price"> $269.99</span>
+											<span className="amzn__carousel__delivery"></span>
+										</a>)
+										: 
+										(<div className="amzn__carousel__card">
+											<span className="amzn__carousel__price">$188.99</span>
+											<span className="amzn__carousel__oldprice">$269.99</span>
+											<span className="amzn__carousel__deal">Deal has ended</span>
+										</div> )						
+										} 
+								</figcaption>
+							</figure>
+						</li>
+					)
 				]
 				
 				// Only wrap with <Carousel> once the number of multiple images reaches. 

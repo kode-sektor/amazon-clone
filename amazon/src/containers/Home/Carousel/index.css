@@ -25,9 +25,6 @@
     width: auto;
     margin: 0 40px;
 }
-.carousel-control-prev {
-    border: thin solid orange;
-}
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
     height: 100%;
@@ -37,7 +34,6 @@
     padding-left: 3px;
     visibility: visible;
     z-index: 10;
-    border: thin solid pink;
 }
 .carousel-control-next {
     padding-left: 0;
@@ -91,6 +87,7 @@
     padding: 0;
 }
 .carousel__detailed .amzn__carousel__cards {
+    display: block;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -112,22 +109,47 @@
     text-align: center;
     list-style: none;
 }
+.carousel__detailed .amzn__carousel__cards > li {
+    display: inline-block;
+    overflow: hidden;
+    width: 160px;
+    margin-left: 33px;
+    min-height: 100%;
+    list-style-type: none;
+    white-space: normal;
+    text-align: left;
+    max-width: none;
+    max-height: none;
+    min-width: none;
+    letter-spacing: normal;
+    border: 2px solid gold;
+}
 .amzn__carousel__cards > li a {
     position: relative;
     display: inline-block;
     text-align: center;
     min-width: 145px;
 }
+.carousel__detailed .amzn__carousel__cards > li a {
+    min-width: none;
+}
 .amzn__carousel__cards figure {
     position: relative;
     height: 275px;
     margin-bottom: 0;
+}
+.carousel__detailed .amzn__carousel__cards figure {
+    height: auto;
+    margin-bottom: 4px;
 }
 .amzn__carousel__cards figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+}
+.carousel__detailed .amzn__carousel__cards figcaption {
+    position: static;
 }
 .amzn__carousel__control {
     display: inline;
@@ -143,6 +165,30 @@
     opacity: 0;
     -webkit-user-select: none;
     transition: opacity 1s;
+}
+.carousel__detailed .amzn__carousel__control {
+    display: inline-block;
+    top: 130px;
+    bottom: auto;
+    margin-top: -16px;
+    padding: 6px;
+    vertical-align: middle;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+
+    opacity: .9;
+    width: 40px;
+    height: auto;
+    line-height: normal;
+    max-height: none;
+    border-color: #D5D9D9;
+    border-style: solid;
+    border-width: 1px;
+}
+.carousel__detailed .amzn__carousel__control:hover, 
+.carousel__detailed .amzn__carousel__control:focus {
+    background-color: #F7FAFA;
+    border-color: #D5D9D9;
 }
 .amzn__carousel__control.carousel-control-prev {
     left: 0;
@@ -171,6 +217,26 @@
     background-image: url('../../../images/nav-sprite-3.png');
     background-position: -14px 0;
     transform: none;
+}
+.carousel__detailed .amzn__carousel__control .carousel-control-prev-icon,
+.carousel__detailed .amzn__carousel__control .carousel-control-next-icon {
+    /* top: 50%; */
+    top: auto;
+    left: auto;
+    height: 15px;
+    width: 11px;
+    margin: 5px 6px 5px 5px;
+    border-radius: 7px;
+    line-height: normal;
+    vertical-align: top;
+    background-size: 400px 900px;
+    background-image: url(https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png);
+    background-position: -123px -7px;
+    background-repeat: no-repeat;
+    transform: none;
+}
+.carousel__detailed .amzn__carousel__control .carousel-control-next-icon {
+    background-position: -105px -7px;
 }
 .secondary__slider:hover .amzn__carousel__control {
     opacity: .9;
@@ -215,9 +281,33 @@
 }
 .carousel__detailed__slider__header {
     margin: 0 0 20px;
-    font-size: 24px!important;
-    line-height: 32px!important;
+    font-size: 24px !important;
+    line-height: 32px !important;
 }
 .carousel__count {
     margin-left: 2%;
+    font-size: initial;
+    font-weight: 400;
+    line-height: normal;
+}
+.amzn__carousel__caption {
+    overflow: hidden;
+}
+.amzn__carousel__star {
+    display: inline-block;
+    position: relative;
+    height: 18px;
+    width: 80px;
+    vertical-align: top !important;
+    background-image: url('../../../images/nav-sprite-5.png');
+    background-size: 512px 256px;
+    background-repeat: no-repeat;
+    background-position: -84px -28px;
+}
+.amzn__carousel__count {
+    font-size: 12px !important;
+    line-height: 16px !important;
+}
+.amzn__carousel__delivery {
+    display: block;
 }
