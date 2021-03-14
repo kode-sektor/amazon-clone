@@ -124,6 +124,10 @@
     letter-spacing: normal;
     border: 2px solid gold;
 }
+.carousel__compressed .amzn__carousel__cards > li { 
+    width: 120px;
+    margin-left: 28px;
+}
 .amzn__carousel__cards > li a {
     position: relative;
     display: inline-block;
@@ -175,20 +179,22 @@
     vertical-align: middle;
     border-radius: 8px !important;
     box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
-
     opacity: .9;
     width: 40px;
     height: auto;
     line-height: normal;
     max-height: none;
-    border-color: #D5D9D9;
+    border-color: var(--grey-tone-25);
     border-style: solid;
     border-width: 1px;
 }
+.carousel__compressed .amzn__carousel__control {
+    top: 84px;
+}
 .carousel__detailed .amzn__carousel__control:hover, 
 .carousel__detailed .amzn__carousel__control:focus {
-    background-color: #F7FAFA;
-    border-color: #D5D9D9;
+    background-color: var(--grey-tone-26);
+    border-color: var(--grey-tone-25);
 }
 .amzn__carousel__control.carousel-control-prev {
     left: 0;
@@ -268,6 +274,7 @@
 .carousel__detailed {
     position: relative;
     display: block;
+    overflow: hidden;
     min-width: 940px;
     outline: 2px solid pink;
 }
@@ -283,6 +290,10 @@
     margin: 0 0 20px;
     font-size: 24px !important;
     line-height: 32px !important;
+}
+.carousel__compressed .carousel__detailed__heading {
+    font-size: 18px!important;
+    line-height: 24px!important;
 }
 .carousel__count {
     margin-left: 2%;
@@ -310,4 +321,29 @@
 }
 .amzn__carousel__delivery {
     display: block;
+}
+.carousel__divider {
+    border-top: 1px solid var(--grey-tone-24);
+    height: 17px;
+}
+.carousel__compressed {
+    padding-bottom: 14px;
+}
+.carousel__detailed__frame, .carousel__compressed {
+    overflow: hidden;
+}
+.carousel__detailed__container {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    padding: 0 10px;
+}
+.carousel__detailed__link {
+    margin-left: 15px;
+    font-size: 12px!important;
+    line-height: 16px!important;
+}
+.carousel__compressed .carousel__count {
+    font-size: 14px!important;
+    line-height: 20px!important;
 }
