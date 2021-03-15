@@ -857,7 +857,7 @@ const Home = (props) => {
                         <Slider 
                             type={"multiImage"}
                             carouselClass={"amzn__carousel"}
-                            count={6}
+                            count={8}
                             items={[
                                 {
                                     href: '/',

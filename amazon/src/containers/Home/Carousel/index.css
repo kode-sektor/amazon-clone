@@ -120,13 +120,14 @@
     text-align: left;
     max-width: none;
     max-height: none;
-    min-width: none;
+    min-width: 0;
     letter-spacing: normal;
     border: 2px solid gold;
 }
 .carousel__compressed .amzn__carousel__cards > li { 
     width: 120px;
     margin-left: 28px;
+    margin-right: 0;
 }
 .amzn__carousel__cards > li a {
     position: relative;
@@ -135,7 +136,7 @@
     min-width: 145px;
 }
 .carousel__detailed .amzn__carousel__cards > li a {
-    min-width: none;
+    min-width: 0;
 }
 .amzn__carousel__cards figure {
     position: relative;
@@ -145,6 +146,13 @@
 .carousel__detailed .amzn__carousel__cards figure {
     height: auto;
     margin-bottom: 4px;
+}
+.carousel__compressed .amzn__carousel__cards figure {
+    height: 100px;
+}
+.carousel__compressed .amzn__carousel__cards figure img {
+    width: 100px;
+    height: 100px;
 }
 .amzn__carousel__cards figcaption {
     position: absolute;
@@ -189,7 +197,7 @@
     border-width: 1px;
 }
 .carousel__compressed .amzn__carousel__control {
-    top: 84px;
+    top: 60px;
 }
 .carousel__detailed .amzn__carousel__control:hover, 
 .carousel__detailed .amzn__carousel__control:focus {
