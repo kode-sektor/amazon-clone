@@ -10,6 +10,7 @@ import ReactCountryFlag from "react-country-flag"
 
 import AccountMenu from '../AccountMenu/index'
 import Modal from '../../UI/Modal/index'
+import DropdownMenuLang from '../../UI/DropdownMenuLang'
 
 import "./index.css"
 
@@ -95,7 +96,7 @@ const HeaderTop = () => {
                             </Form>
                             <Nav className="row navbar__nav" navbar>
                                 <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')} onMouseLeave={() => setModal('hide')}>
-                                    <UncontrolledDropdown onMouseOver={flagdropdownEnter}  onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
+                                    <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
                                         <DropdownToggle nav caret className="navigationbar__origin">
                                             <ReactCountryFlag
                                                 countryCode="CA"
@@ -103,36 +104,7 @@ const HeaderTop = () => {
                                                 style={{ width: "20px", height: "20px" }}
                                             />
                                         </DropdownToggle>
-                                        <DropdownMenu className="navigationbar__origin__menu">
-                                            <div className="nav__arrow null">
-                                                <div className="nav__arrow__inner"></div>
-                                            </div>
-                                            <div className="navigationbar__origin__menu__itemList">
-                                                <button className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                          
-                                                    <span className="navigationbar__origin__menu__text">
-                                                        <i className="icp__radio icp__radio__active"></i>English - EN
-                                                    </span>                          
-                                                </button>                                  
-                                                <div className="navigationbar__divider"></div>                      
-                                                <button className="navigationbar__origin__menu__link navigationbar__origin__menu__item">
-                                                    <span className="navigationbar__origin__menu__text">
-                                                        <i className="icp__radio"></i>Français - FR
-                                                    </span>                         
-                                                </button>                                  
-                                                <div className="navigationbar__divider"></div>                      
-                                                <span className="navigationbar__origin__menu__item"> 
-                                                    <span className="navigationbar__origin__menu__text">
-                                                        <i className="icp__origin" style={{backgroundPosition : "0 -269px"}}></i>
-                                                        You are shopping on Amazon.ca.
-                                                    </span>                          
-                                                </span>                                              
-                                                <a href="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
-                                                    <span className="navigationbar__origin__menu__text">
-                                                        <div className="icp__origin__change__link">Change country/region.</div>
-                                                    </span>                          
-                                                </a>                    
-                                            </div>
-                                        </DropdownMenu>
+                                        <DropdownMenuLang/>
                                     </UncontrolledDropdown>
                                 </NavItem>
                                 <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')} onMouseLeave={() => setModal('hide')}>

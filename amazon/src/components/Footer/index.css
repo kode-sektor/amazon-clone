@@ -2,7 +2,7 @@
     position: relative;
     min-width: 1000px;
     padding-bottom: 0;
-    background-color: #232F3E;
+    background-color: var(--light-slate-gray);
     border: thin solid red;
 }
 .page__footer__to__top {
@@ -47,4 +47,82 @@
 }
 .page__footer__list a {
     color: var(--grey-tone-24);
+}
+.page__footer__break {
+    margin-top: 40px;
+    border-top: 1px solid var(--grey-tone-27);
+}
+.page__footer__padItem {
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--grey-tone-24);
+    border: thin solid maroon;
+}
+.page__footer__logo {
+    display: inline-block;
+    padding: 0 .6em;
+    width: 76px;
+    height: 23px;
+    max-width: 1000px;
+    margin: 30px 0 15px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: #004B91;
+
+
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/15/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    background-repeat: repeat-x;
+    background-position: -10px -90px;
+    border: thin solid lime;
+}
+.page__footer__buttonset {
+    display: inline-block;
+    margin: 18px 0 0;
+    padding: 0 .6em;
+    margin-left: 70px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--grey-tone-24);
+    border: thin solid gold;
+}
+.page__footer__buttonset .btn.btn-outline-secondary {
+    list-style-type: none;
+    text-align: center;
+    line-height: 18px;
+    box-sizing: border-box;
+    display: inline-block!important;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    margin-right: 4px;
+    white-space: normal;
+    font-family: inherit;
+    color: #004B91;
+    text-decoration: none;
+}
+.page__footer__logo__globeIcon {
+    list-style-type: none;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: normal;
+    font-family: inherit;
+    color: #E47911;
+    position: relative;
+    background: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 0;
+    box-sizing: border-box;
+    background-position: -77px -24px;
 }

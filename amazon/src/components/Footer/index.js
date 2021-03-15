@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FooterMenu from './FooterMenu'
+
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
+
+import DropdownMenuLang from '../UI/DropdownMenuLang'
 
 import './index.css'
 
+
 const Footer = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // flag dropdown
+
+    // Toggle dropdowns
+    const toggle = () => setIsOpen(!isOpen);    // For main navigation expand / collapse
+
+    // Flag dropdown
+    const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
+    const flagdropdownEnter = () => setFlagdropdownOpen(true)
+    const flagdropdownLeave = () => setFlagdropdownOpen(false)
+
     return (
         <footer className="page__footer">
             <a href="/" className="page__footer__to__top">
@@ -52,6 +70,25 @@ const Footer = () => {
                         { label: "Customer Service", href: "", icon: null },
                     ]}
                 />
+            </section>
+            <hr className="page__footer__break"/>
+            <section className="page__footer__padItem d-flex justify-content-center">
+                <a href="/" className="page__footer__logo justify-content-around">
+                </a>
+                <div className="page__footer__buttonset">
+                    <UncontrolledDropdown  onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
+                        <DropdownToggle caret>
+                            English
+                        </DropdownToggle>
+                        <DropdownMenuLang/>
+                    </UncontrolledDropdown>
+
+                    <Button outline color="secondary">
+                        <span className="page__footer__logo__globeIcon"></span>
+                        <span className="page__footer__logo__base">English</span>
+                    </Button>
+                    <Button outline color="secondary">Canada</Button>
+                </div>
             </section>
         </footer>
     )
