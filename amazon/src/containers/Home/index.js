@@ -115,7 +115,7 @@ import faux_leather from '../../images/products/best-choice-products-faux-leathe
 
 const Home = (props) => {
 
-  return(
+    return (
         <Layout>
             <Slider 
                 items={[

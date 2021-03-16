@@ -52,7 +52,7 @@ const Subheader = (props) => {
             </Button>
             <Navbar expand="md" className="nav__main__menu">
                 <Nav className="mr-auto" navbar>
-                    <UncontrolledDropdown onMouseOver={primedropdownEnter}  onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} toggle={primedropdown} nav inNavbar>
+                    <UncontrolledDropdown onMouseOver={primedropdownEnter} onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} toggle={primedropdown} nav inNavbar>
                         <DropdownToggle nav caret>
                             Prime
                         </DropdownToggle>

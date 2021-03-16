@@ -4,10 +4,10 @@ import HeaderTop from './HeaderTop/index'
 import SubHeader from './SubHeader/index'
 import SideNavBar from './SideNavBar/index'
 
-
 import './index.css'
 
-const Header = () => {
+
+const Header = (props) => {
 
     const [showNav, setShowNav] = useState(false)
 
@@ -17,7 +17,9 @@ const Header = () => {
 
 	return (
         <header className="page__header">
-            <HeaderTop />
+            <HeaderTop
+                {...props}
+            />
             <SubHeader
                 showNav={showNav}
                 onHideNav={() => toggleSideNavbar(false)}

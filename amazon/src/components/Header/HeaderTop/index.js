@@ -9,16 +9,12 @@ import {
 import ReactCountryFlag from "react-country-flag"
 
 import AccountMenu from '../AccountMenu/index'
-import Modal from '../../UI/Modal/index'
 import DropdownMenuLang from '../../UI/DropdownMenuLang'
 
 import "./index.css"
 
-const HeaderTop = () => {
+const HeaderTop = (props) => {
     
-    const [modal, setModal] = useState('hide')
-    const toggleModal = () => setModal('hide')  // Hide Modal on hover on Modal itself 
-
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);    // search filter (not used yet)
 
@@ -95,7 +91,7 @@ const HeaderTop = () => {
                                 </InputGroup>
                             </Form>
                             <Nav className="row navbar__nav" navbar>
-                                <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')} onMouseLeave={() => setModal('hide')}>
+                                <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
                                     <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
                                         <DropdownToggle nav caret className="navigationbar__origin">
                                             <ReactCountryFlag
@@ -107,7 +103,7 @@ const HeaderTop = () => {
                                         <DropdownMenuLang/>
                                     </UncontrolledDropdown>
                                 </NavItem>
-                                <NavItem className="col-xs-4" onMouseEnter={() => setModal('show')} onMouseLeave={() => setModal('hide')}>
+                                <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
                                     <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
                                         <DropdownToggle nav caret className="navigationbar__delivery__link">
                                             <span className="navigation__glow__ingress__block">
@@ -146,11 +142,6 @@ const HeaderTop = () => {
                     </Navbar>
                 </div>
             </section>
-
-            <Modal 
-                modal={modal}
-                toggleModal={() => toggleModal()}>
-            </Modal>
         </>
     )
 }
