@@ -39,6 +39,9 @@
     border-top-width: 0;
     border-bottom: 9px solid var(--white);
 }
+.page__footer .nav__arrow {
+    left: 97px;
+}
 .navigationbar__origin__menu__itemList {
     width: 210px;
 }

@@ -2,21 +2,21 @@
     position: relative;
     min-width: 1000px;
     padding-bottom: 0;
-    color: #DDD;
+    color: var(--grey-tone-24);
     background-color: var(--light-slate-gray);
     border: thin solid red;
 }
 .page__footer a:link, .page__footer a:visited {
     font-family: inherit;
-    color: #004B91;
+    color: var(--blue);
     text-decoration: none;
 }
 .page__footer__to__top {
     display: block;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
     margin-bottom: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    text-decoration: none;
     background-color: var(--blue-2);
 }
 .page__footer__to__top:hover, 
@@ -26,10 +26,10 @@
 }
 .page__footer__back__to__top__text {
     display: block;
-    text-align: center;
     padding: 15px 0;
     line-height: 19px;
     font-size: 13px;
+    text-align: center;
     color: var(--white);
 }
 .page__footer__wrap {
@@ -48,9 +48,9 @@
     justify-content: center;
 }
 .page__footer__colHead {
+    margin: 6px 0 14px 0;
     line-height: 120%;
     font-size: 16px;
-    margin: 6px 0 14px 0;
     white-space: nowrap;
     font-weight: 700;
     color: var(--white)
@@ -73,10 +73,9 @@
 }
 .page__sub__footer__descLink {
     display: inline-block;
-    font-size: 10px;
     line-height: 110%;
-    list-style-type: none;
-    color: #999;
+    font-size: 10px;
+    color: var(--grey-tone-28);
 }
 .page__footer__break {
     margin-top: 40px;
@@ -94,18 +93,16 @@
 }
 .page__footer__logo {
     display: inline-block;
+    max-width: 1000px;
     padding: 0 .6em;
     width: 76px;
     height: 23px;
-    max-width: 1000px;
     margin: 30px 0 15px;
     line-height: 18px;
     font-size: 12px;
     text-align: center;
-    color: #004B91;
-
-
-    background-image: url(https://images-na.ssl-images-amazon.com/images/G/15/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936603_.png);
+    color: var(--blue);
+    background-image: url('../../images/nav-sprite-1.png');
     background-repeat: repeat-x;
     background-position: -10px -90px;
     border: thin solid lime;
@@ -127,39 +124,39 @@
     line-height: 18px;
     box-sizing: border-box;
     display: inline-block!important;
-    border: 1px solid #848688;
+    border: 1px solid var(--grey-tone-29);
     border-radius: 3px;
     padding: 6px 18px 6px 8px;
     font-size: 13px;
     margin-right: 4px;
     white-space: normal;
     font-family: inherit;
-    color: #004B91;
+    color: var(--blue);
     text-decoration: none;
 }
 .page__footer__langToggle {
-    list-style-type: none;
-    box-sizing: border-box;
-    font-family: inherit;
-    color: #DDD;
-    text-align: center;
-    line-height: 18px;
-    white-space: nowrap;
     font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--grey-tone-24);
     border: thin solid forestgreen;
 }
 .page__footer__langLink {
-    list-style-type: none;
-    text-align: center;
-    line-height: 18px;
-    box-sizing: border-box;
-    display: inline-block!important;
-    border: 1px solid #848688;
-    border-radius: 3px;
+    display: inline-block !important;
     padding: 6px 18px 6px 8px;
-    font-size: 13px;
     margin-right: 4px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 3px;
     white-space: normal;
+    border: 1px solid var(--grey-tone-29);
+    background-color: transparent;
+}
+.page__footer__langLink:not(:disabled):not(.disabled).active, 
+.page__footer__langLink:not(:disabled):not(.disabled):active, 
+.show > .page__footer__langLink.dropdown-toggle,
+.page__footer__langLink:hover {
     background-color: transparent;
 }
 .amzn__icon {
@@ -167,35 +164,35 @@
     display: inline-block;
     line-height: 18px;
     text-align: center;
-    background: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
+    background: url('../../images/nav-sprite-2.png');
 }
 .page__footer__logo__globeIcon {
     width: 15px;
     height: 15px;
     top: 2px;
     left: 0;
-    cursor: pointer;
     font-size: 13px;
-    color: #E47911;
+    color: var(--ochre-5);
+    cursor: pointer;
     background-position: -77px -24px;
 }
 .page__footer__logo__locationIcon {
-    font-size: 13px;
-    color: #004B91;
+    top: 1px;
     width: 18px;
     height: 12px;
     padding: 0 .6em;
     margin: 3px 0 0;
-    top: 1px;
+    color: var(--blue);
+    font-size: 13px;
     background-position: 0 -60px;
 }
 .page__footer__logo__base {
     display: inline-block;
-    text-align: center;
+    padding: 0 .6em;
     line-height: 18px;
     font-size: 13px;
-    padding: 0 .6em;
-    color: #CCC;
+    text-align: center;
+    color: var(--grey);
 }
 .page__footer__downUpArrow {
     position: relative;
@@ -207,19 +204,19 @@
     padding: 0 .6em;
     font-size: 13px;
     text-align: center;
-    color: #004B91;
-    background: url(https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png);
+    color: var(--blue);
+    background: url('../../images/nav-sprite-2.png');
     background-position: -77px -80px;
 }
 .page__footer__secondary {
     padding: 30px 0;
     margin: 30px 0 0;
     font-size: 12px;
-    color: #DDD;
+    color: var(--grey-tone-24);
     text-align: center;
     line-height: 18px;
     white-space: nowrap;
-    background-color: #131A22;
+    background-color: var(--blue-4);
 }
 .page__footer__minor {
     max-width: 100%;
@@ -227,7 +224,7 @@
     margin: 0;
     font-size: 12px;
     text-align: center;
-    background-color: #131A22;
+    background-color: var(--blue-4);
 }
 .page__footer__minor__list {
     display: inline-block;
@@ -238,13 +235,9 @@
     display: inline-block;
 }
 .page__footer__minor .page__footer__minor__list li {
+    padding: 0 .6em;
     line-height: 18px;
     font-size: 12px;
     list-style: disc;
-    box-sizing: border-box;
-    padding: 0 .6em;
-    white-space: normal;
-    font-family: inherit;
-    text-decoration: none;
-    color: #DDD;    
+    color: var(--grey-tone-24);    
 }

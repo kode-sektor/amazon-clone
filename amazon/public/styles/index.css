@@ -140,6 +140,7 @@ file rather than small ones. Your choice
 	--blue: #004b91;
 	--blue-2: #37475A;
 	--blue-3: #485769;
+	--blue-4: #131A22;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -206,6 +207,8 @@ file rather than small ones. Your choice
 	--grey-tone-25: #d5d9d9;
 	--grey-tone-26: #f7fafa;
 	--grey-tone-27: #3a4553;
+	--grey-tone-28: #999;
+	--grey-tone-29: #848688;
 	
     --black: #000;
     --white: #fff;
@@ -639,6 +642,10 @@ input[required]:after{
 
 .fa {
 	color: gold;
+}
+.btn:hover, .btn:focus, .btn:active {
+	background-color: transparent !important;
+	box-shadow: none !important;
 }
 
 

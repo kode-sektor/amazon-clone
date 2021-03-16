@@ -1,9 +1,9 @@
 .navigationbar__account {
     position: relative;
-}
-.navigationbar__account {
     left: -520px;
     width: 766px;
+    margin: -3px 0 0 -2px;
+    padding-bottom: 7px;
 }
 .navigationbar__account__flyout__content {
     display: flex;
@@ -21,7 +21,7 @@
     background: var(--white);
 }
 .navigationbar__buy__again {
-    margin: -15px 1px -8px -15px;
+    margin: -9px 1px -7px -15px;
     padding-top: 28px;
     border: 1px solid var(--grey);
 }
