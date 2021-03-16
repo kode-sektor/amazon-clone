@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { DropdownMenu } from "reactstrap"
 
+import './index.css'
 
 const DropdownMenuLang = () => {
     return (
