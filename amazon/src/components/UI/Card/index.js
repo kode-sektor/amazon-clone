@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 const Card_One = ({name, date, img, cardClass=""}) => {

@@ -11,9 +11,7 @@ const Header = (props) => {
 
     const [showNav, setShowNav] = useState(false)
 
-    const toggleSideNavbar = (display) => {
-        setShowNav(display)
-    }
+    const toggleSideNavbar = (display) => setShowNav(display)
 
 	return (
         <header className="page__header">

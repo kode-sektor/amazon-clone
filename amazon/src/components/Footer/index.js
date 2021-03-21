@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 import FooterMenu from './FooterMenu'
 
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
 
 import DropdownMenuLang from '../UI/DropdownMenuLang'
+import ModalLang from '../Footer/ModalLang'
 
 import './index.css'
 
 
-const Footer = () => {
+const Footer = (props) => {
 
+    const { modal, toggleModal } = props
     const [isOpen, setIsOpen] = useState(false);
-
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // flag dropdown
 
     // Toggle dropdowns
@@ -85,7 +86,10 @@ const Footer = () => {
                         </DropdownToggle>
                         <DropdownMenuLang/>
                     </UncontrolledDropdown>
-                    <Button outline color="secondary">
+                    <Button outline color="secondary" onClick={() => {
+                        let modalState = (modal === "hide") ? "show stretched" : "hide"
+                        toggleModal(modalState)
+                    }}>
                         <span className="page__footer__logo__locationIcon amzn__icon"></span>
                         <span className="page__footer__logo__base">Canada</span>
                     </Button>
@@ -209,6 +213,7 @@ const Footer = () => {
                     <li><a href="/">© 2008-2021, Amazon.com, Inc. or its affiliates</a></li>
                 </ul>
             </section>
+            <ModalLang/>
         </footer>
     )
 }

@@ -163,6 +163,8 @@ file rather than small ones. Your choice
 	--ochre-19: #f8e3ad;
 	--ochre-20: #eeba37;
 	--ochre-21: #ffa724;
+	--ochre-22: #ffa41c;
+	--ochre-23: #ff8f00;
 
 
     --link: #007BFF;
@@ -209,6 +211,11 @@ file rather than small ones. Your choice
 	--grey-tone-27: #3a4553;
 	--grey-tone-28: #999;
 	--grey-tone-29: #848688;
+	--grey-tone-30: #e5e5e5;
+	--grey-tone-31: #f0f2f2;
+	--grey-tone-32: #e3e6e6;
+	--grey-tone-33: #f7f7f7;
+	--grey-tone-34: #eaeaea;
 	
     --black: #000;
     --white: #fff;
@@ -329,8 +336,8 @@ h3 {
 header {
 }
 hr {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid var(--grey-tone-30);
+    border-bottom: 1px solid var(--white);
 }
 p {
 	margin: 0 0 14px 0;
@@ -389,17 +396,28 @@ li a {
     color: var(--price-color) !important;
 }
 .a__button {
-    background: var(--grey-tone-10);
-    border-radius: 3px;
-    border-color: var(--grey-tone-11) var(--grey-tone-12) var(--grey-tone-13);
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
     display: inline-block;
     padding: 0;
     text-align: center;
     text-decoration: none!important;
     vertical-align: middle;
+
+	border-color: var(--grey-tone-25);
+    border-radius: 8px !important;
+    color: var(--color);
+	background: var(--grey-tone-10);
+    border-radius: 3px;
+    / border-color: var(--grey-tone-11) var(--grey-tone-12) var(--grey-tone-13);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    background: var(--grey-tone-31);
+	background: var(--white);
+	box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+.a__button:hover {
+	background-color: var(--grey-tone-26);
+    border-color: var(--grey-tone-25);
 }
 .a__button__inner {
     display: block;
@@ -408,20 +426,45 @@ li a {
     height: 29px;
     box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
     border-radius: 2px;
+	border-radius: 7px;
+}
+.a__shadow {
+	border-radius: 7px;
+    background: var(--grey-tone-31);
+    box-shadow: 0 2px 5px rgb(15 17 17 / 15%);
+}
+.a__button__text {
+    display: block;
+    padding: 0 10px 0 11px;
+    line-height: 29px;
+    margin: 0;
+    outline: 0;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13px;
+    border: 0;
+	background-color: transparent;
+}
+.btn-secondary:not(:disabled):not(.disabled):active {
+	border-color: var(-grey-tone-25) !important;
+	border: none !important;
+}
+.a__button__dropdown .a__button__inner:hover {
+	background: var(--grey-tone-32);
 }
 .a__button .a__button__inner {
-    background: var(--grey-tone-15);
-    background: linear-gradient(to bottom, var(--grey-tone-16), var(--grey-tone-10));
+    /* background: var(--grey-tone-15);
+    background: linear-gradient(to bottom, var(--grey-tone-16), var(--grey-tone-10)); */
 }
-.a__button__primary .a__button__inner {
+/* .a__button__primary .a__button__inner {
     background: var(--ochre-11);
 	background: linear-gradient(to bottom, var(--ochre-12), var(--ochre-6));
 	box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
 	height: 20px !important;
-}
+} */
 .a__button:hover .a__button__inner {
-    background: var(--grey-tone-18);
-    background: linear-gradient(to bottom,var(--grey-tone-18), var(--grey-tone-17));
+    /* background: var(--grey-tone-18);
+    background: linear-gradient(to bottom,var(--grey-tone-18), var(--grey-tone-17)); */
 }
 .a__button__primary:hover .a__button__inner {
     background: var(--ochre-15);
@@ -430,10 +473,15 @@ li a {
 .a__button .a__button__text {
     color: var(--color-2);
 }
-.a__button__primary {
+/* .a__button__primary {
     background: var(--ochre-6);
     border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
     color: var(--color-2);
+} */
+.a__button__primary {
+	background: var(--ochre-22);
+    border-color: var(--ochre-23);
+	border-style: none;
 }
 .a__button__primary.a__button__focus, .a__button__primary:focus {
     border-color: var(--ochre-10);
@@ -448,21 +496,13 @@ li a {
 .a__button__primary .a__button__text {
     color: var(--color-2);
 }
-.a__button__inner {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    height: 29px;
-    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
-    border-radius: 2px;
-}
-.a__button__primary .a__button__inner {
+/* .a__button__primary .a__button__inner {
     background: var(--ochre-11);
     background: linear-gradient(to bottom,var(--ochre-12),var(--ochre-6));
-}
+} 
 .a__button__primary .a__button__inner {
     box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
-}
+}*/
 .a__button.a__button__small .a__button__inner {
 	height: 20px!important;
 }
@@ -486,6 +526,19 @@ li a {
     outline: 0;
     overflow: visible;
     z-index: 20;
+}
+.a-button:not(.a-button-toggle) {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+.a__button__dropdown .a__button__text {
+    position: relative;
+    overflow: hidden;
+	height: 100%;
+	padding-right: 26px;
+    text-overflow: ellipsis;
+    text-align: left;
+    z-index: 10;
 }
 .see__more__link a {
 	font-size: 13px;
@@ -600,10 +653,10 @@ input:focus:valid{
 	background-image: url();
 }
 input[required]:invalid, input[pattern]:invalid {
-	border-color: #A53403;
+	/border-color: #A53403;
 }
 input[required]:valid, input[pattern]:valid {
-	border-color: #0B9900;
+	/border-color: #0B9900;
 }
 
 /*input[type="text"]:focus{
@@ -636,6 +689,20 @@ input[required]:after{
 /*7. ICONS
 ==============================================================================================================================================================*/
 
+.a-icon-dropdown {
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 8px;
+	top: 10px;
+	right: 8px;
+	vertical-align: top;
+	background-image: url(https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png);
+	background-position: -7px -102px;
+	background-size: 400px 900px;
+	background-repeat: no-repeat;
+}
+
 
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
@@ -646,6 +713,9 @@ input[required]:after{
 .btn:hover, .btn:focus, .btn:active {
 	background-color: transparent !important;
 	box-shadow: none !important;
+}
+.btn-secondary:hover {
+	border-color: var(--grey-tone-25);
 }
 
 
@@ -703,8 +773,8 @@ a.tooltip:hover span, a.tooltip:focus span {
 	top: 1em;
 	left: 2em;
 	padding: 0.2em 0.6em;
-	border: 1px solid #996633;
-	color: #000;
+	/border: 1px solid #996633;
+	color: var(--black);
 }
 
 
@@ -718,7 +788,7 @@ a.tooltip:hover span, a.tooltip:focus span {
 	body{
 
 		padding: 0 5%;
-		background: #fff;
+		background: var(--white);
 		font-family: Baskerville, "Palatino Linotype", "Times New Roman", "Times", serif;
 		line-height: 16pt;
 
@@ -826,7 +896,7 @@ p.abstract:after{
 	display :block;
 	margin: 0;
 	padding: 0;
-	color: #ff0000;
+	/color: #ff0000;
 	font-style: italic;
 }
 .sr-only {

@@ -22,9 +22,12 @@ const Layout = (props) => {
                 </div>
                 <Modal 
                     modal={modal}
-                    toggleModal={toggleModal}>
-                </Modal>
-            <Footer />
+                    toggleModal={toggleModal}
+                />
+            <Footer 
+                modal={modal}
+                toggleModal={toggleModal}
+            />
         </>
     )
 }

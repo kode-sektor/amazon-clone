@@ -7,3 +7,6 @@
 .modal.hide {
     display: none;
 }
+.modal.stretched {
+    top: 0;
+}
