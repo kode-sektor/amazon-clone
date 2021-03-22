@@ -37,112 +37,110 @@ const HeaderTop = (props) => {
 
 
     return (
-        <>
-            <section className="page__header">
-                <div className="navbelt">
-                    <Navbar expand="md" className="navigationbar">
-                        <NavbarBrand href="/" className="navigationbar__brand ssr-only">
-                            <span id="nav-logo-sprites"	className="navigationbar__logo__link" aria-label="Amazon.ca">
-                                <span className="navigationbar__sprite"></span>
-                                <span id="logo-ext" className="navigationbar__nav__logo__ext"></span>
-                                <span className="navigationbar__logo__locale">.ca</span>
-                            </span>
-                        </NavbarBrand>
-                        <NavbarToggler onClick={toggle} />
-                        <Collapse isOpen={isOpen} navbar>
-                            <Nav className="navigationbar__delivery" navbar>
-                                <NavItem>
-                                    <Button className="navigationbar__delivery__link">
-                                        <span className="navigationbar__logo__glow__loc__icon"></span>
+        <section className="page__header">
+            <div className="navbelt">
+                <Navbar expand="md" className="navigationbar">
+                    <NavbarBrand href="/" className="navigationbar__brand ssr-only">
+                        <span id="nav-logo-sprites"	className="navigationbar__logo__link" aria-label="Amazon.ca">
+                            <span className="navigationbar__sprite"></span>
+                            <span id="logo-ext" className="navigationbar__nav__logo__ext"></span>
+                            <span className="navigationbar__logo__locale">.ca</span>
+                        </span>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={toggle} />
+                    <Collapse isOpen={isOpen} navbar>
+                        <Nav className="navigationbar__delivery" navbar>
+                            <NavItem>
+                                <Button className="navigationbar__delivery__link">
+                                    <span className="navigationbar__logo__glow__loc__icon"></span>
+                                    <span className="navigation__glow__ingress__block">
+                                        <span className="nav__line__1">Deliver to Ibiyemi</span>
+                                        <span className="nav__line__2">Toronto M6G 1E2</span>
+                                    </span>
+                                </Button>
+                            </NavItem>
+                        </Nav>
+                        <Form className="navigationbar__category__filter">
+                            <Label for="category__filter" className="sr-only">
+                                Email
+                            </Label>
+                            <InputGroup>
+                                <InputGroupAddon addonType="prepend">
+                                    <div className="nav__search__scope dropdown">
+                                        <span className="navigationbar__drop__categories dropdown-toggle btn btn-secondary" caret>
+                                            All
+                                        </span>
+                                        <select className="navigationbar__search__dropdown" title="Search In">
+                                            <option value="search-alias=aps">All Departments</option>
+                                            <option value="search-alias=alexa-skills">Alexa Skills</option>
+                                            <option value="search-alias=amazon-devices">Amazon Devices</option>
+                                        </select>
+                                    </div>
+                                </InputGroupAddon>
+                                <Input
+                                    type="text"
+                                    name="category__filter"
+                                    id="category__filter"
+                                    className="category__filter__input"
+                                    placeholder=""
+                                />
+                                <InputGroupAddon addonType="append" className="navigationbar__category__filter__search">
+                                    <Button className="nav__search__submit__button">Go</Button>
+                                </InputGroupAddon>
+                            </InputGroup>
+                        </Form>
+                        <Nav className="row navbar__nav" navbar>
+                            <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
+                                <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
+                                    <DropdownToggle nav caret className="navigationbar__origin">
+                                        <ReactCountryFlag
+                                            countryCode="CA"
+                                            svg
+                                            style={{ width: "20px", height: "20px" }}
+                                        />
+                                    </DropdownToggle>
+                                    <DropdownMenuLang/>
+                                </UncontrolledDropdown>
+                            </NavItem>
+                            <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
+                                <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
+                                    <DropdownToggle nav caret className="navigationbar__delivery__link">
                                         <span className="navigation__glow__ingress__block">
-                                            <span className="nav__line__1">Deliver to Ibiyemi</span>
-                                            <span className="nav__line__2">Toronto M6G 1E2</span>
+                                            <span className="nav__line__1">Hello, Kay</span>
+                                            <span className="nav__line__2">Account &amp; Lists</span>
                                         </span>
-                                    </Button>
-                                </NavItem>
-                            </Nav>
-                            <Form className="navigationbar__category__filter">
-                                <Label for="category__filter" className="sr-only">
-                                    Email
-                                </Label>
-                                <InputGroup>
-                                    <InputGroupAddon addonType="prepend">
-                                        <div className="nav__search__scope dropdown">
-                                            <span className="navigationbar__drop__categories dropdown-toggle btn btn-secondary" caret>
-                                                All
-                                            </span>
-                                            <select className="navigationbar__search__dropdown" title="Search In">
-                                                <option value="search-alias=aps">All Departments</option>
-                                                <option value="search-alias=alexa-skills">Alexa Skills</option>
-                                                <option value="search-alias=amazon-devices">Amazon Devices</option>
-                                            </select>
-                                        </div>
-                                    </InputGroupAddon>
-                                    <Input
-                                        type="text"
-                                        name="category__filter"
-                                        id="category__filter"
-                                        className="category__filter__input"
-                                        placeholder=""
-                                    />
-                                    <InputGroupAddon addonType="append" className="navigationbar__category__filter__search">
-                                        <Button className="nav__search__submit__button">Go</Button>
-                                    </InputGroupAddon>
-                                </InputGroup>
-                            </Form>
-                            <Nav className="row navbar__nav" navbar>
-                                <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
-                                    <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
-                                        <DropdownToggle nav caret className="navigationbar__origin">
-                                            <ReactCountryFlag
-                                                countryCode="CA"
-                                                svg
-                                                style={{ width: "20px", height: "20px" }}
-                                            />
-                                        </DropdownToggle>
-                                        <DropdownMenuLang/>
-                                    </UncontrolledDropdown>
-                                </NavItem>
-                                <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
-                                    <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
-                                        <DropdownToggle nav caret className="navigationbar__delivery__link">
-                                            <span className="navigation__glow__ingress__block">
-                                                <span className="nav__line__1">Hello, Kay</span>
-                                                <span className="nav__line__2">Account &amp; Lists</span>
-                                            </span>
-                                        </DropdownToggle>
-                                        <DropdownMenu className="navigationbar__account">
-                                            <AccountMenu />
-                                        </DropdownMenu>
-                                    </UncontrolledDropdown>
-                                </NavItem>
-                                <NavItem className="col-xs-4">
-                                    <NavItem>
-                                        <NavLink href="/components/" className="navigationbar__delivery__link">
-                                            <span className="navigation__glow__ingress__block">
-                                                <span className="nav__line__1">Returns</span>
-                                                <span className="nav__line__2">&amp; Orders</span>
-                                            </span>
-                                        </NavLink>
-                                    </NavItem>
-                                </NavItem>
-                                <NavItem className="col-xs-4">
-                                    <NavLink href="#" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
-                                        <span className="nav__cart__count__container">
-                                            <span id="nav-cart-count" aria-hidden="true" className="nav__cart__count">
-                                                0
-                                            </span>
-                                            <span className="nav__cart__icon"></span>
+                                    </DropdownToggle>
+                                    <DropdownMenu className="navigationbar__account">
+                                        <AccountMenu />
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                            </NavItem>
+                            <NavItem className="col-xs-4">
+                                <NavItem>
+                                    <NavLink href="/components/" className="navigationbar__delivery__link">
+                                        <span className="navigation__glow__ingress__block">
+                                            <span className="nav__line__1">Returns</span>
+                                            <span className="nav__line__2">&amp; Orders</span>
                                         </span>
-                                        <span className="nav__cart__text">Cart</span>
                                     </NavLink>
                                 </NavItem>
-                            </Nav>
-                        </Collapse>
-                    </Navbar>
-                </div>
-            </section>
-        </>
+                            </NavItem>
+                            <NavItem className="col-xs-4">
+                                <NavLink href="#" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
+                                    <span className="nav__cart__count__container">
+                                        <span id="nav-cart-count" aria-hidden="true" className="nav__cart__count">
+                                            0
+                                        </span>
+                                        <span className="nav__cart__icon"></span>
+                                    </span>
+                                    <span className="nav__cart__text">Cart</span>
+                                </NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </div>
+        </section>
     )
 }
 

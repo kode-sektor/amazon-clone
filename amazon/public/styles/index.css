@@ -470,6 +470,11 @@ li a {
     background: var(--ochre-15);
     background: linear-gradient(to bottom, var(--ochre-13), var(--ochre-14));
 }
+.a__button__primary.a__button__focus .a__button__inner, 
+.a__button__primary:focus .a__button__inner, 
+.a__button__primary:hover .a__button__inner {
+    background: #FA8900;
+}
 .a__button .a__button__text {
     color: var(--color-2);
 }
@@ -489,6 +494,11 @@ li a {
 .a__button-primary.a__button__focus, .a__button__primary:focus, 
 .a__button__primary:hover, .a__button__primary:hover:active {
 	border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
+}
+.a__button__primary:hover, .a__button__primary:focus {
+    background: #FA8900;
+    border-color: #E3931E;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
 .a__button.a__button__small {
     height: 22px;

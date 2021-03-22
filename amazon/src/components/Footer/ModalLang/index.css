@@ -1,18 +1,25 @@
 .popover__langSetting {
     position: fixed;
+    display: none;
     overflow: auto;
-    height: 100%;
-    width: 100%;
-    right: 0;
-    top: 0;
+    /* height: 100%;
+    width: 100%; */
+    /* right: 0;
+    top: 0; */
     padding-bottom: 0px;
     z-index: 1000;
     color: var(--color);
     visibility: visible;
     border: 2px solid indigo;
 }
+.popover__langSetting.show {
+    display: block;
+}
 .popover__langSetting__container {
-    position: absolute;
+    position: fixed;
+    overflow: auto;
+
+    /position: absolute;
     display: block;
     top: 212px;
     left: 383px;
@@ -102,7 +109,7 @@
     border: 2px solid cyan;
 }
 .popover__langSetting__countryNav__inner {
-    margin-bottom: 48px !important;
+    margin-bottom: 28px !important;
     border: thin solid orange;
 }
 .popover__langSetting__country {

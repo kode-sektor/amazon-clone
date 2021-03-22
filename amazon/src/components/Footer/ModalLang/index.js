@@ -1,27 +1,22 @@
 import React, { useState } from 'react'
 
-import { Button, ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Link } from 'react-router-dom'
 
-import { countries } from '../../../utilities/data'
+import { Button } from 'reactstrap'
 
 import './index.css'
 
-const ModalLang = () => {
 
+const ModalLang = (props) => {
 
-    const [countryList, setCountryList] = useState(countries);
-
-    const [dropdownOpen, setOpen] = useState(false);
-    const toggle = () => setOpen(!dropdownOpen);
-
-    console.log(Object.values(countries))
-
+    const { modalPanel, toggleModal, title, legend, body, bodyAux, cta } = props
+    
     return (
-        <section className="popover__langSetting">
+        <section className={`popover__langSetting ${modalPanel}`}>
             <div className="popover__langSetting__container">
                 <header className="popover__langSetting__heading">
                     <h5 className="popover__langSetting__title">
-                        Website (Country/Region)
+                        {title}
                     </h5>
                     <Button className="popover__langSetting__close" outline color="secondary">
                         <i class="popover__close"></i>
@@ -29,50 +24,34 @@ const ModalLang = () => {
                 </header>
                 <section className="popover__langSetting__customerPreferences">
                     <form action="" className="popover__langSetting__countryNav">
-                        <div className="popover__langSetting__countryNav__inner d-flex justify-content-between">
+                        <div className="popover__langSetting__countryNav__inner d-flex justify-content-between row">
                             <section className="popover__langSetting__country col-6">
-                                <legend className="popover__langSetting__country__title">Select your preferred country/region website:</legend>
-                                <ButtonDropdown className="popover__langSetting__panel" isOpen={dropdownOpen} toggle={toggle}>
-                                    <DropdownToggle className="a__button a__button__dropdown">
-                                        <span className="a__button__inner a__shadow">
-                                            <span className="a__button__text">
-                                                Canada
-                                            </span>
-                                        </span>
-                                        <i class="a-icon-dropdown"></i>
-                                    </DropdownToggle>
-                                    <DropdownMenu>
-                                        {
-                                            (countryList).map(item => (
-                                                <DropdownItem data-value={item.value}>{item.country}</DropdownItem>
-                                            ))
-                                        }
-                                    </DropdownMenu>
-                                </ButtonDropdown>
-                                <p><b>NOTE:</b> A new country/region website selection will open in a new tab.</p>
+                                <legend className="popover__langSetting__country__title">{legend}:</legend>
+                                {body}
                             </section>
                             <section className="popover__langSetting__notes col-5">
-                                <legend className="popover__langSetting__country__title">Changing country/region website</legend>
-                                <p>Changing the country/region you shop from may affect factors including price, shipping options and product availability.</p>
+                                {bodyAux}
                             </section>
                         </div>
                     </form>
                 </section>
                 <footer className="popover__langSetting__footer">
-                    <button className="a__button a__button__cancel">
+                    <button className="a__button a__button__cancel" onClick={() => toggleModal('show')} >
                         <span className="a__button__inner">
                             <span className="a__button__text">
                                 Cancel
                             </span>
                         </span>
                     </button>
-                    <button className="a__button a__button__primary">
-                        <span className="a__button__inner">
-                            <span className="a__button__text">
-                                Go to website
+                    <Link to="/">
+                        <button className="a__button a__button__primary" onClick={() => toggleModal('show')} >
+                            <span className="a__button__inner">
+                                <span className="a__button__text">
+                                    {cta}
+                                </span>
                             </span>
-                        </span>
-                    </button>
+                        </button>
+                    </Link>
                 </footer>
             </div>
         </section>

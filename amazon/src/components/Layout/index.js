@@ -9,8 +9,24 @@ import './index.css'
 
 const Layout = (props) => {
 
-    const [modal, setModal] = useState('hide')
-    const toggleModal = (status) => setModal(status)  // Hide Modal on hover on Modal itself 
+    const [modal, setModal] = useState("hide")  // Main modal
+    const [modalLangPanel, setModalLangPanel] = useState("hide")    // Language panel
+    const [modalLangProps, setModalLangProps] = useState({
+                                                    modalLangPanel : "",
+                                                    title : "",
+                                                    legend : "",
+                                                    body : "",
+                                                    legendAux : "",
+                                                    bodyAux : "",
+                                                    cta : ""        
+                                                })
+
+    const toggleModal = (status, modalLangProp=modalLangProps) => { 
+        setModal(status)  // Hide Modal on hover on Modal itself 
+        
+        modalLangProps.modalLangPanel = (status === "hide") ? "" : "show"
+        setModalLangProps(modalLangProps)
+    }
 
     return(
         <>
@@ -26,6 +42,8 @@ const Layout = (props) => {
                 />
             <Footer 
                 modal={modal}
+                modalLangPanel={modalLangPanel}
+                modalLangProps={modalLangProps}
                 toggleModal={toggleModal}
             />
         </>
