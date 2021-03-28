@@ -9,7 +9,10 @@ const AccountMenu = () => {
             </div>
             <div className="navigationbar__account__flyout__content">
                 <div className="navigationbar__buy__again">
-                    <h3 className="navigationbar__account__heading">Buy it again</h3>
+                    <h3 className="navigationbar__account__heading mb-0 a__size__medium">Buy it again</h3>
+                    <p>
+                        <a className="a__size__base" href="http://www.amazon.ca/gp/buyagain">View All &amp; Manage</a>
+                    </p>
                     <ul className="navigationbar__recent__purchases">
                         <li>
                             <div className="navigationbar__recent__grid">
@@ -34,7 +37,10 @@ const AccountMenu = () => {
                                         <div className="w-100">
                                             <a className="a__text__normal" href="/Listerine-Antiseptic-Mouthwash-Gingivitis-Breath/dp/B00PQKRJY4/ref=pd_nav">
                                                 <span className="a__size__base a__color__price">
-                                                    <span className="">CDN$7.96</span>
+                                                    <span className="">$7.96</span>
+                                                </span>&nbsp;
+                                                <span className="amzn__prime__badge">
+                                                    <span className="amzn__prime__badge__icon"></span>
                                                 </span>
                                             </a>   
                                         </div>
@@ -60,9 +66,6 @@ const AccountMenu = () => {
                             </div>
                         </li>
                     </ul>
-                    <div className="see__more__link">
-                        <a href="http://www.amazon.ca/gp/buyagain">View All &amp; Manage</a>
-                    </div>
                 </div>
                 <div className="navigationbar__wishlist">
                     <h3 className="navigationbar__account__heading">Your Lists</h3>

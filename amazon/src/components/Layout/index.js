@@ -18,14 +18,21 @@ const Layout = (props) => {
                                                     body : "",
                                                     legendAux : "",
                                                     bodyAux : "",
-                                                    cta : ""        
+                                                    cta : "",
+                                                    classname : ""       
                                                 })
 
-    const toggleModal = (status, modalLangProp=modalLangProps) => { 
+    const toggleModal = (status, mode, modalLangProp=modalLangProps) => { 
         setModal(status)  // Hide Modal on hover on Modal itself 
-        
-        modalLangProps.modalLangPanel = (status === "hide") ? "" : "show"
-        setModalLangProps(modalLangProps)
+
+        // If no mode, opening a modal, will always show all modals. Use mode to specify
+        // which modal to show. Without mode === "all", closing the general modal will
+        // fail to close the modals
+
+        if (mode === "langModal" || mode === "all") {
+            modalLangProps.modalLangPanel = (status === "hide") ? "" : "show"
+            setModalLangProps(modalLangProp)
+        }
     }
 
     return(

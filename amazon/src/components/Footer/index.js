@@ -8,6 +8,7 @@ import DropdownMenuLang from '../UI/DropdownMenuLang'
 import ModalLang from '../Footer/ModalLang'
 
 import { countries } from '../../utilities/data'
+import ReactCountryFlag from "react-country-flag"
 
 import './index.css'
 
@@ -16,27 +17,32 @@ const Footer = (props) => {
 
     const { modal, toggleModal, modalLangProps} = props
 
-    const [isOpen, setIsOpen] = useState(false);
-    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // flag dropdown
-    const [dropdownOpen, setDropDownOpen] = useState(false);
+    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
+    const [countryDropDown, setCountryDropDown] = useState(false)
 
-    const toggle = () => setDropDownOpen(!dropdownOpen);
 
     // Show or Hide Language Modal
     // toggleModal is a parent function because while true that a click on the 'Canada' 
     // button shows it, a click on the parent modal is also responsible for hiding both
     // the parent modal and this langModal. Thus its more correct that the function of 
     // this langModal is moved to the parent Module (Layout/index.js)
-    const toggleModalLang = (modalState, modalLangProp) => {
-        toggleModal(modalState, modalLangProp)
+    const toggleModalLang = (modalState, modalLangProp, langModal) => {
+        console.log(modalState)     // show stretched
+        console.log(modalLangProp)  // langModal
+        console.log(langModal)  // {modalLangPanel: "show stretched", title: "Website (Country / Region)"}
+
+        toggleModal(modalState, modalLangProp, langModal)
     } 
 
     // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
     const flagdropdownEnter = () => setFlagdropdownOpen(true)
     const flagdropdownLeave = () => setFlagdropdownOpen(false)
+    const [dropdownOpen, setOpen] = useState(false);
+    
+    const toggleCountries = () => setCountryDropDown(!countryDropDown)
+    const toggle = () => setOpen(!dropdownOpen);
 
-    console.log(modalLangProps)
 
     return (
         <footer className="page__footer">
@@ -100,40 +106,40 @@ const Footer = (props) => {
 
                             const modalLangProps = {
                                 modalLangPanel : modalPanel,
-                                title : "Website (Country/Region)",
-                                legend : "Select your preferred country/region website",
-                                body : <>
-                                        <ButtonDropdown className="popover__langSetting__panel" isOpen={dropdownOpen} toggle={toggle}>
-                                            <DropdownToggle className="a__button a__button__dropdown">
-                                                <span className="a__button__inner a__shadow">
-                                                    <span className="a__button__text">
-                                                        Canada
-                                                    </span>
+                                title : <><span className="amzn__country__icon amzn__globeIcon__two"></span> Language Settings</>,
+                                legend : "Select your preferred language",
+                                body :  <form className="page__footer__langSetting">
+                                            <label className="page__footer__langLabel">
+                                                <input className="page__footer__langInput" type="radio" name="LOP" value="en_CA" checked=""/>
+                                                <i class="amzn__icon__radio checked"></i>&nbsp;
+                                                <span class="a-label a-radio-label">
+                                                    English - EN
                                                 </span>
-                                                <i class="a-icon-dropdown"></i>
-                                            </DropdownToggle>
-                                            <DropdownMenu>
-                                                {
-                                                    (countries).map(item => (
-                                                        <DropdownItem data-value={item.value}>{item.country}</DropdownItem>
-                                                    ))
-                                                }
-                                            </DropdownMenu>
-                                        </ButtonDropdown>
-                                        <p><b>NOTE:</b> A new country/region website selection will open in a new tab.</p>
-                                    </>,
+                                            </label>
+                                            <hr className="icp__divider"/>
+                                            <label className="page__footer__langLabel">
+                                                <input className="page__footer__langInput" type="radio" name="LOP" value="en_CA" checked=""/>
+                                                <i class="amzn__icon__radio"></i>&nbsp;
+                                                <span class="a-label a-radio-label">
+                                                    <em>Français - FR - Traduction</em>
+                                                </span>
+                                            </label>
+                                        </form>,
                                 legendAux : "Changing country/region website",
                                 bodyAux : <>
-                                            <legend className="popover__langSetting__country__title">Changing country/region website</legend>
-                                            <p>Changing the country/region you shop from may affect factors including price, shipping options and product availability.</p>
+                                            <legend className="popover__langSetting__country__title">Translation</legend>
+                                            <p>We'll translate the most important information for your browsing, shopping, and communications</p>
+                                            <legend className="popover__langSetting__country__title">Additional Languages</legend>
+                                            <p>More languages are available from other Amazon websites.</p>
                                         </>,
-                                cta : "Go to website"
+                                cta : "Save Changes",
+                                classname : 'language'
                             }
 
-                            toggleModalLang(modalState, modalLangProps)
+                            toggleModalLang(modalState, "langModal", modalLangProps)
                         }}>
-                            <span className="page__footer__logo__globeIcon amzn__icon"></span>
-                            <span className="page__footer__logo__base">English</span>
+                            <span className="amzn__country__icon amzn__globeIcon"></span>
+                            <span className="amzn__logo__base">English</span>
                             <span class="page__footer__downUpArrow"></span>
                         </DropdownToggle>
                         <DropdownMenuLang/>
@@ -147,23 +153,21 @@ const Footer = (props) => {
                             title : "Website (Country/Region)",
                             legend : "Select your preferred country/region website",
                             body : <>
-                                    <ButtonDropdown className="popover__langSetting__panel" isOpen={dropdownOpen} toggle={toggle}>
-                                        <DropdownToggle className="a__button a__button__dropdown">
-                                            <span className="a__button__inner a__shadow">
-                                                <span className="a__button__text">
-                                                    Canada
-                                                </span>
-                                            </span>
-                                            <i class="a-icon-dropdown"></i>
-                                        </DropdownToggle>
-                                        <DropdownMenu>
-                                            {
-                                                (countries).map(item => (
-                                                    <DropdownItem data-value={item.value}>{item.country}</DropdownItem>
-                                                ))
-                                            }
-                                        </DropdownMenu>
-                                    </ButtonDropdown>
+                                    <div className="popover__langSetting__panel">
+                                        <div className="a__button a__button__dropdown">
+                                            <div className="a__button__inner a__shadow">
+                                                <select className="popover__langSetting__list a__button__text">
+                                                { 
+                                                    countries.map(item => (
+                                                        <option value={item.value}>
+                                                            {item.country}
+                                                        </option>
+                                                    ))
+                                                }
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p><b>NOTE:</b> A new country/region website selection will open in a new tab.</p>
                                 </>,
                             legendAux : "Changing country/region website",
@@ -171,13 +175,14 @@ const Footer = (props) => {
                                         <legend className="popover__langSetting__country__title">Changing country/region website</legend>
                                         <p>Changing the country/region you shop from may affect factors including price, shipping options and product availability.</p>
                                     </>,
-                            cta : "Go to website"
+                            cta : "Go to website",
+                            classname : 'region'
                         }
 
-                        toggleModalLang(modalState, modalLangProps)
+                        toggleModalLang(modalState, "langModal", modalLangProps)
                     }}>
-                        <span className="page__footer__logo__locationIcon amzn__icon"></span>
-                        <span className="page__footer__logo__base">Canada</span>
+                        <span className="amzn__country__icon amzn__locationIcon"></span>
+                        <span className="amzn__logo__base">Canada</span>
                     </Button>
                 </div>
             </section>
@@ -300,38 +305,15 @@ const Footer = (props) => {
                 </ul>
             </section>
             <ModalLang
-                modalPanel={modalLangProps?.modalLangPanel}
-                title={"Website (Country/Region)"}
-                legend={"Select your preferred country/region website"}
-                body={<>
-                        <ButtonDropdown className="popover__langSetting__panel" isOpen={dropdownOpen} toggle={toggle}>
-                            <DropdownToggle className="a__button a__button__dropdown">
-                                <span className="a__button__inner a__shadow">
-                                    <span className="a__button__text">
-                                        Canada
-                                    </span>
-                                </span>
-                                <i class="a-icon-dropdown"></i>
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                {
-                                    (countries).map(item => (
-                                        <DropdownItem data-value={item.value}>{item.country}</DropdownItem>
-                                    ))
-                                }
-                            </DropdownMenu>
-                        </ButtonDropdown>
-                        <p><b>NOTE:</b> A new country/region website selection will open in a new tab.</p>
-                    </>
-                    }
-                legendAux={"Changing country/region website"}
-                bodyAux={
-                        <>
-                            <legend className="popover__langSetting__country__title">Changing country/region website</legend>
-                            <p>Changing the country/region you shop from may affect factors including price, shipping options and product availability.</p>
-                        </>
-                    }
-                cta={"Go to website"}
+                modalPanel={modalLangProps.modalLangPanel}
+                title={modalLangProps.title}
+                legend={modalLangProps.legend}
+                body={modalLangProps.body}
+                legendAux={modalLangProps.legendAux}
+                bodyAux={modalLangProps.bodyAux}
+                cta={modalLangProps.cta}
+                toggleModalLang={toggleModalLang}
+                classname={modalLangProps.classname}
             />
         </footer>
     )

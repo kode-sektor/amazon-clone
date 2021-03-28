@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom'
-
 import { Button } from 'reactstrap'
 
 import './index.css'
@@ -9,16 +8,18 @@ import './index.css'
 
 const ModalLang = (props) => {
 
-    const { modalPanel, toggleModal, title, legend, body, bodyAux, cta } = props
+    const { modalPanel, toggleModalLang, title, legend, body, bodyAux, cta, classname } = props
     
     return (
         <section className={`popover__langSetting ${modalPanel}`}>
-            <div className="popover__langSetting__container">
+            <div className={`popover__langSetting__container ${classname}`}>
                 <header className="popover__langSetting__heading">
                     <h5 className="popover__langSetting__title">
                         {title}
                     </h5>
-                    <Button className="popover__langSetting__close" outline color="secondary">
+                    <Button className="popover__langSetting__close" outline color="secondary"  onClick={() => {
+                        toggleModalLang("hide", "all")
+                    }}>
                         <i class="popover__close"></i>
                     </Button>
                 </header>
@@ -36,22 +37,34 @@ const ModalLang = (props) => {
                     </form>
                 </section>
                 <footer className="popover__langSetting__footer">
-                    <button className="a__button a__button__cancel" onClick={() => toggleModal('show')} >
+                    <button className="a__button a__button__cancel" onClick={() => {
+                        toggleModalLang("hide", "all")
+                    }}>
                         <span className="a__button__inner">
                             <span className="a__button__text">
                                 Cancel
                             </span>
                         </span>
                     </button>
-                    <Link to="/">
-                        <button className="a__button a__button__primary" onClick={() => toggleModal('show')} >
+                    {cta === "Go to website" ? 
+                        <Link to="/"> 
+                            <button className="a__button a__button__primary">
+                                <span className="a__button__inner">
+                                    <span className="a__button__text">
+                                        {cta}
+                                    </span>
+                                </span>
+                            </button>
+                        </Link>
+                        : 
+                        <button className="a__button a__button__primary">
                             <span className="a__button__inner">
                                 <span className="a__button__text">
                                     {cta}
                                 </span>
                             </span>
                         </button>
-                    </Link>
+                    }
                 </footer>
             </div>
         </section>

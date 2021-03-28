@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import Layout from '../../components/Layout/index'
 
 import { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Video } from '../../components/UI/Card'
@@ -115,6 +116,9 @@ import faux_leather from '../../images/products/best-choice-products-faux-leathe
 
 const Home = (props) => {
 
+    const [dropdownOpen, setOpen] = useState(false);
+
+    const toggle = () => setOpen(!dropdownOpen);
     return (
         <Layout>
             <Slider 

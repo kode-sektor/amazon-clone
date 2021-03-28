@@ -10,3 +10,5 @@ The first hurdle I encountered was surprise, suprise : font family. Amazon uses 
 At first, I made use of a font called "Segoe UI" which worked wonders in my opinion. It appeared similar to the Amazon
 propietary font but anyways, I was not still contented with it. After a bit of research, I later laid my hands on the Amazon
 font, downloaded it and included it using the CSS3 @font-face. Hurdle 1 side-stepped.
+
+

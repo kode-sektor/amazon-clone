@@ -159,41 +159,6 @@
 .page__footer__langLink:hover {
     background-color: transparent;
 }
-.amzn__icon {
-    position: relative;
-    display: inline-block;
-    line-height: 18px;
-    text-align: center;
-    background: url('../../images/nav-sprite-2.png');
-}
-.page__footer__logo__globeIcon {
-    width: 15px;
-    height: 15px;
-    top: 2px;
-    left: 0;
-    font-size: 13px;
-    color: var(--ochre-5);
-    cursor: pointer;
-    background-position: -77px -24px;
-}
-.page__footer__logo__locationIcon {
-    top: 1px;
-    width: 18px;
-    height: 12px;
-    padding: 0 .6em;
-    margin: 3px 0 0;
-    color: var(--blue);
-    font-size: 13px;
-    background-position: 0 -60px;
-}
-.page__footer__logo__base {
-    display: inline-block;
-    padding: 0 .6em;
-    line-height: 18px;
-    font-size: 13px;
-    text-align: center;
-    color: var(--grey);
-}
 .page__footer__downUpArrow {
     position: relative;
     display: inline-block;
@@ -240,4 +205,47 @@
     font-size: 12px;
     list-style: disc;
     color: var(--grey-tone-24);    
+}
+.page__footer__langSetting {
+    margin-top: -8px;
+}
+.page__footer__langLabel {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    color: #0F1111;
+    margin-left: 3px;
+    top: -2px;
+    padding-bottom: 0;
+    padding-left: 19px;
+    text-indent: -19px;
+}
+.page__footer__langInput {
+    vertical-align: top;
+    height: 17px;
+    width: 17px;
+    opacity: .02;
+    margin: 0;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    z-index: -1;
+    border: 0 none;
+}
+.icp__divider {
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-width: 0;
+    border-top: 1px solid var(--grey-tone-35);
+    line-height: 19px;
+    margin-top: 8px !important;
+    margin-bottom: 12px !important;
+    max-width: 300px;
+    margin-left: 24px;
+    margin-right: 24px;
+    text-align: left;
 }

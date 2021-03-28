@@ -7,7 +7,7 @@ const Modal = (props) => {
     const {modal, toggleModal} = props
 
 	return (
-		<div className={`modal ${modal}`} onClick={() => toggleModal('hide')} role="dialog">
+		<div className={`modal ${modal}`} onClick={() => toggleModal("hide", "all")} role="dialog">
 		</div>
 	);
 };

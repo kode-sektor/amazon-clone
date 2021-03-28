@@ -19,9 +19,7 @@
     position: fixed;
     overflow: auto;
 
-    /position: absolute;
     display: block;
-    top: 212px;
     left: 383px;
     width: 600px;
     min-width: 0;
@@ -42,6 +40,12 @@
     border-color: var(--grey-tone-25);
 
     border: 2px solid blue;
+}
+.popover__langSetting__container.region {
+    top: 212px;
+}
+.popover__langSetting__container.language {
+    top: 165.5px;
 }
 .popover__langSetting__heading {
     position: relative;
@@ -126,6 +130,23 @@
 }
 .popover__langSetting__panel {
     margin-bottom: 22px;
+}
+.popover__langSetting__list {
+    display: block;
+    margin-left: 1px;
+    padding: 2px 12px 1px 11px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: var(--grey-tone-31) !important;
+    color: inherit;
+    border: 1px solid transparent
+}
+.popover__langSetting__list option {
+    position: relative;
+}
+.popover__langSetting__country .a__button__text {
+    min-width: 150px;
+    width: 180px;
 }
 .popover__langSetting__footer {
     padding: 8px 24px 24px;

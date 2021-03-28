@@ -9,6 +9,7 @@
     display: flex;
     flex: 0 0 766px;
     flex-flow: row nowrap;
+    font-size: 13px;
 }
 .navigationbar__buy__again, .navigationbar__wishlist, .navigationbar__your__account {
     flex: 1 1 0;
@@ -60,6 +61,13 @@
 .navigationbar__recent__details {
     position: relative;
     flex: 1;
+}
+.navigationbar__avatar__link {
+    display: inline-block;
+    width: 100%;
+    white-space: normal;
+    line-height: 1.3em !important;
+    max-height: 3.9em;
 }
 
 /* Add to Cart */
