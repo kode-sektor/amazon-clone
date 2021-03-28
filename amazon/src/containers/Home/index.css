@@ -1,7 +1,6 @@
 .sub__layout {
     position: relative;
     padding: 0 10px 0;
-    outline: 2px solid tomato;
 }
 .sub__layout__card {
     display: flex;
@@ -13,61 +12,41 @@
     padding: 20px 0;
     font-size: 13px !important;
     line-height: 19px !important;
-    outline: 2px solid aquamarine;
 }
 .sub__layout__card__grid {
     flex: 1 0 290px;
     display: block;
     height: 420px;
     min-height: 420px;
+    min-width: 290px;
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 290px;
-    /* max-width: 400px; */
-    outline: 2px solid tan;
 }
 .sub__layout__inner {
     position: relative;
+    display: flex;
     overflow: hidden;
     height: 100%;
     margin-top: 0;
-    padding: 20px 0 15px 0;
     margin-bottom: 0;
-    background: var(--white);
-    display: flex;
+    padding: 20px 0 15px 0;
+    padding-top: 20px;
+    flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    flex-direction: column;
-    padding-top: 20px;
-    border: thin solid firebrick;
-}
-.grid__card .sub__layout__inner {
-    /* padding: 0 20px 56px 20px;
-    margin-bottom: 0; */
+    background: var(--white);
 }
 .sub__layout__inner__footer {
-    /* position: relative;
-    margin-bottom: 0 !important;
-    font-size: 13px !important;
-    line-height: 19px !important;
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 1480px;
-    margin: 0 auto;
-    padding: 20px 0; */
-
-    padding: 0 20px;
-    margin-bottom: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;
-    border: thin solid green;
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
 .sub__layout__inner__header {
     display: flex;
     padding: 0 20px;
     margin-bottom: 10px;
-    border: thin solid teal;
 }
 .sub__layout__inner__header__avatar {
     height: 60px;
@@ -82,17 +61,17 @@
 .sub__layout__inner__header__title, .prime__video__title {
     display: block;
     overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 0! important;
     line-height: 27.3px !important;
-    margin-bottom: 0!important;
+    font-size: 21px ! important;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding-bottom: 0;
-    font-size: 21px !important;
 }
 .sub__layout__inner__header__title {
     display: block;
-    line-height: 1.3em !important;
     max-height: 3.9em;
+    line-height: 1.3em !important;
     white-space: normal;
     text-overflow: initial;
     word-break: normal;
@@ -104,8 +83,8 @@
     display: block;
     overflow: hidden;
     margin: 0 0 14px 0;
-    line-height: 19px!important;
-    font-size: 13px!important;
+    line-height: 19px !important;
+    font-size: 13px !important;
     font-weight: normal;
     white-space: nowrap;
     margin-bottom: 0;
@@ -115,10 +94,9 @@
     position: relative;
     -webkit-box-flex: 1;
     flex-grow: 1;
+    height: 275px;
     padding: 0 20px;
     margin-bottom: 44px;
-    height: 275px;
-    outline: 2px solid violet;
 }
 .sub__layout__inner__intro__text {
     display: block;
@@ -150,7 +128,6 @@
     height: 50%;
     padding: 0 0 36px;
     margin: 0;
-    outline: thin solid green;
 }
 .grid__card__ii .sub__layout__inner__frame {
     justify-content: space-between;
@@ -203,26 +180,25 @@
     padding: 0px 10px;
     max-height: 36px;
     overflow: hidden;
-    font-size: 12px!important;
-    line-height: 18px!important;
+    font-size: 12px !important;
+    line-height: 18px !important;
     text-align: center;
     text-overflow: ellipsis;
     transform: translateY(50%);
 }
 .grid__card__ii .sub__layout__inner__categories figcaption {
     position: static;
-    margin-bottom: 0!important;
-    overflow: hidden;
-    text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    overflow: hidden;
     -webkit-line-clamp: 2;
     max-height: 38px;
     height: 36px;
+    margin-bottom: 0 !important;
+    text-overflow: ellipsis;
     text-align: start;
     color: var(--color) !important;
     transform: translateY(0);
-    outline: thin solid gold;
 }
 .sub__layout__inner__body__recently__viewed {
     position: relative;
@@ -260,21 +236,12 @@
     text-align: center;
 }
 .sub__layout__card__grid__footer {
-    /* position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 0 20px;
-    margin-bottom: 30px; */
     margin-bottom: 0;
 }
 .block__card .sub__layout__card__grid__footer {
     position: static;
     margin-bottom: 0;
     padding: 0;
-}
-.sub__layout__card__grid__footer a {
-    /color: var(--white);
 }
 .sub__layout__inner__body__ui__card {
     position: relative;
@@ -283,22 +250,17 @@
     width: 100%;
     height: 100%;
     text-decoration: underline;
-    border: thin solid brown;
 }
 .block__card .sub__layout__inner__body {
     position: relative;
     height: auto;
     padding: 0 20px 56px 20px;
-    /* text-align: center !important; */
-    outline: thin solid yellow;
 }
 .sub__layout__inner__link {
     display: block;
     position: relative;
-    /* text-align: center; */
     width: 100%;
     height: 100%;
-    outline: 1px solid green;
 }
 .sub__layout__inner__link.supportingTxt {
     height: 260px;
@@ -311,7 +273,6 @@
     margin-bottom: 24px!important;
     margin-top: 32px!important;
     text-align: center!important;
-    outline: thin solid yellow;
 }
 .landscape-image {
     text-align: center;
@@ -346,7 +307,6 @@
 .section__break {
     height: 22px;
     background: var(--white);
-    /* margin-bottom: 22px; */
 }
 .grid__half {
     flex: 2 0 580px;
@@ -379,7 +339,6 @@
     white-space: normal;
     color: var(--white);
 }
-
 .prime__video__ui__card {
     position: relative;
     overflow: hidden;
@@ -425,7 +384,6 @@
     background: linear-gradient(180deg, var(--black) 0, transparent 50%, var(--black));
     margin-bottom: 0;
 }
-
 .secondary__layout {
     display: flex;
     flex-flow: row wrap;
@@ -436,7 +394,6 @@
     font-size: 13px !important;
     line-height: 19px !important;
 }
-
 .primary__slider {
     display: block;
     flex: 1 0 100%;
@@ -445,13 +402,12 @@
     padding-left: 10px;
     padding-right: 10px;
     min-width: 290px;
-    border: 2px solid yellow;
 }
 .primary__slider.squished{
     padding-right: 310px;
 }
 .primary__layout__inner, .carousel__detailed__layout__inner {
-    margin-bottom: 0!important;
+    margin-bottom: 0 !important;
     padding: 10px 20px;
     background: var(--white);
 }
@@ -461,7 +417,6 @@
 }
 .primary__slider__header {
     display: flex;
-    overflow: hidden;
     overflow: hidden;
     margin: 10px 0 0;
 }
@@ -489,14 +444,12 @@
     min-height: 275px;
     min-width: 165px;
 }
-
 .fluid__card .sub__layout__inner__frame {
     justify-content: space-between;
     height: 275px;
     flex-grow: 1;
     padding: 0 20px;
     margin-bottom: 44px;
-    border: thin solid brown;
 }
 .fluid__card .sub__layout__inner__categories {
     display: inline-block;
@@ -506,7 +459,6 @@
     padding: 0 0 36px;
     margin-bottom: 8px !important;
     margin: 0;
-    border: thin solid thistle;
 }
 .fluid__card .sub__layout__inner__categories figcaption {
     display: inline-block;
@@ -529,26 +481,8 @@
     height: auto;
     margin: 0 !important
 }
-
-/* .fluid__card .sub__layout__inner__body {
-    padding: 0 20px;
-    margin-bottom: 44px;
-    height: 275px;
-
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-
-    border: thin solid pink;
-} */
-.fluid__card .sub__layout__inner__body__ui__card {
-    /* margin-bottom: 24px !important;
-    margin-top: 32px !important;
-    text-align: center !important; */
-}
 .sub__layout__inner__rating {
     text-align: center;
-    border: thin solid maroon;
 }
 .star__rating {
     display: inline-block;
@@ -568,7 +502,6 @@
     max-width: none;
     padding: 0 20px;
     margin-bottom: 20px !important;
-    border: thin solid teal;
 }
 .fluid__card .sub__layout__card__grid__footer {
     position: static;
@@ -584,6 +517,5 @@
     white-space: normal;
 }
 .browsing__history {
-    outline: 2px solid blue;
     background: var(--white);
 }

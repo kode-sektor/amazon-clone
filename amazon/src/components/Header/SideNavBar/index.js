@@ -15,7 +15,7 @@ const SideNavBar = ({ showNav, onHideNav }) => {
             onHideNav={onHideNav}
         >
             <div className="side__nav">
-                <span class="side__nav__close__icon"></span>
+                <span className={`side__nav__close__icon ${showNav ? 'show' : 'hide'}`} onClick={onHideNav}></span>
                 <section>
                     <a className="side__nav__customer__profile">
                         <span className="side__nav__avatar"></span>

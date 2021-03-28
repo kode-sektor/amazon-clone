@@ -1,11 +1,7 @@
 .popover__langSetting {
-    position: fixed;
     display: none;
+    position: fixed;
     overflow: auto;
-    /* height: 100%;
-    width: 100%; */
-    /* right: 0;
-    top: 0; */
     padding-bottom: 0px;
     z-index: 1000;
     color: var(--color);
@@ -18,7 +14,6 @@
 .popover__langSetting__container {
     position: fixed;
     overflow: auto;
-
     display: block;
     left: 383px;
     width: 600px;
@@ -30,16 +25,12 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(8px);
-
     overflow: hidden;
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 0 14px 0 rgba(15,17,17,.5);
-
     border: 1px solid;
     border-color: var(--grey-tone-25);
-
-    border: 2px solid blue;
 }
 .popover__langSetting__container.region {
     top: 212px;
@@ -83,8 +74,6 @@
     border-radius: 3px;
     border: 1px solid;
     border: none;
-    /* border-color: transparent;
-    background-color: transparent; */
     cursor: pointer;
 }
 .popover__close {
@@ -106,19 +95,15 @@
     overflow-y: auto;
     background-color: var(--white);
     text-align: left;
-    border: thin solid green;
 }
 .popover__langSetting__countryNav {
     margin-bottom: 14px;
-    border: 2px solid cyan;
 }
 .popover__langSetting__countryNav__inner {
     margin-bottom: 28px !important;
-    border: thin solid orange;
 }
 .popover__langSetting__country {
     font-size: 14px;
-    border: thin solid maroon;
 }
 .popover__langSetting__country__title {
     font-size: 14px;
@@ -153,7 +138,6 @@
     margin: 0;
     text-align: right;
     border-radius: 0 0 8px 8px;
-    border: thin solid red;
 }
 .a__button__cancel {
     margin-right: 7px;

@@ -73,7 +73,7 @@ const Slider = ({type, count, items, carouselClass}) => {
 											<span className="amzn__carousel__oldprice">$269.99</span>
 											<span className="amzn__carousel__deal">Deal has ended</span>
 										</div> )						
-										} 
+									} 
 								</figcaption>
 							</figure>
 						</li>
@@ -131,11 +131,6 @@ const Slider = ({type, count, items, carouselClass}) => {
 			previous={previous}
 			interval={false}
 		>
-			{/* <CarouselIndicators
-				items={items}
-				activeIndex={activeIndex}
-				onClickHandler={goToIndex}
-			/> */}
 			{slide()}
 			<CarouselControl
 				className={`${carouselClass}__control`}

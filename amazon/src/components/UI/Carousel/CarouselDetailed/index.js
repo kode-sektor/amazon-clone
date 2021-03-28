@@ -14,7 +14,7 @@ const CarouselDetailed = ({heading, link, slider, heading_two, heading_two_link,
                                 <div className="col-8">
                                     <h2 className="carousel__detailed__heading">{heading}</h2>
                                 </div>
-                                <div className="carousel__count text-right flex-fill" style={{border: "2px solid purple"}}>
+                                <div className="carousel__count text-right flex-fill">
                                     <span>Page 1 </span><span>of</span><span> 6</span>
                                 </div>
                             </header>
@@ -36,7 +36,7 @@ const CarouselDetailed = ({heading, link, slider, heading_two, heading_two_link,
                                             <a className="carousel__detailed__link" href="/">{heading_two_link}</a>
                                         </h2>
                                     </div>
-                                    <div className="carousel__count text-right flex-fill" style={{border: "2px solid purple"}}>
+                                    <div className="carousel__count text-right flex-fill">
                                         <span>Page 1 </span><span>of</span><span> 2</span>
                                     </div>
                                 </header>

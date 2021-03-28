@@ -555,37 +555,31 @@ const Home = (props) => {
                                         href: '/',
                                         src: wacom_intuos,
                                         altText: "wacom intuos graphics drawing tablet 7.9 x 6.3 black (CTL4100)",
-                                        caption: "wacom intuos graphics drawing tablet 7.9 x 6.3 black (CTL4100)"
                                     },
                                     {
                                         href: '/',
                                         src: anker_4_port,
                                         altText: "anker 4 port USB 3.0 ultra slim data hub for macbook mac pro mini iMac surface pro XPS notebook PC USB flash",
-                                        caption: "anker 4 port USB 3.0 ultra slim data hub for macbook mac pro mini iMac surface pro XPS notebook PC USB flash"
                                     },
                                     {
                                         href: '/',
                                         src: nonda_USB_type_C_to_USB_3_adapter,
                                         altText: "nonda USB type C to USB 3.0 adapter",
-                                        caption: "nonda USB type C to USB 3.0 adapter"
                                     },
                                     {
                                         href: '/',
                                         src: logitech_C920x_pro_HD_webcam,
                                         altText: "logitech-C920x-pro-HD-webcam.jpg",
-                                        caption: "logitech-C920x-pro-HD-webcam.jpg"
                                     },
                                     {
                                         href: '/',
                                         src: LUTER_barberology_comb_clipper,
                                         altText: "LUTER barberology comb clipper",
-                                        caption: "LUTER barberology comb clipper"
                                     },
                                     {
                                         href: '/',
                                         src: sabrent_4_port_USB_3_hub,
                                         altText: "sabrent 4 port USB 3.0 hub with individual LED power switches",
-                                        caption: "sabrent 4 port USB 3.0 hub with individual LED power switches"
                                     }
                                 ]}
                             />
@@ -604,37 +598,31 @@ const Home = (props) => {
                                         href: '/',
                                         src: harold_fine_strainer_nylon_mesh,
                                         altText: "harold imports company double ear fine strainer nylon mesh",
-                                        caption: "harold imports company double ear fine strainer nylon mesh"
                                     },
                                     {
                                         href: '/',
                                         src: IMUSA_IMU_plastic_strainer_7_inch_black,
                                         altText: "IMUSA USA IMU 71134 plastic strainer 7 inch black",
-                                        caption: "IMUSA USA IMU 71134 plastic strainer 7 inch black"
                                     },
                                     {
                                         href: '/',
                                         src: UINKE_mesh_strainer_colander_sieve,
                                         altText: "UINKE 4 pcs fine mesh strainer colander sieve sifter",
-                                        caption: "UINKE 4 pcs fine mesh strainer colander sieve sifter"
                                     },
                                     {
                                         href: '/',
                                         src: starfrit_6_inch_mesh_strainer,
                                         altText: "starfrit 092002 6 inch mesh strainer",
-                                        caption: "starfrit 092002 6 inch mesh strainer"
                                     },
                                     {
                                         href: '/',
                                         src: uniware_3_sphere_set_strainers,
                                         altText: "uniware 3 sphere set strainers green orange & red",
-                                        caption: "uniware 3 sphere set strainers green orange & red"
                                     },
                                     {
                                         href: '/',
                                         src: masontops_kefir_caps_wide_mouth_mason_jar_lids,
                                         altText: "masontops kefir caps wide mouth mason jar lids",
-                                        caption: "masontops kefir caps wide mouth mason jar lids"
                                     }
                                 ]}
                             />
@@ -653,37 +641,31 @@ const Home = (props) => {
                                         href: '/',
                                         src: vileda_easywring_power_refill,
                                         altText: "vileda easywring power refill",
-                                        caption: "vileda easywring power refill"
                                     },
                                     {
                                         href: '/',
                                         src: grace_folly_trucker_hat_for_snapback_mesh_caps,
                                         altText: "grace folly trucker hat for snapback mesh caps",
-                                        caption: "grace folly trucker hat for snapback mesh caps"
                                     },
                                     {
                                         href: '/',
                                         src: vileda_easy_wring_refill,
                                         altText: "vileda easy wring refill",
-                                        caption: "vileda easy wring refill"
                                     },
                                     {
                                         href: '/',
                                         src: hilroy_premium_black_stitch_book,
                                         altText: "hilroy premium black collection stitch book 7-1-8 x 9-1-8",
-                                        caption: "hilroy premium black collection stitch book 7-1-8 x 9-1-8"
                                     },
                                     {
                                         href: '/',
                                         src: flex_fit_classic_snapback_hat,
                                         altText: "flex fit mens 110 flexfit classic snapback hat",
-                                        caption: "flex fit mens 110 flexfit classic snapback hat"
                                     },
                                     {
                                         href: '/',
                                         src: DECKY_flat_bill_trucker_cap_lack,
                                         altText: "DECKY 6 panel flat bill trucker cap black",
-                                        caption: "DECKY 6 panel flat bill trucker cap black"
                                     }
                                 ]}
                             />
