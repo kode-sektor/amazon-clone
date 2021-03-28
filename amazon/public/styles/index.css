@@ -738,7 +738,7 @@ input[required]:after{
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: url(../../../images/nav-sprite-2.png);
+    background: url(../../../images/amzn-sprite-2.png);
     background-position: -75px -2px;
 }
 .icp__origin {
@@ -748,7 +748,7 @@ input[required]:after{
     width: 17px;
     height: 13px;
     margin: 0 .5em 0 0;
-    background: url(../../../images/nav-sprite-2.png);
+    background: url(../../../images/amzn-sprite-2.png);
 }
 .icp__radio__active {
     background-position: -98px -2px;

@@ -222,7 +222,7 @@
     line-height: normal;
     vertical-align: top;
     background-size: 132px 235px;
-    background-image: url('../../../images/nav-sprite-3.png');
+    background-image: url('../../../images/amzn-sprite-3.png');
     background-position: -14px 0;
     transform: none;
 }
@@ -309,7 +309,7 @@
     height: 18px;
     width: 80px;
     vertical-align: top !important;
-    background-image: url('../../../images/nav-sprite-5.png');
+    background-image: url('../../../images/amzn-sprite-5.png');
     background-size: 512px 256px;
     background-repeat: no-repeat;
     background-position: -84px -28px;

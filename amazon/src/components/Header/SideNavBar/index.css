@@ -22,7 +22,7 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    background-image: url(../../../images/nav-sprite-1.png);
+    background-image: url(../../../images/amzn-sprite-1.png);
     background-position: -190px -288px;
     background-repeat: repeat-x;
 }
@@ -40,7 +40,7 @@
     height: 25px;
     width: 27px;
     margin: 0 10px 0 36px;
-    background-image: url(../../../images/nav-sprite-1.png);
+    background-image: url(../../../images/amzn-sprite-1.png);
     background-repeat: repeat-x;
     background-position: -137px -340px;
 }
@@ -128,7 +128,7 @@ a.side__nav__item {
     height: 15px;
     margin: 0;
     padding: 0;
-    background: url(../../../images/nav-sprite-2.png);
+    background: url(../../../images/amzn-sprite-2.png);
     background-position: -77px -51px;
 }
 .side__nav__menu__icon__globe.side__nav__menu__icon__canada {
@@ -136,6 +136,6 @@ a.side__nav__item {
     line-height: 16px;
     width: 18px;
     height: 12px;
-    background-image: url(../../../images/nav-sprite-2.png);
+    background-image: url(../../../images/amzn-sprite-2.png);
     background-position: 0 -60px;
 }

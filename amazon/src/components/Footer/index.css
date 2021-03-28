@@ -96,7 +96,7 @@
     font-size: 12px;
     text-align: center;
     color: var(--blue);
-    background-image: url('../../images/nav-sprite-1.png');
+    background-image: url('../../images/amzn-sprite-1.png');
     background-repeat: repeat-x;
     background-position: -10px -90px;
 }
@@ -161,7 +161,7 @@
     font-size: 13px;
     text-align: center;
     color: var(--blue);
-    background: url('../../images/nav-sprite-2.png');
+    background: url('../../images/amzn-sprite-2.png');
     background-position: -77px -80px;
 }
 .page__footer__secondary {

@@ -8,11 +8,11 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",z	monospace;
 }
 .amzn__country__icon {
-    background-image: url('./images/nav-sprite-2.png');
+    background-image: url('./images/amzn-sprite-2.png');
 }
 .amzn__globeIcon__two {
-    background-image: url('./images/nav-sprite-web.png');
+    background-image: url('./images/amzn-sprite-web.png');
 }
 .icp__radio, .icp__origin {
-    background-image: url(./images/nav-sprite-2.png);
+    background-image: url(./images/amzn-sprite-2.png);
 }
