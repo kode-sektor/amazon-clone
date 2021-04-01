@@ -161,12 +161,12 @@
     height: 40px;
     border-radius: 4px 4px 4px 4px;
 }
-.category__filter__input {
-    height: 40px;
-    border-radius: 3px;
-    top: 0;
+.navigationbar__category__filter .category__filter__input {
+    position: relative;
+    height: 41px;
+    top: -0.5px;
     left: 0;
-    width: 100%;
+    width: 1%;
     padding: 7px 10px 10px 0;
     line-height: 15px;
     font-size: 15px;
@@ -175,6 +175,7 @@
     color: var(--color-2);
     box-shadow: none;
     direction: ltr;
+    border-radius: 3px;
 }
 .navigationbar__category__filter__search {
     width: 45px;
@@ -270,6 +271,50 @@
 .navigationbar__origin__menu.dropdown-menu {
     width: 240px;
 }
+.navigationbar__origin__menu__itemList {
+    width: 210px;
+}
+.navigationbar__origin__menu__item {
+    position: relative;
+    display: block;
+    clear: both;
+    line-height: 16px;
+    padding: 0 0 7px;
+    margin: 0;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: default;
+}
+.navigationbar__origin__menu__link {
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+}
+.navigationbar__origin__menu__text {
+    display: block;
+    font-size: 13px;
+    color: var(--grey-tone-8);
+    font-weight: 400;
+    white-space: normal;
+}
+.icp__radio {
+    position: relative;
+    margin: 0 .5em 0 0;
+    top: 3px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../images/amzn-sprite-2.png);
+    background-position: -75px -2px;
+}
+.icp__radio__active {
+    background-position: -98px -2px;
+}
+.icp__origin__change__link {
+    margin-left: 25px;
+    margin-top: 10px;
+    color: var(--link);
+}
 .navigationbar__sprite {
     float: left;
     width: 97px;
@@ -290,7 +335,15 @@
     background: var(--grey-tone-9);
     margin: 6px 0 9px 24px;
 }
-
+.icp__origin {
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    width: 17px;
+    height: 13px;
+    margin: 0 .5em 0 0;
+    background: url(../../../images/amzn-sprite-2.png);
+}
 .navigationbar__logo__glow__loc__icon {
     left: 2px;
     top: 8px;

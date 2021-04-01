@@ -119,6 +119,7 @@ const Home = (props) => {
     const [dropdownOpen, setOpen] = useState(false);
 
     const toggle = () => setOpen(!dropdownOpen);
+    
     return (
         <Layout>
             <Slider 

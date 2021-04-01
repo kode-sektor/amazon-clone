@@ -3,6 +3,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 import Modal from '../../components/UI/Modal/'
+import Location from '../Header/Location/index'
 
 import './index.css'
 
@@ -22,6 +23,8 @@ const Layout = (props) => {
                                                     classname : ""       
                                                 })
 
+    const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
+
     const toggleModal = (status, mode, modalLangProp=modalLangProps) => { 
         setModal(status)  // Hide Modal on hover on Modal itself 
 
@@ -29,24 +32,41 @@ const Layout = (props) => {
         // which modal to show. Without mode === "all", closing the general modal will
         // fail to close the modals
 
-        if (mode === "langModal" || mode === "all") {
+
+        // On the click on the modal itself, reset all modals
+        if (mode === "all") {
+            modalLangProps.modalLangPanel = "hide"
+            setModalLangProps(modalLangProp)    // Language panel
+
+            setDeliveryAddressPanel(false)  // Delivery address panel
+        }
+        if (mode === "langModal") {
             modalLangProps.modalLangPanel = (status === "hide") ? "" : "show"
             setModalLangProps(modalLangProp)
         }
+        if (mode === "deliveryAddressModal") {
+            let stat = status === "hide" ? "" : "show"
+            setDeliveryAddressPanel(stat)
+        }
     }
 
-    return(
+    return (
         <>
             <Header 
+                modal={modal}
                 toggleModal={toggleModal}
             />
-                <div className="page__content">
-                    {props.children}
-                </div>
-                <Modal 
-                    modal={modal}
-                    toggleModal={toggleModal}
-                />
+            <div className="page__content">
+                {props.children}
+            </div>
+            <Modal 
+                modal={modal}
+                toggleModal={toggleModal}
+            />
+            <Location
+                modal={deliveryAddressPanel}
+                toggleModal={toggleModal}
+            />
             <Footer 
                 modal={modal}
                 modalLangPanel={modalLangPanel}

@@ -11,34 +11,34 @@ const ModalLang = (props) => {
     const { modalPanel, toggleModalLang, title, legend, body, bodyAux, cta, classname } = props
     
     return (
-        <section className={`popover__langSetting ${modalPanel}`}>
-            <div className={`popover__langSetting__container ${classname}`}>
-                <header className="popover__langSetting__heading">
-                    <h5 className="popover__langSetting__title">
+        <section className={`popover__panel ${modalPanel}`}>
+            <div className={`popover__panel__container ${classname}`}>
+                <header className="popover__panel__heading">
+                    <h5 className="popover__panel__title">
                         {title}
                     </h5>
-                    <Button className="popover__langSetting__close" outline color="secondary"  onClick={() => {
-                        toggleModalLang("hide", "all")
+                    <Button className="popover__panel__close" outline color="secondary"  onClick={() => {
+                        toggleModalLang("hide", "langModal")
                     }}>
                         <i class="popover__close"></i>
                     </Button>
                 </header>
-                <section className="popover__langSetting__customerPreferences">
-                    <form action="" className="popover__langSetting__countryNav">
-                        <div className="popover__langSetting__countryNav__inner d-flex justify-content-between row">
-                            <section className="popover__langSetting__country col-6">
-                                <legend className="popover__langSetting__country__title">{legend}:</legend>
+                <section className="popover__panel__customerPreferences">
+                    <form action="" className="popover__panel__countryNav">
+                        <div className="popover__panel__countryNav__inner d-flex justify-content-between row">
+                            <section className="popover__panel__country col-6">
+                                <legend className="popover__panel__country__title">{legend}:</legend>
                                 {body}
                             </section>
-                            <section className="popover__langSetting__notes col-5">
+                            <section className="popover__panel__notes col-5">
                                 {bodyAux}
                             </section>
                         </div>
                     </form>
                 </section>
-                <footer className="popover__langSetting__footer">
+                <footer className="popover__panel__footer">
                     <button className="a__button a__button__cancel" onClick={() => {
-                        toggleModalLang("hide", "all")
+                        toggleModalLang("hide", "langModal")
                     }}>
                         <span className="a__button__inner">
                             <span className="a__button__text">

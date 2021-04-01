@@ -1,0 +1,52 @@
+.popover__panel__container.delivery__address {
+    display: block;
+    top: 126px;
+    left: 495.5px;
+    width: 375px;
+    min-width: 0;
+    max-width: none;
+    padding: 0;
+    margin: 0px;
+    z-index: 1010;
+    visibility: visible;
+    transform: translateY(8px);
+    opacity: 1;
+}
+.popover__panel__inner {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    padding: 16px 24px;
+    background-color: var(--white);
+    text-align: left;
+}
+.popover__panel__introTxt span {
+    color: var(--grey-tone-23) !important;
+}
+.popover__panel__highlight {
+    display: block !important;
+    overflow: visible;
+    padding: 0;
+    text-decoration: none !important;
+    vertical-align: middle;
+    background-color: var(--white);
+    background: var(--white);
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    border-color: var(--ochre-10);
+    border-radius: 0;
+}
+.popover__panel__postalCodes input[type=text] {
+    width: 40.448%;
+}
+.popover__panel__postalCodes input[type=text]:first-child {
+    margin-right: 12.8%;
+}
+.popover__panel__divider {
+    padding: 7px 0;
+    background-color: var(--white);
+}
+.popover__panel__dropdown .a__button__inner {
+    position: relative;
+}

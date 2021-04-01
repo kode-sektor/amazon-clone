@@ -15,15 +15,15 @@ import "./index.css"
 
 const HeaderTop = (props) => {
     
-    const [isOpen, setIsOpen] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);    // search filter (not used yet)
+    const [isOpen, setIsOpen] = useState(false)
+    const [dropdownOpen, setDropdownOpen] = useState(false)    // search filter (not used yet)
 
-    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false);    // flag dropdown
-    const [acctdropdownOpen, setAcctdropdownOpen] = useState(false);    // account dropdown
+    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
+    const [acctdropdownOpen, setAcctdropdownOpen] = useState(false)    // account dropdown
 
 	// Toggle dropdowns
     const toggle = () => setIsOpen(!isOpen);    // For main navigation expand / collapse
-    const filterToggle = () => setDropdownOpen(prevState => !prevState);
+    const filterToggle = () => setDropdownOpen(prevState => !prevState)
 
     // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
@@ -31,9 +31,9 @@ const HeaderTop = (props) => {
     const flagdropdownLeave = () => setFlagdropdownOpen(false)
 
     // Acct dropdown
-    const acctdropdown = () => setAcctdropdownOpen(acctdropdownOpen => !acctdropdownOpen);
-    const acctdropdownEnter = () => setAcctdropdownOpen(true);
-    const acctdropdownLeave = () => setAcctdropdownOpen(false);
+    const acctdropdown = () => setAcctdropdownOpen(acctdropdownOpen => !acctdropdownOpen)
+    const acctdropdownEnter = () => setAcctdropdownOpen(true)
+    const acctdropdownLeave = () => setAcctdropdownOpen(false)
 
 
     return (
@@ -51,7 +51,11 @@ const HeaderTop = (props) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="navigationbar__delivery" navbar>
                             <NavItem>
-                                <Button className="navigationbar__delivery__link">
+                                <Button className="navigationbar__delivery__link" onClick={()=> {
+                                    let modal = props.modal
+                                    modal = modal === "show" ? "hide" : "show stretched"
+                                    props.toggleModal(modal, "deliveryAddressModal")
+                                }}>
                                     <span className="navigationbar__logo__glow__loc__icon"></span>
                                     <span className="navigation__glow__ingress__block">
                                         <span className="nav__line__1">Deliver to Ibiyemi</span>

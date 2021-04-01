@@ -38,10 +38,10 @@ const Footer = (props) => {
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
     const flagdropdownEnter = () => setFlagdropdownOpen(true)
     const flagdropdownLeave = () => setFlagdropdownOpen(false)
-    const [dropdownOpen, setOpen] = useState(false);
+    // const [dropdownOpen, setOpen] = useState(false);
     
-    const toggleCountries = () => setCountryDropDown(!countryDropDown)
-    const toggle = () => setOpen(!dropdownOpen);
+    // const toggleCountries = () => setCountryDropDown(!countryDropDown)
+    // const toggle = () => setOpen(!dropdownOpen);
 
 
     return (
@@ -127,9 +127,9 @@ const Footer = (props) => {
                                         </form>,
                                 legendAux : "Changing country/region website",
                                 bodyAux : <>
-                                            <legend className="popover__langSetting__country__title">Translation</legend>
+                                            <legend className="popover__panel__country__title">Translation</legend>
                                             <p>We'll translate the most important information for your browsing, shopping, and communications</p>
-                                            <legend className="popover__langSetting__country__title">Additional Languages</legend>
+                                            <legend className="popover__panel__country__title">Additional Languages</legend>
                                             <p>More languages are available from other Amazon websites.</p>
                                         </>,
                                 cta : "Save Changes",
@@ -153,10 +153,10 @@ const Footer = (props) => {
                             title : "Website (Country/Region)",
                             legend : "Select your preferred country/region website",
                             body : <>
-                                    <div className="popover__langSetting__panel">
+                                    <div className="popover__panel__panel">
                                         <div className="a__button a__button__dropdown">
                                             <div className="a__button__inner a__shadow">
-                                                <select className="popover__langSetting__list a__button__text">
+                                                <select className="popover__panel__list a__button__text">
                                                 { 
                                                     countries.map(item => (
                                                         <option value={item.value}>
@@ -172,7 +172,7 @@ const Footer = (props) => {
                                 </>,
                             legendAux : "Changing country/region website",
                             bodyAux : <>
-                                        <legend className="popover__langSetting__country__title">Changing country/region website</legend>
+                                        <legend className="popover__panel__country__title">Changing country/region website</legend>
                                         <p>Changing the country/region you shop from may affect factors including price, shipping options and product availability.</p>
                                     </>,
                             cta : "Go to website",

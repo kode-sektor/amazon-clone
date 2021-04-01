@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 
 import {
-    Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
-    UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-    NavbarText, Row, Button
+    Navbar, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, Button
 } from 'reactstrap'
 
 import Menu from '../../UI/Menu/index.js'

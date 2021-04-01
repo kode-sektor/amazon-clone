@@ -12,3 +12,9 @@ propietary font but anyways, I was not still contented with it. After a bit of r
 font, downloaded it and included it using the CSS3 @font-face. Hurdle 1 side-stepped.
 
 
+STYLING OPTION TAG
+
+Having to nest any other element inside option tag is not feasible. Trying to give a background-image rule on 
+option also fails. Knowing this, formatting the country list in the Country / Region modal is quite an hurdle.
+It was left that way but the best is to use some other format options to perfectly obtain the same design, with something
+like maybe a list.
