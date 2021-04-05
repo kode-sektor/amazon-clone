@@ -163,7 +163,7 @@
 }
 .navigationbar__category__filter .category__filter__input {
     position: relative;
-    height: 41px;
+    height: 40px;
     top: -0.5px;
     left: 0;
     width: 1%;
@@ -176,6 +176,7 @@
     box-shadow: none;
     direction: ltr;
     border-radius: 3px;
+    border: none;
 }
 .navigationbar__category__filter__search {
     width: 45px;

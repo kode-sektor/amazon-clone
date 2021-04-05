@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import FooterMenu from './FooterMenu'
 
-import { UncontrolledDropdown, DropdownToggle, Button, 
-    DropdownMenu, DropdownItem, ButtonDropdown } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
 
 import DropdownMenuLang from '../UI/DropdownMenuLang'
 import ModalLang from '../Footer/ModalLang'
 
 import { countries } from '../../utilities/data'
-import ReactCountryFlag from "react-country-flag"
 
 import './index.css'
 

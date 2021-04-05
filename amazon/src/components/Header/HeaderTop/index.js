@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import {
 	Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,
@@ -95,16 +96,18 @@ const HeaderTop = (props) => {
                         </Form>
                         <Nav className="row navbar__nav" navbar>
                             <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
-                                <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
-                                    <DropdownToggle nav caret className="navigationbar__origin">
-                                        <ReactCountryFlag
-                                            countryCode="CA"
-                                            svg
-                                            style={{ width: "20px", height: "20px" }}
-                                        />
-                                    </DropdownToggle>
-                                    <DropdownMenuLang/>
-                                </UncontrolledDropdown>
+                                    <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
+                                        <Link to="/customer_preferences/lang">
+                                            <DropdownToggle nav caret className="navigationbar__origin" href="/customer_preferences/lang" tag="button">
+                                                <ReactCountryFlag
+                                                    countryCode="CA"
+                                                    svg
+                                                    style={{ width: "20px", height: "20px" }}
+                                                />
+                                            </DropdownToggle>
+                                        </Link>
+                                        <DropdownMenuLang/>
+                                    </UncontrolledDropdown>
                             </NavItem>
                             <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
                                 <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>

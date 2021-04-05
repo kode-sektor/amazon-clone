@@ -682,26 +682,26 @@ a {
 /*Indicate downloadable docs
 It can be frustrating thinking link will take you to  a page only to begin downloading*/
 a[href$='pdf'] {
-	background: url('pdf') no-repeat right top;
+	/* background: url('pdf') no-repeat right top; */
 	padding-right: 10px;
 }
 a[href$='.doc'] {
-	background: url('img/wordLink.gif') no-repeat right top;
+	/* background: url('img/wordLink.gif') no-repeat right top; */
 	padding-right: 10px;
 }
 a[href$='.rss'], a[href$='.rdf'] {
-	background: url('img/feedLink') no-repeat right top;
+	/* background: url('img/feedLink') no-repeat right top; */
 	padding-right: 10px;
 }
 
 /*Add logo before particular link*/
 a[href$="apress.com"] {
-	content: url('logos/apress.png');
+	/* content: url('logos/apress.png'); */
 }
 
 /*Indicate 'nofollow' links*/
 a[rel='nofollow'] {
-	background: url(nofollow.gif) no-repeat right center;
+	/* background: url(nofollow.gif) no-repeat right center; */
 	padding-right: 20px;
 }
 img {
@@ -712,13 +712,13 @@ img {
 /*Indicate email link*/
 
 a[href='mailto:'] {
-	background: url('img/email') no-repeat right top;
+	/* background: url('img/email') no-repeat right top; */
 }
 
 /*Indicate external links but override if your site*/
 
 a[href^='http:'] {
-	background: url() no-repeat rght top;
+	background: url() no-repeat right top;
 	padding-right: 10px;
 }
 a[href^='http://www.yoursite.com'], a[href^='http:yoursite.com'] {
@@ -824,7 +824,7 @@ input[required]:after{
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: url(../../../images/amzn-sprite-2.png);
+	background: url('../images/amzn-sprite-2.png');
     background-position: -75px -2px;
 }
 .icp__origin {
@@ -834,7 +834,7 @@ input[required]:after{
     width: 17px;
     height: 13px;
     margin: 0 .5em 0 0;
-    background: url(../../../images/amzn-sprite-2.png);
+	background: url('../images/amzn-sprite-2.png');
 }
 .icp__radio__active {
     background-position: -98px -2px;
@@ -1007,7 +1007,7 @@ a.tooltip:hover span, a.tooltip:focus span {
 
 	/*Indicate PDF files*/
 	a[href$=".pdf"]:after {
-		content: "(PDF)";
+		/* content: "(PDF)"; */
 	}
 
 	/*No need for decorating any links*/
@@ -1017,7 +1017,7 @@ a.tooltip:hover span, a.tooltip:focus span {
 
 	/*External links should have their text replaced with where they link to*/	
 	a[href^="http://"], a[href^="https://"] {
-		content: "(attr(href))";
+		/* content: "(attr(href))"; */
 		font-size: 90%;
 	}
 
@@ -1048,8 +1048,8 @@ a.tooltip:hover span, a.tooltip:focus span {
 	background: khaki;
 }
 .box {
-	background: url('images/left_quote.png') no-repeat left top;
-	background: url('images/right_quote.png') no-repeat right bottom;
+	/* background: url('images/left_quote.png') no-repeat left top;
+	background: url('images/right_quote.png') no-repeat right bottom; */
 }
 .box2 {
 	/*Same width horizontally; stretched out vertically*/
