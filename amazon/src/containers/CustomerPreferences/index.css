@@ -1,0 +1,21 @@
+.customerPreferences {
+    background-color: var(--white);
+    border: thin solid var(--white);
+}
+.customerPreferences__wrap {
+    margin-bottom: 22px;
+}
+.customerPreferences__title {
+    padding-bottom: 4px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.255;
+}
+.customerPreferences__translate {
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.customerPreferences__formButtons {
+    padding-top: 40px;
+}

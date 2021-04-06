@@ -167,6 +167,7 @@ file rather than small ones. Your choice
 	--ochre-23: #ff8f00;
 	--ochre-24: #e3931e;
 	--ochre-25: #fa8900;
+	--ochre-26: #f90;
 
 
     --link: #007BFF;
@@ -219,7 +220,8 @@ file rather than small ones. Your choice
 	--grey-tone-33: #f7f7f7;
 	--grey-tone-34: #eaeaea;
 	--grey-tone-35: #e7e7e7;
-	--grey-tone-36: #888C8C;
+	--grey-tone-36: #888c8c;
+	--grey-tone-37: #fafafa;
 	
     --black: #000;
     --white: #fff;
@@ -242,39 +244,30 @@ file rather than small ones. Your choice
 
 /* Fonts */
 
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+
 @font-face {
-	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.ttf');
+	font-family: "Amazon Ember"; 
+	src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); 
+	src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); 
 }
-@font-face {
-	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.eot');
-}
-@font-face {
-	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.woff');
-}
-@font-face {
-	font-family: "Amazon Ember";
-	src: url('../font/amazon-ember/amazon-ember-regular/amazon-ember-regular.otf');
-}
+
 
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 body {
-	font-size: 14px;
-    line-height: 20px;
-	color: var(--color);
 	min-height: 100%;
 	padding: 0;
-	background: var(--white);
-	font-family: "Amazon Ember",Arial,sans-serif;
 	margin: 0 !important;
+	font-size: 13px;
+    line-height: 20px;
+	color: var(--color);
+	background: var(--white);
+	font-family: "Amazon Ember", Arial, sans-serif;
 }
-
 body > header > h1 {
 	font-size: 7w;	/*Heading is never too small or wider than document itself*/
 }
@@ -427,6 +420,9 @@ li a {
     font-size: 14px !important;
     line-height: 20px !important;
 }
+.a__spacing__top__mini {
+    margin-top: 4px !important;
+}
 .a__spacing__top__small {
     margin-top: 8px !important;
 }
@@ -491,7 +487,7 @@ li a {
     text-decoration: none !important;
     vertical-align: middle;
 	border-color: var(--grey-tone-25);
-    border-radius: 8px !important;
+    /* border-radius: 8px !important; */
     color: var(--color);
 	background: var(--grey-tone-10);
     border-radius: 3px;
@@ -501,6 +497,9 @@ li a {
     background: var(--grey-tone-31);
 	background: var(--white);
 	box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+.a__button+.a__button {
+    margin-left: .385em;
 }
 .a__button:hover {
 	background-color: var(--grey-tone-26);
@@ -573,16 +572,16 @@ li a {
 .a__button .a__button__text {
     color: var(--color-2);
 }
-/* .a__button__primary {
+.a__button__primary {
     background: var(--ochre-6);
     border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
     color: var(--color-2);
-} */
-.a__button__primary {
-	background: var(--ochre-22);
-    border-color: var(--ochre-23);
-	border-style: none;
 }
+/* .a__button__primary {
+	background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+} */
 .a__button__primary.a__button__focus, .a__button__primary:focus {
     border-color: var(--ochre-10);
 }
@@ -814,10 +813,23 @@ input[required]:after{
 	background-size: 512px 256px;
 	background-position: -456px -39px !important;
 }
+.amzn__icon__radio__red.checked {
+	background-position: -98px -2px;
+}
 .amzn__icon__radio.checked {
 	background-position: -416px -10px !important;
 }
-.icp__radio {
+/* .icp__radio {
+    position: relative;
+    margin: 0 .5em 0 0;
+    top: 3px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+	background: url('../images/amzn-sprite-2.png');
+    background-position: -75px -2px;
+} */
+.amzn__icon__radio__red {
     position: relative;
     margin: 0 .5em 0 0;
     top: 3px;
@@ -835,9 +847,6 @@ input[required]:after{
     height: 13px;
     margin: 0 .5em 0 0;
 	background: url('../images/amzn-sprite-2.png');
-}
-.icp__radio__active {
-    background-position: -98px -2px;
 }
 .icp__origin__change__link {
     margin-left: 25px;

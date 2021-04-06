@@ -6,7 +6,6 @@ import CustomerPreferences from "./containers/CustomerPreferences"
 
 
 function App() {
-
     return (
         <div className="App">
             <Router>

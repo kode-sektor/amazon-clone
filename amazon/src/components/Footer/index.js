@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link as LinkScroll } from 'react-scroll'
+
 import FooterMenu from './FooterMenu'
 
 import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
@@ -36,17 +38,13 @@ const Footer = (props) => {
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
     const flagdropdownEnter = () => setFlagdropdownOpen(true)
     const flagdropdownLeave = () => setFlagdropdownOpen(false)
-    // const [dropdownOpen, setOpen] = useState(false);
-    
-    // const toggleCountries = () => setCountryDropDown(!countryDropDown)
-    // const toggle = () => setOpen(!dropdownOpen);
 
 
     return (
-        <footer className="page__footer">
-            <a href="/" className="page__footer__to__top">
+        <footer id="page__footer" className="page__footer">
+            <LinkScroll to="page__header" spy={true} smooth={true} className="page__footer__to__top">
                 <span class="page__footer__back__to__top__text">Back to top</span>
-            </a>
+            </LinkScroll>
             <section className="page__footer__wrap d-flex justify-content-between">
                 <FooterMenu 
                     heading={"Get to Know Us"}

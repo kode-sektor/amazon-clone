@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import HeaderTop from './HeaderTop/index'
 import SubHeader from './SubHeader/index'
 import SideNavBar from './SideNavBar/index'
+import SubNav from './SubNav/index'
 
 import './index.css'
 
@@ -14,7 +15,7 @@ const Header = (props) => {
     const toggleSideNavbar = (display) => setShowNav(display)
 
 	return (
-        <header className="page__header">
+        <header id="page__header" className="page__header">
             <HeaderTop
                 {...props}
             />
@@ -28,6 +29,7 @@ const Header = (props) => {
                 onHideNav={() => toggleSideNavbar(false)}
                 onOpenNav={() => toggleSideNavbar(true)}
             />
+            <SubNav/>
         </header>
 	);
 };

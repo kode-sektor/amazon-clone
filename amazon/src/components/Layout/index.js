@@ -32,7 +32,6 @@ const Layout = (props) => {
         // which modal to show. Without mode === "all", closing the general modal will
         // fail to close the modals
 
-
         // On the click on the modal itself, reset all modals
         if (mode === "all") {
             modalLangProps.modalLangPanel = "hide"

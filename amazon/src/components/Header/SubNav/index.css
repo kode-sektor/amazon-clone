@@ -1,0 +1,32 @@
+.subNav {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 33px;
+    margin: 0;
+    padding: 0 9px 0 15px;
+    border-top: 1px solid rgba(0,0,0,.17);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    white-space: nowrap;
+    background: var(--grey-tone-37);
+    z-index: 1;
+}
+.subNav > li > a {
+    position: relative;
+    height: 31px;
+    line-height: 33px;
+    color: var(--grey-tone-14);
+    font-size: 12px;
+    padding: 0 11px;
+}
+.subNav > li > a:hover, .subNav > li > a:focus {
+    text-decoration: none;
+}
+.subNav > li > a:hover {
+    color: var(--ochre-5);
+    border-bottom: 2px solid var(--ochre-26);
+}
+/* second styling for making first subnav item bold */
+.subNav > li > a.active, .subNav > li.active > a {
+    font-weight: 700;
+}

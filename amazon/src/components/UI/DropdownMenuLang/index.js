@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import { Link } from 'react-router-dom'
+
 import { DropdownMenu } from "reactstrap"
 
 import './index.css'
@@ -13,13 +15,13 @@ const DropdownMenuLang = () => {
             <div className="navigationbar__origin__menu__itemList">
                 <button className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                          
                     <span className="navigationbar__origin__menu__text">
-                        <i className="icp__radio icp__radio__active"></i>English - EN
+                        <i className="amzn__icon__radio__red checked"></i>English - EN
                     </span>                          
                 </button>                                  
                 <div className="navigationbar__divider"></div>                      
                 <button className="navigationbar__origin__menu__link navigationbar__origin__menu__item">
                     <span className="navigationbar__origin__menu__text">
-                        <i className="icp__radio"></i>Français - FR
+                        <i className="amzn__icon__radio__red"></i>Français - FR
                     </span>                         
                 </button>                                  
                 <div className="navigationbar__divider"></div>                      
@@ -29,11 +31,11 @@ const DropdownMenuLang = () => {
                         You are shopping on Amazon.ca.
                     </span>                          
                 </span>                                              
-                <a href="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
+                <Link to="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
                     <span className="navigationbar__origin__menu__text">
                         <div className="icp__origin__change__link">Change country/region.</div>
                     </span>                          
-                </a>                    
+                </Link>                    
             </div>
         </DropdownMenu>
     )
