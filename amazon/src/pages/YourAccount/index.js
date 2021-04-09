@@ -8,7 +8,9 @@ import { CancelBtnPrimary, SaveBtnPrimary } from '../../components/UI/Button/ind
 import '../../css/styles/index.css'
 import './index.css'
 
-const customerPreferences = () => {
+
+const YourAccount = () => {
+    
     return (
         <div>
             <Layout>
@@ -28,16 +30,16 @@ const customerPreferences = () => {
                                             <section>
                                                 <label className="page__footer__langLabel">
                                                     <input className="page__footer__langInput" type="radio" name="LOP" value="en_CA" checked=""/>
-                                                    <i class="amzn__icon__radio__red checked"></i>&nbsp;
-                                                    <span class="a-label a-radio-label">
+                                                    <i className="amzn__icon__radio__red checked"></i>&nbsp;
+                                                    <span>
                                                         English - EN
                                                     </span>
                                                 </label>
                                                 <hr className="icp__divider"/>
                                                 <label className="page__footer__langLabel">
                                                     <input className="page__footer__langInput" type="radio" name="LOP" value="en_CA" checked=""/>
-                                                    <i class="amzn__icon__radio"></i>&nbsp;
-                                                    <span class="a-label a-radio-label">
+                                                    <i className="amzn__icon__radio__red"></i>&nbsp;
+                                                    <span>
                                                         <em>Français - FR - Traduction</em>
                                                     </span>
                                                 </label>
@@ -49,6 +51,8 @@ const customerPreferences = () => {
                                             <p>We'll translate the most important information for your browsing, shopping, and communications.</p>
                                         </Col>
                                     </Row>
+                                    <br/>
+                                    <div className="divider__inner"></div>
                                     <section className="customerPreferences__formButtons">
                                         <CancelBtnPrimary/>
                                         <SaveBtnPrimary/>
@@ -63,4 +67,4 @@ const customerPreferences = () => {
     )
 }
 
-export default customerPreferences
+export default YourAccount

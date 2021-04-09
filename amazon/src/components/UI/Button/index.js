@@ -6,7 +6,7 @@ const CancelBtnPrimary = () => {
     return (
         <span className="a__button a__spacing__top__mini">
             <span className="a__button__inner">
-                <Link to="/ref=nav_logo" class="a__button__text" role="button">Cancel</Link>
+                <Link to="/" class="a__button__text" role="button">Cancel</Link>
             </span>
         </span>
     )

@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Home from "./containers/Home"
-import CustomerPreferences from "./containers/CustomerPreferences"
+import Home from "./pages/Home"
+import CustomerPreferences from "./pages/CustomerPreferences"
+import YourAccount from "./pages/YourAccount"
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
             <Router>
                 <Switch>
                     <Route path="/" exact component={Home}/>
-                    <Route path="/customer_preferences/lang" exact component={CustomerPreferences}/>
+                    <Route path="/customer_preferences/lang" component={CustomerPreferences}/>
+                    <Route path="/your_account" component={YourAccount}/>
                 </Switch>
             </Router>
         </div>

@@ -3,3 +3,6 @@
     min-width: 1000px;
     line-height: 1em;
 }
+.page__header a:hover, .page__header a:focus {
+    text-decoration: none;
+}

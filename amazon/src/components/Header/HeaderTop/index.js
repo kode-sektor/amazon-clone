@@ -111,12 +111,14 @@ const HeaderTop = (props) => {
                             </NavItem>
                             <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
                                 <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
-                                    <DropdownToggle nav caret className="navigationbar__delivery__link">
-                                        <span className="navigation__glow__ingress__block">
-                                            <span className="nav__line__1">Hello, Kay</span>
-                                            <span className="nav__line__2">Account &amp; Lists</span>
-                                        </span>
-                                    </DropdownToggle>
+                                    <Link to="/your_account">
+                                        <DropdownToggle nav caret className="navigationbar__delivery__link" tag="button">
+                                            <span className="navigation__glow__ingress__block">
+                                                <span className="nav__line__1">Hello, Kay</span>
+                                                <span className="nav__line__2">Account &amp; Lists</span>
+                                            </span>
+                                        </DropdownToggle>
+                                    </Link>
                                     <DropdownMenu className="navigationbar__account">
                                         <AccountMenu />
                                     </DropdownMenu>

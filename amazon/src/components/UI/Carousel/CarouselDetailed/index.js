@@ -3,7 +3,8 @@ import React from 'react'
 // If heading is passed in argument, top slider will render
 // If there is an heading_two argument, it means bottom slider should render
 
-const CarouselDetailed = ({heading, link, slider, heading_two, heading_two_link, slider_two, squished}) => {
+const CarouselDetailed = ({heading, slider, heading_two, heading_two_link, slider_two, squished}) => {
+    
     return (
         <div className="carousel__detailed">
             <div className="carousel__detailed__layout__inner">

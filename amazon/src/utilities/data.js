@@ -98,4 +98,39 @@ const countries = [
     }
 ]
 
-export { countries }
+const subMenu = [
+    {
+        text : "Amazon.ca",
+        href : "/"
+    },
+    {
+        text : "Today's Deals",
+        href : "/todays_deals"
+    },
+    {
+        text : "Watched Deals",
+        href : "/watched_deals"
+    },
+    {
+        text : "Outlet Deals",
+        href : "/outlet_deals"
+    },
+    {
+        text : "Warehouse Deals",
+        href : "/warehouse_deals"
+    },
+    {
+        text : "Coupons",
+        href : "/Coupons"
+    },
+    {
+        text : "eBook Deals",
+        href : "/ebook_deals"
+    },
+    {
+        text : "Subscribe & Save",
+        href : "/subscribe_and_save"
+    }
+]
+
+export { countries, subMenu }
