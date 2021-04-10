@@ -6,3 +6,7 @@
     margin-bottom: 0 !important;
     background: var(--grey-tone-22);
 }
+.page__content__wrap {
+    background-color: var(--white);
+    border: thin solid var(--white);
+}

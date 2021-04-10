@@ -15,8 +15,6 @@ const SubNav = () => {
         setQueryID(window.location.pathname)
     })
 
-    console.log(queryID)
-
     return (
         <section>
             {

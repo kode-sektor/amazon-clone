@@ -1,7 +1,3 @@
-.customerPreferences {
-    background-color: var(--white);
-    border: thin solid var(--white);
-}
 .customerPreferences__wrap {
     margin-bottom: 22px;
 }

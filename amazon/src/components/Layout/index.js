@@ -56,7 +56,9 @@ const Layout = (props) => {
                 toggleModal={toggleModal}
             />
             <div className="page__content">
-                {props.children}
+                <div className="page__content__wrap">
+                    {props.children}
+                </div>
             </div>
             <Modal 
                 modal={modal}
