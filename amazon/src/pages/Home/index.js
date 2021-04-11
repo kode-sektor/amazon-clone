@@ -4,7 +4,7 @@ import Layout from '../../components/Layout/index'
 
 import { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Video } from '../../components/UI/Card'
 
-import Slider from './Carousel'
+import Slider from '../../components/UI/Carousel/Carousel'
 import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 
@@ -838,7 +838,7 @@ const Home = (props) => {
                         />
                     }
                     heading_two={"Your browsing history"}
-                    heading_two_link={`View or edit your browsing history ›`}
+                    heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                     slider_two={
                         <Slider 
                             type={"multiImage"}

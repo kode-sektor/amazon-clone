@@ -945,6 +945,17 @@ input[required]:after{
     margin: 0 auto;
     margin-bottom: 0;
 }
+.section__break {
+    height: 22px;
+    background: var(--white);
+}
+.card__break, .section__break {
+    flex: 1 0 100%;
+    display: block;
+    height: 20px;
+    border: none;
+    margin: 0;
+}
 .a__spacing__extra__large, .a__ws .a__ws__spacing__extra__large {
     margin-bottom: 32px !important;
 }

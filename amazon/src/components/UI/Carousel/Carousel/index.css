@@ -45,7 +45,7 @@
     height: 52px;
     vertical-align: top;
     outline: 0;
-    background-image: url(../../../images/carousel-arrows.png);
+    background-image: url(../../../../images/carousel-arrows.png);
     background-size: 68px 52px;
     background-position: 0 0;
     transform: translate(-50%,-50%);
@@ -126,7 +126,6 @@
 .amzn__carousel__cards > li a {
     position: relative;
     display: inline-block;
-    text-align: center;
     min-width: 145px;
 }
 .carousel__detailed .amzn__carousel__cards > li a {
@@ -222,7 +221,7 @@
     line-height: normal;
     vertical-align: top;
     background-size: 132px 235px;
-    background-image: url('../../../images/amzn-sprite-3.png');
+    background-image: url('../../../../images/amzn-sprite-3.png');
     background-position: -14px 0;
     transform: none;
 }
@@ -237,7 +236,7 @@
     line-height: normal;
     vertical-align: top;
     background-size: 400px 900px;
-    background-image: url(https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png);
+    background-image: url(../../../../images/amzn-sprite-4.png);
     background-position: -123px -7px;
     background-repeat: no-repeat;
     transform: none;
@@ -309,7 +308,7 @@
     height: 18px;
     width: 80px;
     vertical-align: top !important;
-    background-image: url('../../../images/amzn-sprite-5.png');
+    background-image: url('../../../../images/amzn-sprite-5.png');
     background-size: 512px 256px;
     background-repeat: no-repeat;
     background-position: -84px -28px;
