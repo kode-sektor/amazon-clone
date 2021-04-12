@@ -126,7 +126,7 @@ const HeaderTop = (props) => {
                             </NavItem>
                             <NavItem className="col-xs-4">
                                 <NavItem>
-                                    <NavLink href="/components/" className="navigationbar__delivery__link">
+                                    <NavLink href="/order_history" className="navigationbar__delivery__link">
                                         <span className="navigation__glow__ingress__block">
                                             <span className="nav__line__1">Returns</span>
                                             <span className="nav__line__2">&amp; Orders</span>

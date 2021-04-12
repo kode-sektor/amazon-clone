@@ -1,0 +1,23 @@
+.navBreadcrumb li {
+    display: inline-block;
+    margin: 0;
+    margin-right: .2em;
+    list-style: none;
+    word-wrap: break-word;
+}
+.navBreadcrumb li a {
+    display: inline-block;
+}
+.navBreadcrumb li:after {
+    content: "›";
+    position: relative;
+    display: inline-block;
+    margin-right: .4em;
+    margin-left: .8em;
+    color: var(--mid-grey);
+    top: -.1em;
+    right: 0;
+}
+.navBreadcrumb li:last-child:after {
+    content: "";
+}

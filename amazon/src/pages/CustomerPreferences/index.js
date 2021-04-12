@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../../components/Layout/index'
 
 import { Row, Col } from 'reactstrap'
-import { CancelBtnPrimary, SaveBtnPrimary } from '../../components/UI/Button/index.js'
+import { CancelBtnLink, SaveBtnPrimary } from '../../components/UI/Button/index.js'
 
 import '../../css/styles/index.css'
 import './index.css'
@@ -12,8 +12,8 @@ import './index.css'
 const customerPreferences = () => {
     
     return (
-        <div>
-            <Layout>
+        <Layout>
+            <div className="customerPreferences">
                 <section className="customerPreferences__wrap">
                     <h1 className="sr-only">Change Language &amp; Currency Settings</h1>
                     <Row>
@@ -54,15 +54,15 @@ const customerPreferences = () => {
                                 <div className="divider__inner">
                                 </div>
                                 <section className="customerPreferences__formButtons">
-                                    <CancelBtnPrimary/>
+                                    <CancelBtnLink/>
                                     <SaveBtnPrimary/>
                                 </section>
                             </form>
                         </Col>
                     </Row>
                 </section>
-            </Layout>
-        </div>
+            </div>
+        </Layout>
     )
 }
 

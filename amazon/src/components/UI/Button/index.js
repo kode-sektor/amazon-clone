@@ -2,13 +2,23 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-const CancelBtnPrimary = () => {
+const CancelBtnLink = ({text="Cancel"}) => {
     return (
         <span className="a__button a__spacing__top__mini">
             <span className="a__button__inner">
-                <Link to="/" class="a__button__text" role="button">Cancel</Link>
+                <Link to="/" className="a__button__text" role="button">{text}</Link>
             </span>
         </span>
+    )
+}
+
+const CancelBtnPrimary = ({text="Cancel", style="", toggle}) => {
+    return (
+        <button className={`a__button a__button__cancel ${style}`} onClick={toggle}>
+            <span className="a__button__inner">
+                <span className="a__button__text" role="button">{text}</span>
+            </span>
+        </button>
     )
 }
 
@@ -23,4 +33,4 @@ const SaveBtnPrimary = () => {
     )
 }
 
-export { CancelBtnPrimary, SaveBtnPrimary }
+export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary }

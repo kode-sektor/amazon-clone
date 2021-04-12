@@ -223,6 +223,12 @@ file rather than small ones. Your choice
 	--grey-tone-36: #888c8c;
 	--grey-tone-37: #fafafa;
 	--grey-tone-38: #dcdfe3;
+	--grey-tone-39: #444c55;
+	--grey-tone-40: #3d444c;
+	--grey-tone-41: #2f353b;
+	--grey-tone-42: #2c3137;
+	--grey-tone-43: #5b626a;
+	--grey-tone-44: #72787F;
 	
     --black: #000;
     --white: #fff;
@@ -276,59 +282,6 @@ body > header > h1 {
 
 /*2. TAGS
 ==============================================================================================================================================================*/
-
-input, select, textarea {
-    -webkit-transition: all .1s linear;
-    transition: all .1s linear;
-    line-height: 19px;
-    color: var(--color);
-}
-.a__input__text, input[type=text], input[type=search], 
-input[type=number], input[type=tel], input[type=password],
-select.a-select-multiple, textarea {
-    border: 1px solid var(--grey-tone-36);
-    border-radius: 3px;
-    box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;
-    outline: 0;
-}
-.a__input__text, input[type=text], input[type=search], 
-input[type=number], input[type=tel], input[type=password], 
-input[type=date], input[type=email] {
-    background-color: var(--white);
-    height: 31px;
-    padding: 3px 7px;
-    line-height: normal;
-}
-input[type="button"] {
-	padding-left: 0;
-}
-button {
-	cursor: pointer;
-	-webkit-appearance: none;
-	appearance: none;
-	background: none;
-	outline: none;
-	border: none;
-	transition: all .2s
-}
-input:read:only {
-	color: gray;
-}
-input:out-of-range {
-	color: red;
-}
-input:invalid {
-	color: red;
-}
-select, option {
-    cursor: pointer;
-}
-option {
-	padding: 0px 2px 1px;
-}
-optgroup:not(:last-child) {
-	padding-bottom: 14px;
-}
 h1, h2 {
     padding-bottom: 4px;
 }
@@ -414,6 +367,10 @@ a:hover {
     cursor: pointer;
     color: var(--a);
 }
+a.active {
+	color: var(--a);
+	pointer-events: none;
+}
 .a__color__secondary, .a__color__tertiary {
     color: var(--grey-tone-23) !important;
 }
@@ -435,6 +392,12 @@ li a {
 }
 .a__spacing__top__small {
     margin-top: 8px !important;
+}
+.a__spacing__medium, .a__ws .a__ws__spacing__medium {
+    margin-bottom: 16px !important;
+}
+.a__spacing__none {
+	margin-top: 0 !important
 }
 .a__color__secondary, .a__color__tertiary {
     color: var(--grey-tone-23) !important;
@@ -490,6 +453,9 @@ li a {
 .a__color__price {
     color: var(--price-color) !important;
 }
+.button__container {
+    padding-left: 10px;
+}
 .a__button {
     display: inline-block;
     padding: 0;
@@ -508,6 +474,20 @@ li a {
 	background: var(--white);
 	box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
+.a__button__dark, .a__button__search {
+    background: var(--grey-tone-39);
+    border-color: var(--grey-tone-40) var(--grey-tone-41), var(--grey-tone-42);
+    color: var(--white);
+}
+.a__button .a__button__inner {
+    background: var(--grey-tone-15);
+    background: linear-gradient(to bottom, var(--grey-tone-16), var(--grey-tone-10));
+}
+.a__button__dark .a__button__inner, .a__button__search .a__button__inner {
+    background: var(--grey-tone-43);
+    background: -webkit-linear-gradient(top, var(--grey-tone-44), var(--grey-tone-39));
+    background: linear-gradient(to bottom, var(--grey-tone-44), var(--grey-tone-39));
+}
 .a__button a, .a__button:hover a {
     color: var(--color);
     text-decoration: none !important;
@@ -520,7 +500,7 @@ li a {
     border-color: var(--grey-tone-25);
 }
 .a__button:active, .a__button:active:hover {
-    border-color: #adb1b8 #a2a6ac #a2a6ac;
+    border-color: var(--grey-tone-11) var(--grey-tone-12) var(--grey-tone-12);
 }
 .a__button__inner {
     display: block;
@@ -530,6 +510,12 @@ li a {
     box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
 	/* border-radius: 7px; */
     border-radius: 2px;
+}
+.search__bar .button__container > *, 
+.search__bar .field, 
+.search__bar 
+.field__container > * {
+    width: 100%;
 }
 .a__shadow {
 	border-radius: 7px;
@@ -562,10 +548,6 @@ li a {
 }
 .a__button__dropdown .a__button__inner:hover {
 	background: var(--grey-tone-32);
-}
-.a__button .a__button__inner {
-    background: var(--grey-tone-15);
-    background: linear-gradient(to bottom, var(--grey-tone-16), var(--grey-tone-10));
 }
 .a__button__primary .a__button__inner {
     background: var(--ochre-11);
@@ -665,6 +647,14 @@ li a {
     text-align: left;
     z-index: 10;
 }
+.a__button__dark .a__button__inner, .a__button__search .a__button__inner {
+    box-shadow: 0 1px 0 rgb(255 255 255 / 15%) inset;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+.a__button__dark .a__button__text, .a__button__search .a__button__text {
+    font-weight: 700;
+    color: var(--white);
+}
 .see__more__link a {
 	font-size: 13px;
 	color: var(--grey-tone-14);
@@ -672,28 +662,28 @@ li a {
 	font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: pink;
+    /* color: pink;
     font-size: .8em;
     opacity: .7;
-    font-weight: lighter;
+    font-weight: lighter; */
 }
 ::-moz-placeholder { /* Firefox 19+ */
-    color: pink;
+    /* color: pink;
     font-size: .8em;
     opacity: .7;
-    font-weight: lighter;
+    font-weight: lighter; */
 }
 :-ms-input-placeholder { /* IE 10+ */
-    color: pink;
+    /* color: pink;
     font-size: .8em;
     opacity: .7;
-    font-weight: lighter;
+    font-weight: lighter; */
 }
 :-moz-placeholder { /* Firefox 18- */
-    color: pink;
+    /* color: pink;
     font-size: .8em;
     opacity: .7;
-    font-weight: lighter;
+    font-weight: lighter; */
 }
 a {
 	/transition: .2s;
@@ -760,7 +750,6 @@ select,
 textarea {
     font-family: inherit
 }
-
 input:required, input[required] {
 	background-image: url();
 }
@@ -795,6 +784,89 @@ input[required]:after{
 :not(body) ul {
 	list-style: none;
 } 
+.a__search {
+    position: relative;
+    display: inline-block;
+	width: 100%;
+}
+.a__icon, .a__link__emphasis:after {
+    background-image: url(../images/amzn-sprite-4.png);
+    -webkit-background-size: 400px 900px;
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+}
+.a__icon {
+    display: inline-block;
+    vertical-align: top;
+}
+.a__icon__search {
+    opacity: .55;
+    width: 13px;
+    height: 13px;
+    background-position: -271px -86px;
+}
+.a__search .a__icon__search {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 10px;
+}
+input, select, textarea {
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    line-height: 19px;
+    color: var(--color);
+}
+.a__input__text, input[type=text], input[type=search], 
+input[type=number], input[type=tel], input[type=password],
+select.a-select-multiple, textarea {
+    border: 1px solid var(--grey-tone-36);
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgb(15 17 17 / 15%) inset;
+    outline: 0;
+}
+.a__input__text, input[type=text], input[type=search], 
+input[type=number], input[type=tel], input[type=password], 
+input[type=date], input[type=email] {
+    background-color: var(--white);
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+}
+.a__search input {
+    padding-left: 29px;
+	width: 100%;
+}
+input[type="button"] {
+	padding-left: 0;
+}
+button {
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+	transition: all .2s
+}
+input:read:only {
+	color: gray;
+}
+input:out-of-range {
+	color: red;
+}
+input:invalid {
+	color: red;
+}
+select, option {
+    cursor: pointer;
+}
+option {
+	padding: 0px 2px 1px;
+}
+optgroup:not(:last-child) {
+	padding-bottom: 14px;
+}
 
 /*5. LISTS
 ==============================================================================================================================================================*/

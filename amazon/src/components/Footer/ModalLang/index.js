@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from 'reactstrap'
 
+import { CancelBtnPrimary } from '../../UI/Button'
+
 import './index.css'
 
 
@@ -37,15 +39,10 @@ const ModalLang = (props) => {
                     </form>
                 </section>
                 <footer className="popover__panel__footer">
-                    <button className="a__button a__button__cancel" onClick={() => {
-                        toggleModalLang("hide", "langModal")
-                    }}>
-                        <span className="a__button__inner">
-                            <span className="a__button__text">
-                                Cancel
-                            </span>
-                        </span>
-                    </button>
+                    <CancelBtnPrimary 
+                        toggle={()=>toggleModalLang("hide", "langModal")}
+                        style={""}
+                    />
                     {cta === "Go to website" ? 
                         <Link to="/"> 
                             <button className="a__button a__button__primary">
