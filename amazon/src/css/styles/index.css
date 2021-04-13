@@ -228,7 +228,8 @@ file rather than small ones. Your choice
 	--grey-tone-41: #2f353b;
 	--grey-tone-42: #2c3137;
 	--grey-tone-43: #5b626a;
-	--grey-tone-44: #72787F;
+	--grey-tone-44: #72787f;
+	--grey-tone-45: #f6f6f6;
 	
     --black: #000;
     --white: #fff;
@@ -374,6 +375,9 @@ a.active {
 .a__color__secondary, .a__color__tertiary {
     color: var(--grey-tone-23) !important;
 }
+.a__color__base {
+	color: var(--color) !important;
+}
 li a {
 	display: block;
 }
@@ -382,6 +386,9 @@ li a {
     font-style: normal !important;
     text-transform: none !important;
     text-decoration: none !important;
+}
+.a__text__bold {
+	font-weight: 700 !important;
 }
 .a__size__base {
     font-size: 14px !important;
@@ -395,6 +402,9 @@ li a {
 }
 .a__spacing__medium, .a__ws .a__ws__spacing__medium {
     margin-bottom: 16px !important;
+}
+.a__spacing__top__medium {
+    margin-top: 16px !important;
 }
 .a__spacing__none {
 	margin-top: 0 !important
@@ -530,6 +540,10 @@ li a {
     font-size: 18px !important;
     line-height: 24px !important;
 }
+.a__size__mini {
+	font-size: 11px !important;
+    line-height: 1.465 !important;
+}
 .a__button__text {
     display: block;
     padding: 0 10px 0 11px;
@@ -548,6 +562,18 @@ li a {
 }
 .a__button__dropdown .a__button__inner:hover {
 	background: var(--grey-tone-32);
+}
+.reorder__modal__trigger__button {
+    min-width: 150px;
+}
+.reorder__modal__trigger__icon {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    background-image: url(../../images/thumbnails/icons/modal-trigger-icon.png);
+	background-size: 25px;
 }
 .a__button__primary .a__button__inner {
     background: var(--ochre-11);
@@ -580,11 +606,11 @@ li a {
     border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
     color: var(--color-2);
 }
-/* .a__button__primary {
-	background: #f0c14b;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
-} */
+.a__button__primary {
+	background: var(--ochre-6);
+    border-color: var(--ochre-7) var(--ochre-8) var(--ochre-9);
+    color: var(--color-2);
+}
 .a__button__primary.a__button__focus, .a__button__primary:focus {
     border-color: var(--ochre-10);
 }
@@ -603,13 +629,13 @@ li a {
 .a__button__primary .a__button__text {
     color: var(--color-2);
 }
-/* .a__button__primary .a__button__inner {
+.a__button__primary .a__button__inner {
     background: var(--ochre-11);
-    background: linear-gradient(to bottom,var(--ochre-12),var(--ochre-6));
+    background: linear-gradient(to bottom,var(--ochre-12), var(--ochre-6));
 } 
 .a__button__primary .a__button__inner {
     box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
-}*/
+}
 .a__button.a__button__small .a__button__inner {
 	height: 20px !important;
 }
@@ -799,6 +825,26 @@ input[required]:after{
     display: inline-block;
     vertical-align: top;
 }
+.a__icon__popover {
+    width: 7px;
+    height: 5px;
+    margin: 5px 0 0 .385em;
+    opacity: .6;
+    vertical-align: text-top;
+    background-position: -90px -5px;
+}
+.a__icon__text__separator {
+    display: inline-block;
+    height: 14px;
+    margin: -2px .67375em 0;
+    width: 1px;
+    background-color: var(--grey-tone-24);
+    line-height: 0;
+    vertical-align: middle;
+	background-size: 400px 900px;
+    background-image: url(../../images/amzn-sprite-4.png);
+    background-repeat: no-repeat;
+}
 .a__icon__search {
     opacity: .55;
     width: 13px;
@@ -870,6 +916,9 @@ optgroup:not(:last-child) {
 
 /*5. LISTS
 ==============================================================================================================================================================*/
+ul {
+	margin-bottom: 0;
+}
 
 
 /*6. MORE SPECIFIC (like form h2 {}, )
@@ -880,6 +929,19 @@ optgroup:not(:last-child) {
 ==============================================================================================================================================================*/
 
 .a-icon-dropdown {
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 8px;
+	top: 10px;
+	right: 8px;
+	vertical-align: top;
+	background-image: url('../images/amzn-sprite-4.png');
+	background-position: -7px -102px;
+	background-size: 400px 900px;
+	background-repeat: no-repeat;
+}
+.a__icon__dropdown {
 	position: absolute;
 	display: inline-block;
 	width: 10px;
@@ -1034,6 +1096,9 @@ optgroup:not(:last-child) {
 .a__spacing__top__extra__large {
     margin-top: 32px !important;
 }
+.a__spacing__mini, .a__ws .a__ws__spacing-mini {
+    margin-bottom: 4px !important;
+}
 .a__spacing__micro, .a__ws .a__ws__spacing__micro {
     margin-bottom: 4px!important;
 }
@@ -1044,10 +1109,25 @@ optgroup:not(:last-child) {
     background-color: var(--white);
     height: 100%;
 }
+.a__color__offset__background {
+    background-color: var(--grey-tone-45) !important;
+}
+.a__box__group > .a__box {
+    margin-top: -1px;
+    border-radius: 0;
+}
 .a__box .a__box__inner {
     border-radius: 4px;
     position: relative;
     padding: 14px 18px;
+}
+.a__box__group > .a__box.a__first, .a__box__group > .a__box:first-child {
+    border-radius: 4px 4px 0 0;
+    margin-top: 0;
+}
+.a__box__group > .a__box.a__first > .a__box__inner, 
+.a__box__group > .a__box:first__child > .a__box__inner {
+    border-radius: 4px 4px 0 0;
 }
 .fa {
 	color: gold;

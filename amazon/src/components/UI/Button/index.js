@@ -33,4 +33,43 @@ const SaveBtnPrimary = () => {
     )
 }
 
-export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary }
+const SearchButton = () => {
+    return (
+        <div className="button__container">
+            <span class="a__button a__button__search search__order__input">
+                <span class="a__button__inner">
+                    <input class="a__button__input" type="submit"/>
+                    <span class="a__button__text" aria-hidden="true">
+                        Search Orders
+                    </span>
+                </span>
+            </span>
+        </div>
+    )
+}
+
+const OrderButton = ({link, text, flexWidth, width}) => {
+    return (
+        <span className="a__button a__spacing__mini align-self-end ml-0" style={{flexBasis: flexWidth, width: width}}>
+            <span className="a__button__inner">
+                <a href={link} className="a__button__text" role="button">
+                    {text}
+                </a>
+            </span>
+        </span>
+    )
+}
+
+const BuyAgainBtn = () => {
+    return (
+        <span className="a__button a__spacing__mini a__button__primary a__button__icon reorder__modal__trigger__button">
+            <span className="a__button__inner">
+                <a href="#" aria-label="Buy it again" className="a__button__text" role="button">
+                    <i className="reorder__modal__trigger__icon"></i>Buy it again
+                </a>
+            </span>
+        </span>
+    )
+}
+
+export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn }

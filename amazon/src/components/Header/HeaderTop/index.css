@@ -275,17 +275,6 @@
 .navigationbar__origin__menu__itemList {
     width: 210px;
 }
-.navigationbar__origin__menu__item {
-    position: relative;
-    display: block;
-    clear: both;
-    line-height: 16px;
-    padding: 0 0 7px;
-    margin: 0;
-    text-decoration: none;
-    font-family: inherit;
-    cursor: default;
-}
 .navigationbar__origin__menu__link {
     border: none !important;
     outline: none !important;

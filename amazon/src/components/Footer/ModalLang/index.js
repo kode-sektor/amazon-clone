@@ -41,7 +41,6 @@ const ModalLang = (props) => {
                 <footer className="popover__panel__footer">
                     <CancelBtnPrimary 
                         toggle={()=>toggleModalLang("hide", "langModal")}
-                        style={""}
                     />
                     {cta === "Go to website" ? 
                         <Link to="/"> 
