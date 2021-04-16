@@ -138,9 +138,10 @@ file rather than small ones. Your choice
 	--green: #1a9901;
 
 	--blue: #004b91;
-	--blue-2: #37475A;
+	--blue-2: #37475a;
 	--blue-3: #485769;
-	--blue-4: #131A22;
+	--blue-4: #131a22;
+	--blue-5: #3f6998;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -816,14 +817,64 @@ input[required]:after{
 	width: 100%;
 }
 .a__icon, .a__link__emphasis:after {
-    background-image: url(../images/amzn-sprite-4.png);
-    -webkit-background-size: 400px 900px;
+	background-image: url(../images/amzn-sprite-4.png);
+	-webkit-background-size: 400px 900px;
     background-size: 400px 900px;
     background-repeat: no-repeat;
 }
 .a__icon {
     display: inline-block;
     vertical-align: top;
+}
+.a__addon__badge, .a__icon__addon {
+    position: relative;
+	top: 1px;
+    padding: 4px 5px 4px 6px;
+    font-size: 11px;
+    line-height: 1.05;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+    background-image: none !important;
+    background-color: var(--blue-5);
+    border-radius: 3px 0 0 3px;
+}
+.a__addon__badge:after, .a__addon__badge:before, 
+.a__icon__addon:after, .a__icon__addon:before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    border-left-width: 0;
+}
+.a__addon__badge:before, .a__icon__addon:before {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    font-size: 0;
+    line-height: 0;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: rgba(206, 121, 121, 0);
+    border-bottom: 6px solid var(--blue-5);
+    border-bottom-width: 10px;
+    border-top-width: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.a__addon__badge:after, .a__icon__addon:after {
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: rgba(255,255,255,0);
+    border-top: 6px solid var(--blue);
+    border-bottom-width: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    border-top-width: 10px;
 }
 .a__icon__popover {
     width: 7px;
@@ -1100,7 +1151,10 @@ ul {
     margin-bottom: 4px !important;
 }
 .a__spacing__micro, .a__ws .a__ws__spacing__micro {
-    margin-bottom: 4px!important;
+    margin-bottom: 4px !important;
+}
+.a__spacing__top__micro {
+	margin-top: 4px !important;
 }
 .a__box {
     display: block;

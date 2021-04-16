@@ -50,7 +50,7 @@ const SearchButton = () => {
 
 const OrderButton = ({link, text, flexWidth, width}) => {
     return (
-        <span className="a__button a__spacing__mini align-self-end ml-0" style={{flexBasis: flexWidth, width: width}}>
+        <span className="a__button a__spacing__mini  ml-0" style={{width: width}}>
             <span className="a__button__inner">
                 <a href={link} className="a__button__text" role="button">
                     {text}
