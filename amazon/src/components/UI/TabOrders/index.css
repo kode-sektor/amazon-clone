@@ -1,0 +1,49 @@
+
+.tab__container__label {
+    text-transform: uppercase;
+}
+.tab__container__value {
+    color: var(--grey-tone-23) !important;
+}
+.popoverContent {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    color: var(--black);
+}
+.order__address {
+    font-size: 13px;
+}
+.order__address__name {
+    font-weight: 700;
+}
+.tab__table__invoice {
+    width: 290px;
+}
+.tab__extra {
+    padding-left: 8px;
+    margin-top: -1px;
+    border-radius: 0;
+}
+.amzn__gift__icon {
+    margin-right: .5em;
+}
+.tab__extra .gift__text {
+    vertical-align: middle;
+}
+.tab__body__delivery {
+    position: relative;
+    min-height: 30px;
+}
+.tab__order__productDetails {
+    padding-right: 3.2%;
+}
+.tab__order__thumbnail {
+    width: 100px;
+}
+.tab__buttongroup__list {
+    flex-basis: 220px;
+}
+.tab__order__details {
+    padding-left: 1.5%;
+}

@@ -115,7 +115,8 @@ const OrderHistory = () => {
                                             deliveryDate : "Mar 23, 2021",
                                             packageMsg : "Package was left near the front door or porch",
                                             returnDate : "May 2, 2021",
-                                            addOn : true
+                                            addOn : true,
+                                            giftOrder : true
                                         }
                                     ]
                                 }

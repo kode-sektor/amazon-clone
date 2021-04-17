@@ -17,12 +17,9 @@
 .tab__switch .nav-item {
     position: relative;
     display: inline-block;
-    margin: 0 10px 0 0;
     bottom: -1px;
+    margin: 0 10px 0 0;
     list-style: none;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: transparent;
 }
 .tab__table__details .a__size__base {
     font-size: 13px !important;
@@ -32,9 +29,9 @@
     font-weight: 700; */
 }
 .tab__switch .nav-item a {
-    color: var(--link);
     display: inline-block;
     padding: 5px 10px;   
+    color: var(--link);
 }
 .tab__switch .nav-item.selected a, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: var(--color);
@@ -50,42 +47,4 @@
 .orders__count {
     display: inline-block;
     margin-right: .5em;
-}
-.tab__container__label {
-    text-transform: uppercase;
-}
-.tab__container__value {
-    color: var(--grey-tone-23) !important;
-}
-.popoverContent {
-    padding: 0;
-    list-style-type: none;
-    margin: 0;
-    color: var(--black);
-}
-.order__address {
-    font-size: 13px;
-}
-.order__address__name {
-    font-weight: 700;
-}
-.tab__table__invoice {
-    width: 290px;
-    border: thin solid orange;
-}
-.tab__body__delivery {
-    position: relative;
-    min-height: 30px;
-}
-.tab__order__productDetails {
-    padding-right: 3.2%;
-}
-.tab__order__thumbnail {
-    width: 100px;
-}
-.tab__buttongroup__list {
-    flex-basis: 220px;
-}
-.tab__order__details {
-    padding-left: 1.5%;
 }

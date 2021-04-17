@@ -5,9 +5,14 @@ import { Row, Col } from 'reactstrap'
 import { OrderButton, BuyAgainBtn } from '../../UI/Button'
 import Popover from '../Popover'
 
-import kichly_cheese_greater from '../../../images/thumbnails/products/kichly-cheese-grater-for-kitchen-stainless-steel.jpg'
+import './index.css'
 
-const TabOrder = ({tabHeader, tabBody}) => {
+import kichly_cheese_greater from '../../../images/thumbnails/products/kichly-cheese-grater-for-kitchen-stainless-steel.jpg'
+import gift_icon from '../../../images/thumbnails/icons/gift-icon.png'
+
+
+const TabOrder = ({tabHeading, tabBody}) => {
+
     return (
         <>
             <header className="tab__container__order a__box a__color__offset__background">
@@ -18,7 +23,7 @@ const TabOrder = ({tabHeader, tabBody}) => {
                                 Order placed
                             </span>
                             <span className="a__size__base  a__color__secondary">
-                                March 22, 2021
+                                {tabHeading[0].orderDate}
                             </span>
                         </Col>
                         <Col xs="2" className="px-0">
@@ -26,7 +31,7 @@ const TabOrder = ({tabHeader, tabBody}) => {
                                 Total
                             </span>
                             <span className="a__size__base  a__color__secondary">
-                                CDN$ 12.42
+                                CDN$ {tabHeading[0].orderTotal}
                             </span>
                         </Col>
                         <Col xs="7" className="px-0">
@@ -36,17 +41,17 @@ const TabOrder = ({tabHeader, tabBody}) => {
                             <Popover
                                 trigger={
                                     <a href="javascript:void(0)" className="a__size__base">
-                                        Ibiyemi Kayode Olagoke
+                                        {tabHeading[0].user.name}
                                         <i class="a__icon a__icon__popover"></i>
                                     </a>
                                 }
                                 dropdown={
                                     <ul className="order__address">
-                                        <li className="order__address__name">Ibiyemi Kayode Olagoke</li>
-                                        <li className="order__address__location">2222-2156 Danforth Ave</li>
-                                        <li className="order__address__city">Toronto, ON M4C 1K3</li>
-                                        <li className="order__address__country">Canada</li>
-                                        <li className="order__address">Phone: <span dir="ltr"> +1-647-XXX-XXXX</span></li>
+                                        <li className="order__address__name">{tabHeading[0].user.name}</li>
+                                        <li className="order__address__location">{tabHeading[0].user.location}</li>
+                                        <li className="order__address__city">{tabHeading[0].user.city}</li>
+                                        <li className="order__address__country">{tabHeading[0].user.country}</li>
+                                        <li className="order__address">Phone: <span dir="ltr">{tabHeading[0].user.phone}</span></li>
                                     </ul>
                                 }
                             />
@@ -76,87 +81,103 @@ const TabOrder = ({tabHeader, tabBody}) => {
                     </section>
                 </div>  
             </header>
-            <section className="tab__body a__box">
-                <div className="a__box__inner">
-                    <Row className="mx-0">
-                        <section className="tab__body__delivery flex-grow-1">
-                            <span class="a__size__medium a__color__base a__text__bold d-block">
-                                Delivered Mar 23, 2021
-                            </span>
-                            <span>
-                                Package was left near the front door or porch
-                            </span>
-                        </section>
-                        <span>
-                            <OrderButton
-                                text="Track package"
-                                width={"220px"}
-                            />
-                        </span>
-                    </Row>
-                    <Row className="mx-0">
-                        <section className="a__spacing__top__medium flex-grow-1">
-                            <div className="tab__order__products d-flex">
-                                <section className="tab__order__productDetails flex-grow-1">
-                                    <div className="tab__order__productDetail d-flex">
-                                        <section className="tab__order__thumbnail">
-                                            <a href="/">
-                                                <img src={kichly_cheese_greater} alt={kichly_cheese_greater} />
-                                            </a>
-                                        </section>
-                                        <section className="tab__order__details">
-                                            <a className="" href="#">
-                                                KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base
-                                            </a>
-                                            <p className="a__size__small mb-0">
-                                                Return eligible through Apr 22, 2021
-                                            </p>
-                                            <p className="a__spacing__top__micro a__spacing__micro mb-0">
-                                                <i class="a__icon a__icon__addon">Add-on Item</i>
-                                            </p>
-                                            <BuyAgainBtn
-                                                text={"Buy it again"}
-                                            />
-                                        </section>
+            {
+                Array.from(tabBody).map( (index, value) => {
+                    return (
+                        <section className="tab__body a__box">
+                            {tabBody[0].giftOrder === true && (
+                                <section className="a__box tab__extra">
+                                    <div className="a__box__inner a__padding__small">
+                                        <img src={gift_icon} alt="gift icon" className="amzn__gift__icon" height="16" width="16"/>
+                                        <span class="a__color__secondary gift__text">This is a gift order</span>
                                     </div>
                                 </section>
-                                <section className="tab__buttongroup__list">
-                                    <OrderButton
-                                        link="/"
-                                        text="Return items"
-                                        width={"220px"}
-                                    />
-                                    <OrderButton
-                                        link="/"
-                                        text="Share gift receipt"
-                                        width={"220px"}
-                                    />
-                                    <OrderButton
-                                        link="/"
-                                        text="Ask a Product-Related Question"
-                                        width={"220px"}
-                                    />
-                                    <OrderButton
-                                        link="/"
-                                        text="Leave seller feedback"
-                                        width={"220px"}
-                                    />
-                                    <OrderButton
-                                        link="/"
-                                        text="Write a product review"
-                                        width={"220px"}
-                                    />
-                                    <OrderButton
-                                        link="/"
-                                        text="Archive order"
-                                        width={"220px"}
-                                    />
-                                </section>
+                            )}
+                            <div className="a__box__inner">
+                                <Row className="mx-0">
+                                    <section className="tab__body__delivery flex-grow-1">
+                                        <span className="a__size__medium a__color__base a__text__bold d-block">
+                                            {tabBody[0].deliveryDate}
+                                        </span>
+                                        <span>
+                                            {tabBody[0].packageMsg}
+                                        </span>
+                                    </section>
+                                    <span>
+                                        <OrderButton
+                                            text="Track package"
+                                            width={"220px"}
+                                        />
+                                    </span>
+                                </Row>
+                                <Row className="mx-0">
+                                    <section className="a__spacing__top__medium flex-grow-1">
+                                        <div className="tab__order__products d-flex">
+                                            <section className="tab__order__productDetails flex-grow-1">
+                                                <div className="tab__order__productDetail d-flex">
+                                                    <section className="tab__order__thumbnail">
+                                                        <a href="/">
+                                                            <img src={kichly_cheese_greater} alt={kichly_cheese_greater} />
+                                                        </a>
+                                                    </section>
+                                                    <section className="tab__order__details">
+                                                        <a className="" href="#">
+                                                            KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base
+                                                        </a>
+                                                        <p className="a__size__small mb-0">
+                                                        {tabBody[0].returnDate && (`Return eligible through ${tabBody[0].returnDate}`)} 
+                                                        </p>
+                                                        {tabBody[0].returnDate && (
+                                                            <p className="a__spacing__top__micro a__spacing__micro mb-0">
+                                                                <i class="a__icon a__icon__addon">Add-on Item</i>
+                                                            </p>
+                                                        )}
+                                                        <BuyAgainBtn
+                                                            text={"Buy it again"}
+                                                        />
+                                                    </section>
+                                                </div>
+                                            </section>
+                                            <section className="tab__buttongroup__list">
+                                                <OrderButton
+                                                    link="/"
+                                                    text="Return items"
+                                                    width={"220px"}
+                                                />
+                                                <OrderButton
+                                                    link="/"
+                                                    text="Share gift receipt"
+                                                    width={"220px"}
+                                                />
+                                                <OrderButton
+                                                    link="/"
+                                                    text="Ask a Product-Related Question"
+                                                    width={"220px"}
+                                                />
+                                                <OrderButton
+                                                    link="/"
+                                                    text="Leave seller feedback"
+                                                    width={"220px"}
+                                                />
+                                                <OrderButton
+                                                    link="/"
+                                                    text="Write a product review"
+                                                    width={"220px"}
+                                                />
+                                                <OrderButton
+                                                    link="/"
+                                                    text="Archive order"
+                                                    width={"220px"}
+                                                />
+                                            </section>
+                                        </div>
+                                    </section>
+                                </Row>
                             </div>
-                        </section>
-                    </Row>
-                </div>
-            </section> 
+                        </section> 
+                    )
+                }
+            )}
         </>
     )
 }
