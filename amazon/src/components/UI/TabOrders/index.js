@@ -122,7 +122,7 @@ const TabOrder = ({tabHeading, tabBody}) => {
                                                     </section>
                                                     <section className="tab__order__details">
                                                         <a className="" href="#">
-                                                            KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base
+                                                            {tabBody[0].product}
                                                         </a>
                                                         <p className="a__size__small mb-0">
                                                         {tabBody[0].returnDate && (`Return eligible through ${tabBody[0].returnDate}`)} 

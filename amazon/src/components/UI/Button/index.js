@@ -72,4 +72,15 @@ const BuyAgainBtn = () => {
     )
 }
 
-export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn }
+const AddToCart = () => {
+    return (
+        <span className="a__button d__inline-block a__button__primary w-100">
+            <span className="a__button__inner">
+                <input type="submit" className="a__button__input"/>
+                <span className="a__button__text text-center">Add to Cart</span>
+            </span>
+        </span>
+    )
+}
+
+export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, AddToCart}

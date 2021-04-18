@@ -117,3 +117,29 @@ code {
     color: inherit;
     border: 1px solid transparent
 }
+
+/*Card*/
+.card {
+    border-radius: 0;
+}
+.card__closed {
+    padding-top: 35px;
+}
+.card__closed__imgContainer {
+    height: 180px;
+    margin-bottom: 8px;
+}
+.card__closed__imgContainer img {
+    height: inherit;
+    width: auto;
+    border-radius: 0;
+}
+.card__holder .card-title {
+    line-height: 1.3em !important;
+    max-height: 2.6em;
+    margin-bottom: 4px;
+}
+.card-subtitle {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
