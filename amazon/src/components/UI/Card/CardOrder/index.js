@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Col, Card, CardTitle, CardText, CardImg, CardBody, CardSubtitle } from 'reactstrap'
-import { AddToCart } from '../../../UI/Button'
+import { PrimaryBtn } from '../../../UI/Button'
 
 const CardOrder = ({column, src, alt, title, price, costPerGrams, shipping}) => {
     return (
@@ -21,7 +21,7 @@ const CardOrder = ({column, src, alt, title, price, costPerGrams, shipping}) => 
                         </CardSubtitle>
                         <CardText className="a__size__small a__color__secondary">+ ${shipping} shipping</CardText>
                     </CardBody>
-                    <AddToCart
+                    <PrimaryBtn
                         mTop={"mt-auto"}
                     />
                 </div>

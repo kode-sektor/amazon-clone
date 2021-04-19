@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Row, Col } from 'reactstrap'
 
-import { OrderButton, BuyAgainBtn } from '../../UI/Button'
+import { OrderButton, BuyAgainBtn, PrimaryBtn } from '../../UI/Button'
 import Popover from '../Popover'
 
 import './index.css'
@@ -11,7 +11,7 @@ import kichly_cheese_greater from '../../../images/thumbnails/products/kichly-ch
 import gift_icon from '../../../images/thumbnails/icons/gift-icon.png'
 
 
-const TabOrder = ({tabHeading, tabBody}) => {
+const TabOrder = ({tabHeading, tabBody, mode}) => {
 
     return (
         <>
@@ -104,10 +104,18 @@ const TabOrder = ({tabHeading, tabBody}) => {
                                         </span>
                                     </section>
                                     <span>
-                                        <OrderButton
-                                            text="Track package"
-                                            width={"220px"}
-                                        />
+                                        {mode === "orders" && (
+                                            <OrderButton
+                                                text="Track package"
+                                                width={"220px"}
+                                            />
+                                        )}
+                                        {mode === "openOrders" && (
+                                            <PrimaryBtn
+                                                text="Track package"
+                                                width={"220px"}
+                                            /> 
+                                        )}
                                     </span>
                                 </Row>
                                 <Row className="mx-0">
@@ -139,36 +147,55 @@ const TabOrder = ({tabHeading, tabBody}) => {
                                                 </div>
                                             </section>
                                             <section className="tab__buttongroup__list">
-                                                <OrderButton
-                                                    link="/"
-                                                    text="Return items"
-                                                    width={"220px"}
-                                                />
-                                                <OrderButton
-                                                    link="/"
-                                                    text="Share gift receipt"
-                                                    width={"220px"}
-                                                />
-                                                <OrderButton
-                                                    link="/"
-                                                    text="Ask a Product-Related Question"
-                                                    width={"220px"}
-                                                />
-                                                <OrderButton
-                                                    link="/"
-                                                    text="Leave seller feedback"
-                                                    width={"220px"}
-                                                />
-                                                <OrderButton
-                                                    link="/"
-                                                    text="Write a product review"
-                                                    width={"220px"}
-                                                />
-                                                <OrderButton
-                                                    link="/"
-                                                    text="Archive order"
-                                                    width={"220px"}
-                                                />
+                                                {mode === "openOrders" && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Cancel items"
+                                                        width={"220px"}
+                                                    />
+                                                )}
+                                                {mode === "orders" && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Return items"
+                                                        width={"220px"}
+                                                    />
+                                                )}
+                                                {mode === "orders" && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Share gift receipt"
+                                                        width={"220px"}
+                                                    />
+                                                )}
+                                                {(mode === "orders" || mode==="openOrders") && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Ask a Product-Related Question"
+                                                        width={"220px"}
+                                                    />
+                                                )}
+                                                {mode === "orders" && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Leave seller feedback"
+                                                        width={"220px"}
+                                                    />
+                                                )}
+                                                {mode === "orders" && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Write a product review"
+                                                        width={"220px"}
+                                                    />
+                                                )}
+                                                {(mode === "orders" || mode==="openOrders") && (
+                                                    <OrderButton
+                                                        link="/"
+                                                        text="Archive order"
+                                                        width={"220px"}
+                                                    />
+                                                )}
                                             </section>
                                         </div>
                                     </section>

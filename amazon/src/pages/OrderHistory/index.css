@@ -9,7 +9,6 @@
 }
 .orders__wrap {
     width: 920px;
-    margin: 0 auto;
 }
 .orders.stretch .orders__wrap {
     width: auto;

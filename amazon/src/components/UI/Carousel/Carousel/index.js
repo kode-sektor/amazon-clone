@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption
+import { Carousel, CarouselItem, CarouselControl, CarouselCaption
 } from "reactstrap";
 
-import { AddToCart } from '../../Button'
+import { PrimaryBtn } from '../../Button'
 
 import './index.css'
 
@@ -98,7 +98,7 @@ const Slider = ({type, count, items, carouselClass, price, category, addToCart=f
 								</figcaption>
 							</figure>
 							{ addToCart && (
-								<AddToCart
+								<PrimaryBtn
 									mTop={"mt-auto"}
 									text={item.buyingOptions ? "See buying options" : item.similarItems ? "Similar items" : "Add to Cart" }
 								/>

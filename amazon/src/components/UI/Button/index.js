@@ -51,9 +51,10 @@ const SearchButton = () => {
     )
 }
 
-const OrderButton = ({link, text, flexWidth, width}) => {
+// Grey-coloured
+const OrderButton = ({link, text, width}) => {
     return (
-        <span className="a__button a__spacing__mini  ml-0" style={{width: width}}>
+        <span className="a__button a__spacing__mini ml-0" style={{width: width}}>
             <span className="a__button__inner">
                 <Link to={link} className="a__button__text" role="button">
                     {text}
@@ -75,12 +76,13 @@ const BuyAgainBtn = () => {
     )
 }
 
-const AddToCart = ({text="Add to Cart", slug, mTop=""}) => {
+// Orange-coloured
+const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
 
     if (text === ("See buying options") || text === ("Similar items")) {
         return (
             <Link className={`addToCartBtn ${mTop}`} to={`/${slug}`}>
-                <span className={`a__button d-inline-block w-100`}>
+                <span className={`a__button d-inline-block`} style={{width: width}}>
                     <span className="a__button__inner">
                         <input type="submit" className="a__button__input"/>
                         <span className="a__button__text text-center">{text}</span>
@@ -91,7 +93,7 @@ const AddToCart = ({text="Add to Cart", slug, mTop=""}) => {
     } else {
         return (
             <span className={`addToCartBtn ${mTop}`}>
-                <span className={`a__button d-inline-block a__button__primary w-100`}>
+                <span className={`a__button d-inline-block a__button__primary`} style={{width: width}}>
                     <span className="a__button__inner">
                         <input type="submit" className="a__button__input"/>
                         <span className="a__button__text text-center">{text}</span>
@@ -102,4 +104,4 @@ const AddToCart = ({text="Add to Cart", slug, mTop=""}) => {
     }
 }
 
-export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, AddToCart}
+export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn}

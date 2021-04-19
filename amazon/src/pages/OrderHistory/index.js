@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-import { Row, Col, TabContent, TabPane, Nav, NavItem, NavLink, Card, 
-    CardTitle, CardText, CardImg, CardBody, CardSubtitle } from 'reactstrap'
+import { Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
 import classnames from 'classnames'
 
 import Slider from '../../components/UI/Carousel/Carousel'
@@ -10,7 +9,7 @@ import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 
 import Layout from '../../components/Layout/index'
 import BreadCrumb from '../../components/UI/BreadCrumb'
-import { SearchButton, CancelBtnPrimary, AddToCart } from '../../components/UI/Button/'
+import { SearchButton, CancelBtnPrimary } from '../../components/UI/Button/'
 
 import TabOrder from '../../components/UI/TabOrders'
 
@@ -48,7 +47,7 @@ const OrderHistory = () => {
     return (
         <Layout>
             <section className={`orders ${fullWidthClass}`}>
-                <div className="orders__wrap">
+                <div className={activeTab === "3" ? "orders__wrap mx-auto" : "orders__wrap"}>
                     <section className="orders__breadcrumb">
                         <BreadCrumb />
                         <Row>
@@ -115,6 +114,13 @@ const OrderHistory = () => {
                             />
                         </section>
                     )}
+                    {
+                        activeTab === '3' && (
+                            <span className="orders__count a__spacing__base">
+                                1 open order
+                            </span>
+                        )
+                    }
                     <TabContent activeTab={activeTab} className="tab__container">
                         <TabPane tabId="1" className="a__box__group a__spacing__base">
                             <TabOrder
@@ -146,6 +152,7 @@ const OrderHistory = () => {
                                         }
                                     ]
                                 }
+                                mode={"orders"}
                             />
                         </TabPane>
                         <TabPane tabId="2">
@@ -696,11 +703,37 @@ const OrderHistory = () => {
                             </section>
                         </TabPane>
                         <TabPane tabId="3">
-                            <Row>
-                                <Col sm="12">
-                                    <h4>Tab 1 Contents</h4>
-                                </Col>
-                            </Row>
+                            <TabOrder
+                                    tabHeading={
+                                        [
+                                            {
+                                                orderDate : "March 22, 2021",
+                                                orderTotal : 12.42,
+                                                orderID : "702-2561815-6185804",
+                                                user : { 
+                                                    name : "Ibiyemi Kayode Olagoke",
+                                                    location : "2222-2156 Danforth Ave",
+                                                    city : "2222-2156 Danforth Ave",
+                                                    country : "Canada",
+                                                    phone : "+1-647-XXX-XXXX"
+                                                },
+                                            }
+                                        ]
+                                    }
+                                    tabBody = {
+                                        [
+                                            {
+                                                deliveryDate : "Mar 23, 2021",
+                                                product: "KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base",
+                                                packageMsg : "Package was left near the front door or porch",
+                                                returnDate : "May 2, 2021",
+                                                addOn : true,
+                                                giftOrder : true
+                                            }
+                                        ]
+                                    }
+                                    mode={"openOrders"}
+                                />
                         </TabPane>
                         <TabPane tabId="4">
                             <Row>
