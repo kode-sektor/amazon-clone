@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import { Row, Col } from 'reactstrap'
 
 import './index.css'
@@ -8,7 +10,7 @@ import './index.css'
 const CardCell = ({heading, text, cardCellImg}) => {
     return (
         <Col tag="li" sm="4" className="card__cell">
-            <a className="card__cell__link">
+            <Link className="card__cell__link" to="/">
                 <div className="a__box">
                     <div className="a__box__inner">
                         <Row>
@@ -22,7 +24,7 @@ const CardCell = ({heading, text, cardCellImg}) => {
                         </Row>
                     </div>
                 </div>
-            </a>
+            </Link>
         </Col>
     )
 }
@@ -38,7 +40,7 @@ const CardCellLinks = ({heading, links}) => {
                                 links.map((link, index) => {
                                     return (
                                         <li className="a__spacing__micro">
-                                            <a href={link.href}>{link.text}</a>
+                                            <Link to="/" href={link.href}>{link.text}</Link>
                                         </li>
                                     )
                                 })

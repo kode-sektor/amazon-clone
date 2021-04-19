@@ -55,9 +55,9 @@ const OrderButton = ({link, text, flexWidth, width}) => {
     return (
         <span className="a__button a__spacing__mini  ml-0" style={{width: width}}>
             <span className="a__button__inner">
-                <a href={link} className="a__button__text" role="button">
+                <Link to={link} className="a__button__text" role="button">
                     {text}
-                </a>
+                </Link>
             </span>
         </span>
     )
@@ -67,9 +67,9 @@ const BuyAgainBtn = () => {
     return (
         <span className="a__button a__spacing__mini a__button__primary a__button__icon reorder__modal__trigger__button">
             <span className="a__button__inner">
-                <a href="#" aria-label="Buy it again" className="a__button__text" role="button">
+                <Link to="#" aria-label="Buy it again" className="a__button__text" role="button">
                     <i className="reorder__modal__trigger__icon"></i>Buy it again
-                </a>
+                </Link>
             </span>
         </span>
     )
@@ -79,14 +79,14 @@ const AddToCart = ({text="Add to Cart", slug, mTop=""}) => {
 
     if (text === ("See buying options") || text === ("Similar items")) {
         return (
-            <a className={`addToCartBtn ${mTop}`} href={`/${slug}`}>
+            <Link className={`addToCartBtn ${mTop}`} to={`/${slug}`}>
                 <span className={`a__button d-inline-block w-100`}>
                     <span className="a__button__inner">
                         <input type="submit" className="a__button__input"/>
                         <span className="a__button__text text-center">{text}</span>
                     </span>
                 </span>
-            </a>
+            </Link>
         ) 
     } else {
         return (

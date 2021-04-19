@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 
 import { Row, Col, TabContent, TabPane, Nav, NavItem, NavLink, Card, 
-    Button, CardTitle, CardText, CardImg, CardBody, CardSubtitle } from 'reactstrap'
+    CardTitle, CardText, CardImg, CardBody, CardSubtitle } from 'reactstrap'
 import classnames from 'classnames'
 
 import Slider from '../../components/UI/Carousel/Carousel'
-
+import CardOrder from '../../components/UI/Card/CardOrder'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
-
 
 import Layout from '../../components/Layout/index'
 import BreadCrumb from '../../components/UI/BreadCrumb'
@@ -152,138 +151,60 @@ const OrderHistory = () => {
                         <TabPane tabId="2">
                             <div className="stretch d-flex">
                                 <Row className="row-no-gutters mx-0 justify-content-center">
-                                    <Col sm="2" className="card__holder justify-content-center flex-grow-1 px-0">
-                                        <Card className="justify-space-between">
-                                            <div className="card__closed d-flex flex-column flex-grow-1">
-                                                <div className="card__closed__imgContainer text-center">
-                                                    <CardImg top width="100%" src={rogaine_mens_hair} alt="Card image cap" />
-                                                </div>
-                                                <CardBody className="p-0">
-                                                    <CardTitle tag="h5" className="a__color__base a__size__base a__text__normal">Rogaine Men’s Hair Loss &amp; Thinning Treatment for Hair…</CardTitle>
-                                                    <CardSubtitle tag="h6" className="a__price" data-a-size="m" data-a-color="base">
-                                                        <span className="a__price__symbol">$</span>81.99&nbsp;
-                                                        <span className="a__size__small a__color__secondary a__text__normal">
-                                                            ​($0.46​/​grams)
-                                                        </span>
-                                                    </CardSubtitle>
-                                                    <CardText className="a__size__small a__color__secondary">+ $5.98 shipping</CardText>
-                                                </CardBody>
-                                                <AddToCart
-                                                    mTop={"mt-auto"}
-                                                />
-                                            </div>
-                                        </Card>
-                                    </Col>
-                                    <Col sm="2" className="card__holder justify-content-center flex-grow-1 px-0">
-                                        <Card className="justify-space-between">
-                                            <div className="card__closed d-flex flex-column flex-grow-1">
-                                                <div className="card__closed__imgContainer text-center">
-                                                    <CardImg top width="100%" src="https://m.media-amazon.com/images/I/71FIE9XkXiL._AC_SY180_.jpg" alt="Card image cap" />
-                                                </div>
-                                                <CardBody className="p-0">
-                                                    <CardTitle tag="h5" className="a__color__base a__size__base a__text__normal">Rogaine Men’s Hair Loss &amp; Thinning Treatment for Hair…</CardTitle>
-                                                    <CardSubtitle tag="h6" className="a__price" data-a-size="m" data-a-color="base">
-                                                        <span className="a__price__symbol">$</span>81.99&nbsp;
-                                                        <span className="a__size__small a__color__secondary a__text__normal">
-                                                            ​($0.46​/​grams)
-                                                        </span>
-                                                    </CardSubtitle>
-                                                    <CardText className="a__size__small a__color__secondary">+ $5.98 shipping</CardText>
-                                                </CardBody>
-                                                <AddToCart
-                                                    mTop={"mt-auto"}
-                                                />
-                                            </div>
-                                        </Card>
-                                    </Col>
-                                    <Col sm="2" className="card__holder justify-content-center flex-grow-1 px-0">
-                                        <Card className="justify-space-between">
-                                            <div className="card__closed d-flex flex-column flex-grow-1">
-                                                <div className="card__closed__imgContainer text-center">
-                                                    <CardImg top width="100%" src="https://m.media-amazon.com/images/I/71FIE9XkXiL._AC_SY180_.jpg" alt="Card image cap" />
-                                                </div>
-                                                <CardBody className="p-0">
-                                                    <CardTitle tag="h5" className="a__color__base a__size__base a__text__normal">Rogaine Men’s Hair Loss &amp; Thinning Treatment for Hair…</CardTitle>
-                                                    <CardSubtitle tag="h6" className="a__price" data-a-size="m" data-a-color="base">
-                                                        <span className="a__price__symbol">$</span>81.99&nbsp;
-                                                        <span className="a__size__small a__color__secondary a__text__normal">
-                                                            ​($0.46​/​grams)
-                                                        </span>
-                                                    </CardSubtitle>
-                                                    <CardText className="a__size__small a__color__secondary">+ $5.98 shipping</CardText>
-                                                </CardBody>
-                                                <AddToCart
-                                                    mTop={"mt-auto"}
-                                                />
-                                            </div>
-                                        </Card>
-                                    </Col>
-                                    <Col sm="2" className="card__holder justify-content-center flex-grow-1 px-0">
-                                        <Card className="justify-space-between">
-                                            <div className="card__closed d-flex flex-column flex-grow-1">
-                                                <div className="card__closed__imgContainer text-center">
-                                                    <CardImg top width="100%" src={rogaine_mens_hair} alt="Card image cap" />
-                                                </div>
-                                                <CardBody className="p-0">
-                                                    <CardTitle tag="h5" className="a__color__base a__size__base a__text__normal">Rogaine Men’s Hair Loss &amp; Thinning Treatment for Hair…</CardTitle>
-                                                    <CardSubtitle tag="h6" className="a__price" data-a-size="m" data-a-color="base">
-                                                        <span className="a__price__symbol">$</span>81.99&nbsp;
-                                                        <span className="a__size__small a__color__secondary a__text__normal">
-                                                            ​($0.46​/​grams)
-                                                        </span>
-                                                    </CardSubtitle>
-                                                    <CardText className="a__size__small a__color__secondary">+ $5.98 shipping</CardText>
-                                                </CardBody>
-                                                <AddToCart
-                                                    mTop={"mt-auto"}
-                                                />
-                                            </div>
-                                        </Card>
-                                    </Col>
-                                    <Col sm="2" className="card__holder justify-content-center flex-grow-1 px-0">
-                                        <Card className="justify-space-between">
-                                            <div className="card__closed d-flex flex-column flex-grow-1">
-                                                <div className="card__closed__imgContainer text-center">
-                                                    <CardImg top width="100%" src="https://m.media-amazon.com/images/I/71FIE9XkXiL._AC_SY180_.jpg" alt="Card image cap" />
-                                                </div>
-                                                <CardBody className="p-0">
-                                                    <CardTitle tag="h5" className="a__color__base a__size__base a__text__normal">Rogaine Men’s Hair Loss &amp; Thinning Treatment for Hair…</CardTitle>
-                                                    <CardSubtitle tag="h6" className="a__price" data-a-size="m" data-a-color="base">
-                                                        <span className="a__price__symbol">$</span>81.99&nbsp;
-                                                        <span className="a__size__small a__color__secondary a__text__normal">
-                                                            ​($0.46​/​grams)
-                                                        </span>
-                                                    </CardSubtitle>
-                                                    <CardText className="a__size__small a__color__secondary">+ $5.98 shipping</CardText>
-                                                </CardBody>
-                                                <AddToCart
-                                                    mTop={"mt-auto"}
-                                                />
-                                            </div>
-                                        </Card>
-                                    </Col>
-                                    <Col sm="2" className="card__holder justify-content-center flex-grow-1 px-0">
-                                        <Card className="justify-space-between">
-                                            <div className="card__closed d-flex flex-column flex-grow-1">
-                                                <div className="card__closed__imgContainer text-center">
-                                                    <CardImg top width="100%" src="https://m.media-amazon.com/images/I/71FIE9XkXiL._AC_SY180_.jpg" alt="Card image cap" />
-                                                </div>
-                                                <CardBody className="p-0">
-                                                    <CardTitle tag="h5" className="a__color__base a__size__base a__text__normal">Rogaine Men’s Hair Loss &amp; Thinning Treatment for Hair…</CardTitle>
-                                                    <CardSubtitle tag="h6" className="a__price" data-a-size="m" data-a-color="base">
-                                                        <span className="a__price__symbol">$</span>81.99&nbsp;
-                                                        <span className="a__size__small a__color__secondary a__text__normal">
-                                                            ​($0.46​/​grams)
-                                                        </span>
-                                                    </CardSubtitle>
-                                                    <CardText className="a__size__small a__color__secondary">+ $5.98 shipping</CardText>
-                                                </CardBody>
-                                                <AddToCart
-                                                    mTop={"mt-auto"}
-                                                />
-                                            </div>
-                                        </Card>
-                                    </Col>
+                                    <CardOrder 
+                                        column="2"
+                                        src={rogaine_mens_hair}
+                                        alt={rogaine_mens_hair}
+                                        title={"Rogaine Men’s Hair Loss & Thinning Treatment for Hair…"}
+                                        price={"81.99"}
+                                        costPerGrams={"0.46"}
+                                        shipping={"5.98"}
+                                    />
+                                    <CardOrder 
+                                        column="2"
+                                        src={rogaine_mens_hair}
+                                        alt={rogaine_mens_hair}
+                                        title={"Rogaine Men’s Hair Loss & Thinning Treatment for Hair…"}
+                                        price={"81.99"}
+                                        costPerGrams={"0.46"}
+                                        shipping={"5.98"}
+                                    />
+                                    <CardOrder 
+                                        column="2"
+                                        src={rogaine_mens_hair}
+                                        alt={rogaine_mens_hair}
+                                        title={"Rogaine Men’s Hair Loss & Thinning Treatment for Hair…"}
+                                        price={"81.99"}
+                                        costPerGrams={"0.46"}
+                                        shipping={"5.98"}
+                                    />
+                                    <CardOrder 
+                                        column="2"
+                                        src={rogaine_mens_hair}
+                                        alt={rogaine_mens_hair}
+                                        title={"Rogaine Men’s Hair Loss & Thinning Treatment for Hair…"}
+                                        price={"81.99"}
+                                        costPerGrams={"0.46"}
+                                        shipping={"5.98"}
+                                    />
+                                    <CardOrder 
+                                        column="2"
+                                        src={rogaine_mens_hair}
+                                        alt={rogaine_mens_hair}
+                                        title={"Rogaine Men’s Hair Loss & Thinning Treatment for Hair…"}
+                                        price={"81.99"}
+                                        costPerGrams={"0.46"}
+                                        shipping={"5.98"}
+                                    />
+                                    <CardOrder 
+                                        column="2"
+                                        src={rogaine_mens_hair}
+                                        alt={rogaine_mens_hair}
+                                        title={"Rogaine Men’s Hair Loss & Thinning Treatment for Hair…"}
+                                        price={"81.99"}
+                                        costPerGrams={"0.46"}
+                                        shipping={"5.98"}
+                                    />
                                 </Row>
                             </div>
                             <h2 className="a__spacing__none a__size__large font-weight-bold orders__title">Popular Reorders</h2>
