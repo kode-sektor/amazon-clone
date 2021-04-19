@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption
 } from "reactstrap";
 
+import { AddToCart } from '../../Button'
+
 import './index.css'
 
 
-const Slider = ({type, count, items, carouselClass}) => {
+const Slider = ({type, count, items, carouselClass, price, category, addToCart=false}) => {
 
 	let itemLength = items.length
 
@@ -52,7 +54,8 @@ const Slider = ({type, count, items, carouselClass}) => {
 				tempCarousel = [
 					...tempCarousel,
 					(
-						<li>
+						/*create room for 'Add to Cart' button for Orders page*/
+						<li className={addToCart && 'order__slider'}>
 							<figure>
 								<a key={index} href={item.href}>
 									<img src={item.src} alt={item.altText} />
@@ -62,20 +65,44 @@ const Slider = ({type, count, items, carouselClass}) => {
 										(<a href={item.href}>
 											<div className="amzn__carousel__caption">{item.caption}</div>
 											<span className="amzn__carousel__star"></span>
-											<span className="amzn__carousel__count"> 1,833</span>
-											<span className="amzn__carousel__offers"></span>
-											<span className="a__color__price"> $269.99</span>
-											<span className="amzn__carousel__delivery"></span>
+											<span className="amzn__carousel__count"> 1,833 </span>
+											<span className="amzn__carousel__offers"> </span>
+											{category && 
+												(
+													<a className="a__size__small a__link__normal amzn__best__seller" href="/">
+														<i className="a__icon a__icon__addon amzn__icon__bestSeller">#1 Best Seller</i>
+														<span className="a__size__small a__color__secondary">in 
+															<span className="a__color__link amzn__carousel__delivery">{item.category}</span>
+														</span>
+														&nbsp;
+													</a>
+												)
+											}
+											{price && (<span className="a__color__price d-block">$269.99</span>)}
+											{item.prime && (	// Only on Order Page
+												<span className="amzn__prime__badge d-block">
+													<span className="amzn__prime__badge__icon"></span>&nbsp;
+												</span>
+											)}
+											{category && (
+												<span class="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
+											)}
 										</a>)
 										: 
 										(<div className="amzn__carousel__card">
-											<span className="amzn__carousel__price">$188.99</span>
-											<span className="amzn__carousel__oldprice">$269.99</span>
-											<span className="amzn__carousel__deal">Deal has ended</span>
+											<span className="amzn__carousel__price">$188.99 </span>
+											<span className="amzn__carousel__oldprice">$269.99 </span>
+											<span className="amzn__carousel__deal">Deal has ended </span>
 										</div> )						
 									} 
 								</figcaption>
 							</figure>
+							{ addToCart && (
+								<AddToCart
+									mTop={"mt-auto"}
+									text={item.buyingOptions ? "See buying options" : item.similarItems ? "Similar items" : "Add to Cart" }
+								/>
+							)}
 						</li>
 					)
 				]

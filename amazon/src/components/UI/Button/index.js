@@ -2,6 +2,9 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
+import './index.css'
+
+
 const CancelBtnLink = ({text="Cancel"}) => {
     return (
         <span className="a__button a__spacing__top__mini">
@@ -72,15 +75,31 @@ const BuyAgainBtn = () => {
     )
 }
 
-const AddToCart = () => {
-    return (
-        <span className="a__button d__inline-block a__button__primary w-100">
-            <span className="a__button__inner">
-                <input type="submit" className="a__button__input"/>
-                <span className="a__button__text text-center">Add to Cart</span>
+const AddToCart = ({text="Add to Cart", slug, mTop=""}) => {
+
+    if (text === ("See buying options") || text === ("Similar items")) {
+        return (
+            <a className={`addToCartBtn ${mTop}`} href={`/${slug}`}>
+                <span className={`a__button d-inline-block w-100`}>
+                    <span className="a__button__inner">
+                        <input type="submit" className="a__button__input"/>
+                        <span className="a__button__text text-center">{text}</span>
+                    </span>
+                </span>
+            </a>
+        ) 
+    } else {
+        return (
+            <span className={`addToCartBtn ${mTop}`}>
+                <span className={`a__button d-inline-block a__button__primary w-100`}>
+                    <span className="a__button__inner">
+                        <input type="submit" className="a__button__input"/>
+                        <span className="a__button__text text-center">{text}</span>
+                    </span>
+                </span>
             </span>
-        </span>
-    )
+        )
+    }
 }
 
 export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, AddToCart}

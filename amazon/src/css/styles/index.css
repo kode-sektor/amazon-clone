@@ -1008,6 +1008,19 @@ ul {
 	position: relative;
 	top: 2px;
 }
+.amzn__icon__bestSeller {
+	margin-right: 8px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font-size: 12px;
+	background-color: var(--ochre-4) !important;
+}
+.amzn__icon__bestSeller:before {
+	border-bottom-color: var(--ochre-4) !important;
+}
+.amzn__icon__bestSeller:after {
+	border-top-color: var(--ochre-4) !important;
+}
 .amzn__prime__badge__icon {
 	font-style: italic;
 	display: inline-block;
@@ -1143,6 +1156,9 @@ ul {
 }
 .a__color__base {
 	color: var(--color) !important;
+}
+.a__color__link {
+	color: var(--link) !important;
 }
 .button__container {
     padding-left: 10px;

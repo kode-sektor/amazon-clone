@@ -123,7 +123,9 @@ code {
     border-radius: 0;
 }
 .card__closed {
+    position: relative;
     padding-top: 35px;
+    padding-bottom: 50px;
 }
 .card__closed__imgContainer {
     height: 180px;

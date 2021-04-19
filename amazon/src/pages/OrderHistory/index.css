@@ -14,7 +14,7 @@
 .orders.stretch .orders__wrap {
     width: auto;
 }
-.orders.stretch .order__breadcrumb {
+.orders.stretch .orders__breadcrumb {
     width: 920px;
     margin: 0 auto;
 }
@@ -59,7 +59,6 @@
     display: inline-block;
     margin-right: .5em;
 }
-
 .tab-pane .stretch {
     border-left: 1px solid var(--grey-tone-35);
     border-top: 1px solid var(--grey-tone-35);
@@ -73,7 +72,7 @@
     flex-grow: 1;
     background-color: var(--white);
 }
-.tab-pane.stretch .card {
+.tab-pane .stretch .card {
     width: 100%;
     padding: 20px 22px 14px;
     border-bottom: 1px solid var(--grey-tone-35);

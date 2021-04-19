@@ -16,7 +16,7 @@ const CarouselDetailed = ({heading, slider, heading_two, heading_two_link, slide
                                     <section className="carousel__detailed__frame">
                                         <header className="carousel__detailed__slider__header row">
                                             <div className="col-8">
-                                                <h2 className="carousel__detailed__heading">{heading[indx]}</h2>
+                                                <h2 className="carousel__detailed__heading a__size__large">{heading[indx]}</h2>
                                             </div>
                                             <div className="carousel__count text-right flex-fill">
                                                 <span>Page 1 </span><span>of</span><span> 6</span>
@@ -29,7 +29,7 @@ const CarouselDetailed = ({heading, slider, heading_two, heading_two_link, slide
                             <section className="carousel__detailed__frame">
                                 <header className="carousel__detailed__slider__header row">
                                     <div className="col-8">
-                                        <h2 className="carousel__detailed__heading">{heading}</h2>
+                                        <h2 className="carousel__detailed__heading a__size__large">{heading}</h2>
                                     </div>
                                     <div className="carousel__count text-right flex-fill">
                                         <span>Page 1 </span><span>of</span><span> 6</span>
