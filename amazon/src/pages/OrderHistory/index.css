@@ -79,3 +79,23 @@
 .orders__title {
     margin-left: 26px;
 }
+
+.cart {
+    position: absolute;
+    display: block;
+    left: 940px;
+    top: 175px;
+}
+.cart__wrap {
+    display: block;
+    width: 266px;
+    max-width: 300px;
+    max-height: 10000px;
+    border: 1px var(--grey-tone-24) solid;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+.cart__imgLink {
+    flex: 0 0 87px;
+}
+

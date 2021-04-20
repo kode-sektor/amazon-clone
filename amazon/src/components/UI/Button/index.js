@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 
+// Small 'Add to Cart' button found in Account Menu (Header Top)
+const BtnPrimary = ({text="Add to Cart"}) => (
+    <button className="a__button a__button__primary a__button__small">
+        <span className="a__button__inner">
+            <input name="submit.addToCart" className="a__button__input" type="submit" value="Add to Cart" />
+            <span className="a__button__text" aria-hidden="true">{text}</span>
+        </span>
+    </button>
+)
 
 const CancelBtnLink = ({text="Cancel"}) => {
     return (
@@ -104,4 +113,4 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
     }
 }
 
-export { CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn}
+export { BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn}

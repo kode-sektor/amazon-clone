@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
 import classnames from 'classnames'
 
+import Cart from '../../components/UI/Cart'
 import Slider from '../../components/UI/Carousel/Carousel'
 import CardOrder from '../../components/UI/Card/CardOrder'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
@@ -22,6 +23,7 @@ import frosted_endtable from '../../images/products/global-furniture-clear-frost
 import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
 import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
 import rogaine_mens_hair from '../../images/products/rogaine-mens-hair-loss-and-thinning-treatment-for-hair-regrowth.jpg'
+import hilroy_coil from '../../images/thumbnails/products/hilroy-coil-1-subject-wide-ruled-notebook.jpg'
 
 import './index.css'
 
@@ -766,6 +768,22 @@ const OrderHistory = () => {
                         </TabPane>
                     </TabContent>
                 </div>
+                <section className="cart">
+                    <div className="a__box">
+                        <div className="cart__wrap a__box__inner a__padding__base">
+                            <h3 className="a__spacing__base">Buy it again</h3>
+                            <ul>
+                                <Cart
+                                    img={hilroy_coil}
+                                    title={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7…"}
+                                    altTitle={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7/8 X 8-3/8 Inches, 150 Sheets, White (77193)"}
+                                    price={"2.26"}
+                                    date={"Sep 2020"}
+                                />
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </section>
             <section>
                 {activeTab === "3" && (

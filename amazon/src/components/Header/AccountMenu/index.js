@@ -1,6 +1,8 @@
 import React from 'react'
 import './index.css'
 
+import { BtnPrimary } from '../../UI/Button'
+
 const AccountMenu = () => {
     return (
         <>
@@ -53,12 +55,7 @@ const AccountMenu = () => {
                                                 <input type="hidden" name="discoveredAsins.1" value="B00PQKRJY4" /> 
                                                 <input type="hidden" name="CSRF" value="" />
                                                 
-                                                <span className="a__button a__button__primary a__button__small">
-                                                    <span className="a__button__inner">
-                                                        <input name="submit.addToCart" className="a__button__input" type="submit" value="Add to Cart" />
-                                                        <span className="a__button__text" aria-hidden="true">Add to Cart</span>
-                                                    </span>
-                                                </span>
+                                                <BtnPrimary/>
                                             </form>
                                         </div>
                                     </div>

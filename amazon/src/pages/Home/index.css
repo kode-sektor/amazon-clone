@@ -398,6 +398,7 @@
 .primary__layout__inner, .carousel__detailed__layout__inner {
     margin-bottom: 0 !important;
     padding: 10px 20px;
+    padding: 20px;
     background: var(--white);
 }
 .primary__slider.squished .primary__layout__inner {

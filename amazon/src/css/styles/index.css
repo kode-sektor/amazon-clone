@@ -798,6 +798,37 @@ input[required]:after{
     background-image: url(../../images/amzn-sprite-4.png);
     background-repeat: no-repeat;
 }
+.a__icon__alt {
+    position: absolute;
+    display: block;
+    left: -9999px;
+    top: auto;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+}
+[class*=a__icon__star] > .a__icon__alt {
+    clip-path: circle(0);
+    left: auto;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    line-height: normal;
+    opacity: 0;
+}
+.a__icon__star{
+	width: 80px;
+    height: 18px;
+}
+.a__star__4__5 {
+    background-position: -175px -368px;
+}
+.a__icon__star, .a__icon__star__medium, .a__icon__star__mini, .a__icon__star__small {
+    position: relative;
+    vertical-align: text-top;
+}
 .a__icon__search {
     opacity: .55;
     width: 13px;
@@ -1080,6 +1111,10 @@ ul {
 .a__spacing__top__mini {
     margin-top: 4px !important;
 }
+.a__spacing__top__micro.a__button__stack, .a__spacing__top__micro.a__section {
+    padding-top: 4px;
+    margin-top: 0 !important;
+}
 .a__spacing__top__small {
     margin-top: 8px !important;
 }
@@ -1125,10 +1160,6 @@ ul {
 }
 .a__padding__base {
     padding: 10px 14px !important;
-    padding-top: 10px !important;
-    padding-right: 14px !important;
-    padding-bottom: 10px !important;
-    padding-left: 14px !important;
 }
 .a__padding__small {
     padding: 6px 10px !important;
