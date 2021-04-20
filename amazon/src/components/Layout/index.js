@@ -22,8 +22,9 @@ const Layout = (props) => {
                                                     cta : "",
                                                     classname : ""       
                                                 })
-
     const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
+
+    const [showDeliverToMenu, setShowDeliverToMenu] = useState(true)
 
     const toggleModal = (status, mode, modalLangProp=modalLangProps) => { 
         setModal(status)  // Hide Modal on hover on Modal itself 
@@ -54,6 +55,7 @@ const Layout = (props) => {
             <Header 
                 modal={modal}
                 toggleModal={toggleModal}
+                showDeliverToMenu={showDeliverToMenu}
             />
             <div className="page__content">
                 <div className="page__content__wrap">

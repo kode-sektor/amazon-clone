@@ -47,7 +47,7 @@ const OrderHistory = () => {
     return (
         <Layout>
             <section className={`orders ${fullWidthClass}`}>
-                <div className={activeTab === "3" ? "orders__wrap mx-auto" : "orders__wrap"}>
+                <div className={activeTab === "3" || activeTab === "4" ? "orders__wrap mx-auto" : "orders__wrap"}>
                     <section className="orders__breadcrumb">
                         <BreadCrumb />
                         <Row>
@@ -704,46 +704,369 @@ const OrderHistory = () => {
                         </TabPane>
                         <TabPane tabId="3">
                             <TabOrder
-                                    tabHeading={
-                                        [
-                                            {
-                                                orderDate : "March 22, 2021",
-                                                orderTotal : 12.42,
-                                                orderID : "702-2561815-6185804",
-                                                user : { 
-                                                    name : "Ibiyemi Kayode Olagoke",
-                                                    location : "2222-2156 Danforth Ave",
-                                                    city : "2222-2156 Danforth Ave",
-                                                    country : "Canada",
-                                                    phone : "+1-647-XXX-XXXX"
-                                                },
-                                            }
-                                        ]
-                                    }
-                                    tabBody = {
-                                        [
-                                            {
-                                                deliveryDate : "Mar 23, 2021",
-                                                product: "KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base",
-                                                packageMsg : "Package was left near the front door or porch",
-                                                returnDate : "May 2, 2021",
-                                                addOn : true,
-                                                giftOrder : true
-                                            }
-                                        ]
-                                    }
-                                    mode={"openOrders"}
-                                />
+                                tabHeading={
+                                    [
+                                        {
+                                            orderDate : "March 22, 2021",
+                                            orderTotal : 12.42,
+                                            orderID : "702-2561815-6185804",
+                                            user : { 
+                                                name : "Ibiyemi Kayode Olagoke",
+                                                location : "2222-2156 Danforth Ave",
+                                                city : "2222-2156 Danforth Ave",
+                                                country : "Canada",
+                                                phone : "+1-647-XXX-XXXX"
+                                            },
+                                        }
+                                    ]
+                                }
+                                tabBody = {
+                                    [
+                                        {
+                                            deliveryDate : "Mar 23, 2021",
+                                            product: "KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base",
+                                            packageMsg : "Package was left near the front door or porch",
+                                            returnDate : "May 2, 2021",
+                                            addOn : true,
+                                            giftOrder : true
+                                        }
+                                    ]
+                                }
+                                mode={"openOrders"}
+                            />
                         </TabPane>
                         <TabPane tabId="4">
-                            <Row>
-                                <Col sm="12">
-                                    <h4>Tab 1 Contents</h4>
-                                </Col>
-                            </Row>
+                            <TabOrder
+                                tabHeading={
+                                    [
+                                        {
+                                            orderDate : "March 22, 2021",
+                                            orderTotal : 12.42,
+                                            orderID : "702-2561815-6185804",
+                                            user : { 
+                                                name : "Ibiyemi Kayode Olagoke",
+                                                location : "2222-2156 Danforth Ave",
+                                                city : "2222-2156 Danforth Ave",
+                                                country : "Canada",
+                                                phone : "+1-647-XXX-XXXX"
+                                            },
+                                        }
+                                    ]
+                                }
+                                tabBody = {
+                                    [
+                                        {
+                                            deliveryDate : "Cancelled",
+                                            product: "KICHLY Cheese Grater for Kitchen Stainless Steel 6-Sides - Easy to Use and Non-Slip Base",
+                                        }
+                                    ]
+                                }
+                                mode={"cancelledOrders"}
+                            />
                         </TabPane>
                     </TabContent>
                 </div>
+            </section>
+            <section>
+                {activeTab === "3" && (
+                    <>
+                        <hr className="card__break"/>
+                        <CarouselDetailed 
+                            heading={"Explore more items"}
+                            squished={true}
+                            slider={
+                                <Slider 
+                                    type={"multiImage"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    price={true}
+                                    items={[
+                                        {
+                                            href: '/',
+                                            src: faux_leather,
+                                            altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: leather_swivel,
+                                            altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                            caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: frosted_endtable,
+                                            altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                            caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: monterey_tv_stand,
+                                            altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                            caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: modern_cube,
+                                            altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                            caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: ameriwood_lumina,
+                                            altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: ameriwood_lumina,
+                                            altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: ameriwood_lumina,
+                                            altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: modern_cube,
+                                            altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                            caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: modern_cube,
+                                            altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                            caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: modern_cube,
+                                            altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                            caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: modern_cube,
+                                            altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                            caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                        }
+                                    ]}
+                                />
+                            }
+                            heading_two={"Your browsing history"}
+                            heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
+                            slider_two={
+                                <Slider 
+                                    type={"multiImage"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={8}
+                                    items={[
+                                        {
+                                            href: '/',
+                                            src: faux_leather,
+                                            altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: leather_swivel,
+                                            altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                            caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: frosted_endtable,
+                                            altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                            caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: monterey_tv_stand,
+                                            altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                            caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: modern_cube,
+                                            altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                            caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: ameriwood_lumina,
+                                            altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: ameriwood_lumina,
+                                            altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        },
+                                        {
+                                            href: '/',
+                                            src: ameriwood_lumina,
+                                            altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                        }
+                                    ]}
+                                />
+                            }
+                        />
+                    </>
+                )}
+                {activeTab === "4" && (
+                    <>
+                    <hr className="card__break"/>
+                    <CarouselDetailed 
+                        squished={true}
+                        slider={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"amzn__carousel"}
+                                count={6}
+                                price={true}
+                                items={[
+                                    {
+                                        href: '/',
+                                        src: faux_leather,
+                                        altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: leather_swivel,
+                                        altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                        caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: frosted_endtable,
+                                        altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                        caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: monterey_tv_stand,
+                                        altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                        caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: modern_cube,
+                                        altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                        caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: ameriwood_lumina,
+                                        altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: ameriwood_lumina,
+                                        altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: ameriwood_lumina,
+                                        altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: modern_cube,
+                                        altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                        caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: modern_cube,
+                                        altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                        caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: modern_cube,
+                                        altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                        caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: modern_cube,
+                                        altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                        caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                    }
+                                ]}
+                            />
+                        }
+                        heading_two={"Your browsing history"}
+                        heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
+                        slider_two={
+                            <Slider 
+                                type={"multiImage"}
+                                carouselClass={"amzn__carousel"}
+                                count={8}
+                                items={[
+                                    {
+                                        href: '/',
+                                        src: faux_leather,
+                                        altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: leather_swivel,
+                                        altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                        caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: frosted_endtable,
+                                        altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                        caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: monterey_tv_stand,
+                                        altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                        caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: modern_cube,
+                                        altText: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2",
+                                        caption: "Baxton Studio Siskal Modern Cube Ottoman, White, Set of 2"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: ameriwood_lumina,
+                                        altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: ameriwood_lumina,
+                                        altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    },
+                                    {
+                                        href: '/',
+                                        src: ameriwood_lumina,
+                                        altText: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                        caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White"
+                                    }
+                                ]}
+                            />
+                        }
+                    />
+                </>
+                )}
             </section>
         </Layout>
     )

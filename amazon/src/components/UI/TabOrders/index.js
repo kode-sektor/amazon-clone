@@ -31,7 +31,12 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                 Total
                             </span>
                             <span className="a__size__base  a__color__secondary">
-                                CDN$ {tabHeading[0].orderTotal}
+                            { mode !== "cancelledOrders" && (
+                                `CDN$ ${tabHeading[0].orderTotal}`
+                            )}
+                            { mode === "cancelledOrders" && (
+                                `CDN$ 0.00`
+                            )}
                             </span>
                         </Col>
                         <Col xs="7" className="px-0">
@@ -68,21 +73,25 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                         </section>
                         <section className="a__size__base">
                             <ul className="d-flex justify-content-end">
-                                <li>
-                                    <a href="/order__details">View order details 
-                                        <i class="a__icon a__icon__text__separator" role="img"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">Invoice <i className="a__icon a__icon__popover"></i></a>
-                                </li>
+                                {mode !== "cancelledOrders" && (
+                                    <>
+                                        <li>
+                                            <a href="/order__details">View order details 
+                                                <i class="a__icon a__icon__text__separator" role="img"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Invoice <i className="a__icon a__icon__popover"></i></a>
+                                        </li>
+                                    </>
+                                )}
                             </ul>
                         </section>
                     </section>
                 </div>  
             </header>
             {
-                Array.from(tabBody).map( (index, value) => {
+                Array.from(tabBody).map((index, value) => {
                     return (
                         <section className="tab__body a__box">
                             {tabBody[0].giftOrder === true && (
@@ -142,6 +151,7 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                                         )}
                                                         <BuyAgainBtn
                                                             text={"Buy it again"}
+                                                            grey={mode === "cancelledOrders" ? "true" : false}
                                                         />
                                                     </section>
                                                 </div>
@@ -168,7 +178,7 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                                         width={"220px"}
                                                     />
                                                 )}
-                                                {(mode === "orders" || mode==="openOrders") && (
+                                                {(mode === "orders" || mode ==="openOrders") && (
                                                     <OrderButton
                                                         link="/"
                                                         text="Ask a Product-Related Question"
@@ -189,7 +199,7 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                                         width={"220px"}
                                                     />
                                                 )}
-                                                {(mode === "orders" || mode==="openOrders") && (
+                                                {(mode === "orders" || mode === "openOrders" || mode === "cancelledOrders") && (
                                                     <OrderButton
                                                         link="/"
                                                         text="Archive order"

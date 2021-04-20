@@ -64,9 +64,9 @@ const OrderButton = ({link, text, width}) => {
     )
 }
 
-const BuyAgainBtn = () => {
+const BuyAgainBtn = ({grey=false}) => {
     return (
-        <span className="a__button a__spacing__mini a__button__primary a__button__icon reorder__modal__trigger__button">
+        <span className={`a__button a__spacing__mini ${grey === false ? "a__button__primary" : "" } a__button__icon reorder__modal__trigger__button`}>
             <span className="a__button__inner">
                 <Link to="#" aria-label="Buy it again" className="a__button__text" role="button">
                     <i className="reorder__modal__trigger__icon"></i>Buy it again

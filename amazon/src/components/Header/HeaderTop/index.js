@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import {
@@ -15,6 +15,8 @@ import DropdownMenuLang from '../../UI/DropdownMenuLang'
 import "./index.css"
 
 const HeaderTop = (props) => {
+
+    const [queryID, setQueryID] = useState("")
     
     const [isOpen, setIsOpen] = useState(false)
     const [dropdownOpen, setDropdownOpen] = useState(false)    // search filter (not used yet)
@@ -36,6 +38,10 @@ const HeaderTop = (props) => {
     const acctdropdownEnter = () => setAcctdropdownOpen(true)
     const acctdropdownLeave = () => setAcctdropdownOpen(false)
 
+    useEffect(() => {
+        setQueryID(window.location.pathname)
+    })
+
 
     return (
         <section className="page__header">
@@ -50,21 +56,25 @@ const HeaderTop = (props) => {
                     </NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
-                        <Nav className="navigationbar__delivery" navbar>
-                            <NavItem>
-                                <Button className="navigationbar__delivery__link" onClick={()=> {
-                                    let modal = props.modal
-                                    modal = modal === "show" ? "hide" : "show stretched"
-                                    props.toggleModal(modal, "deliveryAddressModal")
-                                }}>
-                                    <span className="navigationbar__logo__glow__loc__icon"></span>
-                                    <span className="navigation__glow__ingress__block">
-                                        <span className="nav__line__1">Deliver to Ibiyemi</span>
-                                        <span className="nav__line__2">Toronto M6G 1E2</span>
-                                    </span>
-                                </Button>
-                            </NavItem>
-                        </Nav>
+                        {queryID === "/" && (
+                            <Nav className="navigationbar__delivery" navbar>
+                                <NavItem>
+                                    <Button className="navigationbar__delivery__link" onClick={()=> {
+                                        let modal = props.modal
+                                        modal = modal === "show" ? "hide" : "show stretched"
+                                        props.toggleModal(modal, "deliveryAddressModal")
+                                    }}>
+                                            <>
+                                                <span className="navigationbar__logo__glow__loc__icon"></span>
+                                                <span className="navigation__glow__ingress__block">
+                                                    <span className="nav__line__1">Deliver to Ibiyemi</span>
+                                                    <span className="nav__line__2">Toronto M6G 1E2</span>
+                                                </span>
+                                            </>
+                                    </Button>
+                                </NavItem>
+                            </Nav>
+                        )}
                         <Form className="navigationbar__category__filter">
                             <Label for="category__filter" className="sr-only">
                                 Email

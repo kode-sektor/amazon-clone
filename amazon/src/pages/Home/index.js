@@ -116,8 +116,8 @@ import faux_leather from '../../images/products/best-choice-products-faux-leathe
 
 const Home = (props) => {
 
-    const [dropdownOpen, setOpen] = useState(false);
-    const toggle = () => setOpen(!dropdownOpen);
+    const [dropdownOpen, setOpen] = useState(false)
+    const toggle = () => setOpen(!dropdownOpen)
     
     return (
         <Layout>
