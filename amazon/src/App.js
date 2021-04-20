@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import CustomerPreferences from "./pages/CustomerPreferences"
 import YourAccount from "./pages/YourAccount"
 import OrderHistory from "./pages/OrderHistory"
+import NavCart from "./pages/NavCart"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/customer_preferences/lang" component={CustomerPreferences}/>
                     <Route path="/your_account" component={YourAccount}/> 
                     <Route path="/order_history" component={OrderHistory}/> 
+                    <Route path="/nav_cart" component={NavCart}/> 
                 </Switch>
             </Router>
         </div>

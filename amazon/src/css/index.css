@@ -17,6 +17,13 @@ code {
     background-image: url('./images/amzn-sprite-2.png');
 }
 
+
+.navCart__wrap .a__section {
+    max-width: none;
+    margin-bottom: 22px;
+    margin: 0;
+}
+
 /*Popover panel*/
 .popover__panel {
     display: none;

@@ -14,6 +14,18 @@ const BtnPrimary = ({text="Add to Cart"}) => (
     </button>
 )
 
+// White Pill Button. 'Learn More' found in /nav_cart page
+const BtnPill = ({text="Learn more"}) => (
+    <Link className="a__button a__button__rounded" to="/">
+        <span className="a__button__inner">
+            <span className="a__button__input" type="submit"></span>
+            <span className="a__button__text text-center" aria-hidden="true">
+                {text}
+            </span>
+        </span>
+    </Link>
+)
+
 const CancelBtnLink = ({text="Cancel"}) => {
     return (
         <span className="a__button a__spacing__top__mini">
@@ -113,4 +125,4 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
     }
 }
 
-export { BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn}
+export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn}

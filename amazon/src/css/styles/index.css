@@ -135,6 +135,7 @@ file rather than small ones. Your choice
 	--light-slate-gray: #232f3e;
 
 	--green: #1a9901;
+    --green-2: #008000;
 
 	--blue: #004b91;
 	--blue-2: #37475a;
@@ -484,10 +485,10 @@ li a {
 	box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
 	/* height: 20px !important; */
 }
-.a__button:hover .a__button__inner {
+/* .a__button:hover .a__button__inner {
     background: var(--grey-tone-18);
     background: linear-gradient(to bottom,var(--grey-tone-18), var(--grey-tone-17));
-}
+} */
 .a__button__primary:hover .a__button__inner {
     background: var(--ochre-15);
     background: linear-gradient(to bottom, var(--ochre-13), var(--ochre-14));
@@ -582,6 +583,15 @@ li a {
 .a__button__dark .a__button__text, .a__button__search .a__button__text {
     font-weight: 700;
     color: var(--white);
+}
+.a__button__rounded {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+.a__button__rounded .a__button__inner {
+    border-radius: 7px;
+    background: 0 0;
+    box-shadow: none;
 }
 .see__more__link a {
 	font-size: 13px;

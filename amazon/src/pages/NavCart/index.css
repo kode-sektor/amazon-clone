@@ -1,0 +1,39 @@
+.navCart__wrap {
+    min-width: 998px;
+    padding: 14px 18px 18px;
+    margin: 0 auto;
+    background-color: var(--grey-tone-22) !important;
+}
+.navCart__banner__link {
+    width: fit-content;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: var(--white);
+    border: thin solid gold;
+}
+.navCart__banner__link:hover, .navCart__banner__link:focus {
+    text-decoration: none;
+}
+.navCart__banner .navCart__banner__link {
+    color: var(--color);
+}
+.navCart__banner__img {
+    min-width: 100px;
+}
+.navCart__promo__amount {
+    font-size: 10px;
+}
+.navCart__mathbox {
+    min-width: 205px;
+    width: auto;
+    margin-bottom: 0 !important;
+}
+.navCart__mathbox__label {
+    padding: 0 0 1px;
+}
+.navCart__mathbox__value {
+    padding: 0 0 1px 10px;
+}
+.navCart__learnMore {
+    width: 180px;
+}

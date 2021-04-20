@@ -768,22 +768,31 @@ const OrderHistory = () => {
                         </TabPane>
                     </TabContent>
                 </div>
-                <section className="cart">
-                    <div className="a__box">
-                        <div className="cart__wrap a__box__inner a__padding__base">
-                            <h3 className="a__spacing__base">Buy it again</h3>
-                            <ul>
-                                <Cart
-                                    img={hilroy_coil}
-                                    title={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7…"}
-                                    altTitle={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7/8 X 8-3/8 Inches, 150 Sheets, White (77193)"}
-                                    price={"2.26"}
-                                    date={"Sep 2020"}
-                                />
-                            </ul>
+                {activeTab === "1" && (
+                    <section className="cart">
+                        <div className="a__box">
+                            <div className="cart__wrap a__box__inner a__padding__base">
+                                <h3 className="a__spacing__base">Buy it again</h3>
+                                <ul>
+                                    <Cart
+                                        img={hilroy_coil}
+                                        title={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7…"}
+                                        altTitle={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7/8 X 8-3/8 Inches, 150 Sheets, White (77193)"}
+                                        price={"2.26"}
+                                        date={"Sep 2020"}
+                                    />
+                                    <Cart
+                                        img={hilroy_coil}
+                                        title={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7…"}
+                                        altTitle={"Hilroy Ruled Refill Paper, 3 Hole Punched, 10-7/8 X 8-3/8 Inches, 150 Sheets, White (77193)"}
+                                        price={"2.26"}
+                                        date={"Sep 2020"}
+                                    />
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                )}
             </section>
             <section>
                 {activeTab === "3" && (

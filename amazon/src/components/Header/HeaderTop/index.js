@@ -145,7 +145,7 @@ const HeaderTop = (props) => {
                                 </NavItem>
                             </NavItem>
                             <NavItem className="col-xs-4">
-                                <NavLink href="#" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
+                                <NavLink href="/nav_cart" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
                                     <span className="nav__cart__count__container">
                                         <span id="nav-cart-count" aria-hidden="true" className="nav__cart__count">
                                             0
