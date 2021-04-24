@@ -23,16 +23,9 @@
 .popover__panel__notes .popover__panel__country__title {
     margin-bottom: 4px;
 }
-.popover__panel__panel {
-    margin-bottom: 22px;
-}
 .popover__panel__list option {
     position: relative;
     background-color: var(--white);
-}
-.popover__panel__country .a__button__text {
-    min-width: 150px;
-    width: 180px;
 }
 .popover__panel__footer {
     padding: 8px 24px 24px;

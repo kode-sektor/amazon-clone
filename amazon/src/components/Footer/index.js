@@ -7,6 +7,7 @@ import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
 
 import DropdownMenuLang from '../UI/DropdownMenuLang'
 import ModalLang from '../Footer/ModalLang'
+import DropdownMenuPrimary from '../UI/DropdownMenu'
 
 import { countries } from '../../utilities/data'
 
@@ -29,7 +30,7 @@ const Footer = (props) => {
     const toggleModalLang = (modalState, modalLangProp, langModal) => {
         console.log(modalState)     // show stretched
         console.log(modalLangProp)  // langModal
-        console.log(langModal)  // {modalLangPanel: "show stretched", title: "Website (Country / Region)"}
+        console.log(langModal)  // {modalLangPanel: "show stretched", title: "`Website` (Country / Region)"}
 
         toggleModal(modalState, modalLangProp, langModal)
     } 
@@ -148,24 +149,15 @@ const Footer = (props) => {
                             modalLangPanel : modalPanel,
                             title : "Website (Country/Region)",
                             legend : "Select your preferred country/region website",
-                            body : <>
-                                    <div className="popover__panel__panel">
-                                        <div className="a__button a__button__dropdown">
-                                            <div className="a__button__inner a__shadow">
-                                                <select className="popover__panel__list a__button__text">
-                                                { 
-                                                    countries.map(item => (
-                                                        <option value={item.value}>
-                                                            {item.country}
-                                                        </option>
-                                                    ))
-                                                }
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p><b>NOTE:</b> A new country/region website selection will open in a new tab.</p>
-                                </>,
+                            body :  <DropdownMenuPrimary
+                                        optionList={ 
+                                            countries.map(item => (
+                                                <option value={item.value}>
+                                                    {item.country}
+                                                </option>
+                                            ))
+                                        }
+                                    />,
                             legendAux : "Changing country/region website",
                             bodyAux : <>
                                         <legend className="popover__panel__country__title">Changing country/region website</legend>

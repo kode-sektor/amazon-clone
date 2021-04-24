@@ -124,6 +124,10 @@ code {
     color: inherit;
     border: 1px solid transparent
 }
+.popover__panel__country .a__button__text {
+    min-width: 150px;
+    width: 180px;
+}
 
 /*Card*/
 .card {
