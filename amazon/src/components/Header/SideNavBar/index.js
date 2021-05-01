@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 import SideNav from 'react-simple-sidenav'
 
-import Menu from './Menu'
+// import Menu from './Menu'
 
 import './index.css'
 
@@ -17,10 +17,10 @@ const SideNavBar = ({ showNav, onHideNav }) => {
             <div className="side__nav">
                 <span className={`side__nav__close__icon ${showNav ? 'show' : 'hide'}`} onClick={onHideNav}></span>
                 <section>
-                    <a className="side__nav__customer__profile">
+                    <Link  to="/" className="side__nav__customer__profile">
                         <span className="side__nav__avatar"></span>
                         <b className="side__nav__customer__name">Hello, Kay</b>
-                    </a>
+                    </Link>
                 </section>
                 <section className="side__nav__menu">
                     <ul className="side__nav__menu__trending">

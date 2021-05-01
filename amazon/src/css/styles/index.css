@@ -665,7 +665,7 @@ a[href='mailto:'] {
 /*Indicate external links but override if your site*/
 
 a[href^='http:'] {
-	background: url() no-repeat right top;
+	/* background: url() no-repeat right top; */
 	padding-right: 10px;
 }
 a[href^='http://www.yoursite.com'], a[href^='http:yoursite.com'] {
@@ -688,19 +688,19 @@ textarea {
     font-family: inherit
 }
 input:required, input[required] {
-	background-image: url();
+	/* background-image: url(); */
 }
 input:focus:invalid {
-	background-image: url();
+	/* background-image: url(); */
 }
 input:focus:valid{
-	background-image: url();
+	/* background-image: url(); */
 }
 input[required]:invalid, input[pattern]:invalid {
-	/border-color: #A53403;
+	/* border-color: #A53403; */
 }
 input[required]:valid, input[pattern]:valid {
-	/border-color: #0B9900;
+	/* border-color: #0B9900; */
 }
 input[type=checkbox] {
     position: relative;

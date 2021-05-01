@@ -11,7 +11,7 @@ import './index.css'
 const Layout = (props) => {
 
     const [modal, setModal] = useState("hide")  // Main modal
-    const [modalLangPanel, setModalLangPanel] = useState("hide")    // Language panel
+    // const [modalLangPanel] = useState("hide")    // Language panel
     const [modalLangProps, setModalLangProps] = useState({
                                                     modalLangPanel : "",
                                                     title : "",
@@ -24,7 +24,7 @@ const Layout = (props) => {
                                                 })
     const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
 
-    const [showDeliverToMenu, setShowDeliverToMenu] = useState(true)
+    const [showDeliverToMenu] = useState(true)
 
     const toggleModal = (status, mode, modalLangProp=modalLangProps) => { 
         setModal(status)  // Hide Modal on hover on Modal itself 
@@ -37,7 +37,6 @@ const Layout = (props) => {
         if (mode === "all") {
             modalLangProps.modalLangPanel = "hide"
             setModalLangProps(modalLangProp)    // Language panel
-
             setDeliveryAddressPanel(false)  // Delivery address panel
         }
         if (mode === "langModal") {
@@ -72,7 +71,7 @@ const Layout = (props) => {
             />
             <Footer 
                 modal={modal}
-                modalLangPanel={modalLangPanel}
+                // modalLangPanel={modalLangPanel}
                 modalLangProps={modalLangProps}
                 toggleModal={toggleModal}
             />

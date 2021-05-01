@@ -19,7 +19,7 @@ const Footer = (props) => {
     const { modal, toggleModal, modalLangProps} = props
 
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
-    const [countryDropDown, setCountryDropDown] = useState(false)
+    // const [countryDropDown, setCountryDropDown] = useState(false)
 
 
     // Show or Hide Language Modal

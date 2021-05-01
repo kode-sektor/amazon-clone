@@ -1,14 +1,16 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
 
-const Card_One = ({name, date, img, cardClass=""}) => {
+
+const CardOne = ({name, date, img, cardClass=""}) => {
     return (
         <section className={`sub__layout__card__grid ${cardClass}`}>
             <div className="sub__layout__inner">
                 <h2 className="sub__layout__inner__header">
-                    <a href="/user-profile" className="sub__layout__inner__header__avatar">
-                        <img className="user__avatar" src={img[0].avatar} alt="profile image" />
-                    </a>
+                    <Link href="/user-profile" className="sub__layout__inner__header__avatar">
+                        <img className="user__avatar" src={img[0].avatar} alt={img[0].avatar} />
+                    </Link>
                     <div className="sub__layout__inner__header__greeting">
                         <span className="sub__layout__inner__header__title">Hi, {name}</span>
                         <span className="sub__layout__inner__header__reg">Customer since {date}</span>
@@ -21,7 +23,7 @@ const Card_One = ({name, date, img, cardClass=""}) => {
                             <div className="sub__layout__inner__categories__wrap">
                                 <div className="sub__layout__inner__innerwrap">
                                     <img src={img[0].img_one.img} alt={img[0].img_one.alt}/>
-                                    <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_one.href}></a>
+                                    <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_one.href}></Link>
                                 </div>
                                 <figcaption>Your Orders</figcaption>
                             </div>
@@ -30,7 +32,7 @@ const Card_One = ({name, date, img, cardClass=""}) => {
                             <div className="sub__layout__inner__categories__wrap">
                                 <div className="sub__layout__inner__innerwrap">
                                     <img src={img[0].img_two.img} alt={img[0].img_two.alt}/>
-                                    <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_two.href}></a>
+                                    <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_two.href}></Link>
                                 </div>
                                 <figcaption>Gift Finder</figcaption>
                             </div>
@@ -39,7 +41,7 @@ const Card_One = ({name, date, img, cardClass=""}) => {
                             <div className="sub__layout__inner__categories__wrap">
                                 <div className="sub__layout__inner__innerwrap">
                                     <img src={img[0].img_three.img} alt={img[0].img_three.alt}/>
-                                    <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_three.href}></a>
+                                    <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_three.href}></Link>
                                 </div>
                                 <figcaption>Electronics</figcaption>
                             </div>
@@ -48,7 +50,7 @@ const Card_One = ({name, date, img, cardClass=""}) => {
                             <div className="sub__layout__inner__categories__wrap">
                                 <div className="sub__layout__inner__innerwrap">
                                     <img src={img[0].img_four.img} alt={img[0].img_four.alt}/>
-                                    <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_four.href}></a>
+                                    <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_four.href}></Link>
                                 </div>
                                 <figcaption>Home &amp; Kitchen</figcaption>
                             </div>
@@ -60,7 +62,7 @@ const Card_One = ({name, date, img, cardClass=""}) => {
     )
 }
 
-const Card_Two = ({title, img, date, cardClass=""}) => {
+const CardTwo = ({title, img, date, cardClass=""}) => {
     return (
         <section className={`sub__layout__card__grid ${cardClass}`}>
             <div className="sub__layout__inner">
@@ -68,11 +70,11 @@ const Card_Two = ({title, img, date, cardClass=""}) => {
                     <span className="sub__layout__inner__header__title">{title}</span>
                 </h2>
                 <section className="sub__layout__inner__body">
-                    <a href={img[0].link}>
+                    <Link href={img[0].link}>
                         <div className="sub__layout__inner__body__fluid__img">
                             <img src={img[0].href} alt={img[0].alt} />
                         </div>
-                    </a>
+                    </Link>
                     <div className="sub__layout__inner__timeline">
                         <div class="sub__layout__inner__timelinedot"></div>
                         <div class="sub__layout__inner__timelineline"></div>
@@ -82,7 +84,7 @@ const Card_Two = ({title, img, date, cardClass=""}) => {
                 </section>
                 <footer className="sub__layout__inner__footer">
                     <p className="sub__layout__card__grid__footer">
-                        <a href="/history">See your browsing history</a>
+                        <Link href="/history">See your browsing history</Link>
                     </p>
                 </footer>
             </div>
@@ -90,7 +92,7 @@ const Card_Two = ({title, img, date, cardClass=""}) => {
     )
 }
 
-const Card_Three = ({title, img, alt, link, linktxt, rating, cardClass="", supportingTxt}) => {
+const CardThree = ({title, img, alt, link, linktxt, rating, cardClass="", supportingTxt}) => {
     return (
         <section className={`sub__layout__card__grid ${cardClass}`}>
             <div className="sub__layout__inner">
@@ -98,11 +100,11 @@ const Card_Three = ({title, img, alt, link, linktxt, rating, cardClass="", suppo
                     <span className="sub__layout__inner__header__title">{title}</span>
                 </h2>
                 <section className="sub__layout__inner__body">
-                    <a className={supportingTxt ? "sub__layout__inner__link supportingTxt" : "sub__layout__inner__link"} href="/gp/product/B07MM2RVM5">
+                    <Link className={supportingTxt ? "sub__layout__inner__link supportingTxt" : "sub__layout__inner__link"} href="/gp/product/B07MM2RVM5">
                         <div className="sub__layout__inner__body__ui__card">
                             <img src={img} className="landscape-image" alt={alt} />
                         </div>
-                    </a>
+                    </Link>
                     {supportingTxt ? <p>{supportingTxt}</p> : ""}
                     { (rating) ? 
                         <section className="sub__layout__inner__rating">
@@ -116,7 +118,7 @@ const Card_Three = ({title, img, alt, link, linktxt, rating, cardClass="", suppo
                 </section>
                 <footer className="sub__layout__inner__footer">
                     <p className="sub__layout__card__grid__footer">
-                        <a href={link}>{linktxt}</a>
+                        <Link href={link}>{linktxt}</Link>
                     </p>
                 </footer>
             </div>
@@ -124,7 +126,7 @@ const Card_Three = ({title, img, alt, link, linktxt, rating, cardClass="", suppo
     )
 }
 
-const Card_Four = ({title, text, catLink}) => {
+const CardFour = ({title, text, catLink}) => {
     return (
         <section className="sub__layout__card__grid gift block__card">
             <div className="sub__layout__inner">
@@ -136,7 +138,7 @@ const Card_Four = ({title, text, catLink}) => {
                 </section>
                 <footer className="sub__layout__inner__footer">
                     <p className="sub__layout__card__grid__footer">
-                        <a href={catLink}>Explore Now</a>
+                        <Link href={catLink}>Explore Now</Link>
                     </p>
                 </footer>
             </div>
@@ -144,7 +146,7 @@ const Card_Four = ({title, text, catLink}) => {
     )
 }
 
-const Card_Five = ({img}) => {
+const CardFive = ({img}) => {
     return (
         <section className="sub__layout__card__grid grid__card__ii">
             <div className="sub__layout__inner">
@@ -154,48 +156,48 @@ const Card_Five = ({img}) => {
                 <section className="sub__layout__inner__body sub__layout__inner__frame">
                     <figure className="sub__layout__inner__categories">
                         <div className="sub__layout__inner__categories__wrap">
-                            <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_one.href}>
+                            <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_one.href}>
                                 <div className="sub__layout__inner__body__ui__card">
                                     <img className="sub__layout__inner__img" src={img[0].img_one.img} alt={img[0].img_one.alt}/>
                                 </div>
                                 <figcaption>{img[0].img_one.alt}</figcaption>
-                            </a>
+                            </Link>
                         </div>
                     </figure>
                     <figure className="sub__layout__inner__categories">
                         <div className="sub__layout__inner__categories__wrap">
-                            <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_two.href}>
+                            <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" to={img[0].img_two.href}>
                                 <div className="sub__layout__inner__body__ui__card">
                                     <img className="sub__layout__inner__img" src={img[0].img_two.img} alt={img[0].img_two.alt}/>
                                 </div>
                                 <figcaption>{img[0].img_two.alt}</figcaption>
-                            </a>
+                            </Link>
                         </div>
                     </figure>
                     <figure className="sub__layout__inner__categories">
                         <div className="sub__layout__inner__categories__wrap">
-                            <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_three.href}>
+                            <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" to={img[0].img_three.href}>
                                 <div className="sub__layout__inner__body__ui__card">
                                     <img className="sub__layout__inner__img" src={img[0].img_three.img} alt={img[0].img_three.alt}/>
                                 </div>
                                 <figcaption>{img[0].img_three.alt}</figcaption>
-                            </a>
+                            </Link>
                         </div>
                     </figure>
                     <figure className="sub__layout__inner__categories">
                         <div className="sub__layout__inner__categories__wrap">
-                            <a className="sub__layout__inner__imglink" aria-label="top categories recomendations" href={img[0].img_four.href}>
+                            <Link className="sub__layout__inner__imglink" aria-label="top categories recomendations" to={img[0].img_four.href}>
                                 <div className="sub__layout__inner__body__ui__card">
                                     <img className="sub__layout__inner__img" src={img[0].img_four.img} alt={img[0].img_four.alt}/>
                                 </div>
                                 <figcaption>{img[0].img_four.alt}</figcaption>
-                            </a>
+                            </Link>
                         </div>
                     </figure>
                 </section>
                 <footer className="sub__layout__inner__footer">
                     <p className="sub__layout__card__grid__footer">
-                        <a href="/history">See more</a>
+                        <Link to="/history">See more</Link>
                     </p>
                 </footer>
             </div>
@@ -203,7 +205,7 @@ const Card_Five = ({img}) => {
     )
 }
 
-const Card_Video = ({title, img, slug }) => {
+const CardVideo = ({title, img, slug }) => {
     return (
         <section className="sub__layout__card__grid grid__half">
             <div className="prime__video">
@@ -213,16 +215,16 @@ const Card_Video = ({title, img, slug }) => {
                 </h2>
                 <section className="prime__video__ui__card">
                     <div className="prime__video__img"></div>
-                    <a href="/">
+                    <Link to="/">
                         <div className="prime__video__imgLink">
                             <img className="prime__video__image" src={img} alt={title}/>
                         </div>
                         <div className="prime__gradient"></div>
-                    </a>
+                    </Link>
                 </section>
                 <div className="sub__layout__inner__timeline">
                     <p className="sub__layout__card__grid__footer">
-                        <a href={`/prime-video/${slug}`}>Start watching on Prime Video</a>
+                        <Link to={`/prime-video/${slug}`}>Start watching on Prime Video</Link>
                     </p>
                 </div>
             </div>
@@ -230,4 +232,4 @@ const Card_Video = ({title, img, slug }) => {
     )
 }
 
-export { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Video }
+export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardVideo }

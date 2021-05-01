@@ -19,14 +19,14 @@ const HeaderTop = (props) => {
     const [queryID, setQueryID] = useState("")
     
     const [isOpen, setIsOpen] = useState(false)
-    const [dropdownOpen, setDropdownOpen] = useState(false)    // search filter (not used yet)
+    // const [dropdownOpen, setDropdownOpen] = useState(false)    // search filter (not used yet)
 
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
     const [acctdropdownOpen, setAcctdropdownOpen] = useState(false)    // account dropdown
 
 	// Toggle dropdowns
-    const toggle = () => setIsOpen(!isOpen);    // For main navigation expand / collapse
-    const filterToggle = () => setDropdownOpen(prevState => !prevState)
+    const toggle = () => setIsOpen(!isOpen)    // For main navigation expand / collapse
+    // const filterToggle = () => setDropdownOpen(prevState => !prevState)
 
     // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
@@ -40,7 +40,7 @@ const HeaderTop = (props) => {
 
     useEffect(() => {
         setQueryID(window.location.pathname)
-    })
+    }, [])
 
 
     return (

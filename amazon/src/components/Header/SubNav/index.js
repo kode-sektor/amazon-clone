@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { subMenu } from '../../../utilities/data'
-import { Row, Col } from 'reactstrap'
 
 import './index.css'
 
@@ -13,7 +12,7 @@ const SubNav = () => {
 
     useEffect(() => {
         setQueryID(window.location.pathname)
-    })
+    }, [])
 
     return (
         <section>

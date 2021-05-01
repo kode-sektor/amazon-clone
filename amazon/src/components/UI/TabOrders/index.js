@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 import { Row, Col } from 'reactstrap'
 
 import { OrderButton, BuyAgainBtn, PrimaryBtn } from '../../UI/Button'
@@ -45,10 +47,10 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                             </span>
                             <Popover
                                 trigger={
-                                    <a href="javascript:void(0)" className="a__size__base">
+                                    <Link to="/" className="a__size__base">
                                         {tabHeading[0].user.name}
                                         <i class="a__icon a__icon__popover"></i>
-                                    </a>
+                                    </Link>
                                 }
                                 dropdown={
                                     <ul className="order__address">
@@ -76,12 +78,12 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                 {mode !== "cancelledOrders" && (
                                     <>
                                         <li>
-                                            <a href="/order__details">View order details 
+                                            <Link to="/order__details">View order details 
                                                 <i class="a__icon a__icon__text__separator" role="img"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">Invoice <i className="a__icon a__icon__popover"></i></a>
+                                            <Link to="#">Invoice <i className="a__icon a__icon__popover"></i></Link>
                                         </li>
                                     </>
                                 )}
@@ -133,14 +135,14 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                             <section className="tab__order__productDetails flex-grow-1">
                                                 <div className="tab__order__productDetail d-flex">
                                                     <section className="tab__order__thumbnail">
-                                                        <a href="/">
+                                                        <Link href="/">
                                                             <img src={kichly_cheese_greater} alt={kichly_cheese_greater} />
-                                                        </a>
+                                                        </Link>
                                                     </section>
                                                     <section className="tab__order__details">
-                                                        <a className="" href="#">
+                                                        <Link className="" href="#">
                                                             {tabBody[0].product}
-                                                        </a>
+                                                        </Link>
                                                         <p className="a__size__small mb-0">
                                                         {tabBody[0].returnDate && (`Return eligible through ${tabBody[0].returnDate}`)} 
                                                         </p>

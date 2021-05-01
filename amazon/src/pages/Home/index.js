@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Layout from '../../components/Layout/index'
 
-import { Card_One, Card_Two, Card_Three, Card_Four, Card_Five, Card_Video } from '../../components/UI/Card'
+import { CardOne, CardTwo, CardThree, CardFour, CardFive, CardVideo } from '../../components/UI/Card'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
@@ -116,8 +116,8 @@ import faux_leather from '../../images/products/best-choice-products-faux-leathe
 
 const Home = (props) => {
 
-    const [dropdownOpen, setOpen] = useState(false)
-    const toggle = () => setOpen(!dropdownOpen)
+    // const [dropdownOpen, setOpen] = useState(false)
+    // const toggle = () => setOpen(!dropdownOpen)
     
     return (
         <Layout>
@@ -157,7 +157,7 @@ const Home = (props) => {
             />
             <section className="sub__layout">
                 <section className="sub__layout__card">
-                    <Card_One
+                    <CardOne
                         name="Kay"
                         date={"2020"}
                         img={[ 
@@ -187,7 +187,7 @@ const Home = (props) => {
                         ]}
                         cardClass={"grid__card"}
                     />
-                    <Card_Two 
+                    <CardTwo 
                         title={"Recently Viewed"}
                         img={[
                             {
@@ -199,32 +199,32 @@ const Home = (props) => {
                         date={"Sun, Feb 14"}
                         cardClass={"block__card"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Shop top-rated fashion"}
                         img={desktop_small_big_card}
                         alt={"Gotham Steel Sandwich Maker, Toaster and Electric Panini Grill with Ultra Nonstick Copper Surface - Makes 2 Sandwiches in Minutes with Virtually No Clean Up, with Easy Cut Edges and Indicator Lights"}
                         link={"/history"}
                         linktxt={"Shop Now"}
                     />
-                    <Card_Four
+                    <CardFour
                         title={"Looking for a gift?"}
                         text={"Find personalized gift ideas for everyone on your list."}
                         catLink={"/gifts"}
                     />
                     <hr className="card__break"/>
-                    <Card_Video
+                    <CardVideo
                         title={"John Wick 3: Parabellum"}
                         slug={"John-Wick-3-Parabellum"}
                         img={john_wick_3}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Shop our Pets store"}
                         img={desktop_deals_pets}
                         alt={"Shop our Pets store"}
                         link={"/pet-deals"}
                         linktxt={"See More"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Shop deals in Home & Kitchen"}
                         img={home_and_kitchen}
                         alt={"Shop deals in Home & Kitchen"}
@@ -441,7 +441,7 @@ const Home = (props) => {
                         }
                     />
                     <hr className="card__break"/>
-                    <Card_Five
+                    <CardFive
                         name="Kay"
                         img={[ 
                             {
@@ -468,7 +468,7 @@ const Home = (props) => {
                             }
                         ]}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Shop top-rated fashion"}
                         img={listerine_cool_mint_antiseptic_mouthwash}
                         alt={"Listerine Cool Mint Antisteptic MouthWash - 1.5L"}
@@ -477,7 +477,7 @@ const Home = (props) => {
                         linktxt={"See more products to review"}
                         cardClass={"block__card"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Amazon Basics"}
                         img={amazon_basics}
                         alt={"Amazon Basics"}
@@ -485,7 +485,7 @@ const Home = (props) => {
                         linktxt={"Shop the AmazonBasics store"}
                         cardClass={"fluid__card"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Explore our Coffee Shop"}
                         img={coffee_cup}
                         alt={"Explore our Coffee Shop"}
@@ -672,7 +672,7 @@ const Home = (props) => {
                         }
                     />
                     <hr className="card__break"/>
-                    <Card_Three
+                    <CardThree
                         title={"Electronics & Accessories"}
                         img={wall_tv}
                         alt={"Wall TV"}
@@ -680,7 +680,7 @@ const Home = (props) => {
                         linktxt={"Shop now"}
                         cardClass={"fluid__card"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Upgrade your home office"}
                         img={woman_works_with_laptop}
                         alt={"woman works with laptop"}
@@ -688,7 +688,7 @@ const Home = (props) => {
                         linktxt={"Shop now"}
                         cardClass={"fluid__card"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Discover like-new computers"}
                         img={typing_on_mac}
                         alt={"typing on mac"}
@@ -696,7 +696,7 @@ const Home = (props) => {
                         linktxt={"Shop Amazon Renewed"}
                         cardClass={"fluid__card"}
                     />
-                    <Card_Three
+                    <CardThree
                         title={"Family game night"}
                         img={family_game_night}
                         alt={"family game night"}

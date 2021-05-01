@@ -37,10 +37,10 @@ const Slider = ({type, count, items, carouselClass, price, category, addToCart=f
 		setActiveIndex(nextIndex);
 	};
 
-	const goToIndex = (newIndex) => {
-		if (animating) return;
-		setActiveIndex(newIndex);
-	};
+	// const goToIndex = (newIndex) => {
+	// 	if (animating) return;
+	// 	setActiveIndex(newIndex);
+	// };
 	
 	const slide = () => {
 

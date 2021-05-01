@@ -6,7 +6,7 @@ import { CardCell, CardCellLinks } from '../../components/UI/CardCell'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 
-import { Row, Col } from 'reactstrap'
+import { Row } from 'reactstrap'
 
 import order from '../../images/order.png'
 import security from '../../images/security.png'

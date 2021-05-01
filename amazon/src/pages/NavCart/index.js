@@ -21,9 +21,9 @@ const NavCart = () => {
                     <Link to="/" className="mx-auto navCart__banner__link d-block">
                         <div className="d-flex align-items-center">
                             <section className="navCart__banner__img a__section a__padding__base">
-                                <img src={binoculars_tb} className="d-block"/>
+                                <img src={binoculars_tb} alt={binoculars_tb} className="d-block"/>
                                 <div className="text-center">
-                                <strong className="navCart__promo__amount"><span>$20</span> instant gift card</strong>
+                                    <strong className="navCart__promo__amount"><span>$20</span> instant gift card</strong>
                                 </div>
                             </section>
                             <section className="a__section a__padding__base">
@@ -103,9 +103,9 @@ const NavCart = () => {
                                                                 </label>
                                                             </span>
                                                         </span>
-                                                        <a href="/" className="d-block">
+                                                        <Link to="/" className="d-block">
                                                             <img src={binoculars} alt={binoculars}/>
-                                                        </a>
+                                                        </Link>
                                                     </section>
                                                     <section className="navCart__checkout__info flex-grow-1">
                                                         <h3 className="navCart__title a__size__medium font-weight-normal pb-0">Gosky 10x42 Roof Prism Binoculars for Adults, HD Professional Binoculars for Bird Watching Travel Stargazing Hunting Concerts Sports-BAK4 Prism FMC Lens-with Phone Mount Strap Carrying Bag</h3>
@@ -165,15 +165,15 @@ const NavCart = () => {
                                                     </p>    
                                                     <div className="a__box text-center d-inline-block h-auto">
                                                         <div className="a__box__inner a__padding__mini">
-                                                            <a href="/" className="d-block">
+                                                            <Link to="/" className="d-block">
                                                                 <span className="a__size__small a__color__base">
                                                                     Save $20.00
                                                                 </span>
                                                                 <i className="a__icon a__icon__popover"></i>
-                                                            </a>   
-                                                            <a className="a__size__small">
+                                                            </Link>   
+                                                            <Link to="/" className="a__size__small">
                                                                 Clip Coupon
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>              
                                                 </Col>
