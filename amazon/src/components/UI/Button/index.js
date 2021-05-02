@@ -17,7 +17,7 @@ const BtnPrimary = ({text="Add to Cart"}) => (
 // White Pill Button. 'Learn More' found in /nav_cart page
 const BtnPill = ({text="Learn more"}) => (
     <Link className="a__button a__button__rounded" to="/">
-        <span className="a__button__inner">
+        <span className="a__button__inner a__button__pillWhite">
             <span className="a__button__input" type="submit"></span>
             <span className="a__button__text text-center" aria-hidden="true">
                 {text}
@@ -25,6 +25,33 @@ const BtnPill = ({text="Learn more"}) => (
         </span>
     </Link>
 )
+
+// Yellow Cart Button
+const CartBtn = ({stretch='w-100'}) => {
+    return (
+        <button className={`a__button a__button__normal d-block ${stretch} a__button__primary a__button__cart`}>
+            <span className="a__button__inner d-block">
+                <input name="proceedToRetailCheckout" data-feature-id="proceed-to-checkout-action" className="a__button__input" type="submit" value="Proceed to checkout"/>
+                <span className="a__button__text" aria-hidden="true">
+                    <div className="d-block">
+                        Proceed to Checkout
+                    </div>
+                </span>
+            </span>
+        </button>
+    )
+}
+
+const CartBtnSmall = () => {
+    return (
+        <span class="a__button a__button__normal a__button__primary a__button__small a__button__cart">
+            <span class="a__button__inner">
+                <input name="submit.addToCart" class="a__button__input" type="submit" value="Buy it again (2)"/>
+                <span class="a__button__text" aria-hidden="true">Buy it again (2)</span>
+            </span>
+        </span>
+    )
+}
 
 const CancelBtnLink = ({text="Cancel"}) => {
     return (
@@ -125,4 +152,5 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
     }
 }
 
-export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn}
+export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, 
+    SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall}

@@ -137,6 +137,8 @@ file rather than small ones. Your choice
 	--green: #1a9901;
     --green-2: #008000;
     --green-3: #007600;
+    --green-4: #067D62;
+
 
 	--blue: #004b91;
 	--blue-2: #37475a;
@@ -170,6 +172,10 @@ file rather than small ones. Your choice
 	--ochre-24: #e3931e;
 	--ochre-25: #fa8900;
 	--ochre-26: #f90;
+	--ochre-27: #ffd814;
+	--ochre-28: #fcd200;
+	--ochre-29: #f7ca00;
+	--ochre-30: #f2c200;
 
 
     --link: #007BFF;
@@ -312,6 +318,11 @@ h3 {
     font-size: 18px;
     line-height: 24px;
 }
+h5 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
 header {
 }
 /* hr {
@@ -362,7 +373,6 @@ a:focus {
 a:active, .a__color__button__link:active {
     text-decoration: underline;
     color: var(--a);
-    pointer-events: none;
 }
 a:hover, .a__color__button__link:hover {
     text-decoration: underline;
@@ -379,10 +389,10 @@ li a {
     text-decoration: none !important;
     vertical-align: middle;
 	border-color: var(--grey-tone-25);
+    /* border-radius: 3px; */
+    border-radius: 8px !important;
     color: var(--color);
 	background: var(--grey-tone-10);
-    border-radius: 3px;
-    border-radius: 8px !important;
     border-style: solid;
     border-width: 1px;
     cursor: pointer;
@@ -398,6 +408,9 @@ li a {
 .a__button .a__button__inner {
     background: var(--grey-tone-15);
     background: linear-gradient(to bottom, var(--grey-tone-16), var(--grey-tone-10));
+}
+.a__button .a__button__pillWhite {
+    background: none;
 }
 .a__button__dark .a__button__inner, .a__button__search .a__button__inner {
     background: var(--grey-tone-43);
@@ -478,18 +491,18 @@ li a {
 	background-size: 25px;
 }
 .a__button__primary .a__button__inner {
-    background: var(--ochre-11);
-	background: linear-gradient(to bottom, var(--ochre-12), var(--ochre-6));
+    background-color: var(--ochre-11);
+	background-color: linear-gradient(to bottom, var(--ochre-12), var(--ochre-6));
 	box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
 	/* height: 20px !important; */
 }
-/* .a__button:hover .a__button__inner {
-    background: var(--grey-tone-18);
-    background: linear-gradient(to bottom,var(--grey-tone-18), var(--grey-tone-17));
-} */
+.a__button:hover .a__button__inner {
+    background-color: var(--grey-tone-18);
+    background-color: linear-gradient(to bottom,var(--grey-tone-18), var(--grey-tone-17));
+}
 .a__button__primary:hover .a__button__inner {
-    background: var(--ochre-15);
-    background: linear-gradient(to bottom, var(--ochre-13), var(--ochre-14));
+    background-color: var(--ochre-15);
+    background-color: linear-gradient(to bottom, var(--ochre-13), var(--ochre-14));
 }
 .a-button:active .a-button-inner {
     background-color: var(--grey-tone-38);
@@ -582,14 +595,30 @@ li a {
     font-weight: 700;
     color: var(--white);
 }
-.a__button__rounded {
-    border-radius: 8px;
+.a__button__cart {
+    background: var(--ochre-27);
+    border-color: var(--ochre-28);
+}
+.a__button__cart:hover, .a__button__cart:focus, .a__button__cart:hover:active {
+    background: var(--ochre-29);
+    border-color: var(--ochre-30);
     box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
-.a__button__rounded .a__button__inner {
+.a__button__cart .a__button__inner {
     border-radius: 7px;
     background: 0 0;
     box-shadow: none;
+}
+.a__button__primary.a__button__focus .a__button__inner, 
+.a__button__primary:focus .a__button__inner, .a__button__primary:hover .a__button__inner {
+    background-color: var(--ochre-29);
+}
+.a__icon__row {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.a__icon__row.a__spacing__none {
+    padding-bottom: 0;
 }
 .see__more__link a {
 	font-size: 13px;
@@ -665,7 +694,7 @@ a[href='mailto:'] {
 /*Indicate external links but override if your site*/
 
 a[href^='http:'] {
-	/* background: url() no-repeat right top; */
+	background: url() no-repeat right top;
 	padding-right: 10px;
 }
 a[href^='http://www.yoursite.com'], a[href^='http:yoursite.com'] {
@@ -688,26 +717,19 @@ textarea {
     font-family: inherit
 }
 input:required, input[required] {
-	/* background-image: url(); */
+	background-image: url();
 }
 input:focus:invalid {
-	/* background-image: url(); */
+	background-image: url();
 }
 input:focus:valid{
-	/* background-image: url(); */
+	background-image: url();
 }
 input[required]:invalid, input[pattern]:invalid {
-	/* border-color: #A53403; */
+	/border-color: #A53403;
 }
 input[required]:valid, input[pattern]:valid {
-	/* border-color: #0B9900; */
-}
-input[type=checkbox] {
-    position: relative;
-    bottom: -3px;
-    height: 13px;
-    width: 13px;
-    vertical-align: top;
+	/border-color: #0B9900;
 }
 
 /*input[type="text"]:focus{
@@ -1200,18 +1222,14 @@ ul {
 .a__color__secondary, .a__color__tertiary {
     color: var(--grey-tone-23) !important;
 }
+.a__color__success {
+    color: var(--green-3) !important;
+}
 .a__color__base {
 	color: var(--color) !important;
 }
 .a__color__link {
 	color: var(--link) !important;
-}
-.a__color__button__link {
-    color: var(--mainlink);
-}
-.a__color__button__link:focus {
-    outline: 0 !important;
-    border: 0 !important;
 }
 .button__container {
     padding-left: 10px;
@@ -1224,6 +1242,9 @@ ul {
 .a__section {
     max-width: 1000px;
     margin: 0 auto;
+    margin-bottom: 0;
+}
+.a__section:last-child {
     margin-bottom: 0;
 }
 .section__break {
@@ -1252,6 +1273,9 @@ ul {
 .a__spacing__top__micro {
 	margin-top: 4px !important;
 }
+.a__padding__mini {
+    padding: 4px 6px !important;
+}
 .a__box {
     display: block;
     height: 100%;
@@ -1262,26 +1286,13 @@ ul {
 .a__color__offset__background {
     background-color: var(--grey-tone-45) !important;
 }
-.a__cardui {
-    overflow: auto;
-    padding: 20px 0 15px 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: var(--white);
-}
-.a__cardui .a__cardui__body {
-    position: relative;
-    padding: 0 20px;
-}
-.a__cardui .a__cardui__body:last-child {
-    padding-bottom: 5px;
-}
 .a__box__group > .a__box {
     margin-top: -1px;
     border-radius: 0;
 }
 .a__box .a__box__inner {
     border-radius: 4px;
+    border-radius: 8px;
     position: relative;
     padding: 14px 18px;
 }
@@ -1293,72 +1304,54 @@ ul {
 .a__box__group > .a__box:first__child > .a__box__inner {
     border-radius: 4px 4px 0 0;
 }
-.a__checkbox__label, .a__radio__label {
+.a__alert__inline {
     position: relative;
     display: inline-block;
-    padding-left: 5px;
-    text-indent: 0;
+    min-height: 20px;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
 }
-.a__checkbox label, .a__radio label {
-    position: relative;
-    top: -2px;
-    margin-left: 3px;
-    padding-bottom: 0;
-    font-weight: 400;
-    color: var(--color);
-}
-.a__checkbox__fancy input {
-    height: 16px;
-    width: 16px;
-}
-.a__checkbox.a__checkbox__fancy input {
-    position: absolute;
-    height: 16px;
-    width: 16px;
-    border: 0 none;
-    margin: 0;
-    outline: 0 none;
-    overflow: hidden;
+.a__alert__inline .a__alert__container {
+    border-radius: 0;
     padding: 0;
-    bottom: auto;
-    left: 0;
-    z-index: -1;
-    opacity: .02;
 }
-.a__icon.a__accordion__radio, .a__icon.a__icon__checkbox, .a__icon.a__icon__radio, 
-.a__icon.a__icon__star, .a__icon.a__icon__star__medium, .a__icon.a__icon__star__mini, 
-.a__icon.a__icon__star__small{
-    background-image: url('../images/amzn-sprite-5.png');
+.a__alert__inline__error .a__alert__container, .a__alert__inline__info .a__alert__container, 
+.a__alert__inline__success .a__alert__container, .a__alert__inline__warning .a__alert__container {
+    padding-left: 28px;
+}
+.a__alert__inline__success .a__alert__container {
+    color: var(--green-4);
+}
+.a__alert__inline__error .a__alert__container.a__box__inner, 
+.a__alert__inline__info .a__alert__container.a__box__inner, 
+.a__alert__inline__success .a__alert__container.a__box__inner, 
+.a__alert__inline__warning .a__alert__container.a__box__inner {
+    padding-left: 28px;
+}
+.a__alert__inline__success .a__icon__alert, .a__icon__success.a__icon__small {
+    background-position: -117px -130px;
+}
+.a__alert__inline .a__icon.a__icon__alert {
+    position: absolute;
+    left: 2px;
+    top: -1px;
+    height: 18px;
+    width: 18px;
     -webkit-background-size: 512px 256px;
     background-size: 512px 256px;
     background-repeat: no-repeat;
+    background-image: url('../images/amzn-sprite-5.png');
 }
-.a__checkbox__fancy .a__icon__checkbox {
-    vertical-align: middle;
-    height: 16px;
-    width: 16px;
+.a__alert__inline__success .a__icon.a__icon__alert {
+    background-position: -457px -144px;
 }
-.a__checkbox__fancy .a__icon__checkbox {
-    background-position: -453px -3px!important;
-}
-.a__checkbox__fancy :checked+.a__icon__checkbox {
-    background-position: -475px -40px!important;
-}
-.a__checkbox.a__checkbox__fancy .a__icon.a__icon__checkbox, 
-.a__checkbox.a__checkbox__fancy .a-icon.a__icon__checkbox:after {
-    border-radius: 2px;
-}
-.a__icon__text-separator, .a__text__separator {
-    display: inline-block;
-    margin: -2px .67375em 0;
-    height: 14px;
-    width: 1px;
-    vertical-align: middle;
-    line-height: 0;
-    background-color: var(--grey-tone-24);
-}
-.a__color__success {
-    color: var(--green-3) !important;
+.a__alert__inline .a__alert__container .a__alert__content {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
 }
 .fa {
 	color: gold;

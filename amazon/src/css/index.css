@@ -20,7 +20,7 @@ code {
 
 .navCart__wrap .a__section {
     max-width: none;
-    margin-bottom: 22px;
+    /* margin-bottom: 22px; */
     margin: 0;
 }
 
@@ -155,4 +155,19 @@ code {
 .card-subtitle {
     margin-top: 0;
     margin-bottom: 2px;
+}
+
+.a__cardui {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    overflow: auto;
+    padding: 20px 0 15px 0;
+}
+.a__cardui .a__cardui__body {
+    padding: 0 20px;
+    position: relative;
+}
+.a__cardui .a__cardui__body:last-child {
+    padding-bottom: 5px;
 }
