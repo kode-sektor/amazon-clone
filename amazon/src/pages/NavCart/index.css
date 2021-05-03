@@ -50,11 +50,8 @@
 .navCart__header {
     margin-bottom: -10px;
 }
-.navCart__form {
-    border: thin solid blue;
-}
-.navCart__cartItems {
-    border: thin solid var(--grey-tone-24);
+.navCart__row {
+    border-bottom: 1px solid var(--grey-tone-24);
 }
 .navCart__deselect {
     color: var(--mainlink);
@@ -101,4 +98,13 @@
 }
 .navCart__proceedToCheckout {
     margin-bottom: 14px;
+}
+
+.navCart__buyItAgain__row {
+    border-bottom: 1px solid --grey-tone-24;
+}
+.navCart__buyItAgain__thumbnail {
+    flex: 0 0 190px;
+    height: 190px;
+    overflow: hidden;
 }
