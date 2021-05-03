@@ -370,6 +370,10 @@ a:focus {
     text-decoration: none;
     outline: 5px auto var(--mainlinkfocus);
 }
+.a__color__button__link {
+    text-decoration: none;
+    color: var(--mainlink);
+}
 a:active, .a__color__button__link:active {
     text-decoration: underline;
     color: var(--a);
@@ -1283,6 +1287,9 @@ ul {
     border: 1px var(--grey-tone-24) solid;
     background-color: var(--white);
 }
+.a__box__rounded {
+    border-radius: 8px;
+}
 .a__color__offset__background {
     background-color: var(--grey-tone-45) !important;
 }
@@ -1346,6 +1353,9 @@ ul {
 }
 .a__alert__inline__success .a__icon.a__icon__alert {
     background-position: -457px -144px;
+}
+.a__alert__inline__info .a__icon.a__icon__alert {
+    background-position: -412px -29px;
 }
 .a__alert__inline .a__alert__container .a__alert__content {
     margin-bottom: 0;

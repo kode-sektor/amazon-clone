@@ -1,6 +1,9 @@
 .popover__panel__panel {
     margin-bottom: 22px;
 }
+.popover__panel__panel {
+    margin-bottom: 22px;
+}
 .popover__panel__list option {
     position: relative;
     background-color: var(--white);

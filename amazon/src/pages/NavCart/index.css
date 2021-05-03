@@ -4,8 +4,7 @@
     margin: 0 auto;
     background-color: var(--grey-tone-22) !important;
 }
-.navCart__wrap a, .navCart__wrap a:link, .navCart__wrap a:visited,
-.a__color__button__link {
+.navCart__wrap a, .navCart__wrap a:link, .navCart__wrap a:visited{
     text-decoration: none;
     color: var(--mainlink);
 }

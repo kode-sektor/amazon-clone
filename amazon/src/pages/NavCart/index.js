@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import Layout from '../../components/Layout/index'
 
-import { Row, Col } from 'reactstrap'
+import { Nav, NavItem, NavLink, Row, Col } from 'reactstrap'
+import classnames from 'classnames'
 
 import DropdownMenuPrimary from '../../components/UI/DropdownMenu'
 import { BtnPill, CartBtn, CartBtnSmall } from '../../components/UI/Button'
@@ -14,6 +15,23 @@ import binoculars from '../../images/products/gosky-10x42-roof-prism-binoculars-
 import './index.css'
 
 const NavCart = () => {
+
+    const [activeTab, setActiveTab] = useState('1')
+    const [initTab, setInitTab] = useState(true)    // default active tab style
+    const [fullWidthClass, setFullWidthClass] = useState('')   // layout adjustment
+
+    const toggle = tab => {
+        if (activeTab !== tab) { 
+            if (tab === '2') {
+                setFullWidthClass('stretch')
+            }  else  {
+                setFullWidthClass('')
+            }
+            setActiveTab(tab)
+            setInitTab(false)   // On click of any tab, reset automatic styling of first nav tab
+        }
+    }
+
     return (
         <Layout>
             <div className="navCart__wrap">
@@ -146,6 +164,7 @@ const NavCart = () => {
                                                                     <option value="10">10</option>
                                                                 </>
                                                             }
+                                                            squished={true}
                                                         />
                                                         <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
                                                         <button className="a__color__button__link a__size__small">Delete</button>
@@ -156,13 +175,13 @@ const NavCart = () => {
                                                     </div>
                                                 </section>
                                             </Col>
-                                            <Col xs="2" className="text-right">
+                                            <Col xs="2" className="text-right ml-auto">
                                                 <p className="a__spacing__small">
                                                     <span className="a__size__medium a__color__base font-weight-bold">
                                                         $129.98
                                                     </span>
                                                 </p>    
-                                                <div className="a__box text-center d-inline-block h-auto">
+                                                <div className="a__box a__box__rounded text-center d-inline-block h-auto">
                                                     <div className="a__box__inner a__padding__mini">
                                                         <Link to="/" className="d-block">
                                                             <span className="a__size__small a__color__base">
@@ -181,6 +200,119 @@ const NavCart = () => {
                                     <section className="navCart__subtotal text-right">
                                         <span className="a__size__medium">Subtotal (1 item):</span>    
                                         <span className="a__size__medium a__color__base font-weight-bold">&nbsp;$129.98</span>
+                                    </section>
+                                </form>
+                            </div>
+                        </section>
+                        <section className="navCart__active a__cardui mt-0">
+                            <div className="a__cardui__body">
+                                <header className="navCart__header">
+                                    <h2>Your Items</h2>
+                                    <Nav tabs className="tab__switch a__spacing__medium">
+                                        <NavItem>
+                                            <NavLink
+                                                className={classnames({ active: (activeTab === '1' || initTab === true)})}
+                                                onClick={() => { toggle('1') }}
+                                            >
+                                                Saved for later (4 items)
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem>
+                                            <NavLink
+                                                className={`classnames({ active: activeTab === '2' }) a__color__button__link`}
+                                                onClick={() => { toggle('2') }}
+                                            >
+                                                Buy it again
+                                            </NavLink>
+                                        </NavItem>
+                                    </Nav>
+                                </header>
+                                <form action="" className="navCart__form">
+                                    <p className="a__spacing__top__micro text-right a-color-secondary mb-0">Price</p>
+                                    <section className="navCart__cartItems a__spacing__mini">
+                                        <Row className="a__spacing__base a__spacing__top__base mx-0">
+                                            <Col xs="9" className="navCart__checkoutBox d-flex px-0">
+                                                <section className="navCart__checkout__img d-flex align-items-center">
+                                                    <span className="navCart__checkout__check">
+                                                        <span className="a__checkbox a__checkbox__fancy d-block">
+                                                            <label>         
+                                                                <input type="checkbox" name="" value="" checked/>
+                                                                <i className="a__icon a__icon__checkbox"></i>
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                    <Link to="/" className="d-block">
+                                                        <img src={binoculars} alt={binoculars}/>
+                                                    </Link>
+                                                </section>
+                                                <section className="navCart__checkout__info flex-grow-1">
+                                                    <h3 className="navCart__title a__size__medium font-weight-normal pb-0">Gosky 10x42 Roof Prism Binoculars for Adults, HD Professional Binoculars for Bird Watching Travel Stargazing Hunting Concerts Sports-BAK4 Prism FMC Lens-with Phone Mount Strap Carrying Bag</h3>
+                                                    <span className="a__size__small a__color__success d-block">In Stock</span>
+                                                    <span className="a__size__small a__color__secondary d-block">Sold by <a href="/">Gosky</a> and Fulfilled By Amazon.ca.</span>
+
+                                                    <section className="a__box h-auto a__alert__inline a__alert__inline__info">
+                                                        <div className="a__box__inner a__alert__container">
+                                                            <i className="a__icon a__icon__alert"></i>
+                                                            <div className="a__alert__content a__color__base">We updated this item to the best offer currently available at Amazon. The price increased by $6.01.
+                                                                <a href="/"> Learn More</a>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <span className="a__size__small a__spacing__top__micro a__color__secondary d-block">
+                                                        <label>
+                                                            <input type="checkbox" name="" value=""/>
+                                                            <i className="a__icon a__icon__checkbox"></i>
+                                                            <span className="a__label a__checkbox__label"> This will be a gift
+                                                                <span className="a__size__small">
+                                                                    <Link to="/">
+                                                                        <span className="a__size__small">&nbsp;Learn more
+                                                                        </span>
+                                                                    </Link>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </span>
+                                                    <span className="a__size__small d-block">
+                                                        <span className="font-weight-bold">Color Name: </span>
+                                                        <span className="a__size__small">HD 10x42 binoculars</span>
+                                                    </span>
+                                                    <div className="navCart__actionLinks">
+                                                        <DropdownMenuPrimary
+                                                            optionList={ 
+                                                                <>
+                                                                    <option value="">Qty: 1</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="6">6</option>
+                                                                    <option value="7">7</option>
+                                                                    <option value="8">8</option>
+                                                                    <option value="9">9</option>
+                                                                    <option value="10">10</option>
+                                                                </>
+                                                            }
+                                                            squished={true}
+                                                        />
+                                                        <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
+                                                        <button className="a__color__button__link a__size__small">Delete</button>
+                                                        <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
+                                                        <button className="a__color__button__link a__size__small">Save for later</button>
+                                                        <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
+                                                        <button className="a__color__button__link a__size__small">See more like this</button>
+                                                    </div>
+                                                </section>
+                                            </Col>
+                                            <Col xs="2" className="text-right ml-auto">
+                                                <p className="a__spacing__small">
+                                                    <span className="a__size__medium a__color__base font-weight-bold">
+                                                        $129.98
+                                                    </span>
+                                                </p>    
+                                            </Col>
+                                        </Row>
                                     </section>
                                 </form>
                             </div>
