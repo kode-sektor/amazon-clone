@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
+
+import { Link } from 'react-router-dom'
+
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption
 } from "reactstrap";
 
-import { PrimaryBtn } from '../../Button'
+import { PrimaryBtn, CartBtnSmall } from '../../Button'
 
 import './index.css'
 
 
-const Slider = ({type, count, items, carouselClass, price, category, addToCart=false}) => {
+const Slider = ({type, count, items, carouselClass, price, category, 
+	date, cartBtnSmall, addToCart=false}) => {
 
 	let itemLength = items.length
 
@@ -62,38 +66,45 @@ const Slider = ({type, count, items, carouselClass, price, category, addToCart=f
 								</a>
 								<figcaption>
 									{item.caption ? 
-										(<a href={item.href}>
-											<div className="amzn__carousel__caption">{item.caption}</div>
-											<span className="amzn__carousel__star"></span>
-											<span className="amzn__carousel__count"> 1,833 </span>
-											<span className="amzn__carousel__offers"> </span>
-											{category && 
-												(
-													<a className="a__size__small a__link__normal amzn__best__seller" href="/">
-														<i className="a__icon a__icon__addon amzn__icon__bestSeller">#1 Best Seller</i>
-														<span className="a__size__small a__color__secondary">in 
-															<span className="a__color__link amzn__carousel__delivery">{item.category}</span>
+										(
+											<>
+												<Link to={item.href}>
+													<div className="amzn__carousel__caption">{item.caption}</div>
+												</Link>
+													<span className="amzn__carousel__star"></span>
+													<span className="amzn__carousel__count"> 1,833 </span>
+													<span className="amzn__carousel__offers"> </span>
+													{category && 
+														(
+															<Link to="/" className="a__size__small a__link__normal amzn__best__seller" >
+																<i className="a__icon a__icon__addon amzn__icon__bestSeller">#1 Best Seller</i>
+																<span className="a__size__small a__color__secondary">in 
+																	<span className="a__color__link amzn__carousel__delivery">{item.category}</span>
+																</span>
+																&nbsp;
+															</Link>
+														)
+													}
+													{price && (<span className="a__color__price d-block">$269.99</span>)}
+													{item.prime && (	// Only on Order Page
+														<span className="amzn__prime__badge d-block">
+															<span className="amzn__prime__badge__icon"></span>&nbsp;
 														</span>
-														&nbsp;
-													</a>
-												)
-											}
-											{price && (<span className="a__color__price d-block">$269.99</span>)}
-											{item.prime && (	// Only on Order Page
-												<span className="amzn__prime__badge d-block">
-													<span className="amzn__prime__badge__icon"></span>&nbsp;
-												</span>
-											)}
-											{category && (
-												<span class="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
-											)}
-										</a>)
+													)}
+													{category || date && (
+														<span class="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
+													)}
+												{cartBtnSmall && (<CartBtnSmall/>)}	
+											</>
+										)
 										: 
-										(<div className="amzn__carousel__card">
-											<span className="amzn__carousel__price">$188.99 </span>
-											<span className="amzn__carousel__oldprice">$269.99 </span>
-											<span className="amzn__carousel__deal">Deal has ended </span>
-										</div> )						
+										(
+											<div className="amzn__carousel__card">
+												<span className="amzn__carousel__price">$188.99 </span>
+												<span className="amzn__carousel__oldprice">$269.99 </span>
+												<span className="amzn__carousel__deal">Deal has ended </span>
+											</div> 
+										)	
 									} 
 								</figcaption>
 							</figure>
