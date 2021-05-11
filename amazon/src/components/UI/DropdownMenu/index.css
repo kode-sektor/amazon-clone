@@ -8,3 +8,40 @@
     position: relative;
     background-color: var(--white);
 }
+.a__arrow__border {
+    position: absolute;
+    top: -8px;
+    left: 115px;
+    margin-left: -8px;
+    border-top: 0;
+    border-bottom-color: rgba(0,0,0,.2);
+    border: 8px solid transparent;
+	border-bottom: 9px solid rgba(0,0,0,.2);
+}
+.a__arrow__border.left {
+    top: 60px;
+    left: 0;
+    border-bottom-color: transparent;
+    border: 8px solid transparent;
+	border-bottom: 9px solid transparent;
+    border-right-color: rgba(0,0,0,.2);
+	border-right: 9px solid rgba(0,0,0,.2);
+}
+.a__arrow {
+    position: absolute;
+    display: block;
+	top: -7px;
+    right: -8px;
+    width: 0;
+    height: 0;
+    z-index: 1011;
+    border-top: 0;
+	border: 8px solid transparent;
+	border-bottom-color: var(--white);
+}
+.a__arrow__border.left .a__arrow {
+    top: -8px;
+    right: -9px;
+    border-bottom-color: transparent;
+    border-right-color: var(--white);
+}

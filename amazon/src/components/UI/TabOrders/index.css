@@ -12,6 +12,9 @@
     color: var(--black);
 }
 .order__address {
+    list-style: disc;
+    padding-right: 5px;
+    margin-left: 18px;
     font-size: 13px;
 }
 .order__address__name {

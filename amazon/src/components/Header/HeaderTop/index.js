@@ -107,7 +107,7 @@ const HeaderTop = (props) => {
                         <Nav className="row navbar__nav" navbar>
                             <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
                                 <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} inNavbar>
-                                    <Link to="/customer_preferences/lang">
+                                    <Link to="/customer-preferences/lang">
                                         <DropdownToggle nav caret className="navigationbar__origin" href="/customer_preferences/lang" tag="button">
                                             <ReactCountryFlag
                                                 countryCode="CA"
@@ -120,23 +120,23 @@ const HeaderTop = (props) => {
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem className="col-xs-4" onMouseEnter={() => props.toggleModal('show')} onMouseLeave={() => props.toggleModal('hide')}>
-                                <UncontrolledDropdown onMouseOver={acctdropdownEnter}  onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
-                                    <Link to="/your_account">
+                                <UncontrolledDropdown onMouseOver={acctdropdownEnter} onMouseLeave={acctdropdownLeave} isOpen={acctdropdownOpen} toggle={acctdropdown} inNavbar>
+                                    <NavLink href="/your-account">
                                         <DropdownToggle nav caret className="navigationbar__delivery__link" tag="button">
                                             <span className="navigation__glow__ingress__block">
                                                 <span className="nav__line__1">Hello, Kay</span>
                                                 <span className="nav__line__2">Account &amp; Lists</span>
                                             </span>
                                         </DropdownToggle>
-                                    </Link>
+                                    </NavLink>
                                     <DropdownMenu className="navigationbar__account">
-                                        <AccountMenu />
+                                        <AccountMenu/>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                             </NavItem>
                             <NavItem className="col-xs-4">
                                 <NavItem>
-                                    <NavLink href="/order_history" className="navigationbar__delivery__link">
+                                    <NavLink href="/order-history" className="navigationbar__delivery__link">
                                         <span className="navigation__glow__ingress__block">
                                             <span className="nav__line__1">Returns</span>
                                             <span className="nav__line__2">&amp; Orders</span>
@@ -145,7 +145,7 @@ const HeaderTop = (props) => {
                                 </NavItem>
                             </NavItem>
                             <NavItem className="col-xs-4">
-                                <NavLink href="/nav_cart" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
+                                <NavLink href="/nav-cart" aria-label="0 items in cart" className="nav__cart" id="nav-cart" tabindex="0">
                                     <span className="nav__cart__count__container">
                                         <span id="nav-cart-count" aria-hidden="true" className="nav__cart__count">
                                             0

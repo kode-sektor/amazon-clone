@@ -14,10 +14,10 @@ function App() {
             <Router>
                 <Switch>
                     <Route path="/" exact component={Home}/>
-                    <Route path="/customer_preferences/lang" component={CustomerPreferences}/>
-                    <Route path="/your_account" component={YourAccount}/> 
-                    <Route path="/order_history" component={OrderHistory}/> 
-                    <Route path="/nav_cart" component={NavCart}/> 
+                    <Route path="/customer-preferences/lang" component={CustomerPreferences}/>
+                    <Route path="/your-account" component={YourAccount}/> 
+                    <Route path="/order-history" component={OrderHistory}/> 
+                    <Route path="/nav-cart" component={NavCart}/> 
                 </Switch>
             </Router>
         </div>

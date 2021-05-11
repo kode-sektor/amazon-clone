@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
 import classnames from 'classnames'
@@ -27,12 +27,19 @@ import hilroy_coil from '../../images/thumbnails/products/hilroy-coil-1-subject-
 
 import './index.css'
 
-
 const OrderHistory = () => {
 
-    const [activeTab, setActiveTab] = useState('1')
+    let windowId = window.location.search
+    let params = new URLSearchParams(windowId)
+
+    // Click on 'buy-again' should automatically activate tab
+    windowId = (params.get("buy-again") === "true" ? "2" : "1") 
+
+    const [queryId, setQueryId] = useState(windowId)
+    
+    const [activeTab, setActiveTab] = useState(windowId || '1')
     const [initTab, setInitTab] = useState(true)    // default active tab style
-    const [fullWidthClass, setFullWidthClass] = useState('')   // layout adjustment
+    const [fullWidthClass, setFullWidthClass] = useState(windowId === "2" ? "stretch" : "")   // layout adjustment
 
     const toggle = tab => {
         if (activeTab !== tab) { 
@@ -42,7 +49,7 @@ const OrderHistory = () => {
                 setFullWidthClass('')
             }
             setActiveTab(tab)
-            setInitTab(false)   // On click of any tab, reset automatic styling of first nav tab
+            // setInitTab(false)   // On click of any tab, reset automatic styling of first nav tab
         }
     }
 
@@ -74,7 +81,7 @@ const OrderHistory = () => {
                         <Nav tabs className="tab__switch a__spacing__medium">
                             <NavItem>
                                 <NavLink
-                                    className={classnames({ active: (activeTab === '1' || initTab === true)})}
+                                    className={classnames({ active: (activeTab === '1')})}
                                     onClick={() => { toggle('1') }}
                                 >
                                     Orders
@@ -551,7 +558,7 @@ const OrderHistory = () => {
                                                             category: "Dental Floss"
                                                         }
                                                     ]
-                                                }
+                                            }
                                         />
                                     }
                                 />

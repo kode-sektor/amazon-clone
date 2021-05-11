@@ -23,6 +23,9 @@ code {
     /* margin-bottom: 22px; */
     margin: 0;
 }
+.navCart__proceedToCheckout > .a__section {
+    margin-bottom: 22px;
+}
 
 /*Tabs*/
 .tab__switch .nav-item {
@@ -230,10 +233,36 @@ code {
     overflow: auto;
     padding: 20px 0 15px 0;
 }
+.navCart__active {
+    overflow: visible;
+}
 .a__cardui .a__cardui__body {
     padding: 0 20px;
     position: relative;
 }
 .a__cardui .a__cardui__body:last-child {
     padding-bottom: 5px;
+}
+
+.productDropdown {
+    position: absolute;
+    z-index: 299;
+    padding: 8px;
+    max-width: none;
+    visibility: visible;
+    opacity: 1;
+}
+.navCart__active .productDropdown {
+    top: -15px;
+    left: 95%;
+    border: none;
+    background-color: transparent;
+}
+.a__popover__content {
+    position: relative;
+    margin-top: -21px;
+    width: 300px;
+}
+.productDropdown__img {
+    margin-right: 5px;
 }

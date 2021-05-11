@@ -7,7 +7,7 @@ import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
 
 import DropdownMenuLang from '../UI/DropdownMenuLang'
 import ModalLang from '../Footer/ModalLang'
-import DropdownMenuPrimary from '../UI/DropdownMenu'
+import { DropdownMenuPrimary } from '../UI/DropdownMenu'
 
 import { countries } from '../../utilities/data'
 

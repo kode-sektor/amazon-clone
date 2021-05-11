@@ -176,6 +176,7 @@ file rather than small ones. Your choice
 	--ochre-28: #fcd200;
 	--ochre-29: #f7ca00;
 	--ochre-30: #f2c200;
+	--ochre-31: #ffaf38;
 
 
     --link: #007BFF;
@@ -318,6 +319,11 @@ h3 {
     font-size: 18px;
     line-height: 24px;
 }
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
 h5 {
     font-weight: 700;
     font-size: 14px;
@@ -372,7 +378,7 @@ a:focus {
 }
 .a__color__button__link {
     text-decoration: none;
-    color: var(--mainlink);
+    color: var(--mainlink) !important;
 }
 a:active, .a__color__button__link:active {
     text-decoration: underline;
@@ -383,9 +389,9 @@ a:hover, .a__color__button__link:hover {
     cursor: pointer;
     color: var(--a);
 }
-li a {
+/* li a {
 	display: block;
-}
+} */
 .a__button {
     display: inline-block;
     padding: 0;
@@ -1176,6 +1182,9 @@ ul {
 .a__spacing__top__medium {
     margin-top: 16px !important;
 }
+.a__spacing__medium__plus, .a__ws .a__ws__spacing__medium__plus {
+    margin-bottom: 20px !important;
+}
 .a__spacing__none {
 	margin-top: 0 !important
 }
@@ -1374,6 +1383,53 @@ ul {
     line-height: 15px;
     text-align: left;
 }
+.a__alert__error, .a__alert__info, .a__alert__success, .a__alert__warning {
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-left-width: 12px;
+}
+.a__alert__error .a__alert__container, .a__alert__info .a__alert__container, 
+.a__alert__success .a__alert__container, .a__alert__warning .a__alert__container {
+    background-color: var(--white);
+    padding: 14px 18px 18px;
+}
+.a__alert__warning {
+    border-color: var(--ochre-31);
+}
+.a__alert__heading {
+    padding-bottom: 10px;
+}
+.a__alert__error .a__alert__container .a__alert__heading, 
+.a__alert__info .a__alert__container .a__alert__heading, 
+.a__alert__success .a__alert__container .a__alert__heading, 
+.a__alert__warning .a__alert__container .a__alert__heading {
+    padding-left: 26px;
+}
+.a__alert__warning .a__icon__alert, .a__icon__warning {
+    background-position: -283px -35px;
+}
+.a__alert .a__icon.a__icon__alert {
+    position: absolute;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    left: 18px;
+    top: 14px;
+    background-image: url(../images/amzn-sprite-5.png);
+    -webkit-background-size: 512px 256px;
+    background-size: 512px 256px;
+    background-repeat: no-repeat;
+}
+.a__alert__warning .a__alert__container .a__icon.a__icon__alert {
+    background-position: -377px -4px;
+}
+.a__alert__error .a__alert__container .a__alert__heading + .a__icon.a__icon__alert, 
+.a__alert__info .a__alert__container .a__alert__heading + .a__icon.a__icon__alert, 
+.a__alert__success .a__alert__container .a__alert__heading + .a__icon.a__icon__alert, 
+.a__alert__warning .a__alert__container .a__alert__heading + .a__icon.a__icon__alert {
+    top: 16px;
+}
 .fa {
 	color: gold;
 }
@@ -1400,6 +1456,29 @@ ul {
     background: linear-gradient(to right, var(--white) ,rgba(255,255,255,0), var(--white));
     background-color: transparent;
     z-index: 1;
+}
+.a__button__close {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    /* margin: -13px 0 0; */
+    position: static;
+    margin: -10px -14px 0px auto;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid;
+    border-color: transparent;
+    /* float: right; */
+    padding: 8px;
+    zoom: 1;
+    line-height: 0;
+}
+.a__icon__close {
+    opacity: .64;
+    width: 10px;
+    height: 9px;
+    background-position: -297px -5px;
 }
 
 /*FREESTYLES

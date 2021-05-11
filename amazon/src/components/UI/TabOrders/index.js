@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom'
 
@@ -83,7 +83,24 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link to="#">Invoice <i className="a__icon a__icon__popover"></i></Link>
+                                            <Popover
+                                                trigger={
+                                                    <button className="a__color__link a__size__base">
+                                                        Invoice
+                                                        <i class="a__icon a__icon__popover"></i>
+                                                    </button>                                          }
+                                                dropdown={
+                                                    <ul className="order__address">
+                                                        <li>
+                                                            <Link to="/">Invoice 1</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link to="/">Printable Order Summary</Link>
+                                                        </li>
+                                                    </ul>
+                                                }
+                                                close={true}
+                                            />
                                         </li>
                                     </>
                                 )}

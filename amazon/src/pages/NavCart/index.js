@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 import Layout from '../../components/Layout/index'
 import Slider from '../../components/UI/Carousel/Carousel'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
-import DropdownMenuPrimary from '../../components/UI/DropdownMenu'
+import { DropdownMenuPrimary, DropdownMenuCart } from '../../components/UI/DropdownMenu'
 
 
-import { Nav, NavItem, NavLink, Row, Col } from 'reactstrap'
+import { Nav, NavItem, NavLink, Row, Col, Dropdown } from 'reactstrap'
+
 import classnames from 'classnames'
 
 import { BtnPill, CartBtn, CartBtnSecondary, CartBtnSmall } from '../../components/UI/Button'
@@ -27,8 +28,15 @@ import './index.css'
 
 const NavCart = () => {
 
+    const [coupondropdownOpen, setCoupondropdownOpen] = useState(false)    // account dropdown
+
     const [activeTab, setActiveTab] = useState('1')
     const [initTab, setInitTab] = useState(true)    // default active tab style
+
+    // Acct dropdown
+    const coupondropdown = () => setCoupondropdownOpen(couponDropdownOpen => !couponDropdownOpen)
+    const coupondropdownEnter = () => setCoupondropdownOpen(true)
+    const coupondropdownLeave = () => setCoupondropdownOpen(false)
 
     const toggle = tab => {
         if (activeTab !== tab) { 
@@ -41,6 +49,27 @@ const NavCart = () => {
         <Layout>
             <div className="navCart__wrap">
                 <section className="navCart__banner a__spacing__medium">
+                    <section className="a__box a__box__rounded a__alert a__alert__warning a__spacing__medium__plus">
+                        <header className="a__box__inner a__alert__container">
+                            <h4 className="a__alert__heading">
+                                Important messages for items in your Cart:
+                            </h4>
+                            <i className="a__icon a__icon__alert"></i>
+                            <p className="a__spacing__top__small mb-0 font-weight-bold">
+                                1 item in your Saved Items has changed price.
+                            </p>
+                            <ul>
+                                <li>
+                                    <span>
+                                        <Link to="/">
+                                            Master Lock Cable Lock, Set Your Own Combination Bike Lock, 6 ft. Long, 8114D
+                                        </Link> has decreased from <span className="a__color__price">CDN$20.67</span> to
+                                        <span className="a__color__price"> CDN$20.65</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </header>
+                    </section>
                     <Link to="/" className="mx-auto navCart__banner__link d-block">
                         <div className="d-flex align-items-center">
                             <section className="navCart__banner__img a__section a__padding__base">
@@ -105,7 +134,7 @@ const NavCart = () => {
                         <p className="navCart__switch__lang mb-0">
                             Vous voulez voir cette page en français ? <Link to="/"> Cliquez ici</Link>
                         </p>
-                        <section className="navCart__active a__cardui mt-0">
+                        <section className="navCart__active a__cardui mt-0 overflow-visible">
                             <div className="a__cardui__body">
                                 <header className="navCart__header">
                                     <h1 className="pb-0">Shopping Cart</h1>
@@ -186,19 +215,42 @@ const NavCart = () => {
                                                         $129.98
                                                     </span>
                                                 </p>    
-                                                <div className="a__box a__box__rounded text-center d-inline-block h-auto">
-                                                    <div className="a__box__inner a__padding__mini">
-                                                        <Link to="/" className="d-block">
-                                                            <span className="a__size__small a__color__base">
-                                                                Save $20.00
-                                                            </span>
-                                                            <i className="a__icon a__icon__popover"></i>
-                                                        </Link>   
-                                                        <Link to="/" className="a__size__small">
-                                                            Clip Coupon
-                                                        </Link>
-                                                    </div>
-                                                </div>              
+                                                <Dropdown onMouseOver={coupondropdownEnter} onMouseLeave={coupondropdownLeave} isOpen={coupondropdownOpen} toggle={coupondropdown} direction="right" inNavbar>
+                                                    <div className="a__box a__box__rounded text-center d-inline-block h-auto">
+                                                        <div className="a__box__inner a__padding__mini">
+                                                            <Link to="/" className="d-block">
+                                                                <span className="a__size__small a__color__base">
+                                                                    Save $20.00
+                                                                </span>
+                                                                <i className="a__icon a__icon__popover"></i>
+                                                            </Link>   
+                                                            <Link to="/" className="a__size__small">
+                                                                Clip Coupon
+                                                            </Link>
+                                                        </div>
+                                                    </div> 
+                                                    <DropdownMenuCart
+                                                        content={
+                                                            <section className="a__popover__content d-flex">
+                                                                <img alt="Gosky 10x42 Roof Prism Binoculars for Adults, HD Professional Binoculars for Bird Watching Travel Stargazing Hunting Concerts Sports-BAK4 Prism FMC Lens-with Phone Mount Strap Carrying Bag" src="https://m.media-amazon.com/images/I/61yZ3UZ9-9L._AA100_.jpg" className="productDropdown__img" height="100" width="100"/>
+                                                                <section>
+                                                                    <span className="a__size__medium a__spacing__base font-weight-bold">
+                                                                        Save $20.00
+                                                                    </span>
+                                                                    <p className="a__size__small mb-0">
+                                                                        Save an additional $20.00 on 1 of the eligible items for this coupon.<br/>
+                                                                        <Link to="/" className="text-decoration-none">
+                                                                            Terms and Conditions
+                                                                        </Link>
+                                                                        <br/>
+                                                                        (Discount at Checkout)
+                                                                    </p>
+                                                                </section>
+                                                            </section>
+                                                        }
+                                                        close={coupondropdownLeave}
+                                                    />
+                                                </Dropdown>
                                             </Col>
                                         </Row>
                                     </section>
@@ -406,7 +458,7 @@ const NavCart = () => {
                                                     </Col>
                                                     <Col>
                                                         <Link to="/" className="navCart__checkout__prodTitle">
-                                                            Gosky 10x42 Roof Prism Binoculars for Adults, HD Professional Binoculars for Bird Watching Travel Stargazing Hunting Concerts Sports-BAK4 Prism FMC Lens-with Phone Mount Strap Carrying Bag
+                                                            Gosky 10x42 Ro...
                                                         </Link>
                                                         <div className="a__icon__row a__spacing__none">
                                                             <Link to="/">

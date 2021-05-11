@@ -3,6 +3,11 @@
     width: 1099px;
     margin: 0 auto;
 }
+.orders a:not(a[role="button"]):not([class*="__button"] a), 
+.orders a:link:not(a[role="button"]):not([class*="__button"] a), 
+.orders a:visited:not(a[role="button"]):not([class*="__button"] a) {
+    color: var(--link);
+}
 .orders.stretch {
     width: auto;
 }
@@ -35,7 +40,6 @@
     width: 266px;
     max-width: 300px;
     max-height: 10000px;
-    border: 1px var(--grey-tone-24) solid;
     background-color: var(--white);
     border-radius: 4px;
 }

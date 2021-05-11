@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import {
-    Navbar, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, Button
+    Navbar, Nav, UncontrolledDropdown, DropdownToggle, DropdownMenu, Button,
+    NavItem, NavLink
 } from 'reactstrap'
 
 import Menu from '../../UI/Menu/index.js'
@@ -50,30 +52,35 @@ const Subheader = (props) => {
             </Button>
             <Navbar expand="md" className="nav__main__menu">
                 <Nav className="mr-auto" navbar>
-                    <UncontrolledDropdown onMouseOver={primedropdownEnter} onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} toggle={primedropdown} nav inNavbar>
-                        <DropdownToggle nav caret>
-                            Prime
-                        </DropdownToggle>
-                        <DropdownMenu left className="nav__main__prime">
-                            <div class="nav__arrow null" style={{ left: "48.1094px" }}>
-                                <div class="nav__arrow__inner"></div>
-                            </div>
-                            <section className="nav__main__prime__inner">
-                                <div className="nav__main__prime__img">
-                                    <div class="nav__main__prime__logo">
-                                        <img src={primeLogo} alt="prime logo" />
-                                    </div>
-                                    <p class="nav__main__prime__content__copy">Get fast, free shipping on millions of items</p>
-                                    <div class="nav__main__prime__button__try">
-                                        <a href="/prime">Get Started</a>
-                                    </div>
-                                    <div class="nav__main__prime__bottom__img">
-                                        <img src={primeMarketing} alt="prime marketing" />
-                                    </div>
+                    <NavItem>
+                        <UncontrolledDropdown onMouseOver={primedropdownEnter} onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} toggle={primedropdown} nav inNavbar>
+                            <DropdownToggle nav caret>
+                                Prime
+                            </DropdownToggle>
+                            <DropdownMenu left className="nav__main__prime">
+                                <div class="nav__arrow null" style={{ left: "48.1094px" }}>
+                                    <div class="nav__arrow__inner"></div>
                                 </div>
-                            </section>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
+                                <section className="nav__main__prime__inner">
+                                    <div className="nav__main__prime__img">
+                                        <div class="nav__main__prime__logo">
+                                            <img src={primeLogo} alt="prime logo" />
+                                        </div>
+                                        <p class="nav__main__prime__content__copy">Get fast, free shipping on millions of items</p>
+                                        <div class="nav__main__prime__button__try">
+                                            <a href="/prime">Get Started</a>
+                                        </div>
+                                        <div class="nav__main__prime__bottom__img">
+                                            <img src={primeMarketing} alt="prime marketing" />
+                                        </div>
+                                    </div>
+                                </section>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="order-history?buy-again=true">Buy Again</NavLink>
+                    </NavItem>
                     { renderMenu() }
                 </Nav>
             </Navbar>

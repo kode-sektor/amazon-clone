@@ -1,14 +1,31 @@
+/* .a__popover__wrapper {
+	top: 8px;
+	width: 230px;
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+	overflow: hidden;
+	border: none;
+    background-color: transparent;
+    zoom: 1;
+} */
 .a__popover__wrapper {
-	top: 8px;
-	width: 230px;
-	min-width: 0;
-	margin: 0;
-	padding: 0;
-	padding-top: 8px;
-	overflow: hidden;
-	border: none;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--grey-tone-5);
+    border-color: rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 13%);
+    border-radius: 4px;
+    background-color: var(--white);
+}
+.a__popover__dropdown {
+    min-width: 234px;
+    padding: 8px;
+    margin: 0 0 0 -8px;
+    border: none;
     background-color: transparent;
-    zoom: 1;
 }
 .a__popover__inner {
     overflow-x: hidden;
@@ -20,68 +37,15 @@
 	background-color: var(--white);
     text-align: left;
 }
-.a__arrow__border {
-    position: absolute;
-    top: -8px;
-    left: 115px;
-    margin-left: -8px;
-    border-top: 0;
-    border-bottom-color: rgba(0,0,0,.2);
-    border: 8px solid transparent;
-	border-bottom: 9px solid rgba(0,0,0,.2);
-}
-.a__popover__wrapper .a__arrow {
-    position: absolute;
-    display: block;
-	top: -7px;
-    right: -8px;
-    width: 0;
-    height: 0;
-    z-index: 1011;
-    border-top: 0;
-	border: 8px solid transparent;
-	border-bottom-color: var(--white);
-}.a__popover__wrapper {
-	top: 8px;
-	width: 230px;
-	min-width: 0;
-	margin: 0;
-	padding: 0;
-	padding-top: 8px;
-	overflow: hidden;
-	border: none;
-    background-color: transparent;
-    zoom: 1;
-}
-.a__popover__inner {
+.a__pop__inner {
     overflow-x: hidden;
+    height: auto;
+    overflow-y: auto;
     padding: 14px 18px;
-	border: 1px solid var(--grey-tone-5);
-    border-color: rgba(0,0,0,.2);
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 13%);
-	background-color: var(--white);
     text-align: left;
+    background-color: var(--white);
 }
-.a__arrow__border {
-    position: absolute;
-    top: -8px;
-    left: 115px;
-    margin-left: -8px;
-    border-top: 0;
-    border-bottom-color: rgba(0,0,0,.2);
-    border: 8px solid transparent;
-	border-bottom: 9px solid rgba(0,0,0,.2);
-}
-.a__popover__wrapper .a__arrow {
-    position: absolute;
-    display: block;
-	top: -7px;
-    right: -8px;
-    width: 0;
-    height: 0;
-    z-index: 1011;
-    border-top: 0;
-	border: 8px solid transparent;
-	border-bottom-color: var(--white);
+.a__pop__inner .a__button__close {
+    position: static;
+    margin: -10px -14px 0px auto;
 }
