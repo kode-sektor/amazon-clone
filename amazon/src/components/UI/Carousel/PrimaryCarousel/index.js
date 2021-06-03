@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PrimaryCarousel = ({heading, link, slider, squished}) => {
     return (
@@ -7,7 +8,7 @@ const PrimaryCarousel = ({heading, link, slider, squished}) => {
                 <header className="primary__slider__header">
                     <h2 className="primary__slider__heading">{heading}</h2>
                     {
-                        link ? <a href="/" className="explore__more">{link}</a> : ""
+                        link ? <Link to="/" className="explore__more">{link}</Link> : ""
                     }
                 </header>
                 {slider}

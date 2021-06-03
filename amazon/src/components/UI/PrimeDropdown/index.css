@@ -1,0 +1,68 @@
+.primeSticky {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+}
+.primeSticky__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+}
+.primeSticky__cardInner {
+    width: 1400px;
+    background: var(--white);
+}
+.primeSticky__close {
+    display: block;
+    border: 2px solid cyan;
+}
+.primeSticky__cardHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 1000px;
+    margin: 0 auto;
+    border: 2px solid magenta;
+}
+.primeSticky__primeLogo {
+    margin-right: 50px;
+}
+.primeSticky__primePlan {
+    align-self: flex-end;
+    margin-left: 275px;
+    height: 140px;
+    vertical-align: top;
+}
+.primeSticky__headerTitle {
+    display: inline-block;
+    height: 3em;
+    max-width: 350px;
+    line-height: 35px;
+    margin-top: 50px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20pt;
+}
+.primeSticky__close {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    flex-flow: row nowrap;
+    height: 46px;
+}
+.primeSticky__close__button {
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--blue-8);
+    text-decoration: none;
+}

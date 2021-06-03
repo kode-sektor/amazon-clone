@@ -1,0 +1,346 @@
+.prime {
+    padding-bottom: 12px !important;
+}
+.prime__emergency {
+    max-width: 1400px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    vertical-align: middle;
+    color: var(--white);
+    background-color: var(--grey-tone-46);
+}
+.prime__detail {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+    min-width: 1000px;
+    font-family: 'Amazon Ember', Tahoma, Arial, sans-serif;
+}
+.prime__heroHeader {
+    height: 536px;
+    color: var(--white);
+    padding: 32px 0 48px 0;
+    position: relative;
+    background-image: url(../../images/prime-hero.png);
+    background-color: var(--blue-6);
+    background-size: auto 536px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+.prime__heroHeader__content {
+    width: 500px;
+    margin: 0 70px;
+    color: var(--white);
+}
+.prime__heroHeader__heading {
+    margin-bottom: 22px;
+    padding-bottom: 4px;
+    padding-bottom: 4px;
+    line-height: 1.2;
+    font-size: 42px;
+    font-weight: 700;
+}
+.prime__heroHeader__subheadline {
+    width: 400px;
+    margin-bottom: 32px;
+    line-height: 25px;
+    font-size: 22px;
+    font-weight: 100;
+}
+.join__prime__form {
+    margin-bottom: 10px;
+}
+.prime__hero__header .cancel__anytime {
+    max-width: 440px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.prime__header__logo {
+    position: absolute;
+    bottom: 0px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+.prime__carousel {
+    position: relative;
+    display: flex;
+    top: -92px;
+    left: 0;
+    width: 100%;
+    margin-bottom: -92px;
+}
+.prime__carousel .carousel-indicators {
+    display: flex;
+    flex-flow: row nowrap;
+    bottom: auto;
+    top: 0;
+    align-items: center;
+    width: 618px;
+    height: 262px;
+    margin: 0 auto;
+}
+.prime__carousel .carousel-indicators li {
+    position: relative;
+    flex: 0 0 150px;
+    overflow: hidden;
+    height: 210px;
+    margin: 26px 6px 26px 0;
+    border: 0;
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.prime__carousel .carousel-indicators li:nth-child(1) {
+    background-image: url(../../images/prime-carousel-shipping.png)
+}
+.prime__carousel .carousel-indicators li:nth-child(2) {
+    background-image: url(../../images/prime-carousel-stream.png)
+}
+.prime__carousel .carousel-indicators li:nth-child(3) {
+    background-image: url(../../images/prime-carousel-shop.png)
+}
+.prime__carousel .carousel-indicators li:nth-child(4) {
+    background-image: url(../../images/prime-carousel-more.png)
+}
+.prime__carousel .carousel-indicators li:nth-child(5) {
+    background-image: url(../../images/prime-carousel-more.png)
+}
+.prime__carousel .carousel-indicators li.active {
+    flex: 0 0 202px;
+    overflow: visible;
+    height: 262px;
+    margin: 0px -20px 0px -26px;
+    z-index: 99;
+}
+.prime__carousel .carousel-inner {
+    display: block;
+    overflow: hidden;
+    max-height: 400px;
+    margin: 260px auto 0;
+    color: var(--blue-8);
+    width: 1025px;
+    transition: max-height 0.5s;
+    pointer-events: initial;
+}
+.primeSlider__control.carousel-control-prev, .primeSlider__control.carousel-control-next {
+    display: block;
+    top: 262px;
+    left: 90px;
+    width: 72px;
+    max-height: none;
+    height: 400px;
+}
+.primeSlider__control.carousel-control-next {
+    left: auto;
+    right: 90px;
+}
+.primeSlider__control.carousel-control-prev .carousel-control-prev-icon,
+.primeSlider__control.carousel-control-next .carousel-control-next-icon {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 20px 0 0;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    text-align: center;
+    border: none !important;
+    background-color: transparent;
+    background-image: url(../../images/amzn-sprite-8.png);
+    background-size: 158px auto;
+    background-position: -53px -52px;
+}
+.primeSlider__control.carousel-control-next .carousel-control-next-icon {
+    background-position: -53px -156px;
+}
+.prime__carousel .carousel-item {
+    overflow: hidden;
+    width: 997px;
+    min-height: 100%;
+    height: 400px;
+    padding-top: 30px;
+    text-align: center;
+    background: linear-gradient(to right, var(--white), var(--white) 15px, rgba(255,255,255,0) 45px), url(../../images/prime-delivery-ship.jpg);
+    background-size: auto 400px;
+    background-position: center;
+}
+.prime__carousel .carousel-item.active {
+    display: inline-block;
+}
+.prime__carousel .carousel-item.ship {
+    background-image: linear-gradient(to right, var(--white), var(--white) 15px, rgba(255,255,255,0) 45px), url(../../images/prime-delivery-ship.jpg);
+}
+.prime__carousel .carousel-item.stream {
+    background-image: linear-gradient(to right, var(--white), var(--white) 15px, rgba(255,255,255,0) 45px), url(../../images/prime-delivery-stream.png);
+}
+.prime__carousel .carousel-item.shop {
+    background-image: linear-gradient(to right, var(--white), var(--white) 15px, rgba(255,255,255,0) 45px), url(../../images/prime-delivery-shop.jpg);
+}
+.prime__carousel .carousel-item.more {
+    background-image: linear-gradient(to right, var(--white), var(--white) 15px, rgba(255,255,255,0) 45px), url(../../images/prime-delivery-read.jpg);
+}
+.prime__carousel .carousel-caption {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    width: 50%;
+    max-width: 480px;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    color: var(--color);
+    text-align: left;
+}
+.prime__benefitsHeadline {
+    margin: 30px 70px 15px;
+    font-size: 28px;
+    text-align: left;
+    font-weight: 300;
+    color: var(--blue-8);
+}
+.prime__benefitsDelivery, .prime__stream, .prime__read {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 15px 0 30px 0;
+    padding: 65px 70px 48px 70px;
+    width: 100%;
+    height: 360px;
+    color: var(--white);
+    background-color: var(--white);
+    background-image: url(../../images/prime-delivery.png);
+    background-size: auto 360px;
+    background-position: top center;
+}
+.prime__stream {
+    height: 360px;
+    padding-top: 45px;
+    background-image: url(../../images/prime-stream-bg.jpg);
+    background-size: auto 360px;
+    background-position: top left;
+}
+.prime__read {
+    height: 360px;
+    padding-top: 45px;
+    background-image: url(../../images/prime-read-bg.jpg);
+    background-size: auto 360px;
+    background-position: top center;
+}
+.prime__originals {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    background-color: var(--white);
+    margin: 15px 0 30px 0;
+    padding: 30px 70px 48px 70px;
+    color: var(--blue-8);
+}
+.prime__scroller {
+    width: 50%;
+    flex: 0 auto;
+    padding: 8px 0 0 0;
+}
+.prime__videoScroll {
+    position: relative;
+    overflow: hidden;
+    margin: 0 100px 0 auto;
+    padding-top: 0px;
+    height: 100%;
+    width: 360px;
+}
+.prime__cta {
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: -50px;
+    padding-top: 40px;
+    background-image: url(../../images/prime-cta-bg.jpg);
+    background-position: center top;
+}
+.prime__ctaJoin {
+    width: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+.prime__ctaHeader {
+    width: 340px;
+    margin: 0 auto 30px;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--blue-8);
+}
+.prime__joinfrm {
+    margin-bottom: 10px;
+}
+.prime__joinfrm .prime__cta__signup__button {
+    min-width: 300px;
+}
+.prime__ctaLinks {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.prime__ctaLinks a {
+    color: var(--link-2);
+}
+.prime__emergencyMore {
+    width: 100%;
+    z-index: 100;
+    border-bottom: var(--blue-7);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.prime__emergencyHeader {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: var(--grey-tone-37);
+    background: var(--bg-light-blue);
+    background-color: rgb(35, 47, 62);
+    z-index: 999;
+    transform: scaleY(0);
+    transform-origin: 0% 0%;
+    animation: slideInDown 1s 0s alternate both;
+}
+.prime__emergencyHeader.isSticky {
+    display: flex;
+}
+.prime__emergencyLogo {
+    display: flex;
+    flex: 0 0 320px;
+    width: 320px;
+    height: 70px;
+    padding-right: 144px;
+    color: var(--grey-tone-37);
+    transition: all 0ms ease 0s;
+    opacity: 1;
+}
+.prime__emergencyMembership {
+    display: inline-block;
+    align-self: flex-end;
+    flex: 0 0 320px;
+    width: 320px;
+    vertical-align: bottom;
+    font-size: 14pt;
+    text-align: center;
+    font-weight: 300;
+}
+.prime__emergencyCtaJoin {
+    flex: 0 0 320px;
+    width: 320px;
+    color: var(--grey-tone-37);
+}
+.prime__emergencyCtaJoin .prime__joinfrm {
+    width: 320px;
+}
+.prime__emergencyCtaJoin .prime__joinfrm .prime__cta__signup__button {
+    min-width: 0;
+}

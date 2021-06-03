@@ -1,0 +1,30 @@
+.mini__carousel .carousel-inner {
+    position: relative;
+    width: 280px;
+    margin: 0 40px;
+    overflow: visible;
+    z-index: 3;
+}   
+.mini__carousel .carousel-control-prev, .mini__carousel .carousel-control-next {
+    width: 40px;
+}
+.mini__carousel .carousel-control-prev-icon, 
+.mini__carousel .carousel-control-next-icon {
+    display: inline-block;
+    width: 13px;
+    height: 20px;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+    text-align: center;
+    color: var(--link);
+    vertical-align: middle;
+    border: none !important;
+    background-image: url(../../../../images/amzn-sprite-8.png);
+    background-position: -79px -208px;
+    background-color: transparent;
+    background-size: 158px auto;
+    cursor: pointer;
+}
+.mini__carousel .carousel-control-next-icon {
+    background-position: -92px -208px;
+}

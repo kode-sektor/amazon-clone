@@ -17,6 +17,51 @@ code {
     background-image: url('./images/amzn-sprite-2.png');
 }
 
+.prime .carousel.slide {
+    max-height: none !important;
+    height: auto !important;
+}
+.miniSlider {
+
+}
+.carousel-cardText {
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: var(--blue-7);
+}
+.prime__carousel .carousel-caption h3 {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+.carousel-cardHeadline {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.carousel-cardBody {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.carousel-link {
+    font-size: 18px;
+    color: var(--blue-8) !important;
+}
+.sprite.small-arrow {
+    margin: 0 6px;
+    width: 6px;
+    height: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -6px -233px;
+    background-image: url(../images/amzn-sprite-8.png);
+    background-size: 158px auto;
+}
 
 .navCart__wrap .a__section {
     max-width: none;
@@ -71,10 +116,10 @@ code {
     margin-right: .5em;
 }
 .tab-pane .stretch {
-    border-left: 1px solid var(--grey-tone-35);
-    border-top: 1px solid var(--grey-tone-35);
     min-width: 842px;
     max-width: 3840px;
+    border-left: 1px solid var(--grey-tone-35);
+    border-top: 1px solid var(--grey-tone-35);
     margin-bottom: 22px;
 }
 .tab-pane.stretch .card__holder {
@@ -225,25 +270,23 @@ code {
     margin-top: 0;
     margin-bottom: 2px;
 }
-
 .a__cardui {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #FFF;
     overflow: auto;
     padding: 20px 0 15px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--white);
 }
 .navCart__active {
     overflow: visible;
 }
 .a__cardui .a__cardui__body {
-    padding: 0 20px;
     position: relative;
+    padding: 0 20px;
 }
 .a__cardui .a__cardui__body:last-child {
     padding-bottom: 5px;
 }
-
 .productDropdown {
     position: absolute;
     z-index: 299;
@@ -260,9 +303,45 @@ code {
 }
 .a__popover__content {
     position: relative;
-    margin-top: -21px;
     width: 300px;
+    margin-top: -21px;
 }
 .productDropdown__img {
     margin-right: 5px;
+}
+
+.cancel__anytime {
+    max-width: 440px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.header__links {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+.header__links li {
+    list-style: none;
+}
+.header__links li a {
+    color: var(--white);
+    text-decoration: underline;
+}
+.see__more {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 34px;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.white__arrow__small {
+    display: inline-block;
+    width: 6px;
+    height: 9px;
+    margin: 0 3px 0 6px;
+    vertical-align: middle;
+    color: var(--white);
+    background-position: 0 -233px;
+    background-image: url(../images/amzn-sprite-8.png);
+    background-size: 158px auto;
 }

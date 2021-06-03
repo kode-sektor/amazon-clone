@@ -122,38 +122,40 @@ const Home = (props) => {
     return (
         <Layout>
             <Slider 
-                items={[
-                    {
-                        href: '/',
-                        src: hero_slider_1,
-                        altText: "Slide 1",
-                        caption: "Slide 1"
-                    },
-                    {
-                        href: '/',
-                        src: hero_slider_2,
-                        altText: "Slide 2",
-                        caption: "Slide 2"
-                    },
-                    {
-                        href: '/',
-                        src: hero_slider_3,
-                        altText: "Slide 3",
-                        caption: "Slide 3"
-                    },
-                    {
-                        href: '/',
-                        src: hero_slider_4,
-                        altText: "Slide 4",
-                        caption: "Slide 4"
-                    },
-                    {
-                        href: '/',
-                        src: hero_slider_5,
-                        altText: "Slide 5",
-                        caption: "Slide 5"
-                    }
-                ]}
+                items={
+                    [
+                        {
+                            href: '/',
+                            src: hero_slider_1,
+                            altText: "Slide 1",
+                            caption: "Slide 1"
+                        },
+                        {
+                            href: '/',
+                            src: hero_slider_2,
+                            altText: "Slide 2",
+                            caption: "Slide 2"
+                        },
+                        {
+                            href: '/',
+                            src: hero_slider_3,
+                            altText: "Slide 3",
+                            caption: "Slide 3"
+                        },
+                        {
+                            href: '/',
+                            src: hero_slider_4,
+                            altText: "Slide 4",
+                            caption: "Slide 4"
+                        },
+                        {
+                            href: '/',
+                            src: hero_slider_5,
+                            altText: "Slide 5",
+                            caption: "Slide 5"
+                        }
+                    ]
+                }
             />
             <section className="sub__layout">
                 <section className="sub__layout__card">

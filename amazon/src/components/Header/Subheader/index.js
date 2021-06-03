@@ -53,33 +53,33 @@ const Subheader = (props) => {
             <Navbar expand="md" className="nav__main__menu">
                 <Nav className="mr-auto" navbar>
                     <NavItem>
-                        <UncontrolledDropdown onMouseOver={primedropdownEnter} onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} toggle={primedropdown} nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Prime
+                        <NavLink href="order-history?buy-again=true">Buy Again</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <UncontrolledDropdown onMouseOver={primedropdownEnter} onMouseLeave={primedropdownLeave} isOpen={primedropdownOpen} nav inNavbar>
+                            <DropdownToggle nav caret tag="button">
+                                <Link to="/prime" style={{color: "var(--white)"}}>Prime</Link>
                             </DropdownToggle>
                             <DropdownMenu left className="nav__main__prime">
-                                <div class="nav__arrow null" style={{ left: "48.1094px" }}>
-                                    <div class="nav__arrow__inner"></div>
+                                <div className="nav__arrow null" style={{ left: "48.1094px" }}>
+                                    <div className="nav__arrow__inner"></div>
                                 </div>
                                 <section className="nav__main__prime__inner">
                                     <div className="nav__main__prime__img">
-                                        <div class="nav__main__prime__logo">
-                                            <img src={primeLogo} alt="prime logo" />
+                                        <div className="nav__main__prime__logo">
+                                            <img src={primeLogo} alt="prime logo"/>
                                         </div>
-                                        <p class="nav__main__prime__content__copy">Get fast, free shipping on millions of items</p>
-                                        <div class="nav__main__prime__button__try">
+                                        <p className="nav__main__prime__content__copy">Get fast, free shipping on millions of items</p>
+                                        <div className="nav__main__prime__button__try">
                                             <a href="/prime">Get Started</a>
                                         </div>
-                                        <div class="nav__main__prime__bottom__img">
+                                        <div className="nav__main__prime__bottom__img">
                                             <img src={primeMarketing} alt="prime marketing" />
                                         </div>
                                     </div>
                                 </section>
                             </DropdownMenu>
                         </UncontrolledDropdown>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="order-history?buy-again=true">Buy Again</NavLink>
                     </NavItem>
                     { renderMenu() }
                 </Nav>

@@ -69,6 +69,8 @@ file rather than small ones. Your choice
 
 9. LAYOUT & NAVIGATION
 
+10. ANIMATION
+
 
 . FREESTYLES
 	-bevel text-shadow
@@ -138,6 +140,9 @@ file rather than small ones. Your choice
     --green-2: #008000;
     --green-3: #007600;
     --green-4: #067D62;
+    --green-5: #284d40;
+
+    --brown: #ff6138;
 
 
 	--blue: #004b91;
@@ -145,6 +150,9 @@ file rather than small ones. Your choice
 	--blue-3: #485769;
 	--blue-4: #131a22;
 	--blue-5: #3f6998;
+    --blue-6: #0079b4;
+    --blue-7: #00A8E1;
+    --blue-8: #002F36;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -182,6 +190,11 @@ file rather than small ones. Your choice
     --link: #007BFF;
 	--link-hover: #d9534f;
 	--a: #c7511f;
+
+    --link-2: #0066C0;
+	--mainlink: #007185;
+	--mainlinkhover: #c7511f;
+	--mainlinkfocus: #008299;
   
 	--color: #0F1111;
 	--color-2 : #111;
@@ -239,16 +252,12 @@ file rather than small ones. Your choice
 	--grey-tone-43: #5b626a;
 	--grey-tone-44: #72787f;
 	--grey-tone-45: #f6f6f6;
+	--grey-tone-46: #002552;
 	
     --black: #000;
     --white: #fff;
   
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-	
-	--link: #0066C0;
-	--mainlink: #007185;
-	--mainlinkhover: #c7511f;
-	--mainlinkfocus: #008299;
 
   	/*font-size: 62.5%; make rem units base on 10*/
 
@@ -608,6 +617,38 @@ a:hover, .a__color__button__link:hover {
 .a__button__cart {
     background-color: var(--ochre-27);
     border-color: var(--ochre-28);
+}
+.prime__cta__signup__button {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px !important;
+    border-color: var(--brown);
+    min-width: 360px;
+    background: var(--ochre-21);
+    position: relative;
+}
+.prime__cta__signup__button .a__button__inner {
+    height: 52px;
+    background: none;
+    border-radius: 2px;
+    box-shadow: none;
+}
+.prime__emergencyCtaJoin .a__button__inner {
+    height: 44px;
+}
+.prime__cta__signup__button .a__button__inner .a__button__text {
+    white-space: normal;
+    line-height: 52px;
+    font-weight: bold;
+    color: var(--green-5);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 0 30px 0 31px;
+}
+.prime__emergencyCtaJoin .a__button__inner .a__button__text {
+    line-height: 44px;
+    font-size: 16px;
+    padding: 0 25px 0 25px;
 }
 .a__button__white {
     background-color: transparent;
@@ -1417,7 +1458,6 @@ ul {
     left: 18px;
     top: 14px;
     background-image: url(../images/amzn-sprite-5.png);
-    -webkit-background-size: 512px 256px;
     background-size: 512px 256px;
     background-repeat: no-repeat;
 }
@@ -1479,6 +1519,38 @@ ul {
     width: 10px;
     height: 9px;
     background-position: -297px -5px;
+}
+.plan__expander__icon {
+    margin: auto;
+    height: 18px;
+    width: 30px;
+}
+
+/*Close button*/
+.primeSticky__closeSprite {
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-image: url(../../images/amzn-sprite-8.png);
+    background-size: 158px auto;
+    background-position: -55px -242px;
+}
+
+/*9. LAYOUT & NAVIGATION
+==============================================================================================================================================================*/
+
+/*10. ANIMATION
+==============================================================================================================================================================*/
+
+@keyframes slideInDown {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
 }
 
 /*FREESTYLES

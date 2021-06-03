@@ -1,0 +1,61 @@
+.prime__benefit {
+    margin-right: 50%;
+    width: 500px;
+    color: var(--white);
+}
+.prime__benefit.delivery {
+    color: var(--white);
+}
+.prime__benefit.video, .prime__benefit.music, .prime__benefit.reading {
+    width: auto;
+    margin-right: 0;
+    color: var(--blue-8);
+}
+.prime__benefit.video .prime__benefitHeadline {
+    width: 580px;
+}
+.prime__benefit.video .prime__benefitBlurb {
+    width: 500px;
+}
+.prime__benefit.delivery a, .prime__benefit.delivery a:link, 
+.prime__benefit.delivery a:visited {
+    color: var(--white);
+}
+.prime__benefit.video a, .prime__benefit.video a:link, 
+.prime__benefit.video a:visited,
+.prime__benefit.music a, .prime__benefit.music a:link, 
+.prime__benefit.music a:visited,
+.prime__benefit.reading a, .prime__benefit.reading a:link, 
+.prime__benefit.reading a:visited {
+    color: var(--blue-8);
+}
+.prime__benefit .a__link__normal {
+    text-transform: capitalize;
+}
+.prime__benefit.delivery .sprite.small-arrow {
+    background-position: 0px -233px;
+}
+.prime__benefit.video .sprite.small-arrow {
+    background-position: -6px -233px;
+}
+.prime__benefitHeadline {
+    width: 500px;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 48px;
+    font-size: 48px;
+    font-weight: 300;
+}
+.prime__benefitBlurb {
+    width: 420px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.prime__benefit__cta {
+    font-size: 18px;
+}
+.prime__exclAcess {
+    flex: 0 0 580px;
+}

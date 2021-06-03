@@ -68,6 +68,8 @@
 }
 .nav__main__prime {
     width: 310px;
+    margin: -2px 0 0 -2px;
+    padding: 14px 14px 7px 14px;
     white-space: pre-wrap;
     box-sizing: content-box;
 }

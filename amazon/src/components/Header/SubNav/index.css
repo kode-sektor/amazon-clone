@@ -13,6 +13,7 @@
 }
 .subNav > li > a {
     position: relative;
+    display: block;
     height: 31px;
     line-height: 33px;
     color: var(--grey-tone-14);

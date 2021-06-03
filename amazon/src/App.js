@@ -6,6 +6,7 @@ import CustomerPreferences from "./pages/CustomerPreferences"
 import YourAccount from "./pages/YourAccount"
 import OrderHistory from "./pages/OrderHistory"
 import NavCart from "./pages/NavCart"
+import Prime from "./pages/Prime"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/your-account" component={YourAccount}/> 
                     <Route path="/order-history" component={OrderHistory}/> 
                     <Route path="/nav-cart" component={NavCart}/> 
+                    <Route path="/prime" component={Prime}/> 
                 </Switch>
             </Router>
         </div>

@@ -167,5 +167,16 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
     }
 }
 
-export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, 
+const JoinPrimeBtn = () => (
+    <span className="a__button a__button__primary prime__cta__signup__button">
+        <span className="a__button__inner">
+            <input className="a__button__input" type="submit" aria-labelledby="prime-header-CTA-announce"/>
+            <span className="a__button__text">
+                Join Prime
+            </span>
+        </span>
+    </span>
+)
+
+export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary}

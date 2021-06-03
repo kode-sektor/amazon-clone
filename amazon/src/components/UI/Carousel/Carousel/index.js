@@ -1,17 +1,15 @@
 import React, { useState } from "react"
-
 import { Link } from 'react-router-dom'
 
-import { Carousel, CarouselItem, CarouselControl, CarouselCaption
+import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
-
 import { PrimaryBtn, CartBtnSmall } from '../../Button'
 
 import './index.css'
 
 
-const Slider = ({type, count, items, carouselClass, price, category, 
-	date, cartBtnSmall, addToCart=false}) => {
+const Slider = ({type, count, items, carouselClass, carouselPanel, 
+	price, category, date, cartBtnSmall, interval=5000, addToCart=false}) => {
 
 	let itemLength = items.length
 
@@ -41,10 +39,10 @@ const Slider = ({type, count, items, carouselClass, price, category,
 		setActiveIndex(nextIndex);
 	};
 
-	// const goToIndex = (newIndex) => {
-	// 	if (animating) return;
-	// 	setActiveIndex(newIndex);
-	// };
+	const goToIndex = (newIndex) => {
+		if (animating) return;
+		setActiveIndex(newIndex);
+	};
 	
 	const slide = () => {
 
@@ -61,9 +59,9 @@ const Slider = ({type, count, items, carouselClass, price, category,
 						/*create room for 'Add to Cart' button for Orders page*/
 						<li className={addToCart && 'order__slider'}>
 							<figure>
-								<a key={index} href={item.href}>
+								<Link key={index} to={item.href}>
 									<img src={item.src} alt={item.altText} />
-								</a>
+								</Link>
 								<figcaption>
 									{item.caption ? 
 										(
@@ -111,7 +109,9 @@ const Slider = ({type, count, items, carouselClass, price, category,
 							{ addToCart && (
 								<PrimaryBtn
 									mTop={"mt-auto"}
-									text={item.buyingOptions ? "See buying options" : item.similarItems ? "Similar items" : "Add to Cart" }
+									text={
+										item.buyingOptions ? "See buying options" : item.similarItems ? "Similar items" : "Add to Cart" 
+									}
 								/>
 							)}
 						</li>
@@ -136,8 +136,38 @@ const Slider = ({type, count, items, carouselClass, price, category,
 				}
 			})
 
+		} else if (type === "prime") {
+			slides = items.map((item, index) => {
+				return (
+					<CarouselItem
+						className={carouselClass ? `${carouselClass} ${item.carouselStyle}` : ""}
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={index}
+					>
+						<CarouselCaption
+							captionHeader={<span className="carousel-cardText">{item.heading}</span>}
+							captionText={item.tag}
+						/>
+					</CarouselItem>
+				)
+			})
+		} else if (type === "mini") {
+			slides = items.map((item, index) => {
+				return (
+					<CarouselItem
+						className={carouselClass ? `${carouselClass} ${item.carouselStyle}` : ""}
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={index}
+					>
+						<Link to={item.href}>
+							<img src={item.src} alt={item.altText} />
+						</Link>
+					</CarouselItem>
+				)
+			})
 		} else {
-			
 			slides = items.map((item) => {
 				return (
 					<CarouselItem
@@ -146,15 +176,15 @@ const Slider = ({type, count, items, carouselClass, price, category,
 						onExited={() => setAnimating(false)}
 						key={item.src}
 					>
-						<a href={item.href}>
+						<Link to={item.href}>
 							<img src={item.src} alt={item.altText} />
-						</a>
+						</Link>
 						<CarouselCaption
 							captionText={item.caption}
 							captionHeader={item.caption}
 						/>
 					</CarouselItem>
-				);
+				)
 			})
 		}
 
@@ -167,17 +197,22 @@ const Slider = ({type, count, items, carouselClass, price, category,
 			activeIndex={activeIndex} 
 			next={next} 
 			previous={previous}
-			interval={false}
+			interval={interval}
 		>
+			{type === "prime" && // Carousel indicators should show for only prime slider
+				(
+					<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+				)
+			}
 			{slide()}
 			<CarouselControl
-				className={`${carouselClass}__control`}
+				className={carouselClass && (`${carouselClass}__control`)}
 				direction="prev"
 				directionText="Previous"
 				onClickHandler={previous}
 			/>
 			<CarouselControl
-				className={`${carouselClass}__control`}
+				className={carouselClass && (`${carouselClass}__control`)}
 				direction="next"
 				directionText="Next"
 				onClickHandler={next}
