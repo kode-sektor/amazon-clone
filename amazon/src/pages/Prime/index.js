@@ -30,6 +30,9 @@ import './index.css'
 const Prime = () => {
 
     const [isSticky, setIsSticky] = useState(false)
+    const [slide, setSlide] = useState("")
+
+    const slideUp = () => (slide === "slideUp" || slide === "") ? setSlide("slideDown") : setSlide("slideUp")
 
     function JoinPrimeDropdown ({ children, sticky=false, className="", ...rest }) {
 
@@ -57,32 +60,34 @@ const Prime = () => {
                 {children}
             </section>
         )
-
     }
 
     return (
         <Layout>
-            <PrimeDropdown />
-            <div className={`prime__emergencyHeader ${isSticky ? "isSticky" : ""}`}>
-                <section className="prime__emergencyLogo">
-                    <img src="https://m.media-amazon.com/images/G/15/marketing/prime/detail_page/StickyNav_01_PrimeLogo_156x70._CB485945464_.svg" className="sticky-nav-prime-logo"/>                
-                </section>
-                <div className="prime__seeMore align-self-end">
-                    <div className="prime__emergencyMembership">See more plans</div>
-                    <Dropdown>
-                        <DropdownToggle>
+            <section className={`primeTop ${slide}`}>
+                <PrimeDropdown
+                    slide={slide}
+                    slideUp={slideUp}
+                />
+                <div className={`prime__emergencyHeader ${isSticky ? "isSticky" : ""}`}>
+                    <section className="prime__emergencyLogo">
+                        <img src="https://m.media-amazon.com/images/G/15/marketing/prime/detail_page/StickyNav_01_PrimeLogo_156x70._CB485945464_.svg" className="sticky-nav-prime-logo"/>                
+                    </section>
+                    <div className="prime__seeMore align-self-end">
+                        <div className="prime__emergencyMembership">See more plans</div>
+                        <div className="text-center" onClick={slideUp}>
                             <div className="plan__expander__icon">
                                 <img src="https://m.media-amazon.com/images/G/15/marketing/prime/detail_page/StickyNav_02_DownArrow_50x30._CB485936756_.svg"/>
                             </div>
-                        </DropdownToggle>
-                    </Dropdown>
+                        </div>
+                    </div>
+                    <section className="prime__emergencyCtaJoin d-flex align-items-center">
+                        <form action="/" method="post" className="prime__joinfrm d-flex justify-content-center mb-0">
+                            <JoinPrimeBtn/>
+                        </form>
+                    </section>
                 </div>
-                <section className="prime__emergencyCtaJoin d-flex align-items-center">
-                    <form action="/" method="post" className="prime__joinfrm d-flex justify-content-center mb-0">
-                        <JoinPrimeBtn/>
-                    </form>
-                </section>
-            </div>
+            </section>
             <section className="prime a__container px-0 py-0">
                 <section className="prime__detail">
                     <section className="prime__emergency">

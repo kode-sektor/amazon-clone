@@ -1,8 +1,34 @@
-.primeSticky {
+.primeTop {
     position: fixed;
+    top: calc(-100% + 115px);
     width: 100%;
-    z-index: 10000;
-    top: 0;
+    z-index: 100;
+    border-bottom: var(--blue-7);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    font-family: 'Amazon Ember', Tahoma, sans-serif;
+}
+.primeTop.slideUp {
+    animation: slideUp .75s 0s forwards ease;
+}
+.primeTop.slideDown {
+    animation: slideDown .75s 0s forwards ease;
+}
+@keyframes slideUp {
+    from {
+        top: 0%;
+    }
+    to {
+        top: calc(-100% + 115px);
+    }
+}
+@keyframes slideDown {
+    from {
+        top: calc(-100% + 115px);
+    }
+    to {
+        top: 0%;
+    }
 }
 .primeSticky__card {
     position: relative;
@@ -17,7 +43,6 @@
 }
 .primeSticky__close {
     display: block;
-    border: 2px solid cyan;
 }
 .primeSticky__cardHeader {
     position: relative;
@@ -26,7 +51,6 @@
     justify-content: left;
     width: 1000px;
     margin: 0 auto;
-    border: 2px solid magenta;
 }
 .primeSticky__primeLogo {
     margin-right: 50px;
@@ -41,10 +65,10 @@
     display: inline-block;
     height: 3em;
     max-width: 350px;
-    line-height: 35px;
     margin-top: 50px;
     margin-left: 35px;
     margin-bottom: 20px;
+    line-height: 35px;
     font-weight: 300;
     font-size: 20pt;
 }
@@ -65,4 +89,139 @@
     cursor: pointer;
     color: var(--blue-8);
     text-decoration: none;
+}
+.primeSticky__cardBody {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+    width: 1050px;
+    margin: 0 auto 50px auto;
+}
+.primeSticky__cardPlans {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.primeSticky__cardAlign {
+    display: flex;
+    flex-direction: column;
+}
+.primeSticky__plan {
+    position: relative;
+    margin: 0px 5px;
+    background: var(--white);
+}
+.primeSticky__primeMonthlyShadow {
+    position: relative;
+    width: 265px;
+    height: 148px;
+    padding-top: 22px;
+    padding-left: 15px;
+    padding-right: 5px;
+    pointer-events: none;
+    border: 2px solid var(--grey-tone-48);
+    z-index: 1;
+    background-color: var(--white);
+    display: block;
+}
+.primeSticky__plan:before, .primeSticky__plan:after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    bottom: 35px;
+    left: 16px;
+    width: 10px;
+    background: var(--grey-tone-47);
+    z-index: 0;
+    box-shadow: 0 -15px 20px 7px var(--grey-tone-47);
+    transform: rotate(-6deg);
+}
+.primeSticky__plan:after {
+    right: 16px;
+    left: auto;
+    transform: rotate(6deg);
+}
+.primeSticky__primeMonthlyCard:checked ~ label .primeSticky__primeMonthlyShadow {
+    border: 2px solid var(--blue-7);
+}
+.primeSticky__cardHeading {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 17px;
+}
+.primeSticky__cardPrice {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 26px;
+}
+.primeSticky__cardAmount {
+    display: inline-block;
+    height: 26px;
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+.primeSticky__cardDuration {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    font-weight: 300;
+    vertical-align: middle;
+}
+.primeSticky__benefits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 190px;
+    padding-left: 35px;
+    margin-left: 25px;
+    font-weight: 200;
+    font-size: 10pt;
+}
+.primeSticky__benefits > ul > li {
+    margin-bottom: 8px;
+    line-height: 18px;
+    text-indent: -41px;
+}
+.primeSticky__benefitsCheck {
+    position: relative;
+    left: 6px;
+    display: inline-block;
+    padding-right: 25px;
+    vertical-align: bottom;
+}
+.primeSticky__benefitsCheck:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 20px;
+    border: solid var(--blue-7);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.primeSticky__trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0 20px 0;
+}
+.primeSticky__buttonString {
+    margin-top: 10px;
+    width: 560px;
+    text-align: center;
+}
+.planSticky__close {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    color: var(--grey-tone-37);
+    background-color: var(--white);
 }

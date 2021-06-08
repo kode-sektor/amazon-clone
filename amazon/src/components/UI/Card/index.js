@@ -232,4 +232,26 @@ const CardVideo = ({title, img, slug }) => {
     )
 }
 
-export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardVideo }
+const CardPrime = ({heading, price, duration, note, checked, select, primeSelect, primeID}) => {
+    return (
+        <section className={`primeSticky__cardAlign ${primeSelect}`}>
+            <input type="radio" id="primeSticky__primeMonthlyCard" className="primeSticky__primeMonthlyCard d-none" name="primeSticky__primeMonthly__card" value="0" checked={checked}/>
+            <label for="primeSticky__primeMonthlyCard" className="primeSticky__plan" 
+                onClick={select} id={`prime-${primeID}`}>
+                <div className="primeSticky__primeMonthlyShadow">
+                    <div className="primeSticky__cardHeading">{heading}</div>
+                    <div className="primeSticky__cardPrice">
+                        <div className="primeSticky__cardAmount">CDN$ {price}</div>
+                        <div className="primeSticky__cardDuration">/{duration}</div>
+                    </div>
+                    <div className="plan-equivalent-price">
+                        {note}
+                    </div>
+                </div>
+            </label>
+            <div class="amzn__prime__radio"></div>
+        </section>
+    )
+}
+
+export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardVideo, CardPrime }

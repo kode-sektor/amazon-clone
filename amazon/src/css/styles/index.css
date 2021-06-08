@@ -253,6 +253,9 @@ file rather than small ones. Your choice
 	--grey-tone-44: #72787f;
 	--grey-tone-45: #f6f6f6;
 	--grey-tone-46: #002552;
+    --grey-tone-47: #222;
+    --grey-tone-48: #aaaaaa;
+
 	
     --black: #000;
     --white: #fff;
@@ -784,7 +787,7 @@ input:required, input[required] {
 input:focus:invalid {
 	background-image: url();
 }
-input:focus:valid{
+input:focus:valid {
 	background-image: url();
 }
 input[required]:invalid, input[pattern]:invalid {
@@ -793,7 +796,9 @@ input[required]:invalid, input[pattern]:invalid {
 input[required]:valid, input[pattern]:valid {
 	/border-color: #0B9900;
 }
-
+label {
+    margin-bottom: 0;
+}
 /*input[type="text"]:focus{
 	box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
 }
@@ -826,6 +831,15 @@ input[required]:after{
 .a__icon {
     display: inline-block;
     vertical-align: top;
+}
+.a__icon__section__collapse, .a__icon__section__expand {
+    position: relative;
+    width: 15px;
+    height: 12px;
+    opacity: .64;
+}
+.a__icon__section__collapse {
+    background-position: -5px -82px;
 }
 .a__addon__badge, .a__icon__addon {
     position: relative;
@@ -1053,6 +1067,37 @@ ul {
 }
 .amzn__icon__radio.checked {
 	background-position: -416px -10px !important;
+}
+.amzn__prime__radio {
+    position: relative;
+    display: block;
+    top: -127px;
+    height: 25px;
+    width: 25px;
+    left: 230px;
+    background-color: var(--white);
+    border: 2px solid var(--grey-tone-48);
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+.amzn__prime__radio:before {
+    display: block;
+    position: relative;
+    content: '';
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    height: 13px;
+    width: 13px;
+    top: 4px;
+    left: 4px;
+    background-color: var(--white);
+    bottom: 4px;
+    right: 4px;
+}
+.primeSticky__primeMonthlyCard:checked ~ .amzn__prime__radio:before {
+    background-color: var(--blue-7);
 }
 /* .icp__radio {
     position: relative;
@@ -1536,6 +1581,16 @@ ul {
     background-image: url(../../images/amzn-sprite-8.png);
     background-size: 158px auto;
     background-position: -55px -242px;
+}
+.icon__slideUp {
+    display: inline-block;
+    flex: 0 0 320px;
+    align-self: flex-end;
+    width: 320px;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 14pt;
+    font-weight: 300;
 }
 
 /*9. LAYOUT & NAVIGATION

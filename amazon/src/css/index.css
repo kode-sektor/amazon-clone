@@ -345,3 +345,20 @@ code {
     background-image: url(../images/amzn-sprite-8.png);
     background-size: 158px auto;
 }
+
+.primeSticky .prime__cta__signup__button {
+    min-width: 320px;
+}
+.primeSticky .prime__cta__signup__button .a__button__inner {
+    height: 44px;
+}
+.prime__seeMore .dropdown button {
+    background-color: transparent;
+    border-color: transparent;
+}
+.primeSticky .prime__cta__signup__button .a__button__inner .a__button__text {
+    line-height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 25px 0 25px;
+}

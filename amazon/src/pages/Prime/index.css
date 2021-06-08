@@ -294,11 +294,10 @@
     border-bottom-style: solid;
 }
 .prime__emergencyHeader {
-    position: fixed;
     display: none;
-    top: 0;
+    /* top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
@@ -312,7 +311,31 @@
 }
 .prime__emergencyHeader.isSticky {
     display: flex;
+    /* animation: primeHeaderSlideUp 1s 0s forwards ease;  */
 }
+.slideDown .isSticky {
+    display: none;
+}
+/* .slideDown ~ .isSticky {
+    top: 541px;
+    animation: primeHeaderSlideDown 1s 0s forwards ease; 
+}
+@keyframes primeHeaderSlideUp {
+    from {
+        top: 541px;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes primeHeaderSlideDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: 541px;
+    }
+} */
 .prime__emergencyLogo {
     display: flex;
     flex: 0 0 320px;
