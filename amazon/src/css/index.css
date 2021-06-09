@@ -361,4 +361,37 @@ code {
     font-weight: 700;
     font-size: 16px;
     padding: 0 25px 0 25px;
+} 
+
+.coupon__popover .a__ordered__list, .coupon__popover ol {
+    margin: 0 0 0 20px;
+    color: #0F1111;
+}
+.coupon__popover .a__ordered__list, .coupon__popover .a__unordered__list, 
+.coupon__popover ol, .coupon__popover ul {
+    padding: 0;
+}
+.coupon__popover .a__ordered__list li, .coupon__popover ol li {
+    list-style: decimal;
+}
+.coupon__popover .a__ordered__list li, .coupon__popover .a__unordered__list li, 
+.coupon__popover.coupon__popover ol li, .coupon__popover ul li {
+    word-wrap: break-word;
+    margin: 0;
+}
+.coupon__popover .a__unordered__list, .coupon__popover ul {
+    margin: 0 0 0 18px;
+    color: #0F1111;
+}
+.coupon__popover .a__ordered__list, .a__unordered__list, 
+.coupon__popover ol, .coupon__popover ul {
+    padding: 0;
+}
+.coupon__popover .a__unordered__list li, .coupon__popover ul li {
+    list-style: disc;
+}
+.coupon__popover .a__ordered__list li, .coupon__popover .a__unordered__list li, 
+.coupon__popover ol li, .coupon__popover ul li {
+    word-wrap: break-word;
+    margin: 0;
 }

@@ -1,0 +1,113 @@
+.coupon {
+    position: relative;
+    height: 95px;
+    width: 100%;
+    min-width: 850px;
+    padding-top: 15px;
+    background-color: #F6F6F6;
+    border: 2px solid red;
+}
+.coupon__barText {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+.coupon__columnTxt {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+    text-align: left;
+    cursor: pointer;
+}
+.coupon__barColumnTxt {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    max-width: 450px;
+    margin-top: 0.5em;
+    margin-left: 2em;
+    margin-right: 1.0em;
+    text-align: left;
+    zoom: 1;
+    border: 2px solid brown;
+}
+.coupon__barColumnTxt .dropdown {
+    display: inline;
+}
+.coupon__barColumnTxt .nav-link {
+    display: inline;
+    padding: 0;
+}
+.coupon__popover {
+    position: fixed;
+    padding: 8px;
+    top: 20px;
+    left: 421px;
+    z-index: 299;
+    width: 576px;
+    font-size: 13px;
+    max-width: none;
+    opacity: 1;
+}
+.coupon__popoverHeading {
+    width: 100%;
+    padding: 0 3px 0 0;
+    margin-bottom: 18px;
+    font-size: 13px;
+    color: var(--white);
+    background-color: var(--ochre-26);
+}
+.coupon__terms {
+    position: relative;
+    padding-bottom: 40px;
+}
+.coupon__terms:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    z-index: 10;
+    background-color: var(--ochre-26)
+}
+.coupon__subscribe {
+    flex: 0 0 200px;
+    width: 200px!important;
+    padding-right: 6px;
+    padding-bottom: 18px;
+    border-right: 2px solid var(--grey-tone-24);
+    word-break: break-word;
+}
+.coupon__apBrowseHeading {
+    font-weight: normal;
+    font-size: 225%;
+    color: var(--ochre-5);
+    letter-spacing: -0.03em;
+    margin: 0;
+}
+.coupon__paraText {
+    padding: 0;
+    font-size: 90%;
+    color: var(--grey-tone-49);
+    margin: 0;
+}
+.coupon__paraText a, .coupon__paraText a:active, 
+.coupon__paraText a:link, .coupon__paraText a:visited {
+    text-decoration: underline;
+}
+.coupon__shoveler {
+    background-color: var(--white);
+}
+.coupon__shovelerHeading {
+    height: 40px;
+}
+.coupon__shovelerHeadingTxt {
+    padding-right: 10px;
+    text-align: left;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+.coupon__shovelerSort {
+    padding: 3px;
+}

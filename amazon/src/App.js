@@ -7,6 +7,7 @@ import YourAccount from "./pages/YourAccount"
 import OrderHistory from "./pages/OrderHistory"
 import NavCart from "./pages/NavCart"
 import Prime from "./pages/Prime"
+import Coupon from "./pages/Coupon"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/order-history" component={OrderHistory}/> 
                     <Route path="/nav-cart" component={NavCart}/> 
                     <Route path="/prime" component={Prime}/> 
+                    <Route path="/coupons" component={Coupon}/> 
                 </Switch>
             </Router>
         </div>

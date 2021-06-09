@@ -1,10 +1,10 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
+
+import { BtnPrimary } from '../../UI/Button'
 
 import './index.css'
 
-import { BtnPrimary } from '../../UI/Button'
 
 const AccountMenu = () => {
     return (

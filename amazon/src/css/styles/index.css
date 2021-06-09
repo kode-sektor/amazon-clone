@@ -255,6 +255,7 @@ file rather than small ones. Your choice
 	--grey-tone-46: #002552;
     --grey-tone-47: #222;
     --grey-tone-48: #aaaaaa;
+    --grey-tone-49: #888888;
 
 	
     --black: #000;
@@ -388,6 +389,7 @@ a:focus {
     text-decoration: none;
     outline: 5px auto var(--mainlinkfocus);
 }
+/*a__color__link is the alternative*/
 .a__color__button__link {
     text-decoration: none;
     color: var(--mainlink) !important;
@@ -1016,7 +1018,6 @@ optgroup:not(:last-child) {
 ul {
 	margin-bottom: 0;
 }
-
 
 /*6. MORE SPECIFIC (like form h2 {}, )
 ==============================================================================================================================================================*/
