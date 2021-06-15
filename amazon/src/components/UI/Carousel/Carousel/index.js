@@ -129,6 +129,7 @@ const Slider = ({type, count, items, carouselClass, carouselPanel,
 									onExited={() => setAnimating(false)}
 									key={index}
 								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
 									<ul className={`${carouselClass}__cards`}>{tempCarousel}</ul>
 								</CarouselItem>
 					]
@@ -167,7 +168,78 @@ const Slider = ({type, count, items, carouselClass, carouselPanel,
 					</CarouselItem>
 				)
 			})
-		} else {
+		} else if (type === "coupon") {
+
+			items.forEach((item, index) => {
+				tempCarousel = [
+					...tempCarousel,
+					(
+						/*create room for 'Add to Cart' button for Orders page*/
+						<li className={addToCart && 'order__slider'}>
+							<section className="coupon__slideBox">
+								<figure className="coupon__slideImg">
+									<Link to={item.href} className="a__size__base">
+										<img alt={item.altText} src={item.src} />
+									</Link>
+								</figure>
+								{item.save && (<span className="coupon__itemPrice a__color__success a__size__medium font-weight-bold d-block">Save ${item.save}</span>)}
+								<section className="coupon__itemTitle">
+									<Link to={item.href} className="coupon__titleText a__size__base" title={item.caption}>
+										{item.caption}
+									</Link>
+								</section>
+								<PrimaryBtn 
+									text={"Clip Coupon"}
+								/>
+							</section>
+						</li>
+					)
+				]
+				
+				// Only wrap with <Carousel> once the number of multiple images reaches. 
+				// In this case (6). Or wrap on last cycle. That makes one screen-wide slider.
+				if ((((index + 1) % count) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
+								<CarouselItem
+									className={carouselClass ? carouselClass : ""}
+									onExiting={() => setAnimating(true)}
+									onExited={() => setAnimating(false)}
+									key={index}
+								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
+									<ul className={`${carouselClass}__cards`}>{tempCarousel}</ul>
+								</CarouselItem>
+					]
+					tempCarousel = []
+				}
+			})
+
+
+
+
+			// slides = items.map((item) => {
+			// 	return (
+			// 		<CarouselItem
+			// 			className={carouselClass ? carouselClass : ""}
+			// 			onExiting={() => setAnimating(true)}
+			// 			onExited={() => setAnimating(false)}
+			// 			key={item.src}
+			// 		>
+			// 			{/* <Link to={item.href}>
+			// 				<img src={item.src} alt={item.altText} />
+			// 			</Link> */}
+						
+			// 			{item.save && (<span className="a__color__price d-block">$269.99</span>)}
+			// 			<CarouselCaption
+			// 				captionText={item.caption}
+			// 				captionHeader={item.caption}
+			// 			/>
+			// 		</CarouselItem>
+			// 	)
+			// })
+		}
+		else {
 			slides = items.map((item) => {
 				return (
 					<CarouselItem

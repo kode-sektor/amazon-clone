@@ -77,7 +77,8 @@
 }
 .amzn__carousel__cards {
     position: relative;
-    display: block;
+    /* display: block; */
+    display: flex;
     margin: 0 0 14px;
     padding: 0;
 }
@@ -172,7 +173,8 @@
     -webkit-user-select: none;
     transition: opacity 1s;
 }
-.carousel__detailed .amzn__carousel__control {
+.carousel__detailed .amzn__carousel__control, 
+.coupon__shoveler .amzn__carousel__control {
     display: inline-block;
     top: 130px;
     bottom: auto;
@@ -227,7 +229,9 @@
     transform: none;
 }
 .carousel__detailed .amzn__carousel__control .carousel-control-prev-icon,
-.carousel__detailed .amzn__carousel__control .carousel-control-next-icon {
+.carousel__detailed .amzn__carousel__control .carousel-control-next-icon,
+.coupon__shoveler .amzn__carousel__control .carousel-control-prev-icon,
+.coupon__shoveler .amzn__carousel__control .carousel-control-next-icon {
     top: auto;
     left: auto;
     height: 15px;
@@ -242,7 +246,8 @@
     background-repeat: no-repeat;
     transform: none;
 }
-.carousel__detailed .amzn__carousel__control .carousel-control-next-icon {
+.carousel__detailed .amzn__carousel__control .carousel-control-next-icon,
+.coupon__shoveler .amzn__carousel__control .carousel-control-next-icon {
     background-position: -105px -7px;
 }
 .secondary__slider:hover .amzn__carousel__control {

@@ -80,6 +80,9 @@
     border-right: 2px solid var(--grey-tone-24);
     word-break: break-word;
 }
+.coupon__apBrowse {
+    padding-left: 12px;
+}
 .coupon__apBrowseHeading {
     font-weight: normal;
     font-size: 225%;
@@ -98,16 +101,33 @@
     text-decoration: underline;
 }
 .coupon__shoveler {
-    background-color: var(--white);
+    /* background-color: var(--white); */
 }
 .coupon__shovelerHeading {
     height: 40px;
 }
 .coupon__shovelerHeadingTxt {
     padding-right: 10px;
+    font-size: 17px;
+    line-height: 1.255;
     text-align: left;
     font-family: Arial, Verdana, Helvetica, sans-serif;
 }
 .coupon__shovelerSort {
     padding: 3px;
+}
+.coupon__shovelerSort {
+    padding-right: 7px;
+    line-height: 1.4em;
+    font-family: 'ArialMT', 'Arial';
+}
+
+.coupon__box {
+    border: thin solid crimson;
+}
+.coupon__boxHeader {
+    text-align: left;
+    cursor: pointer;
+    vertical-align: middle;
+    border: thin solid cyan;
 }

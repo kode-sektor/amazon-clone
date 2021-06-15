@@ -9,10 +9,24 @@ import './index.css'
 // E:\KAY\Documents\html5\Experiment\NODE\amazon-clone\amazon\src\pages\NavCart\index.js
 const DropdownMenuPrimary = ({optionList, squished=false}) => {
     return (
-        <div className={`popover__panel__panel ${squished? 'mb-0' : 'mt-0' }`}>
+        <div className={`popover__panel__panel ${squished ? 'mb-0' : 'mt-0' }`}>
             <div className="a__button a__button__dropdown">
                 <div className="a__button__inner a__shadow">
-                    <select className="popover__panel__list a__button__text">
+                    <select className={`popover__panel__list a__button__text ${squished ? 'pr-0' : ''}`}>
+                        {optionList}
+                    </select>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const DropdownMenuMini = ({optionList, squished=false}) => {
+    return (
+        <div className={`popover__panel__mini ${squished ? 'mb-0' : 'mt-0' }`}>
+            <div className="a__button a__button__dropdown">
+                <div className="a__button__inner a__shadow">
+                    <select className={`popover__panel__list a__button__text ${squished ? 'pr-0' : ''}`}>
                         {optionList}
                     </select>
                 </div>
@@ -41,4 +55,4 @@ const DropdownMenuCart = ({content, close}) => {
     )
 }
 
-export { DropdownMenuPrimary, DropdownMenuCart }
+export { DropdownMenuPrimary, DropdownMenuCart, DropdownMenuMini }

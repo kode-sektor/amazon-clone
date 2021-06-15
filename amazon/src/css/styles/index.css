@@ -460,6 +460,7 @@ a:hover, .a__color__button__link:hover {
     position: relative;
     overflow: hidden;
     height: 29px;
+    line-height: 19px;
     box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
 	/* border-radius: 7px; */
     border-radius: 2px;
@@ -672,6 +673,9 @@ a:hover, .a__color__button__link:hover {
     border-radius: 7px;
     background: 0 0;
     box-shadow: none;
+}
+.addToCartBtn .a__button {
+    border-radius: 2px !important;
 }
 .add__to__cart .a__button__inner {
     background-color: transparent;
@@ -906,10 +910,10 @@ input[required]:after{
     height: 14px;
     margin: -2px .67375em 0;
     width: 1px;
-    background-color: var(--grey-tone-24);
     line-height: 0;
     vertical-align: middle;
 	background-size: 400px 900px;
+    background-color: var(--grey-tone-24);
     background-image: url(../../images/amzn-sprite-4.png);
     background-repeat: no-repeat;
 }
@@ -1198,15 +1202,22 @@ ul {
 	border-top-color: var(--ochre-4) !important;
 }
 .amzn__prime__badge__icon {
-	font-style: italic;
 	display: inline-block;
+	width: 42px;
+	height: 12px;
+	background-position: -154px -52px;
+	font-style: italic;
 	background-image: url('../images/amzn-sprite-6.png');
 	background-size: 512px 256px;
 	background-repeat: no-repeat;
 	vertical-align: baseline;
-	width: 42px;
-	height: 12px;
-	background-position: -154px -52px;
+}
+.amzn__backArrow {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: bottom;
 }
 
 /*8. HELPER STYLES
@@ -1453,7 +1464,6 @@ ul {
     top: -1px;
     height: 18px;
     width: 18px;
-    -webkit-background-size: 512px 256px;
     background-size: 512px 256px;
     background-repeat: no-repeat;
     background-image: url('../images/amzn-sprite-5.png');

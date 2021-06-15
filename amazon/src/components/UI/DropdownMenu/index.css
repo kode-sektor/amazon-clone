@@ -45,3 +45,22 @@
     border-bottom-color: transparent;
     border-right-color: var(--white);
 }
+.popover__panel__mini {
+    display: inline-block;
+    font-family: "Amazon Ember", Arial,sans-serif;
+}
+.popover__panel__mini .a__button__inner {
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+}
+.popover__panel__mini .a__button {
+    border-radius: 2px !important;
+}
+.popover__panel__mini option {
+    display: block;
+    margin-left: 1px;
+    padding: 2px 12px 1px 13px;
+    line-height: 19px;
+    font-size: 11px;
+}
