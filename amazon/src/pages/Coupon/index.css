@@ -131,3 +131,59 @@
     vertical-align: middle;
     border: thin solid cyan;
 }
+.coupon__grid {
+    padding-top: 16px;
+    text-align: center;
+}
+.coupon__gridSort {
+    color: var(--grey-tone-50);
+}
+.coupon__gridInner {
+    display: block;
+    overflow: hidden;
+    max-width: 2000px;
+    max-height: 3810px;
+    border: thin solid green;
+}
+.coupon__gridSingle {
+    display: inline-block;
+    width: 200px;
+    height: 381px;
+    text-align: left;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border: 2px solid orchid;
+    background-color: var(--white);
+}
+.coupon__gridInnerBlock {
+    position: relative;
+    padding: 12px;
+    border-radius: 4px;
+}
+.coupon__gridImg {
+    height: 170px;
+    margin-bottom: 8px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid lime;
+}
+.coupon__itemTitle {
+    min-height: 45px;
+    margin-bottom: 0px;
+    padding-top: 19px;
+    border: thin solid brown;
+}
+.coupon__gridTitle {
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.coupon__gridTitleText {
+    font-family: arial, helvetica, sans-serif;
+    cursor: pointer;
+}
+.coupon__clip {
+    min-height: 47px;
+    margin-bottom: 0px;
+    /* border: thin solid chocolate; */
+}

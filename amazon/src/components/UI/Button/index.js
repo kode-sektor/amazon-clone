@@ -115,7 +115,7 @@ const SearchButton = () => {
 }
 
 // Grey-coloured
-const OrderButton = ({link, text, width}) => {
+const OrderButton = ({link, text="Cancel items", width}) => {
     return (
         <span className="a__button a__spacing__mini ml-0" style={{width: width}}>
             <span className="a__button__inner">
@@ -167,6 +167,20 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
     }
 }
 
+// Grey Clip
+const CouponBtn = ({text="Clip Coupon", slug, width="100%", mTop=""}) => {
+    return (
+        <span className={`clipCoupon ${mTop}`}>
+            <span className={`a__button ${text==="Clip Coupon" ? "dashed" : ""} d-inline-block`} style={{width: width}}>
+                <span className="a__button__inner">
+                    <input type="submit" className="a__button__input"/>
+                    <span className="a__button__text a__size__small__ii text-center">{text}</span>
+                </span>
+            </span>
+        </span>
+    )
+}
+
 const JoinPrimeBtn = () => (
     <span className="a__button a__button__primary prime__cta__signup__button">
         <span className="a__button__inner">
@@ -179,4 +193,5 @@ const JoinPrimeBtn = () => (
 )
 
 export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
-    SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary}
+    SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
+    CouponBtn }

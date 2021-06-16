@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
-import { Link, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+import { BackArrow, RightArrowCarrot } from '../../components/UI/Icons'
+import { DropdownMenuPrimary } from '../../components/UI/DropdownMenu'
 
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
 
+import { CouponBtn } from '../../components/UI/Button'
+import CouponBox from '../../components/UI/CouponBox'
+
 import Slider from '../../components/UI/Carousel/Carousel'
 import CouponCarousel from '../../components/UI/Carousel/CouponCarousel'
-import { DropdownMenuMini } from '../../components/UI/DropdownMenu'
 
 import Layout from '../../components/Layout'
 
@@ -114,7 +119,7 @@ import bbq_grill_accessories_bbq_tools_set from '../../images/coupons/bbq-grill-
 import iniu_usb_c_cable_5_pack_3_1a_qc3 from '../../images/coupons/iniu-usb-c-cable-5-pack-3.1a-qc3.0.jpg'
 import shower_head_sr_sun_rise_6_settings_4_8 from '../../images/coupons/shower-head-sr-sun-rise-6-settings-4.8.jpg'
 
-import back_arrow from '../../images/amazon-back-arrow.png'
+import wireless_earbuds_holyhigh_bluetooth_earbuds_touch from '../../images/coupons/wireless-earbuds-holyhigh-bluetooth-earbuds-touch.jpg'
 
 // import nail_clippers_set_aw_union_fingernail from '../../images/coupons/nail-clippers-set_aw-union-fingernail.jpg'
 
@@ -787,14 +792,115 @@ const Coupon = () => {
                             />
                             <section className="coupon__box">
                                 <header className="coupon__boxHeader">
-                                    <img src={back_arrow} alt={back_arrow} className="amzn__backArrow"/>
-                                    <span className="a__size__medium a__color__tertiary">
+                                    <BackArrow />
+                                    <span className="a__size__medium__ii a__color__tertiary">
                                         Coupons homepage
                                     </span>
-                                    <img alt="" src="https://images-na.ssl-images-amazon.com/images/G/15/software/coupons/right_arrow_separator._CB485936828_.jpg" className="vpc_category_bar_header_right_carrot" height="12px" width="8px" style="
-    /* border:  3px solid brown; */
-"></img>
+                                    <RightArrowCarrot />
                                 </header>
+                                <section className="coupon__grid">
+                                    <div className="text-left">
+                                        <span className="coupon__gridSort">
+                                            Sort by: &nbsp;
+                                        </span>
+                                        <span className="d-inline-block">
+                                            <DropdownMenuPrimary
+                                                optionList={ 
+                                                    <>
+                                                        <option aria-label="newest" value="newest">Newest</option> 
+                                                        <option aria-label="oldest" value="oldest">Oldest</option>
+                                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                                            Discount Percentage
+                                                        </option> 
+                                                    </>
+                                                }
+                                                squished={true}
+                                            />
+                                        </span>
+                                    </div>
+                                    <section className="coupon__gridInner">
+                                        <CouponBox
+                                            img={
+                                                [
+                                                    {
+                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                    }
+                                                ]
+                                            }
+                                            save={3}
+                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                            button={
+                                                <CouponBtn />
+                                            }
+                                        />
+                                        <CouponBox
+                                            img={
+                                                [
+                                                    {
+                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                    }
+                                                ]
+                                            }
+                                            save={3}
+                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                            button={
+                                                <CouponBtn />
+                                            }
+                                        />
+                                        <CouponBox
+                                            img={
+                                                [
+                                                    {
+                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                    }
+                                                ]
+                                            }
+                                            save={3}
+                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                            button={
+                                                <CouponBtn />
+                                            }
+                                        />
+                                        <CouponBox
+                                            img={
+                                                [
+                                                    {
+                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                    }
+                                                ]
+                                            }
+                                            save={3}
+                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                            button={
+                                                <CouponBtn 
+                                                    text={"View Details"}
+                                                />
+                                            }
+                                        />
+                                        <CouponBox
+                                            img={
+                                                [
+                                                    {
+                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                    }
+                                                ]
+                                            }
+                                            save={3}
+                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                            button={
+                                                <CouponBtn />
+                                            }
+                                        />
+                                        
+                                    </section>
+                                </section>
                             </section>
                         </section>
                     </section>

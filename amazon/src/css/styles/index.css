@@ -256,6 +256,7 @@ file rather than small ones. Your choice
     --grey-tone-47: #222;
     --grey-tone-48: #aaaaaa;
     --grey-tone-49: #888888;
+    --grey-tone-50: #767676;
 
 	
     --black: #000;
@@ -424,6 +425,15 @@ a:hover, .a__color__button__link:hover {
 	background-color: var(--white);
 	box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
+.clipCoupon .a__button {
+    background: var(--grey-tone-10);
+    border: 1px solid darkgray;
+    border-radius: 3px !important;
+}
+.clipCoupon .a__button.dashed {
+    border: 1px dashed darkgray;
+
+}
 .a__button__dark, .a__button__search {
     background-color: var(--grey-tone-39);
     border-color: var(--grey-tone-40) var(--grey-tone-41), var(--grey-tone-42);
@@ -479,6 +489,10 @@ a:hover, .a__color__button__link:hover {
 .a__size__medium {
     font-size: 18px !important;
     line-height: 24px !important;
+}
+.a__size__medium__ii {
+    font-size: 17px!important;
+    line-height: 1.255!important;
 }
 .a__size__mini {
 	font-size: 11px !important;
@@ -1212,13 +1226,6 @@ ul {
 	background-repeat: no-repeat;
 	vertical-align: baseline;
 }
-.amzn__backArrow {
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    vertical-align: bottom;
-}
 
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
@@ -1307,15 +1314,15 @@ ul {
     background-color: transparent;
 }
 .a__divider.a__divider__break h5 {
-    line-height: 1;
-    font-size: 12px;
-    color: #767676;
-    font-weight: 400;
-    z-index: 2;
     position: relative;
     display: inline-block;
-    background-color: var(--white);
     padding: 0 8px 0 7px;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--grey-tone-50);
+    font-weight: 400;
+    z-index: 2;
+    background-color: var(--white);
 }
 .a__padding__base {
     padding: 10px 14px !important;
@@ -1329,6 +1336,9 @@ ul {
 .a__size__small {
     font-size: 12px !important;
     line-height: 16px !important;
+}
+.a__size__small__ii {
+    font-size: 12px!important;
 }
 .a__size__large {
     font-size: 21px !important;
