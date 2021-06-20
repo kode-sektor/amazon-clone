@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { BackArrow, RightArrowCarrot } from '../../components/UI/Icons'
 import { DropdownMenuPrimary } from '../../components/UI/DropdownMenu'
 
+import CouponModal from '../../components/UI/Modal/CouponModal'
+
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
 
 import { CouponBtn } from '../../components/UI/Button'
@@ -133,6 +135,15 @@ const Coupon = () => {
     const couponEnter = () => setPopoverCoupon(true)
     const couponLeave = () => setPopoverCoupon(false)
 
+    const promoModal = (evt) => {
+        evt.preventDefault()
+        // console.log(evt)
+        let URL = "/promotions/details"
+        let couponProps = "height=660, width=417, resizable=yes, scrollbar=yes"
+        let newWin = window.open(URL, 'couponWin', couponProps)
+        newWin.resizeTo(467, 660)
+    }
+
     return (
         <Layout>
             <section className="a__container">
@@ -154,78 +165,30 @@ const Coupon = () => {
                             <div>
                                 <span className="a__size__large a__color__base">0</span>
                                 <span className="a__size__large a__color__base"> Coupons</span>  
+                                <Link to="/" className="a__size__small a__color__link d-block">View Coupons</Link>
+                            </div>
+                        </section>
+                        <section className="coupon__columnTxt">
+                            <div>
+                                <span className="a__size__small a__color__secondary">
+                                Expiring Soon
+                                </span>
+                            </div>
+                            <div>
+                                <span className="a__size__large a__color__base">1</span>
+                                <span className="a__size__large a__color__base"> Coupon</span>  
+                                <Link to="/" className="a__size__small a__color__link d-block">View Coupons</Link>
                             </div>
                         </section>
                         <section className="coupon__barColumnTxt">
                             <span className="a__size__mini a__color__secondary">
                                 Discounts applied at checkout or on first subscription. Some coupons may only be available to Prime members.&nbsp;
                                 <UncontrolledDropdown onMouseOver={couponEnter} onMouseLeave={couponLeave} isOpen={popoverCoupon} toggle={""} inNavbar>
-                                    <DropdownToggle nav tag="span" className="a__color__link">
+                                    <DropdownToggle nav tag="span" className="a__browser__link">
                                         Some restrictions apply.
                                         <i className="a__icon a__icon__popover"></i>
                                     </DropdownToggle>
-                                    <DropdownMenu className="coupon__popover">
-                                        <div className="a__popover__wrapper">
-                                            <section className="a__popover__inner">
-                                                <h3 className="coupon__popoverHeading">
-                                                    <b>Promotion Details</b>
-                                                </h3>
-                                                <br/>
-                                                <section>
-                                                    <strong>How to Redeem the Coupon:</strong><br/>
-                                                    Click on the "Clip Coupon" button for a qualifying item and:
-                                                    <ol>
-                                                        <li>For a "One Time Delivery" coupon, add the eligible item to your Cart by clicking "Add to Cart" on the item detail page. Your coupon discount will apply to your item and appear on the final order checkout page.</li>
-                                                        <li>For a subscription coupon, select "Subscribe & Save" and set delivery quantity and frequency. Your coupon discount will apply to your first item delivery and appear on the "Review Your Subscription Details" page.</li>
-                                                    </ol>
-                                                </section>
-                                                <section className="coupon__terms">
-                                                    <strong>Terms and Conditions:</strong>
-                                                    <ul>
-                                                        <li>
-                                                            Coupons are valid for a limited time only. Amazon reserves the right to modify or cancel coupons at any time.
-                                                        </li>
-                                                        <li>
-                                                            You must purchase the qualifying items added to your Cart when the coupon is in effect for the discount to apply.
-                                                        </li>
-                                                        <li>
-                                                            If you later modify or cancel the subscription or delivery date for the qualifying item, the discount will not apply.
-                                                        </li>
-                                                        <li>
-                                                            The coupon applies only to qualifying items displaying the coupon offer.
-                                                        </li>
-                                                        <li>
-                                                            The coupon may only be used on www.amazon.ca for purchase of products shipped and sold by Amazon.ca.
-                                                        </li>
-                                                        <li>
-                                                            The promotion is limited to one coupon per customer.
-                                                        </li>
-                                                        <li>
-                                                            Promotion may not be combinable with mail-in rebates.
-                                                        </li>
-                                                        <li>
-                                                            If you return any of the items purchased with a coupon, the coupon discount or value may be subtracted from the return credit.
-                                                        </li>
-                                                        <li>
-                                                            Applicable shipping and handling charges apply to all products.
-                                                        </li>
-                                                        <li>
-                                                            Add-on Items require a minimum purchase. Click <a href="https://www.amazon.ca/gp/help/customer/display.html/?nodeId=201115110">here</a> for details.
-                                                        </li>
-                                                        <li>
-                                                            Offer good while supplies last.
-                                                        </li>
-                                                        <li>
-                                                            Void where prohibited.
-                                                        </li>
-                                                        <li>
-                                                            Consumer is required to pay any applicable sales tax related to the use of the coupon.
-                                                        </li>
-                                                    </ul>
-                                                </section>
-                                            </section>
-                                        </div>
-                                    </DropdownMenu>
+                                    <CouponModal />
                                 </UncontrolledDropdown>
                             </span>
                         </section>
@@ -241,7 +204,9 @@ const Coupon = () => {
                         </h1>
                         <p className="coupon__paraText">
                             Sign in to see all your available coupons. To redeem a coupon, click on a time-limited coupon below and then add the item to your cart. The discount will be automatically applied when you check out. Some coupons may be available to Prime members only.&nbsp;
-                            <Link to="/" className="a__color__link">Some restrictions apply.</Link>
+                            <Link to="/promotions/details" className="a__browser__link" onClick={(evt)=>promoModal(evt)}>
+                                Some restrictions apply
+                            </Link>
                         </p>
                         <section className="coupon__shoveler">
                             <CouponCarousel
@@ -898,8 +863,14 @@ const Coupon = () => {
                                                 <CouponBtn />
                                             }
                                         />
-                                        
+                                        <div className="coupon__getMore d-inline-block">
+                                            Show More Coupons 
+                                        </div>
                                     </section>
+                                </section>
+                                <section className="coupon__widget">
+                                    <h2>More About Amazon Coupons</h2><p>Enjoy coupon savings without the hassle of clipping. Amazon Coupons showcases coupon discounts from top brands within Grocery, Health &amp; Beauty, Electronics, Home Improvement, Movies, and more. Browse through the current coupon offers listed above. "Clip" the coupon by clicking on the specific deal you're interested in and add the product to your cart. The discount is automatically applied at checkout when you purchase the coupon-eligible product. Never leave the coupon book at home or walk out of the store without redeeming your discounts again. It's that easy.</p><p>New coupon offers become available frequently. Be sure to check back regularly to discover new deals to save you dollars.</p><p>Sign in to see all your available coupons.</p>
+                                    <div class="h_rule"></div>
                                 </section>
                             </section>
                         </section>

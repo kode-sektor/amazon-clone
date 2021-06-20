@@ -367,6 +367,13 @@ code {
     margin: 0 0 0 20px;
     color: #0F1111;
 }
+.promoModal.coupon__popover ol, .promoModal.coupon__popover ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
 .coupon__popover .a__ordered__list, .coupon__popover .a__unordered__list, 
 .coupon__popover ol, .coupon__popover ul {
     padding: 0;

@@ -8,6 +8,7 @@ import OrderHistory from "./pages/OrderHistory"
 import NavCart from "./pages/NavCart"
 import Prime from "./pages/Prime"
 import Coupon from "./pages/Coupon"
+import CouponModal from "./components/UI/Modal/CouponModal/index"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/nav-cart" component={NavCart}/> 
                     <Route path="/prime" component={Prime}/> 
                     <Route path="/coupons" component={Coupon}/> 
+                    <Route path="/promotions/details" component={CouponModal}/> 
                 </Switch>
             </Router>
         </div>

@@ -20,6 +20,11 @@
     border-radius: 4px;
     background-color: var(--white);
 }
+.promoModal .a__popover__wrapper {  /*hide borders on Javascript window.open*/
+    border: none;
+    border-radius: 0;   
+    box-shadow: none;
+}
 .a__popover__dropdown {
     min-width: 234px;
     padding: 8px;
@@ -36,6 +41,12 @@
     box-shadow: 0 2px 4px rgb(0 0 0 / 13%);
 	background-color: var(--white);
     text-align: left;
+}
+.promoModal .a__popover__inner {
+    /* height: 690px; */
+    padding: 0;
+    border: none;
+    border-radius: 0;
 }
 .a__pop__inner {
     overflow-x: hidden;

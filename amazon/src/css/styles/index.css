@@ -268,7 +268,7 @@ file rather than small ones. Your choice
 
     /*font families*/
     --font-primary: "Amazon Ember", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    --font-secondary: "Space Mono", Tahoma, Calibri, sans-serif;
+    --font-secondary: "Times New Roman", "Space Mono", Tahoma, Calibri, sans-serif;
     --font-tertiary: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -292,6 +292,7 @@ body {
 	padding: 0;
 	margin: 0 !important;
 	font-size: 14px;
+	font-size: 13px;
     line-height: 20px;
 	color: var(--color);
 	background: var(--white);
@@ -389,11 +390,6 @@ a:active, a:hover {
 a:focus {
     text-decoration: none;
     outline: 5px auto var(--mainlinkfocus);
-}
-/*a__color__link is the alternative*/
-.a__color__button__link {
-    text-decoration: none;
-    color: var(--mainlink) !important;
 }
 a:active, .a__color__button__link:active {
     text-decoration: underline;
@@ -1360,8 +1356,17 @@ ul {
 .a__color__base {
 	color: var(--color) !important;
 }
+/* a__browser__link, a__color__link,  */
 .a__color__link {
 	color: var(--link) !important;
+}
+.a__browser__link {
+	color: var(--link-2) !important;
+}
+/*a__color__link is the alternative*/
+.a__color__button__link {
+    text-decoration: none;
+    color: var(--mainlink) !important;
 }
 .button__container {
     padding-left: 10px;
