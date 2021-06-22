@@ -5,6 +5,10 @@ import Layout from '../../components/Layout/index'
 
 import { BrowseBoxSimple, BrowseCheckbox, BrowseBoxPrimary, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 
+import prime_gift from '../../images/prime-gift-egift.jpg'
+import prime_print_home from '../../images/prime-gift-print-at-home.jpg'
+import prime_gift_mail from '../../images/prime-gift-mail.jpg'
+
 import './index.css'
 
 const GiftCards = () => {
@@ -192,8 +196,65 @@ const GiftCards = () => {
                             }
                         />
                     </section>
-                    <section className="apBrowse">
-                        
+                    <section className="apBrowse flex-fill">
+                        <section className="giftCards__balanceWidget a__spacing__mini text-center">
+                            <ul className="a__unordered__list a__no__style a__horizontal">
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" className="giftCards__link d-inline-block a__text__normal">
+                                            Your Gift Card Balance&nbsp;
+                                            <span className="a__size__medium a__color__success">
+                                                CDN$ 0.00
+                                            </span>
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" className="giftCards__link a__link__normal d-inline-block a__text__normal">
+                                            Reload your balance
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" className="giftCards__link a__link__normal d-inline-block a__text__normal">
+                                            Redeem an Amazon Gift
+                                        </Link>
+                                    </span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <section>
+                                <Link to="/">
+                                    <section className="giftCards__main">
+                                        <section className="giftCards__mainContainer d-flex">
+                                            <section className="giftCards__column col-md-4">
+                                                <Link to="/" className="d-block">
+                                                    <img src={prime_gift} alt="eGift"/>
+                                                </Link>
+                                            </section>
+                                            <section className="giftCards__column col-md-4">
+                                                <Link to="/" className="d-block">
+                                                    <img src={prime_print_home} alt="eGift"/>
+                                                </Link>
+                                            </section>
+                                            <section className="giftCards__column col-md-4">
+                                                <Link to="/" className="d-block">
+                                                    <img src={prime_gift_mail} className="d-block mx-auto" alt="eGift"/>
+                                                </Link>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </Link>
+                            </section>
+                        </section>
+                        <section>
+                            <section className="giftCards__main">
+                                
+                            </section>
+                        </section>
                     </section>
                 </section>
             </section>

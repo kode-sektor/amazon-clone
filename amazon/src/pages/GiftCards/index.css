@@ -33,3 +33,36 @@
     color: var(--ochre-4) !important;
     text-decoration: none;
 }
+.giftCards__balanceWidget {
+    padding: 12px;
+    background-color: var(--grey-tone-51);
+}
+.giftCards__balanceWidget ul li {
+    height: 26px;
+    margin: 0 2% 0 0 !important;
+    border: thin solid crimson;
+}
+.giftCards__link {
+    color: var(--black) !important;
+    border-bottom: 1px solid;
+}
+.giftCards__link:hover, .giftCards__link:focus  {
+    color: var(--ochre-4) !important;
+}
+.giftCards__main {
+    margin-bottom: 22px;
+}
+.giftCards__mainContainer {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid blue;
+}
+.giftCards__column {
+    position: relative;
+    display: inline-block;
+    /* padding-left: 25px; */
+    margin-right: -.3em;
+    vertical-align: top;
+    min-height: 1px;
+}

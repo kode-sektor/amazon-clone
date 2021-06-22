@@ -401,12 +401,24 @@ ol li, ul li {
     word-wrap: break-word;
     margin: 0;
 }
-.a__ordered__list.a__nostyle, .a__unordered__list.a__nostyle, ol.a__nostyle, ul.a__nostyle {
+.a__ordered__list.a__nostyle, .a__unordered__list.a__nostyle, 
+ol.a__nostyle, ul.a__nostyle {
     margin-left: 0;
     color: var(--color);
 }
-.a__ordered__list .a__list__item, .a__unordered__list .a__list__item, ol .a__list__item, ul .a__list__item {
+.a__ordered__list .a__list__item, .a__unordered__list .a__list__item, 
+ol .a__list__item, ul .a__list__item {
     color: var(--color);
+}
+.a__ordered__list.a__horizontal, .a__unordered__list.a__horizontal, 
+ol.a__horizontal, ul.a__horizontal {
+    display: block;
+    margin-left: 0;
+}
+.a__ordered__list.a__horizontal li, .a__unordered__list.a__horizontal li, 
+ol.a__horizontal li, ul.a__horizontal li {
+    display: inline-block;
+    margin: 0 10px 0 0;
 }
 .a__checkbox.a__checkbox__fancy, .a__radio.a__radio__fancy {
     position: relative;
