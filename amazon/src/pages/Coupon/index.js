@@ -137,10 +137,11 @@ const Coupon = () => {
 
     const promoModal = (evt) => {
         evt.preventDefault()
-        // console.log(evt)
         let URL = "/promotions/details"
+        // height and width does not work
         let couponProps = "height=660, width=417, resizable=yes, scrollbar=yes"
         let newWin = window.open(URL, 'couponWin', couponProps)
+
         newWin.resizeTo(467, 660)
     }
 
@@ -195,10 +196,10 @@ const Coupon = () => {
                     </span>
                 </section>
                 <section className="coupon__items d-flex mx-0 flex-fill">
-                    <section className="coupon__subscribe">
+                    <section className="browserBox">
                         <img src={subscribe_and_save} width="180" alt="Subscribe &amp; Save" height="120"/>
                     </section>
-                    <section className="coupon__apBrowse">
+                    <section className="coupon__apBrowse apBrowse">
                         <h1 className="coupon__apBrowseHeading">
                             <b>Amazon Coupons</b>
                         </h1>

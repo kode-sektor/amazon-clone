@@ -27,19 +27,21 @@ const Subheader = (props) => {
 	const renderMenu = () => {
 		return (
 			<Menu
-				menus={[
-					{ label: "Subscribe & Save", href: "subscribe-and-save", icon: null },
-					{ label: "Coupons", href: "coupons", icon: null },
-					{ label: "Kay's Store", href: "store", icon: null },
-					{ label: "Best Sellers", href: "best-sellers", icon: null },
-					{ label: "Gift Ideas", href: "gift-ideas", icon: null },
-					{ label: "Buy Again", href: "buy-again", icon: null },
-					{ label: "Customer Service", href: "customer-service", icon: null },
-					{ label: "Deals Store", href: "deals-store", icon: null },
-					{ label: "New Releases", href: "new-releases", icon: null }
-				]}
+				menus={
+                    [
+                        { label: "Subscribe & Save", href: "subscribe-and-save", icon: null },
+                        { label: "Coupons", href: "coupons", icon: null },
+                        { label: "Kay's Store", href: "store", icon: null },
+                        { label: "Best Sellers", href: "best-sellers", icon: null },
+                        { label: "Gift Cards", href: "gift-cards", icon: null },
+                        { label: "Buy Again", href: "buy-again", icon: null },
+                        { label: "Customer Service", href: "customer-service", icon: null },
+                        { label: "Deals Store", href: "deals-store", icon: null },
+                        { label: "New Releases", href: "new-releases", icon: null }
+                    ]
+                }
 			/>
-		);
+		)
     }
 
 

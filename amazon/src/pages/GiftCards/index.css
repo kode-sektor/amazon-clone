@@ -1,0 +1,35 @@
+.browsebox {
+    font-family: var(--font-tertiary);
+}
+.giftCards__browseboxTitle {
+    font-size: 13px;
+    padding: 0;
+    color: var(--black);
+}
+.giftCards__season ul {
+    margin: 0 0 10px 10px;
+    padding: 0 0 19px 0;
+}
+.giftCards__season ul li {
+    line-height: 17px;
+    list-style-type: none;
+}
+.giftCards__season ul li a {
+    margin-left: 0;
+    color: var(--black);
+    font-size: 12px;
+    text-decoration: none;
+}
+.giftCards__browsebox {
+    margin-left: 0;
+    font-size: 12px;
+    color: var(--black);
+    text-decoration: none;
+}
+.giftCards__lang li label {
+    margin-left: 0;
+}
+.giftCards__checkbox a:hover, .giftCards__checkbox a:hover span {
+    color: var(--ochre-4) !important;
+    text-decoration: none;
+}

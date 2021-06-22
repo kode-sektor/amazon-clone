@@ -2,18 +2,15 @@
     position: relative;
     height: 400px;
     max-height: 400px;
-    border: 2px solid yellow;
 }
 .coupon__shoveler .carousel-inner {
     width: auto;
     height: 339px;
     overflow: hidden;
     margin: 0 40px;
-
     transform: translate3d(0,0,0);
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    border: thin solid red;
 }
 .coupon__shoveler .amzn__carousel__cards {
     height: inherit;
@@ -24,46 +21,53 @@
     margin-right: 0;
 }
 .coupon__shoveler .amzn__carousel__cards > li {
-    margin: 0 0 0 9px;
-    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 160px;
     min-height: 100%;
+    margin-left: 9px;
+    margin-right: 0;
+    text-align: left;
     list-style-type: none;
     white-space: normal;
     letter-spacing: normal;
-
     border-radius: 4px;
     background-color: var(--white);
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 160px;
-
-    position: relative;
-    border: 2px solid lime;
-
-    margin-bottom: 8px;
 }
 .coupon__shoveler .coupon__slideBox {
     display: inline-block;
-    padding: 12px;
+    width: 170px;
+    padding: 12px 22.4px;
+    margin-bottom: 10px;
     text-align: left;
     margin-bottom: 10px;
-    width: 170px;
-    border: thin solid green;
 }
+.coupon__shoveler .amzn__carousel__cards > li:hover,
+.coupon__shoveler .amzn__carousel__cards > li:focus {
+    border: 2px dashed rgb(221,221,221);
+    border-right: none;
+    box-shadow: 0 8px 8px -2px rgb(221 221 221 / 80%);
+}
+
 .coupon__shoveler .coupon__slideImg {
+    height: 135px;
+    margin-bottom: 0;
     text-align: center;
-    height: 170px;
-    margin-bottom: 8px;
-    border: 2px solid indigo;
 }
 .coupon__itemPrice {
     min-height: 45px;
     margin-bottom: 19px;
 }
-.coupon__itemTitle {
+.coupon__shoveler .coupon__itemTitle {
     overflow: hidden;
-    height: 43px;
-    margin-bottom: 10px;
+    height: 40px;
+    min-height: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.coupon__shoveler .addToCartBtn {
+    position: static;
+
 }
 .coupon__titleText {
     font-family: arial, helvetica, sans-serif;

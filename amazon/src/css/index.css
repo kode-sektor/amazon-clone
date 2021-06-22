@@ -365,7 +365,7 @@ code {
 
 .coupon__popover .a__ordered__list, .coupon__popover ol {
     margin: 0 0 0 20px;
-    color: #0F1111;
+    color: var(--color);
 }
 .promoModal.coupon__popover ol, .promoModal.coupon__popover ul {
     margin-block-start: 1em;
@@ -388,17 +388,107 @@ code {
 }
 .coupon__popover .a__unordered__list, .coupon__popover ul {
     margin: 0 0 0 18px;
-    color: #0F1111;
+    color: var(--color);
 }
-.coupon__popover .a__ordered__list, .a__unordered__list, 
-.coupon__popover ol, .coupon__popover ul {
+.coupon__popover .a__ordered__list, .coupon__popover ol, .coupon__popover ul {
     padding: 0;
 }
 .coupon__popover .a__unordered__list li, .coupon__popover ul li {
     list-style: disc;
 }
-.coupon__popover .a__ordered__list li, .coupon__popover .a__unordered__list li, 
-.coupon__popover ol li, .coupon__popover ul li {
+.a__ordered__list li, .a__unordered__list li, 
+ol li, ul li {
     word-wrap: break-word;
     margin: 0;
+}
+.a__ordered__list.a__nostyle, .a__unordered__list.a__nostyle, ol.a__nostyle, ul.a__nostyle {
+    margin-left: 0;
+    color: var(--color);
+}
+.a__ordered__list .a__list__item, .a__unordered__list .a__list__item, ol .a__list__item, ul .a__list__item {
+    color: var(--color);
+}
+.a__checkbox.a__checkbox__fancy, .a__radio.a__radio__fancy {
+    position: relative;
+}
+.a__checkbox label, .a__radio label {
+    position: relative;
+    top: -2px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    margin-left: 3px;
+    font-weight: 400;
+    color: var(--color);
+    text-indent: -15px;
+    cursor: pointer;
+}
+.a__checkbox__fancy label, .a__radio__fancy label {
+    padding-left: 19px;
+    text-indent: -19px;
+    cursor: pointer;
+}
+.a__checkbox__fancy input {
+    height: 16px !important;
+    width: 16px !important;
+}
+.a__checkbox.a__checkbox__fancy input, .a__radio.a__radio__fancy input {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    bottom: auto;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    opacity: .02;
+    border: 0 none;
+    outline: 0 none;
+    cursor: pointer;
+}
+.a__checkbox__fancy .a__icon__checkbox {
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+    background-image: url('../images/amzn-sprite-4.png');
+    background-position: -6px -274px;
+}
+.a__checkbox__fancy .a__icon__checkbox, .a__checkbox__fancy.a__hover__disable:hover .a__icon__checkbox {
+    background-position: -6px -274px;
+}
+.a__checkbox__fancy:hover .a__icon__checkbox, .a__checkbox__fancy:focus .a__icon__checkbox {
+    background-position: -30px -274px;
+}
+.a__checkbox.a__checkbox__fancy .a__icon.a__icon__checkbox, 
+.a__checkbox.a__checkbox__fancy .a__icon.a__icon__checkbox:after {
+    border-radius: 2px;
+}
+.a__checkbox__label, .a__radio__label {
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    text-indent: 0;
+}
+.a__checkbox__fancy .a__checkbox__label, .a__checkbox__fancy .a__radio__label, 
+.a__radio__fancy .a__checkbox__label, .a__radio__fancy .a__radio__label {
+    top: 1px;
+    vertical-align: middle;
+}
+.a__checkbox.a__checkbox__fancy .a__label, .a__radio.a__radio__fancy .a__label {
+    font-weight: 400;
+}
+
+.browserBox {
+    flex: 0 0 200px;
+    width: 200px !important;
+    height: max-content;
+    padding-right: 6px;
+    padding-bottom: 18px;
+    border-right: 2px solid var(--grey-tone-24);
+    word-break: break-word;
+}
+.browserBox a:hover, .browserBox a:hover span {
+    color: var(--ochre-4) !important;
+    text-decoration: none;
+}
+.apBrowse {
+    padding-left: 12px;
 }
