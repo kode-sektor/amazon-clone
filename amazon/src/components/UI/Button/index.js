@@ -192,6 +192,16 @@ const JoinPrimeBtn = () => (
     </span>
 )
 
+const SeeAllResults = () => (
+    <section className="a__box text-center seeAllResults h-auto">
+        <div className="a__box__inner">
+            <Link to="/">
+                <span class="a__size__medium__ii a__color__link font-weight-bold">See all results</span>
+            </Link>
+        </div>
+    </section>
+)
+
 export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
-    CouponBtn }
+    CouponBtn, SeeAllResults }

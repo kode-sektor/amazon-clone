@@ -185,6 +185,7 @@ file rather than small ones. Your choice
 	--ochre-29: #f7ca00;
 	--ochre-30: #f2c200;
 	--ochre-31: #ffaf38;
+	--ochre-32: #e67a00;
 
 
     --link: #007BFF;
@@ -399,7 +400,7 @@ a:active, .a__color__button__link:active {
 a:hover, .a__color__button__link:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: var(--a);
+    color: var(--a) !important;
 }
 /* li a {
 	display: block;
@@ -488,8 +489,8 @@ a:hover, .a__color__button__link:hover {
     line-height: 24px !important;
 }
 .a__size__medium__ii {
-    font-size: 17px!important;
-    line-height: 1.255!important;
+    font-size: 17px !important;
+    line-height: 1.255 !important;
 }
 .a__size__mini {
 	font-size: 11px !important;
@@ -851,6 +852,25 @@ input[required]:after{
     position: relative;
     display: inline-block;
 	width: 100%;
+}
+a.a__link__emphasis {
+    position: relative;
+    padding-right: 9px;
+}
+.a__link__emphasis:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1px;
+    margin-top: -3px;
+    height: 6px;
+    width: 3px;
+    background-position: -346px -86px;
+    pointer-events: none;
+}
+.a__link__emphasis:hover:after {
+    background-position: -346px -101px;
 }
 .a__icon, .a__link__emphasis:after {
 	background-image: url(../images/amzn-sprite-4.png);
@@ -1247,6 +1267,11 @@ ul {
     text-transform: none !important;
     text-decoration: none !important;
 }
+.a__text__ellipsis {
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .a__text__bold {
 	font-weight: 700 !important;
 }
@@ -1347,6 +1372,9 @@ ul {
 .a__color__price {
     color: var(--price-color) !important;
 }
+.a__color__state {
+    color: var(--ochre-4) !important;
+}
 .a__color__secondary, .a__color__tertiary {
     color: var(--grey-tone-23) !important;
 }
@@ -1368,6 +1396,7 @@ ul {
     text-decoration: none;
     color: var(--mainlink) !important;
 }
+
 .button__container {
     padding-left: 10px;
 }

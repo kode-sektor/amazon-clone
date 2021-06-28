@@ -1,0 +1,48 @@
+.badge__status {
+    overflow: hidden;
+    height: 26px;
+}
+a.a__badge:hover {
+    text-decoration: none!important;
+}
+.a__badge:hover .badge__supplementaryTxt, .a__badge:focus .badge__supplementaryTxt {
+    display: block;
+}
+.badge__label {
+    position: relative;
+    float: left;
+    height: 26px;
+    max-width: 130px;
+    padding: 0 6px 0 10px;
+    background-color: var(--ochre-32) !important;
+    color: var(--ochre-32) !important;
+    z-index: 1;
+}
+.badge__label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 10px;
+    height: 26px;
+    border-right: 10px solid transparent;
+    border-top: 26px solid;
+    box-sizing: border-box;
+}
+.badge__labelInner {
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    color: var(--white);
+}
+.badge__color {
+    color: var(--white);
+}
+.badge__supplementaryTxt {
+    position: relative;
+    display: none;
+    height: 26px;
+    padding-left: 16px;
+    line-height: 26px;
+    z-index: 1;
+}

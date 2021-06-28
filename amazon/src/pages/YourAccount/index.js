@@ -111,7 +111,7 @@ const YourAccount = () => {
                             }
                         />
                     </Row>
-                    <hr class="a__spacing__extra__large a__spacing__top__extra__large a__divider__normal"/>
+                    <hr className="a__spacing__extra__large a__spacing__top__extra__large a__divider__normal"/>
                     <Row tag="ul" className="card__cell__row align-items-stretch mx-0">
                         <CardCellLinks 
                             heading={"Digital content and devices"}

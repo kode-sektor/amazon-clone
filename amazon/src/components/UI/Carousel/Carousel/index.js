@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
 import { PrimaryBtn, CartBtnSmall } from '../../Button'
+import Badge from '../../Badge'
 
 import './index.css'
 
 
-const Slider = ({type, count, items, carouselClass, carouselPanel, 
+const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux, carouselPanel, 
 	price, category, date, cartBtnSmall, interval=5000, addToCart=false}) => {
 
 	let itemLength = items.length
@@ -56,8 +57,13 @@ const Slider = ({type, count, items, carouselClass, carouselPanel,
 				tempCarousel = [
 					...tempCarousel,
 					(
-						/*create room for 'Add to Cart' button for Orders page*/
+						/*Create room for 'Add to Cart' button for Orders page*/
 						<li className={addToCart && 'order__slider'}>
+							{
+								item.bestSellerAux && (
+									<Badge/>
+								)
+							}
 							<figure>
 								<Link key={index} to={item.href}>
 									<img src={item.src} alt={item.altText} />
@@ -69,29 +75,82 @@ const Slider = ({type, count, items, carouselClass, carouselPanel,
 												<Link to={item.href}>
 													<div className="amzn__carousel__caption">{item.caption}</div>
 												</Link>
-													<span className="amzn__carousel__star"></span>
-													<span className="amzn__carousel__count"> 1,833 </span>
-													<span className="amzn__carousel__offers"> </span>
-													{category && 
+												{item.extraCaption && 
+													(<span className="amzn__extra__caption d-block">
+														{item.extraCaption}
+													</span>)
+												}
+												{/*Reorder price and stars if on Gift cards page*/}
+												{ // For bottom (2nd) slider on Gift page
+													(carouselID === "amzn__gift__cards" && giftCardAux) && (
+														<span className={`amzn__carousel__star ${carouselID}`}></span>
+													)
+												}
+												{
+													// Only show price on bottom (2nd) slider on GiftCard Page
+													// or on Carousel of other pages
+													((carouselID !== "amzn__gift__cards" && !giftCardAux) || giftCardAux) ?
+													(
+														<span className="amzn__carousel__count"> 1,833 </span>
+													) : 
+													""
+												}
+												{
+													item.price && 
 														(
-															<Link to="/" className="a__size__small a__link__normal amzn__best__seller" >
-																<i className="a__icon a__icon__addon amzn__icon__bestSeller">#1 Best Seller</i>
-																<span className="a__size__small a__color__secondary">in 
-																	<span className="a__color__link amzn__carousel__delivery">{item.category}</span>
+															<div className="a__spacing__micro">
+																<span className="amzn__price">
+																	<span class="amzn__price__symbol">$</span>
+																	<span class="amzn__price__whole">40
+																		<span class="amzn__price__decimal">.</span>
+																	</span>
+																	<span class="amzn__price__fraction">00</span>
 																</span>
-																&nbsp;
-															</Link>
+															</div>
 														)
-													}
-													{price && (<span className="a__color__price d-block">$269.99</span>)}
-													{item.prime && (	// Only on Order Page
-														<span className="amzn__prime__badge d-block">
-															<span className="amzn__prime__badge__icon"></span>&nbsp;
-														</span>
-													)}
-													{category || date && (
-														<span class="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
-													)}
+												}
+												{	// Show the stars below the price for 1st kind of slider in Gift page
+													// For top (1st) slider on Gift page
+													(carouselID === "amzn__gift__cards" && !giftCardAux) && (
+														<span className={`amzn__carousel__star ${carouselID}`}></span>
+													)
+												}
+												{
+													(carouselID === "amzn__gift__cards" && !giftCardAux) ?
+													(
+														<span className="amzn__carousel__count"> (1,833) </span>
+													) : 
+													""
+												}
+												<span className="amzn__carousel__offers"> </span>
+												{
+													item.category && !giftCardAux &&
+													(
+														<Link to="/" className="a__size__small a__link__normal amzn__best__seller" >
+															<i className="a__icon a__icon__addon amzn__icon__bestSeller">
+																#1 Best Seller
+															</i>
+															<span className="a__size__small a__color__secondary">in&nbsp; 
+																<span className="a__color__link amzn__carousel__delivery">
+																	{item.category}
+																</span>
+															</span>
+															&nbsp;
+														</Link>
+													)
+												}
+												{
+													carouselID !== "amzn__gift__cards" && item.price && 
+													(<span className="a__color__price d-block">$269.99</span>)
+												}
+												{item.prime && (	// Only on Order Page
+													<span className="amzn__prime__badge d-block">
+														<span className="amzn__prime__badge__icon"></span>&nbsp;
+													</span>
+												)}
+												{(item.category || item.date) && (
+													<span className="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
+												)}
 												{cartBtnSmall && (<CartBtnSmall/>)}	
 											</>
 										)
@@ -215,9 +274,6 @@ const Slider = ({type, count, items, carouselClass, carouselPanel,
 				}
 			})
 
-
-
-
 			// slides = items.map((item) => {
 			// 	return (
 			// 		<CarouselItem
@@ -277,18 +333,24 @@ const Slider = ({type, count, items, carouselClass, carouselPanel,
 				)
 			}
 			{slide()}
-			<CarouselControl
-				className={carouselClass && (`${carouselClass}__control`)}
-				direction="prev"
-				directionText="Previous"
-				onClickHandler={previous}
-			/>
-			<CarouselControl
-				className={carouselClass && (`${carouselClass}__control`)}
-				direction="next"
-				directionText="Next"
-				onClickHandler={next}
-			/>
+			{
+				!giftCardAux && (
+					<>
+						<CarouselControl
+							className={carouselClass && (`${carouselClass}__control`)}
+							direction="prev"
+							directionText="Previous"
+							onClickHandler={previous}
+						/>
+						<CarouselControl
+							className={carouselClass && (`${carouselClass}__control`)}
+							direction="next"
+							directionText="Next"
+							onClickHandler={next}
+						/>
+					</>
+				)
+			}
 		</Carousel>
 	);
 };

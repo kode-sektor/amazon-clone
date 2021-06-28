@@ -10,6 +10,9 @@
     max-height: none;
     margin-bottom: 24px !important;
 }
+.last .amzn__gift__cards .carousel.slide {
+    margin-bottom: 0 !important;
+}
 .carousel-inner {
     position: relative;
     overflow: visible;
@@ -22,6 +25,12 @@
     height: 324px;
     width: auto;
     margin: 0 40px;
+}
+.giftCardAux .carousel-inner {
+    margin: 0;
+}
+.amzn__gift__cards:last-of-type .carousel-inner {
+    height: auto;
 }
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
@@ -293,10 +302,17 @@
     border-radius: 5px;
     border: 1px solid var(--grey-tone-24);
 }
+.carousel__detailed__layout__inner.amzn__gift__cards {
+    border: none;
+    padding: 0 !important;
+}
 .carousel__detailed__slider__header {
     margin: 0 0 20px;
     font-size: 24px !important;
     line-height: 32px !important;
+}
+.amzn__gift__cards .carousel__detailed__slider__header {
+    margin: 0 0 4px 0 !important;
 }
 .carousel__compressed .carousel__detailed__heading {
     font-size: 18px!important;
@@ -311,6 +327,33 @@
 .amzn__carousel__caption {
     overflow: hidden;
 }
+.amzn__price__symbol {
+    position: relative;
+    top: -.5em;
+    font-size: 12px;
+}
+.amzn__price {
+    position: relative;
+    line-height: normal;
+    font-size: 21px;
+    text-decoration: none;
+}
+.amzn__price__whole {
+
+}
+.amzn__price__decimal {
+    position: absolute;
+    opacity: 0;
+}
+.amzn__price__fraction {
+    position: relative;
+    top: -.5em;
+    font-size: 12px;
+}
+.amzn__extra__caption {
+    position: relative;
+    top: -7px;
+}
 .amzn__carousel__star {
     display: inline-block;
     position: relative;
@@ -321,6 +364,17 @@
     background-size: 512px 256px;
     background-repeat: no-repeat;
     background-position: -84px -28px;
+}
+.amzn__carousel__star.amzn__gift__cards {
+    position: relative;
+    top: -2px;
+    width: 95px;
+    height: 21px;
+    margin-right: 1px;
+    vertical-align: text-top;
+    background-image: url('../../../../images/amzn-sprite-4.png');
+    background-size: 400px 900px;
+    background-position: -5px -396px;
 }
 .amzn__carousel__count {
     font-size: 12px !important;

@@ -61,8 +61,11 @@
 .giftCards__column {
     position: relative;
     display: inline-block;
-    /* padding-left: 25px; */
     margin-right: -.3em;
     vertical-align: top;
     min-height: 1px;
+}
+.giftCards__credit {
+    padding-top: 44px;
+    margin-bottom: 63px;
 }

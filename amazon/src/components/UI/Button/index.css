@@ -1,0 +1,13 @@
+.seeAllResults {
+    background-color: var(--grey-tone-9);
+    border: none;
+}
+.seeAllResults .a__box__inner {
+    padding: 8px 18px !important;
+}
+.seeAllResults a:hover, 
+.seeAllResults a:hover span,
+.seeAllResults a:focus, 
+.seeAllResults a:focus span {
+    color: var(--ochre-4) !important;
+}

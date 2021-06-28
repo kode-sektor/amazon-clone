@@ -9,7 +9,7 @@ import './index.css'
 const BackArrow = () => {
     return (
         <>
-            <img src={back_arrow} alt={back_arrow} className="amzn__backArrow"/>
+            <img src={back_arrow} alt="back arrow" className="amzn__backArrow"/>
         </>
     )
 }
@@ -17,7 +17,7 @@ const BackArrow = () => {
 const RightArrowCarrot = () => {
     return (
         <>
-            <img src={right_arrow_carrot} alt={right_arrow_carrot} className="amzn__rightArrowCarrot"/>
+            <img src={right_arrow_carrot} alt="right arrow cat" className="amzn__rightArrowCarrot"/>
         </>
     )
 }
