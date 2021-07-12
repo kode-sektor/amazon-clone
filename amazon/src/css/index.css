@@ -8,13 +8,17 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .amzn__country__icon {
-    background-image: url('./images/amzn-sprite-2.png');
+    background-image: url('../images/amzn-sprite-2.png');
 }
 .amzn__globeIcon__two {
-    background-image: url('./images/amzn-sprite-web.png');
+    background-image: url('../images/amzn-sprite-web.png');
 }
 .icp__radio, .icp__origin {
-    background-image: url('./images/amzn-sprite-2.png');
+    background-image: url('../images/amzn-sprite-2.png');
+}
+.apb__browse__refinements__icon {
+    position: relative;
+    top: 3px;
 }
 
 .prime .carousel.slide {
@@ -223,7 +227,7 @@ code {
     font-style: italic;
     vertical-align: top;
     opacity: .64;
-    background-image: url('./images/amzn-sprite-4.png');
+    background-image: url('../images/amzn-sprite-4.png');
     background-repeat: no-repeat;
     background-size: 400px 900px;
     background-position: -297px -5px;
@@ -466,8 +470,11 @@ ol.a__horizontal li, ul.a__horizontal li {
 .a__checkbox__fancy .a__icon__checkbox, .a__checkbox__fancy.a__hover__disable:hover .a__icon__checkbox {
     background-position: -6px -274px;
 }
-.a__checkbox__fancy:hover .a__icon__checkbox, .a__checkbox__fancy:focus .a__icon__checkbox {
-    background-position: -30px -274px;
+.a__checkbox__fancy .a__icon__checkbox {
+    background-position: -453px -3px !important;
+}
+.a__checkbox__fancy:hover .a__icon__checkbox {
+    background-position: -435px -3px!important;
 }
 .a__checkbox.a__checkbox__fancy .a__icon.a__icon__checkbox, 
 .a__checkbox.a__checkbox__fancy .a__icon.a__icon__checkbox:after {

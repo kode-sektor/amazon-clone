@@ -873,13 +873,44 @@ a.a__link__emphasis {
     background-position: -346px -101px;
 }
 .a__icon, .a__link__emphasis:after {
-	background-image: url(../images/amzn-sprite-4.png);
+	background-image: url(../../images/amzn-sprite-4.png);
     background-size: 400px 900px;
     background-repeat: no-repeat;
 }
 .a__icon {
     display: inline-block;
     vertical-align: top;
+}
+.a__icon__premium, .a__icon__prime, .a__icon__prime__jp, 
+.a__premium__logo, .a__prime__jp__logo, .a__prime__logo {
+    width: 53px;
+    height: 15px;
+    background-position: -185px -182px;
+    vertical-align: baseline;
+}
+.a__icon__amazon__app, .a__icon__autorip, .a__icon__fba, .a__icon__fresh, 
+.a__icon__kindle__unlimited__headphones, .a__icon__logo, .a__icon__logo__china, 
+.a__icon__premium, .a__icon__premium__nav, .a__icon__prime, .a__icon__prime__campus, 
+.a__icon__prime__fresh, .a__icon__prime__headphones, .a__icon__prime__jp, 
+.a__icon__prime__jp__nav, .a__icon__prime__nav, .a__icon__prime__pass, 
+.a__icon__prime__wardrobe__badge, .a__icon__prime__wardrobe__logo, 
+.a__icon__primefresh__nav, .a__icon__share__douban, .a__icon__share__email, 
+.a__icon__share__facebook, .a__icon__share__kaixin001, .a__icon__share__line, 
+.a__icon__share__link, .a__icon__share__mixi, .a__icon__share__pengyou, 
+.a__icon__share__pinterest, .a__icon__share__qq, .a__icon__share__qzone, 
+.a__icon__share__renren, .a__icon__share__sina, .a__icon__share__sms, 
+.a__icon__share__tencent, .a__icon__share__twitter, .a__icon__share__wechat, 
+.a__icon__share__whatsapp, .a__icon__smile, .a__logo, .a__logo__china, 
+.a__premium__logo, .a__premium__nav__logo, .a__prime__jp__logo, 
+.a__prime__jp__nav__logo, .a__prime__logo, .a__prime__nav__logo, .a__share__douban, 
+.a__share__email, .a__share__facebook, .a__share__kaixin001, .a__share__line, 
+.a__share__link, .a__share__mixi, .a__share__pengyou, .a__share__pinterest, 
+.a__share__qq, .a__share__qzone, .a__share__renren, .a__share__sina, 
+.a__share__sms, .a__share__tencent, .a__share__twitter, .a__share__wechat, 
+.a__share__whatsapp {
+    background-image: url('../../images/amzn-sprite-9.png');
+    background-size: 512px 256px;
+    background-repeat: no-repeat;
 }
 .a__icon__section__collapse, .a__icon__section__expand {
     position: relative;
@@ -980,7 +1011,7 @@ a.a__link__emphasis {
     line-height: normal;
     opacity: 0;
 }
-.a__icon__star{
+.a__icon__star {
 	width: 80px;
     height: 18px;
 }
@@ -990,6 +1021,31 @@ a.a__link__emphasis {
 .a__icon__star, .a__icon__star__medium, .a__icon__star__mini, .a__icon__star__small {
     position: relative;
     vertical-align: text-top;
+}
+.a__icon__star__medium {
+    top: -2px;
+    width: 95px;
+    height: 22px;
+    margin-right: 1px;
+}
+.a__icon.a__star__medium__1 {
+    background-position: -390px -228px;
+}
+.a__icon.a__star__medium__2 {
+    background-position: -99px -132px;
+}
+.a__icon.a__star__medium__3 {
+    background-position: -293px -180px;
+}
+.a__icon.a__star__medium__4 {
+    background-position: -2px -84px;
+}
+.a__icon.a__accordion__radio, .a__icon.a__icon__checkbox, .a__icon.a__icon__radio, 
+.a__icon.a__icon__star, .a__icon.a__icon__star__medium, .a__icon.a__icon__star__mini, 
+.a__icon.a__icon__star__small {
+    background-image: url('../../images/amzn-sprite-5.png');
+    background-size: 512px 256px;
+    background-repeat: no-repeat;
 }
 .a__icon__search {
     opacity: .55;
@@ -1081,7 +1137,7 @@ ul {
 	top: 10px;
 	right: 8px;
 	vertical-align: top;
-	background-image: url('../images/amzn-sprite-4.png');
+	background-image: url('../../images/amzn-sprite-4.png');
 	background-position: -7px -102px;
 	background-size: 400px 900px;
 	background-repeat: no-repeat;
@@ -1095,7 +1151,7 @@ ul {
 	color: var(--color);
 	vertical-align: middle;
 	border-radius: 50%;
-	background-image: url('../images/amzn-sprite-5.png');
+	background-image: url('../../images/amzn-sprite-5.png');
 	background-repeat: no-repeat;
 	background-size: 512px 256px;
 	background-position: -456px -39px !important;
@@ -1152,7 +1208,7 @@ ul {
     width: 18px;
     height: 18px;
 	/* background: url('../images/amzn-sprite-2.png'); */
-	background: url('../images/amzn-sprite-4.png');
+	background: url('../../images/amzn-sprite-4.png');
 	background-position: -6px -294px;
 }
 .amzn__icon__radio__red.checked {
@@ -1169,7 +1225,7 @@ ul {
     width: 17px;
     height: 13px;
     margin: 0 .5em 0 0;
-	background: url('../images/amzn-sprite-2.png');
+	background: url('../../images/amzn-sprite-2.png');
 }
 .icp__origin__change__link {
     margin-left: 25px;
@@ -1237,7 +1293,7 @@ ul {
 	height: 12px;
 	background-position: -154px -52px;
 	font-style: italic;
-	background-image: url('../images/amzn-sprite-6.png');
+	background-image: url('../../images/amzn-sprite-6.png');
 	background-size: 512px 256px;
 	background-repeat: no-repeat;
 	vertical-align: baseline;
@@ -1513,7 +1569,7 @@ ul {
     width: 18px;
     background-size: 512px 256px;
     background-repeat: no-repeat;
-    background-image: url('../images/amzn-sprite-5.png');
+    background-image: url('../../images/amzn-sprite-5.png');
 }
 .a__alert__inline__success .a__icon.a__icon__alert {
     background-position: -457px -144px;
@@ -1560,7 +1616,7 @@ ul {
     width: 18px;
     left: 18px;
     top: 14px;
-    background-image: url(../images/amzn-sprite-5.png);
+    background-image: url(../../images/amzn-sprite-5.png);
     background-size: 512px 256px;
     background-repeat: no-repeat;
 }
@@ -1656,7 +1712,8 @@ ul {
     margin-left: 12px !important;
 }
 .a__indent__2 {
-    margin-left: 24px !important;
+    display: block;
+    padding-left: 24px !important;
 }
 
 /*9. LAYOUT & NAVIGATION

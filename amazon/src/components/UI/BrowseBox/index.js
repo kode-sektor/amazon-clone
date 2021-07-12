@@ -52,6 +52,7 @@ const BrowseCheckbox = ({title, links}) => {
 
 
 const BrowseBoxPrimary = ({title, links}) => {
+
     let browseBox
 
     return (
@@ -61,10 +62,10 @@ const BrowseBoxPrimary = ({title, links}) => {
                     {title}
                 </span>
             </h3>
-            <ul className="giftCards__lang a__unordered__list a__nostyle a__spacing__medium">
+            <ul className="a__unordered__list a__nostyle a__spacing__medium">
                 {
                     links.map((item, i) => {
-                        browseBox = links.href ? 
+                        browseBox = item.href ? 
                             (
                                 <li key={i} className={`a__spacing__micro ${item.indentClass}`}>
                                     <span className="a__list__item">
@@ -77,7 +78,7 @@ const BrowseBoxPrimary = ({title, links}) => {
                             : 
                             (
                                 <li key={i} className="a__spacing__micro">
-                                    <span className={`a__list__item a__size__base a__color__base font-weight-bold ${item.indentClass}`}>
+                                    <span dir="auto" className={`a__list__item a__size__base a__color__base font-weight-bold ${item.indentClass}`}>
                                         {item.text}
                                     </span>
                                 </li>

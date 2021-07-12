@@ -12,7 +12,7 @@ const CarouselDetailed = ({ heading, slider, heading_two, heading_two_link, caro
     
     return (
         <div className="carousel__detailed">
-            <div className={`carousel__detailed__layout__inner ${carouselID} ${slider.props.giftCardAux ? "giftCardAux" : ""}`}>
+            <div className={`carousel__detailed__layout__inner ${carouselID} ${slider.giftCardAux ? "giftCardAux" : ""}`}>
                 {
                     (
                         Array.isArray(heading) ? 
@@ -25,7 +25,7 @@ const CarouselDetailed = ({ heading, slider, heading_two, heading_two_link, caro
                                             </div>
                                             <div className="carousel__count text-right flex-fill">
                                             { 
-                                                slider.props.giftCardAux  ? 
+                                                slider.giftCardAux  ? 
                                                     (
                                                         ""
                                                     ) :
@@ -57,7 +57,7 @@ const CarouselDetailed = ({ heading, slider, heading_two, heading_two_link, caro
                                     }
                                     <div className="carousel__count text-right flex-fill">
                                     { 
-                                        slider.props.giftCardAux  ? 
+                                        slider.giftCardAux  ? 
                                             (
                                                 ""
                                             ) :
