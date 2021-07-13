@@ -26,9 +26,6 @@
     color: var(--black);
     text-decoration: none;
 }
-.giftCards__lang li label {
-    margin-left: 0;
-}
 .giftCards__checkbox a:hover, .giftCards__checkbox a:hover span {
     color: var(--ochre-4) !important;
     text-decoration: none;

@@ -511,3 +511,20 @@ ol.a__horizontal li, ul.a__horizontal li {
 .apBrowse {
     padding-left: 12px;
 }
+.sideMenu li label {
+    margin-left: 0;
+}
+.octopus__pc__category__card__v2 {
+    margin: 35px 0px;
+    min-width: 794px;
+    max-width: 2573px;
+    background-color: var(--white);
+}
+.octopus__pc__category__card__v2__item {
+    overflow: hidden;
+    height: 278px;
+    max-width: 330px;
+    min-width: 198px;
+    margin: 0 !important;
+    text-align: center;
+}

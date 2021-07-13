@@ -259,6 +259,7 @@ file rather than small ones. Your choice
     --grey-tone-49: #888888;
     --grey-tone-50: #767676;
     --grey-tone-51: #fbf9fa;
+    --grey-tone-52: #e3e7e7;
 
 	
     --black: #000;
@@ -495,6 +496,11 @@ a:hover, .a__color__button__link:hover {
 .a__size__mini {
 	font-size: 11px !important;
     line-height: 1.465 !important;
+}
+.a__size__extra__large {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    text-rendering: optimizeLegibility;
 }
 .a__button__text {
     display: block;
@@ -1117,9 +1123,13 @@ optgroup:not(:last-child) {
 }
 
 /*5. LISTS
-==============================================================================================================================================================*/
+====================================================================================================================================
+==========================*/
 ul {
 	margin-bottom: 0;
+}
+ul.list__indent {
+    margin-left: 18px !important;
 }
 
 /*6. MORE SPECIFIC (like form h2 {}, )
@@ -1717,7 +1727,48 @@ ul {
 }
 
 /*9. LAYOUT & NAVIGATION
-==============================================================================================================================================================*/
+====================================================================================================================================
+==========================*/
+
+.bxc__grid__spacing__large {
+    margin-bottom: 22px !important;
+}
+.bxc__grid__container {
+    margin-left: auto;
+    margin-right: auto;
+}
+.bxc__grid__container.bxc__grid__container__width__1500 {
+    max-width: 1500px;
+}
+.bxc__grid__row {
+    margin-left: -25px;
+    margin-bottom: 25px;
+}
+.bxc__grid__row:last-child {
+    margin-bottom: 0;
+}
+.bxc__grid__column {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    margin-right: -.3em;
+    vertical-align: top;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+.bxc__grid__column.bxc-grid__column__12__of__12 {
+    width: 100%;
+}
+.bxc__grid__content {
+    margin-bottom: 25px;
+}
+.bxc__grid__content:last-child {
+    margin-bottom: 0;
+}
+.bxc__grid__image a {
+    display: block;
+}
+
 
 /*10. ANIMATION
 ==============================================================================================================================================================*/

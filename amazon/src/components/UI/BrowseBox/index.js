@@ -24,14 +24,14 @@ const BrowseCheckbox = ({title, links}) => {
                     {title}
                 </span>
             </h3>
-            <ul className="giftCards__lang a__unordered__list a__nostyle a__spacing__medium">
+            <ul className="sideMenu a__unordered__list a__nostyle a__spacing__medium">
                 {
                     links.map((item, i) => (
                         <>
                             <li key={i} className="a__spacing__micro">
                                 <span className="a__list__item">
                                     <Link to={item.href}>
-                                        <div className="giftCards__checkbox a__checkbox a__checkbox__fancy d-inline-block">
+                                        <div className="sideMenuCheckbox a__checkbox a__checkbox__fancy d-inline-block">
                                             <label>
                                                 <input type="checkbox" name="" value=""/>
                                                 <i className="a__icon a__icon__checkbox"></i>
