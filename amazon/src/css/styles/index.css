@@ -186,6 +186,8 @@ file rather than small ones. Your choice
 	--ochre-30: #f2c200;
 	--ochre-31: #ffaf38;
 	--ochre-32: #e67a00;
+	--ochre-33: #f2750b;
+	--ochre-34: #e55d16;
 
 
     --link: #007BFF;
@@ -497,10 +499,18 @@ a:hover, .a__color__button__link:hover {
 	font-size: 11px !important;
     line-height: 1.465 !important;
 }
+.a__size__mini__ii {
+    font-size: 12px!important;
+    line-height: 16px!important;
+}
 .a__size__extra__large {
     font-size: 28px !important;
     line-height: 1.2 !important;
     text-rendering: optimizeLegibility;
+}
+.a__size__extra__large__ii {
+    font-size: 28px!important;
+    line-height: 36px!important;
 }
 .a__button__text {
     display: block;
@@ -1028,6 +1038,11 @@ a.a__link__emphasis {
     position: relative;
     vertical-align: text-top;
 }
+.a__icon__star__mini {
+    top: 3px;
+    height: 12px;
+    width: 60px;
+}
 .a__icon__star__medium {
     top: -2px;
     width: 95px;
@@ -1045,6 +1060,9 @@ a.a__link__emphasis {
 }
 .a__icon.a__star__medium__4 {
     background-position: -2px -84px;
+}
+.a__icon.a__star__mini__4__5 {
+    background-position: -437px -130px;
 }
 .a__icon.a__accordion__radio, .a__icon.a__icon__checkbox, .a__icon.a__icon__radio, 
 .a__icon.a__icon__star, .a__icon.a__icon__star__medium, .a__icon.a__icon__star__mini, 
@@ -1316,8 +1334,14 @@ ul.list__indent {
     text-decoration: none;
     line-height: normal;
 }
+.a__price[data-a-size=l] {
+    font-size: 21px;
+}
 .a__price[data-a-color=base] {
     color: var(--color);
+}
+.a__price.featured {
+    color : var(--price-color);
 }
 .a__price[data-a-size=m] {
     font-size: 17px;
@@ -1326,6 +1350,24 @@ ul.list__indent {
     position: relative;
     top: -.3em;
     font-size: 11px;
+}
+.a__price[data-a-size$=plus] .a__price__fraction, 
+.a__price[data-a-size$=plus] .a__price__symbol, 
+.a__price[data-a-size$=l] .a__price__fraction, 
+.a__price[data-a-size$=l] .a__price__symbol {
+    position: relative;
+}
+.a__price[data-a-size=l] .a__price__symbol {
+    top: -.5em;
+    font-size: 12px;
+}
+.a__price[data-a-size$=plus] .a__price__decimal, .a__price[data-a-size$=l] .a__price__decimal {
+    position: absolute;
+    opacity: 0;
+}
+.a__price[data-a-size=l] .a__price__fraction {
+    top: -.5em;
+    font-size: 12px;
 }
 .a__text__normal {
     font-weight: 400 !important;
@@ -1344,8 +1386,10 @@ ul.list__indent {
 .a__size__base {
     font-size: 13px !important;
     line-height: 19px !important;
-    /* font-size: 14px !important;
-    line-height: 20px !important; */
+}
+.a__size__base__ii {
+    font-size: 14px !important;
+    line-height: 20px !important;
 }
 .a__truncate {
     display: inline-block;
@@ -1432,6 +1476,10 @@ ul.list__indent {
     line-height: 1.3 !important;
 	text-rendering: optimizeLegibility;
 }
+.a__size__base__plus {
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
 .a__spacing__top__base {
     margin-top: 12px !important;
 }
@@ -1461,6 +1509,9 @@ ul.list__indent {
 .a__color__button__link {
     text-decoration: none;
     color: var(--mainlink) !important;
+}
+.a__text__strike {
+    text-decoration: line-through !important;
 }
 
 .button__container {
@@ -1527,6 +1578,10 @@ ul.list__indent {
 .a__box__group > .a__box {
     margin-top: -1px;
     border-radius: 0;
+}
+.a__box, .a__box__group>.a__box.a__color__alternate__background, 
+.a__box__group>.a__box.a__color__offset__background {
+    border: 1px var(--grey-tone-25) solid;
 }
 .a__box .a__box__inner {
     border-radius: 4px;
@@ -1756,7 +1811,10 @@ ul.list__indent {
     min-height: 1px;
     box-sizing: border-box;
 }
-.bxc__grid__column.bxc-grid__column__12__of__12 {
+.bxc__grid__column.bxc__grid__column__1__of__5 {
+    width: 20%;
+}
+.bxc__grid__column.bxc__grid__column__12__of__12 {
     width: 100%;
 }
 .bxc__grid__content {
@@ -1768,7 +1826,34 @@ ul.list__indent {
 .bxc__grid__image a {
     display: block;
 }
-
+.bxc__grid__image img {
+    display: block;
+    margin: 0 auto;
+}
+.octopus__pc__item__best__seller__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 24px;
+    padding-left: 10px;
+    background-color: var(--ochre-32);
+    text-align: left;
+}
+.octopus__pc__item__best__seller__badge__text {
+    color: var(--white);
+}
+.octopus__pc__item__best__seller__badge:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 32px;
+    border-style: solid;
+    border-right: 10px solid transparent;
+    border-top: 24px solid var(--ochre-32);
+    border-left: 0;
+    border-bottom: 0;
+}
 
 /*10. ANIMATION
 ==============================================================================================================================================================*/

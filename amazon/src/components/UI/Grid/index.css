@@ -62,7 +62,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 258px;
+    top: 250px;
     height: 88px;
     padding-top: 11px;
     margin-top: 11px;
@@ -70,7 +70,7 @@
     margin-right: 20px;
     text-align: left;
     border-top: 1px solid var(--grey-tone-52);
-    transition: transform .4s ease;
+    transition: transform .4s ease, top .4s ease;
 }
 .octopus__pc__category__card__v2__subcategory__title {
     height: 25.66px;
@@ -93,4 +93,5 @@ a.octopus__pc__category__card__v2__subcategory__link:focus {
 .octopus__pc__category__card__v2__item:hover .octopus__pc__category__card__v2__subcategory, 
 .octopus__pc__category__card__v2__item:focus .octopus__pc__category__card__v2__subcategory {
     transform: translateY(-90px) translateZ(0px);
+    top: 220px;
 }

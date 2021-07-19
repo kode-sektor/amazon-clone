@@ -2,6 +2,10 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
+import { CouponBtn } from '../Button'
+
+import './index.css'
+
 
 const CardOne = ({name, date, img, cardClass=""}) => {
     return (
@@ -205,6 +209,149 @@ const CardFive = ({img}) => {
     )
 }
 
+const CardSix = ({items, title, link, type=""}) => {
+
+    return (
+        <section className="octopus__pc__card mb-0">
+            <header>
+                <span className="a__size__extra__large__ii font-weight-bold">{title}</span>
+                <Link to={link} className="a__link__normal">
+                    <span className="a__size__base__plus a__color__button__link octopus__pc__card__title__seeMore">
+                        &nbsp; See more
+                    </span>
+                </Link >
+            </header>
+            <section className="octopus__pc__card__content">
+                <ul className={`octopus__pc__card__list octopus__pc__card__height__v3 ${type}`}>
+                {
+                    items.map((entry, index) => {
+                        const {item} = entry
+                        return (
+                            <li className="octopus__pc__item octopus__pc__item__v3 d-inline-block">
+                                <div className="octopus__pc__item__block octopus__pc__asin__block a__spacing__none">
+                                    <Link to="/" className="octopus__pc__item__link">
+                                        <section className="octopus__pc__item__image__section octopus__pc__item__image__section__v3">
+                                            <section className="octopus__pc__item__hue__shield octopus__pc__item__image__background__v3">
+                                                <img src={item.img} alt={item.alt} className="octopus__pc__item__image octopus__pc__item__image__v3"/>
+                                                {
+                                                    item.bestSeller && (
+                                                        <div className="octopus__pc__item__best__seller__badge">
+                                                            <span className="a__size__mini octopus__pc__item__best__seller__badge__text">
+                                                                #{item.bestSeller}
+                                                            </span>
+                                                        </div>
+                                                    )
+                                                }
+                                            </section>
+                                        </section>
+                                        <section className="octopus__pc__asin__info__section">
+                                            <div className={`a__spacing__none octopus__pc__asin__price__section ${type}`}>
+                                                <section className="octopus__pc__asin__price">
+                                                    <span className={`a__price  ${type}`} data-a-size="l" data-a-color="base">
+                                                        <span className="a__price__symbol">$</span>
+                                                        {
+                                                            item.price && (
+                                                                <span className="a__price__whole">{item.price}
+                                                                    <span className="a__price__decimal">.</span>
+                                                                </span>
+                                                            )
+                                                        }
+                                                        {
+                                                            item.price_fraction && (
+                                                                <span className="a__price__fraction">{item.price_fraction}</span>
+                                                            )
+                                                        }&nbsp;
+                                                    </span>
+                                                </section>
+                                            
+                                                <section className="octopus__pc__asin__strike__price">
+                                                    {
+                                                        item.old_price && (
+                                                            <span className="a__size__mini a__color__tertiary a__text__strike">
+                                                                ${item.old_price}
+                                                            </span>
+                                                        )
+                                                    }&nbsp;
+                                                    {
+                                                        item.percentage_off && (
+                                                            <span className="a__size__base a__color__price font-weight-bold">
+                                                                &nbsp;{item.percentage_off}&#37; off
+                                                            </span>
+                                                        )
+                                                    }
+                                                </section>
+                                            </div>
+                                            {
+                                                item.deal && (
+                                                    <section className="octopus__pc__deal__info__section">
+                                                        <div className="octopus__pc__deal__progbarWrapper">
+                                                            <div className="a__section a__spacing__none octopus__pc__deal__progbar" style={{width : "43%"}}>
+                                                            </div>
+                                                        </div>
+                                                        <div className="a__section a__spacing__top__mini octopus__pc__deal__claimPercent">
+                                                            43% claimed
+                                                        </div>
+                                                        <div className="a__section a__spacing__top__mini octopus__pc__deal__claimDate float-right d-inline-block">
+                                                            Deal has ended
+                                                        </div>
+                                                    </section>
+                                                )
+                                            }
+                                            {
+                                                item.title && (
+                                                    <section className="octopus__pc__asin__title">
+                                                        <span className="a__size__base__ii a__color__base">
+                                                            {item.title}
+                                                        </span>
+                                                    </section>
+                                                )
+                                            }
+                                            <section className="octopus__pc__asin__review__star text-left">
+                                                {
+                                                    item.rating && (
+                                                        <>
+                                                            <i className={`a__icon a__icon__star__mini a__star__mini__${item.rating}`}></i>&nbsp;
+                                                        </>
+                                                    )
+                                                }
+                                                {
+                                                    item.count && (
+                                                        <span className="a__size__mini__ii a__color__tertiary">{item.count}</span>
+                                                    )
+                                                }
+                                            </section>
+                                        </section>
+                                    </Link>
+                                    <span className="octopus__quick__look__btn">
+                                        <CouponBtn
+                                            text={"Quick Look"}
+                                        />
+                                    </span>
+                                </div>
+                            </li>
+                        )
+                    })
+                }
+                </ul>
+
+            </section>
+        </section>
+    )
+}
+
+const BxcGrid = ({img, link, alt, column="bxc__grid__column__1__of__5"}) => (
+    <div className={`bxc__grid__column ${column} bxc__grid__column__light`}>
+        <div className="bxc__grid__content bxc__grid__content__light">
+            <div className="bxc__grid__image bxc__grid__image__light">
+                <Link to={link}>
+                    <img src={img} alt={alt}/>
+                </Link>
+            </div>
+        </div>
+    </div>
+)
+
+
 const CardVideo = ({title, img, slug }) => {
     return (
         <section className="sub__layout__card__grid grid__half">
@@ -254,4 +401,4 @@ const CardPrime = ({heading, price, duration, note, checked, select, primeSelect
     )
 }
 
-export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardVideo, CardPrime }
+export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardSix, BxcGrid, CardVideo, CardPrime }

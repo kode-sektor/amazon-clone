@@ -8,6 +8,12 @@
     height: 100%;
     text-decoration: none;
 }
+.card__cell__link:hover, .card__cell__link:focus {
+    text-decoration: none;
+}
+.card__cell__link:hover .a__box, .card__cell__link:focus .a__box {
+    background: var(--grey-tone-9);
+}
 .card__cell__title {
     margin-bottom: 0 !important;
     padding-bottom: 0;
