@@ -266,13 +266,6 @@ const CardSix = ({items, title, link, type=""}) => {
                                             
                                                 <section className="octopus__pc__asin__strike__price">
                                                     {
-                                                        item.old_price && (
-                                                            <span className="a__size__mini a__color__tertiary a__text__strike">
-                                                                ${item.old_price}
-                                                            </span>
-                                                        )
-                                                    }&nbsp;
-                                                    {
                                                         item.percentage_off && (
                                                             <span className="a__size__base a__color__price font-weight-bold">
                                                                 &nbsp;{item.percentage_off}&#37; off
@@ -322,11 +315,15 @@ const CardSix = ({items, title, link, type=""}) => {
                                             </section>
                                         </section>
                                     </Link>
-                                    <span className="octopus__quick__look__btn">
-                                        <CouponBtn
-                                            text={"Quick Look"}
-                                        />
-                                    </span>
+                                    {
+                                        (type !== "lightning" && type !== "featured") ? (
+                                            <span className="octopus__quick__look__btn">
+                                                <CouponBtn
+                                                    text={"Quick Look"}
+                                                />
+                                            </span>
+                                        ) : ""
+                                    }
                                 </div>
                             </li>
                         )
@@ -336,6 +333,113 @@ const CardSix = ({items, title, link, type=""}) => {
 
             </section>
         </section>
+    )
+}
+
+const CardSeven = ({items, link, type=""}) => {
+    return (
+        <ul className="octopus__pc__card__list octopus__pc__card__height__v3 spread d-flex text-left">
+        {
+            items.map((entry, index) => {
+                const {item} = entry
+                return (
+                    <li className="octopus__pc__item octopus__pc__item__v3 d-inline-block">
+                        {
+                            item.bestSeller && (
+                                <div className="a__spacing__micro apb__grid__status__badge__container">
+                                    <Link to={link} className="a__badge" data-a-badge-supplementary-position="right" data-a-badge-type="status">
+                                        <span className="a__badge__label" data-a-badge-color="apb-orange">
+                                            <span className="a__badge__label__inner a__text__ellipsis">
+                                                <span className="a__badge__text" data-a-badge-color="apb-cloud">
+                                                    BestSeller 
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span className="a__badge__supplementary__text a__text__ellipsis">
+                                            in {item.category}
+                                        </span>
+                                    </Link>
+                                </div>
+                            )
+                        }
+                        <div className={`${!item.bestSeller ? "octopus__pc__item__block a__spacing__medium" : ""} octopus__pc__asin__block`}>
+                            <div className="apb__browse__searchresults__product">
+                                <Link to="/" className="octopus__pc__item__link">
+                                    <div className="a__image__container">
+                                        <img src={item.img} alt={item.alt} className="octopus__pc__item__image octopus__pc__item__image__v3"/>
+                                    </div>
+                                </Link>
+                                {
+                                item.title && (
+                                    <>
+                                        <section className="a__spacing__top__small">
+                                            <Link to="/">
+                                                <h2 className="a__size__mini__ii a__color__base apb__line__clamp__3 font-weight-normal">
+                                                    {item.title}
+                                                </h2>
+                                            </Link>
+                                        </section>
+                                        <div className="a__spacing__none apb__browse__searchresults__product__byline">
+                                            <span className="a__size__base__ii a__color__secondary font-weight-normal">
+                                                by {item.manufacturer}
+                                            </span> 
+                                        </div>
+                                    </>
+                                )
+                                }
+                                <section className="a__spacing__none a__spacing__top__micro text-left">
+                                    {
+                                        item.rating && (
+                                            <>
+                                                <i className={`a__icon a__icon__star__small a__star__small__${item.rating}`}></i>&nbsp;
+                                            </>
+                                        )
+                                    }
+                                    {
+                                        item.count && (
+                                            <span className="a__size__mini__ii a__color__tertiary">{item.count}</span>
+                                        )
+                                    }
+                                </section>
+                                <section className="a__spacing__none a__spacing__top__small">
+                                    <section>
+                                        <span className={`a__price  ${type}`} data-a-size="l" data-a-color="base">
+                                            <span className="a__price__symbol">$</span>
+                                            {
+                                                item.price && (
+                                                    <span className="a__price__whole">{item.price}
+                                                        <span className="a__price__decimal">.</span>
+                                                    </span>
+                                                )
+                                            }
+                                            {
+                                                item.price_fraction && (
+                                                    <span className="a__price__fraction">{item.price_fraction}</span>
+                                                )
+                                            }&nbsp;
+                                        </span>
+                                        {
+                                            item.old_price && (
+                                                <span className="a__price a__text__strike" data-a-size="b" data-a-color="secondary" data-a-strike="true">
+                                                    ${item.old_price}
+                                                </span>
+                                            )
+                                        }&nbsp;
+                                        &amp; <strong>FREE Shipping.</strong>&nbsp;
+                                        <Link to={item.shipping_link}>Details</Link>
+                                    </section>
+                                </section>
+                                <section className="a__spacing__none a__spacing__top__micro">
+                                    Arrives : <strong>{item.arrival_date}</strong>&nbsp;
+                                    <Link to={item.arrival_link}>Details</Link>
+                                </section>
+                            </div>
+                        </div>
+                    </li>
+                )
+            })
+        }
+        </ul>
     )
 }
 
@@ -401,4 +505,4 @@ const CardPrime = ({heading, price, duration, note, checked, select, primeSelect
     )
 }
 
-export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardSix, BxcGrid, CardVideo, CardPrime }
+export { CardOne, CardTwo, CardThree, CardFour, CardFive, CardSix, CardSeven, BxcGrid, CardVideo, CardPrime }

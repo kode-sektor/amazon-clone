@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import { BrowseBoxSimple, BrowseCheckbox, BrowseBoxPrimary, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import SearchResult from '../../components/UI/SearchResult'
 import Grid from '../../components/UI/Grid'
-import { CardSix, BxcGrid } from '../../components/UI/Card'
+import { CardSix, CardSeven, BxcGrid } from '../../components/UI/Card'
+import Line from '../../components/UI/Line'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import handpicked_laptops from '../../images/products/handpicked-laptops.jpg'
@@ -12,6 +13,7 @@ import handpicked_laptops from '../../images/products/handpicked-laptops.jpg'
 import Layout from '../../components/Layout/index'
 
 import './index.css'
+import { SeeAllResults } from '../../components/UI/Button'
 
 const Electronics = () => {
     return (
@@ -918,13 +920,13 @@ const Electronics = () => {
                                     }
                                 />
                             </section>
-                            <section>
+                            <section>   
                                 <CardSix
                                     title={"Featured Deals"}
                                     link={"/"}
                                     type={"featured"}
-                                    items={
-                                        [
+                                    items={ 
+                                        [   
                                             {
                                                 item : {
                                                     img : white_usb_charger,
@@ -1136,6 +1138,254 @@ const Electronics = () => {
                                 total={"100,000"}
                                 title={"Electronics"}
                             />
+                            <section>
+                                <CardSeven
+                                    link={"/"}
+                                    items={
+                                        [
+                                            {
+                                                item : {    /*Usually 3 items*/
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                />
+                            </section>
+                            <section>
+                                <CardSeven
+                                    title={"Best Sellers"}
+                                    link={"/"}
+                                    items={
+                                        [
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                />
+                            </section>
+                            <section>
+                                <CardSeven
+                                    title={"Best Sellers"}
+                                    link={"/"}
+                                    items={
+                                        [
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                />
+                            </section>
+                            <section className="last">
+                                <CardSeven
+                                    title={"Best Sellers"}
+                                    link={"/"}
+                                    items={
+                                        [
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            },
+                                            {
+                                                item : {
+                                                    img : white_usb_charger,
+                                                    alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
+                                                    title : "Apple AirPods with Charging Case",
+                                                    price : 159,
+                                                    price_fraction : 98,
+                                                    old_price : 177.00,
+                                                    rating : "4__5",
+                                                    count : "2,817",
+                                                    bestSeller : "BestSeller",
+                                                    category : "Stereo Headphones",
+                                                    arrival_date : "Wednesday, July 21",
+                                                    manufacturer : "Apple",
+                                                    shipping_link : "/",
+                                                    arrival_link : "/"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                />
+                            </section>
+                            <SeeAllResults/>
                         </section>
                     </section>
                 </section>
