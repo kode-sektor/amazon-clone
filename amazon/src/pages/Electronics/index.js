@@ -5,7 +5,6 @@ import { BrowseBoxSimple, BrowseCheckbox, BrowseBoxPrimary, BrowseBoxPlain } fro
 import SearchResult from '../../components/UI/SearchResult'
 import Grid from '../../components/UI/Grid'
 import { CardSix, CardSeven, BxcGrid } from '../../components/UI/Card'
-import Line from '../../components/UI/Line'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import handpicked_laptops from '../../images/products/handpicked-laptops.jpg'
@@ -212,7 +211,7 @@ const Electronics = () => {
                                         text : <>
                                                     <div aria-label="4 Stars &amp; Up">
                                                         <i className="a__icon a__icon__star__medium a__star__medium__3">
-                                                            <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                            <span className="a__icon__alt">3 Stars &amp; Up</span>
                                                         </i>
                                                         <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
                                                     </div>
@@ -223,7 +222,7 @@ const Electronics = () => {
                                         text : <>
                                                     <div aria-label="4 Stars &amp; Up">
                                                         <i className="a__icon a__icon__star__medium a__star__medium__2">
-                                                            <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                            <span className="a__icon__alt">2 Stars &amp; Up</span>
                                                         </i>
                                                         <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
                                                     </div>
@@ -234,7 +233,7 @@ const Electronics = () => {
                                         text : <>
                                                     <div aria-label="4 Stars &amp; Up">
                                                         <i className="a__icon a__icon__star__medium a__star__medium__1">
-                                                            <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                            <span className="a__icon__alt">1 Stars &amp; Up</span>
                                                         </i>
                                                         <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
                                                     </div>
