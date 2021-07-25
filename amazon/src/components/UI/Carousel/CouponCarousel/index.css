@@ -44,7 +44,7 @@
 }
 .coupon__shoveler .amzn__carousel__cards > li:hover,
 .coupon__shoveler .amzn__carousel__cards > li:focus {
-    border: 2px dashed rgb(221,221,221);
+    border: 2px dashed var(--grey-tone-24);
     border-right: none;
     box-shadow: 0 8px 8px -2px rgb(221 221 221 / 80%);
 }
@@ -52,6 +52,12 @@
 .coupon__shoveler .coupon__slideImg {
     height: 135px;
     margin-bottom: 0;
+    text-align: center;
+}
+.coupon__shoveler .coupon__slideImg {
+    height: 135px;
+    height: 170px;
+    margin-bottom: 8px;
     text-align: center;
 }
 .coupon__itemPrice {
@@ -67,7 +73,6 @@
 }
 .coupon__shoveler .addToCartBtn {
     position: static;
-
 }
 .coupon__titleText {
     font-family: arial, helvetica, sans-serif;

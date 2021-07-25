@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { BrowseBoxSimple, BrowseCheckbox, BrowseBoxPrimary, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import SearchResult from '../../components/UI/SearchResult'
-import Grid from '../../components/UI/Grid'
+import { Grid_One } from '../../components/UI/Grid'
 import { CardSix, CardSeven, BxcGrid } from '../../components/UI/Card'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
@@ -402,127 +402,123 @@ const Electronics = () => {
                             </div>
                         </section>
                         <section>
-                            <section className="octopus__pc__category__card__v2">
-                                <header>
-                                    <span className="a__size__extra__large font-weight-bold">Featured categories</span>
-                                </header>
-                                <Grid
-                                    item={
-                                        [
-                                            {
-                                                img : white_usb_charger,
-                                                caption : 
-                                                    <>
-                                                        Accessories &amp; Supplies
-                                                    </>
-                                                ,
-                                                categories: [
-                                                        {
-                                                            link : "/",
-                                                            caption : "Cell Phone Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Computer Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Home Audio &amp; Video Accessories"
-                                                        }
-                                                ]
-                                            },
-                                            {
-                                                img : white_usb_charger,
-                                                caption : 
-                                                    <>
-                                                        Accessories &amp; Supplies
-                                                    </>
-                                                ,
-                                                categories: [
-                                                        {
-                                                            link : "/",
-                                                            caption : "Cell Phone Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Computer Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Home Audio &amp; Video Accessories"
-                                                        }
-                                                ]
-                                            },
-                                            {
-                                                img : white_usb_charger,
-                                                caption : 
-                                                    <>
-                                                        Accessories &amp; Supplies
-                                                    </>
-                                                ,
-                                                categories: [
-                                                        {
-                                                            link : "/",
-                                                            caption : "Cell Phone Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Computer Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Home Audio & Video Accessories"
-                                                        }
-                                                ]
-                                            },
-                                            {
-                                                img : white_usb_charger,
-                                                caption : 
-                                                    <>
-                                                        Accessories &amp; Supplies
-                                                    </>
-                                                ,
-                                                categories: [
-                                                        {
-                                                            link : "/",
-                                                            caption : "Cell Phone Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Computer Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Home Audio & Video Accessories"
-                                                        }
-                                                ]
-                                            },
-                                            {
-                                                img : white_usb_charger,
-                                                caption : 
-                                                    <>
-                                                        Accessories &amp; Supplies
-                                                    </>
-                                                ,
-                                                categories: [
-                                                        {
-                                                            link : "/",
-                                                            caption : "Cell Phone Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Computer Accessories"
-                                                        },
-                                                        {
-                                                            link : "/",
-                                                            caption : "Home Audio & Video Accessories"
-                                                        }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                />
-                            </section>
+                            <Grid_One   
+                                title={"Featured categories"}
+                                item={  /* Usually in 5's */
+                                    [
+                                        {
+                                            img : white_usb_charger,
+                                            caption : 
+                                                <>
+                                                    Accessories &amp; Supplies
+                                                </>
+                                            ,
+                                            categories: [
+                                                    {
+                                                        link : "/",
+                                                        caption : "Cell Phone Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Computer Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Home Audio &amp; Video Accessories"
+                                                    }
+                                            ]
+                                        },
+                                        {
+                                            img : white_usb_charger,
+                                            caption : 
+                                                <>
+                                                    Accessories &amp; Supplies
+                                                </>
+                                            ,
+                                            categories: [
+                                                    {
+                                                        link : "/",
+                                                        caption : "Cell Phone Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Computer Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Home Audio &amp; Video Accessories"
+                                                    }
+                                            ]
+                                        },
+                                        {
+                                            img : white_usb_charger,
+                                            caption : 
+                                                <>
+                                                    Accessories &amp; Supplies
+                                                </>
+                                            ,
+                                            categories: [
+                                                    {
+                                                        link : "/",
+                                                        caption : "Cell Phone Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Computer Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Home Audio & Video Accessories"
+                                                    }
+                                            ]
+                                        },
+                                        {
+                                            img : white_usb_charger,
+                                            caption : 
+                                                <>
+                                                    Accessories &amp; Supplies
+                                                </>
+                                            ,
+                                            categories: [
+                                                    {
+                                                        link : "/",
+                                                        caption : "Cell Phone Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Computer Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Home Audio & Video Accessories"
+                                                    }
+                                            ]
+                                        },
+                                        {
+                                            img : white_usb_charger,
+                                            caption : 
+                                                <>
+                                                    Accessories &amp; Supplies
+                                                </>
+                                            ,
+                                            categories: [
+                                                    {
+                                                        link : "/",
+                                                        caption : "Cell Phone Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Computer Accessories"
+                                                    },
+                                                    {
+                                                        link : "/",
+                                                        caption : "Home Audio & Video Accessories"
+                                                    }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            />
                             <section>
                                 <CardSix
                                     title={"Top Rated"}

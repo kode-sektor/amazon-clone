@@ -10,7 +10,6 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
 
 import { CouponBtn } from '../../components/UI/Button'
 import CouponBox from '../../components/UI/CouponBox'
-
 import Slider from '../../components/UI/Carousel/Carousel'
 import CouponCarousel from '../../components/UI/Carousel/CouponCarousel'
 
@@ -209,7 +208,7 @@ const Coupon = () => {
                                 Some restrictions apply
                             </Link>
                         </p>
-                        <section className="coupon__shoveler">
+                        <section>
                             <CouponCarousel
                                 heading={<>Electronics &amp; Wireless</>}
                                 sort={"Sort by Category"}

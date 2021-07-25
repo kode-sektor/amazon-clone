@@ -45,6 +45,7 @@
 }
 .octopus__pc__item__v3 {
     height: 100%;
+    vertical-align: top;
 }
 .octopus__pc__card__height__v3.lightning {
     height: 408px !important;

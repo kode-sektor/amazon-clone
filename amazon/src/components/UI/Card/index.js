@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
 
 import { CouponBtn } from '../Button'
@@ -215,11 +214,15 @@ const CardSix = ({items, title, link, type=""}) => {
         <section className="octopus__pc__card mb-0">
             <header>
                 <span className="a__size__extra__large__ii font-weight-bold">{title}</span>
-                <Link to={link} className="a__link__normal">
-                    <span className="a__size__base__plus a__color__button__link octopus__pc__card__title__seeMore">
-                        &nbsp; See more
-                    </span>
-                </Link >
+                {
+                    link && (
+                        <Link to={link} className="a__link__normal">
+                            <span className="a__size__base__plus a__color__button__link octopus__pc__card__title__seeMore">
+                                &nbsp; See more
+                            </span>
+                        </Link>
+                    )
+                }
             </header>
             <section className="octopus__pc__card__content">
                 <ul className={`octopus__pc__card__list octopus__pc__card__height__v3 ${type}`}>
@@ -263,16 +266,22 @@ const CardSix = ({items, title, link, type=""}) => {
                                                         }&nbsp;
                                                     </span>
                                                 </section>
-                                            
-                                                <section className="octopus__pc__asin__strike__price">
+                                                <span>
                                                     {
-                                                        item.percentage_off && (
-                                                            <span className="a__size__base a__color__price font-weight-bold">
-                                                                &nbsp;{item.percentage_off}&#37; off
+                                                        item.old_price && (
+                                                            <span className="a__size__mini__ii a__color__tertiary a__text__strike">
+                                                                &nbsp;${item.old_price}
                                                             </span>
                                                         )
                                                     }
-                                                </section>
+                                                </span>
+                                                {
+                                                    item.percentage_off && (
+                                                        <span className="a__size__base a__color__price font-weight-bold">
+                                                            &nbsp;{item.percentage_off}&#37; off
+                                                        </span>
+                                                    )
+                                                }
                                             </div>
                                             {
                                                 item.deal && (

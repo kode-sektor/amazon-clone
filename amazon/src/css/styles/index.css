@@ -403,7 +403,8 @@ a:active, .a__color__button__link:active {
 a:hover, .a__color__button__link:hover {
     text-decoration: underline;
     cursor: pointer;
-    color: var(--a) !important;
+    /* color: var(--a) !important; */
+    color: var(--a);
 }
 /* li a {
 	display: block;
@@ -1225,16 +1226,6 @@ ul.list__indent {
 .primeSticky__primeMonthlyCard:checked ~ .amzn__prime__radio:before {
     background-color: var(--blue-7);
 }
-/* .icp__radio {
-    position: relative;
-    margin: 0 .5em 0 0;
-    top: 3px;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-	background: url('../images/amzn-sprite-2.png');
-    background-position: -75px -2px;
-} */
 .amzn__icon__radio__red {
     position: relative;
     margin: 0 .5em 0 0;
@@ -1556,6 +1547,7 @@ ul.list__indent {
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 0;
+    margin-bottom: 22px;
 }
 .a__section:last-child {
     margin-bottom: 0;
@@ -1883,7 +1875,115 @@ ul.list__indent {
 /*9. LAYOUT & NAVIGATION
 ====================================================================================================================================
 ==========================*/
+.bx__root {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    margin-bottom: 16px;
+}
+.bx__root a, .bx__root a:active, .bx__root a:hover, .bx__root a:visited {
+    color: var(--grey-tone-14);
+    text-decoration: none;
+    font-family: var(--font-tertiary);
+}
+.root__bannerx0__base {
+    display: grid;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+    line-height: normal;
+    background-color: transparent;
+    /* visibility: hidden; */
+}
+.bannerx0__root__bgTreatment {
+    background-color: var(--grey-tone-37);
+}
+.bannerx0__Xwide__default {
+    -ms-grid-columns: 35% 0 65%;
+    -ms-grid-rows: 100%;
+    grid-template-areas: "bannerx0__copy bannerx0__background__image";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100%;
+}
+.bannerx0__copy__base {
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.bannerx0__copy__layout {
+    display: flex;
+    grid-template-areas:
+        'bannerx0__copy__right'
+        'bannerx0__legal';
+    flex-direction: column;
+    justify-content: center;
+}
+.bannerx0__copy {
+    grid-area: bannerx0__copy;
+    padding: 1px 5%;
+    box-sizing: border-box;
+    z-index: 1;
+    -ms-grid-column-align: center;
+    justify-self: center;
+}
+.bannerx0__copy__bgTreatment {
+    background-color: var(--grey-tone-37);
+}
+.bannerx0__ie__copy__Xwide__default {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 1;
+}
+.bannerx0__copy__content__base {
+    grid-area: bannerx0__copy__right;
+    width: 100%;
+}
+.bannerx0__copy__content {
+    -ms-grid-column-align: center;
+    justify-self: center;
+}
+.bannerx0__headline {
+    width: 100%;
+    font-size: 2em;
+    font-weight: 400;
+    word-break: keep-all;
+}
+.bannerx0__subtext {
+    width: 100%;
+    font-size: 1.26em;
+    font-weight: 400;
+    padding-top: .16em;
+    word-break: keep-all;
+}
+.bannerx0__cta {
+    width: 100%;
+    font-size: 12px;
+    padding-top: .08em;
+    word-break: keep-all;
+}
+.bannerx0__cta__arrow__right span::after {
+    content: '▸';
+    display: inline-block;
+    padding-left: 2px;
+}
+.bannerx0__background__image {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.bannerx0__background__image > img {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 140%;
+    max-height: 140%;
+}
 
+/*BXC GRID*/
 .bxc__grid__spacing__large {
     margin-bottom: 22px !important;
 }
@@ -1913,6 +2013,12 @@ ul.list__indent {
 .bxc__grid__column.bxc__grid__column__1__of__5 {
     width: 20%;
 }
+.bxc__grid__column.bxc__grid__column__2__of__12 {
+    width: 16.64667%;
+}
+.bxc__grid__column.bxc__grid__column__4__of__12 {
+    width: 33.33333%;
+}
 .bxc__grid__column.bxc__grid__column__12__of__12 {
     width: 100%;
 }
@@ -1928,6 +2034,14 @@ ul.list__indent {
 .bxc__grid__image img {
     display: block;
     margin: 0 auto;
+}
+.bxc__grid__divider hr {
+    margin: 0;
+}
+.bannerx0__background__image {
+    height: 100%;
+    width: 100%;
+    grid-area: bannerx0__background__image;
 }
 .octopus__pc__item__best__seller__badge {
     position: absolute;
@@ -2135,4 +2249,16 @@ p.abstract:after{
 	overflow: hidden;
 	clip: rect(0,0,0,0);
 	border: 0;
+}
+
+
+@media screen and (min-width: 564px) {
+    .bx__root {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .bx__root {
+        height: 360px;
+    }
 }
