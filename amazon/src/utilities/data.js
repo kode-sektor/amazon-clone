@@ -133,4 +133,39 @@ const subMenu = [
     }
 ]
 
-export { countries, subMenu }
+const progressiveSubNav = [
+    {
+        text : "SALES & DEALS",
+        href : "/"
+    },
+    {
+        text : "WOMEN",
+        href : "/todays_deals"
+    },
+    {
+        text : "MEN",
+        href : "/watched_deals"
+    },
+    {
+        text : "GIRLS",
+        href : "/outlet_deals"
+    },
+    {
+        text : "BOYS",
+        href : "/warehouse_deals"
+    },
+    {
+        text : "BABY",
+        href : "/Coupons"
+    },
+    {
+        text : "OUR BRANDS",
+        href : "/ebook_deals"
+    },
+    {
+        text : "LUGGAGE",
+        href : "/subscribe_and_save"
+    }
+]
+
+export { countries, subMenu, progressiveSubNav }

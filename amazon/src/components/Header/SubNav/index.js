@@ -5,7 +5,6 @@ import { subMenu } from '../../../utilities/data'
 
 import './index.css'
 
-
 const SubNav = () => {
 
     const [queryID, setQueryID] = useState("")
@@ -15,9 +14,9 @@ const SubNav = () => {
     }, [])
 
     return (
-        <section>
+        <nav>
             {
-                (queryID === "/") ?     // Do not display subnav if homepage
+                (queryID === "/" || queryID === "/fashion") ?     // Do not display subnav if homepage
                 ""
                 :
                 <ul className="subNav">
@@ -53,7 +52,7 @@ const SubNav = () => {
                     }
                 </ul>
             }
-        </section>
+        </nav>
     )
 }
 

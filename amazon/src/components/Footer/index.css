@@ -6,7 +6,6 @@
     padding-bottom: 0;
     color: var(--grey-tone-24);
     background-color: var(--light-slate-gray);
-
 }
 .page__footer a:link, .page__footer a:visited {
     color: var(--blue);

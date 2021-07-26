@@ -12,6 +12,7 @@ import CouponModal from "./components/UI/Modal/CouponModal"
 import GiftCard from "./pages/GiftCards"
 import Electronics from "./pages/Electronics"
 import Beauty from "./pages/Beauty"
+import Fashion from "./pages/Fashion"
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/gift-cards" component={GiftCard}/> 
                     <Route path="/electronics" component={Electronics}/> 
                     <Route path="/beauty" component={Beauty}/>
+                    <Route path="/fashion" component={Fashion}/>
                 </Switch>
             </Router>
         </div>
