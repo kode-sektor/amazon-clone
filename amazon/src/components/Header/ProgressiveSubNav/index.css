@@ -1,54 +1,70 @@
-.progressiveSubNav {
+.progressiveNav__subNav {
     position: relative;
     height: 33px;
     margin: 0;
     padding: 0 9px 0 15px;
-    overflow: hidden;
     border-bottom: 1px solid var(--grey-tone-35);
     border-top: 1px solid var(--grey-tone-35);
     border-top: 1px solid rgba(0,0,0,.17);
     border-bottom: 1px solid rgba(0,0,0,.1);
     white-space: nowrap;
     background: var(--grey-tone-37);
-    z-index: 1;
+    z-index: 100;
 }
-.progressiveSubNav.spacious {
+.progressiveNav__subNav > li {
+    position: relative;
+    background: url('../../../images/up-arrow.png') no-repeat -100% 140%;
+}
+.progressiveNav__subNav > li:hover, .progressiveNav__subNav > li:focus {
+    background-position-x: 48%;
+}
+.progressiveNav__subNav.spacious {
     display: flex;
     justify-content: space-between;
     height: 50px;
     background: var(--white);
     box-shadow: 0 0 1px var(--grey-tone-24);
 }
-.progressiveSubNav__link {
+.progressiveNav__link {
     position: relative;
     display: inline-block;
     flex: 1 0 auto;
     height: 48px;
     padding: 0 13px;
     line-height: 50px;
-    color: var(--grey-tone-14) !important;
     font-size: 12px;
-    text-align: center;
     vertical-align: middle;
+    color: var(--grey-tone-14) !important;
+    text-align: center;
 }
-.progressiveSubNav.spacious li:first-child a, 
-.progressiveSubNav.spacious li:last-child a {
+.progressiveNav__subNav .progressiveNav__link {
+    text-decoration: none;
+}
+.progressiveNav__subNav.spacious li:hover .progressiveNav__link span {
+    color: var(--grey-tone-14);
+    border-bottom: 2px solid #f90;
+}
+.progressiveNav__subNav.spacious .progressiveNav__link:hover {
+    border-bottom: 0;
+}
+.progressiveNav__subNav.spacious li:first-child a, 
+.progressiveNav__subNav.spacious li:last-child a {
     flex: 0 0 auto;
 }   
-.progressiveSubNav.spacious .progressiveSubNav__link:hover,
-.progressiveSubNav.spacious .progressiveSubNav__link:focus {
+.progressiveNav__subNav.spacious .progressiveNav__subNav:hover,
+.progressiveNav__subNav.spacious .progressiveNav__subNav:focus {
     border-bottom: 0;
 }
 .nav__categ__image {
     width: auto;
     padding-top: 5px;
 }
-.progressiveSubNav .nav__categ__image,
-.progressiveSubNav .nav__image {
+.progressiveNav__subNav .nav__categ__image,
+.progressiveNav__subNav .nav__image {
     border: 0;
     outline: 0;
     vertical-align: baseline;
 }
-.progressiveSubNav.spacious .nav__categ__image {
+.progressiveNav__subNav.spacious .nav__categ__image {
     height: 50px;
 }

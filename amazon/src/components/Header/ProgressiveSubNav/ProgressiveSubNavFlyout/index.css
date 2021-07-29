@@ -1,0 +1,86 @@
+.progressiveFlyoutNav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+    width: auto;
+    padding: 14px 0 14px 0;
+    overflow: visible !important;
+    min-width: 1000px;
+    margin: 0;
+    transform: translate3d(0,0,0);
+    font-size: 13px;
+    line-height: normal;
+    border-radius: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    background: var(--white);
+    border: 1px solid var(--grey-tone-6);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.13);
+    zoom: 1;
+    font-family: inherit;
+    z-index: 99;
+}
+.progressiveFlyoutNav.show {
+    display: block;
+}
+.progressiveFlyoutNav__content {
+    width: 100%;
+    min-height: 120px;
+    padding-left: 17px;
+}
+.progressiveFlyoutNav__megaMenu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    /* font-family: var(--font-ancillary); */
+}
+.progressiveFlyoutNav__sectionNav, .progressiveFlyoutNav__columnNav {
+    display: block;
+    flex: 1 0 135px;
+    margin: 0 10px;
+    max-width: 190px;
+    min-width: 135px;
+    line-height: 16px;
+    vertical-align: top;
+}
+.progressiveFlyoutNav__sectionNav > .progressiveFlyoutNav__columnNav {
+    display: block;
+    margin: 0 0 22px 0;
+    flex: 0 1 auto;
+    max-width: none;
+    min-width: 0;
+}
+.progressiveFlyoutNav__columnNav > li {
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.progressiveFlyoutNav__columnNav > li:only-child {
+    margin-bottom: -22px;
+}
+.progressiveFlyoutNav__sectionNav > .progressiveFlyoutNav__columnNav > li:not(:first-child) {
+    font-weight: 400;
+}
+.progressiveFlyoutNav__columnNav > li a {
+    display: block;
+    width: 100%;
+    min-height: 22px;
+    padding-bottom: 6px;
+    color: var(--grey-tone-14);
+}
+.progressiveFlyoutNav__columnNav > li a span {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 16px;
+    margin-top: 20px;
+    padding-bottom: 6px;
+    font-weight: 800;
+    -webkit-box-sizing: border-box;
+}

@@ -211,20 +211,20 @@ file rather than small ones. Your choice
 	--mid-grey: #555;
 
 	--grey-tone-1: #f3f3f3;
-	--grey-tone-2:  #606060;
-	--grey-tone-3:  #a7acb2;
-	--grey-tone-4:  #dadada;
-	--grey-tone-5:  #cdcdcd;
-	--grey-tone-6:  #bbb; 
-	--grey-tone-7:  #ced4da; 
-	--grey-tone-8:  #444; 
-	--grey-tone-9:  #eee; 
+	--grey-tone-2: #606060;
+	--grey-tone-3: #a7acb2;
+	--grey-tone-4: #dadada;
+	--grey-tone-5: #cdcdcd;
+	--grey-tone-6: #bbb; 
+	--grey-tone-7: #ced4da; 
+	--grey-tone-8: #444; 
+	--grey-tone-9: #eee; 
 	--grey-tone-10: #e7e9ec; 
 	--grey-tone-11: #adb1b8; 
 	--grey-tone-12: #a2a6ac; 
 	--grey-tone-13: #8d9096; 
 	--grey-tone-14: #333;
-	--grey-tone-15:#eff1f3;
+	--grey-tone-15: #eff1f3;
 	--grey-tone-16: #f7f8fa;
 	--grey-tone-17: #d9dce1;
 	--grey-tone-18: #e7eaf0;
@@ -276,6 +276,7 @@ file rather than small ones. Your choice
     --font-secondary: "Times New Roman", "Space Mono", Tahoma, Calibri, sans-serif;
     --font-tertiary: "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-ancillary: "Helvetica, arial, sans-serif";
 }
 
 /* Fonts */
