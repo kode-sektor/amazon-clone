@@ -2008,8 +2008,17 @@ ul.list__indent {
     padding-left: 25px;
     margin-right: -.3em;
     vertical-align: top;
+    vertical-align: middle;
     min-height: 1px;
     box-sizing: border-box;
+}
+.bxc__grid__row.bxc__grid__no__gutter {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.bxc__grid__row.bxc__grid__no__gutter .bxc__grid__column {
+    padding-left: 0;
 }
 .bxc__grid__column.bxc__grid__column__1__of__5 {
     width: 20%;
@@ -2017,8 +2026,14 @@ ul.list__indent {
 .bxc__grid__column.bxc__grid__column__2__of__12 {
     width: 16.64667%;
 }
+.bxc__grid__column.bxc__grid__column__3__of__12 {
+    width: 25%;
+}
 .bxc__grid__column.bxc__grid__column__4__of__12 {
     width: 33.33333%;
+}
+.bxc__grid__column.bxc__grid__column__6__of__12 {
+    width: 50%;
 }
 .bxc__grid__column.bxc__grid__column__12__of__12 {
     width: 100%;

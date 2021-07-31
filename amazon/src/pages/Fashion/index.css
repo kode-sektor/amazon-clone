@@ -1,0 +1,15 @@
+.navSub__menu {
+    margin-bottom: -20px;
+    padding-top: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    background-color: var(--grey-tone-34);
+}
+.fashionGallery {
+    margin-top: 43.5px;
+    padding-top: 43.5px;
+    border: thin solid coral;
+}
+.fashionShopByPrice {
+    padding-top: 43.5px;
+}
