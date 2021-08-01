@@ -13,6 +13,7 @@ import GiftCard from "./pages/GiftCards"
 import Electronics from "./pages/Electronics"
 import Beauty from "./pages/Beauty"
 import Fashion from "./pages/Fashion"
+import Health from "./pages/Health"
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/electronics" component={Electronics}/> 
                     <Route path="/beauty" component={Beauty}/>
                     <Route path="/fashion" component={Fashion}/>
+                    <Route path="/health" component={Health}/>
                 </Switch>
             </Router>
         </div>

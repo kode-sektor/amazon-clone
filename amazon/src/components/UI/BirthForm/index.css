@@ -1,0 +1,16 @@
+.birthForm {
+    display: grid;
+    padding: 20px;
+    text-align: center;
+    background: url('../../../images/nudge-card-bg.png') no-repeat top;
+    background-position-y: -150px;
+}
+.birthForm__headerTxt {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--black);
+}
+.birthForm__img {
+    max-height: 6rem;
+}

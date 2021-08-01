@@ -645,3 +645,55 @@ ol.a__horizontal li, ul.a__horizontal li {
     height: 100%;
     background: rgba(0, 0, 0, 0.04);
 }
+
+.gift__image__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    z-index: 100;
+}
+.gift__image {
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 0.08em;
+    word-break: keep-all;
+    font-family: var(--font-primary);
+}
+.a__input__text__addon__group__wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+.a__width__medium {
+    width: 175px !important;
+}
+.a__input__text__addon__group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.a__input__text__addon, .a__input__text__addon__group .a__input__text {
+    display: table-cell;
+    vertical-align: middle;
+}
+.a__input__text__addon {
+    width: 1%;
+    padding: 3px 7px;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid var(--grey-tone-36);
+    border-radius: 3px;
+    white-space: nowrap;
+    background-color: var(--grey-tone-31);
+}
+.a__input__text__addon__group .a__input__text__wrapper:not(:last-child), 
+.a__input__text__addon__group .a__input__text:not(:last-child), 
+.a__input__text__addon:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.a__input__text__addon:first-child {
+    border-right: 0;
+}

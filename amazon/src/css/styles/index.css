@@ -817,6 +817,17 @@ select,
 textarea {
     font-family: inherit
 }
+input, select, textarea {
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    line-height: 19px;
+    color: var(--color);
+}
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
 input[type=checkbox] {
     height: 13px;
     width: 13px;
@@ -929,6 +940,15 @@ a.a__link__emphasis {
     background-image: url('../../images/amzn-sprite-9.png');
     background-size: 512px 256px;
     background-repeat: no-repeat;
+}
+.a__icon__calendar {
+    background-position: -300px -480px;
+    width: 15px;
+    height: 15px;
+}
+.a__cal__date__range__wrapper .a__icon__calendar {
+    cursor: pointer;
+    opacity: .7;
 }
 .a__icon__section__collapse, .a__icon__section__expand {
     position: relative;
@@ -1092,12 +1112,6 @@ a.a__link__emphasis {
     margin-top: -7px;
     left: 10px;
 }
-input, select, textarea {
-    -webkit-transition: all .1s linear;
-    transition: all .1s linear;
-    line-height: 19px;
-    color: var(--color);
-}
 .a__input__text, input[type=text], input[type=search], 
 input[type=number], input[type=tel], input[type=password],
 select.a-select-multiple, textarea {
@@ -1109,10 +1123,16 @@ select.a-select-multiple, textarea {
 .a__input__text, input[type=text], input[type=search], 
 input[type=number], input[type=tel], input[type=password], 
 input[type=date], input[type=email] {
-    background-color: var(--white);
     height: 31px;
     padding: 3px 7px;
+    background-color: var(--white);
     line-height: normal;
+}
+.a__input__text__addon__group .a__input__text {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 2;
 }
 .a__search input {
     padding-left: 29px;
@@ -1544,6 +1564,9 @@ ul.list__indent {
     padding: 14px 18px 18px;
     margin: 0 auto;
 }
+.a__row{
+    width: 100%;
+}
 .a__section {
     max-width: 1000px;
     margin: 0 auto;
@@ -1578,6 +1601,9 @@ ul.list__indent {
 }
 .a__spacing__top__micro {
 	margin-top: 4px !important;
+}
+.a__spacing__large {
+    margin-bottom: 24px !important;
 }
 .a__spacing__small {
     margin-bottom: 8px !important;

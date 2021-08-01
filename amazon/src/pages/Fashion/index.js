@@ -1,18 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { BackArrow, RightArrowCarrot } from '../../components/UI/Icons'
-import { DropdownMenuPrimary } from '../../components/UI/DropdownMenu'
-
-import CouponModal from '../../components/UI/Modal/CouponModal'
-
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
-
-import { CouponBtn } from '../../components/UI/Button'
-import CouponBox from '../../components/UI/CouponBox'
-import Slider from '../../components/UI/Carousel/Carousel'
-import CouponCarousel from '../../components/UI/Carousel/CouponCarousel'
-
 import university_personal_care from '../../images/banner/university-personal-care.jpg'
 import women from '../../images/nav/women.gif'
 import men from '../../images/nav/men.gif'
@@ -23,7 +11,7 @@ import luggage from '../../images/nav/luggage.gif'
 import highly_rated_favourites from '../../images/highly-rated-favourites.jpg'
 import mens_fashion_favourites from '../../images/mens-fashion-favourites.jpg'
 import coveted_womens_styles from '../../images/coveted-womens-styles.jpg'
-// import mens_fashion_favourites from '../../images/mens-fashion-favourites.jpg'
+
 import amazon_essentials_womens_denim from '../../images/amazon-essentials-womens-denim.jpg'
 import easy_dresses from '../../images/easy-dresses.jpg'
 import go_to_shirts from '../../images/go-to-shirts.jpg'
