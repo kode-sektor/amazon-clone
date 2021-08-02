@@ -14,6 +14,17 @@
     line-height: 17px;
     list-style-type: none;
 }
+.giftCards__season ul li.seeMore {
+    margin-top: 6px;
+    margin-bottom: -9px;
+}
+.browsebox .carat {
+    margin-right: 0.2em;
+    color: var(--ochre-5);
+    font-weight: bold;
+    font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
 .giftCards__season ul li a {
     margin-left: 0;
     color: var(--black);

@@ -8,7 +8,10 @@ const BrowseBoxSimple = ({title, links}) => {
             <ul>
                 {
                     links.map((item, i) => (
-                        <li key={i}><Link to={item.href}>{item.text}</Link></li>
+                        <li key={i} className={item.carat && ("seeMore")}>
+                            {item.carat && <span className="carat">&#8250;</span>}
+                            <Link to={item.href}>{item.text}</Link>
+                        </li>
                     ))
                 }
             </ul>

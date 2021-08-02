@@ -202,6 +202,40 @@ const SubNav = () => {
                     </li>
                 </ul>
                 :
+                (queryID === "/sports-and-outdoors") ?
+                <ul className="subNav">
+                    <li>
+                        <NavLink to="/sports-and-outdoors">Sports &amp; Outdoors</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/exercise-and-fitness">Exercise &amp; Fitness</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/sports-apparel">Sports Apparel</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/outdoors">Outdoors</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/cycling">Cycling</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/sports-technology">Sports Technology</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/golf">Golf</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/hunting-and-fishing">Hunting &amp; Fishing</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/fan-shop">Fan Shop</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/deals">Deals</NavLink>
+                    </li>
+                </ul>
+                :
                 <ul className="subNav">
                     {
                         subMenu.map((obj, index) => {

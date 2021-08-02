@@ -24,7 +24,6 @@ import gift_five_dollar_extra_credit from '../../images/gift-5-dollar-extra-cred
 
 import amzn_premium_gift_card from '../../images/amazon-premium-gift-card.jpg'
 
-
 import './index.css'
 
 const GiftCards = () => {

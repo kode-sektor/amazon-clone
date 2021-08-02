@@ -25,8 +25,6 @@ import deerc_d_20_mini_drone_foldable from '../../images/coupons/deerc-d20-mini-
 
 import cetaphil from '../../images/brand/cetaphil.jpg'
 
-import './index.css'
-    
 const Beauty = () => {
     return (
         <Layout>

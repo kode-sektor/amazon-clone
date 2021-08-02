@@ -869,7 +869,9 @@ const Coupon = () => {
                                     </section>
                                 </section>
                                 <section className="coupon__widget">
-                                    <h2>More About Amazon Coupons</h2><p>Enjoy coupon savings without the hassle of clipping. Amazon Coupons showcases coupon discounts from top brands within Grocery, Health &amp; Beauty, Electronics, Home Improvement, Movies, and more. Browse through the current coupon offers listed above. "Clip" the coupon by clicking on the specific deal you're interested in and add the product to your cart. The discount is automatically applied at checkout when you purchase the coupon-eligible product. Never leave the coupon book at home or walk out of the store without redeeming your discounts again. It's that easy.</p><p>New coupon offers become available frequently. Be sure to check back regularly to discover new deals to save you dollars.</p><p>Sign in to see all your available coupons.</p>
+                                    <h2>More About Amazon Coupons</h2>
+                                    <p>Enjoy coupon savings without the hassle of clipping. Amazon Coupons showcases coupon discounts from top brands within Grocery, Health &amp; Beauty, Electronics, Home Improvement, Movies, and more. Browse through the current coupon offers listed above. "Clip" the coupon by clicking on the specific deal you're interested in and add the product to your cart. The discount is automatically applied at checkout when you purchase the coupon-eligible product. Never leave the coupon book at home or walk out of the store without redeeming your discounts again. It's that easy.</p><p>New coupon offers become available frequently. Be sure to check back regularly to discover new deals to save you dollars.</p>
+                                    <p>Sign in to see all your available coupons.</p>
                                     <div class="h_rule"></div>
                                 </section>
                             </section>

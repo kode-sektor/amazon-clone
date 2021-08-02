@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 import Slider from '../../components/UI/Carousel/Carousel'
 import { Grid_One } from '../../components/UI/Grid'
@@ -16,20 +16,11 @@ import shop_baby_store from '../../images/banner/shop-baby-store.png'
 import baby_registry_and_amazon_family from '../../images/baby-registry-and-amazon-family.png'
 
 import university_personal_care from '../../images/banner/university-personal-care.jpg'
-import neutrogena_ultra_sheer from '../../images/products/neutrogena-ultra-sheer.jpg'
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import loreal_paris from "../../images/banner/l'oreal-paris.jpg"
 
-import water_gun_2_pack_970cc_high from '../../images/coupons/water-gun-2-pack-970cc-high.jpg'
-import eastshining_upgraded from '../../images/coupons/eastshining-upgraded.jpg'
-import beach_sand_toys_set_outdoor from '../../images/coupons/beach-sand-toys-set-outdoor.jpg'
-import holy_stone_hs110d_fpv_rc_drone from '../../images/coupons/holy-stone-hs110d-fpv-rc-drone.jpg'
-import aohu_hover_hockey_soccer from '../../images/coupons/aohu-hover-hockey-soccer.jpg'
-import deerc_d_20_mini_drone_foldable from '../../images/coupons/deerc-d20-mini-drone-foldable.jpg'
-
 import cetaphil from '../../images/brand/cetaphil.jpg'
 import duracell_coppertop from '../../images/products/duracell-coppertop-aa-alkaline-batteries.jpg'
-
 
 import './index.css'
     

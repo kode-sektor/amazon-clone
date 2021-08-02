@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
-import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import Slider from '../../components/UI/Carousel/Carousel'
 import { Grid_One } from '../../components/UI/Grid'
 import { CardSix, CardSeven } from '../../components/UI/Card'
@@ -21,76 +21,373 @@ import registry from '../../images/stores-and-programs/registry.jpg'
 import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse-deals-bubbler.jpg'
 import coupon_bubbler from '../../images/stores-and-programs/coupon-bubbler.jpg'
 
-import subscribe_and_save from '../../images/subscribe-and-save.jpg'
 import hills_save_up_to_10 from '../../images/banner/hills-save-up-to-10.jpg'
 import visit_your_pet_profile from '../../images/banner/visit-your-pet-profile.jpg'
 import shop_pet_essentials_amazonbasics from '../../images/banner/shop-pet-essentials-amazonbasics.jpg'
 import subscribe_and_save_pet_supplies from '../../images/banner/subscribe-and-save-pet-supplies.jpg'
 import products_from_small_and_medium_businesses from '../../images/banner/products-from-small-and-medium-businesses.jpg'
 
+import sports_biggest_stage from '../../images/banner/sports-biggest-stage.png'
 import cetaphil from '../../images/brand/cetaphil.jpg'
-
 
 import './index.css'
     
-const Health = () => {
+const Sports = () => {
     return (
         <Layout>
              <section className="a__container">
                 <section className="d-flex mx-0 flex-fill pet">
                     <section className="fashion__browsebox browserBox">
-                        <section className="fashion__browse__box__babyRegistry">
-                            <Link to="/">
-                                <img src={subscribe_and_save} alt={"Subscribe & Save"} />
-                            </Link>
-                        </section>
-                        <br/>
+                        <BrowseBoxSimple
+                            title={"Exercise & Fitness"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Ellipticals"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Exercise Bikes"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Running"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Strength Training"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Swimming"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Treadmills"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Yoga"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "All Exercise & Fitness",
+                                        carat : true
+                                    },
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Outdoors"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Camping & Hiking"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Canoeing"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Climbing"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Kayaking"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Skiing"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Snowboarding"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "All Outdoors",
+                                        carat : true
+                                    },
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Hunting & Fishing"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Airsoft & Air Guns"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Archery"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Fishing"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Hunting"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Knives"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "All Hunting & Fishing",
+                                        carat : true
+                                    },
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Sports"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Action Sports"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Basketball"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Cycling"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Football"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Golf"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Hockey"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Soccer"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Water Sports"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Winter Sports"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "All Hunting & Fishing",
+                                        carat : true
+                                    },
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Leisure & Games"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Air Hockey"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Billiards"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Darts"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Foosball"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Outdoor Games & Activities"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Table Tennis"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "All Leisure & Games",
+                                        carat : true
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Accessories"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Fitness Technology"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Gym Bags"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Pumps"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Sports Medicine"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Water Bottles"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "All Accessories",
+                                        carat : true
+                                    }
+                                ]
+                            }
+                        />
                         <BrowseBoxPrimary
                             title={"Department"}
                             links={
                                 [
                                     {
-                                        text : "Pet Supplies",
+                                        text : "Sports & Outdoors",
                                         indentClass : "a__indent__1"
                                     },
                                     {
                                         href : "/",
-                                        text : "Birds",
+                                        text : "Action Sports",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Cats",
+                                        text : "Boating & Watersports",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Dogs",
+                                        text : "Cycling",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Fish & Aquatic Pets",
+                                        text : "Dance & Gymnastics",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Horses",
+                                        text : "Equestrian Sports",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Insects",
+                                        text : "Exercise & Fitness",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Reptiles & Amphibians",
+                                        text : "Golf",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Small Animals",
+                                        text : "Hunting & Fishing",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Leisure Sports & Game Room",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Martial Arts & Combat Sports",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Outdoor Gear",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Paintball & Airsoft",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Racquet & Paddle Sports",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Snow & Ice Sports",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Team Sports",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Accessories",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Sports Medicine",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Sports Technology",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Trophies, Medals & Awards",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Memorabilia Display & Storage",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Fan Shop",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Sports Collectibles",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Outdoor Recreation Sports",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Sports Apparel",
                                         indentClass : "a__indent__2"
                                     }
                                 ]
@@ -299,27 +596,19 @@ const Health = () => {
                                     },
                                     {
                                         href : "/",
+                                        text : "NAZO MART"
+                                    },
+                                    {
+                                        href : "/",
                                         text : "Fastmedia ship USA"
                                     },
                                     {
                                         href : "/",
-                                        text : "Pharmapacks"
+                                        text : "WhyNotOutside-UStoCA (all duties paid)"
                                     },
                                     {
                                         href : "/",
-                                        text : "DAILY SUPPLY"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Mega Supplement Store"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Ella Gray Beauty"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Holistic Ave"
+                                        text : "Warehouse Deals"
                                     },
                                     {
                                         href : "/",
@@ -327,7 +616,15 @@ const Health = () => {
                                     },
                                     {
                                         href : "/",
-                                        text : "HerbsPro"
+                                        text : "Vineya"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Canadian Deal Outlet"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "good scholar"
                                     }
                                 ]
                             }
@@ -345,64 +642,6 @@ const Health = () => {
                         />
                     </section>
                     <section className="apBrowse flex-fill">
-                        <section className="sl__sobe__card__desktop pet__gallery">
-                            <div className="sobe__d__b__1__container">
-                                <div className="sobe__d__b__1__carousel">
-                                    <header className="sl__sobe__carousel__header">
-                                        <h2>Shop by pet</h2>
-                                    </header>
-                                    <section className="sobe__d__b__1__carousel__viewport__container">
-                                        <PrimaryCarousel 
-                                            slider={
-                                                <Slider 
-                                                    type={"multiImage"}
-                                                    carouselClass={"amzn__carousel"}
-                                                    count={6}
-                                                    items={[
-                                                        {
-                                                            href: '/',
-                                                            src: coupon_bubbler,
-                                                            altText: "Coupons",
-                                                            caption: "Coupons"
-                                                        },
-                                                        {
-                                                            href: '/',
-                                                            src: warehouse_deals_bubbler,
-                                                            altText: "Warehouse Deals",
-                                                            caption: "Warehouse Deals"
-                                                        },
-                                                        {
-                                                            href: '/',
-                                                            src: registry,
-                                                            altText: "Registry",
-                                                            caption: "Registry"
-                                                        },
-                                                        {
-                                                            href: '/',
-                                                            src: outlets_hoveler,
-                                                            altText: "Outlet",
-                                                            caption: "Outlet"
-                                                        },
-                                                        {
-                                                            href: '/',
-                                                            src: mozart_fr_bubbler,
-                                                            altText: "Switch To French",
-                                                            caption: "Switch To French"
-                                                        },
-                                                        {
-                                                            href: '/',
-                                                            src: desktop_bubbler,
-                                                            altText: "Subscribe & Save",
-                                                            caption: "Subscribe & Save"
-                                                        }
-                                                    ]}
-                                                />
-                                            }
-                                        />
-                                    </section>
-                                </div>
-                            </div>
-                        </section>
                         <section>
                             <div className="bxc__grid__spacing__large">
                                 <div className="bxc__grid__container bxc__grid__container__width__1500">
@@ -411,51 +650,7 @@ const Health = () => {
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
-                                                        <img src={hills_save_up_to_10} alt="Hill's: Save up to $10"/>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                            <div className="bxc__grid__content bxc__grid__content__light">
-                                                <div className="bxc__grid__image bxc__grid__image__light">
-                                                    <Link to="/">
-                                                        <img src={visit_your_pet_profile} alt="Visit your pet profile"/>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                            <div className="bxc__grid__content bxc__grid__content__light">
-                                                <div className="bxc__grid__image bxc__grid__image__light">
-                                                    <Link to="/">
-                                                        <img src={shop_pet_essentials_amazonbasics} alt="shop pet essentials: amazonbasics"/>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                            <div className="bxc__grid__content bxc__grid__content__light">
-                                                <div className="bxc__grid__image bxc__grid__image__light">
-                                                    <Link to="/">
-                                                        <img src={subscribe_and_save_pet_supplies} alt="subscribe & save: pet supplies"/>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                            <div className="bxc__grid__content bxc__grid__content__light">
-                                                <div className="bxc__grid__image bxc__grid__image__light">
-                                                    <Link to="/">
-                                                        <img src={products_from_small_and_medium_businesses} alt="products from small and medium businesses"/>
+                                                        <img src={sports_biggest_stage} alt="Sports Biggest Stage"/>
                                                     </Link>
                                                 </div>
                                             </div>
@@ -792,7 +987,7 @@ const Health = () => {
                         </section>
                         <section>
                             <CardSix
-                                title={"Best Sellers"}
+                                title={"Best Sellers in Sports & Outdoors"}
                                 link={"/"}
                                 items={
                                     [
@@ -1554,4 +1749,4 @@ const Health = () => {
     )
 }
 
-export default Health
+export default Sports

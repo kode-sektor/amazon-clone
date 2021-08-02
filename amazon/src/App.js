@@ -15,6 +15,7 @@ import Beauty from "./pages/Beauty"
 import Fashion from "./pages/Fashion"
 import Health from "./pages/Health"
 import PetSupplies from "./pages/PetSupplies"
+import Sports from "./pages/Sports"
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
                     <Route path="/fashion" component={Fashion}/>
                     <Route path="/health" component={Health}/>
                     <Route path="/pet-supplies" component={PetSupplies}/>
+                    <Route path="/sports-and-outdoors" component={Sports}/>
                 </Switch>
             </Router>
         </div>
