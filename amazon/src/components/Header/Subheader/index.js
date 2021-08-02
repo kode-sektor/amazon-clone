@@ -35,7 +35,7 @@ const Subheader = (props) => {
                         { label: "Beauty & Personal Care", href: "beauty", icon: null },
                         { label: "Fashion", href: "fashion", icon: null },
                         { label: "Kay's Store", href: "store", icon: null },
-                        { label: "Best Sellers", href: "best-sellers", icon: null },
+                        { label: "Pet Supplies", href: "pet-supplies", icon: null },
                         { label: "Gift Cards", href: "gift-cards", icon: null },
                         { label: "Health & Household", href: "health", icon: null },
                         { label: "Customer Service", href: "customer-service", icon: null },

@@ -14,6 +14,7 @@ import Electronics from "./pages/Electronics"
 import Beauty from "./pages/Beauty"
 import Fashion from "./pages/Fashion"
 import Health from "./pages/Health"
+import PetSupplies from "./pages/PetSupplies"
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                     <Route path="/beauty" component={Beauty}/>
                     <Route path="/fashion" component={Fashion}/>
                     <Route path="/health" component={Health}/>
+                    <Route path="/pet-supplies" component={PetSupplies}/>
                 </Switch>
             </Router>
         </div>

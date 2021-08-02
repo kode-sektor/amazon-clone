@@ -4,6 +4,7 @@
     line-height: 1em;
 }
 .page__header a:hover, .page__header a:focus {
-    color: var(--white) !important; 
+    /* color: var(--white) !important;  */
+    color: var(--white); 
     text-decoration: none;
 }
