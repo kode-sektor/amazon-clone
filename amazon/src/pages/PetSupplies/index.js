@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 import Slider from '../../components/UI/Carousel/Carousel'
@@ -20,14 +21,19 @@ import neutrogena_ultra_sheer from '../../images/products/neutrogena-ultra-sheer
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import loreal_paris from "../../images/banner/l'oreal-paris.jpg"
 
-import water_gun_2_pack_970cc_high from '../../images/coupons/water-gun-2-pack-970cc-high.jpg'
-import eastshining_upgraded from '../../images/coupons/eastshining-upgraded.jpg'
-import beach_sand_toys_set_outdoor from '../../images/coupons/beach-sand-toys-set-outdoor.jpg'
-import holy_stone_hs110d_fpv_rc_drone from '../../images/coupons/holy-stone-hs110d-fpv-rc-drone.jpg'
-import aohu_hover_hockey_soccer from '../../images/coupons/aohu-hover-hockey-soccer.jpg'
-import deerc_d_20_mini_drone_foldable from '../../images/coupons/deerc-d20-mini-drone-foldable.jpg'
+import desktop_bubbler from '../../images/stores-and-programs/desktop-bubbler.jpg'
+import mozart_fr_bubbler from '../../images/stores-and-programs/mozart-fr-bubbler.jpg'
+import outlets_hoveler from '../../images/stores-and-programs/outlets-hoveler.png'
+import registry from '../../images/stores-and-programs/registry.jpg'
+import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse-deals-bubbler.jpg'
+import coupon_bubbler from '../../images/stores-and-programs/coupon-bubbler.jpg'
 
 import subscribe_and_save from '../../images/subscribe-and-save.jpg'
+import hills_save_up_to_10 from '../../images/banner/hills-save-up-to-10.jpg'
+import visit_your_pet_profile from '../../images/banner/visit-your-pet-profile.jpg'
+import shop_pet_essentials_amazonbasics from '../../images/banner/shop-pet-essentials-amazonbasics.jpg'
+import subscribe_and_save_pet_supplies from '../../images/banner/subscribe-and-save-pet-supplies.jpg'
+import products_from_small_and_medium_businesses from '../../images/banner/products-from-small-and-medium-businesses.jpg'
 
 import cetaphil from '../../images/brand/cetaphil.jpg'
 import duracell_coppertop from '../../images/products/duracell-coppertop-aa-alkaline-batteries.jpg'
@@ -39,7 +45,7 @@ const Health = () => {
     return (
         <Layout>
              <section className="a__container">
-                <section className="d-flex mx-0 flex-fill">
+                <section className="d-flex mx-0 flex-fill pet">
                     <section className="fashion__browsebox browserBox">
                         <section className="fashion__browse__box__babyRegistry">
                             <Link to="/">
@@ -52,72 +58,47 @@ const Health = () => {
                             links={
                                 [
                                     {
-                                        text : "Health & Personal Care",
+                                        text : "Pet Supplies",
                                         indentClass : "a__indent__1"
                                     },
                                     {
                                         href : "/",
-                                        text : "Baby & Child Care",
+                                        text : "Birds",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Diet & Nutrition",
+                                        text : "Cats",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Health Care",
+                                        text : "Dogs",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Vitamins, Minerals & Supplements",
+                                        text : "Fish & Aquatic Pets",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Household Supplies",
+                                        text : "Horses",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Medical Supplies & Equipment",
+                                        text : "Insects",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Sex & Sensuality",
+                                        text : "Reptiles & Amphibians",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Stationery & Party Supplies",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Vision Care",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Wellness",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Shaving & Hair Removal",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Oral Care",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Women's Health & Family Planning",
+                                        text : "Small Animals",
                                         indentClass : "a__indent__2"
                                     }
                                 ]
@@ -372,25 +353,124 @@ const Health = () => {
                         />
                     </section>
                     <section className="apBrowse flex-fill">
-                        <h1 className="bxc__grid__spacing__large">
-                            Health &amp; Personal Care
-                        </h1>
+                        <section className="sl__sobe__card__desktop pet__gallery">
+                            <div className="sobe__d__b__1__container">
+                                <div className="sobe__d__b__1__carousel">
+                                    <header className="sl__sobe__carousel__header">
+                                        <h2>Shop by pet</h2>
+                                    </header>
+                                    <section className="sobe__d__b__1__carousel__viewport__container">
+                                        <PrimaryCarousel 
+                                            slider={
+                                                <Slider 
+                                                    type={"multiImage"}
+                                                    carouselClass={"amzn__carousel"}
+                                                    count={6}
+                                                    items={[
+                                                        {
+                                                            href: '/',
+                                                            src: coupon_bubbler,
+                                                            altText: "Coupons",
+                                                            caption: "Coupons"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: warehouse_deals_bubbler,
+                                                            altText: "Warehouse Deals",
+                                                            caption: "Warehouse Deals"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: registry,
+                                                            altText: "Registry",
+                                                            caption: "Registry"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: outlets_hoveler,
+                                                            altText: "Outlet",
+                                                            caption: "Outlet"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: mozart_fr_bubbler,
+                                                            altText: "Switch To French",
+                                                            caption: "Switch To French"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: desktop_bubbler,
+                                                            altText: "Subscribe & Save",
+                                                            caption: "Subscribe & Save"
+                                                        }
+                                                    ]}
+                                                />
+                                            }
+                                        />
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
                         <section>
-                            <section className="bxc__grid__spacing__large">
+                            <div className="bxc__grid__spacing__large">
                                 <div className="bxc__grid__container bxc__grid__container__width__1500">
                                     <div className="bxc__grid__row bxc__grid__row__light">
                                         <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
-                                                        <img src={university_personal_care} alt="Off to University Personal Care"/>
+                                                        <img src={hills_save_up_to_10} alt="Hill's: Save up to $10"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={visit_your_pet_profile} alt="Visit your pet profile"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={shop_pet_essentials_amazonbasics} alt="shop pet essentials: amazonbasics"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={subscribe_and_save_pet_supplies} alt="subscribe & save: pet supplies"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={products_from_small_and_medium_businesses} alt="products from small and medium businesses"/>
                                                     </Link>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+                            </div>
                         </section>
                         <section>
                             <Grid_One   
@@ -580,7 +660,6 @@ const Health = () => {
                                 }
                             />
                         </section>
-                        <BirthForm />
                         <section>
                             <CardSix
                                 title={"Hot New Releases"}
@@ -651,7 +730,7 @@ const Health = () => {
                                 }
                             />
                         </section>
-                        <section>
+                        {/* <section>
                             <CarouselDetailed 
                                 heading={"Powered by Duracell"}
                                 squished={true}
@@ -710,7 +789,7 @@ const Health = () => {
                                     />
                                 }
                             />
-                        </section>
+                        </section> */}
                         <section>
                             <CardSix
                                 title={"Most Wished For"}
