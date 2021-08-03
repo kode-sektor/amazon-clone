@@ -236,6 +236,43 @@ const SubNav = () => {
                     </li>
                 </ul>
                 :
+                (queryID === "/books") ?
+                <ul className="subNav">
+                    <li>
+                        <NavLink to="/books">Books</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/advanced-search">Advanced Search</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/todays-deals">Today's Deals</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/new-releases">New Releases</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/amazon-charts">Amazon Charts</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/best-sellers-more">Best Sellers &amp; More</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/globe-mail-best-sellers">The Globe &amp; Mail Best Sellers</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/ny-times-best-sellers">New York Times Best Sellers</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/best-books-month">Best Books of the Month</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/childrens-books">Children's Books</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/textbooks">Textbooks</NavLink>
+                    </li>
+                </ul>
+                :
                 <ul className="subNav">
                     {
                         subMenu.map((obj, index) => {

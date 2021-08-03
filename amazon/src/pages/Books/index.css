@@ -1,0 +1,63 @@
+.bookNav {
+    overflow: hidden;
+    padding: 0 21px 0 21px;
+    border-bottom: 1px solid var(--grey-tone-24);
+    background-color: transparent;
+}
+.bookNav__title {
+    height: 25px;
+}
+.bookNav__menu {
+    position: relative;
+    white-space: nowrap;
+}
+.bookNav__menuItems {
+    overflow: hidden;
+    margin-left: 22px;
+    margin-right: 22px;
+    font-size: 0;
+}
+.bookNav__menuTile {
+    display: inline-block;
+    width: 9.090909090909092%;
+    min-width: 85px;
+    text-align: center;
+    white-space: normal;
+}
+.bookNav__menuTile:hover .bookNav__tileOverlay {
+    display: inline-block;
+}
+.bookNav__menuSingleTile {
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.bookNav__menuImgContainer {
+    position: relative;
+    width: 85px;
+    height: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bookNav__tileOverlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: var(--black);
+    opacity: .05;
+}
+.bookNav__faceoutText {
+    display: -webkit-box;
+    height: 35px;
+    padding: 0 2px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+}

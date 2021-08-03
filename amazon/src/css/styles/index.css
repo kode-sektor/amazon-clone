@@ -1513,6 +1513,10 @@ ul.list__indent {
 .a__size__small__ii {
     font-size: 12px!important;
 }
+.gb__size__small {
+    font-size: 12px;
+    line-height: 16px;
+}
 .a__size__large {
     font-size: 21px !important;
     line-height: 1.3 !important;
