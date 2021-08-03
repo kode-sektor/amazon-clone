@@ -473,6 +473,9 @@ ol.a__horizontal li, ul.a__horizontal li {
 .a__checkbox__fancy .a__icon__checkbox {
     background-position: -453px -3px !important;
 }
+.a__checkbox__fancy .a__icon__checkbox.ticked {
+    background-position: -475px -40px !important;
+}
 .a__checkbox__fancy:hover .a__icon__checkbox {
     background-position: -435px -3px!important;
 }

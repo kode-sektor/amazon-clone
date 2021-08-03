@@ -61,3 +61,18 @@
     text-overflow: ellipsis;
     font-weight: 700;
 }
+.book__appendage {
+    font-size: 12px;
+    font-family: var(--font-tertiary);
+}
+.book__appendage h2 {
+    margin: 0 0 0.35em 0px;
+    padding: 0;
+    font-size: 135%;
+    font-weight: bold;
+    color: var(--ochre-5);
+}
+.book__appendage p {
+    margin: 0 0 0.5em 0;
+    line-height: 1.4em;
+}

@@ -1065,210 +1065,208 @@ const Health = () => {
                             />
                         </section>
                         <section>
-                            <div className="bxc__grid__spacing__large">
-                                <section className="bxc__grid__spacing__large">
-                                    <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={loreal_paris} alt="L'Oreal Paris"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={loreal_paris} alt="L'Oreal Paris"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={loreal_paris} alt="L'Oreal Paris"/>
-                                                        </Link>
-                                                    </div>
+                            <section className="bxc__grid__spacing__large">
+                                <div className="bxc__grid__container bxc__grid__container__width__1500">
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={loreal_paris} alt="L'Oreal Paris"/>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr className="a__divider__normal" />
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
+                                        <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={loreal_paris} alt="L'Oreal Paris"/>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
+                                        <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={loreal_paris} alt="L'Oreal Paris"/>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-                            </div>
+                                    <hr className="a__divider__normal" />
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__row bxc__grid__row__light">
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                            <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                         </section>
                         <section>
                             <CardSix

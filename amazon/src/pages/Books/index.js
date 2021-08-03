@@ -31,6 +31,30 @@ import mystery_and_suspense from '../../images/nav/mystery-and-suspense.jpg'
 import sci_fi_and_fantasy from '../../images/nav/sci-fi-and-fantasy.png'
 import teens_and_young_adult from '../../images/nav/teens-and-young-adult.jpg'
 
+import prime_two_day_shipping from '../../images/prime-two-day-shipping.png'
+import buy_a_book_give_a_book from '../../images/banner/buy-a-book-give-a-book.jpg'
+import amazon_editors_best_books_of_august from '../../images/banner/amazon-editors-best-books-of-august.jpg'
+import shop_by_series from '../../images/banner/shop-by-series.jpg'
+import k_12_store from '../../images/k-12-store.jpg'
+import best_of_canadian_books from '../../images/best-of-canadian-books.jpg'
+import best_books_of_the_month from '../../images/best-books-of-the-month.jpg'
+import amazon_charts from '../../images/amazon-charts.jpg'
+
+import robert_munsch_books from '../../images/nav/robert-munsch-books.jpg'
+import scholastic_early_learners from '../../images/nav/scholastic-early-learners.jpg'
+import peppa_pig from '../../images/nav/peppa-pig.png'
+import graphix from '../../images/nav/graphix.jpg'
+import little_people_big_dreams from '../../images/nav/little-people-big-dreams.jpg'
+import narwhal_and_jelly from '../../images/nav/narwhal-and-jelly.jpg'
+
+import the_comfort_book from '../../images/banner/the-comfort-book.jpg'
+import leading_at_a_distance from '../../images/books/leading-at-a-distance.jpg'
+import one_two_three from '../../images/books/one-two-three.jpg'
+import the_secret_keeper_of_jaipur from '../../images/books/the-secret-keeper-of-jaipur.jpg'
+import blackout from '../../images/books/blackout.jpg'
+
+
+
 import './index.css'
     
 const Books = () => {
@@ -236,225 +260,157 @@ const Books = () => {
                 <section className="d-flex mx-0 flex-fill pet">
                     <section className="fashion__browsebox browserBox">
                         <BrowseBoxSimple
-                            title={"Exercise & Fitness"}
                             links={
                                 [
                                     {
                                         href : "/",
-                                        text : "Ellipticals"
+                                        text : "English Books"
                                     },
                                     {
                                         href : "/",
-                                        text : "Exercise Bikes"
+                                        text : "French Books"
                                     },
                                     {
                                         href : "/",
-                                        text : "Running"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Strength Training"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Swimming"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Treadmills"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Yoga"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "All Exercise & Fitness",
-                                        carat : true
-                                    },
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Outdoors"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Camping & Hiking"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Canoeing"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Climbing"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Kayaking"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Skiing"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Snowboarding"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "All Outdoors",
-                                        carat : true
-                                    },
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Hunting & Fishing"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Airsoft & Air Guns"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Archery"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Fishing"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Hunting"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Knives"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "All Hunting & Fishing",
-                                        carat : true
-                                    },
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Sports"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Action Sports"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Basketball"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Cycling"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Football"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Golf"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Hockey"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Soccer"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Water Sports"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Winter Sports"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "All Hunting & Fishing",
-                                        carat : true
-                                    },
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Leisure & Games"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Air Hockey"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Billiards"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Darts"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Foosball"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Outdoor Games & Activities"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Table Tennis"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "All Leisure & Games",
-                                        carat : true
+                                        text : "Kindle Books"
                                     }
                                 ]
                             }
                         />
                         <BrowseBoxSimple
-                            title={"Accessories"}
+                            title={"Textbooks"}
                             links={
                                 [
                                     {
                                         href : "/",
-                                        text : "Fitness Technology"
+                                        text : "New & Used Textbooks"
                                     },
                                     {
                                         href : "/",
-                                        text : "Gym Bags"
+                                        text : "Prime Student"
                                     },
                                     {
                                         href : "/",
-                                        text : "Pumps"
+                                        text : "K-12 Textbook Store"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Editors' Picks"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Best Books of the Year"
                                     },
                                     {
                                         href : "/",
-                                        text : "Sports Medicine"
+                                        text : "Best Books of the Month"
                                     },
                                     {
                                         href : "/",
-                                        text : "Water Bottles"
+                                        text : "Best Books of the Year for Children and Teens"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Popular Features"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Today's Deals"
                                     },
                                     {
                                         href : "/",
-                                        text : "All Accessories",
-                                        carat : true
+                                        text : "Canadian Books"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "From Page to Screen"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "First Novel Awards"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Bargains in Books"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Featured Stores"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Book to Screen Store"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Globe and Mail Bestsellers"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "DaNew York Times Best Sellersrts"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Black Voices in Books"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "For Dummies Store"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Wiley's Professional Central"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Jenny Han Books"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Kindle"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Kindle eBooks"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Kindle Deals"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Kindle Reading Apps"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Kindle Unlimited"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxSimple
+                            title={"Audible Audiobooks"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Audiobooks"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Audible Membership"
                                     }
                                 ]
                             }
@@ -464,139 +420,304 @@ const Books = () => {
                             links={
                                 [
                                     {
-                                        text : "Sports & Outdoors",
+                                        text : "Books",
                                         indentClass : "a__indent__1"
                                     },
                                     {
                                         href : "/",
-                                        text : "Action Sports",
+                                        text : "Arts & Photography",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Boating & Watersports",
+                                        text : "Biographies & Memoirs",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Cycling",
+                                        text : "Business & Investing",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Dance & Gymnastics",
+                                        text : "Calendars",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Equestrian Sports",
+                                        text : "Children's Books",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Exercise & Fitness",
+                                        text : "Christian Books & Bibles",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Golf",
+                                        text : "Comics & Graphic Novels",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Hunting & Fishing",
+                                        text : "Computers & Technology",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Leisure Sports & Game Room",
+                                        text : "Cookbooks, Food & Wine",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Martial Arts & Combat Sports",
+                                        text : "Crafts, Hobbies & Home",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Outdoor Gear",
+                                        text : "Education & Reference",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Paintball & Airsoft",
+                                        text : "Erotica",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Racquet & Paddle Sports",
+                                        text : "Health, Fitness & Dieting",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Snow & Ice Sports",
+                                        text : "History",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Team Sports",
+                                        text : "Humour & Entertainment",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Accessories",
+                                        text : "Law",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Sports Medicine",
+                                        text : "LGBTQ2S+",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Sports Technology",
+                                        text : "Literature & Fiction",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Trophies, Medals & Awards",
+                                        text : "Medical Books",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Memorabilia Display & Storage",
+                                        text : "Mystery, Thriller & Suspense",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Fan Shop",
+                                        text : "Parenting & Relationships",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Sports Collectibles",
+                                        text : "Politics & Social Sciences",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Outdoor Recreation Sports",
+                                        text : "Professional & Technical",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Sports Apparel",
+                                        text : "Religion & Spirituality",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Romance",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Science & Math",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Science Fiction & Fantasy",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Self-Help",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Sports & Outdoors",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Teen & Young Adult",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Textbooks",
+                                        indentClass : "a__indent__2"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Travel",
                                         indentClass : "a__indent__2"
                                     }
                                 ]
                             }
                         />
                         <BrowseCheckbox
-                            title={"Subscription Option"}
+                            title={"Language"}
                             links={
                                 [
                                     {
                                         href : "/",
-                                        text : "Subscribe & Save"
+                                        text : "English"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "French"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Spanish"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Japanese"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxPlain
+                            title={"Format"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Kindle Edition"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Paperback"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Hardcover"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Board Book"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Audible Audio Edition"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Large Print"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Spiral-bound"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Loose Leaf"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Audio CD"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxPlain
+                            title={"Author"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Dk"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Peter Pauper Press"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "James Patterson"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "James W. Patterson"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Nora Roberts"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Stephen King"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Stephen Michael King"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseCheckbox
+                            title={"Book Series"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Breakthrough"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Abby Kane FBI Thriller"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "The NightShade Forensic Files"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Second Chance Series"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "FBI Thriller"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "The Water Series"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Fallen Immortals"
                                     }
                                 ]
                             }
@@ -621,52 +742,6 @@ const Books = () => {
                                     {
                                         href : "/",
                                         text : "FREE Shipping"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"From Our Brands"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Our Brands"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"Featured Brands"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "DAWN"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "HUGGIES"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Q-tips"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "HYDRO SILK"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Glad"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Gum"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Rael"
                                     }
                                 ]
                             }
@@ -723,7 +798,7 @@ const Books = () => {
                             }
                         />
                         <BrowseBoxPlain
-                            title={"New Arrivals"}
+                            title={"New Releases"}
                             links={
                                 [
                                     {
@@ -741,33 +816,6 @@ const Books = () => {
                                 ]
                             }
                         />
-                        <BrowseBoxPlain
-                            title={"Price"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Under $25",
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$25 to $50",
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$50 to $100",
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$100 to $200",
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$200 to above",
-                                    },
-                                ]
-                            }
-                        />
                         <BrowseCheckbox
                             title={"Deals"}
                             links={
@@ -780,54 +828,8 @@ const Books = () => {
                             }
                         />
                         <BrowseCheckbox
-                            title={"Seller"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Amazon.ca"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Layger"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "NAZO MART"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Fastmedia ship USA"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "WhyNotOutside-UStoCA (all duties paid)"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Warehouse Deals"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "2CA61 BYLF"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Vineya"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Canadian Deal Outlet"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "good scholar"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
                             title={"Availability"}
+                            ticked={true}
                             links={
                                 [
                                     {
@@ -837,19 +839,222 @@ const Books = () => {
                                 ]
                             }
                         />
+                        <section className="a__row">
+                            <Link to="/">
+                                <img src={prime_two_day_shipping} alt="prime two day shipping" />
+                            </Link>
+                        </section>
                     </section>
                     <section className="apBrowse flex-fill">
-                        <section>
-                            <div className="bxc__grid__spacing__large">
-                                <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                            <div className="bxc__grid__content bxc__grid__content__light">
-                                                <div className="bxc__grid__image bxc__grid__image__light">
-                                                    <Link to="/">
-                                                        <img src={sports_biggest_stage} alt="Sports Biggest Stage"/>
-                                                    </Link>
-                                                </div>
+                        <section className="bxc__grid__spacing__large">
+                            <div className="bxc__grid__container bxc__grid__container__width__1500">
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={buy_a_book_give_a_book} alt="buy a book give a book"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="bxc__grid__spacing__large">
+                            <div className="bxc__grid__container bxc__grid__container__width__1500">
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={amazon_editors_best_books_of_august} alt="amazon editors best books of august"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="bxc__grid__spacing__large">
+                            <div className="bxc__grid__container bxc__grid__container__width__1500">
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <hr className="a__divider__normal" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={k_12_store} alt="k 12 store"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={best_books_of_the_month} alt="best books of the month"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={best_of_canadian_books} alt="best of canadian books"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={amazon_charts} alt="amazon charts"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={shop_by_series} alt="shop by series"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={robert_munsch_books} alt="robert munsch books"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={scholastic_early_learners} alt="scholastic early learners"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={peppa_pig} alt="peppa pig"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={graphix} alt="graphix"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={little_people_big_dreams} alt="little people big dreams"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={narwhal_and_jelly} alt="narwhal and jelly"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <hr className="a_divider_normal" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={the_comfort_book} alt="the comfort book"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={leading_at_a_distance} alt="leading at a distance"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={one_two_three} alt="one two three"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={the_secret_keeper_of_jaipur} alt="the secret keeper of jaipur"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <Link to="/">
+                                                    <img src={blackout} alt="blackout"/>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bxc__grid__row bxc__grid__row__light">
+                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
+                                        <div className="bxc__grid__content bxc__grid__content__light">
+                                            <div className="bxc__grid__image bxc__grid__image__light">
+                                                <hr className="a__divider__normal" />
                                             </div>
                                         </div>
                                     </div>
@@ -975,424 +1180,6 @@ const Books = () => {
                                 }
                             />
                         </section>
-                        <section>
-                            <CardSix
-                                title={"Recommended for you"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section>
-                            <CardSix
-                                title={"Hot New Releases"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section>
-                            <CardSix
-                                title={"Most Wished For"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />  
-                        </section>
-                        <section>
-                            <CardSix
-                                title={"Best Sellers in Sports & Outdoors"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 1
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 2
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 3
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section>
-                            <CardSix
-                                title={"Under $25"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 1
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 2
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 3
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section>
-                            <CardSix
-                                title={"Most Gifted"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
                         <section>   
                             <CardSix
                                 title={"Featured Deals"}
@@ -1468,477 +1255,12 @@ const Books = () => {
                                 }
                             />
                         </section>
-                        <section>
-                            <div className="bxc__grid__spacing__large">
-                                <section className="bxc__grid__spacing__large">
-                                    <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={loreal_paris} alt="L'Oreal Paris"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={loreal_paris} alt="L'Oreal Paris"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={loreal_paris} alt="L'Oreal Paris"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr className="a__divider__normal" />
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="bxc__grid__row bxc__grid__row__light">
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                                <div className="bxc__grid__content bxc__grid__content__light">
-                                                    <div className="bxc__grid__image bxc__grid__image__light">
-                                                        <Link to="/">
-                                                            <img src={cetaphil} alt="Cetaphil"/>
-                                                        </Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
+                        <section className="book__appendage">
+                            <h2>About Books at Amazon.ca</h2>
+                            <p>Amazon.ca is committed to providing the best online shopping experience for books throughout Canada.  Find your next great read at Amazon.ca.  Fiction-lovers will find the bestselling books in literature & fiction, mysteries & thrillers, science fiction & fantasy, and romance. Amazon.ca has a great selection of children’s books and books for teens—from classic storybooks to popular series.</p>
+                            <p>Those who are more into facts and figures will discover popular nonfiction books covering a vast array of topics like current events, economics, history, politics, and the latest biographies and memoirs.  And let’s not forget young readers.  Students can discover great textbook deals on millions of new and used titles in our Textbook Store, as well as test prep resources, study guides, and dictionaries. Amazon.ca also carries professional reference books on everything from the national electric code to business law.  No matter your profession, Amazon.ca strives to carry the books you need.</p>
+                            <p>Amazon.ca also has an extensive selection of cookbooks, craft books, and home improvement manuals for home chefs and do-it-yourself enthusiasts. Whether you looking for a specific textbook on quantum physics, an irresistible new cookbook, or the next title on your book club’s reading list, with everyday low prices on millions of titles, Amazon.ca is sure to have the book you’re looking for at a great price.</p>
                         </section>
-                        <section>
-                            <CardSix
-                                title={"Lightning Deals"}
-                                link={"/"}
-                                type={"lightning"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                percentage_off : 20
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <SearchResult
-                            range={"1-12"}
-                            total={"100,000"}
-                            title={"Electronics"}
-                        />
-                        <section>
-                            <CardSeven
-                                title={"Best Sellers"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : "BestSeller",
-                                                category : "Stereo Headphones",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : "BestSeller",
-                                                category : "Stereo Headphones",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section>
-                            <CardSeven
-                                title={"Best Sellers"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : "BestSeller",
-                                                category : "Stereo Headphones",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : "BestSeller",
-                                                category : "Stereo Headphones",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section className="last">
-                            <CardSeven
-                                title={"Best Sellers"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : "BestSeller",
-                                                category : "Stereo Headphones",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : "BestSeller",
-                                                category : "Stereo Headphones",
-                                                arrival_date : "Wednesday, July 21",
-                                                manufacturer : "Apple",
-                                                shipping_link : "/",
-                                                arrival_link : "/"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <SeeAllResults />
                     </section>
                 </section>
             </section>

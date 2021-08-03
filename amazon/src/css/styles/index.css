@@ -2074,6 +2074,9 @@ ul.list__indent {
 .bxc__grid__content:last-child {
     margin-bottom: 0;
 }
+.bxc__grid__content__light hr {
+    margin: 0;
+}
 .bxc__grid__image a {
     display: block;
 }

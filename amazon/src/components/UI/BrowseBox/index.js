@@ -19,7 +19,8 @@ const BrowseBoxSimple = ({title, links}) => {
     )
 }
 
-const BrowseCheckbox = ({title, links}) => {
+const BrowseCheckbox = ({title, links, ticked=false}) => {
+    ticked = ticked === true ? "ticked" : ""
     return (
         <section>
             <h3 className="a__spacing__small">
@@ -37,7 +38,7 @@ const BrowseCheckbox = ({title, links}) => {
                                         <div className="sideMenuCheckbox a__checkbox a__checkbox__fancy d-inline-block">
                                             <label>
                                                 <input type="checkbox" name="" value=""/>
-                                                <i className="a__icon a__icon__checkbox"></i>
+                                                <i className={`a__icon a__icon__checkbox ${ticked}`}></i>
                                                 <span className="a__label a__checkbox__label"></span>
                                             </label>
                                         </div>
