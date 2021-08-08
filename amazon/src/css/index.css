@@ -378,10 +378,6 @@ code {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-.coupon__popover .a__ordered__list, .coupon__popover .a__unordered__list, 
-.coupon__popover ol, .coupon__popover ul {
-    padding: 0;
-}
 .coupon__popover .a__ordered__list li, .coupon__popover ol li {
     list-style: decimal;
 }
@@ -390,9 +386,12 @@ code {
     word-wrap: break-word;
     margin: 0;
 }
-.coupon__popover .a__unordered__list, .coupon__popover ul {
+.a__unordered__list, ul {
     margin: 0 0 0 18px;
     color: var(--color);
+}
+.a__ordered__list, .a__unordered__list, ol, ul {
+    padding: 0;
 }
 .coupon__popover .a__ordered__list, .coupon__popover ol, .coupon__popover ul {
     padding: 0;
@@ -660,7 +659,8 @@ ol.a__horizontal li, ul.a__horizontal li {
     background: rgba(0, 0, 0, 0.04);
 }
 
-.sobe__d__b__1__carousel__viewport__container .primary__layout__inner, .carousel__detailed__layout__inner {
+.sobe__d__b__1__carousel__viewport__container .primary__layout__inner 
+/*.carousel__detailed__layout__inner*/ {
     padding: 0 !important;
 }
 .sl__sobe__carousel__sub__card {
@@ -737,4 +737,12 @@ ol.a__horizontal li, ul.a__horizontal li {
 }
 .a__input__text__addon:first-child {
     border-right: 0;
+}
+
+.welcome__msg {
+    display: table;
+    padding: 25px;
+    color: var(--color-2);
+    font-size: 27px;
+    margin: auto;
 }

@@ -39,7 +39,8 @@ const Subheader = (props) => {
                         { label: "Health & Household", href: "health", icon: null },
                         { label: "Sports & Outdoors", href: "sports-and-outdoors", icon: null },
                         { label: "Books", href: "books", icon: null },
-                        { label: "Home Improvement", href: "home-improvement", icon: null }
+                        { label: "Home Improvement", href: "home-improvement", icon: null },
+                        { label: "Kay's Store", href: "your-store", icon: null }
                     ]
                 }
 			/>

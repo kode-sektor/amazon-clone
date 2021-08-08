@@ -1,0 +1,59 @@
+.yourStore {
+    min-width: 1000px;
+}
+.yourStore__center {
+    padding: 0 0 20px;
+    background: var(--grey-tone-22) none repeat scroll 0 0;
+}
+.yourStore__gallery {
+    display: block;
+    width: 1280px;
+    min-width: 960px;
+    max-width: 1280px;
+    margin: auto;
+}
+.yourStore__galleryContainer {
+    width: 100%;
+    overflow: auto;
+    border-top: 1px solid var(--grey-tone-22);
+}
+.yourStore__galleryItem {
+    overflow: hidden;
+    height: 370px;
+    width: 320px;
+    flex : 1 1 320px;
+    line-height: 1;
+    border: 5px solid var(--grey-tone-22);
+    background: var(--white);
+}
+.yourStore__cardFaceoutContainer {
+    margin: 20px;
+}
+.yourStore__cardImages {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    overflow-y: hidden;
+    height: 260px;
+    margin: 0 auto;
+}
+.yourStore__cardImageContainer {
+    display: flex;
+    height: 48.5%;
+}
+.yourStore__cardImageContainer img {
+    max-height: 125px;
+    vertical-align: middle;
+}
+.yourStore__cardTitle {
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: var(--color-2);
+}
+.yourStore__cardCount {
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+}

@@ -1,23 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
-import Slider from '../../components/UI/Carousel/Carousel'
 import { Grid_One } from '../../components/UI/Grid'
-import { CardSix, CardSeven } from '../../components/UI/Card'
-import SearchResult from '../../components/UI/SearchResult'
-import { SeeAllResults } from '../../components/UI/Button'
+import { CardSix } from '../../components/UI/Card'
 
 import Layout from '../../components/Layout/index'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
-import loreal_paris from "../../images/banner/l'oreal-paris.jpg"
 import books_at_amazon from '../../images/books-at-amazon.png'
 
-import sports_biggest_stage from '../../images/banner/sports-biggest-stage.png'
 import shop_for_off_to_university from '../../images/banner/shop-for-off-to-university.jpg'
-import cetaphil from '../../images/brand/cetaphil.jpg'
 
 import arts_and_photography from '../../images/nav/arts-and-photography.jpg'
 import biographies_and_memoirs from '../../images/nav/biographies-and-memoirs.png'
@@ -52,8 +45,6 @@ import leading_at_a_distance from '../../images/books/leading-at-a-distance.jpg'
 import one_two_three from '../../images/books/one-two-three.jpg'
 import the_secret_keeper_of_jaipur from '../../images/books/the-secret-keeper-of-jaipur.jpg'
 import blackout from '../../images/books/blackout.jpg'
-
-
 
 import './index.css'
     

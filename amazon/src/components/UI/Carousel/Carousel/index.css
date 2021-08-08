@@ -295,12 +295,26 @@
 .orders__wrap .carousel__detailed__layout__inner {
     border: none;
 }
-.carousel__detailed__layout__inner {
+.carousel__detailed__layout__inner, 
+* .carousel__detailed:last-child .carousel__detailed__layout__inner {
     padding: 10px 30px;
     height: 100%;
     width: 100%;
     border-radius: 5px;
     border: 1px solid var(--grey-tone-24);
+}
+* .carousel__detailed:first-child .carousel__detailed__layout__inner {
+    padding-top: 37px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+* .carousel__detailed:not(:first-child) .carousel__detailed__layout__inner {
+    border-top: none;
+}
+* .carousel__detailed:not(:last-child) .carousel__detailed__layout__inner {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .carousel__detailed__layout__inner.amzn__gift__cards {
     border: none;
