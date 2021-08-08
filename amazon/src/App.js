@@ -18,6 +18,7 @@ import PetSupplies from "./pages/PetSupplies"
 import Sports from "./pages/Sports"
 import Books from "./pages/Books"
 import UserStore from "./pages/UserStore"
+import HomeImprovement from "./pages/HomeImprovement"
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
                     <Route path="/sports-and-outdoors" component={Sports}/>
                     <Route path="/books" component={Books}/>
                     <Route path="/your-store" component={UserStore}/>
+                    <Route path="/home-improvement" component={HomeImprovement}/>
                 </Switch>
             </Router>
         </div>

@@ -1,0 +1,39 @@
+.palette__box {
+    display: inline-block;
+    margin: 0 2px 2px 0 !important;
+    vertical-align: top;
+}
+.palette__checkbox {
+    display: inline-block;
+    height: 21px;
+    width: 24px;
+    background-image: url('../../../images/amzn-sprite-palette.png');
+    background-position: -400px 0px;
+}
+.palette__checkbox.clear:hover, .palette__checkbox.clear:focus,
+.palette__checkbox.beige:hover, .palette__checkbox.beige:focus,
+.palette__checkbox.black:hover, .palette__checkbox.black:focus,
+.palette__checkbox.blue:hover, .palette__checkbox.blue:focus,
+.palette__checkbox.brass:hover, .palette__checkbox.brass:focus,
+.palette__checkbox.bronze:hover, .palette__checkbox.bronze:focus,
+.palette__checkbox.brown:hover, .palette__checkbox.brown:focus,
+.palette__checkbox.brushed-steel:hover, .palette__checkbox.brushed-steel:focus,
+.palette__checkbox.copper:hover, .palette__checkbox.copper:focus,
+.palette__checkbox.gold:hover, .palette__checkbox.gold:focus,
+.palette__checkbox.green:hover, .palette__checkbox.green:focus,
+.palette__checkbox.grey:hover, .palette__checkbox.grey:focus,
+.palette__checkbox.ivory:hover, .palette__checkbox.ivory:focus,
+.palette__checkbox.nickel:hover, .palette__checkbox.nickel:focus,
+.palette__checkbox.oil-rubbed-bronze:hover, .palette__checkbox.oil-rubbed-bronze:focus,
+.palette__checkbox.orange:hover, .palette__checkbox.orange:focus,
+.palette__checkbox.pink:hover, .palette__checkbox.pink:focus,
+.palette__checkbox.purple:hover, .palette__checkbox.purple:focus,
+.palette__checkbox.red:hover, .palette__checkbox.red:focus,
+.palette__checkbox.rust:hover, .palette__checkbox.rust:focus,
+.palette__checkbox.silver:hover, .palette__checkbox.silver:focus,
+.palette__checkbox.stainless-steel:hover, .palette__checkbox.stainless-steel:focus,
+.palette__checkbox.white:hover, .palette__checkbox.white:focus,
+.palette__checkbox.yellow:hover, .palette__checkbox.yellow:focus,
+.palette__checkbox.multicolor:hover, .palette__checkbox.multicolor:focus {
+    background-position-y: -100px !important;
+}

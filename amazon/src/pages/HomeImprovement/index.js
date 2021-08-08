@@ -1,28 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Layout from '../../components/Layout/index'
+
 import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import Palette from '../../components/UI/Palette'
 import { Grid_One } from '../../components/UI/Grid'
 import { CardSix } from '../../components/UI/Card'
 
-import Layout from '../../components/Layout/index'
+
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
-import books_at_amazon from '../../images/books-at-amazon.png'
-
-import shop_for_off_to_university from '../../images/banner/shop-for-off-to-university.jpg'
-
-import arts_and_photography from '../../images/nav/arts-and-photography.jpg'
-import biographies_and_memoirs from '../../images/nav/biographies-and-memoirs.png'
-import business_and_investing from '../../images/nav/business-and-investing.jpg'
-import comics_and_graphic_novels from '../../images/nav/comics-and-graphic-novels.png'
-import childrens_books from '../../images/nav/childrens-books.jpg'
-import cookbooks_food_and_wine from '../../images/nav/cookbooks-food-and-wine.jpg'
-import history from '../../images/nav/history.jpg'
-import literature_and_fiction from '../../images/nav/literature-and-fiction.jpg'
-import mystery_and_suspense from '../../images/nav/mystery-and-suspense.jpg'
-import sci_fi_and_fantasy from '../../images/nav/sci-fi-and-fantasy.png'
-import teens_and_young_adult from '../../images/nav/teens-and-young-adult.jpg'
 
 import prime_two_day_shipping from '../../images/prime-two-day-shipping.png'
 import buy_a_book_give_a_book from '../../images/banner/buy-a-book-give-a-book.jpg'
@@ -48,667 +36,105 @@ import blackout from '../../images/books/blackout.jpg'
 
 import './index.css'
     
-const Books = () => {
+const HomeImprovement = () => {
     return (
         <Layout>
              <section className="a__container">
-                <section>
-                    <div className="bxc__grid__spacing__large">
-                        <div className="bxc__grid__container bxc__grid__container__width__1500">
-                            <div className="bxc__grid__row bxc__grid__row__light">
-                                <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                    <div className="bxc__grid__content bxc__grid__content__light">
-                                        <div className="bxc__grid__image bxc__grid__image__light">
-                                            <Link to="/">
-                                                <img src={shop_for_off_to_university} alt="Off to University Personal Care"/>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="text-center">
-                    <img src={books_at_amazon} alt="Books at Amazon" />
-                </section>
-                <section className="bookNav">
-                    <header className="a__spacing__small a__spacing__top__base bookNav__title">
-                        <h5 className="a__size__large">
-                            Shop by Category
-                        </h5>
-                    </header>
-                    <section className="a__spacing__small bookNav__menu">
-                        <section className="bookNav__menuItems">
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={arts_and_photography} alt="arts and photography" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Arts &amp; Photography
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={biographies_and_memoirs} alt="biographies and memoirs" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Biographies &amp; Memoirs
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={business_and_investing} alt="business and investing" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Business &amp; Investing
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={comics_and_graphic_novels} alt="comics and graphic novels" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Comics &amp; graphic novels
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={childrens_books} alt="childrens books" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Childrens Books
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={cookbooks_food_and_wine} alt="cookbooks food and wine" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Cookbooks Food &amp; Wine
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={history} alt="history" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            History
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={literature_and_fiction} alt="literature and fiction" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Literature &amp; Fiction
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={mystery_and_suspense} alt="mystery and suspense" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Mystery &amp; Suspense
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={sci_fi_and_fantasy} alt="sci_fi and fantasy" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Sci_Fi &amp; Fantasy
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                            <figure className="bookNav__menuTile">
-                                <Link to="/">
-                                    <div className="bookNav__menuSingleTile a__spacing__mini">
-                                        <div className="bookNav__menuImgContainer">
-                                            <img src={teens_and_young_adult} alt="teens and young adult" />
-                                        </div>
-                                        <div className="bookNav__tileOverlay"></div>
-                                    </div>
-                                    <div>
-                                        <span className="bookNav__faceoutText position-relative a__color__base gb__size__small">
-                                            Teens &amp; Young Adult
-                                        </span>
-                                    </div>
-                                </Link>
-                            </figure>
-                        </section>
-                    </section>
-                </section>
                 <section className="d-flex mx-0 flex-fill pet">
                     <section className="fashion__browsebox browserBox">
-                        <BrowseBoxSimple
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "English Books"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "French Books"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Kindle Books"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Textbooks"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "New & Used Textbooks"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Prime Student"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "K-12 Textbook Store"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Editors' Picks"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Best Books of the Year"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Best Books of the Month"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Best Books of the Year for Children and Teens"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Popular Features"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Today's Deals"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Canadian Books"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "From Page to Screen"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "First Novel Awards"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Bargains in Books"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Featured Stores"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Book to Screen Store"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Globe and Mail Bestsellers"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "DaNew York Times Best Sellersrts"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Black Voices in Books"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "For Dummies Store"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Wiley's Professional Central"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Jenny Han Books"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Kindle"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Kindle eBooks"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Kindle Deals"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Kindle Reading Apps"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Kindle Unlimited"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxSimple
-                            title={"Audible Audiobooks"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Audiobooks"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Audible Membership"
-                                    }
-                                ]
-                            }
-                        />
                         <BrowseBoxPrimary
                             title={"Department"}
                             links={
                                 [
                                     {
-                                        text : "Books",
+                                        text : "Tools & Home Improvement",
                                         indentClass : "a__indent__1"
                                     },
                                     {
                                         href : "/",
-                                        text : "Arts & Photography",
+                                        text : "Building Supplies",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Biographies & Memoirs",
+                                        text : "Electrical",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Business & Investing",
+                                        text : "Fireplaces, Stoves & Accessories",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Calendars",
+                                        text : "Hardware",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Children's Books",
+                                        text : "Heavy Equipment & Agricultural Supplies",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Christian Books & Bibles",
+                                        text : "Kitchen & Bathroom",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Comics & Graphic Novels",
+                                        text : "Fixtures",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Computers & Technology",
+                                        text : "Large Appliances",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Cookbooks, Food & Wine",
+                                        text : "Lighting & Ceiling Fans",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Crafts, Hobbies & Home",
+                                        text : "Mowers & Outdoor Power Tools",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Education & Reference",
+                                        text : "Painting Supplies, Tools & Wall Treatments",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Erotica",
+                                        text : "Power & Hand Tools",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Health, Fitness & Dieting",
+                                        text : "Rough Plumbing",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "History",
+                                        text : "Safety & Security",
                                         indentClass : "a__indent__2"
                                     },
                                     {
                                         href : "/",
-                                        text : "Humour & Entertainment",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Law",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "LGBTQ2S+",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Literature & Fiction",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Medical Books",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Mystery, Thriller & Suspense",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Parenting & Relationships",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Politics & Social Sciences",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Professional & Technical",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Religion & Spirituality",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Romance",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Science & Math",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Science Fiction & Fantasy",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Self-Help",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Sports & Outdoors",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Teen & Young Adult",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Textbooks",
-                                        indentClass : "a__indent__2"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Travel",
+                                        text : "Storage & Home Organization",
                                         indentClass : "a__indent__2"
                                     }
                                 ]
                             }
                         />
                         <BrowseCheckbox
-                            title={"Language"}
+                            title={"Subscription Option"}
                             links={
                                 [
                                     {
                                         href : "/",
-                                        text : "English"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "French"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Spanish"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Japanese"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxPlain
-                            title={"Format"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Kindle Edition"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Paperback"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Hardcover"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Board Book"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Audible Audio Edition"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Large Print"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Spiral-bound"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Loose Leaf"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Audio CD"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxPlain
-                            title={"Author"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Dk"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Peter Pauper Press"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "James Patterson"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "James W. Patterson"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Nora Roberts"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Stephen King"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Stephen Michael King"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"Book Series"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Breakthrough"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Abby Kane FBI Thriller"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "The NightShade Forensic Files"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Second Chance Series"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "FBI Thriller"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "The Water Series"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Fallen Immortals"
+                                        text : "Subscribe & Save"
                                     }
                                 ]
                             }
@@ -737,6 +163,53 @@ const Books = () => {
                                 ]
                             }
                         />
+                        <BrowseCheckbox
+                            title={"From Our Brands"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Our Brands"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseCheckbox
+                            title={"Featured Brands"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Joomer"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Affresh"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Honeywell"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "HONEYWELL"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "TESSAN"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "BRITA"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Cricut"
+                                    }
+                                ]
+                            }
+                        />
+                        <Palette/>
                         <BrowseBoxPlain
                             title={"Avg. Customer Review"}
                             links={
@@ -789,20 +262,43 @@ const Books = () => {
                             }
                         />
                         <BrowseBoxPlain
-                            title={"New Releases"}
+                            title={"New Arrivals"}
                             links={
                                 [
                                     {
                                         href : "/",
-                                        text : "Last 30 days",
+                                        text : "Last 30 days"
                                     },
                                     {
                                         href : "/",
-                                        text : "Last 90 days",
+                                        text : "Last 90 days"
+                                    }
+                                ]
+                            }
+                        />
+                        <BrowseBoxPlain
+                            title={"Price"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Under $25"
                                     },
                                     {
                                         href : "/",
-                                        text : "Coming Soon",
+                                        text : "$25 to $50"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "$50 to $100"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "$100 to $200"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "$200 & Above"
                                     }
                                 ]
                             }
@@ -819,6 +315,53 @@ const Books = () => {
                             }
                         />
                         <BrowseCheckbox
+                            title={"Seller"}
+                            links={
+                                [
+                                    {
+                                        href : "/",
+                                        text : "Amazon.ca"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Layger"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "NAZO MART"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Botley Store"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Nation cenral"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Warehouse Deals"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Fastmedia ship USA"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "Dealz R us"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "2CA61 BYLF"
+                                    },
+                                    {
+                                        href : "/",
+                                        text : "BuyTradeExpedite"
+                                    },
+                                ]
+                            }
+                        />
+                        <BrowseCheckbox
                             title={"Availability"}
                             ticked={true}
                             links={
@@ -830,11 +373,6 @@ const Books = () => {
                                 ]
                             }
                         />
-                        <section className="a__row">
-                            <Link to="/">
-                                <img src={prime_two_day_shipping} alt="prime two day shipping" />
-                            </Link>
-                        </section>
                     </section>
                     <section className="apBrowse flex-fill">
                         <section className="bxc__grid__spacing__large">
@@ -1259,4 +797,4 @@ const Books = () => {
     )
 }
 
-export default Books
+export default HomeImprovement
