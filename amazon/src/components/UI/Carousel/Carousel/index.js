@@ -209,7 +209,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux,
 							)}
 							{
 								viewDeal && (
-									viewDeal === "Deal has ended" ? 
+									(viewDeal === "Deal has ended" || viewDeal === "Sold Out") ? 
 									<span className="viewDeal">{viewDeal}</span> : 
 									<CartBtn
 										text={

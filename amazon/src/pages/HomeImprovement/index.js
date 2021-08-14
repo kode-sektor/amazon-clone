@@ -488,13 +488,121 @@ const HomeImprovement = () => {
                                 />
                             </TabPane>
                             <TabPane tabId="2">
-                                Two
+                            <CarouselDetailed 
+                                    squished={true}
+                                    slider={
+                                        <Slider 
+                                            type={"multiImage"}
+                                            id={"homeImprovement"}
+                                            carouselClass={"amzn__carousel"}
+                                            carouselID={"amzn__gift__cards"}
+                                            count={4}
+                                            price={true}
+                                            category={true}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: faux_leather,
+                                                            altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                                            dealOfTheDay : true,
+                                                            priceRange : "$99.99 - $204.99",
+                                                            percentOff: "17",
+                                                            viewDeal: "View Deal"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: leather_swivel,
+                                                            altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                                            caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Add to Cart"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: frosted_endtable,
+                                                            altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                                            caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Deal has ended"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: monterey_tv_stand,
+                                                            altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                                            caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Deal has ended"
+                                                        }
+                                                    ]
+                                            }
+                                        />
+                                    }
+                                />
                             </TabPane>
                             <TabPane tabId="3">
-                                Three
+                            <CarouselDetailed 
+                                    squished={true}
+                                    slider={
+                                        <Slider 
+                                            type={"multiImage"}
+                                            id={"homeImprovement"}
+                                            carouselClass={"amzn__carousel"}
+                                            carouselID={"amzn__gift__cards"}
+                                            count={4}
+                                            price={true}
+                                            category={true}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: faux_leather,
+                                                            altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                                            dealOfTheDay : true,
+                                                            priceRange : "$99.99 - $204.99",
+                                                            percentOff: "17",
+                                                            viewDeal: "View Deal"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: leather_swivel,
+                                                            altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                                            caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Add to Cart"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: frosted_endtable,
+                                                            altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                                            caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Deal has ended"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: monterey_tv_stand,
+                                                            altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                                            caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Deal has ended"
+                                                        }
+                                                    ]
+                                            }
+                                        />
+                                    }
+                                />
                             </TabPane>
                             <TabPane tabId="4">
-                                Four
+                                <p>When you see deals you like, click Watch this deal to save them here.</p>
                             </TabPane>
                         </TabContent>
                         <section>
