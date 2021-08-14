@@ -1,3 +1,32 @@
+.home-improvement {
+    font-size: 14px;
+}
 .fashion__browsebox {
     font-size: 14px;
+}
+.home-improvement .nav-tabs {
+    margin-left: 0;
+    padding-left: 0;
+}
+.home-improvement .tab__switch .nav-item a:hover, 
+.home-improvement .tab__switch .nav-item a:focus {
+    border-bottom: 2px solid var(--ochre-5) !important;
+}
+.home-improvement .nav-tabs .nav-link:focus, .home-improvement .nav-tabs .nav-link:hover {
+    text-decoration: none;
+}
+.home-improvement .tab__switch .nav-item {
+    margin-right: 25px;
+}
+.home-improvement .tab__switch .nav-item a {
+    padding: 0;
+}
+.home-improvement * .carousel__detailed:first-child .carousel__detailed__layout__inner {
+    padding-top: 0;
+    border: none;
+}
+.home-improvement .carousel__detailed .amzn__carousel__cards > li figure > a {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    min-width: 0;
 }

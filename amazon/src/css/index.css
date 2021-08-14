@@ -25,9 +25,9 @@ code {
     max-height: none !important;
     height: auto !important;
 }
-.miniSlider {
+/* .miniSlider {
 
-}
+} */
 .carousel-cardText {
     padding: 5px 10px;
     font-size: 15px;
@@ -103,7 +103,10 @@ code {
     color: var(--color);
     font-weight: 700;
     border: none;
-    border-bottom: 2px solid var(--ochre-5);
+    border-bottom: 2px solid var(--ochre-5) !important;
+}
+.nav-tabs .nav-link.active:hover, .nav-tabs .nav-link.active:focus {
+    text-decoration: none;
 }
 .navCart__active .tab__switch .nav-item.selected a, 
 .navCart__active .nav-tabs .nav-item.show .nav-link, 
@@ -761,4 +764,10 @@ ol.a__horizontal li, ul.a__horizontal li {
 .text__appendage p {
     margin: 0 0 0.5em 0;
     line-height: 1.4em;
+}
+
+.pad__center {
+    padding: 0 21px 0 21px;
+    margin-left: 0;
+    margin-right: 0;
 }

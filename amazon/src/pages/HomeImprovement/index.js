@@ -1,45 +1,60 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import Layout from '../../components/Layout/index'
+import {  TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
+import classnames from 'classnames'
 
-import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import Layout from '../../components/Layout/index'
+import Slider from '../../components/UI/Carousel/Carousel'
+import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
+
+import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import Palette from '../../components/UI/Palette'
 import { Grid_One } from '../../components/UI/Grid'
 import { CardSix } from '../../components/UI/Card'
 
-
+import ameriwood_lumina from '../../images/products/ameriwood-home-lumina-fireplace-tv-stand-white.jpg'
+import modern_cube from '../../images/products/baxton-studio-siskal-modern-cube-ottoman-white-set-of-2.jpg'
+import monterey_tv_stand from '../../images/products/convenience-concepts-151401W-designs2Go-monterey-tv-stand.jpg'
+import frosted_endtable from '../../images/products/global-furniture-clear-frosted-occasional-end-table.jpg'
+import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
+import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
+import hp_chromebooks from '../../images/todays-deals/hp-chromebooks.jpg'
+import women_running_shoes_breathable_lightweight from '../../images/todays-deals/women-running-shoes-breathable-lightweight.jpg'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
-
-import prime_two_day_shipping from '../../images/prime-two-day-shipping.png'
-import buy_a_book_give_a_book from '../../images/banner/buy-a-book-give-a-book.jpg'
-import amazon_editors_best_books_of_august from '../../images/banner/amazon-editors-best-books-of-august.jpg'
-import shop_by_series from '../../images/banner/shop-by-series.jpg'
-import k_12_store from '../../images/k-12-store.jpg'
-import best_of_canadian_books from '../../images/best-of-canadian-books.jpg'
-import best_books_of_the_month from '../../images/best-books-of-the-month.jpg'
-import amazon_charts from '../../images/amazon-charts.jpg'
-
-import robert_munsch_books from '../../images/nav/robert-munsch-books.jpg'
-import scholastic_early_learners from '../../images/nav/scholastic-early-learners.jpg'
-import peppa_pig from '../../images/nav/peppa-pig.png'
-import graphix from '../../images/nav/graphix.jpg'
-import little_people_big_dreams from '../../images/nav/little-people-big-dreams.jpg'
-import narwhal_and_jelly from '../../images/nav/narwhal-and-jelly.jpg'
-
-import the_comfort_book from '../../images/banner/the-comfort-book.jpg'
-import leading_at_a_distance from '../../images/books/leading-at-a-distance.jpg'
-import one_two_three from '../../images/books/one-two-three.jpg'
-import the_secret_keeper_of_jaipur from '../../images/books/the-secret-keeper-of-jaipur.jpg'
-import blackout from '../../images/books/blackout.jpg'
 
 import './index.css'
     
 const HomeImprovement = () => {
+
+    let windowId = window.location.pathname   // to identify tab to activate by default on specific page
+    let pageClass = windowId.substring(1)   // '/home-improvement' to 'home-improvement' to style body    
+
+    let params = new URLSearchParams(windowId)
+
+    // Click on 'buy-again' should automatically activate tab
+    windowId = (params.get("buy-again") === "true" ? "2" : "1") 
+
+    const [pageId, setPageId] = useState("")
+    const [queryId, setQueryId] = useState(windowId)
+    
+    const [activeTab, setActiveTab] = useState(windowId || '1')
+
+    const toggle = tab => {
+        if (activeTab !== tab) { 
+            setActiveTab(tab)
+            // setInitTab(false)   // On click of any tab, reset automatic styling of first nav tab
+        }
+    }
+
+    useEffect (() => {
+        setPageId(pageClass)
+    })
+
     return (
         <Layout>
-             <section className="a__container">
+             <section className={`a__container ${pageId}`}>
                 <section className="d-flex mx-0 flex-fill pet">
                     <section className="fashion__browsebox browserBox">
                         <BrowseBoxPrimary
@@ -375,221 +390,113 @@ const HomeImprovement = () => {
                         />
                     </section>
                     <section className="apBrowse flex-fill">
-                        <section className="bxc__grid__spacing__large">
-                            <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={buy_a_book_give_a_book} alt="buy a book give a book"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <section className="pad__center">
+                            <h1 className="a__spacing__top__base a__size__large">
+                                Deals in Tools and Home Improvement
+                            </h1>
+                            <Nav tabs className="tab__switch a__spacing__medium">
+                                <NavItem>
+                                    <NavLink
+                                        className={ classnames({"a__color__secondary" : true}, { active: (activeTab === '1')})}
+                                        onClick={() => { toggle('1') }}
+                                    >
+                                        Available
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink
+                                        className={classnames({"a__color__secondary" : true}, { active: activeTab === '2' })}
+                                        onClick={() => { toggle('2') }}
+                                    >
+                                        Upcoming
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink
+                                        className={classnames({"a__color__secondary" : true}, { active: activeTab === '3' })}
+                                        onClick={() => { toggle('3') }}
+                                    >
+                                        Missed
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink
+                                        className={classnames({"a__color__secondary" : true}, { active: activeTab === '4' })}
+                                        onClick={() => { toggle('4') }}
+                                    >
+                                        Watching
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
                         </section>
-                        <section className="bxc__grid__spacing__large">
-                            <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={amazon_editors_best_books_of_august} alt="amazon editors best books of august"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section className="bxc__grid__spacing__large">
-                            <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <hr className="a__divider__normal" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={k_12_store} alt="k 12 store"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={best_books_of_the_month} alt="best books of the month"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={best_of_canadian_books} alt="best of canadian books"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={amazon_charts} alt="amazon charts"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={shop_by_series} alt="shop by series"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={robert_munsch_books} alt="robert munsch books"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={scholastic_early_learners} alt="scholastic early learners"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={peppa_pig} alt="peppa pig"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={graphix} alt="graphix"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={little_people_big_dreams} alt="little people big dreams"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={narwhal_and_jelly} alt="narwhal and jelly"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <hr className="a_divider_normal" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={the_comfort_book} alt="the comfort book"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={leading_at_a_distance} alt="leading at a distance"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={one_two_three} alt="one two three"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={the_secret_keeper_of_jaipur} alt="the secret keeper of jaipur"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={blackout} alt="blackout"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__6__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <hr className="a__divider__normal" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        <TabContent activeTab={activeTab} className="tab__container">
+                            <TabPane tabId="1" className="a__box__group a__spacing__base">
+                                <CarouselDetailed 
+                                    squished={true}
+                                    slider={
+                                        <Slider 
+                                            type={"multiImage"}
+                                            id={"homeImprovement"}
+                                            carouselClass={"amzn__carousel"}
+                                            carouselID={"amzn__gift__cards"}
+                                            count={4}
+                                            price={true}
+                                            category={true}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: faux_leather,
+                                                            altText: "FBest Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                                            caption: "Best Choice Products Faux Leather Modern Convertible Folding Futon Sofa Bed Recliner Couch with Metal Legs, 2 Cup Holders, White",
+                                                            dealOfTheDay : true,
+                                                            priceRange : "$99.99 - $204.99",
+                                                            percentOff: "17",
+                                                            viewDeal: "View Deal"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: leather_swivel,
+                                                            altText: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                                            caption: "Furmax Bar Stools Modern Pu Leather Swivel Adjustable Hydraulic Bar Stool Square Counter Height Stool Set of 2(White)",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Add to Cart"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: frosted_endtable,
+                                                            altText: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                                            caption: "Global Furniture Clear/Frosted Occasional End Table with Glossy White Legs",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Deal has ended"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            priceRange: "$14.99",
+                                                            src: monterey_tv_stand,
+                                                            altText: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                                            caption: "Convenience Concepts 151401W Designs2Go Monterey TV Stand, White",
+                                                            category: "Dental Floss",
+                                                            viewDeal: "Deal has ended"
+                                                        }
+                                                    ]
+                                            }
+                                        />
+                                    }
+                                />
+                            </TabPane>
+                            <TabPane tabId="2">
+                                Two
+                            </TabPane>
+                            <TabPane tabId="3">
+                                Three
+                            </TabPane>
+                            <TabPane tabId="4">
+                                Four
+                            </TabPane>
+                        </TabContent>
                         <section>
                             <Grid_One   
                                 title={"Featured categories"}

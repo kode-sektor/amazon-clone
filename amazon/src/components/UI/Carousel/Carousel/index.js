@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
-import { PrimaryBtn, CartBtnSmall } from '../../Button'
+import { PrimaryBtn, CartBtnSmall, CartBtn } from '../../Button'
 import Badge from '../../Badge'
 
 import './index.css'
 
 
-const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux, carouselPanel, 
-	price, category, date, cartBtnSmall, interval=5000, addToCart=false}) => {
+const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux,
+	 cartBtnSmall, interval=5000, addToCart=false}) => {
 
 	let itemLength = items.length
 
@@ -54,11 +54,14 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux, car
 		if (type === "multiImage") {
 
 			items.forEach((item, index) => {
+				const { dealOfTheDay, href, caption, extraCaption, price, priceRange, 
+					percentOff, category, prime, date, similarItems, buyingOptions, viewDeal } = item
+
 				tempCarousel = [
 					...tempCarousel,
 					(
 						/*Create room for 'Add to Cart' button for Orders page*/
-						<li className={addToCart && 'order__slider'}>
+						<li className={(addToCart || viewDeal) && 'order__slider'}>
 							{
 								item.bestSellerAux && (
 									<Badge/>
@@ -69,9 +72,40 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux, car
 									<img src={item.src} alt={item.altText} />
 								</Link>
 								<figcaption>
+									{
+										dealOfTheDay && (
+											<section className="overflow-auto">
+												<span className="dotdBadge a__size__mini">
+													DEAL OF THE DAY
+												</span>
+												<span className="badgeSkew a__size__mini a__color__secondary"></span>
+											</section>
+										)
+									}
+									{
+										priceRange && (
+											<section className="a__spacing__mini">
+												<span className="dealPriceExpiredText a__size__medium__ii">
+													{priceRange}
+												</span>
+											</section>
+										)
+									}
+									{
+										percentOff && (
+											<section className="a__spacing__mini">
+												<span className="a__size__base a__color__base">
+													List: $35.99 ({percentOff}% off)
+												</span>
+											</section>
+										)
+									}
 									{item.caption ? 
 										(
 											<>
+												{
+													
+												}
 												<Link to={item.href}>
 													<div className="amzn__carousel__caption">{item.caption}</div>
 												</Link>
@@ -169,10 +203,21 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux, car
 								<PrimaryBtn
 									mTop={"mt-auto"}
 									text={
-										item.buyingOptions ? "See buying options" : item.similarItems ? "Similar items" : "Add to Cart" 
+										buyingOptions ? "See buying options" : similarItems ? "Similar items" : "Add to Cart"
 									}
 								/>
 							)}
+							{
+								viewDeal && (
+									viewDeal === "Deal has ended" ? 
+									<span className="viewDeal">{viewDeal}</span> : 
+									<CartBtn
+										text={
+											viewDeal
+										}
+									/>
+								)
+							}
 						</li>
 					)
 				]

@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
-import Slider from '../../components/UI/Carousel/Carousel'
 import { Grid_One } from '../../components/UI/Grid'
 import { CardSix, CardSeven } from '../../components/UI/Card'
 import SearchResult from '../../components/UI/SearchResult'
@@ -13,19 +11,6 @@ import Layout from '../../components/Layout/index'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import loreal_paris from "../../images/banner/l'oreal-paris.jpg"
-
-import desktop_bubbler from '../../images/stores-and-programs/desktop-bubbler.jpg'
-import mozart_fr_bubbler from '../../images/stores-and-programs/mozart-fr-bubbler.jpg'
-import outlets_hoveler from '../../images/stores-and-programs/outlets-hoveler.png'
-import registry from '../../images/stores-and-programs/registry.jpg'
-import warehouse_deals_bubbler from '../../images/stores-and-programs/warehouse-deals-bubbler.jpg'
-import coupon_bubbler from '../../images/stores-and-programs/coupon-bubbler.jpg'
-
-import hills_save_up_to_10 from '../../images/banner/hills-save-up-to-10.jpg'
-import visit_your_pet_profile from '../../images/banner/visit-your-pet-profile.jpg'
-import shop_pet_essentials_amazonbasics from '../../images/banner/shop-pet-essentials-amazonbasics.jpg'
-import subscribe_and_save_pet_supplies from '../../images/banner/subscribe-and-save-pet-supplies.jpg'
-import products_from_small_and_medium_businesses from '../../images/banner/products-from-small-and-medium-businesses.jpg'
 
 import sports_biggest_stage from '../../images/banner/sports-biggest-stage.png'
 import cetaphil from '../../images/brand/cetaphil.jpg'

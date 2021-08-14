@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import { Row, Col, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
 import classnames from 'classnames'
@@ -149,7 +149,7 @@ const OrderHistory = () => {
                                         }
                                     ]
                                 }
-                                tabBody = {
+                                tabBody={
                                     [
                                         {
                                             deliveryDate : "Mar 23, 2021",

@@ -381,6 +381,7 @@
 }
 .amzn__carousel__star.amzn__gift__cards {
     position: relative;
+    float: left;
     top: -2px;
     width: 95px;
     height: 21px;
@@ -391,8 +392,12 @@
     background-position: -5px -396px;
 }
 .amzn__carousel__count {
+    display: inline-block;
     font-size: 12px !important;
     line-height: 16px !important;
+}
+.amzn__carousel__dateOfPurchase {
+    display: block;
 }
 .amzn__carousel__delivery {
     display: block;
@@ -426,8 +431,32 @@
 .order__slider {
     padding-bottom: 41px;
 }
-.amzn__carousel__cards .addToCartBtn, .card__holder .addToCartBtn {
+.amzn__carousel__cards .addToCartBtn, .amzn__carousel__cards .a__button__cart,
+ .card__holder .addToCartBtn, .viewDeal {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.dotdBadge {
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    height: 18px;
+    max-width: 90%;
+    padding: 0 5px;
+    vertical-align: middle;
+    font-size: 11px!important;
+    text-align: center;
+    font-weight: 700!important;
+    color: var(--white) !important;
+    white-space: nowrap;
+    background: var(--ochre-4);
+}
+.badgeSkew {
+    float: left;
+    border-right: 4px solid transparent;
+    border-top: 18px solid var(--ochre-4);
+}
+.dealPriceExpiredText {
+    color: var(--mid-grey) !important;
 }
