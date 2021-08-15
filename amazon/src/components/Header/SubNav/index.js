@@ -339,7 +339,7 @@ const SubNav = () => {
                             } else if (index === 1) {
                                 return (
                                     <li>
-                                        <NavLink to={obj.href} className={(queryID === "/your_account") ? "" : "active"}>{obj.text}</NavLink>
+                                        <NavLink to={obj.href} className={(queryID === "/order-history" || queryID === "/prime" ) ? "active" : ""}>{obj.text}</NavLink>
                                     </li>
                                 )
                             } else if (index === 2) {

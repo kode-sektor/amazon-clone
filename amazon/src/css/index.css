@@ -771,3 +771,43 @@ ol.a__horizontal li, ul.a__horizontal li {
     margin-left: 0;
     margin-right: 0;
 }
+
+.jobs {
+    font-size: 1rem;
+}
+.secondaryHeader a {
+    line-height: 1.5rem;
+}
+.navbar__neutral {
+    background-color: var(--blue-9);
+}
+.hamburger {
+    position: relative;
+    width: 40px;
+    height: 45px;
+    margin: 12px;
+    background: url('../images//nav/hamburger-menu-white.svg') 0px no-repeat;
+    background-size: 35px 40px;
+    cursor: pointer;
+}
+.hamburgerBlock {
+    height: 64px;
+}
+.navbar__link a:link {
+    word-wrap: break-word;
+    color: var(--white);
+}
+nav.navbar .navbar-brand {
+    height: 65px;
+    width: 105px;
+    margin-right: 30px;
+}
+.secondaryHeader .navbar-brand {
+    padding-top: 0;
+}
+.secondaryHeader .logo {
+    height: 27px;
+    margin-top: 15px;
+    background: url('../images//nav/amazon-jobs.svg') center center no-repeat;
+    background-size: 100px;
+}

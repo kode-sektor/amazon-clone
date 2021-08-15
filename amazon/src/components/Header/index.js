@@ -29,7 +29,9 @@ const Header = (props) => {
                 onHideNav={() => toggleSideNavbar(false)}
                 onOpenNav={() => toggleSideNavbar(true)}
             />
-            <SubNav/>
+            {
+                props.subNav && (<SubNav/>)
+            }
         </header>
 	);
 };

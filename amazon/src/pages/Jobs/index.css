@@ -1,0 +1,17 @@
+.mainContent {
+    min-height: 100vh;
+}
+.secondaryHeader {
+    position: relative;
+    padding: 0 15px;
+    border-radius: 0;
+    z-index: 100001;
+}
+.navbar-links {
+    line-height: 1;
+    max-width: 390px;
+    text-align: center;
+}
+.link-count-1 {
+    max-width: 176px;
+}

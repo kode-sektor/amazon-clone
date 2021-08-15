@@ -12,16 +12,18 @@ const Layout = (props) => {
 
     const [modal, setModal] = useState("hide")  // Main modal
     // const [modalLangPanel] = useState("hide")    // Language panel
-    const [modalLangProps, setModalLangProps] = useState({
-                                                    modalLangPanel : "",
-                                                    title : "",
-                                                    legend : "",
-                                                    body : "",
-                                                    legendAux : "",
-                                                    bodyAux : "",
-                                                    cta : "",
-                                                    classname : ""       
-                                                })
+    const [modalLangProps, setModalLangProps] = useState(
+                                                            {
+                                                                modalLangPanel : "",
+                                                                title : "",
+                                                                legend : "",
+                                                                body : "",
+                                                                legendAux : "",
+                                                                bodyAux : "",
+                                                                cta : "",
+                                                                classname : ""       
+                                                            }
+                                                        )
     const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
 
     const [showDeliverToMenu] = useState(true)
@@ -55,6 +57,7 @@ const Layout = (props) => {
                 modal={modal}
                 toggleModal={toggleModal}
                 showDeliverToMenu={showDeliverToMenu}
+                subNav={props.subNav === "hide" ? false : true}
             />
             <div className="page__content">
                 <div className="page__content__wrap">
