@@ -11,7 +11,8 @@
     margin-top: 10px;
 }
 .octopus__pc__card__list {
-    overflow: hidden;
+    display: flex;
+    /overflow: hidden;
     height: 404px;
     margin-bottom: 0 !important;
 }

@@ -9,7 +9,7 @@ import Badge from '../../Badge'
 import './index.css'
 
 
-const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux,
+const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 	 cartBtnSmall, interval=5000, addToCart=false}) => {
 
 	let itemLength = items.length
@@ -318,27 +318,6 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux,
 					tempCarousel = []
 				}
 			})
-
-			// slides = items.map((item) => {
-			// 	return (
-			// 		<CarouselItem
-			// 			className={carouselClass ? carouselClass : ""}
-			// 			onExiting={() => setAnimating(true)}
-			// 			onExited={() => setAnimating(false)}
-			// 			key={item.src}
-			// 		>
-			// 			{/* <Link to={item.href}>
-			// 				<img src={item.src} alt={item.altText} />
-			// 			</Link> */}
-						
-			// 			{item.save && (<span className="a__color__price d-block">$269.99</span>)}
-			// 			<CarouselCaption
-			// 				captionText={item.caption}
-			// 				captionHeader={item.caption}
-			// 			/>
-			// 		</CarouselItem>
-			// 	)
-			// })
 		}
 		else {
 			slides = items.map((item) => {
@@ -360,7 +339,6 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux,
 				)
 			})
 		}
-
 		return slides
 	}
 
@@ -394,6 +372,15 @@ const Slider = ({type, count, items, carouselClass, carouselID, giftCardAux,
 							onClickHandler={next}
 						/>
 					</>
+				)
+			}
+			{
+				// Add hr in HomeImprovement page
+				id=="homeImprovement" && (
+					<section className="position-relative" style={{clear: "both", paddingTop: "42px"}}>
+						<hr className="a__divider__normal"/>
+						<Link to="/" className="float-right">Restrictions Apply</Link>
+					</section>
 				)
 			}
 		</Carousel>

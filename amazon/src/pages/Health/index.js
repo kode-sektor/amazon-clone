@@ -27,7 +27,7 @@ import './index.css'
 const Health = () => {
     return (
         <Layout>
-            <div className="bxc__grid__container bxc__grid__container__width__1500">
+            <section className="bxc__grid__container bxc__grid__container__width__1500">
                 <div className="bxc__grid__row bxc__grid__row__light">
                     <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
                         <div className="bxc__grid__content bxc__grid__content__light">
@@ -39,7 +39,7 @@ const Health = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
              <section className="a__container">
                 <section className="d-flex mx-0 flex-fill">
                     <section className="fashion__browsebox browserBox">
@@ -1067,8 +1067,8 @@ const Health = () => {
                         <section>
                             <section className="bxc__grid__spacing__large">
                                 <div className="bxc__grid__container bxc__grid__container__width__1500">
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
+                                    <section className="bxc__grid__row bxc__grid__row__light">
+                                        <section className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1076,8 +1076,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1085,8 +1085,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__4__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1094,11 +1094,11 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </section>
+                                    </section>
                                     <hr className="a__divider__normal" />
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                    <section className="bxc__grid__row bxc__grid__row__light">
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1106,8 +1106,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1115,8 +1115,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1124,8 +1124,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1133,8 +1133,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1142,8 +1142,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1151,10 +1151,10 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                    </section>
+                                    <section className="bxc__grid__row bxc__grid__row__light">
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1162,8 +1162,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1171,8 +1171,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1180,8 +1180,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1189,8 +1189,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1198,8 +1198,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1207,10 +1207,10 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div className="bxc__grid__row bxc__grid__row__light">
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                    </section>
+                                    <section className="bxc__grid__row bxc__grid__row__light">
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1218,8 +1218,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1227,8 +1227,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1236,8 +1236,17 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                           section <div className="bxc__grid__content bxc__grid__content__light">
+                                                <div className="bxc__grid__image bxc__grid__image__light">
+                                                    <Link to="/">
+                                                        <img src={cetaphil} alt="Cetaphil"/>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1245,8 +1254,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
+                                        </section>
+                                        <section className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
                                             <div className="bxc__grid__content bxc__grid__content__light">
                                                 <div className="bxc__grid__image bxc__grid__image__light">
                                                     <Link to="/">
@@ -1254,17 +1263,8 @@ const Health = () => {
                                                     </Link>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="bxc__grid__column bxc__grid__column__2__of__12 bxc__grid__column__light">
-                                            <div className="bxc__grid__content bxc__grid__content__light">
-                                                <div className="bxc__grid__image bxc__grid__image__light">
-                                                    <Link to="/">
-                                                        <img src={cetaphil} alt="Cetaphil"/>
-                                                    </Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        </section>
+                                    </section>
                                 </div>
                             </section>
                         </section>
