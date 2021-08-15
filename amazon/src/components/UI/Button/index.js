@@ -202,6 +202,12 @@ const SeeAllResults = () => (
     </section>
 )
 
+const LocationButton = () => (
+    <button className="location__submit form-control btn" type="submit">
+        <span className="button__icon"></span>
+    </button>
+)
+
 export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
-    CouponBtn, SeeAllResults }
+    CouponBtn, SeeAllResults, LocationButton }

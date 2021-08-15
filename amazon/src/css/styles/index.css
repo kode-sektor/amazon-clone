@@ -143,6 +143,7 @@ file rather than small ones. Your choice
     --green-5: #284d40;
 
     --brown: #ff6138;
+    --pink: #f9f5d5;
 
 
 	--blue: #004b91;
@@ -189,6 +190,7 @@ file rather than small ones. Your choice
 	--ochre-32: #e67a00;
 	--ochre-33: #f2750b;
 	--ochre-34: #e55d16;
+	--ochre-35: #ff9900;
 
 
     --link: #007BFF;
@@ -263,6 +265,8 @@ file rather than small ones. Your choice
     --grey-tone-50: #767676;
     --grey-tone-51: #fbf9fa;
     --grey-tone-52: #e3e7e7;
+    --grey-tone-53: #bababa;
+    --grey-tone-54: #eaedf2;
 
 	
     --black: #000;
@@ -478,6 +482,12 @@ a:hover, .a__color__button__link:hover {
     box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
 	/* border-radius: 7px; */
     border-radius: 2px;
+}
+.btn.btn__quarternary {
+    color: var(--grey-tone-14);
+    border-radius: 3px;
+    border: 1px solid var(--light-slate-gray);
+    transition: background-color 0.15s ease-in-out;
 }
 .search__bar .button__container > *, 
 .search__bar .field, 
@@ -1893,6 +1903,18 @@ ul.list__indent {
     vertical-align: bottom;
     font-size: 14pt;
     font-weight: 300;
+}
+.hide-clear-icon {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    background: url('../../images/hide-clear-icon.svg') no-repeat;
+    background-size: 15px;
+    cursor: text;
+    z-index: 400;
 }
 
 /* Indentations */

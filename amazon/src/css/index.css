@@ -774,6 +774,11 @@ ol.a__horizontal li, ul.a__horizontal li {
 
 .jobs {
     font-size: 1rem;
+    line-height: 1.5;
+}
+.jobs h1 {
+    font-weight: bold;
+    line-height: 2.5rem;
 }
 .secondaryHeader a {
     line-height: 1.5rem;

@@ -11,3 +11,53 @@
 .seeAllResults a:focus span {
     color: var(--ochre-4) !important;
 }
+.location__submit {
+    position: absolute;
+    min-height: 44px;
+    min-width: 90px;
+    width: 50px;
+    right: 0;
+    top: 0;
+    height: 2.75em;
+    min-width: 50px;
+    padding: 0;
+    white-space: initial;
+    border: 0;
+    font-size: inherit;
+    border-radius: 2px;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--ochre-35);
+}
+.button__icon {
+    display: inline;
+    padding: 1em;
+    background: url('../../../images/search-icon.svg') no-repeat;
+    background-position: center center;
+    background-size: 21px 21px;
+}
+.campaignBanner {
+    background-color: var(--blue-9);
+}
+.campaignBanner .bannerImg {
+    max-width: 100%;
+}
+.campaignBanner .banner__btn__container {
+    position: absolute;
+    display: flex;
+    top: 0;
+    height: 100%;
+    right: 10%;
+    align-items: center;
+}
+.campaignBanner .banner__btn {
+    padding: 12px;
+    min-height: 44px;
+    min-width: 90px;
+    line-height: 29px;
+    font-size: 23px;
+    color: var(--white);
+    border-radius: 0;
+    border-width: 4px !important;
+    border: 2px solid var(--white) !important;
+}

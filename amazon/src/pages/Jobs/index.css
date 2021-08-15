@@ -15,3 +15,105 @@
 .link-count-1 {
     max-width: 176px;
 }
+.jobs__banner {
+    position: relative;
+    background-color: var(--pink);
+}
+.jobs__closeButton {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--blue-9);
+    transform: translateY(-50%);
+}
+.jobs__searchContainer {
+    background-color: var(--bg-light-blue);
+}
+.jobs__findJobs {
+    padding-top: 85px;
+    min-height: 335px;
+}
+.jobs__findJobs__title {
+    margin-bottom: 10px;
+    font-size: 1.875rem;
+    color: var(--white);
+}
+.jobs__searchForm {
+    position: relative;
+    height: 2.75em;
+}
+.jobs__locationSearchBar {
+    height: 100%;
+    padding-right: 65px;
+}
+.jobs__textSearch {
+    height: 44px;
+    padding: 0 !important;
+    font-size: 0.875rem;
+}
+.jobs__typeAhead {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.jobs__ttInput {
+    position: absolute !important;
+    left: 0px;
+    height: 100% !important;
+    width: 100% !important;
+    padding: 0.5rem 1rem !important;
+    padding-right: 35px !important;
+    line-height: 1.5;
+    color: var(--blue-9);
+    vertical-align: top;
+    background-clip: padding-box;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) !important;
+    font-size: 0.875rem;
+    border-radius: 2px !important;
+    z-index: 101;
+    border: none;
+    background-color: var(--white);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.jobs__searchbox .jobs__ttInput {
+    padding-left: 47px !important;
+}
+.jobs__searchbox {
+    height: 44px;
+    padding: 0 !important;
+    font-size: 0.875rem;
+    transition: width;
+}
+.jobs__searchMarker {
+    position: absolute;
+    padding-top: 0.475em;
+    margin-left: 12px;
+    width: 26px;
+    font-size: 1.1rem;
+    color: var(--grey-tone-53);
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 150;
+}
+.portalTiles {
+    padding: 35px 0;
+    background-color: var(--grey-tone-54);
+}
+.portalTiles__container {
+    background-color: var(--white);
+    border: 1px var(--grey-tone-54) solid;
+}
+.portalTiles__tile {
+    padding: 30px 10px 10px 10px;
+    text-align: center;
+}
+.portalTiles__btn {
+    margin: 30px;
+}
+.portalTiles__btn .btn {
+    min-width: 80%;
+}
