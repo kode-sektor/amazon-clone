@@ -117,3 +117,204 @@
 .portalTiles__btn .btn {
     min-width: 80%;
 }
+.exploreOpportunities {
+    background-color: var(--white);
+}
+.exploreOpportunities__title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.875rem;
+}
+.exploreOpportunities .container .card {
+    padding: 0 0 50px 0;
+    margin-right: 0;
+    margin-left: 0;
+    color: inherit;
+}
+.exploreOpportunities .container .card .card-body {
+    padding: 20px 30px;
+}
+.exploreOpportunities .container .card .card-footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    border-top: 0;
+}
+.employeeProfile {
+    padding: 75px 0;
+    background-color: var(--grey-tone-1);
+}
+.employeeProfile__info {
+    margin: 0;
+}
+.employeeProfile__name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    font-size: 2.25rem;
+}
+.employeeProfile__jobTitle, .employeeProfile__description {
+    text-align: center;
+}
+.employeeProfile__description {
+    overflow: hidden;
+    max-height: 100px;
+    margin-bottom: 2px;
+}
+.employeeProfile__description:after {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), color-stop(85%, var(--grey-tone-55)));
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--grey-tone-55) 85%);
+}
+.employeeProfile__learnMore {
+    width: 100%;
+}
+.employeeProfile__btnWrapper {
+    width: 100%;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.wePioneer {
+    background-color: var(--blue-11);
+}
+.wePioneer__details {
+    position: relative;
+    display: table-cell;
+    height: 400px;
+    text-align: left;
+    vertical-align: middle;
+}
+.wePioneer__title {
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 3rem;
+    font-size: 2.375rem;
+    font-weight: normal;
+    color: var(--white);
+}
+.wePioneer__subtitle {
+    padding: 0;
+    color: var(--white);
+}
+.wePioneer__buttonWrapper {
+    margin-top: 14px;
+}
+.wePioneer__cta {
+    position: relative;
+    min-height: 44px;
+    min-width: 90px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 0.875rem;
+    color: var(--white) !important;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
+    border: 1px solid var(--white);
+    border-radius: 3px;
+}
+.jobsFooter {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--light-slate-gray);
+    z-index: 9000;
+}
+.media__icons .media__group {
+    padding-top: 20px;
+}
+.jobsFooter__links {
+    display: inline-block;
+    padding: 12px 0 0 15px;
+    color: var(--ochre-35);
+    margin: 0;
+}
+.jobsFooter__icons {
+    display: inline-block;
+    padding: 5px 15px;
+}
+.jobsFooter__icons .cxt__icon__common {
+    padding: 0 0 0 6px;
+    color: var(--white);
+}
+.jobsFooter__nav {
+    padding: 3px 0;
+    text-align: left;
+}
+.jobsFooter__navLink {
+    padding-top: 15px;
+}
+.jobsFooter__navTitle {
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ochre-35);
+}
+.jobsFooter__navItem, .jobsFooter__navItem:link, .jobsFooter__navItem:visited {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 200;
+}
+.jobsFooter__secNav {
+    position: relative;
+    padding: 15px 0;
+}
+.jobsFooter__secNavCol {
+    margin-bottom: 5px;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    color: var(--grey-tone-56);
+}
+.jobsFooter__secNavLink, .jobsFooter__secNavLink:link {
+    margin-right: 15px;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    color: var(--grey-tone-56) !important;
+}
+.jobsFooter__secNavLink:hover, .jobsFooter__secNavLink:focus {
+    color: var(--grey-tone-56);
+}
+
+
+
+@media (min-width: 75em) {
+    .exploreOpportunities .container .card {
+        height: 460px;
+    }
+}
+@media (min-width: 576px) {
+    .employeeProfile {
+        max-height: 600px;
+    }
+    .employeeProfile__description {
+        max-height: 260px;
+    }
+    .employeeProfile__btnWrapper {
+        text-align: left;
+    }
+}
+@media (min-width: 34em) {
+    .employeeProfile__picture {
+        margin-bottom: 0px;
+    }
+    .employeeProfile__name {
+        margin-top: 20px;
+    }
+    .employeeProfile__jobTitle, .employeeProfile__description {
+        text-align: left;
+    }
+    .wePioneer__title {
+        margin-bottom: 30px;
+        font-size: 3rem;
+        line-height: 3.875rem !important;
+    }
+}

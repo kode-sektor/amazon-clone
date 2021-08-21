@@ -7,6 +7,134 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+.langToggle {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--grey-tone-24);
+}
+.langToggle.large {
+    display: inline-block;
+}
+.langLink {
+    display: inline-block !important;
+    padding: 6px 18px 6px 8px;
+    margin-right: 4px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 3px;
+    white-space: normal;
+    border: 1px solid var(--grey-tone-29);
+    background-color: transparent;
+}
+.langToggle.large .langLink {
+    position: relative;
+    min-height: 44px; 
+    padding: 0.3rem 1rem 0.5rem 1rem;
+    min-width: 150px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    text-align: center;
+    white-space: initial;
+    font-size: 1rem;
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--white);
+}
+.langToggle.large .langLink:not(:disabled):not(.disabled):active, 
+.langToggle.large .langLink:not(:disabled):not(.disabled).active {
+    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%) !important;
+}
+.langToggle.large .langLink:not(:disabled):not(.disabled):active, 
+.langToggle.large .langLink:not(:disabled):not(.disabled).active { 
+    color: var(--grey-tone-57);
+    background-color: var(--grey) !important;
+    border-color: var(--grey);
+}
+.langToggle.large .langLink:hover, .dropdown.show .langLink {
+    background-color: var(--grey);
+    border-color: var(--grey);
+    color: var(--bg-light-blue);
+    background-color: var(--white) !important;
+}
+.langToggle.large .langLink:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+.langLink:not(:disabled):not(.disabled).active, 
+.langLink:not(:disabled):not(.disabled):active, 
+.show > .langLink.dropdown-toggle,
+.langLink:hover {
+    background-color: transparent;
+}
+.langToggle.large .amzn__globeIcon {
+    display: inline-block;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    text-align: initial;
+    color: initial;
+    background: none;
+    cursor: pointer;
+}
+.langToggle.large .amzn__globeIcon:before {
+    position: relative;
+    content: url('../images/globe.svg');
+    top: 5px;
+    left: -5px;
+}
+.langToggle.large:hover .amzn__globeIcon:before,
+.langToggle.large:focus .amzn__globeIcon:before,
+.dropdown.show .amzn__globeIcon:before {
+    content: url('../images/globe-dark.svg');
+    display: inline;
+}
+.langToggle.large .amzn__logo__base {
+    display: initial;
+    padding: 0;
+    line-height: normal;
+    text-align: start;
+    color: var(--white);
+}
+.langToggle.large:hover .amzn__logo__base,
+.langToggle.large:focus .amzn__logo__base,
+.dropdown.show .amzn__logo__base {
+    color: var(--grey-tone-57);
+}
+.langToggle .dropdown-menu.show {
+    padding: 0;
+}
+.dropdownMenuLang {
+    min-height: 44px;
+    font-size: .875rem;
+    border-left: 2px solid var(--white);
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--grey-tone-58);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.dropdownMenuLang:hover, .dropdownMenuLang:focus {
+    border-left: 2px solid var(--ochre-35);
+    background-color: var(--grey-tone-1);
+}
+
+@media (min-width: 992px) {
+    .langToggle.large .langLink {
+        min-width: 200px;
+    }
+}
+
 .amzn__country__icon {
     background-image: url('../images/amzn-sprite-2.png');
 }
@@ -815,4 +943,53 @@ nav.navbar .navbar-brand {
     margin-top: 15px;
     background: url('../images//nav/amazon-jobs.svg') center center no-repeat;
     background-size: 100px;
+}
+
+.mediaIcons {
+    padding: 0;
+}
+.mediaIcons .mediaGroup {
+    padding-top: 20px;
+}
+.cxt__icon__common {
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    padding: 5px 6px 8px 6px;
+    margin-right: 15px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: var(--white);
+    text-decoration: none;
+}
+.cxt__icon__facebook {
+    background-color: var(--facebook);
+    border-bottom: 1px solid var(--facebook-bottom-border);
+}
+.cxt__icon__linkedin {
+    background-color: var(--linkedin);
+    border-bottom: 1px solid var(--linkedin-bottom-border);
+}
+.cxt__icon__instagram {
+    background-color: var(--instagram);
+    border-bottom: 1px solid var(--instagram-bottom-border);
+}
+.cxt__icon__twitter {
+    background-color: var(--twitter);
+    border-bottom: 1px solid var(--twitter-bottom-border);
+}
+
+.media__icons .media__group__border {
+    height: 2px;
+    margin: 10px 0 0 0;
+    flex-basis: 100%;
+}
+
+
+
+@media (min-width: 576px) {
+    .media__icons .media__group__border {
+        margin: 19px 0 0 0;
+        background: rgba(0,0,0,0.15);
+    }
 }

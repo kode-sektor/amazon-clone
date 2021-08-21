@@ -155,6 +155,8 @@ file rather than small ones. Your choice
     --blue-7: #00A8E1;
     --blue-8: #002F36;
     --blue-9: #1d2834;
+    --blue-10: #0073A8;
+    --blue-11: #005276;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -267,12 +269,27 @@ file rather than small ones. Your choice
     --grey-tone-52: #e3e7e7;
     --grey-tone-53: #bababa;
     --grey-tone-54: #eaedf2;
-
+    --grey-tone-55: #ededed;
+    --grey-tone-56: #c2c7d0;
+    --grey-tone-57: #4d4d4d;
+    --grey-tone-58: #edeff2;
 	
     --black: #000;
     --white: #fff;
   
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+    --facebook: #2d609b;
+    --facebook-bottom-border: #28547f;
+
+    --linkedin: #007ab8;
+    --linkedin-bottom-border: #02668e;
+    
+    --instagram: #e4405f;
+    --instagram-bottom-border: #c43353;
+
+    --twitter: #0ec3f3;
+    --twitter-bottom-border: #0ea6c9;
 
   	/*font-size: 62.5%; make rem units base on 10*/
 
@@ -386,7 +403,7 @@ html {
 }
 
 
-/*3. LINKS*
+/*3. LINKS, BUTTONS*
 ==============================================================================================================================================================*/
 
 /*Link styles*/
@@ -415,6 +432,18 @@ a:hover, .a__color__button__link:hover {
 /* li a {
 	display: block;
 } */
+.btn.btn__quarternary {
+    border: 1px solid var(--light-slate-gray);
+    border-radius: 3px;
+    transition: background-color 0.15s ease-in-out;
+    color: var(--grey-tone-14);
+}
+.btn__outline__info {
+    color: var(--grey);
+    background-color: transparent;
+    background-image: none;
+    border-color: var(--grey);
+}
 .a__button {
     display: inline-block;
     padding: 0;
@@ -737,6 +766,10 @@ a:hover, .a__color__button__link:hover {
 	color: var(--grey-tone-14);
 	text-decoration: none;
 	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+.fake__link {
+    color: var(--blue-10);
+    cursor: pointer;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     /* color: pink;

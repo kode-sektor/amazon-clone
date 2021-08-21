@@ -27,9 +27,9 @@ const Footer = (props) => {
     // the parent modal and this langModal. Thus its more correct that the function of 
     // this langModal is moved to the parent Module (Layout/index.js)
     const toggleModalLang = (modalState, modalLangProp, langModal) => {
-        console.log(modalState)     // show stretched
-        console.log(modalLangProp)  // langModal
-        console.log(langModal)  // {modalLangPanel: "show stretched", title: "`Website` (Country / Region)"}
+        // console.log(modalState)     // show stretched
+        // console.log(modalLangProp)  // langModal
+        // console.log(langModal)  // {modalLangPanel: "show stretched", title: "`Website` (Country / Region)"}
 
         toggleModal(modalState, modalLangProp, langModal)
     } 
@@ -103,8 +103,8 @@ const Footer = (props) => {
                 <a href="/" className="page__footer__logo justify-content-around">
                 </a>
                 <div className="page__footer__buttonset">
-                    <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} tag="span" className="page__footer__langToggle">
-                        <DropdownToggle className="page__footer__langLink" onClick={() => {
+                    <UncontrolledDropdown onMouseOver={flagdropdownEnter} onMouseLeave={flagdropdownLeave} isOpen={flagdropdownOpen} toggle={flagdropdown} tag="span" className="langToggle">
+                        <DropdownToggle className="langLink" onClick={() => {
                             const modalState = (modal === "hide") ? "show stretched" : "hide"
                             const modalPanel = "show"
 

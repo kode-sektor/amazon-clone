@@ -98,6 +98,53 @@ const countries = [
     }
 ]
 
+const languages = [
+    {
+        language : "cest",
+        text: "Čeština"
+    },
+    {
+        language : "deu",
+        text: "Deutsch"
+    },
+    {
+        language : "eng",
+        text: "English"
+    },
+    {
+        language : "eng-bri",
+        text: "English, British"
+    },
+    {
+        language : "esp",
+        text: "Español"
+    },
+    {
+        language : "fra",
+        text: "Français"
+    },
+    {
+        language : "ita",
+        text: "Italiano"
+    },
+    {
+        language : "nih",
+        text: "日本語"
+    },
+    {
+        language : "pol",
+        text: "Polski"
+    },
+    {
+        language : "por-bri",
+        text: "Português, Brasil"
+    },
+    {
+        language : "chi",
+        text: "简体中文"
+    }
+]
+
 const subMenu = [
     {
         text : "Amazon.ca",
@@ -168,4 +215,4 @@ const progressiveSubNav = [
     }
 ]
 
-export { countries, subMenu, progressiveSubNav }
+export { countries, languages, subMenu, progressiveSubNav }

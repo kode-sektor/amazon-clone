@@ -58,7 +58,7 @@ const TabOrder = ({tabHeading, tabBody, mode}) => {
                                         <li className="order__address__location">{tabHeading[0].user.location}</li>
                                         <li className="order__address__city">{tabHeading[0].user.city}</li>
                                         <li className="order__address__country">{tabHeading[0].user.country}</li>
-                                        <li className="order__address">Phone: <span dir="ltr">{tabHeading[0].user.phone}</span></li>
+                                        <li className="order__address__phone">Phone: <span dir="ltr">{tabHeading[0].user.phone}</span></li>
                                     </ul>
                                 }
                             />

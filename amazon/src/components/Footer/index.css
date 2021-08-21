@@ -130,30 +130,6 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-.page__footer__langToggle {
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    white-space: nowrap;
-    color: var(--grey-tone-24);
-}
-.page__footer__langLink {
-    display: inline-block !important;
-    padding: 6px 18px 6px 8px;
-    margin-right: 4px;
-    font-size: 13px;
-    text-align: center;
-    border-radius: 3px;
-    white-space: normal;
-    border: 1px solid var(--grey-tone-29);
-    background-color: transparent;
-}
-.page__footer__langLink:not(:disabled):not(.disabled).active, 
-.page__footer__langLink:not(:disabled):not(.disabled):active, 
-.show > .page__footer__langLink.dropdown-toggle,
-.page__footer__langLink:hover {
-    background-color: transparent;
-}
 .page__footer__downUpArrow {
     position: relative;
     display: inline-block;
