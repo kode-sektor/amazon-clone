@@ -51,9 +51,9 @@ const Footer = (props) => {
                     menu={
                             [
                                 { label: "Careers", href: "/jobs", icon: null },
-                                { label: "Amazon and Our Planet", href: "/", icon: null },
+                                { label: "Amazon and Our Planet", href: "/help-customer", icon: null },
                                 { label: "Investor Relations", href: "/", icon: null },
-                                { label: "Press Releases", href: "/", icon: null },
+                                { label: "Press Releases", href: "/", icon: null }
                             ]
                         }
                 />
@@ -67,7 +67,7 @@ const Footer = (props) => {
                                 { label: "Sell on Amazon Handmade", href: "/", icon: null },
                                 { label: "Advertise Your Products", href: "/", icon: null },
                                 { label: "Independently Publish with Us", href: "/", icon: null },
-                                { label: "Host an Amazon Hub", href: "/", icon: null },
+                                { label: "Host an Amazon Hub", href: "/", icon: null }
                             ]
                         }
                 />
@@ -80,7 +80,7 @@ const Footer = (props) => {
                                 { label: "Reload Your Balance", href: "/", icon: null },
                                 { label: "Amazon Currency Converter", href: "/", icon: null },
                                 { label: "Gift Cards", href: "/", icon: null },
-                                { label: "Amazon Cash", href: "/", icon: null },
+                                { label: "Amazon Cash", href: "/", icon: null }
                             ]
                         }
                 />
@@ -93,7 +93,7 @@ const Footer = (props) => {
                                 { label: "Amazon Prime", href: "/", icon: null },
                                 { label: "Returns Are Easy", href: "/", icon: null },
                                 { label: "Manage your Content and Devices", href: "/", icon: null },
-                                { label: "Customer Service", href: "/", icon: null },
+                                { label: "Customer Service", href: "/", icon: null }
                             ]
                         }
                 />
@@ -173,7 +173,6 @@ const Footer = (props) => {
                             cta : "Go to website",
                             classname : 'region'
                         }
-
                         toggleModalLang(modalState, "langModal", modalLangProps)
                     }}>
                         <span className="amzn__country__icon amzn__locationIcon"></span>
@@ -185,109 +184,155 @@ const Footer = (props) => {
                 <div className="page__footer__wrap d-flex flex-column">
                     <FooterMenu 
                         type={"page__sub__footer"}
-                        menu={[
-                            { label: 
-                                <>
-                                    Amazon Music<br/> 
-                                    <span className="page__sub__footer__descLink">Stream millions<br/> 
-                                        of songs
-                                    </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Amazon Advertising<br/> 
-                                    <span className="page__sub__footer__descLink">Find, attract, and<br/> 
-                                        engage customers
-                                    </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Amazon Drive<br/> 
-                                        <span className="page__sub__footer__descLink">Cloud storage<br/> 
-                                            from Amazon
-                                        </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Amazon Web Services<br/> 
-                                        <span className="page__sub__footer__descLink">Scalable Cloud<br/> 
-                                            Computing Services
-                                        </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Book Depository<br/> 
-                                        <span class="page__sub__footer__descLink">Books With Free<br/> 
-                                            Delivery Worldwide
-                                        </span>
-                                </>, href: "/", icon: null },
-                        ]}
+                        menu={
+                                [
+                                    { label: 
+                                        <>
+                                            Amazon Music<br/> 
+                                            <span className="page__sub__footer__descLink">Stream millions<br/> 
+                                                of songs
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Amazon Advertising<br/> 
+                                            <span className="page__sub__footer__descLink">Find, attract, and<br/> 
+                                                engage customers
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Amazon Drive<br/> 
+                                                <span className="page__sub__footer__descLink">Cloud storage<br/> 
+                                                    from Amazon
+                                                </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Amazon Web Services<br/> 
+                                                <span className="page__sub__footer__descLink">Scalable Cloud<br/> 
+                                                    Computing Services
+                                                </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Book Depository<br/> 
+                                                <span class="page__sub__footer__descLink">Books With Free<br/> 
+                                                    Delivery Worldwide
+                                                </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    }
+                                ]
+                            }
                     />
                     <FooterMenu 
                         type={"page__sub__footer"}
-                        menu={[
-                            { label: 
-                                <>
-                                    Goodreads<br/> 
-                                    <span className="page__sub__footer__descLink">Book reviews<br/> 
-                                        &amp; recommendations
-                                    </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    IMDb<br/> 
-                                    <span className="page__sub__footer__descLink">Movies, TV<br/> 
-                                        &amp; Celebrities
-                                    </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Amazon Photos<br/> 
-                                        <span className="page__sub__footer__descLink">Unlimited Photo Storage<br/> 
-                                            Free With Prime
-                                        </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Shopbop<br/> 
-                                        <span className="page__sub__footer__descLink">Designer<br/> 
-                                            Fashion Brands
-                                        </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Warehouse Deals<br/> 
-                                        <span class="page__sub__footer__descLink">Open-Box<br/> 
-                                            Discounts
-                                        </span>
-                                </>, href: "/", icon: null },
-                        ]}
+                        menu={
+                                [
+                                    { label: 
+                                        <>
+                                            Goodreads<br/> 
+                                            <span className="page__sub__footer__descLink">Book reviews<br/> 
+                                                &amp; recommendations
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            IMDb<br/> 
+                                            <span className="page__sub__footer__descLink">Movies, TV<br/> 
+                                                &amp; Celebrities
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Amazon Photos<br/> 
+                                                <span className="page__sub__footer__descLink">Unlimited Photo Storage<br/> 
+                                                    Free With Prime
+                                                </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Shopbop<br/> 
+                                                <span className="page__sub__footer__descLink">Designer<br/> 
+                                                    Fashion Brands
+                                                </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    },
+                                    { label: 
+                                        <>
+                                            Warehouse Deals<br/> 
+                                                <span class="page__sub__footer__descLink">Open-Box<br/> 
+                                                    Discounts
+                                                </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    }
+                                ]
+                            }
                     />
                     <FooterMenu 
                         type={"page__sub__footer"}
-                        menu={[
-                            { label: 
-                                <>
-                                    Whole Foods Market<br/> 
-                                    <span className="page__sub__footer__descLink">We Believe in<br/> 
-                                        Real Food
-                                    </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Amazon Renewed<br/> 
-                                    <span className="page__sub__footer__descLink">Like-new products<br/> 
-                                        you can trust
-                                    </span>
-                                </>, href: "/", icon: null },
-                            { label: 
-                                <>
-                                    Amazon Second Chance<br/> 
-                                    <span className="page__sub__footer__descLink">Pass it on, trade it in,<br/> 
-                                        give it a second life
-                                    </span>
-                                </>, href: "/", icon: null }
-                        ]}
+                        menu={
+                                [
+                                    { 
+                                        label: 
+                                        <>
+                                            Whole Foods Market<br/> 
+                                            <span className="page__sub__footer__descLink">We Believe in<br/> 
+                                                Real Food
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null },
+                                    { 
+                                        label: 
+                                        <>
+                                            Amazon Renewed<br/> 
+                                            <span className="page__sub__footer__descLink">Like-new products<br/> 
+                                                you can trust
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null },
+                                    { 
+                                        label: 
+                                        <>
+                                            Amazon Second Chance<br/> 
+                                            <span className="page__sub__footer__descLink">Pass it on, trade it in,<br/> 
+                                                give it a second life
+                                            </span>
+                                        </>, 
+                                        href: "/", 
+                                        icon: null 
+                                    }
+                                ]
+                            }
                     />
                 </div>
             </section>

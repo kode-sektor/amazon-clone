@@ -326,38 +326,39 @@ const SubNav = () => {
                     </li>   
                 </ul>
                 :
-                <ul className="subNav">
-                    {
-                        subMenu.map((obj, index) => {
-                            // Hide amazon.ca except on 'your_account' page
-                            if (index === 0) {
-                                return (
-                                    <li className={(queryID === "/your_account") ? "" : "d-none"}>
-                                        <NavLink to={obj.href}>{obj.text}</NavLink>
-                                    </li>
-                                )
-                            } else if (index === 1) {
-                                return (
-                                    <li>
-                                        <NavLink to={obj.href} className={(queryID === "/order-history" || queryID === "/prime" ) ? "active" : ""}>{obj.text}</NavLink>
-                                    </li>
-                                )
-                            } else if (index === 2) {
-                                return (
-                                    <li className={(queryID === "/your_account") ? "d-none" : ""}>
-                                        <NavLink to={obj.href}>{obj.text}</NavLink>
-                                    </li>
-                                )
-                            } else {
-                                return (
-                                    <li>
-                                        <NavLink to={obj.href}>{obj.text}</NavLink>
-                                    </li>
-                                )
-                            }
-                        })
-                    }
-                </ul>
+                // <ul className="subNav">
+                //     {
+                //         subMenu.map((obj, index) => {
+                //             // Hide amazon.ca except on 'your_account' page
+                //             if (index === 0) {
+                //                 return (
+                //                     <li className={(queryID === "/your_account") ? "" : "d-none"}>
+                //                         <NavLink to={obj.href}>{obj.text}</NavLink>
+                //                     </li>
+                //                 )
+                //             } else if (index === 1) {
+                //                 return (
+                //                     <li>
+                //                         <NavLink to={obj.href} className={(queryID === "/order-history" || queryID === "/prime" ) ? "active" : ""}>{obj.text}</NavLink>
+                //                     </li>
+                //                 )
+                //             } else if (index === 2) {
+                //                 return (
+                //                     <li className={(queryID === "/your_account") ? "d-none" : ""}>
+                //                         <NavLink to={obj.href}>{obj.text}</NavLink>
+                //                     </li>
+                //                 )
+                //             } else {
+                //                 return (
+                //                     <li>
+                //                         <NavLink to={obj.href}>{obj.text}</NavLink>
+                //                     </li>
+                //                 )
+                //             }
+                //         })
+                //     }
+                // </ul>
+                ""
             }
         </nav>
     )

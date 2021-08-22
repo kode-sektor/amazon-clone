@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
 
 import { DropdownMenu } from "reactstrap"
@@ -8,6 +7,7 @@ import './index.css'
 
 const DropdownMenuLang = ({ type, optionList }) => {
     return (
+        // Larger version (localhost:3000/jobs page)
         type === "large" ? 
         (
             <DropdownMenu>

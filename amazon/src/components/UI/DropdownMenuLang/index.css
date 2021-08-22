@@ -45,6 +45,7 @@
 }
 .navigationbar__origin__menu__itemList {
     width: 210px;
+    margin: auto;
 }
 .navigationbar__origin__menu__item {
     position: relative;

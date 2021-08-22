@@ -15,6 +15,7 @@
 }
 .navigationbar__brand {
     display: flex;
+    align-items: center;
     position: relative;
     height: 50px;
     padding: 0 14px 0 5px;
@@ -63,7 +64,7 @@
     text-align: start;
     color: var(--light-grey);
     background-color: transparent !important;
-    border-color: transparent !important;
+    border-color: transparent;
 }
 .navigationbar__delivery__link:hover, 
 .navigationbar__delivery__link:focus {
@@ -271,9 +272,6 @@
 }
 .navigationbar__origin__menu.dropdown-menu {
     width: 240px;
-}
-.navigationbar__origin__menu__itemList {
-    width: 210px;
 }
 .navigationbar__origin__menu__link {
     border: none !important;

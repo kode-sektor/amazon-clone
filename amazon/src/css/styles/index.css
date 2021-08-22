@@ -391,6 +391,9 @@ hr {
 p {
 	margin: 0 0 14px 0;
 }
+p:last-child {
+    margin-bottom: 0;
+}
 
 /*3. BROWSERS
 ==============================================================================================================================================================*/
@@ -1153,8 +1156,11 @@ a.a__link__emphasis {
 .a__search .a__icon__search {
     position: absolute;
     top: 50%;
-    margin-top: -7px;
     left: 10px;
+    margin-top: -7px;
+}
+.a__icon.a__icon__search {
+    opacity: 1;
 }
 .a__input__text, input[type=text], input[type=search], 
 input[type=number], input[type=tel], input[type=password],
@@ -1666,6 +1672,9 @@ ul.list__indent {
     border: 1px var(--grey-tone-24) solid;
     background-color: var(--white);
 }
+.a__width__extra__large {
+    width: 400px !important;
+}
 .a__box__rounded {
     border-radius: 8px;
 }
@@ -1681,10 +1690,15 @@ ul.list__indent {
     border: 1px var(--grey-tone-25) solid;
 }
 .a__box .a__box__inner {
-    border-radius: 4px;
-    border-radius: 8px;
     position: relative;
     padding: 14px 18px;
+    border-radius: 4px;
+    border-radius: 8px;
+}
+.a__box__group > .a__box.a-first > .a__box__inner, 
+.a__box__group > .a__box:first-child > .a__box__inner, 
+.a__box__group > .a__box:first-of-type > .a-box-inner {
+    border-radius: 8px 8px 0 0;
 }
 .a__box__group > .a__box.a__first, .a__box__group > .a__box:first-child {
     border-radius: 4px 4px 0 0;

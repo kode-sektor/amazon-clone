@@ -20,6 +20,7 @@ import Books from "./pages/Books"
 import UserStore from "./pages/UserStore"
 import HomeImprovement from "./pages/HomeImprovement"
 import Jobs from "./pages/Jobs"
+import HelpCustomer from "./pages/HelpCustomer"
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
                     <Route path="/your-store" component={UserStore}/>
                     <Route path="/home-improvement" component={HomeImprovement}/> 
                     <Route path="/jobs" component={Jobs}/> 
+                    <Route path="/help-customer" component={HelpCustomer}/> 
                 </Switch>
             </Router>
         </div>
