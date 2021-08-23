@@ -52,7 +52,7 @@ const Footer = (props) => {
                             [
                                 { label: "Careers", href: "/jobs", icon: null },
                                 { label: "Amazon and Our Planet", href: "/help-customer", icon: null },
-                                { label: "Investor Relations", href: "/", icon: null },
+                                { label: "Investor Relations", href: "/investor-relations", icon: null },
                                 { label: "Press Releases", href: "/", icon: null }
                             ]
                         }

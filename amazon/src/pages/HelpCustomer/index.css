@@ -47,13 +47,11 @@
     display: flex;
     width: 1020px;
     margin-bottom: 40px;
-    border: thin solid green;
 }
 .csHelp__content {
     flex: 0 0 640px;
     padding: 0 20px;
     margin: 0 151px 0 0;
-    border: thin solid brown;
 }
 .csHelp__solution {
     font-weight: 700;

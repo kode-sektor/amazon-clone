@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import {  TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
+import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
 import classnames from 'classnames'
 
 import Layout from '../../components/Layout/index'
@@ -13,14 +13,10 @@ import Palette from '../../components/UI/Palette'
 import { Grid_One } from '../../components/UI/Grid'
 import { CardSix } from '../../components/UI/Card'
 
-import ameriwood_lumina from '../../images/products/ameriwood-home-lumina-fireplace-tv-stand-white.jpg'
-import modern_cube from '../../images/products/baxton-studio-siskal-modern-cube-ottoman-white-set-of-2.jpg'
 import monterey_tv_stand from '../../images/products/convenience-concepts-151401W-designs2Go-monterey-tv-stand.jpg'
 import frosted_endtable from '../../images/products/global-furniture-clear-frosted-occasional-end-table.jpg'
 import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
 import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
-import hp_chromebooks from '../../images/todays-deals/hp-chromebooks.jpg'
-import women_running_shoes_breathable_lightweight from '../../images/todays-deals/women-running-shoes-breathable-lightweight.jpg'
 
 import home_improvement from '../../images/banner/home-improvement.jpg'
 import power_and_hand_tools from '../../images/nav/power-and-hand-tools.jpg'
