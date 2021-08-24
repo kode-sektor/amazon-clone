@@ -549,6 +549,11 @@ ol.a__horizontal li, ul.a__horizontal li {
     display: inline-block;
     margin: 0 10px 0 0;
 }
+nav ol, nav ul:not(.list), .list--reset ol, .list--reset ul:not(.list) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .a__checkbox.a__checkbox__fancy, .a__radio.a__radio__fancy {
     position: relative;
 }

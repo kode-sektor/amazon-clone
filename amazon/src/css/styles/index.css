@@ -157,6 +157,7 @@ file rather than small ones. Your choice
     --blue-9: #1d2834;
     --blue-10: #0073A8;
     --blue-11: #005276;
+    --blue-12: #007cb6;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -273,6 +274,11 @@ file rather than small ones. Your choice
     --grey-tone-56: #c2c7d0;
     --grey-tone-57: #4d4d4d;
     --grey-tone-58: #edeff2;
+    --grey-tone-59: #879596;
+    --grey-tone-60: #aab7b8;
+    --grey-tone-61: #6c7778;
+    --grey-tone-62: #333e48;
+    --grey-tone-63: #80868c;
 	
     --black: #000;
     --white: #fff;
@@ -308,7 +314,11 @@ file rather than small ones. Your choice
 @font-face {
 	font-family: "Amazon Ember"; 
 	src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); 
-	src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); 
+	src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix") format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); 
 }
 
 
@@ -414,6 +424,7 @@ html {
 a, a:link, a:visited {
     text-decoration: none;
     color: var(--mainlink);
+    line-height: normal;
 }
 a:active, a:hover {
     outline: 0;

@@ -1,5 +1,6 @@
 .investor--page {
     padding-top: 40px;
+    font-size: 16px;
 }
 .investor__header {
     position: fixed;
@@ -58,12 +59,210 @@
     background: url('../../images/world-icon-white.png') 4px 0 no-repeat;
     background-size: 76%;
 }
+.investor__banner {
+    background-image: url('../../images/amazon-default-banner.jpg');
+    background-position: 80% 38%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 175px;
+}
+.investor--layout {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.investor__breadcrumb {
+    padding: 20px 0;
+}
+.investor__moduleBreadcrumb {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--grey-tone-59);
+}
+.investor__nav {
+    counter-reset: section;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1.2px;
+}
+.investor__nav:before {
+    display: block;
+    content: 'Investor Relations';
+    margin-bottom: 50px;
+    line-height: 1.1;
+    font-size: 48px;
+    font-weight: normal;
+    color: var(--grey-tone-60);
+    letter-spacing: -.2px;
+}
+.investor__navList li {
+    counter-reset: subsection;
+    margin-bottom: 15px;
+    padding-left: 34px;
+    text-indent: -34px;
+}
+.investor__navList li:before {
+    counter-increment: section;
+    content: '0'counter(section);
+    padding-right: 11px;
+    color: var(--grey-tone-60);
+}
+.investor__navList li a {
+    color: var(--black);
+    font-weight: 700;
+}
+.investor__amznStockEmbedded {
+    max-width: 390px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    font-size: 16px;
+    color: var(--grey-tone-60);
+    text-align: right;
+}
+.investor__amznStockHeader {
+    width: 150px;
+    font-weight: 700;
+    text-align: left;
+}
+.investor__amznStockPrice {
+    font-size: 33px;
+    font-weight: 700;
+}
+.investor__amznStockPrice:before {
+    content: '$';
+}
+.investor__amznStockDate {
+    display: inline-block;
+    font-size: 14.4px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+.investor__newsItem {
+    margin: 15px 0 70px 0;
+}
+.investor__newsItem--module {
+    height: 100%;
+    padding: 20px;
+    border-top: 6px solid var(--black);
+    background-color: var(--grey-tone-37);
+}
+.investor__newsDateItem {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: var(--grey-tone-61);
+}
+.investor__newsHeadline {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.33;
+    color: var(--grey-tone-61);
+}
+.investor__newsBody {
+    margin-bottom: 15px;
+}
+.investor__viewLink {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--blue-12);
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+}
+.investor--footer {
+    padding: 46px 20px 40px 20px;
+    color: var(--white);
+    background-color: var(--grey-tone-62);
+}
+.investor__footerAmazonLogo {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.investor__footerAmazonLogo {
+    display: inline-block;
+    height: 41px;
+}
+.investor__footerSocials {
+    margin: 0 20px 25px 20px;
+}
+.investor__footerSocialLink {
+    display: inline-block;
+    font-size: 30px;
+    color: var(--white) !important;
+}
+.investor__footerShop a {
+    display: inline-block;
+    max-width: 90px;
+    margin-top: -5px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.investor__footerNav {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-right: -20px;
+    margin-left: -20px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.investor__footerNavLinkTitle {
+    margin-bottom: 15px;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.investor__footerNavLinkTitle a {
+    color: var(--white);
+}
+.investor__footerNavLinkItem li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.investor__footerNavLinkItem li a {
+    color: var(--grey-tone-6);
+}
+.investor__footerNavLinks {
+    margin-bottom: 30px;
+}
+.investor__copyright {
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--grey-tone-63);
+}
+.investor__copyrightLinks a {
+    color: var(--white);
+}
 
 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 568px) {
+    .investor__footerSocials {
+        margin: 0 100px 25px 100px;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     .investor--page {
-        padding-top: 145px;
+        padding-top: 65px !important;
     }
     .investor__headerPane {
         height: 80px;
@@ -89,13 +288,42 @@
     .moduleSearch {
         font-size: 2rem;
     }
+    .investor__breadcrumb {
+        padding: 30px 0 40px 0;
+    }
+    .investor__breadcrumb {
+        padding-bottom: 25px;
+    }
+    .investor__moduleBreadcrumb {
+        font-size: 14px;
+    }
+    .investor__footerAmazonLogo {
+        padding-left: 64px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .investor__footerSocials {
+        margin: 0;
+    }
+    .investor__footerShop {
+        padding-right: 79px;
+        text-align: right;
+    }
+    .investor__footerNav {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
 }
+
 @media only screen and (min-width: 1024px) {
     .investor--page {
         padding-top: 165px;
     }
     .investor__headerPane {
         height: 100px;
+    }
+    .investor__banner {
+        margin-bottom: 40px;
     }
     .investor__moduleLogo {
         width: 370px;
@@ -106,12 +334,16 @@
         width: 50px;
         font-size: 2rem;
     }
-
     .moduleSearch {
         margin-top: 31px;
     }
     .investor__moduleLang {
         margin-top: 33px;
     }
-    
+    .investor__breadcrumb {
+        padding-left: 35px;
+    }
+    .investor__news {
+        padding: 0 50px 0 35px;
+    }
 }
