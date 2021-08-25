@@ -177,6 +177,12 @@
     color: var(--white);
     background-color: var(--grey-tone-62);
 }
+.investor--footer a {
+    text-decoration: none;
+}
+.investor--footer a:hover, .investor--footer a:focus {
+    opacity: .8;
+}
 .investor__footerAmazonLogo {
     margin-bottom: 15px;
     text-align: center;

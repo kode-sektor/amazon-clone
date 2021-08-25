@@ -1,0 +1,49 @@
+.sideNavContainer > aside {
+    z-index: 9999 !important;
+}
+.investor__sideNavigation {
+    overflow: hidden;
+    width: 360px;
+    background: var(--grey-tone-37);
+    transition: all 250ms;
+    border-right: 1px solid var(--grey-tone-22);
+}
+.investor__sideNav {
+    counter-reset: section;
+}
+.investor__sideNavList li {
+    counter-reset: subsection;
+    padding: 12px 21px;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+.investor__sideNavList li:before {
+    counter-increment: section;
+    content: '0'counter(section);
+    padding-right: 6px;
+    font-weight: 400;
+    color: var(--grey-tone-60);
+}
+.investor__sideNavList li a {
+    color: var(--black);
+    text-decoration: none;
+    transition: all ease-in 234ms;
+}
+.investor__sideNavList li a:hover {
+    color: var(--ochre-23);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .investor__sideNavList li {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .investor__sideNavList li {
+        font-size: 18px;
+    }
+}

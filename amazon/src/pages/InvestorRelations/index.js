@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+
+import SideNavBar from '../../components/Header/SideNavBar/Investor'
 
 import { FaBars, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { GoSearch } from 'react-icons/go'
 import { AiFillCaretRight } from 'react-icons/ai'
-
 
 import amazon_module_logo from '../../images/amazon-module-logo.svg'
 
 import './index.css'
 
 const InvestorRelations = () => {
+
+    const [showNav, setShowNav] = useState(false)
+
+    const toggleSideNavbar = (display) => setShowNav(display)
+
     return (
         <div className="investor--page">
             <header className="investor__header">
@@ -18,6 +24,7 @@ const InvestorRelations = () => {
                     <div className="investor__moduleLogo d-flex align-items-center">
                         <div className="layout__toggle">
                             <FaBars
+                                onClick={(showNav) ? () => toggleSideNavbar(false) : () => toggleSideNavbar(true)}
                                 className="layout__toggleBars"
                             />
                         </div>
@@ -34,13 +41,18 @@ const InvestorRelations = () => {
                         </span>
                     </span>
                 </div>
+                <SideNavBar
+                    showNav={showNav}
+                    onHideNav={() => toggleSideNavbar(false)}
+                    onOpenNav={() => toggleSideNavbar(true)}
+                />
             </header>
             <section className="investor__banner"></section>
             <main className="investor--layout d-flex">
                 <section className="investor__navContainer col-4">
                     <header className="investor__breadcrumb">
                         <section className="investor__moduleBreadcrumb">
-                            <Link to="/">About Amazon</Link>&nbsp;<AiFillCaretRight style={{"color" : "#007cb6"}}/>&nbsp;
+                            <Link to="/">About Amazon</Link>&nbsp;<AiFillCaretRight style={{"color" : "var(--blue-12"}}/>&nbsp;
                             <Link to="/">Investor Relations</Link>
                         </section>
                     </header>

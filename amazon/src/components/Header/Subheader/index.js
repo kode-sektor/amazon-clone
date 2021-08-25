@@ -28,21 +28,21 @@ const Subheader = (props) => {
 		return (
 			<Menu
 				menus={
-                    [
-                        { label: "Coupons", href: "coupons", icon: null },
-                        { label: "Electronics", href: "electronics", icon: null },
-                        { label: "Beauty & Personal Care", href: "beauty", icon: null },
-                        { label: "Fashion", href: "fashion", icon: null },
-                        { label: "Pet Supplies", href: "pet-supplies", icon: null },
-                        { label: "Gift Cards", href: "gift-cards", icon: null },
-                        { label: "Home", href: "/", icon: null },
-                        { label: "Health & Household", href: "health", icon: null },
-                        { label: "Sports & Outdoors", href: "sports-and-outdoors", icon: null },
-                        { label: "Books", href: "books", icon: null },
-                        { label: "Home Improvement", href: "home-improvement", icon: null },
-                        { label: "Kay's Store", href: "your-store", icon: null }
-                    ]
-                }
+                        [
+                            { label: "Coupons", href: "coupons", icon: null },
+                            { label: "Electronics", href: "electronics", icon: null },
+                            { label: "Beauty & Personal Care", href: "beauty", icon: null },
+                            { label: "Fashion", href: "fashion", icon: null },
+                            { label: "Pet Supplies", href: "pet-supplies", icon: null },
+                            { label: "Gift Cards", href: "gift-cards", icon: null },
+                            { label: "Home", href: "/", icon: null },
+                            { label: "Health & Household", href: "health", icon: null },
+                            { label: "Sports & Outdoors", href: "sports-and-outdoors", icon: null },
+                            { label: "Books", href: "books", icon: null },
+                            { label: "Home Improvement", href: "home-improvement", icon: null },
+                            { label: "Kay's Store", href: "your-store", icon: null }
+                        ]
+                    }
 			/>
 		)
     }
