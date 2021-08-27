@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import SideNavBar from '../../components/Header/SideNavBar/Investor'
+import SideLangBar from '../../components/Header/SideNavBar/SideLangBar'
 
 import { FaBars, FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { GoSearch } from 'react-icons/go'
@@ -14,8 +15,10 @@ import './index.css'
 const InvestorRelations = () => {
 
     const [showNav, setShowNav] = useState(false)
+    const [showLangNav, setShowLangNav] = useState(false)
 
     const toggleSideNavbar = (display) => setShowNav(display)
+    const toggleLangNavbar = (display) => setShowLangNav(display)
 
     return (
         <div className="investor--page">
@@ -32,19 +35,25 @@ const InvestorRelations = () => {
                             <img src={amazon_module_logo} alt="About Amazon logo" />
                         </Link>
                     </div>
-                    <span className="moduleSearch d-inline-block ml-auto">
+                    <span className="moduleSearch d-inline-block ml-auto align-self-center">
                         <GoSearch/>
                     </span>
-                    <span className="investor__moduleLang d-inline-block">
+                    <button className="investor__moduleLang d-inline-block align-self-center"
+                        onClick={(showNav) ? () => toggleLangNavbar(false) : () => toggleLangNavbar(true)}>
                         <span className="investor__moduleLang--toggle">
                             EN
                         </span>
-                    </span>
+                    </button>
                 </div>
                 <SideNavBar
                     showNav={showNav}
                     onHideNav={() => toggleSideNavbar(false)}
                     onOpenNav={() => toggleSideNavbar(true)}
+                />
+                <SideLangBar
+                    showNav={showLangNav}
+                    onHideNav={() => toggleLangNavbar(false)}
+                    onOpenNav={() => toggleLangNavbar(true)}
                 />
             </header>
             <section className="investor__banner"></section>

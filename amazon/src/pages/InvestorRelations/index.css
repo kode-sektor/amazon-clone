@@ -38,8 +38,7 @@
 }
 
 .moduleSearch {
-    margin: 10px 20px 0 0;
-
+    margin: 0 20px 0 0;
     color: var(--white);
     font-size: 3.3rem;
     cursor: pointer;
@@ -341,10 +340,10 @@
         font-size: 2rem;
     }
     .moduleSearch {
-        margin-top: 31px;
+        /margin-top: 31px;
     }
     .investor__moduleLang {
-        margin-top: 33px;
+        margin-top: 10px;
     }
     .investor__breadcrumb {
         padding-left: 35px;

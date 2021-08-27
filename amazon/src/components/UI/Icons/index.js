@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import back_arrow from '../../../images/amazon-back-arrow.png'
 import right_arrow_carrot from '../../../images/amazon-right-arrow-carrot.jpg'
 
+import { RiArrowDropRightLine } from "react-icons/ri"
+
 import './index.css'
 
 const BackArrow = () => {
@@ -22,4 +24,12 @@ const RightArrowCarrot = () => {
     )
 }
 
-export { BackArrow, RightArrowCarrot }
+const RightArrow = () => {
+    return (
+        <RiArrowDropRightLine
+            className="rightArrowDropRight"
+        />
+    )
+}
+
+export { BackArrow, RightArrowCarrot, RightArrow }

@@ -12,3 +12,10 @@
     width: 8px;
     vertical-align: middle;
 }
+.rightArrowDropRight {
+    display: block;
+    margin: -10px 0 -5px -10px;
+    font-size: 33px;
+    color: var(--black);
+    text-align: left;
+}

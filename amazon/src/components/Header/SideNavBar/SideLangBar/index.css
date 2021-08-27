@@ -1,0 +1,163 @@
+.sideLangContainer > aside {
+    z-index: 9999 !important;
+}
+.sideLangContainer > aside > nav {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.investorLang__sideNavigation {
+    position: absolute !important;
+    width: 375px !important;
+    top: 75px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3) !important;
+    background-color: var(--grey-tone-37) !important;
+    transition: right 250ms;
+}
+.investorLang__sideNavHeader {
+    padding: 24px 18px 13px 18px;
+    background-color: var(--grey-tone-22);
+    cursor: pointer;
+}
+.investorLang__moduleLang--toggle {
+    display: inline-block;
+    margin: 0 3px 0 3px;
+    padding: 26px 6px 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: var(--black);
+    background: url('../../../../images/world-icon-black.png') 4px 0 no-repeat;
+    background-size: 76%;
+    cursor: pointer;
+}
+.investorLang__visitAmazonLink {
+    display: inline-block;
+    vertical-align: top;
+    color: var(--grey-tone-61);
+    font-size: 11px;
+    font-weight: 700;
+}
+.investorLang__sideNav {
+    padding: 33px 36px 17px;
+}
+.investorLang__sideNavList li a {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 2px 0 0 40px;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--grey-tone-62);
+}
+.investorLang__sideNavList li a span {
+    display: block;
+    font-weight: 400;
+    margin-top: 2px;
+    font-size: 11px;
+    color: var(--grey-tone-61);
+}
+.investorLang__sideNavList li a[href*=".eu"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -238px;
+}
+.investorLang__sideNavList li a[href*=".fr"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -85px;
+}
+.investorLang__sideNavList li a[href*=".de"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -68px;
+}
+.investorLang__sideNavList li a[href*=".in"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -102px;
+}
+.investorLang__sideNavList li a[href*=".it"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -119px;
+}
+.investorLang__sideNavList li a[href*=".es"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -187px;
+}
+.investorLang__sideNavList li a[href*=".uk"]:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -204px;
+}
+.investorLang__sideNavList li a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-image: url('../../../../images/amzn-sprite-flag-langs.png');
+    background-position: 8px -221px;
+}
