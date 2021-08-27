@@ -2,61 +2,11 @@
     padding-top: 40px;
     font-size: 16px;
 }
-.investor__header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 50;
+.investor--page a {
+    text-decoration: none;
 }
-.investor__headerPane {
-    height: 60px;
-    background: rgba(0,0,0,.8);
-}
-.layout__toggle {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    margin: 8px 0 0 15px;
-    font-size: 4rem;
-    color: var(--white);
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    transition: opacity 250ms;
-}
-.layout__toggleBars {
-    margin-top: 9px;
-}
-.investor__moduleLink {
-    position: absolute;
-    display: inline-block;
-    width: 140px;
-    top: 40px;
-    left: 50%;
-    margin-top: 17px;
-    transform: translateX(-50%);
-}
-
-.moduleSearch {
-    margin: 0 20px 0 0;
-    color: var(--white);
-    font-size: 3.3rem;
-    cursor: pointer;
-    line-height: 1;
-}
-.investor__moduleLang {
-    margin: 23px 35px 0 0;
-}
-.investor__moduleLang--toggle {
-    display: block;
-    padding: 26px 6px 0;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.1px;
-    color: var(--white);
-    cursor: pointer;
-    background: url('../../images/world-icon-white.png') 4px 0 no-repeat;
-    background-size: 76%;
+.investor--page a:hover, .investor--page a:focus {
+    opacity: .8;
 }
 .investor__banner {
     background-image: url('../../images/amazon-default-banner.jpg');
@@ -80,6 +30,9 @@
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--grey-tone-59);
+}
+.investor__moduleBreadcrumb a {
     color: var(--grey-tone-59);
 }
 .investor__nav {
@@ -167,7 +120,7 @@
 .investor__viewLink {
     font-size: 13px;
     font-weight: 700;
-    color: var(--blue-12);
+    color: var(--blue-12) !important;
     text-transform: uppercase;
     border-bottom: 2px solid;
 }
@@ -175,12 +128,6 @@
     padding: 46px 20px 40px 20px;
     color: var(--white);
     background-color: var(--grey-tone-62);
-}
-.investor--footer a {
-    text-decoration: none;
-}
-.investor--footer a:hover, .investor--footer a:focus {
-    opacity: .8;
 }
 .investor__footerAmazonLogo {
     margin-bottom: 15px;
@@ -252,13 +199,6 @@
 
 
 
-
-
-
-
-
-
-
 @media only screen and (min-width: 568px) {
     .investor__footerSocials {
         margin: 0 100px 25px 100px;
@@ -271,27 +211,10 @@
     }
     .investor__headerPane {
         height: 80px;
-        background: linear-gradient(to top,rgba(0,0,0,0),#000);
-    }
-    .investor__moduleLogo {
-        position: relative;
-        width: 320px;
-        padding: 17px 0 22px 35px;
-        z-index: 121;
+        background: linear-gradient(to top,rgba(0,0,0,0),var(--black));
     }
     .layout__toggle {
         margin: 0;
-    }
-    .investor__moduleLink {
-        position: relative;
-        left: auto;
-        top: 9px;
-        margin: 0 0 0 16px;
-        vertical-align: middle;
-        transform: none;
-    }
-    .moduleSearch {
-        font-size: 2rem;
     }
     .investor__breadcrumb {
         padding: 30px 0 40px 0;
@@ -330,10 +253,6 @@
     .investor__banner {
         margin-bottom: 40px;
     }
-    .investor__moduleLogo {
-        width: 370px;
-        padding: 21px 0 29px 35px;
-    }
     .layout__toggle {
         height: 50px;
         width: 50px;
@@ -341,9 +260,6 @@
     }
     .moduleSearch {
         /margin-top: 31px;
-    }
-    .investor__moduleLang {
-        margin-top: 10px;
     }
     .investor__breadcrumb {
         padding-left: 35px;
