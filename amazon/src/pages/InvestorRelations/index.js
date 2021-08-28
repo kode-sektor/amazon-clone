@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 import { AiFillCaretRight } from 'react-icons/ai'
 
 import SecondaryHeader from '../../components/Header/SecondaryHeader'
+import SecondaryBreadCrumb from '../../components/UI/BreadCrumb/SecondaryBreadCrumb'
 
 import amazon_module_logo from '../../images/amazon-module-logo.svg'
 
@@ -14,14 +15,26 @@ const InvestorRelations = () => {
 
     return (
         <div className="investor--page">
-            <SecondaryHeader />
+            <SecondaryHeader/>
             <section className="investor__banner"></section>
             <main className="investor--layout d-flex">
                 <section className="investor__navContainer col-4">
                     <header className="investor__breadcrumb">
                         <section className="investor__moduleBreadcrumb">
-                            <Link to="/">About Amazon</Link>&nbsp;<AiFillCaretRight style={{"color" : "var(--blue-12"}}/>&nbsp;
-                            <Link to="/">Investor Relations</Link>
+                            <SecondaryBreadCrumb
+                                links={
+                                    [
+                                        {
+                                            href : "/",
+                                            text : "Amazon"
+                                        },
+                                        {
+                                            href : "/",
+                                            text : "Investor Relations"
+                                        }
+                                    ]
+                                }
+                            />
                         </section>
                     </header>
                     <section className="investor__news">
