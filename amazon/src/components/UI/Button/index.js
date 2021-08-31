@@ -208,6 +208,12 @@ const LocationButton = () => (
     </button>
 )
 
+const SecondaryButton = () => (
+    <button className="secondary__submit form-control btn w-auto" type="submit">
+        Filter
+    </button>
+)
+
 export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
-    CouponBtn, SeeAllResults, LocationButton }
+    CouponBtn, SeeAllResults, LocationButton, SecondaryButton }

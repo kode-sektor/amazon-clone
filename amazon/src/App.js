@@ -22,6 +22,7 @@ import HomeImprovement from "./pages/HomeImprovement"
 import Jobs from "./pages/Jobs"
 import HelpCustomer from "./pages/HelpCustomer"
 import InvestorRelations from "./pages/InvestorRelations"
+import Press from "./pages/Press"
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
                     <Route path="/jobs" component={Jobs}/> 
                     <Route path="/help-customer" component={HelpCustomer}/> 
                     <Route path="/investor-relations" component={InvestorRelations}/>
+                    <Route path="/press" component={Press}/>
                 </Switch>
             </Router>
         </div>

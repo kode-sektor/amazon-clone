@@ -1,0 +1,72 @@
+
+.investor--footer {
+    padding: 46px 20px 40px 20px;
+    color: var(--white);
+    background-color: var(--grey-tone-62);
+}
+.secondary__footerAmazonLogo {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.secondary__footerAmazonLogo {
+    display: inline-block;
+    height: 41px;
+}
+.secondary__footerSocials {
+    margin: 0 20px 25px 20px;
+}
+.secondary__footerSocialLink {
+    display: inline-block;
+    font-size: 30px;
+    color: var(--white) !important;
+}
+.secondary__footerShop a {
+    display: inline-block;
+    max-width: 90px;
+    margin-top: -5px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.secondary__footerNav {
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-right: -20px;
+    margin-left: -20px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.secondary__footerNavLinkTitle {
+    margin-bottom: 15px;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.secondary__footerNavLinkTitle a {
+    color: var(--white);
+}
+.secondary__footerNavLinkItem li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.secondary__footerNavLinkItem li a {
+    color: var(--grey-tone-6);
+}
+.secondary__footerNavLinks {
+    margin-bottom: 30px;
+}
+.secondary__copyright {
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--grey-tone-63);
+}
+.secondary__copyrightLinks a {
+    color: var(--white);
+}
+

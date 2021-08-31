@@ -1,0 +1,9 @@
+.moduleBreadcrumb {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--grey-tone-59);
+}
+.moduleBreadcrumb a {
+    color: var(--grey-tone-59);
+}
