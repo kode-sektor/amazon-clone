@@ -273,12 +273,11 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 				)
 			})
 		} else if (type === "coupon") {
-
 			items.forEach((item, index) => {
 				tempCarousel = [
 					...tempCarousel,
 					(
-						/*create room for 'Add to Cart' button for Orders page*/
+						/*Create room for 'Add to Cart' button for Orders page*/
 						<li className={addToCart && 'order__slider'}>
 							<section className="coupon__slideBox">
 								<figure className="coupon__slideImg">
@@ -317,6 +316,45 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 					]
 					tempCarousel = []
 				}
+			})
+		} else if (type === "testimonial") {
+			slides = items.map((item, index) => {
+				return (
+					<CarouselItem
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={item.src}
+					>
+						<header className="carouselTestimonial__heading">
+							<h4 className="carouselTestimonial__headingText">
+								{item.title}
+							</h4>
+							<section className="carouselTestimonial__navControl">
+								<span className="carouselTestimonial__currentSlide">
+									{items.length < 10 && (0)}{activeIndex + 1}/ 
+									{items.length < 10 && (0)}{items.length}
+								</span>
+							</section>
+						</header>
+						<section className="carouselTestimonial__quotes">
+							<blockquote className="carouselTestimonial__quote">
+								<p className="carouselTestimonial__Text">
+									{item.caption}
+								</p>
+								<section className="carouselTestimonial__quoteAttribution d-flex align-items-center">
+									<img src={item.avatar} />
+									<cite className="carouselTestimonial__citation d-flex flex-column">
+										<strong>{item.author}</strong>
+										<span>{item.title}</span>
+									</cite>
+								</section>
+							</blockquote>
+							<Link to="/" className="carouselTestimonial__videoLink">
+								<img src={item.img}/>
+							</Link>
+						</section>
+					</CarouselItem>
+				)
 			})
 		}
 		else {

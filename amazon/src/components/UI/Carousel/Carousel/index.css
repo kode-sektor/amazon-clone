@@ -4,6 +4,9 @@
     max-height: 230px;
     height: 300px;
     margin: 0 auto;
+
+    max-height: none;
+    height: auto;
 }
 .carousel__detailed .carousel.slide {
     height: auto;

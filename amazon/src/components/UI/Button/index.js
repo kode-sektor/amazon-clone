@@ -214,6 +214,18 @@ const SecondaryButton = () => (
     </button>
 )
 
+const BtnPillRounded = () => (
+    <button className="btn__pillRounded" type="submit">
+        Sign up
+    </button>
+)
+
+const BtnPillRoundedLg = () => (
+    <button className="btn__pillRoundedLg" type="submit">
+        Sign up
+    </button>
+)
+
 export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
-    CouponBtn, SeeAllResults, LocationButton, SecondaryButton }
+    CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg }

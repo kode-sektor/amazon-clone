@@ -62,14 +62,16 @@
     border: 2px solid var(--white) !important;
 }
 .secondary__submit {
-    font: inherit;
     display: inline-block;
+    margin: -30px 0 0 0;
+    padding: 7px 16px;
+    height: 40px;
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
     background-image: none;
-    border: 1px solid transparent;
     white-space: nowrap;
+    font: inherit;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42857143;
@@ -77,13 +79,64 @@
     -webkit-appearance: button;
     cursor: pointer;
     color: var(--white);
+    border: 1px solid transparent;
     border-color: var(--blue-13);
     background-color: var(--blue-13);
     border-width: 2px;
     border-style: solid;
-    transition: all .15s ease-in;
-    margin: -30px 0 0 0;
-    padding: 7px 16px;
-    height: 40px;
     border-radius: 0px;
+    transition: all .15s ease-in;
+}
+.btn__pillRounded {
+    display: block;
+    flex-shrink: 0;
+    height: 40px;
+    padding: 0 1.3em !important;
+    width: auto;
+    min-width: 0;
+    white-space: nowrap;
+    font-size: 16px !important;
+    line-height: 37px !important;
+    order: 3;
+    z-index: 5;
+    font: 700 16px/16px Helvetica, Arial, sans-serif !important;
+    color: var(--bg-light-blue);
+    border: 2px solid var(--ochre-26);
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--ochre-26);
+    box-shadow: 0 0 16px rgba(0,0,0,.2);
+    transition: box-shadow .15s;
+}
+.btn__pillRounded:after {
+    content: "";
+    display: inline-block;
+    background: rgba(0,0,0,0) url('../../../images/amzn-sprite-10.svg') no-repeat;
+    transition: transform .2s cubic-bezier(.64,.15,.53,.53);
+    transition: transform .2s cubic-bezier(.64,.15,.53,.53),-webkit-transform .2s cubic-bezier(.64,.15,.53,.53);
+}
+.btn__pillRoundedLg {
+    display: inline-block;
+    padding: 16px 36px;
+    font-size: 24px !important;
+    text-decoration: none;
+    line-height: 24px !important;
+    text-align: center;
+    font: 700 16px/16px Helvetica, Arial, sans-serif !important;
+    border-radius: 36px;
+    background-color: var(--ochre-26);
+    cursor: pointer;
+    border: 2px solid var(--ochre-26);
+    box-shadow: 0 0 16px rgba(0,0,0,.2);
+    color: var(--bg-light-blue);
+    transition: box-shadow .15s;
+}
+.btn__pillRoundedLg:after {
+    content: "";
+    display: inline-block;
+    background: rgba(0,0,0,0) url('../../../images/amzn-sprite-10.svg') no-repeat;
+    transition: transform .2s cubic-bezier(.64,.15,.53,.53);
+    transition: transform .2s cubic-bezier(.64,.15,.53,.53), -webkit-transform .2s cubic-bezier(.64,.15,.53,.53);
 }

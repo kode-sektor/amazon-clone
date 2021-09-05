@@ -15,7 +15,6 @@
     margin: 0 auto;
     max-width: 1020px;
     padding: 0 10px;
-    border: thin solid brown;
 }
 .press__navHeader {
     overflow: hidden;
@@ -52,12 +51,10 @@
     border-width: 1px 1px 1px 1px;
     border-color: var(--grey-tone-65);
     border-style: solid;
-    border: 2px solid green;
 }
 .press__form--field {
     margin: 0 1% 0 0;
     width: 32.66666666%;
-    border: thin solid tan;
 }
 label[for="edit-year-value"] {
     margin-right: 20px;
@@ -81,7 +78,6 @@ label[for="edit-year-value"] {
 .press__articleHeadline {
     padding: 0 0 .7em 0;
     margin: 0;
-    border: thin solid green;
 }
 .press__articleBody {
     margin: 0;
@@ -107,7 +103,6 @@ label[for="edit-year-value"] {
     margin-right: auto;
     text-align: center;
     color: var(--black);
-    border: thin solid orange;
 }
 .page__itemsList {
     display: inline-block;

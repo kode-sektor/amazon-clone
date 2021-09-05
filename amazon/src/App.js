@@ -23,6 +23,7 @@ import Jobs from "./pages/Jobs"
 import HelpCustomer from "./pages/HelpCustomer"
 import InvestorRelations from "./pages/InvestorRelations"
 import Press from "./pages/Press"
+import SellerAmazon from "./pages/SellerAmazon"
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
                     <Route path="/help-customer" component={HelpCustomer}/> 
                     <Route path="/investor-relations" component={InvestorRelations}/>
                     <Route path="/press" component={Press}/>
+                    <Route path="/seller-amazon" component={SellerAmazon}/>
                 </Switch>
             </Router>
         </div>

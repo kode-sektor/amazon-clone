@@ -30,7 +30,7 @@ const BirthForm = () => {
                                 <span className="a__input__text__addon">
                                     <i className="a__icon a__icon__calendar"></i>
                                 </span>
-                                <input type="text" maxlength="10" placeholder="dd/mm/yyyy" data-action="a-cal-input" data-input="start" className="a__input__text a__cal__input a__declarative" aria-label="Date with format m m/d d/y y y y"></input>
+                                <input type="text" maxlength="10" placeholder="dd/mm/yyyy" data-action="a-cal-input" data-input="start" className="a__input__text a__cal__input a__declarative" aria-label="Date with format m m/d d/y y y y"/>
                             </div>
                         </div>
                     </form>

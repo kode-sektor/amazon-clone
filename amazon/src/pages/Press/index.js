@@ -4,14 +4,11 @@ import { Link } from 'react-router-dom'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
-
 import SecondaryHeader from '../../components/Header/SecondaryHeader'
 import SecondaryBreadCrumb from '../../components/UI/BreadCrumb/SecondaryBreadCrumb'
 import SecondaryNav from '../../components/UI/Nav/SecondaryNav'
 import { SecondaryButton } from '../../components/UI/Button'
-
-import amazon_module_logo from '../../images/amazon-module-logo.svg'
+import SecondaryFooter from '../../components/Footer/SecondaryFooter'
 
 import './index.css'
 
@@ -300,6 +297,7 @@ const Press = () => {
                     </section>
                 </section>
             </main>
+            <SecondaryFooter/>
         </div>
     )
 }

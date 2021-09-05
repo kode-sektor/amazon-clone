@@ -161,6 +161,8 @@ file rather than small ones. Your choice
     --blue-13: #5c89b4;
     --blue-14: #009ec2;
     --blue-15: #00afd6;
+    --blue-16: #0099d9;
+    --blue-17: #b2e5f6;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -209,10 +211,10 @@ file rather than small ones. Your choice
 	--mainlinkfocus: #008299;
   
 	--color: #0F1111;
-	--color-2 : #111;
-	--bg-light-blue : #232f3e;
-	--bg-dark-blue : #131921;
-	--price-color : #b12704;
+	--color-2: #111;
+	--bg-light-blue: #232f3e;
+	--bg-dark-blue: #131921;
+	--price-color: #b12704;
 
 	/*shades of grey*/
     --grey: #ccc;
@@ -285,6 +287,8 @@ file rather than small ones. Your choice
     --grey-tone-64: #f9fafb;
     --grey-tone-65: #cbcbcd;
     --grey-tone-66: #fcfcfc;
+    --grey-tone-67: #a6b7b8;
+    --grey-tone-68: #ebf8fa;
 	
     --black: #000;
     --white: #fff;
@@ -1979,6 +1983,19 @@ ul.list__indent {
     background-size: 15px;
     cursor: text;
     z-index: 400;
+}
+.has__max__width {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: normal;
+    box-sizing: border-box;
 }
 
 /* Indentations */

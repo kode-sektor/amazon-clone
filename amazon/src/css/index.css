@@ -984,6 +984,11 @@ nav.navbar .navbar-brand {
     margin: 10px 0 0 0;
 }
 
+.Dropdown-control {
+    cursor: pointer !important;
+}
+
+
 
 
 @media (min-width: 576px) {
@@ -997,3 +1002,4 @@ nav.navbar .navbar-brand {
         min-width: 200px;
     }
 }
+

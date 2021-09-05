@@ -61,7 +61,7 @@ const Footer = (props) => {
                     heading={"Make Money with Us"}
                     menu={
                             [
-                                { label: "Sell on Amazon", href: "/", icon: null },
+                                { label: "Sell on Amazon", href: "/seller-amazon", icon: null },
                                 { label: "Sell Under Amazon Accelerator", href: "/", icon: null },
                                 { label: "Amazon Associates", href: "/", icon: null },
                                 { label: "Sell on Amazon Handmade", href: "/", icon: null },

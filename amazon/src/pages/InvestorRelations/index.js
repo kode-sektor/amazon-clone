@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
-
 import SecondaryHeader from '../../components/Header/SecondaryHeader'
 import SecondaryBreadCrumb from '../../components/UI/BreadCrumb/SecondaryBreadCrumb'
 import SecondaryNav from '../../components/UI/Nav/SecondaryNav'

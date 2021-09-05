@@ -1,0 +1,167 @@
+.carouselTestimonial {
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+.carouselTestimonial .carousel.slide {
+    max-height: none;
+}
+.carouselTestimonial__heading {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 82px;
+    line-height: normal;
+    color: var(--white);
+    border: 2px solid brown;
+}
+.carouselTestimonial__headingText {
+    position: absolute;
+    width: 81%;
+    top: 10px;
+    left: 0;
+    margin-bottom: 16px;
+    margin-top: 0;
+    padding-bottom: 0;
+    border: thin solid linen;
+    font: 900 48px/58px 'Roboto Slab', serif;
+}
+.carouselTestimonial__navControl {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 192px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    z-index: 2;
+    transform: translateY(24px);
+    color: var(--white);
+    line-height: normal;
+    border: 2px solid yellow;
+}
+.carouselTestimonial__currentSlide {
+    margin: 0 24px;
+    font: 400 14px/21px AEmbMono,Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    color: inherit;
+    box-sizing: border-box;
+}
+.carouselTestimonial__quotes {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    border-top: 1px solid var(--grey-tone-61);
+    border-bottom: 1px solid var(--grey-tone-61);
+    border: 2px solid purple;
+
+    display: flex !important;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 40px 0;
+}
+.carouselTestimonial__quote {
+    position: relative;
+    width: 50%;
+    margin: 0 24px 0 0;
+    color: var(--white);
+    border: 2px solid lime;   
+}
+.carouselTestimonial__quote:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 48px;
+    background: rgba(0,0,0,0) url('../../../../images/amzn-sprite-10.svg') no-repeat;
+    background-position: -1px -380px;
+}
+.carouselTestimonial__Text {
+    position: relative;
+    margin-bottom: 24px;
+    padding: 64px 0 0;
+    padding-right: 48px;
+    font: 400 32px/38px 'Roboto Slab', serif;
+    border: thin solid crimson;
+}
+.carouselTestimonial__quoteAttribution {
+    border: thin solid blue;
+}
+.carouselTestimonial__quoteAttribution img {
+    width: 72px;
+    height: auto;
+    margin-right: 16px;
+}
+.carouselTestimonial__citation strong {
+    font-size: 24px;
+    line-height: 36px;
+    font: 900 20px/24px 'Roboto Slab', serif;
+    color: var(--white);
+}
+.carouselTestimonial__citation span {
+    font: 400 16px/24px 'Roboto Slab', serif;
+    color: var(--grey-tone-60);
+}
+.carouselTestimonial__videoLink {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    margin-top: 0;
+    transition: .2s cubic-bezier(.64,.15,.53,.53);
+    border: thin solid fuchsia;
+}
+.carouselTestimonial__videoLink:before {
+    content: "";
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-position: -1px -286px !important;
+    background-size: initial;
+    background: rgba(0,0,0,0) url('../../../../images/amzn-sprite-10.svg') no-repeat;
+}
+.carouselTestimonial__videoLink img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.carouselTestimonial .carousel-control-prev, .carouselTestimonial .carousel-control-next {
+    top: 25px;
+    bottom: auto;
+    height: auto;
+    max-height: none;
+    width: auto;
+    padding: 0;
+    border: thin solid crimson;
+}
+.carouselTestimonial .carousel-control-prev {
+    right: 130px;
+    left: auto;
+}
+
+.carouselTestimonial .carousel-control-next {
+    right: 5px;
+    left: auto;
+}
+.carouselTestimonial .carousel-control-prev .carousel-control-prev-icon, 
+.carouselTestimonial .carousel-control-next .carousel-control-next-icon {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 36px;
+    height: 40px;
+    opacity: 0.3;
+    background: none no-repeat;
+    transform: none;
+    border: 2px solid green;
+}
+.carouselTestimonial .carousel-control-prev .carousel-control-prev-icon {
+    background-image: url('../../../../images/arrow_back_circle_direction_icon.png');
+}
+.carouselTestimonial .carousel-control-next .carousel-control-next-icon {
+    background-image: url('../../../../images/arrow_forward_circle_direction_icon.png');
+}
