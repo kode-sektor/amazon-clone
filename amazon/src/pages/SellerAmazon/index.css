@@ -21,7 +21,6 @@
     background-color: var(--white);
     transition: all .5s ease-out;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
-    border: thin solid orange;
 }
 .sellerAmazon__nav {
     position: static;
@@ -36,7 +35,6 @@
     max-width: 1200px;
     min-width: 840px;
     margin: 0 auto;
-    border: thin solid red;
 }
 .sellerAmazon__logoWrapper {
     position: relative;
@@ -47,7 +45,6 @@
     order: 2;
     flex-grow: 0;
     margin-right: 56px;
-    border: thin solid cyan;
 }
 .sellerAmazon__logoWrapper a {
     position: relative;
@@ -86,7 +83,6 @@
     transform: none;
     background-color: rgba(0,0,0,0);
     transition: transform .4s ease-in 0s,-webkit-transform .4s ease-in 0s;
-    border: thin solid purple;
 }
 .sellerAmazon__menuLink {
     position: relative;
@@ -248,7 +244,6 @@
     padding-left: 80px;
     padding-bottom: 40px;
     padding-right: 80px;
-    border: 2px solid purple;
 }
 .sellerAmazon__sell--container, .sellerAmazon__testimonialTitle--container {
     display: flex;
@@ -278,6 +273,7 @@
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
+    flex-grow: 1;
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -287,15 +283,12 @@
     border-color: var(--bg-light-blue);
     border-left-width: 0;
     border-right-width: 0;
-
-    flex-grow: 1;
     text-transform: none;
     color: var(--bg-light-blue);
     font-weight: 900;
     margin: 0;
     font-size: 80px !important;
     line-height: 96px;
-    border: 2px solid yellow;
 }
 .sellerAmazon__sellText {
     font-size: 20px !important;
@@ -316,12 +309,10 @@
     font-size: 12px !important;
     line-height: 18px;
     font-weight: 400;
-    border: thin solid crimson;
 }
 .sellerAmazon__boxes {
     padding: 0;
     padding-right: 40px;
-    border: thin solid coral;
 }
 .sellerAmazon__primeBoxes {
     height: 550px;
@@ -339,7 +330,6 @@
     border-right-width: 0;
     background-color: var(--grey-tone-68);
     border-color: var(--bg-light-blue);
-    border: thin solid green;
 }
 .sellerAmazon__primaryCards--container {
     display: flex;
@@ -382,9 +372,6 @@
 }
 .sellerAmazon__primaryCardTile:last-child {
     margin-right: 0;
-}
-.sellerAmazon__primaryCardHeading {
-
 }
 .sellerAmazon__primaryCardAvatar {
     padding-bottom: 24px;
@@ -441,7 +428,6 @@
     padding-bottom: 8px;
     padding-right: 80px;
     padding-top: 64px;
-    border: 2px solid orange;
     background-color: var(--bg-light-blue);
 }
 .sellerAmazon__testimonialHeading {
@@ -468,8 +454,267 @@
     padding-bottom: 40px;
     padding-right: 80px;
     background-color: var(--bg-light-blue);
-    border: thin solid green;
 }
+.sellerAmazon__individualSeller {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex: 0 0 auto;
+    padding-left: 0;
+    padding-bottom: 80px;
+    padding-right: 0;
+    padding-top: 80px;
+    border-left-width: 0;
+    border-right-width: 0;
+    background-color: var(--grey-tone-68);
+    border-color: var(--bg-light-blue);
+}
+.sellerAmazon__individualSeller > p {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: stretch;
+    align-content: flex-start;
+    padding-left: 0;
+    padding-bottom: 40px;
+    padding-right: 16px;
+    padding-top: 40px;
+    flex-grow: 0 !important;
+    width: auto !important;
+    line-height: 24px;
+    text-align: start;
+    color: var(--bg-light-blue);
+    font-weight: 400;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px !important;
+}
+.sellerAmazon__individualSeller p a {
+    font: 700 16px/24px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: var(--bg-light-blue);;
+}
+.sellerAmazon__individualSeller p a:after {
+    content: "";
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin-left: 12px;
+    background: rgba(0,0,0,0) url('../../images/amzn-sprite-10.svg') no-repeat;
+    transition: transform .2s cubic-bezier(.64,.15,.53,.53);
+    transform: translate(0);
+}
+.sellerAmazon__individualSeller p a:hover:after {
+    background-position: -17px 3px;
+    transform: translate(4px,-4px);
+}
+.sellerAmazon__startSelling {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: normal;
+    background-color: var(--grey-tone-68);
+    border-color: var(--bg-light-blue);
+    border-left-width: 0;
+    border-right-width: 0;
+    background: url('../../images/prime-plane-and-bus-delivery.png') top right/700px no-repeat,url('../../images/pf-wave-white.svg') top left/cover no-repeat;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.sellerAmazon__startSellingHeading {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    padding-left: 0;
+    padding-bottom: 16px;
+    padding-right: 40px;
+    padding-left: 0;
+}
+.sellerAmazon__startSellingHeader {
+    font-size: 64px !important;
+    line-height: 76px;
+    font-weight: 900;
+}
+.sellerAmazon__startSellingText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: stretch;
+    align-content: flex-start;
+    flex: 0 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: -80px;
+    margin-right: -80px;
+    width: 100%;
+}
+.sellerAmazon__startSellingTextContent {
+    display: flex;
+    width: 41.666666666666664%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: stretch;
+    align-content: flex-start;
+    padding-left: 0;
+    padding-bottom: 40px;
+    padding-right: 0;
+}
+.sellerAmazon__startSellingTextContent p {
+    flex-grow: 1;
+    width: 100%;
+    font-size: 20px!important;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--grey-tone-61);
+}
+.sellerAmazon__intlNotice {
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 100%;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    padding-right: 80px;
+    padding-top: 40px;
+    background-color: var(--grey-tone-68);
+}
+.sellerAmazon__intlNotice p {
+    width: 100%;
+    flex-grow: 1;
+    color: var(--bg-light-blue);
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 16px !important;
+}
+.sellerAmazon__intlNotice p a, .sellerAmazon__startSellingTextContent p a {
+    padding-bottom: 4px;
+    line-height: 24px;
+    font-size: 16px !important;
+    cursor: pointer;
+    color: inherit !important;
+    text-decoration: none;
+    transition: background-size .3s cubic-bezier(.64,.15,.53,.53);
+    background: linear-gradient(currentColor 99%,rgba(0,0,0,0)) no-repeat left 100%;
+    background-size: 100% 2px;
+}
+.sellerAmazon__intlNotice p a:hover, .sellerAmazon__startSellingTextContent p a:hover {
+    background-size: 0 2px;
+    background-position: right 100%;
+    text-decoration: none;
+}
+.sellerAmazon__startSellingTextContent p a {
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 30px;
+    padding-bottom: 4px;
+}
+.sellerAmazon__footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 100%;
+    padding-top: 24px;
+    flex: 0 0 auto;
+    background-color: var(--blue-18);
+    border-color: var(--bg-light-blue);
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.sellerAmazon__footerButtonWrap {
+    margin-bottom: 24px;
+}
+.sellerAmazon__navFooterWrap {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 2px solid var(--grey-tone-61);
+    border-bottom: 2px solid var(--grey-tone-61);
+}
+.sellerAmazon__navFooterWrap section {
+    padding-left: 80px;
+}
+.sellerAmazon__navFooterWrap section:first-child {
+    padding-left: 0;
+}
+.sellerAmazon__navFooterWrap h5, .sellerAmazon__navFooterWrap h5 a {
+    display: block;
+    font: 700 14px/21px Helvetica, Arial, sans-serif;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: var(--white);
+}
+.sellerAmazon__navFooterWrap ul li {
+    margin-bottom: 8px;
+}
+.sellerAmazon__navFooterWrap ul li a {
+    font: 400 14px/21px Helvetica, Arial, sans-serif;
+    padding-bottom: 3px;
+    color: var(--grey-tone-60);
+    text-decoration: none;
+    transition: border-bottom .2s cubic-bezier(.64,.15,.53,.53);
+}
+.sellerAmazon__footerRoot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: center;
+    align-content: flex-start;
+    flex: 0 0 auto;
+    width: 100%;
+    padding-left: 80px;
+    padding-bottom: 24px;
+    padding-right: 80px;
+    padding-top: 24px;
+    background-color: var(--blue-18);
+    border-color: var(--bg-light-blue);
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.sellerAmazon__footerRootImg img {
+    height: 24px;
+    width: auto;
+    max-width: none;
+    max-height: none;
+}
+.sellerAmazon__footerRootLinks ul li {
+    padding-right: 40px;
+}
+.sellerAmazon__footerRootLinks ul:last-child li:last-child {
+    padding-right: 0px;
+}
+.sellerAmazon__footerRootLinks ul li a {
+    padding-bottom: 3px;
+    color: var(--grey-tone-60);
+    border-bottom: 1px solid rgba(0,0,0,0);
+    font: 400 12px / 18px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    text-align: end;
+    transition: border-bottom .2s cubic-bezier(.64,.15,.53,.53);
+}
+
 
 
 

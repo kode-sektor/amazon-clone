@@ -140,3 +140,75 @@
     transition: transform .2s cubic-bezier(.64,.15,.53,.53);
     transition: transform .2s cubic-bezier(.64,.15,.53,.53), -webkit-transform .2s cubic-bezier(.64,.15,.53,.53);
 }
+.btn__pillRoundedObscureLg {
+    display: revert;
+    position: relative;
+    align-self: flex-end;
+    height: auto;
+    margin-bottom: 0;
+    padding: 9px 20px 9px 42px;
+    padding-left: 35px;
+    min-width: 0;
+    text-align: left;
+    margin-left: 8px;
+    color: var(--grey-tone-22);
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    font: 400 14px/16px Helvetica, Arial, sans-serif !important;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--blue-18);
+    transition: background-color .15s;
+}
+.btn__pillRoundedObscureLg:hover, .btn__pillRoundedObscureLg:focus {
+    background-color: var(--bg-light-blue);
+}
+.btn__pillRoundedObscureLg:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    margin-left: -22px;
+    left: unset;
+    height: 17px;
+    width: 17px;
+    background: rgba(0,0,0,0) url('../../../images/amzn-sprite-10.svg') no-repeat;
+}
+.btn__pillRoundedObscureLg--lang:before {
+    background-position: -176px -529px;
+}
+.btn__pillRoundedObscureLg--country {
+    flex-flow: row nowrap;
+    align-items: center;
+    border-radius: 20px;
+    font: 400 16px/16px Helvetica, Arial, sans-serif !important;
+    align-self: center;
+    padding-left: 45px;
+}
+.btn__pillRoundedObscureLg--country:before {
+    width: 24px;
+    height: 18px;
+    margin-top: -1px;
+    margin-left: -30px;
+    padding-right: 4px;
+    background: rgba(0,0,0,0) url('../../../images/amzn-sprite-flag-langs.png') no-repeat;
+    background-position: -3px -52px;
+    background-size: 30px;
+}
+.btn__pillRoundedObscureLg--star:before {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    margin-left: -18px;
+    background: rgba(0,0,0,0) url('../../../images/amzn-sprite-10.svg') no-repeat;
+    background-position: -177px -570px;
+}
+.btn__pillRoundedObscureLg:after {
+    content: "";
+    display: inline-block;
+    background: rgba(0,0,0,0) url('../../../images/amzn-sprite-10.svg') no-repeat;
+    transition: transform .2s cubic-bezier(.64,.15,.53,.53),-webkit-transform .2s cubic-bezier(.64,.15,.53,.53);
+}

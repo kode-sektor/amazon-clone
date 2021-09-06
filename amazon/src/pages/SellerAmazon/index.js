@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { AiOutlineSearch } from 'react-icons/ai'
-import { BtnPillRounded, BtnPillRoundedLg } from '../../components/UI/Button'
+import { BtnPillRounded, BtnPillRoundedLg, BtnPillRoundedObscureLg } from '../../components/UI/Button'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 import TestimonialCarousel from '../../components/UI/Carousel/TestimonialCarousel'
@@ -15,7 +15,10 @@ import aeroplane_on_truck_icon from '../../images/aeroplane-on-truck-icon.svg'
 import hand_holding_coin_icon from '../../images/hand-holding-coin-icon.svg'
 import testimonial_gowood from '../../images/testimonial-gowood.png'
 import gowood_ralph_quotee_avatar from '../../images/gowood-ralph-quotee-avatar.png'
+import alex_stan_quotee_avatar from '../../images/alex_stan_quotee_avatar.png'
 import six_man_range from '../../images/products/6ix-man-range.png'
+import gowood_glasses from '../../images/products/gowood-glasses.png'
+import amazon_ca_half_logo_white from '../../images/amazon-ca-half-logo-white.svg'
 
 import './index.css'
 
@@ -249,23 +252,23 @@ const SellerAmazon = () => {
                                             [
                                                 {
                                                     href: "/",
-                                                    title: "6IXMAN",
+                                                    title: "GOWOOD",
                                                     avatar: gowood_ralph_quotee_avatar,
+                                                    author: "Ralph DeRuiter",
+                                                    src : testimonial_gowood,
+                                                    img: gowood_glasses,
+                                                    altText: "testimonial gowood",
+                                                    caption: "My advice is to definitely start selling on Amazon. The opportunity is endless. The sky is the limit."
+                                                },
+                                                {
+                                                    href: "/",
+                                                    title: "6IXMAN",
+                                                    avatar: alex_stan_quotee_avatar,
                                                     author: "Alex Stan",
                                                     src : testimonial_gowood,
                                                     img: six_man_range,
                                                     altText: "testimonial gowood",
                                                     caption: "We started with one product and quickly expanded to more than 10, thanks to the growth and demand we experienced from selling on Amazon."
-                                                },
-                                                {
-                                                    href: "/",
-                                                    title: "6IXMAN",
-                                                    avatar: gowood_ralph_quotee_avatar,
-                                                    author: "Alex Stan",
-                                                    src : testimonial_gowood,
-                                                    img: six_man_range,
-                                                    altText: "testimonial gowood",
-                                                    caption: "My advice is to definitely start selling on Amazon.The opportunity is endless. The sky is the limit."
                                                 }
                                             ]
                                         }
@@ -275,7 +278,154 @@ const SellerAmazon = () => {
                         </div>
                     </section>
                 </section>
+                <section className="sellerAmazon__individualSeller">
+                    <p className="mb-0">
+                        Just have a few items to sell?
+                    </p>
+                    <p className="mb-0">
+                        <Link to="/">Sign up to become an individual seller</Link>
+                    </p>
+                </section>
+                <section className="sellerAmazon__startSelling">
+                    <div className="has__max__width">
+                        <header className="sellerAmazon__startSellingHeading col-7">
+                            <h2 className="sellerAmazon__sellHeader sellerAmazon__startSellingHeader">
+                                Start selling today
+                            </h2>
+                        </header>
+                    </div>
+                    <section className="sellerAmazon__startSellingText">
+                        <div className="has__max__width">
+                            <section className="sellerAmazon__startSellingTextContent col-5">
+                                <p className="mb-0">
+                                    Put your products in front of the millions of customers that search <Link to="/">Amazon.ca</Link> every day.
+                                </p>
+                            </section>
+                        </div>
+                    </section>
+                    <section className="sellerAmazon__sellButton w-100">
+                        <button className="btn__pillRoundedLg" type="submit">Sign up</button>
+                    </section>
+                    <p className="sellerAmazon__sellFees">CDN $29.99 a month + selling fees</p>
+                </section>
+                <section className="sellerAmazon__intlNotice">
+                    <div className="has__max__width">
+                        <p className="mb-0">
+                            <strong>Important Notice for International Sellers</strong><br/>
+                            As an international seller there are important steps you must take before selling on our Amazon.ca website to ensure a great experience for you and for customers.<br/><br/>
+                            Please read this <Link to="/">important information for international sellers</Link> for more details of your obligations as a seller on <Link to="/">Amazon.ca</Link>
+                        </p>
+                    </div>
+                </section>
             </main>
+            <footer className="sellerAmazon__footer">
+                <div className="has__max__width">
+                    <nav className="flex-fill">
+                        <section className="d-flex">
+                            <section className="sellerAmazon__footerButtonWrap d-flex justify-content-end flex-fill">
+                                <BtnPillRoundedObscureLg
+                                    text={"English"}
+                                    icon={"lang"}
+                                />
+                                <BtnPillRoundedObscureLg
+                                    text={"Canada"}
+                                    icon={"country"}
+                                />
+                                <BtnPillRoundedObscureLg
+                                    text={"Feedback"}
+                                    icon={"star"}
+                                />
+                            </section>
+                        </section>
+                        <section className="sellerAmazon__navFooterWrap">
+                            <section className="flex-grow-0 flex-shrink-1">
+                                <h5>Sell on Amazon</h5>
+                                <ul>
+                                    <li>
+                                        <Link to="/">Amazon Small Business Academy</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Amazon Business</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Amazon Handmade</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Amazon Renewed</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Resource center</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">FAQ</Link>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section className="flex-grow-0 flex-shrink-1">
+                                <h5>
+                                    <Link to="/">Seller Central</Link>
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <Link to="/">Seller login</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Helper pages</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Amazon seller forum</Link>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section className="flex-grow-0 flex-shrink-1">
+                                <h5>
+                                    <Link to="/">Videos</Link>
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <Link to="/">Seller University</Link>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section className="flex-grow-0 flex-shrink-1">
+                                <h5>
+                                    <Link to="/">Amazon</Link>
+                                </h5>
+                                <ul>
+                                    <li>
+                                        <Link to="/">Shop small Business</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">Day One Blog</Link>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </nav>
+                </div>
+                <section className="sellerAmazon__footerRoot">
+                    <div className="has__max__width">
+                        <section className="sellerAmazon__footerRootImg col-5 px-0 d-flex justify-content-start align-items-center">
+                            <img src={amazon_ca_half_logo_white} alt="amazon half logo white"/>
+                        </section>
+                        <section className="sellerAmazon__footerRootLinks col-7 px-0 d-flex justify-content-end align-items-center">
+                            <ul className="d-flex flex-grow-0 align-items-stretch align-content-start justify-content-end ml-0">
+                                <li>
+                                    <Link to="/">Terms of Service</Link>
+                                </li>
+                                <li>
+                                    <Link to="/">Privacy Policy</Link>
+                                </li>
+                            </ul>
+                            <ul className="flex-grow-0 align-content-start align-items-stretch ml-0">
+                                <li>
+                                    <Link to="/">© 2020, Amazon Services LLC.</Link>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+            </footer>
         </div>
     )
 }

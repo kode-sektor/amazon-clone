@@ -226,6 +226,15 @@ const BtnPillRoundedLg = () => (
     </button>
 )
 
-export { BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
+const BtnPillRoundedObscureLg = ({icon, text}) => (
+    <button className={`btn__pillRoundedObscureLg btn__pillRoundedObscureLg--${icon}`} type="submit">
+        {text}
+    </button>
+)
+
+export { 
+    BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
-    CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg }
+    CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg,
+    BtnPillRoundedObscureLg
+}
