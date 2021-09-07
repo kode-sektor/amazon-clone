@@ -1,3 +1,7 @@
+.home--page .carousel.slide {
+    height: 300px;
+    max-height: 230px;
+}
 .sub__layout {
     position: relative;
     padding: 0 10px 0;

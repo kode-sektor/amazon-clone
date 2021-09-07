@@ -2,8 +2,8 @@
     width: 100%;
     max-width: 1500px;
     max-height: 230px;
-    height: 300px;
-    margin: 0 auto;
+    /* height: 300px;
+    margin: 0 auto; */
 
     max-height: none;
     height: auto;

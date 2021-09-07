@@ -285,11 +285,6 @@
     font-weight: 400;
     white-space: normal;
 }
-.icp__origin__change__link {
-    margin-left: 25px;
-    margin-top: 10px;
-    color: var(--link);
-}
 .navigationbar__sprite {
     float: left;
     width: 97px;

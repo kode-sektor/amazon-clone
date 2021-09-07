@@ -32,18 +32,32 @@ const DropdownMenuLang = ({ type, optionList }) => {
                             <i className="amzn__icon__radio__red"></i>Français - FR
                         </span>                         
                     </button>                                  
-                    <div className="navigationbar__divider"></div>                      
-                    <span className="navigationbar__origin__menu__item"> 
-                        <span className="navigationbar__origin__menu__text">
-                            <i className="icp__origin" style={{backgroundPosition : "0 -269px"}}></i>
-                            You are shopping on Amazon.ca.
-                        </span>                          
-                    </span>                                              
-                    <Link to="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
-                        <span className="navigationbar__origin__menu__text">
-                            <div className="icp__origin__change__link">Change country/region.</div>
-                        </span>                          
-                    </Link>                    
+                    { type !== "amazon_associates" && (<div className="navigationbar__divider"></div>) }
+                    {
+                        type === "amazon_associates" ? (
+                            <Link to="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
+                                <span className="navigationbar__origin__menu__text">
+                                    <div className="icp__origin__change__link">Learn more ›</div>
+                                </span>                          
+                            </Link>      
+                        ) : 
+                        (
+                            <>
+                             <span className="navigationbar__origin__menu__item"> 
+                                <span className="navigationbar__origin__menu__text">
+                                    <i className="icp__origin" style={{backgroundPosition : "0 -269px"}}></i>
+                                    You are shopping on Amazon.ca.
+                                </span>                          
+                            </span>                                              
+                            <Link to="/gp/navigation-country/select-country/ref=icp_" className="navigationbar__origin__menu__link navigationbar__origin__menu__item">                         
+                                <span className="navigationbar__origin__menu__text">
+                                    <div className="icp__origin__change__link">Change country/region.</div>
+                                </span>                          
+                            </Link>      
+                            </>
+                        )
+                    }              
+                                 
                 </div>
             </DropdownMenu>
         )

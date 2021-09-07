@@ -232,9 +232,17 @@ const BtnPillRoundedObscureLg = ({icon, text}) => (
     </button>
 )
 
+const BtnSquarePrimary = ({icon, text}) => (
+    <span className="a__button a__button__primary">
+        <span className="a__button__inner">
+            <Link to="/" className="a__button__text">Sign up</Link>
+        </span>
+    </span>
+)
+
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg,
-    BtnPillRoundedObscureLg
+    BtnPillRoundedObscureLg, BtnSquarePrimary
 }
