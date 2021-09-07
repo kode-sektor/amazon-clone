@@ -1,0 +1,37 @@
+.associates--page .navigationbar__origin__menu.dropdown-menu {
+    width: 200px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+}
+*:not(.associates__countries) > .navigationbar__origin__menu {
+    padding-top: 10px !important;
+}
+*:not(.associates__countries) > .navigationbar__origin__menu .navigationbar__origin__menu__itemList {
+    width: auto;
+}
+*:not(.associates__countries) > .navigationbar__origin__menu .navigationbar__divider {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+.associates--page .icp__origin__change__link {
+    margin-left: 0;
+}
+.associates--page .associates__countries .navigationbar__origin__menu__itemList {
+    width: auto;
+}
+.associates__countries .navigationbar__origin__menu__itemList li {
+    padding: 10px 0;
+}
+.associates__countries .navigationbar__origin__menu__itemList li:hover .amzn__icon__radio__red,
+.associates__countries .navigationbar__origin__menu__itemList li:focus .amzn__icon__radio__red,
+.navigationbar__origin__menu__link:hover .amzn__icon__radio__red, 
+.navigationbar__origin__menu__link:focus .amzn__icon__radio__red {
+    background-position: -54px -294px;
+}
+.associates__countries .navigationbar__origin__menu__itemList li:first-child {
+    border-bottom: 1px solid var(--grey-tone-69);
+}
+.associates--page .associates__countries .navigationbar__origin__menu__link {
+    padding-bottom: 0;
+}

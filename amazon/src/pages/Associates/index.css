@@ -1,0 +1,250 @@
+.associates--page {
+    background-color: var(--white);
+}
+.associates__header {
+    display: inline-block;
+    width: 100%;
+    margin: 17px auto 0 auto;
+    line-height: 19px;
+    background-color: var(--white);
+}
+.associates--wrapper {
+    max-width: 1100px;
+    min-width: 980px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+.associates__headerLogo {
+    display: block;
+    height: 30px;
+    text-decoration: none;
+    color: var(--link-2);
+}
+.associates__headerLogo span {
+    display: inline-block;
+    width: 175px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../../images/amazon-associates.png');
+}
+.associates__headerLinks {
+    margin-left: auto;
+}
+.associates__headerLinks a:not(.navigationbar__origin__menu__link) {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 0 0 15px;
+    color: var(--grey-tone-14);
+    text-decoration: none;
+}
+.associates__headerLinks > div:first-child a {
+    color: var(--link);
+}
+.associates__headerLinks > div:not(:first-of-type) a:not(.navigationbar__origin__menu__link):before {
+    content: '|';
+    color: var(--grey-tone-30);
+    padding: 0 5px;
+}
+.associates__countryFlag {
+    height: 13px;
+    padding: 1px;
+    vertical-align: middle;
+}
+.associates__header hr {
+    display: block;
+    height: 1px;
+    margin-bottom: 14px;
+    margin-top: 13px;
+    line-height: 19px;
+    border-width: 0;
+    border-top: 1px solid var(--grey-tone-35);
+}
+.associates__join {
+    max-width: 1100px;
+    min-width: 980px;
+    margin: 0 auto;
+    padding: 0 0;
+    border: thin solid purple;
+}
+.associates--page .a__alert__warning {
+    color: var(--ochre-36);
+    border-color: var(--ochre-37);
+}
+.associates--page .a__box .a__box__inner {
+    border-radius: 4px;
+}
+.associates--page .a__icon.a__icon__alert {
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    top: 10px;
+    height: 27px;
+    width: 30px;
+    vertical-align: top;
+    background-image: url('../../images/amzn-sprite-4.png');
+    background-size: 400px 900px;
+    background-position: -283px -35px !important;
+    background-repeat: no-repeat;
+}
+.associates--main {
+    max-width: 1100px;
+    min-width: 980px;
+    margin: 0 auto;
+    padding: 0 0;
+    font-size: 1em;
+    border: thin solid hotpink;
+}
+.associates__featuredImage {
+    position: relative;
+    width: 100%;
+    margin-top: 14px!important;
+    margin-bottom: 44px!important;
+    
+    background-image: url('../../images/associate-top-banner_1x.jpg');
+    height: 300px;
+    color: var(--white);
+    border: thin solid orange;
+}
+.associates__featuredImageOverlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    min-height: 125px;
+    text-align: center;
+
+    background: rgba(0,0,0,0.4);
+}
+.associates__featuredImageHeading {
+    width: 100%;
+    overflow: visible;
+    margin: 0;
+    margin-bottom: 26px !important;
+    padding-bottom: 10px;
+    font-size: 33px;
+    line-height: 33px;
+    font-weight: bold;
+    min-height: 1px;
+}
+.associates--page .a__button__text {
+    font-size: 1.4em;
+}
+.associates__affiliate {
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+    margin-top: 40px;
+    margin-bottom: 44px !important;
+    font-size: 16px;
+    border: thin solid green;
+}
+.associates__affiliateHeading {
+    margin-top: 0;
+    line-height: 32px;
+    font-size: 28px;
+    color: var(--color-2);
+}
+.associates__affiliateSubheading {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: lighter;
+    opacity: 0.7;
+    color: var(--color-2);
+}
+.associates__affiliateBenefits {
+
+}
+.associates__affiliateBenefitsItems {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+}
+.associates__affiliateBenefitsItems:nth-child(2) {
+    margin: 0 4%;
+}
+.associates__affiliateBenefitsImg {
+    margin-bottom: 20px;
+}
+.associates__affiliateBenefitsNo {
+    display: inline-block;
+    width: 24px;
+    margin-bottom: 10px;
+    line-height: 24px;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--color-2);
+}
+.associates__affiliateBenefit {
+    display: block;
+    margin-bottom: 20px;
+    line-height: 21px;
+    font-size: 21px;
+    color: var(--color-2);
+}
+.associates__affiliateDesc {
+    display: block;
+    line-height: 19px;
+    opacity: .7;
+    color: var(--color-2);
+}
+.associates__carousel {
+    position: relative;
+    height: 420px;
+    width: 100%;
+    margin-bottom: 80px;
+    border: thin solid violet;
+}
+.associates__faqContainer {
+    width: 100%;
+    overflow: auto;
+    margin-top: 60px;
+    padding: 0 30px;
+    font-size: 16px;
+}
+.associates__faqContainer a {
+    color: var(--link-2);
+}
+.associates__faqHeader {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1.16;
+    color: inherit;
+}
+.associates__faq > section {
+    padding-right: 5%;
+}
+.associates__faq dl, .associates__faq dd {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.associates__faq dt {
+    font-weight: 100;
+}
+.associates__faqQuestion {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-size: 21px;
+    color: var(--black);
+    text-align: left;
+    font-weight: 400;
+}
+.associates__faqAnswer {
+    margin-top: 5px;
+    line-height: 21px;
+    color: var(--black);
+    text-align: left;
+}

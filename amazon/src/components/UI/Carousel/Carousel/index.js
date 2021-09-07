@@ -358,39 +358,18 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 			})
 		} else if (type === "affiliate") {
 			slides = items.map((item, index) => {
+				const {caption, text, src} = item
 				return (
 					<CarouselItem
 						onExiting={() => setAnimating(true)}
 						onExited={() => setAnimating(false)}
 						key={item.src}
 					>
-						<header className="carouselTestimonial__heading">
-							<h4 className="carouselTestimonial__headingText">
-								{item.title}
-							</h4>
-							<section className="carouselTestimonial__navControl">
-								<span className="carouselTestimonial__currentSlide">
-									{items.length < 10 && (0)}{activeIndex + 1}/ 
-									{items.length < 10 && (0)}{items.length}
-								</span>
-							</section>
-						</header>
-						<section className="carouselTestimonial__quotes">
-							<blockquote className="carouselTestimonial__quote">
-								<p className="carouselTestimonial__Text">
-									{item.caption}
-								</p>
-								<section className="carouselTestimonial__quoteAttribution d-flex align-items-center">
-									<img src={item.avatar} />
-									<cite className="carouselTestimonial__citation d-flex flex-column">
-										<strong>{item.author}</strong>
-										<span>{item.title}</span>
-									</cite>
-								</section>
-							</blockquote>
-							<Link to="/" className="carouselTestimonial__videoLink">
-								<img src={item.img}/>
-							</Link>
+						<section>
+							<CarouselCaption
+								captionText={text}
+								captionHeader={caption}
+							/>
 						</section>
 					</CarouselItem>
 				)
@@ -427,14 +406,14 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 			previous={previous}
 			interval={interval}
 		>
-			{type === "prime" && // Carousel indicators should show for only prime slider
+			{(type === "prime" || type === "affiliate") && // Carousel indicators should show for only prime slider
 				(
 					<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
 				)
 			}
 			{slide()}
 			{
-				!giftCardAux && (
+				!giftCardAux || (type !== "affiliate") (
 					<>
 						<CarouselControl
 							className={carouselClass && (`${carouselClass}__control`)}

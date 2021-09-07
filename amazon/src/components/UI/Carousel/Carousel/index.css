@@ -19,6 +19,7 @@
 .carousel-inner {
     position: relative;
     overflow: visible;
+    overflow: hidden;
     height: calc(100vh - 99px);
     height: 100%;
     margin-bottom: 0!important;
@@ -61,6 +62,9 @@
     background-size: 68px 52px;
     background-position: 0 0;
     transform: translate(-50%,-50%);
+}
+.carousel-indicators {
+    margin-bottom: 0;
 }
 .carousel-control-next-icon {
     background-position: -36px 0;
