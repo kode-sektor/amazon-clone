@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Faq = ({question, answer}) => {
-    console.log(question, answer)
     return (
         <dl>
             <dd>

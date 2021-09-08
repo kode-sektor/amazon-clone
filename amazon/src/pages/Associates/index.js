@@ -9,6 +9,7 @@ import DropdownMenuLang from '../../components/UI/DropdownMenuLang'
 import DropdownMenuCountries from '../../components/UI/DropdownMenuCountries'
 import { BtnSquarePrimary } from '../../components/UI/Button'
 import CarouselAffiliate from '../../components/UI/Carousel/CarouselAffiliate'
+import Line from '../../components/UI/Line'
 
 import Faq from '../../components/UI/FAQ'
 
@@ -219,7 +220,7 @@ const Associates = () => {
                                     answer={
                                         <>
                                             Bloggers, publishers and content creators with a qualifying website or mobile app can participate in this program. <Link to="/">Learn more.</Link><br/><br/>
-                                            If you are an influencer with an established social media following. <Link to="/">learn about the Amazon Influencer Program.</Link>
+                                            If you are an influencer with an established social media following. <Link to="/">Learn about the Amazon Influencer Program.</Link>
                                         </>
                                     }
                                 />
@@ -249,8 +250,34 @@ const Associates = () => {
                             </section>
                         </section>
                     </section>
+                    <section className="associates__welcomeFooter d-flex">
+                        <div className="associates__welcomeFooterDivider"></div>
+                        <section className="associates__welcomeFooterContent">
+                            <h3 className="associates__welcomeFooterHeading">Recommend Products. Earn Commissions.</h3>
+                            <div className="a__spacing__none a__spacing__top__micro">
+                                <BtnSquarePrimary/>
+                            </div>
+                        </section>
+                    </section>
                 </section>
             </main>
+            <Line/>
+            <footer className="associates__footer">
+                <div className="associates__footerWrapper">
+                    <section className="associates__footerItem">
+                        <Link to="/">Operating Agreement</Link>
+                    </section>
+                    <section className="associates__footerItem">
+                        <Link to="/">Conditions of Use</Link>
+                    </section>
+                    <section className="associates__footerItem">
+                        <Link to="/">Contact Us</Link>
+                    </section>
+                    <section className="associates__footerItem">
+                        © 1996-2020, Amazon.com, Inc
+                    </section>
+                </div>
+            </footer>
         </div>
     )
 }
