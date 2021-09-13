@@ -25,6 +25,7 @@ import InvestorRelations from "./pages/InvestorRelations"
 import Press from "./pages/Press"
 import SellerAmazon from "./pages/SellerAmazon"
 import Associates from "./pages/Associates"
+import Handmade from "./pages/Handmade"
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                     <Route path="/press" component={Press}/>
                     <Route path="/seller-amazon" component={SellerAmazon}/>
                     <Route path="/associates" component={Associates}/>
+                    <Route path="/handmade" component={Handmade}/>
                 </Switch>
             </Router>
         </div>

@@ -1,0 +1,330 @@
+.amazon__handmade h1, .amazon__handmade h2, .amazon__handmade h3, 
+.amazon__handmade h4, .amazon__handmade h5, .amazon__handmade h6 {
+    font-family: var(--font-ancillary-1);
+}
+.amazon__handmade p {
+    font-family: var(--font-ancillary-2);
+}
+.amazon__handmadeHeader {
+    align-items: stretch;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: var(--white) !important;
+}
+.amazon__handmadeHeader > .has__max__width {
+    align-items: center;
+    align-content: initial;
+    width: 100%;
+    height: 60px;
+}
+.amazon__handmadeHeading span {
+    padding: 0;
+    color: var(--grey-tone-73) !important;
+}
+.amazon__handmadeNavlinks {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.amazon__handmadeNavlinks li {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 0 0 calc(16px + (30 - 16) * ((100vw - 320px) / 960));
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-ancillary-2);
+}
+.amazon__handmadeNavlinks li a {
+    display: block;
+    height: 100%;
+    padding: 0 !important;
+    line-height: inherit;
+    color: var(--blue-8) !important;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.amazon__handmadeCta {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex: 0 0 auto;
+    align-items: stretch;
+    align-content: flex-start;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    line-height: normal;
+    background-color: var(--blue-21);
+}
+.amazon__amazon__handmadeLogo {
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    width: 100%;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.amazon__amazon__handmadeLogo img {
+    display: inline-block;
+    height: 50px;
+    margin: 0 auto;
+}
+.amazon__handmadeTitle {
+    width: 100%;
+    flex-grow: 1;
+    margin: 0;
+    line-height: 1.2;
+    padding-bottom: 0;
+    font-size: 80px !important;
+    font-weight: 700;
+    color: var(--grey-tone-68);
+    text-transform: none;
+}
+.amazon__handmadeText {
+    padding-top: 20px;
+    line-height: 1.5em;
+    font-size: 24px !important;
+    color: var(--white);
+}
+.amazon__handmadeCtaBtn {
+    padding-top: 50px;
+}
+.amazon__handmadeWhy {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+}
+.amazon__handmadeWhy > .has__max__width {
+    width: 100%;
+    background-image: url('../../images/creative-marketplace-half-right.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.amazon__handmadeWhyPara {
+    padding-right: 40px;
+}
+.amazon__handmadeHeading {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    color: var(--blue-21);
+    line-height: 1.2;
+    font-size: 40px !important;
+    text-align: center;
+    font-weight: 700;
+}
+.amazon__handmadeHeader .amazon__handmadeHeading {
+    width: auto;
+    font-size: 24px !important;
+    padding: 0;
+    font-weight: 900;
+}
+.amazon__handmadeProgramsHeading .amazon__handmadeHeading {
+    text-align: left;
+}
+.amazon__handmadeWhyLead {
+    line-height: 1.5em;
+    font-size: 24px !important;
+    color: var(--blue-8);
+}
+.amazon__handmadeContent {
+    padding: 100px 100px 0;
+}
+.amazon__handmadeBenefits {
+    width: 100%;
+    padding-left: 100px;
+    padding-bottom: 120px;
+    padding-right: 100px;
+    padding-top: 100px;
+    background-color: var(--grey-tone-74);
+}
+.amazon__handmadeCards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: stretch;
+    align-content: flex-start;
+    flex: 0 0 auto;
+    width: 100%;
+}
+.amazon__handmadeCard {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.amazon__handmadeCardImg {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.amazon__handmadeCardImg img {
+    max-width: 100%;
+    height: 150px;
+}
+.amazon__handmadeCardHead {
+    font-size: 30px !important;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 700;    
+    color: var(--grey-tone-73);
+}
+.amazon__handmadeCardPara {
+    font-size: 24px !important;
+    line-height: 1.5em;
+    color: var(--blue-8);
+    font-weight: 400;
+}
+.amazon__handmadePrograms {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.amazon__handmadeProgramsHeading {
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+.amazon__programRow {
+    width: 100%;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+}
+.amazon__programRow:nth-of-type(n+2) {
+    padding-top: 40px;
+}
+.amazon__programRow:nth-of-type(even) {
+    background-color: var(--grey-tone-37);
+}
+.fulfilmentText {
+    flex: 1 1 70.83333333333333%;
+    padding-right: 40px;
+}
+.amazon__programRow:nth-of-type(even) .fulfilmentText {
+    padding-right: 0px;
+    padding-left: 40px;
+}
+.fulfilmentTextHeading {
+    width: 62.5%;
+}
+.fulfilmentTextHeading .amazon__handmadeHeading {
+    font-size: 30px !important;
+    text-align: left;
+}
+.fulfilmentTextHeading .amazon__handmadeHeading span {
+    color: var(--blue-23);
+}
+.amazon__fulfilmentImg {
+    width: 29.166666666666668%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+.amazon__fulfilmentImg img {
+    height: 300px;
+}
+.amazon__sellNAmerica .amazon__fulfilmentImg {
+    padding-top: 50px;
+}
+.amazon__programRow:nth-of-type(even) .amazon__fulfilmentImg {
+    padding: 0;
+}
+.amazon__sellNAmerica {
+    padding-left: 100px;
+    padding-bottom: 40px;
+    padding-right: 100px;
+    padding-top: 40px;
+    width: 100%;
+}
+.amazon__readyToJoin {
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    width: 100%;
+}
+.amazon__ready {
+    width: 100%;
+    background-image: url('../../images/handmade-services-site.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.amazon__readyHeading {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 40px;
+    font-size: 40px !important;
+    line-height: 1.2;
+    color: var(--blue-21);
+    font-weight: 700;
+}
+.amazon__readySteps {
+    padding-left: 40px;
+}
+.amazon__readyList {
+    padding-bottom: 20px;
+}
+.amazon__readyListSteps {
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 15px !important;
+    font-weight: 600;
+    color: var(--blue-8);
+}
+.amazon__readyList a {
+    font-size: 24px !important;
+}
+.amazon__readyList a.disabled {
+    color: var(--blue-8);
+    pointer-events: none;
+}
+.amazon__handmadeFaq {
+    width: 100%;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-top: 100px;
+    background-color: var(--grey-tone-37);
+}
+.amazon__handMadeFaqCta {
+    width: 100%;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-top: 50px;
+    background-color: var(--blue-21);
+}
+.amazon__handMadeFaqTitle {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding: 0;
+    text-align: center;
+    color: var(--white);
+    font-size: 30px !important;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: var(--font-ancillary-2) !important;
+}
+.amazon__handMadeFaqBtn {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}

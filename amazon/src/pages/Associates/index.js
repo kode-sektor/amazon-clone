@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import {
-	UncontrolledDropdown
-} from "reactstrap"
+import { UncontrolledDropdown } from "reactstrap"
 
 import DropdownMenuLang from '../../components/UI/DropdownMenuLang'
 import DropdownMenuCountries from '../../components/UI/DropdownMenuCountries'
@@ -24,14 +22,12 @@ import Slider from '../../components/UI/Carousel/Carousel'
 const Associates = () => {
 
     const [isOpen, setIsOpen] = useState(false)
-    // const [dropdownOpen, setDropdownOpen] = useState(false)    // search filter (not used yet)
 
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
     const [countrydropdownOpen, setCountrydropdownOpen] = useState(false)    // account dropdown
 
 	// Toggle dropdowns
     const toggle = () => setIsOpen(!isOpen)    // For main navigation expand / collapse
-    // const filterToggle = () => setDropdownOpen(prevState => !prevState)
 
     // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 

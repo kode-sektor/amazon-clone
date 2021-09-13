@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 import { subMenu } from '../../../utilities/data'
 
+import handmade_logo from '../../../images/nav/handmade_logo_.png'
+
 import './index.css'
 
 const SubNav = () => {
@@ -326,7 +328,45 @@ const SubNav = () => {
                     </li>   
                 </ul>
                 :
-                // <ul className="subNav">
+                (queryID === "/handmade") ? 
+                <ul className="subNav__handMade">
+                    <li>
+                        <NavLink to="/gifts">
+                            <img src={handmade_logo} alt="handmade logo"/>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gifts">
+                            <span>Gifts</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gifts">
+                            <span>Jewellery</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gifts">
+                            <span>Home Decor</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gifts">
+                            <span>Kitchen &amp; Dining</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gifts">
+                            <span>Clothing, Shoes &amp; Accessories</span>
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/gifts">
+                            <span>Sell on Handmade</span>
+                        </NavLink>
+                    </li>
+                </ul>
+                :                // <ul className="subNav">
                 //     {
                 //         subMenu.map((obj, index) => {
                 //             // Hide amazon.ca except on 'your_account' page

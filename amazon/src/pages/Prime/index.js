@@ -1,8 +1,6 @@
 import React, { createRef, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Dropdown, DropdownToggle } from 'reactstrap'
-
 import PrimeDropdown from '../../components/UI/PrimeDropdown/index'
 
 import PrimeCarousel from '../../components/UI/Carousel/PrimeCarousel'
@@ -26,7 +24,6 @@ import amazon_music_more_life from '../../images/amazon-music-more-life.jpg'
 
 import './index.css'
 
-
 const Prime = () => {
 
     const [isSticky, setIsSticky] = useState(false)
@@ -39,7 +36,7 @@ const Prime = () => {
         const ref = createRef()
     
         // mount 
-        useEffect(()=>{
+        useEffect(() => {
             const cachedRef = ref.current,
                 // set 'isSticky' state when in view
                 observer = new IntersectionObserver(

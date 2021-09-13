@@ -164,6 +164,11 @@ file rather than small ones. Your choice
     --blue-16: #0099d9;
     --blue-17: #b2e5f6;
     --blue-18: #161e2d;
+    --blue-19: #50c8c8;
+    --blue-20: #42baba;
+    --blue-21: #00a4b4;
+    --blue-22: #008296;
+    --blue-23: #00464f;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -202,6 +207,8 @@ file rather than small ones. Your choice
 	--ochre-35: #ff9900;
 	--ochre-36: #7c6200;
 	--ochre-37: #8c6e00;
+	--ochre-38: #fec001;
+	--ochre-39: #fa990a;
 
 
     --link: #007BFF;
@@ -296,6 +303,8 @@ file rather than small ones. Your choice
     --grey-tone-70: #fffae7;
     --grey-tone-71: #fff9e9;
     --grey-tone-72: #d9d9d9;
+    --grey-tone-73: #373d3e;
+    --grey-tone-74: #f5f9fa;
 	
     --black: #000;
     --white: #fff;
@@ -322,6 +331,8 @@ file rather than small ones. Your choice
     --font-tertiary: "Arial", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-ancillary: "Helvetica, arial, sans-serif";
+    --font-ancillary-2: 'Roboto Slab', sans-serif;
+    --font-ancillary-3: 'Roboto Condensed', sans-serif;
 }
 
 /* Fonts */
@@ -740,7 +751,7 @@ a:hover, .a__color__button__link:hover {
 }
 .prime__cta__signup__button .a__button__inner .a__button__text {
     white-space: normal;
-    line-height: 52px;
+    line-height: 52px !important;
     font-weight: bold;
     color: var(--green-5);
     text-transform: uppercase;
@@ -2023,6 +2034,11 @@ ul.list__indent {
     margin-right: auto;
     line-height: normal;
     box-sizing: border-box;
+}
+.popup__link {
+    color: var(--blue-22);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Indentations */

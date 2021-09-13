@@ -1,6 +1,7 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
+
+import { Button } from 'reactstrap';
 
 import './index.css'
 
@@ -240,9 +241,17 @@ const BtnSquarePrimary = ({icon, text}) => (
     </span>
 )
 
+const ApplyToSellBtn = ({size}) => {
+    return (
+        <Button className={`apply__to__sellBtn ${size}`}>
+            Apply to sell
+        </Button>
+    )
+}
+
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg,
-    BtnPillRoundedObscureLg, BtnSquarePrimary
+    BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn
 }

@@ -212,3 +212,25 @@
     background: rgba(0,0,0,0) url('../../../images/amzn-sprite-10.svg') no-repeat;
     transition: transform .2s cubic-bezier(.64,.15,.53,.53),-webkit-transform .2s cubic-bezier(.64,.15,.53,.53);
 }
+.apply__to__sellBtn {
+    display: inline-block;
+    min-width: 7em;
+    margin-left: calc(20px + (50 - 20) * ((100vw - 320px) / 960));
+    padding: 12px 50px;
+    font-weight: 400;
+    font-size: 15px !important;
+    text-align: center;
+    color: var(--blue-8) !important;
+    white-space: nowrap;
+    text-decoration: none;
+    border: 2px solid transparent !important;
+    border-radius: 2em;
+    background: linear-gradient(90deg, var(--ochre-38), var(--ochre-39)) !important;
+    background-clip: padding-box;
+    font-family: var(--font-ancillary-2);
+    cursor: pointer;
+}
+.apply__to__sellBtn.large, .apply__to__sellBtn.lg {
+    padding: .5em 1.75em;
+    font-size: 30px !important;
+}

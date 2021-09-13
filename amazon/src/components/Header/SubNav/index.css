@@ -31,3 +31,54 @@
 .subNav > li > a.active, .subNav > li.active > a {
     font-weight: 700;
 }
+.subNav__handMade {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 50px;
+    margin: 0;
+    padding: 0 9px 0 15px;
+    justify-content: flex-start;
+    border-top-width: 6px;
+    border-top-style: solid;
+    border-top-color: var(--blue-19);
+    background: var(--white);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 0 1px var(--grey-tone-24);
+    white-space: nowrap;
+    z-index: 1;
+}
+.subNav__handMade li {
+    position: relative;
+    flex: 0 0 auto;
+    display: inline-block;
+}
+.subNav__handMade li a {
+    height: 44px;
+    line-height: 50px;
+    padding: 0 17px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--grey-tone-14);
+    cursor: pointer;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.subNav__handMade li a:hover span, .subNav__handMade li a:focus span {
+    color: var(--blue-20);
+    border-bottom: 2px solid var(--blue-20);
+}
+.subNav__handMade li a img {
+    height: 46px;
+    max-width: 100%;
+    width: auto;
+    padding-top: 5px;
+}
+.subNav__handMade li:last-child {
+    flex: 0 0 auto;
+    margin-left: auto;
+}
+.subNav__handMade li:last-child a {
+    font-weight: 700;
+    color: var(--blue-19);
+}

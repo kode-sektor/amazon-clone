@@ -71,15 +71,20 @@ const PrimeDropdown = ({slideUp}) => {
                             <section className="primeSticky__benefits">
                                 <ul>
                                     <li>
-                                        <div class="primeSticky__benefitsCheck"></div>FREE Two-Day Shipping</li>
+                                        <div class="primeSticky__benefitsCheck"></div>FREE Two-Day Shipping
+                                    </li>
                                     <li>
-                                        <div class="primeSticky__benefitsCheck"></div>Prime Video</li>
+                                        <div class="primeSticky__benefitsCheck"></div>Prime Video
+                                    </li>
                                     <li>
-                                        <div class="primeSticky__benefitsCheck"></div>Unlimited music streaming</li>
+                                        <div class="primeSticky__benefitsCheck"></div>Unlimited music streaming
+                                    </li>
                                     <li>
-                                        <div class="primeSticky__benefitsCheck"></div>Unlimited reading on any device</li>
+                                        <div class="primeSticky__benefitsCheck"></div>Unlimited reading on any device
+                                    </li>
                                     <li>
-                                        <div class="primeSticky__benefitsCheck"></div>Unlimited photo storage</li>
+                                        <div class="primeSticky__benefitsCheck"></div>Unlimited photo storage
+                                    </li>
                                 </ul>
                             </section>
                         </section>
