@@ -129,6 +129,29 @@ code {
     border-left: 2px solid var(--ochre-35);
     background-color: var(--grey-tone-1);
 }
+.dropdownMenuPlain .dropdown-menu.show {
+    position: absolute;
+    right: 0 !important;
+    display: block;
+    max-height: calc(100vh - 100px);
+    min-width: 200px;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--grey-tone-75);
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    overflow-y: auto;
+}
+.dropdownMenuPlain .dropdown-menu.show .dropdown-item {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-2);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .5s;
+}
 
 .amzn__country__icon {
     background-image: url('../images/amzn-sprite-2.png');
@@ -983,10 +1006,156 @@ nav.navbar .navbar-brand {
     height: 2px;
     margin: 10px 0 0 0;
 }
-
 .Dropdown-control {
     cursor: pointer !important;
 }
+.filter__button > button {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    padding: 0 1rem;
+    overflow: visible;
+    cursor: pointer;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    color: var(--mid-grey);
+    font-size: 1.9rem;
+    border-radius: 0;
+    box-shadow: none;
+    white-space: nowrap;
+    font-weight: 300;
+    opacity: .7;
+    border: rgba(0,0,0,0);
+    border-bottom: 1px solid var(--color-2);
+    background: rgba(0,0,0,0);
+}
+.filter__button .dropdown-menu {
+    position: absolute;
+    top: auto;
+    left: auto;
+    min-width: 110%;
+    padding: .5rem;
+    margin: 0;
+    font-size: .9rem;
+    color: var(--mid-grey);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-color: var(--grey-tone-76);
+    border: 0;
+    border-radius: 0;
+    z-index: 2;
+}
+.filter__button .dropdown-item-text {
+    padding: 0;
+    color: var(--mid-grey);
+}
+.filter__button .dropdown-item-text label {
+    display: inline-block;
+    margin-bottom: auto;
+    padding-left: .5rem;
+    padding-bottom: 0;
+}
+.filter__buttonReset + .filter__heading {
+    padding: 0 0 .5rem;
+    color: var(--color-2);
+    font-weight: 600;
+    border-radius: 0;
+}
+.filter__multiInner {
+    padding: .5rem 0;
+}
+.filter__multiInner input[type="checkbox"] {
+    position: absolute;
+    padding: 0;
+    opacity: 0;
+}
+.filter__button .filter__multiInner label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    -webkit-box-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    cursor: pointer;
+}
+.filter__multiInner label:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 0;
+    top: 0;
+    height: 12px;
+    width: 12px;
+    border: 1px solid;
+    transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+.filter__multiInner label:hover:before {
+    box-shadow: 0 0 2px 1px var(--link-2);
+}
+.column h1, .column h2, .column h3, .column h4, .column h5, .column h6 {
+    margin: 0 0 .5rem;
+    line-height: 1.4;
+    font-weight: 300;
+    background-color: rgba(0,0,0,0);
+}
+.column h1.color__normal, .column h2.color__normal, .column h3.color__normal, 
+.column h4.color__normal, .column h5.color__normal, .column h6.color__normal {
+    color: var(--color-2);
+}
+.column h1.heading.heading__size--xtra--small, .column h2.heading__size--small, 
+.column h3, .column h3.heading__size--normal, .column h4.heading__size--medium, 
+.column h5.heading-size--large {
+    font-size: 1.75rem;
+}
+.column p {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.column .text {
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgba(0,0,0,0);
+}
+.column .text__size--medium {
+    font-size: 1.313rem;
+    font-weight: 300;
+}
+.column .text.color__normal {
+    color: var(--mid-grey);
+}
+.column {
+    cursor: pointer;
+    display: inline-block;
+    color: var(--link-2);
+    text-decoration: none;
+}
+.column a.link__type__button__secondary, .column a.link__type__normal {
+    cursor: pointer;
+    display: inline-block;
+    color: var(--link-2);
+    background: rgba(0,0,0,0);
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    padding: .5rem 0;
+    transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+.column a.link__type__normal {
+    text-transform: none;
+}
+.column a.link__type__button__secondary:after, .column a.link__type__normal:after {
+    padding-left: 4px;
+    content: "\2192";
+}
+
+
+
+
 
 
 

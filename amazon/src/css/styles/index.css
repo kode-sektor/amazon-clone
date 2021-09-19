@@ -169,6 +169,8 @@ file rather than small ones. Your choice
     --blue-21: #00a4b4;
     --blue-22: #008296;
     --blue-23: #00464f;
+    --blue-24: #1A232E;
+    --blue-25: #005a95;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -209,6 +211,12 @@ file rather than small ones. Your choice
 	--ochre-37: #8c6e00;
 	--ochre-38: #fec001;
 	--ochre-39: #fa990a;
+	--ochre-40: #f0c246;
+	--ochre-41: #ebbc3c;
+	--ochre-42: #bf9a3b;
+	--ochre-43: #f9cf6f;
+	--ochre-44: #f6bd42;
+	--ochre-45: #f6bd41;
 
 
     --link: #007BFF;
@@ -305,6 +313,8 @@ file rather than small ones. Your choice
     --grey-tone-72: #d9d9d9;
     --grey-tone-73: #373d3e;
     --grey-tone-74: #f5f9fa;
+    --grey-tone-75: #fbfbfb;
+    --grey-tone-76: #f5f5f5;
 	
     --black: #000;
     --white: #fff;
@@ -1432,6 +1442,14 @@ ul.list__indent {
 
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
+.columns__container {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+.column {
+    padding: 1rem;
+}
 .a__price {
     position: relative;
     text-decoration: none;
@@ -1698,6 +1716,30 @@ ul.list__indent {
 }
 .a__padding__mini {
     padding: 4px 6px !important;
+}
+.border__radius__8px {
+    border-radius: 8px;
+}
+.padding__top__minibase {
+    padding-top: 25px;
+}
+.padding__left__xlarge {
+    padding-left: 50px;
+}
+.padding__right__xlarge {
+    padding-right: 50px;
+}
+.padding__bottom__mini {
+    padding-bottom: 10px;
+}
+.padding__bottom__minibase {
+    padding-bottom: 25px;
+}
+.padding__left__large {
+    padding-left: 40px;
+}
+.bg__no__repeat {
+    background-repeat: no-repeat;
 }
 .a__box {
     display: block;
@@ -2040,6 +2082,9 @@ ul.list__indent {
     text-decoration: none;
     cursor: pointer;
 }
+.box__shadow {
+    box-shadow: 0 4px 8px rgb(17 17 17 / 20%);
+}
 
 /* Indentations */
 .a__indent__1 {
@@ -2053,6 +2098,7 @@ ul.list__indent {
 /*9. LAYOUT & NAVIGATION
 ====================================================================================================================================
 ==========================*/
+
 .bx__root {
     width: 100%;
     height: 400px;
@@ -2453,8 +2499,34 @@ p.abstract:after{
         height: 300px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .columns__container--single {
+        display: block;
+    }
+    .columns__container {
+        display: grid;
+        grid-gap: 1rem;
+    }
+    .columns__container--half {
+        grid-template-columns: 1fr 1fr;
+    }
+    .columns__container--third {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .columns__container--limit__width {
+        max-width: 1140px;
+    }
+}
+
 @media screen and (min-width: 1100px) {
     .bx__root {
         height: 360px;
+    }
+}
+
+@media (min-width: 1140px) {
+    .columns__container--limit__width {
+        max-width: 1140px;
     }
 }

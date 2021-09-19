@@ -131,64 +131,64 @@ const Prime = () => {
                                     type={"prime"}
                                     carouselClass={"primeSlider"}
                                     items={
-                                        [
-                                            {
-                                                heading: 'Prime Delivery',
-                                                tag: <>
-                                                        <div className="carousel-cardHeadline">Free delivery on millions of items.</div>
-                                                        <div className="carousel-cardBody">
-                                                            Free shipping, millions of items, and flexible delivery options to fit your life
-                                                        </div>
-                                                        <Link className="carousel-link" to="/">
-                                                            Explore Prime Delivery
-                                                            <div className="sprite small-arrow"></div>
-                                                        </Link>
-                                                    </>, 
-                                                carouselStyle: 'ship'
-                                            },
-                                            {
-                                                heading: 'Prime Video',
-                                                tag: <>
-                                                        <div className="carousel-cardHeadline">Stream or download hit movies, TV shows, and more</div>
-                                                        <div className="carousel-cardBody">
-                                                            As a Prime member, you can watch popular movies and TV shows at no extra cost. Watch on your TV, tablet, mobile device, or on the web. Stream online or download for offline watching.      
-                                                        </div>
-                                                        <Link className="carousel-link" to="/">
-                                                            Explore Prime Video
-                                                            <div className="sprite small-arrow"></div>
-                                                        </Link>
-                                                    </>,
-                                                carouselStyle: 'stream'
-                                            },
-                                            {
-                                                heading: 'Just With Prime',
-                                                tag: <>
-                                                        <div className="carousel-cardHeadline">Exclusive deals available only to Prime members.</div>
-                                                        <div className="carousel-cardBody">
-                                                            As a Prime member get access to Lightning Deals on Amazon.ca 30 minutes before other customers can access these deals.
-                                                        </div>
-                                                        <Link className="carousel-link" to="/">
-                                                            Shop Prime Member Exclusives
-                                                            <div className="sprite small-arrow"></div>
-                                                        </Link>
-                                                    </>,
-                                                carouselStyle: 'shop'
-                                            },
-                                            {
-                                                heading: 'Prime Reading',
-                                                tag: <>
-                                                        <div className="carousel-cardHeadline">Prime members read for no additional cost.</div>
-                                                        <div className="carousel-cardBody">
-                                                            As a Prime member, you can read as much as you like from a rotating selection of eBooks. Hundreds of romances, thrillers, children's books and more.
-                                                        </div>
-                                                        <Link className="carousel-link" to="/">
-                                                            Explore Prime Reading
-                                                            <div className="sprite small-arrow"></div>
-                                                        </Link>
-                                                    </>,
-                                                carouselStyle: 'more'
-                                            }
-                                        ]
+                                            [
+                                                {
+                                                    heading: 'Prime Delivery',
+                                                    tag: <>
+                                                            <div className="carousel-cardHeadline">Free delivery on millions of items.</div>
+                                                            <div className="carousel-cardBody">
+                                                                Free shipping, millions of items, and flexible delivery options to fit your life
+                                                            </div>
+                                                            <Link className="carousel-link" to="/">
+                                                                Explore Prime Delivery
+                                                                <div className="sprite small-arrow"></div>
+                                                            </Link>
+                                                        </>, 
+                                                    carouselStyle: 'ship'
+                                                },
+                                                {
+                                                    heading: 'Prime Video',
+                                                    tag: <>
+                                                            <div className="carousel-cardHeadline">Stream or download hit movies, TV shows, and more</div>
+                                                            <div className="carousel-cardBody">
+                                                                As a Prime member, you can watch popular movies and TV shows at no extra cost. Watch on your TV, tablet, mobile device, or on the web. Stream online or download for offline watching.      
+                                                            </div>
+                                                            <Link className="carousel-link" to="/">
+                                                                Explore Prime Video
+                                                                <div className="sprite small-arrow"></div>
+                                                            </Link>
+                                                        </>,
+                                                    carouselStyle: 'stream'
+                                                },
+                                                {
+                                                    heading: 'Just With Prime',
+                                                    tag: <>
+                                                            <div className="carousel-cardHeadline">Exclusive deals available only to Prime members.</div>
+                                                            <div className="carousel-cardBody">
+                                                                As a Prime member get access to Lightning Deals on Amazon.ca 30 minutes before other customers can access these deals.
+                                                            </div>
+                                                            <Link className="carousel-link" to="/">
+                                                                Shop Prime Member Exclusives
+                                                                <div className="sprite small-arrow"></div>
+                                                            </Link>
+                                                        </>,
+                                                    carouselStyle: 'shop'
+                                                },
+                                                {
+                                                    heading: 'Prime Reading',
+                                                    tag: <>
+                                                            <div className="carousel-cardHeadline">Prime members read for no additional cost.</div>
+                                                            <div className="carousel-cardBody">
+                                                                As a Prime member, you can read as much as you like from a rotating selection of eBooks. Hundreds of romances, thrillers, children's books and more.
+                                                            </div>
+                                                            <Link className="carousel-link" to="/">
+                                                                Explore Prime Reading
+                                                                <div className="sprite small-arrow"></div>
+                                                            </Link>
+                                                        </>,
+                                                    carouselStyle: 'more'
+                                                }
+                                            ]
                                     }
                                     carouselPanel={"ship"}
                                 />
@@ -217,28 +217,28 @@ const Prime = () => {
                                             carouselClass={"miniSlider"}
                                             interval={2000}
                                             items={
-                                                [
-                                                    {
-                                                        href: '/',
-                                                        src: originals_the_boys,
-                                                        altText: "Originals the Boys"
-                                                    },
-                                                    {
-                                                        href: '/',
-                                                        src: amazon_originals_hanna,
-                                                        altText: "Amazon Originals Hanna"
-                                                    },
-                                                    {
-                                                        href: '/',
-                                                        src: amazon_originals_little,
-                                                        altText: "Amazon Originals Little"
-                                                    },
-                                                    {
-                                                        href: '/',
-                                                        src: amazon_originals_upload,
-                                                        altText: "Amazon Originals Upload",
-                                                    }
-                                                ]
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: originals_the_boys,
+                                                            altText: "Originals the Boys"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: amazon_originals_hanna,
+                                                            altText: "Amazon Originals Hanna"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: amazon_originals_little,
+                                                            altText: "Amazon Originals Little"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: amazon_originals_upload,
+                                                            altText: "Amazon Originals Upload",
+                                                        }
+                                                    ]
                                             }
                                         />
                                     }
@@ -270,28 +270,28 @@ const Prime = () => {
                                             carouselClass={"miniSlider"}
                                             interval={2000}
                                             items={
-                                                [
-                                                    {
-                                                        href: '/',
-                                                        src: shawn_mendes_illuminate,
-                                                        altText: "Shawn Mendes Illuminate"
-                                                    },
-                                                    {
-                                                        href: '/',
-                                                        src: imagine_dragons_everything,
-                                                        altText: "Imagine Dragons Everything"
-                                                    },
-                                                    {
-                                                        href: '/',
-                                                        src: amazon_music_everything_now,
-                                                        altText: "Amazon Music Everything Now"
-                                                    },
-                                                    {
-                                                        href: '/',
-                                                        src: amazon_music_more_life,
-                                                        altText: "Amazon Music More Life"
-                                                    }
-                                                ]
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: shawn_mendes_illuminate,
+                                                            altText: "Shawn Mendes Illuminate"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: imagine_dragons_everything,
+                                                            altText: "Imagine Dragons Everything"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: amazon_music_everything_now,
+                                                            altText: "Amazon Music Everything Now"
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: amazon_music_more_life,
+                                                            altText: "Amazon Music More Life"
+                                                        }
+                                                    ]
                                             }
                                         />
                                     }

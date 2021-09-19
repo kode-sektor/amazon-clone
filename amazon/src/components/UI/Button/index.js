@@ -142,7 +142,6 @@ const BuyAgainBtn = ({grey=false}) => {
 
 // Orange-coloured
 const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
-
     if (text === ("See buying options") || text === ("Similar items")) {
         return (
             <Link className={`addToCartBtn ${mTop}`} to={`/${slug}`}>
@@ -167,6 +166,12 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
         )
     }
 }
+
+const PrimaryBtn__ii = ({text="Register"}) => (
+    <Link to="/" className="primary__btn__ii">
+        {text}
+    </Link>
+)
 
 // Grey Clip
 const CouponBtn = ({text="Clip Coupon", slug, width="100%", mTop=""}) => {
@@ -253,5 +258,5 @@ export {
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg,
-    BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn
+    BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii
 }

@@ -1,4 +1,4 @@
-import React, { createRef, useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Navbar, Nav, NavItem, NavLink, NavbarText } from 'reactstrap';
@@ -33,13 +33,13 @@ const Handmade = () => {
                             </h1>
                             <Nav className="amazon__handmadeNavlinks" navbar>
                                 <NavItem>
-                                    <NavLink href="/components/">Benefits</NavLink>
+                                    <NavLink href="/">Benefits</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://github.com/reactstrap/reactstrap">FAQs</NavLink>
+                                    <NavLink href="/">FAQs</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://github.com/reactstrap/reactstrap">Explore our store</NavLink>
+                                    <NavLink href="/">Explore our store</NavLink>
                                 </NavItem>
                             </Nav>
                             <div className="amazon__applyToSell">
