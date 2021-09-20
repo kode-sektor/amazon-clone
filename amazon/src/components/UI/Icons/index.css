@@ -19,3 +19,6 @@
     color: var(--black);
     text-align: left;
 }
+.pipe {
+    color: var(--grey);
+}

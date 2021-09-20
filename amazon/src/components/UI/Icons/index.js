@@ -32,4 +32,10 @@ const RightArrow = () => {
     )
 }
 
-export { BackArrow, RightArrowCarrot, RightArrow }
+const Pipe = () => {
+    return (
+        <span className="pipe">|</span>
+    )
+}
+
+export { BackArrow, RightArrowCarrot, RightArrow, Pipe }

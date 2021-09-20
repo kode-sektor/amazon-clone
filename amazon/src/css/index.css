@@ -1153,6 +1153,48 @@ nav.navbar .navbar-brand {
     content: "\2192";
 }
 
+.header__row {
+    padding-top: 6px;
+    padding-bottom: 3px;
+    background-color: var(--grey-tone-69);
+}
+.header__content {
+    margin: 0 auto;
+    max-width: 980px;
+    min-width: 980px;
+}
+.mallomar-delight-feedback-icons {
+    height: 17px;
+    width: 37px;
+    background-image: url('../images/delight-feedback-icons.png');
+    cursor: pointer;
+}
+img.mallomar-delight-feedback-icons, 
+img.mallomar-delight-feedback-icons-large, 
+img.mallomar-delight-feedback-icons-large-delighted, 
+img.mallomar-delight-feedback-icons-large-disappointed, 
+img.mallomar-delight-feedback-icons-large-satisfied {
+    height: 17px;
+    width: 37px;
+    background-image: url('../images/delight-feedback-icons.png');
+    cursor: pointer;
+}
+img.mallomar-delight-feedback-icons-large, 
+img.mallomar-delight-feedback-icons-large-delighted, 
+img.mallomar-delight-feedback-icons-large-disappointed, 
+img.mallomar-delight-feedback-icons-large-satisfied {
+    height: 64px;
+    width: 64px;
+}
+img.mallomar-delight-feedback-icons-large-delighted {
+    background-position: 0 -19px;
+}
+img.mallomar-delight-feedback-icons-large-satisfied {
+    background-position: -66px -19px;
+}
+img.mallomar-delight-feedback-icons-large-disappointed {
+    background-position: -132px -19px;
+}
 
 
 
