@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Layout from '../../components/Layout/index'
+import PublicationList from './PublicationList'
 
 import { Pipe } from '../../components/UI/Icons'
 import Popover from '../../components/UI/Popover'
+import SignIn from '../../components/UI/SignIn'
 
-import delight_feedback_icons from '../../images/delight-feedback-icons.png'
 import kdp_logo_stacked from '../../images/kdp-logo-stacked.gif'
+import amazon_kindle from '../../images/amazon-kindle.gif'
 
 import './index.css'
 
@@ -112,20 +113,198 @@ const IndependentPublication = () => {
                         <div className="row">
                             <section className="col-8 px-0">
                                 <div className="publication__centralVid">
-                                <video className="publication__video" id="7" preload="auto" src="https://m.media-amazon.com/images/G/01/otp/general/airy/kdpLanding_EN_US._CB1536872220_.mp4"></video>
+                                    <video className="publication__video" id="7" preload="auto" src="https://m.media-amazon.com/images/G/01/otp/general/airy/kdpLanding_EN_US._CB1536872220_.mp4"></video>
+                                    <div className="publication__videOverlay"></div>
                                 </div>
-                                <div className="publication__videOverlay"></div>
                                 <h1 class="a__spacing__top__medium a__color__state">
-                                Self-publish eBooks and paperbacks for free with Kindle Direct Publishing, and reach millions of readers on Amazon.   
+                                    Self-publish eBooks and paperbacks for free with Kindle Direct Publishing, and reach millions of readers on Amazon.   
                                 </h1>
+                                <p className="a__spacing__top__medium">
+                                    <span className="home__point__emphasis">
+                                        Get to market fast.
+                                    </span>
+                                    Publishing takes less than 5 minutes and your book appears on Kindle stores worldwide within 24-48 hours.
+                                </p>
+                                <p className="a__spacing__top__medium">
+                                    <span className="home__point__emphasis">
+                                        Make more money.
+                                    </span>
+                                    Earn up to 70% royalty on sales to customers in the US, Canada, UK, Germany, India, France, Italy, Spain, Japan, Brazil, Mexico, Australia and more. Enroll in KDP Select and earn more money through Kindle Unlimited and the Kindle Owners' Lending Library.
+                                </p>
+                                <p className="a__spacing__top__medium">
+                                    <span className="home__point__emphasis">
+                                        Keep control.
+                                    </span>
+                                    Keep control of your rights and set your own list prices. Make changes to your books at any time.
+                                </p>
+                                <p className="a__spacing__top__medium">
+                                    <span className="home__point__emphasis">
+                                        Publish in digital and print.
+                                    </span>
+                                    Publish Kindle eBooks and paperbacks for free on KDP.
+                                </p>
+                                <p className="a__spacing__top__medium">
+                                    <span className="home__point__emphasis">
+                                        Get started today!
+                                    </span>&nbsp;
+                                    Self-publish with KDP for free. <Link to="/" className="text-decoration-underline">Learn how easy it is</Link>
+                                </p>
                             </section>
-                            <section className="col-4 px-0">
-
+                            <section className="publication__panels col-4">
+                                <SignIn/>
+                                <section>
+                                    <div className="a__box a__spacing__top__medium a__color__alternate__background">
+                                        <div className="a__box__inner">
+                                            <header className="col">
+                                                <h4 className="a__size__medium__ii a__spacing__medium text-center">
+                                                    Learn more about publishing popular content on KDP:   
+                                                </h4>
+                                            </header>
+                                            <section className="a__box__group">
+                                                <div className="a__box a__first">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Business & Investing"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Comics & Graphic Novels"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Education & Textbooks"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"KDP Kids"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Kindle Vella - NEW!"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Literature & Fiction"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Mystery, Thriller & Suspense"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Non-fiction"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Non-fiction"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Romance"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Science Fiction & Fantasy"}
+                                                    />
+                                                </div>
+                                                <div className="a__box">
+                                                    <PublicationList
+                                                        link={"/"}
+                                                        text={"Teens & Young Adult"}
+                                                    />
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
                             </section>
                         </div>
                     </section>
                 </section>
             </main>
+            <footer className="publication--footer row">
+                <section className="col-1">
+                    <Link to="/">
+                        <img src={amazon_kindle} alt="Amazon Kindle"/>
+                    </Link>
+                </section>
+                <section className="publication__footerCopyright col-3">
+                    © 1996-2021, Amazon.com, Inc. or its affiliates. All Rights Reserved.<br/><br/>
+                    Amazon and Kindle are trademarks of Amazon.com Inc. or its affiliates.
+                </section>
+                <section className="publication__footerSmLinks col-1">
+                    <Link to="/" className="publication__footerSmLinks--facebook"></Link>
+                </section>
+                <section className="publication__footerSmLinks col-1">
+                    <Link to="/" className="publication__footerSmLinks--twitter"></Link>
+                </section>
+                <section className="col-6 px-0 mx-0 row">
+                    <section className="col-3">
+                        <Link to="/" className="publication__footerLink" target="_blank">
+                            <b className="">KDP Select</b>
+                            <br/>
+                            Earn more money and 
+                            <br/>
+                            reach new readers
+                        </Link>
+                    </section>
+                    <section className="col-3">
+                        <Link to="/" className="publication__footerLink" target="_blank">
+                            <b className="">KDP Community</b>
+                            <br/>
+                            Connect with experts 
+                            <br/>
+                            and fellow authors
+                        </Link>
+                    </section>
+                    <section className="col-3">
+                        <Link to="/" className="publication__footerLink" target="_blank">
+                            <b className="">CreateSpace</b>
+                            <br/>
+                            Indie print publishing 
+                            <br/>
+                            made easy
+                        </Link>
+                    </section>
+                    <section className="col-3">
+                        <Link to="/" className="publication__footerLink" target="_blank">
+                            <b className="">ACX</b>
+                            <br/>
+                            Indie audiobook publishing 
+                            <br/>
+                            made easy
+                        </Link>
+                    </section>
+                </section>
+                <section className="publication__footerSecondary d-flex text-center justify-content-center">
+                    <Link to="/" target="_blank" rel="noopener">KDP Terms and Conditions</Link>&nbsp;|&nbsp;
+                    <Link to="/" target="_blank" rel="noopener">Privacy Notice</Link>&nbsp;|&nbsp;
+                    <Link to="/" target="_blank" rel="noopener">Conditions of use</Link>&nbsp;|&nbsp;
+                    <Link to="/" target="_blank" rel="noopener">Contact Us</Link>&nbsp;|&nbsp;
+                    <Link to="/" target="_blank" rel="noopener">Join Our Team</Link>&nbsp;|&nbsp;
+                    <Link to="/" target="_blank" rel="noopener">kdp.amazon.co.jp</Link>
+                </section>
+            </footer>
         </div>
     )
 }

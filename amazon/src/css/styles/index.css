@@ -171,6 +171,8 @@ file rather than small ones. Your choice
     --blue-23: #00464f;
     --blue-24: #1A232E;
     --blue-25: #005a95;
+    --blue-26: #C9E1F4;
+    --blue-27: #EAF3FE;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -315,6 +317,7 @@ file rather than small ones. Your choice
     --grey-tone-74: #f5f9fa;
     --grey-tone-75: #fbfbfb;
     --grey-tone-76: #f5f5f5;
+    --grey-tone-77: #666;
 	
     --black: #000;
     --white: #fff;
@@ -1748,6 +1751,13 @@ ul.list__indent {
     border: 1px var(--grey-tone-24) solid;
     background-color: var(--white);
 }
+.a__box__title {
+    overflow: hidden;
+}
+.text-center .a__box, .text-center .a__box__group {
+    margin-left: auto;
+    margin-right: auto;
+}
 .a__width__extra__large {
     width: 400px !important;
 }
@@ -1783,6 +1793,13 @@ ul.list__indent {
 .a__box__group > .a__box.a__first > .a__box__inner, 
 .a__box__group > .a__box:first__child > .a__box__inner {
     border-radius: 4px 4px 0 0;
+}
+.a__box__group > .a__box.a__last, .a__box__group > .a__box:last-child {
+    border-radius: 0 0 4px 4px;
+}
+.a__box__group > .a__box.a__last > .a__box__inner, 
+.a__box__group > .a__box:last-child > .a__box__inner {
+    border-radius: 0 0 4px 4px;
 }
 .a__alert__inline {
     position: relative;
@@ -2093,6 +2110,14 @@ ul.list__indent {
 .a__indent__2 {
     display: block;
     padding-left: 24px !important;
+}
+
+.welcome__link {
+    color: var(--blue);
+    text-decoration: underline;
+}
+.a__color__alternate__background {
+    background-color: var(--grey-tone-1) !important;
 }
 
 /*9. LAYOUT & NAVIGATION

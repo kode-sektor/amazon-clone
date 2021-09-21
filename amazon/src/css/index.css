@@ -1195,7 +1195,13 @@ img.mallomar-delight-feedback-icons-large-satisfied {
 img.mallomar-delight-feedback-icons-large-disappointed {
     background-position: -132px -19px;
 }
-
+.home__point__emphasis {
+    font-weight: 700;
+    font-size: 17px;
+}
+.text-decoration-none {
+    text-decoration: none;
+}
 
 
 

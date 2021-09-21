@@ -1,0 +1,15 @@
+.publication--page .a__box__group > .a__box.a-first > .a__box__inner, 
+.publication--page .a__box__group > .a__box:first-child > .a__box__inner, 
+.publication--page .a__box__group > .a__box:first-of-type > .a-box-inner {
+    border-radius: 4px 4px 0 0;
+}
+.sign__in__widget .a__box {
+    border-color: var(--blue-26);
+}
+.sign__in__widget .sign__in__header .a__box__inner {
+    background-color: var(--blue-27);
+    background-image: none;
+}
+.sign__in__button {
+    min-width: 240px;
+}
