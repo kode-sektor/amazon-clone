@@ -22,7 +22,6 @@ const SubNav = () => {
                 ""
                 :
                 (queryID === "/electronics") ?     
-                
                 <ul className="subNav">
                     <li>
                         <NavLink to="/electronics">Electronics</NavLink>
@@ -366,7 +365,33 @@ const SubNav = () => {
                         </NavLink>
                     </li>
                 </ul>
-                :                // <ul className="subNav">
+                :
+                (queryID === "/amazon-hub") ? 
+                <ul className="subNav">
+                    <li>
+                        <NavLink to="/todays-deals"><b>Today's Deals</b></NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/watched-deals">Watched Deals</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/outlet-deals">Outlet Deals</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/warehouse-deals">Warehouse Deals</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/coupons">Coupons</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/ebook-deals">eBook Deals</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/subscribe-and-save">Subscribe &amp; Save</NavLink>
+                    </li>
+                </ul>
+                :                
+                // <ul className="subNav">
                 //     {
                 //         subMenu.map((obj, index) => {
                 //             // Hide amazon.ca except on 'your_account' page

@@ -28,6 +28,7 @@ import Associates from "./pages/Associates"
 import Handmade from "./pages/Handmade"
 import Advertising from "./pages/Advertising"
 import IndependentPublication from "./pages/IndependentPublication"
+import AmazonHub from "./pages/AmazonHub"
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
                     <Route path="/handmade" component={Handmade}/>
                     <Route path="/advertising" component={Advertising}/>
                     <Route path="/independent-publication" component={IndependentPublication}/>
+                    <Route path="/amazon-hub" component={AmazonHub}/>
                 </Switch>
             </Router>
         </div>

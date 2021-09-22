@@ -67,7 +67,7 @@ const Footer = (props) => {
                                 { label: "Sell on Amazon Handmade", href: "/handmade", icon: null },
                                 { label: "Advertise Your Products", href: "/advertising", icon: null },
                                 { label: "Independently Publish with Us", href: "/independent-publication", icon: null },
-                                { label: "Host an Amazon Hub", href: "/", icon: null }
+                                { label: "Host an Amazon Hub", href: "/amazon-hub", icon: null }
                             ]
                         }
                 />
