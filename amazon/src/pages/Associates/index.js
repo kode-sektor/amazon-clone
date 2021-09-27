@@ -7,7 +7,7 @@ import DropdownMenuLang from '../../components/UI/DropdownMenuLang'
 import DropdownMenuCountries from '../../components/UI/DropdownMenuCountries'
 import { BtnSquarePrimary } from '../../components/UI/Button'
 import CarouselAffiliate from '../../components/UI/Carousel/CarouselAffiliate'
-import Line from '../../components/UI/Line'
+import { Line } from '../../components/UI/Line'
 
 import Faq from '../../components/UI/FAQ'
 

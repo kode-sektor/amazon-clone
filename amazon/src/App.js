@@ -29,6 +29,7 @@ import Handmade from "./pages/Handmade"
 import Advertising from "./pages/Advertising"
 import IndependentPublication from "./pages/IndependentPublication"
 import AmazonHub from "./pages/AmazonHub"
+import MastercardReward from "./pages/MastercardReward"
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
                     <Route path="/advertising" component={Advertising}/>
                     <Route path="/independent-publication" component={IndependentPublication}/>
                     <Route path="/amazon-hub" component={AmazonHub}/>
+                    <Route path="/mastercard-reward" component={MastercardReward}/>
                 </Switch>
             </Router>
         </div>

@@ -28,8 +28,8 @@ const Layout = (props) => {
 
     const [showDeliverToMenu] = useState(true)
 
-    const toggleModal = (status, mode, modalLangProp=modalLangProps) => { 
-        setModal(status)  // Hide Modal on hover on Modal itself 
+    const toggleModal = (status, mode, modalLangProp = modalLangProps) => { 
+        setModal(status)  // Hide Modal on hover on Modal itself ("hide" or "show")
 
         // If no mode, opening a modal, will always show all modals. Use mode to specify
         // which modal to show. Without mode === "all", closing the general modal will
@@ -46,7 +46,7 @@ const Layout = (props) => {
             setModalLangProps(modalLangProp)
         }
         if (mode === "deliveryAddressModal") {
-            let stat = status === "hide" ? "" : "show"
+            let stat = (status === "hide") ? "" : "show"
             setDeliveryAddressPanel(stat)
         }
     }

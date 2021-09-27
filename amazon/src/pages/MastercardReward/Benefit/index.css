@@ -1,0 +1,15 @@
+.mastercard__benefit {
+    padding-top: 26.1px;
+    padding-bottom: 26.1px;
+}
+.mastercard__benefit img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-right: auto;
+}
+.mastercard__benefitText {
+    position: relative;
+    max-height: 100px;
+    overflow: hidden;
+}

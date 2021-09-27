@@ -1,0 +1,245 @@
+
+.mastercard--page {
+    font-size: 14px;
+    font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.mastercard__marketing {
+    margin: auto;
+    min-width: 1000px;
+}
+.mastercard__ad {
+    position: relative;
+    width: 100%;
+    height: 478px;
+    text-align: center;
+    background: var(--blue-28);
+}
+.mastercard__adCreditCard {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    max-width: 450px;
+    height: 330px;
+    margin-bottom: 0;
+}
+.mastercard__adCreditCard img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.mastercard__features {
+    width: 30%;
+    margin-top: 90px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 400px;
+}
+.mastercard__features .dropdown-menu {
+    left: -70% !important;
+    width: 344px;
+    max-width: 700px;
+}
+.mastercard__offerDetails {
+    width: 25%;
+    max-width: 365px;
+    padding: 20px;
+    margin-top: 5%;
+    margin-right: 3.3%;
+    margin-bottom: 3% !important;
+    margin-left: auto;
+    font-size: 13px;
+    border-radius: 5px;
+    border-width: 1px;
+    text-align: left;
+    vertical-align: middle;
+    background: var(--white);
+}
+.mastercard__offerConditions {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.mastercard__offerLegal {
+    line-height: 12px !important;
+}
+.mastercard__offerLegal p {
+    line-height: 12px !important;
+}
+.mastercard__noFee {
+    width: 100%;
+    height: 62px;
+    margin-bottom: 0;
+    background: var(--blue-29);
+}
+.mastercard__noFee span {
+    display: inline-block;
+    line-height: 62px !important;
+}
+.mastercard__marketingBox {
+    width: 100%;
+    background: var(--blue-30);
+    padding: 3% 10%;
+    margin-bottom: 0;
+    border: thin solid crimson;
+}
+.mastercard__marketingBox ul {
+    list-style: disc;
+}
+.mastercard__faq {
+    width: 100%;
+    padding: 4% 10%;
+    margin-bottom: 0;
+}
+.mastercard__shopping {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: var(--blue-28);
+}
+.mastercard__shoppingImg {
+    position: relative;
+    flex-basis: 350px;
+    width: 350px;
+    bottom: 0;
+    margin-left: 2%;
+}
+.mastercard__shoppingImg img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.mastercard__shoppingApply {
+    width: 800px;
+    height: 100%;
+    padding: 10px;
+    padding-top: 2%;
+    text-align: center;
+}
+.mastercard__shoppingApply ol {
+    list-style-type: none;
+}
+.mastercard__applyNow {
+    padding: 30%;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 1.5;
+    text-align: center;
+}
+.mastercard__offerLink {
+    color: var(--black);
+    text-decoration: underline;
+}
+.mastercard--page hr {
+    margin-top: 14px !important;
+    border-top: 1px solid var(--grey) !important;
+}
+.mastercard__reviews {
+    flex-basis: 300px;
+}
+.mastercard__reviews h2 {
+    color: var(--black);
+}
+.rating__dropdown + hr {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+.mastercard__reviews .a__button + hr {
+    margin-top: 32px !important
+}
+.mastercard__comments {
+    padding-left: 11.5%;
+}
+.master__commentsMain {
+    width: 90.5%;
+    max-width: 680px;
+    border: thin solid coral;
+}
+.mastercard__tags {
+    width: 582px;
+    border: thin solid hotpink;
+}
+.mastercard__tagPanel {
+    overflow: hidden;
+    max-height: 118px;
+}
+.mastercard__tagItem span {
+    display: inline-block;
+    padding: 0px 14px;
+    margin: 0px 10px 14px 0px;
+    font-size: 13px;
+    line-height: 29px;
+    color: var(--color-2);
+    background-color: var(--blue-31);
+    border-bottom: solid 1px var(--grey-tone-78);
+}
+.mastercard__comments .popover__panel__list option {
+    padding: 0px 2px 1px;
+    margin-left: 0;
+    line-height: 29px;
+    font-size: 13px;
+}
+.mastercard__userComments {
+    min-height: 100px;
+    padding-top: 8px;
+}
+.mastercard__userComment {
+    max-width: 80em;
+}
+.mastercard__avatar {
+    width: 43px;
+    padding-right: 9px;
+}
+.mastercard__avatar img {
+    position: relative;
+    height: 34px;
+    width: 34px;
+
+    background-color: var(--white);
+    border-radius: 34px;
+    border: 2px solid var(--white);
+}
+.mastercard__profileName {
+    position: relative;
+    min-height: 34px;
+    font-size: 13px;
+    line-height: 32px;
+    color: var(--color);
+    unicode-bidi: isolate;
+}
+.mastercard__topFigure {
+    padding-left: 0.385em;
+}
+.mastercard__topFigure span {
+    padding: 2px;
+    letter-spacing: .5px;
+    line-height: 32px !important;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border-top: 1px dashed var(--grey-tone-79);
+    border-bottom: 1px dashed var(--grey-tone-79);
+}
+.mastercard__titleStars {
+    padding-right: 0.385em;
+}
+.mastercard__body {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    padding-bottom: 24px;
+}
+.masterCard__helpful .a__button__text {
+    width: 77px;
+    box-sizing: content-box;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .mastercard__comments {
+        padding-left: 120px;
+    }
+}

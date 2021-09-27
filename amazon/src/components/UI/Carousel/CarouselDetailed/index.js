@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Line from '../../Line'
+import { Line } from '../../Line'
 
 // If heading is passed in argument, top slider will render
 // If there is an heading_two argument, it means bottom slider should render

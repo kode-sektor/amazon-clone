@@ -16,8 +16,8 @@ const BtnPrimary = ({text="Add to Cart"}) => (
 )
 
 // White Pill Button. 'Learn More' found in /nav_cart page
-const BtnPill = ({text="Learn more"}) => (
-    <Link className="a__button a__button__rounded" to="/">
+const BtnPill = ({text="Learn more", stretch=""}) => (
+    <Link className={`a__button a__button__rounded ${stretch === true && "w-100"}`} to="/">
         <span className="a__button__inner a__button__pillWhite">
             <span className="a__button__input" type="submit"></span>
             <span className="a__button__text text-center" aria-hidden="true">
@@ -254,9 +254,20 @@ const ApplyToSellBtn = ({size}) => {
     )
 }
 
+const ReportAbuse = () => {
+    return (
+        <span>
+            <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
+            <Link to="/" className="a__size__base a__color__secondary a__text__normal">
+                Report abuse
+            </Link>
+        </span>
+    )
+}
+
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg,
-    BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii
+    BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, ReportAbuse
 }

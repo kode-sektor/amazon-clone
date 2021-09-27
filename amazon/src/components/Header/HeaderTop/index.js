@@ -61,7 +61,7 @@ const HeaderTop = (props) => {
                                 <NavItem>
                                     <Button className="navigationbar__delivery__link" onClick={()=> {
                                         let modal = props.modal
-                                        modal = modal === "show" ? "hide" : "show stretched"
+                                        modal = (modal === "show") ? "hide" : "show stretched"
                                         props.toggleModal(modal, "deliveryAddressModal")
                                     }}>
                                             <>

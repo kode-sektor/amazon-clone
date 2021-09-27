@@ -7,5 +7,20 @@ const Line = () => {
         </>
     )
 }
+const LineTwo = () => {
+    return (
+        <>
+            <hr className="a__spacing__large a__divider__normal w-100"/>
+        </>
+    )
+}
+const LineThree = () => {
+    return (
+        <>
+            <hr className="amznLine a__spacing__extra__large a__divider__normal w-100"/>
+        </>
+    )
+}
 
-export default Line
+
+export { Line, LineTwo, LineThree }

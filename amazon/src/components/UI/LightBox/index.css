@@ -1,0 +1,15 @@
+.master__commentsThumbnail {
+    width: auto;
+    cursor: pointer;
+    height: auto;
+    display: inline;
+    overflow: hidden;
+    margin-right: 1px;
+    margin-bottom: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.master__commentsThumbnail img {
+    width: 22.5%;
+}
