@@ -8,7 +8,6 @@ import reportWebVitals from "./reportWebVitals";
 
 window.store = store;
 
-
 ReactDOM.render(
     <Provider store={store}>
         <React.StrictMode>

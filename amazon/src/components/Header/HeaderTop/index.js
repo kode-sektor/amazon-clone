@@ -42,7 +42,6 @@ const HeaderTop = (props) => {
         setQueryID(window.location.pathname)
     }, [])
 
-
     return (
         <section className="page__header">
             <div className="navbelt">

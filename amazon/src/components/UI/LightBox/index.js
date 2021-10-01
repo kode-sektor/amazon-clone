@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+
+import LightBoxModal from './LightBoxModal'
 
 import L61DDN5WdKQ from '../../../images/L61DDN5WdKQ.jpg'
 import L71RCZ2H6p from '../../../images/L71RCZ2H6p.jpg'
@@ -35,24 +37,59 @@ import L613FQhDRGLLSL from '../../../images/L613FQhDRGLLSL.jpg'
 
 import './index.css'
 
-const LightBox = ({}) => {
+const LightBox = ({toggleModal}) => {
+
+    console.log(toggleModal)
 
     const image1 = L61DDN5WdKQ
     const image2 = L71RCZ2H6p
     const image3 = L61Dc5ySuuW
     const image4 = L1WBw61t2Q
+    const image5 = L81QYTeqjBLS
+    const image6 = L814ze8S1DLS
+    const image7 = L511COXBQmSL
+    const image8 = L71cYVGoNhvLS
+    const image9 = L41t0t3d1YNLS
+    const image10 = L61E3oEgHvdLS
+    const image11 = LC1FENb8OOtSS
+    const image12 = L71iT22dbyILS
+    const image13 = L81Rr6WLY7PLpS
+    const image14 = L41GsiEOPk5LS
+    const image15 = LB1WOO0G7UTSS
+    const image16 = L21LlksaHxoLS
+    const image17 = L61wMhuIgUMLS
+    const image18 = L81X648FretLS
+    const image19 = L41J6VSYJRWLS
+    const image20 = L61J6VSYJRWLS
+    const image21 = L61snqzZr6iLS
+    const image22 = L91Mhs7vymDLS
+    const image23 = L61AG8heN61LS
+    const image24 = L81iiNzTmsCLS
+    const image25 = L31YQ20rRh
+    const image26 = C1ooPYCncSSS
+    const image27 = L91l65qN2PeLS
+    const image28 = L31fplJqEgoLS
+    const image29 = L81zob2dN8LSL
+    const image30 = L7181BvRP6YLS
+    const image31 = L613FQhDRGLLSL
 
-    const images = [image1, image2, image3, image4]
+    const images = [
+                        image1, image2, image3, image4, image5, image6, image7, image8,
+                        image9, image10, image11, image12, image13, image14, image15, image16,
+                        image17, image18, image19, image20, image21, image22, image23, image24,
+                        image25, image26, image27, image28, image29, image30, image31
+                    ]
 
     // MAIN LIGHTBOX
     // Holds Images Cards and Lightbox
     // this is where all of our logic will live
     
     const [imageToShow, setImageToShow] = useState("")
-    const [lightboxDisplay, setLightBoxDisplay] = useState(false)
+    const [modalPanel, setModalPanel] = useState("hide")    // show / hide lightbox modal
+    const [lightboxDisplay, setLightBoxDisplay] = useState("hide")
     
     // Looping through our images array to create img elements
-    const imageCards = images.map((image) => (
+    const imageCards = images.slice(0, 4).map((image) => (
         <div className="master__commentsThumbnail">
             <img className="image-card" onClick={() => showImage(image)} src={image} />
         </div>
@@ -60,8 +97,10 @@ const LightBox = ({}) => {
 
     // Function to show a specific image in the lightbox, amd make lightbox visible
     const showImage = (image) => {
+        toggleModal("show stretched", "lightboxReview")
+        setModalPanel("show stretched")
         setImageToShow(image)
-        setLightBoxDisplay(true)
+        setLightBoxDisplay("show")
     }
 
     // Hide lightbox
@@ -72,8 +111,8 @@ const LightBox = ({}) => {
     // Show next image in lightbox
     const showNext = (e) => {
         e.stopPropagation()
-
         let currentIndex = images.indexOf(imageToShow)
+
         if (currentIndex >= images.length - 1) {
             setLightBoxDisplay(false)
         } else {
@@ -101,11 +140,23 @@ const LightBox = ({}) => {
                 {imageCards}
             </section>
             
-            {/* <section id="lightbox" onClick={hideLightBox}>
+            <section id="amzn__lightbox" onClick={hideLightBox}>
                 <button onClick={showPrev}>⭠</button>
                 <img src={imageToShow} />
                 <button onClick={showNext}>⭢</button>
-            </section> */}
+            </section>
+
+            {/* <LightBoxModal
+                modalPanel={"show"}
+                title={""}
+                legend={""}
+                body={""}
+                legendAux={""}
+                bodyAux={""}
+                cta={""}
+                toggleModalLang={""}
+                classname={""}
+            /> */}
         </>
     )
 }

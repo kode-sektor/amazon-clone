@@ -1,12 +1,11 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
+
 import { Button } from 'reactstrap'
 
 import { CancelBtnPrimary } from '../../UI/Button'
 
 import './index.css'
-
 
 const ModalLang = (props) => {
 
@@ -25,7 +24,7 @@ const ModalLang = (props) => {
                         <i class="popover__close"></i>
                     </Button>
                 </header>
-                <section className="popover__panel__customerPreferences">
+                <section className="popover__panel__main">
                     <form action="" className="popover__panel__countryNav">
                         <div className="popover__panel__countryNav__inner d-flex justify-content-between row">
                             <section className="popover__panel__country col-6">

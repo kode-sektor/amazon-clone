@@ -331,6 +331,23 @@ code {
 .popover__panel__container.language {
     top: 165.5px;
 }
+.popover__panel__container.lightbox {
+    top: 62.5px;
+    left: 0;
+    right: 0;
+    width: 895px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+}
+.popover__panel__main {
+    overflow-x: hidden;
+    padding: 16px 24px;
+    height: auto;
+    overflow-y: auto;
+    background-color: var(--white);
+    text-align: left;
+}
 .popover__panel__heading {
     position: relative;
     display: flex;

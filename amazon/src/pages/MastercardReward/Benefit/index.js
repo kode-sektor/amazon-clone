@@ -2,7 +2,8 @@ import React from 'react'
 
 import './index.css'
 
-const Benefit = ({img, alt, txt1, txt2, body}) => {
+const Benefit = ({img, alt, txt1, txt2, body, newProp}) => {
+    console.log(newProp)
     return (
         <section className="mastercard__benefit col-4">
             <img src={img} alt={alt}/>

@@ -1,11 +1,3 @@
-.popover__panel__customerPreferences {
-    overflow-x: hidden;
-    padding: 16px 24px;
-    height: auto;
-    overflow-y: auto;
-    background-color: var(--white);
-    text-align: left;
-}
 .popover__panel__countryNav {
     margin-bottom: 14px;
 }

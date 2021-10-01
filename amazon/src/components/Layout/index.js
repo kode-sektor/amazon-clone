@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
+
 import Header from '../Header';
 import Footer from '../Footer';
+import LightBoxModal from '../UI/LightBox/LightBoxModal'
 
 import Modal from '../../components/UI/Modal/'
 import Location from '../Header/Location/index'
 
 import './index.css'
 
-
 const Layout = (props) => {
+
+    const {children} = props
 
     const [modal, setModal] = useState("hide")  // Main modal
     // const [modalLangPanel] = useState("hide")    // Language panel
@@ -25,6 +28,7 @@ const Layout = (props) => {
                                                             }
                                                         )
     const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
+    const [lightBoxReview, setLightBoxReview] = useState(false)
 
     const [showDeliverToMenu] = useState(true)
 
@@ -38,6 +42,10 @@ const Layout = (props) => {
         // On the click on the modal itself, reset all modals
         if (mode === "all") {
             modalLangProps.modalLangPanel = "hide"
+            // setModalLangProps({
+            //     ...modalLangProps,
+            //     modalLangPanel : "hide"
+            // })
             setModalLangProps(modalLangProp)    // Language panel
             setDeliveryAddressPanel(false)  // Delivery address panel
         }
@@ -49,6 +57,16 @@ const Layout = (props) => {
             let stat = (status === "hide") ? "" : "show"
             setDeliveryAddressPanel(stat)
         }
+        if (mode === "lightboxReview") {
+            // let stat = (status === "hide") ? "" : "show"
+            // setLightBoxReview(stat)
+        }
+    }
+
+    // React.cloneElement props for Layout (HOC) children
+    let childProps = {
+        // modal={modal} Will be used only if a toggle is needed in any child element
+        toggleModal : toggleModal
     }
 
     return (
@@ -61,19 +79,36 @@ const Layout = (props) => {
             />
             <div className="page__content">
                 <div className="page__content__wrap">
-                    {props.children}
+                    {/* {props.children} */}
+                    {React.Children.map(children, child => {
+                        console.log(child);
+                        return React.cloneElement(child, {childProps}, null);
+                    })}
                 </div>
             </div>
             <Modal 
                 modal={modal}
                 toggleModal={toggleModal}
             />
+            {/* Kept as a very high component because it works with position: fixed declaration,
+                thus wouldn't work properly if nested within HTML elements */}
             <Location
                 modal={deliveryAddressPanel}
                 toggleModal={toggleModal}
             />
+            <LightBoxModal
+                modalPanel={"show"}
+                title={""}
+                legend={""}
+                body={""}
+                legendAux={""}
+                bodyAux={""}
+                cta={""}
+                toggleModalLang={""}
+                classname={""}
+            />
             <Footer 
-                modal={modal}
+                modal={modal}   // state of modal required to either hide or show panel (cos its a toggle)
                 // modalLangPanel={modalLangPanel}
                 modalLangProps={modalLangProps}
                 toggleModal={toggleModal}

@@ -8,8 +8,6 @@ import Slider from '../../components/UI/Carousel/Carousel'
 import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 
-import './index.css'
-
 import user_avatar from '../../images/user-avatar.jpg'
 import card_gifting from '../../images/card-gifting.jpg'
 import electronics_headphones from '../../images/categories/electronics-headphones.jpg'
@@ -113,8 +111,9 @@ import frosted_endtable from '../../images/products/global-furniture-clear-frost
 import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
 import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
 
+import './index.css'
 
-const Home = (props) => {
+const Home = () => {
 
     // const [dropdownOpen, setOpen] = useState(false)
     // const toggle = () => setOpen(!dropdownOpen)

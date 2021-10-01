@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { Link as LinkScroll } from 'react-scroll'
 
-import FooterMenu from './FooterMenu'
-
 import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
 
+import FooterMenu from './FooterMenu'
 import DropdownMenuLang from '../UI/DropdownMenuLang'
 import ModalLang from '../Footer/ModalLang'
 import { DropdownMenuPrimary } from '../UI/DropdownMenu'
@@ -12,7 +11,6 @@ import { DropdownMenuPrimary } from '../UI/DropdownMenu'
 import { countries } from '../../utilities/data'
 
 import './index.css'
-
 
 const Footer = (props) => {
 

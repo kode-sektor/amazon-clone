@@ -1252,6 +1252,9 @@ input[required]:after{
 .a__icon.a__star__mini__4__5 {
     background-position: -437px -130px;
 }
+.a__icon.a__star__1 {
+    background-position: -375px -144px;
+}
 .a__icon.a__star__4__5 {
     background-position: -84px -28px;
 }
@@ -1276,6 +1279,14 @@ input[required]:after{
 }
 .a__icon.a__icon__search {
     opacity: 1;
+}
+.a__icon__galleryIcon {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: url("../../images/amzn-sprite-11.png") no-repeat;
+    background-size: 306px 396px;
+    background-position: -23px -82px;
 }
 .a__input__text, input[type=text], input[type=search], 
 input[type=number], input[type=tel], input[type=password],

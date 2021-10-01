@@ -24,8 +24,12 @@ import './index.css'
 
 const MastercardReward = () => {
 
-    return (
-        <Layout>
+    const Mastercard = ({childProps}) => {
+        
+        const {toggleModal} = childProps
+        console.log(toggleModal)
+
+        return (
             <div className="a__container">
                 <main className="mastercard--page">
                     <section className="mastercard__marketing">
@@ -49,7 +53,7 @@ const MastercardReward = () => {
                                                 </span>
                                             }
                                             dropdown={
-                                               <Rating
+                                                <Rating
                                                     dropdown={true}     // dropdown===true shows the footer
                                                     avgRating={4.3}
                                                     totalRating={5}
@@ -59,7 +63,7 @@ const MastercardReward = () => {
                                                     starThree={4}
                                                     starTwo={2}
                                                     starOne={12}
-                                               />
+                                                />
                                             }
                                         />
                                     </span>&nbsp;
@@ -115,7 +119,7 @@ const MastercardReward = () => {
                                 alt={"Amazon.ca and whole foods market stores"}
                                 txt1={"2.5% back"}
                                 txt2={"at Amazon.ca and Whole Foods Market stores"}
-                                body={  
+                                body={
                                         <>
                                             After the welcome offer ends, eligible Prime members get 2.5% back on eligible purchases at Amazon.ca and Whole Foods Market stores. <sup>‡</sup>
                                         </>
@@ -126,7 +130,7 @@ const MastercardReward = () => {
                                 alt={"On eligible foreign currency transactions"}
                                 txt1={"2.5% back"}
                                 txt2={"on eligible foreign currency transactions"}
-                                body={  
+                                body={
                                         <>
                                             Always get 2.5% back on eligible foreign currency transactions to help cover foreign currency conversion fees. <sup>‡</sup>
                                         </>
@@ -137,9 +141,9 @@ const MastercardReward = () => {
                                 alt={"Amazon.ca and whole foods market stores"}
                                 txt1={"1% back"}
                                 txt2={"everywhere else Mastercard is accepted"}
-                                body={  
+                                body={
                                         <>
-                                           After the welcome offer ends, get 1% back at grocery stores and restaurants. Always get 1% back on other eligible purchases. <sup>‡</sup>
+                                            After the welcome offer ends, get 1% back at grocery stores and restaurants. Always get 1% back on other eligible purchases. <sup>‡</sup>
                                         </>
                                     }
                             />
@@ -147,9 +151,9 @@ const MastercardReward = () => {
                                 img={marketing_page_extra_1_cb}
                                 alt={"Shop confidently with purchase benefits"}
                                 txt2={"Shop confidently with purchase benefits"}
-                                body={  
+                                body={
                                         <>
-                                           Get Purchase Assurance, Extended Warranty Benefits**, $0 Fraud Liability, and more.
+                                            Get Purchase Assurance, Extended Warranty Benefits**, $0 Fraud Liability, and more.
                                         </>
                                     }
                             />
@@ -157,9 +161,9 @@ const MastercardReward = () => {
                                 img={marketing_page_gc_cb}
                                 alt={"Savings with automatic $20 Amazon.ca Gift Cards"}
                                 txt2={"Savings with automatic $20 Amazon.ca Gift Cards"}
-                                body={  
+                                body={
                                         <>
-                                           For every 2,000 points earned, we will apply a $20 Amazon.ca gift card to your linked Amazon.ca account for savings on millions of items at Amazon.ca.
+                                            For every 2,000 points earned, we will apply a $20 Amazon.ca gift card to your linked Amazon.ca account for savings on millions of items at Amazon.ca.
                                         </>
                                     }
                             />
@@ -167,9 +171,9 @@ const MastercardReward = () => {
                                 img={marketing_page_instant_use}
                                 alt={"Start using your card instantly upon approval"}
                                 txt2={"eStart using your card instantly upon approval"}
-                                body={  
+                                body={
                                         <>
-                                           Apply today and start using your credit card for up to 5% back on Amazon.ca instantly, for 6 months after approval††.
+                                            Apply today and start using your credit card for up to 5% back on Amazon.ca instantly, for 6 months after approval††.
                                         </>
                                     }
                             />
@@ -245,10 +249,10 @@ const MastercardReward = () => {
                                 </span>
                                 <ol className="mb-0">
                                     <li>
-                                       1. You are a Canadian Resident
+                                        1. You are a Canadian Resident
                                     </li>
                                     <li>
-                                       2. You are the age of majority in the province or territory where you live
+                                        2. You are the age of majority in the province or territory where you live
                                     </li>
                                 </ol>
                                 <div className="mastercard__applyNow">
@@ -297,7 +301,9 @@ const MastercardReward = () => {
                                 <header className="master__commentsGallery a__spacing__medium">
                                     <h3>Reviews with images</h3>
                                 </header>
-                                <LightBox/>
+                                {/* <LightBox
+                                    toggleModal={toggleModal}
+                                /> */}
                                 <Link to="/">
                                     See all customer images
                                 </Link>
@@ -325,7 +331,7 @@ const MastercardReward = () => {
                                 <section className="a__spacing__medium">
                                     <section className="a__spacing__small">
                                         <DropdownMenuMini
-                                            optionList={ 
+                                            optionList={
                                                 <>
                                                     <option value="top-reviews">Top reviews</option>
                                                     <option value="most-recent">Most Recent</option>
@@ -413,6 +419,20 @@ const MastercardReward = () => {
                     </section>
                 </main>
             </div>
+        )
+    }
+
+    // const Mastercardd = ({ name, newProp }) => {
+    //     console.log(newProp)
+    //     return (
+    //         <h1>Hello {name} and {newProp}!</h1>
+    //     )
+    // }
+
+
+    return (
+        <Layout>
+            <Mastercard/>
         </Layout>
     )
 }
