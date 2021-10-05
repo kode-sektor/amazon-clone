@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Header from '../Header';
 import Footer from '../Footer';
-import LightBoxModal from '../UI/LightBox/LightBoxModal'
 
 import Modal from '../../components/UI/Modal/'
 import Location from '../Header/Location/index'
@@ -28,7 +27,17 @@ const Layout = (props) => {
                                                             }
                                                         )
     const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
-    const [lightBoxReview, setLightBoxReview] = useState(false)
+    const [lightBoxPanel, setLightBoxPanel] = useState(true)
+    // const [lightBoxReview, setlightBoxReview] = useState(false)
+    // const [lightBoxModal, setLightBoxModal] = useState(
+    //                                                     {
+    //                                                         lightBoxPanel : "",
+    //                                                         toggleModal : "",
+    //                                                         img : "",
+    //                                                         showPrev : "",
+    //                                                         showNext : ""
+    //                                                     }
+                                                    // )
 
     const [showDeliverToMenu] = useState(true)
 
@@ -40,34 +49,43 @@ const Layout = (props) => {
         // fail to close the modals
 
         // On the click on the modal itself, reset all modals
-        if (mode === "all") {
-            modalLangProps.modalLangPanel = "hide"
-            // setModalLangProps({
-            //     ...modalLangProps,
-            //     modalLangPanel : "hide"
-            // })
-            setModalLangProps(modalLangProp)    // Language panel
-            setDeliveryAddressPanel(false)  // Delivery address panel
-        }
-        if (mode === "langModal") {
-            modalLangProps.modalLangPanel = (status === "hide") ? "" : "show"
-            setModalLangProps(modalLangProp)
-        }
-        if (mode === "deliveryAddressModal") {
-            let stat = (status === "hide") ? "" : "show"
-            setDeliveryAddressPanel(stat)
-        }
-        if (mode === "lightboxReview") {
-            // let stat = (status === "hide") ? "" : "show"
-            // setLightBoxReview(stat)
+        switch (mode) {
+            case "all" : 
+                modalLangProps.modalLangPanel = "hide"
+                // setModalLangProps({
+                //     ...modalLangProps,
+                //     modalLangPanel : "hide"
+                // })
+                setModalLangProps(modalLangProp)    // Language panel
+                setDeliveryAddressPanel(false)  // Delivery address panel
+                setLightBoxPanel(false)     // Lightbox
+                break
+            case "langModal" : 
+                modalLangProps.modalLangPanel = (status === "hide") ? "" : "show"
+                setModalLangProps(modalLangProp)
+                break
+            case "deliveryAddressModal" : 
+                let stat = (status === "hide") ? "" : "show"
+                setDeliveryAddressPanel(stat)
+                break
+            case "lightBoxReview" : 
+                (status === "hide") ? setLightBoxPanel(false) : setLightBoxPanel(true)
+                break
         }
     }
 
-    // React.cloneElement props for Layout (HOC) children
-    let childProps = {
-        // modal={modal} Will be used only if a toggle is needed in any child element
-        toggleModal : toggleModal
-    }
+    let childProps = {}
+
+    window.location.pathname === "/mastercard-reward" && (
+        // alert('mastercard reward page')
+        // React.cloneElement props for Layout (HOC) children
+        childProps = {
+            // modal={modal} will be used only if a toggle is needed in any child element
+            toggleModal : toggleModal,
+            lightBoxPanel : lightBoxPanel,
+            // showLightBoxPanel : showLightBoxPanel
+        }
+    )
 
     return (
         <>
@@ -81,7 +99,7 @@ const Layout = (props) => {
                 <div className="page__content__wrap">
                     {/* {props.children} */}
                     {React.Children.map(children, child => {
-                        console.log(child);
+                        // console.log(child);
                         return React.cloneElement(child, {childProps}, null);
                     })}
                 </div>
@@ -95,17 +113,6 @@ const Layout = (props) => {
             <Location
                 modal={deliveryAddressPanel}
                 toggleModal={toggleModal}
-            />
-            <LightBoxModal
-                modalPanel={"show"}
-                title={""}
-                legend={""}
-                body={""}
-                legendAux={""}
-                bodyAux={""}
-                cta={""}
-                toggleModalLang={""}
-                classname={""}
             />
             <Footer 
                 modal={modal}   // state of modal required to either hide or show panel (cos its a toggle)

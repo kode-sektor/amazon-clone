@@ -35,11 +35,11 @@ import L81zob2dN8LSL from '../../../images/L81zob2dN8LSL.jpg'
 import L7181BvRP6YLS from '../../../images/L7181BvRP6YLS.jpg' 
 import L613FQhDRGLLSL from '../../../images/L613FQhDRGLLSL.jpg' 
 
+// import L61DDN5WdKQ_lg from '../../../../images/L61DDN5WdKQ-lg.jpg'
+
 import './index.css'
 
-const LightBox = ({toggleModal}) => {
-
-    console.log(toggleModal)
+const LightBox = ({toggleModal, lightBoxPanel}) => {
 
     const image1 = L61DDN5WdKQ
     const image2 = L71RCZ2H6p
@@ -85,9 +85,10 @@ const LightBox = ({toggleModal}) => {
     // this is where all of our logic will live
     
     const [imageToShow, setImageToShow] = useState("")
-    const [modalPanel, setModalPanel] = useState("hide")    // show / hide lightbox modal
-    const [lightboxDisplay, setLightBoxDisplay] = useState("hide")
-    
+    // const [lightBoxDisplay, setLightBoxDisplay] = useState(false)
+    const [showPrevBtn, setShowPrevBtn] = useState(true)
+    const [showNextBtn, setShowNextBtn] = useState(true)
+
     // Looping through our images array to create img elements
     const imageCards = images.slice(0, 4).map((image) => (
         <div className="master__commentsThumbnail">
@@ -96,41 +97,50 @@ const LightBox = ({toggleModal}) => {
     ))
 
     // Function to show a specific image in the lightbox, amd make lightbox visible
-    const showImage = (image) => {
-        toggleModal("show stretched", "lightboxReview")
-        setModalPanel("show stretched")
-        setImageToShow(image)
-        setLightBoxDisplay("show")
+    const showImage = (gallery) => {
+        toggleModal("show stretched", "lightBoxReview") // show modal
+        setImageToShow(gallery)   // show image
+
+        let currentIndex = images.indexOf(gallery)
+
+        currentIndex === 0 && (setShowPrevBtn(false))   // On click of first image, hide first button
+
     }
 
     // Hide lightbox
     const hideLightBox = () => {
-        setLightBoxDisplay(false)
+        setImageToShow("")   // hide image
     }
 
     // Show next image in lightbox
     const showNext = (e) => {
         e.stopPropagation()
+        setShowPrevBtn(true)
+        
         let currentIndex = images.indexOf(imageToShow)
 
         if (currentIndex >= images.length - 1) {
-            setLightBoxDisplay(false)
+            setShowNextBtn(false)
         } else {
             let nextImage = images[currentIndex + 1]
             setImageToShow(nextImage)
+            setShowNextBtn(true)
         }
     }
   
     // Show previous image in lightbox
     const showPrev = (e) => {
         e.stopPropagation()
+        setShowNextBtn(true)
+
         let currentIndex = images.indexOf(imageToShow)
 
         if (currentIndex <= 0) {
-            setLightBoxDisplay(false)
+            setShowPrevBtn(false)
         } else {
             let nextImage = images[currentIndex - 1]
             setImageToShow(nextImage)
+            setShowPrevBtn(true)
         }
     }
 
@@ -139,24 +149,16 @@ const LightBox = ({toggleModal}) => {
             <section className="a__spacing__small a__spacing__top__small">
                 {imageCards}
             </section>
-            
-            <section id="amzn__lightbox" onClick={hideLightBox}>
-                <button onClick={showPrev}>⭠</button>
-                <img src={imageToShow} />
-                <button onClick={showNext}>⭢</button>
-            </section>
-
-            {/* <LightBoxModal
-                modalPanel={"show"}
-                title={""}
-                legend={""}
-                body={""}
-                legendAux={""}
-                bodyAux={""}
-                cta={""}
-                toggleModalLang={""}
-                classname={""}
-            /> */}
+            <LightBoxModal
+                imageToShow={imageToShow}
+                showPrev={showPrev}
+                showNext={showNext}
+                toggleModal={toggleModal}
+                hideLightBox={hideLightBox}
+                lightBoxPanel={lightBoxPanel}
+                showPrevBtn={showPrevBtn}
+                showNextBtn={showNextBtn}
+            />
         </>
     )
 }

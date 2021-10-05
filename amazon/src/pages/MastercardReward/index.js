@@ -26,8 +26,7 @@ const MastercardReward = () => {
 
     const Mastercard = ({childProps}) => {
         
-        const {toggleModal} = childProps
-        console.log(toggleModal)
+        const {toggleModal, lightBoxPanel} = childProps
 
         return (
             <div className="a__container">
@@ -301,9 +300,10 @@ const MastercardReward = () => {
                                 <header className="master__commentsGallery a__spacing__medium">
                                     <h3>Reviews with images</h3>
                                 </header>
-                                {/* <LightBox
+                                <LightBox
                                     toggleModal={toggleModal}
-                                /> */}
+                                    lightBoxPanel={lightBoxPanel}
+                                />
                                 <Link to="/">
                                     See all customer images
                                 </Link>

@@ -18,7 +18,6 @@
 .popover__panel__content {
     height: 100%;
     margin-top: -4px;
-    border: thin solid blue;
 }
 .popover__imageContainer {
     position: relative;
@@ -44,7 +43,7 @@
     overflow-x: hidden;
     overflow-y: scroll;
     flex-basis: 310px;
-    height: 100%;
+    height: 416px;
     margin-top: -4px;
     padding-left: 18px;
     padding-bottom: 4px;
@@ -65,6 +64,58 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.popover__imageSlideBtns {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 2px solid plum;
+}
+.popover__imageBackBtn, .popover__imageForwardBtn {
+    position: absolute;
+    content: "";
+    width: 50%;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    border: 2px solid tan;
+    cursor: pointer;
+}
+.popover__imageBackBtn {
+    left: 0;
+}
+.popover__imageForwardBtn {
+    right: 0;
+}
+.popover__imageBackBtn button, .popover__imageForwardBtn button {
+    position: absolute;
+    width: 41px;
+    height: 60px;
+    top: 50%;
+    opacity: 0;
+    background: url('../../../../images/amzn-sprite-11.png') no-repeat;
+    background-size: 306px 396px;
+    z-index: 4;
+}
+.popover__imageBackBtn button {
+    margin-left: 10px;
+    background-position: -6px -8px;
+}
+.popover__imageForwardBtn button {
+    margin-right: 10px;
+    background-position: -80px -8px;
+    right: 0;
+}
+.popover__imageSlideBtns:hover button,
+.popover__imageSlideBtns:focus button {
+    opacity: 0.25;
+}
+
+
 
 
 
