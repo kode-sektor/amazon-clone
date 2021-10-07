@@ -1255,6 +1255,15 @@ input[required]:after{
 .a__icon.a__star__1 {
     background-position: -375px -144px;
 }
+.a__icon.a__star__3 {
+    background-position: -84px -48px;
+}
+.a__icon.a__star__4 {
+    background-position: -84px -8px;
+}
+.a__icon.a__star__5 {
+    background-position: -166px -36px;
+}
 .a__icon.a__star__4__5 {
     background-position: -84px -28px;
 }
