@@ -80,7 +80,6 @@
     background: var(--blue-30);
     padding: 3% 10%;
     margin-bottom: 0;
-    border: thin solid crimson;
 }
 .mastercard__marketingBox ul {
     list-style: disc;
@@ -153,11 +152,9 @@
 .master__commentsMain {
     width: 90.5%;
     max-width: 680px;
-    border: thin solid coral;
 }
 .mastercard__tags {
     width: 582px;
-    border: thin solid hotpink;
 }
 .mastercard__tagPanel {
     overflow: hidden;

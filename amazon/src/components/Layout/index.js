@@ -27,7 +27,7 @@ const Layout = (props) => {
                                                             }
                                                         )
     const [deliveryAddressPanel, setDeliveryAddressPanel] = useState("hide")    // delivery address modal
-    const [lightBoxPanel, setLightBoxPanel] = useState(true)
+    const [lightBoxPanel, setLightBoxPanel] = useState(false)
     // const [lightBoxReview, setlightBoxReview] = useState(false)
     // const [lightBoxModal, setLightBoxModal] = useState(
     //                                                     {

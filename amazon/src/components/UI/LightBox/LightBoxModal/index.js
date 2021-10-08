@@ -1,13 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import { Button } from 'reactstrap'
 
 import './index.css'
 
-const LightBoxModal = ({ imageDetails, showPrev, showNext, showPrevBtn, showNextBtn,
+const LightBoxModal = ({ galleryList, imageDetails, showPrev, showNext, showPrevBtn, showNextBtn,
                  toggleModal, hideLightBox, lightBoxPanel}) => {
 
-    const {img, rating, heading, customer, date, article} = imageDetails
+    const {img, rating, heading, customer, date, article} = imageDetails || {}
     const ratingStyle = (`a__star__${rating}`)    // "a__star__1"
 
     const lightBoxClose = () => {
@@ -16,13 +16,44 @@ const LightBoxModal = ({ imageDetails, showPrev, showNext, showPrevBtn, showNext
     }
 
     return (
+        (galleryList && lightBoxPanel) ? (
+            <section className="popover__panel lightbox__panel d-block">
+                <div className="popover__panel__container lightbox">
+                    <header className="popover__panel__heading">
+                        <h5 className="popover__panel__title"></h5>
+                        <Button className="popover__panel__close" outline color="secondary" onClick={lightBoxClose}>
+                            <i class="popover__close"></i>
+                        </Button>
+                    </header>
+                    <section className="popover__panel__main">
+                        <section className="popover__panel__review">
+                            <section className="popover__panel__content">
+                                <section className="d-flex h-100">
+                                    <ul className="lightbox__galleryCustomer d-flex flex-wrap ml-0">
+                                        {
+                                            galleryList.map((item, index) => (
+                                                <li style={{backgroundImage : "url(" + item.img + ")"}}>
+
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        )
+        :
+
         // When image is clicked, show this. 
         // lightBoxPanel is required for removing image lightbox when modal is clicked
         (img && lightBoxPanel) ? (
             <section className="popover__panel lightbox__panel d-block">
                 <div className="popover__panel__container lightbox">
                     <header className="popover__panel__heading">
-                        <h5 className="popover__panel__title"></h5>
+                        <h5 className="popover__panel__title">SECOND PANEL</h5>
                         <Button className="popover__panel__close" outline color="secondary" onClick={lightBoxClose}>
                             <i class="popover__close"></i>
                         </Button>
