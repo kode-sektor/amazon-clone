@@ -589,7 +589,11 @@ ol.a__horizontal li, ul.a__horizontal li {
     display: inline-block;
     margin: 0 10px 0 0;
 }
-nav ol, nav ul:not(.list), .list--reset ol, .list--reset ul:not(.list) {
+nav ol, 
+nav ul
+/* nav ul:not(.list),  */
+/* .list--reset ol */
+/* .list--reset ul:not(.list) */ {
     margin: 0;
     padding: 0;
     list-style: none;

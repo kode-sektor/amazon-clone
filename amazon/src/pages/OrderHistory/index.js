@@ -53,8 +53,8 @@ const OrderHistory = () => {
         }
     }
 
-    return (
-        <Layout>
+    const OrderHistoryPage= () => (
+        <>
             <section className={`orders ${fullWidthClass}`}>
                 <div className={activeTab === "3" || activeTab === "4" ? "orders__wrap mx-auto" : "orders__wrap"}>
                     <section className="orders__breadcrumb">
@@ -1095,6 +1095,12 @@ const OrderHistory = () => {
                 </>
                 )}
             </section>
+        </>
+    )
+                    
+    return (
+        <Layout>
+            <OrderHistoryPage />
         </Layout>
     )
 }

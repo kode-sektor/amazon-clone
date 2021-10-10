@@ -45,8 +45,8 @@ const NavCart = () => {
         }
     }
 
-    return (
-        <Layout>
+    const NavCartPage = () => (
+        <>
             <div className="navCart__wrap">
                 <section className="navCart__banner a__spacing__medium">
                     <section className="a__box a__box__rounded a__alert a__alert__warning a__spacing__medium__plus">
@@ -628,6 +628,12 @@ const NavCart = () => {
                     />
                 }
             />
+        </>
+    )
+    
+    return (
+        <Layout>
+            <NavCartPage />
         </Layout>
     )
 }

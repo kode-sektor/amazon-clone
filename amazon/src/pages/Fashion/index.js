@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import Layout from '../../components/Layout'
+import ProgressiveSubNav from '../../components/Header/ProgressiveSubNav'
+
 import university_personal_care from '../../images/banner/university-personal-care.jpg'
 import women from '../../images/nav/women.gif'
 import men from '../../images/nav/men.gif'
@@ -32,19 +35,13 @@ import shop_mens from '../../images/nav/shop-mens.jpg'
 import tees_under_25 from '../../images/nav/tees-under-25.jpg'
 import sneakers_under_50 from '../../images/nav/sneakers-under-50.jpg'
 
-
-import Layout from '../../components/Layout'
-
-import ProgressiveSubNav from '../../components/Header/ProgressiveSubNav'
-
 import './index.css'
-
 
 const Fashion = () => {
 
-    return (
-        <Layout>
-            <ProgressiveSubNav/>
+    const FashionPage = () => (
+        <>
+            <ProgressiveSubNav />
             <section className="a__container">
                 <section className="navSub">
                     <section className="sl__sobe__card__desktop navSub__menu">
@@ -337,6 +334,12 @@ const Fashion = () => {
                     </section>
                 </section>
             </section>
+        </>
+    )
+
+    return (
+        <Layout>
+            <FashionPage />
         </Layout>
     )
 }

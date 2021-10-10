@@ -144,741 +144,745 @@ const Coupon = () => {
         newWin.resizeTo(467, 660)
     }
 
-    return (
-        <Layout>
-            <section className="a__container">
-                <section className="row mx-0 coupon">
-                    <Link to="/">
-                        <img src={scissors} className="coupon__scissors"/>
-                    </Link>
-                    <span>
-                        <span className="a__size__large coupon__barText">
-                            Kay's Coupons
-                        </span>
-                        <img alt={verticalBar} src={verticalBar}/>
-                        <section className="coupon__columnTxt">
-                            <div>
-                                <span className="a__size__small a__color__secondary">
-                                Clipped
-                                </span>
-                            </div>
-                            <div>
-                                <span className="a__size__large a__color__base">0</span>
-                                <span className="a__size__large a__color__base"> Coupons</span>  
-                                <Link to="/" className="a__size__small a__color__link d-block">View Coupons</Link>
-                            </div>
-                        </section>
-                        <section className="coupon__columnTxt">
-                            <div>
-                                <span className="a__size__small a__color__secondary">
-                                Expiring Soon
-                                </span>
-                            </div>
-                            <div>
-                                <span className="a__size__large a__color__base">1</span>
-                                <span className="a__size__large a__color__base"> Coupon</span>  
-                                <Link to="/" className="a__size__small a__color__link d-block">View Coupons</Link>
-                            </div>
-                        </section>
-                        <section className="coupon__barColumnTxt">
-                            <span className="a__size__mini a__color__secondary">
-                                Discounts applied at checkout or on first subscription. Some coupons may only be available to Prime members.&nbsp;
-                                <UncontrolledDropdown onMouseOver={couponEnter} onMouseLeave={couponLeave} isOpen={popoverCoupon} toggle={""} inNavbar>
-                                    <DropdownToggle nav tag="span" className="a__browser__link">
-                                        Some restrictions apply.
-                                        <i className="a__icon a__icon__popover"></i>
-                                    </DropdownToggle>
-                                    <CouponModal />
-                                </UncontrolledDropdown>
-                            </span>
-                        </section>
+    const CouponPage = () => (
+        <section className="a__container">
+            <section className="row mx-0 coupon">
+                <Link to="/">
+                    <img src={scissors} className="coupon__scissors"/>
+                </Link>
+                <span>
+                    <span className="a__size__large coupon__barText">
+                        Kay's Coupons
                     </span>
-                </section>
-                <section className="coupon__items d-flex mx-0 flex-fill">
-                    <section className="browserBox">
-                        <img src={subscribe_and_save} width="180" alt="Subscribe &amp; Save" height="120"/>
+                    <img alt={verticalBar} src={verticalBar}/>
+                    <section className="coupon__columnTxt">
+                        <div>
+                            <span className="a__size__small a__color__secondary">
+                            Clipped
+                            </span>
+                        </div>
+                        <div>
+                            <span className="a__size__large a__color__base">0</span>
+                            <span className="a__size__large a__color__base"> Coupons</span>  
+                            <Link to="/" className="a__size__small a__color__link d-block">View Coupons</Link>
+                        </div>
                     </section>
-                    <section className="coupon__apBrowse apBrowse">
-                        <h1 className="coupon__apBrowseHeading">
-                            <b>Amazon Coupons</b>
-                        </h1>
-                        <p className="coupon__paraText">
-                            Sign in to see all your available coupons. To redeem a coupon, click on a time-limited coupon below and then add the item to your cart. The discount will be automatically applied when you check out. Some coupons may be available to Prime members only.&nbsp;
-                            <Link to="/promotions/details" className="a__browser__link" onClick={(evt)=>promoModal(evt)}>
-                                Some restrictions apply
-                            </Link>
-                        </p>
-                        <section>
-                            <CouponCarousel
-                                heading={<>Electronics &amp; Wireless</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: getihu_car_phone,
-                                                    save: 2, 
-                                                    altText: "Getihu Car Phone",
-                                                    caption: "Getihu Car Phone"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: selfie_stick_tripod,
-                                                    save: 2, 
-                                                    altText: "Selfie Stick Tripod",
-                                                    caption: "Selfie Stick Tripod"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: arccra_iphone_charger,
-                                                    save: 2, 
-                                                    altText: "Arccra iPhone Charger",
-                                                    caption: "Arccra iPhone Charger"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: fast_wireless_charger,
-                                                    save: 2, 
-                                                    altText: "Fast Wireless Charger",
-                                                    caption: "Fast Wireless Charger"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: lisen_phone_holder_car,
-                                                    save: 2, 
-                                                    altText: "Lisen Phoneholder Car",
-                                                    caption: "Lisen Phoneholder Car"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: upgraded_1080p_webcam_2021,
-                                                    save: 2, 
-                                                    altText: "Upgraded 1080p Webcam 2021",
-                                                    caption: "Upgraded 1080p Webcam 2021"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Toys &amp; Games</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: water_gun_2_pack_970cc_high,
-                                                    save: 2, 
-                                                    altText: "Water Gun 2 Pack 970cc High",
-                                                    caption: "Water Gun 2 Pack 970cc High"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: eastshining_upgraded,
-                                                    save: 2, 
-                                                    altText: "Eastshining Upgraded",
-                                                    caption: "Eastshining Upgraded"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: beach_sand_toys_set_outdoor,
-                                                    save: 2, 
-                                                    altText: "Beach Sand Toys Set Outdoor",
-                                                    caption: "Beach Sand Toys Set Outdoor"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: holy_stone_hs110d_fpv_rc_drone,
-                                                    save: 2, 
-                                                    altText: "Holy Stone HS110D FPV RC Drone",
-                                                    caption: "Holy Stone HS110D FPV RC Drone"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: aohu_hover_hockey_soccer,
-                                                    save: 2, 
-                                                    altText: "Aohu Hover Hockey Soccer",
-                                                    caption: "Aohu Hover Hockey Soccer"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: deerc_d_20_mini_drone_foldable,
-                                                    save: 2, 
-                                                    altText: "Deerc d20 Mini Drone Foldable",
-                                                    caption: "Deerc d20 Mini Drone Foldable"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Home, Garden &amp; Tools</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: flexi_hose_upgraded,
-                                                    save: 2, 
-                                                    altText: "Flexi Hose Upgraded",
-                                                    caption: "Flexi Hose Upgraded"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: lefant_robot_vacuum_cleaner,
-                                                    save: 2, 
-                                                    altText: "Lefant Robot Vacuum Cleaner",
-                                                    caption: "Lefant Robot Vacuum Cleaner"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: side_sleeper_contour_memory_foam_pillow,
-                                                    save: 2, 
-                                                    altText: "Side Sleeper Contour Memory Foam Pillow",
-                                                    caption: "Side Sleeper Contour Memory Foam Pillow"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: fifty_ft_led_light_strips_vilsom,
-                                                    save: 2, 
-                                                    altText: "Fifty ft Led Light Strips Vilsom",
-                                                    caption: "Fifty ft Led Light Strips Vilsom"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: teckin_smart_plug_mini_wifi_outlet,
-                                                    save: 2, 
-                                                    altText: "Teckin Smart Plug Mini Wifi Outlet",
-                                                    caption: "Teckin Smart Plug Mini Wifi Outlet"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: water_gun_2_pack_970cc_high,
-                                                    save: 2, 
-                                                    altText: "Water Gun 2 Pack 970cc High",
-                                                    caption: "Water Gun 2 Pack 970cc High"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Grocery</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: bestpresso_coffee_for_nespresso_original,
-                                                    save: 2, 
-                                                    altText: "Bestpresso Coffee for Nespresso Original",
-                                                    caption: "Bestpresso Coffee for Nespresso Original"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: organic_plant_based_canadian_protein,
-                                                    save: 2, 
-                                                    altText: "Organic Plant Based Canadian Protein",
-                                                    caption: "Organic Plant Based Canadian Protein"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: pureshrooms_mushroom_coffee,
-                                                    save: 2, 
-                                                    altText: "Pureshrooms Mushroom Coffee",
-                                                    caption: "Pureshrooms Mushroom Coffee"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: ground_coffee_medium_roast,
-                                                    save: 2, 
-                                                    altText: "Ground Coffee Medium Roast",
-                                                    caption: "Ground Coffee Medium Roast"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: traditional_ghee_clarified_butter,
-                                                    save: 2, 
-                                                    altText: "Traditional Ghee Clarified Butter",
-                                                    caption: "Traditional Ghee Clarified Butter"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: pureshrooms_mushroom_coffee_immune_booster,
-                                                    save: 2, 
-                                                    altText: "Pureshrooms Mushroom Coffee Immune Booster",
-                                                    caption: "Pureshrooms Mushroom Coffee Immune Booster"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Pets</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: patpet_dog_training_collar_dog_shock,
-                                                    save: 2, 
-                                                    altText: "Patpet Dog Training Collar Dog Shock",
-                                                    caption: "Patpet Dog Training Collar Dog Shock"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: patpet_dog_training_collar_dog_shock,
-                                                    save: 2, 
-                                                    altText: "Patpet Dog Training Collar Dog Shock",
-                                                    caption: "Patpet Dog Training Collar Dog Shock"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: patpet_dog_training_collar_dog_shock,
-                                                    save: 2, 
-                                                    altText: "Patpet Dog Training Collar Dog Shock",
-                                                    caption: "Patpet Dog Training Collar Dog Shock"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: patpet_dog_training_collar_dog_shock,
-                                                    save: 2, 
-                                                    altText: "Patpet Dog Training Collar Dog Shock",
-                                                    caption: "Patpet Dog Training Collar Dog Shock"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: patpet_dog_training_collar_dog_shock,
-                                                    save: 2, 
-                                                    altText: "Patpet Dog Training Collar Dog Shock",
-                                                    caption: "Patpet Dog Training Collar Dog Shock"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: patpet_dog_training_collar_dog_shock,
-                                                    save: 2, 
-                                                    altText: "Patpet Dog Training Collar Dog Shock",
-                                                    caption: "Patpet Dog Training Collar Dog Shock"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Fashion &amp; Accessories</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: umidigi_smart_watch_fitness_tracker,
-                                                    save: 2, 
-                                                    altText: "Umidigi Smart Watch Fitness Tracker",
-                                                    caption: "Umidigi Smart Watch Fitness Tracker"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: umidigi_smart_watch_fitness_tracker,
-                                                    save: 2, 
-                                                    altText: "Umidigi Smart Watch Fitness Tracker",
-                                                    caption: "Umidigi Smart Watch Fitness Tracker"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: umidigi_smart_watch_fitness_tracker,
-                                                    save: 2, 
-                                                    altText: "Umidigi Smart Watch Fitness Tracker",
-                                                    caption: "Umidigi Smart Watch Fitness Tracker"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: umidigi_smart_watch_fitness_tracker,
-                                                    save: 2, 
-                                                    altText: "Umidigi Smart Watch Fitness Tracker",
-                                                    caption: "Umidigi Smart Watch Fitness Tracker"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: umidigi_smart_watch_fitness_tracker,
-                                                    save: 2, 
-                                                    altText: "Umidigi Smart Watch Fitness Tracker",
-                                                    caption: "Umidigi Smart Watch Fitness Tracker"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: umidigi_smart_watch_fitness_tracker,
-                                                    save: 2, 
-                                                    altText: "Umidigi Smart Watch Fitness Tracker",
-                                                    caption: "Umidigi Smart Watch Fitness Tracker"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Beauty</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: neutrogena_daily_foaming_facia,
-                                                    save: 2, 
-                                                    altText: "Neutrogena Daily Foaming Facia",
-                                                    caption: "Neutrogena Daily Foaming Facia"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: neutrogena_daily_foaming_facia,
-                                                    save: 2, 
-                                                    altText: "Neutrogena Daily Foaming Facia",
-                                                    caption: "Neutrogena Daily Foaming Facia"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: neutrogena_daily_foaming_facia,
-                                                    save: 2, 
-                                                    altText: "Neutrogena Daily Foaming Facia",
-                                                    caption: "Neutrogena Daily Foaming Facia"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: neutrogena_daily_foaming_facia,
-                                                    save: 2, 
-                                                    altText: "Neutrogena Daily Foaming Facia",
-                                                    caption: "Neutrogena Daily Foaming Facia"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: neutrogena_daily_foaming_facia,
-                                                    save: 2, 
-                                                    altText: "Neutrogena Daily Foaming Facia",
-                                                    caption: "Neutrogena Daily Foaming Facia"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: neutrogena_daily_foaming_facia,
-                                                    save: 2, 
-                                                    altText: "Neutrogena Daily Foaming Facia",
-                                                    caption: "Neutrogena Daily Foaming Facia"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                    
-                                }
-                            />
-                            <CouponCarousel
-                                heading={<>Health &amp; Personal Care</>}
-                                sort={"Sort by Category"}
-                                optionList={ 
-                                    <>
-                                        <option aria-label="newest" value="newest">Newest</option> 
-                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                            Discount Percentage
-                                        </option> 
-                                    </>
-                                }
-                                slider={
-                                    <Slider 
-                                        type={"coupon"}
-                                        carouselClass={"amzn__carousel"}
-                                        count={6}
-                                        items={
-                                            [
-                                                {
-                                                    href: '/',
-                                                    src: muscle_massage_gun_deep_tissue_percussion,
-                                                    save: 2, 
-                                                    altText: "Muscle Massage Gun Deep Tissue Percussion",
-                                                    caption: "Muscle Massage Gun Deep Tissue Percussion"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: muscle_massage_gun_deep_tissue_percussion,
-                                                    save: 2, 
-                                                    altText: "Muscle Massage Gun Deep Tissue Percussion",
-                                                    caption: "Muscle Massage Gun Deep Tissue Percussion"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: muscle_massage_gun_deep_tissue_percussion,
-                                                    save: 2, 
-                                                    altText: "Muscle Massage Gun Deep Tissue Percussion",
-                                                    caption: "Muscle Massage Gun Deep Tissue Percussion"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: muscle_massage_gun_deep_tissue_percussion,
-                                                    save: 2, 
-                                                    altText: "Muscle Massage Gun Deep Tissue Percussion",
-                                                    caption: "Muscle Massage Gun Deep Tissue Percussion"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: muscle_massage_gun_deep_tissue_percussion,
-                                                    save: 2, 
-                                                    altText: "Muscle Massage Gun Deep Tissue Percussion",
-                                                    caption: "Muscle Massage Gun Deep Tissue Percussion"
-                                                },
-                                                {
-                                                    href: '/',
-                                                    src: muscle_massage_gun_deep_tissue_percussion,
-                                                    save: 2, 
-                                                    altText: "Muscle Massage Gun Deep Tissue Percussion",
-                                                    caption: "Muscle Massage Gun Deep Tissue Percussion"
-                                                }
-                                            ]
-                                        }
-                                    />
-                                    
-                                }
-                            />
-                            <section className="coupon__box">
-                                <header className="coupon__boxHeader">
-                                    <BackArrow />
-                                    <span className="a__size__medium__ii a__color__tertiary">
-                                        Coupons homepage
+                    <section className="coupon__columnTxt">
+                        <div>
+                            <span className="a__size__small a__color__secondary">
+                            Expiring Soon
+                            </span>
+                        </div>
+                        <div>
+                            <span className="a__size__large a__color__base">1</span>
+                            <span className="a__size__large a__color__base"> Coupon</span>  
+                            <Link to="/" className="a__size__small a__color__link d-block">View Coupons</Link>
+                        </div>
+                    </section>
+                    <section className="coupon__barColumnTxt">
+                        <span className="a__size__mini a__color__secondary">
+                            Discounts applied at checkout or on first subscription. Some coupons may only be available to Prime members.&nbsp;
+                            <UncontrolledDropdown onMouseOver={couponEnter} onMouseLeave={couponLeave} isOpen={popoverCoupon} toggle={""} inNavbar>
+                                <DropdownToggle nav tag="span" className="a__browser__link">
+                                    Some restrictions apply.
+                                    <i className="a__icon a__icon__popover"></i>
+                                </DropdownToggle>
+                                <CouponModal />
+                            </UncontrolledDropdown>
+                        </span>
+                    </section>
+                </span>
+            </section>
+            <section className="coupon__items d-flex mx-0 flex-fill">
+                <section className="browserBox">
+                    <img src={subscribe_and_save} width="180" alt="Subscribe &amp; Save" height="120"/>
+                </section>
+                <section className="coupon__apBrowse apBrowse">
+                    <h1 className="coupon__apBrowseHeading">
+                        <b>Amazon Coupons</b>
+                    </h1>
+                    <p className="coupon__paraText">
+                        Sign in to see all your available coupons. To redeem a coupon, click on a time-limited coupon below and then add the item to your cart. The discount will be automatically applied when you check out. Some coupons may be available to Prime members only.&nbsp;
+                        <Link to="/promotions/details" className="a__browser__link" onClick={(evt)=>promoModal(evt)}>
+                            Some restrictions apply
+                        </Link>
+                    </p>
+                    <section>
+                        <CouponCarousel
+                            heading={<>Electronics &amp; Wireless</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: getihu_car_phone,
+                                                save: 2, 
+                                                altText: "Getihu Car Phone",
+                                                caption: "Getihu Car Phone"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: selfie_stick_tripod,
+                                                save: 2, 
+                                                altText: "Selfie Stick Tripod",
+                                                caption: "Selfie Stick Tripod"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: arccra_iphone_charger,
+                                                save: 2, 
+                                                altText: "Arccra iPhone Charger",
+                                                caption: "Arccra iPhone Charger"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: fast_wireless_charger,
+                                                save: 2, 
+                                                altText: "Fast Wireless Charger",
+                                                caption: "Fast Wireless Charger"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: lisen_phone_holder_car,
+                                                save: 2, 
+                                                altText: "Lisen Phoneholder Car",
+                                                caption: "Lisen Phoneholder Car"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: upgraded_1080p_webcam_2021,
+                                                save: 2, 
+                                                altText: "Upgraded 1080p Webcam 2021",
+                                                caption: "Upgraded 1080p Webcam 2021"
+                                            }
+                                        ]
+                                    }
+                                />
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Toys &amp; Games</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: water_gun_2_pack_970cc_high,
+                                                save: 2, 
+                                                altText: "Water Gun 2 Pack 970cc High",
+                                                caption: "Water Gun 2 Pack 970cc High"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: eastshining_upgraded,
+                                                save: 2, 
+                                                altText: "Eastshining Upgraded",
+                                                caption: "Eastshining Upgraded"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: beach_sand_toys_set_outdoor,
+                                                save: 2, 
+                                                altText: "Beach Sand Toys Set Outdoor",
+                                                caption: "Beach Sand Toys Set Outdoor"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: holy_stone_hs110d_fpv_rc_drone,
+                                                save: 2, 
+                                                altText: "Holy Stone HS110D FPV RC Drone",
+                                                caption: "Holy Stone HS110D FPV RC Drone"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: aohu_hover_hockey_soccer,
+                                                save: 2, 
+                                                altText: "Aohu Hover Hockey Soccer",
+                                                caption: "Aohu Hover Hockey Soccer"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: deerc_d_20_mini_drone_foldable,
+                                                save: 2, 
+                                                altText: "Deerc d20 Mini Drone Foldable",
+                                                caption: "Deerc d20 Mini Drone Foldable"
+                                            }
+                                        ]
+                                    }
+                                />
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Home, Garden &amp; Tools</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: flexi_hose_upgraded,
+                                                save: 2, 
+                                                altText: "Flexi Hose Upgraded",
+                                                caption: "Flexi Hose Upgraded"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: lefant_robot_vacuum_cleaner,
+                                                save: 2, 
+                                                altText: "Lefant Robot Vacuum Cleaner",
+                                                caption: "Lefant Robot Vacuum Cleaner"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: side_sleeper_contour_memory_foam_pillow,
+                                                save: 2, 
+                                                altText: "Side Sleeper Contour Memory Foam Pillow",
+                                                caption: "Side Sleeper Contour Memory Foam Pillow"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: fifty_ft_led_light_strips_vilsom,
+                                                save: 2, 
+                                                altText: "Fifty ft Led Light Strips Vilsom",
+                                                caption: "Fifty ft Led Light Strips Vilsom"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: teckin_smart_plug_mini_wifi_outlet,
+                                                save: 2, 
+                                                altText: "Teckin Smart Plug Mini Wifi Outlet",
+                                                caption: "Teckin Smart Plug Mini Wifi Outlet"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: water_gun_2_pack_970cc_high,
+                                                save: 2, 
+                                                altText: "Water Gun 2 Pack 970cc High",
+                                                caption: "Water Gun 2 Pack 970cc High"
+                                            }
+                                        ]
+                                    }
+                                />
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Grocery</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: bestpresso_coffee_for_nespresso_original,
+                                                save: 2, 
+                                                altText: "Bestpresso Coffee for Nespresso Original",
+                                                caption: "Bestpresso Coffee for Nespresso Original"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: organic_plant_based_canadian_protein,
+                                                save: 2, 
+                                                altText: "Organic Plant Based Canadian Protein",
+                                                caption: "Organic Plant Based Canadian Protein"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: pureshrooms_mushroom_coffee,
+                                                save: 2, 
+                                                altText: "Pureshrooms Mushroom Coffee",
+                                                caption: "Pureshrooms Mushroom Coffee"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: ground_coffee_medium_roast,
+                                                save: 2, 
+                                                altText: "Ground Coffee Medium Roast",
+                                                caption: "Ground Coffee Medium Roast"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: traditional_ghee_clarified_butter,
+                                                save: 2, 
+                                                altText: "Traditional Ghee Clarified Butter",
+                                                caption: "Traditional Ghee Clarified Butter"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: pureshrooms_mushroom_coffee_immune_booster,
+                                                save: 2, 
+                                                altText: "Pureshrooms Mushroom Coffee Immune Booster",
+                                                caption: "Pureshrooms Mushroom Coffee Immune Booster"
+                                            }
+                                        ]
+                                    }
+                                />
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Pets</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: patpet_dog_training_collar_dog_shock,
+                                                save: 2, 
+                                                altText: "Patpet Dog Training Collar Dog Shock",
+                                                caption: "Patpet Dog Training Collar Dog Shock"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: patpet_dog_training_collar_dog_shock,
+                                                save: 2, 
+                                                altText: "Patpet Dog Training Collar Dog Shock",
+                                                caption: "Patpet Dog Training Collar Dog Shock"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: patpet_dog_training_collar_dog_shock,
+                                                save: 2, 
+                                                altText: "Patpet Dog Training Collar Dog Shock",
+                                                caption: "Patpet Dog Training Collar Dog Shock"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: patpet_dog_training_collar_dog_shock,
+                                                save: 2, 
+                                                altText: "Patpet Dog Training Collar Dog Shock",
+                                                caption: "Patpet Dog Training Collar Dog Shock"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: patpet_dog_training_collar_dog_shock,
+                                                save: 2, 
+                                                altText: "Patpet Dog Training Collar Dog Shock",
+                                                caption: "Patpet Dog Training Collar Dog Shock"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: patpet_dog_training_collar_dog_shock,
+                                                save: 2, 
+                                                altText: "Patpet Dog Training Collar Dog Shock",
+                                                caption: "Patpet Dog Training Collar Dog Shock"
+                                            }
+                                        ]
+                                    }
+                                />
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Fashion &amp; Accessories</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: umidigi_smart_watch_fitness_tracker,
+                                                save: 2, 
+                                                altText: "Umidigi Smart Watch Fitness Tracker",
+                                                caption: "Umidigi Smart Watch Fitness Tracker"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: umidigi_smart_watch_fitness_tracker,
+                                                save: 2, 
+                                                altText: "Umidigi Smart Watch Fitness Tracker",
+                                                caption: "Umidigi Smart Watch Fitness Tracker"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: umidigi_smart_watch_fitness_tracker,
+                                                save: 2, 
+                                                altText: "Umidigi Smart Watch Fitness Tracker",
+                                                caption: "Umidigi Smart Watch Fitness Tracker"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: umidigi_smart_watch_fitness_tracker,
+                                                save: 2, 
+                                                altText: "Umidigi Smart Watch Fitness Tracker",
+                                                caption: "Umidigi Smart Watch Fitness Tracker"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: umidigi_smart_watch_fitness_tracker,
+                                                save: 2, 
+                                                altText: "Umidigi Smart Watch Fitness Tracker",
+                                                caption: "Umidigi Smart Watch Fitness Tracker"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: umidigi_smart_watch_fitness_tracker,
+                                                save: 2, 
+                                                altText: "Umidigi Smart Watch Fitness Tracker",
+                                                caption: "Umidigi Smart Watch Fitness Tracker"
+                                            }
+                                        ]
+                                    }
+                                />
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Beauty</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: neutrogena_daily_foaming_facia,
+                                                save: 2, 
+                                                altText: "Neutrogena Daily Foaming Facia",
+                                                caption: "Neutrogena Daily Foaming Facia"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: neutrogena_daily_foaming_facia,
+                                                save: 2, 
+                                                altText: "Neutrogena Daily Foaming Facia",
+                                                caption: "Neutrogena Daily Foaming Facia"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: neutrogena_daily_foaming_facia,
+                                                save: 2, 
+                                                altText: "Neutrogena Daily Foaming Facia",
+                                                caption: "Neutrogena Daily Foaming Facia"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: neutrogena_daily_foaming_facia,
+                                                save: 2, 
+                                                altText: "Neutrogena Daily Foaming Facia",
+                                                caption: "Neutrogena Daily Foaming Facia"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: neutrogena_daily_foaming_facia,
+                                                save: 2, 
+                                                altText: "Neutrogena Daily Foaming Facia",
+                                                caption: "Neutrogena Daily Foaming Facia"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: neutrogena_daily_foaming_facia,
+                                                save: 2, 
+                                                altText: "Neutrogena Daily Foaming Facia",
+                                                caption: "Neutrogena Daily Foaming Facia"
+                                            }
+                                        ]
+                                    }
+                                />
+                                
+                            }
+                        />
+                        <CouponCarousel
+                            heading={<>Health &amp; Personal Care</>}
+                            sort={"Sort by Category"}
+                            optionList={ 
+                                <>
+                                    <option aria-label="newest" value="newest">Newest</option> 
+                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                        Discount Percentage
+                                    </option> 
+                                </>
+                            }
+                            slider={
+                                <Slider 
+                                    type={"coupon"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                src: muscle_massage_gun_deep_tissue_percussion,
+                                                save: 2, 
+                                                altText: "Muscle Massage Gun Deep Tissue Percussion",
+                                                caption: "Muscle Massage Gun Deep Tissue Percussion"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: muscle_massage_gun_deep_tissue_percussion,
+                                                save: 2, 
+                                                altText: "Muscle Massage Gun Deep Tissue Percussion",
+                                                caption: "Muscle Massage Gun Deep Tissue Percussion"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: muscle_massage_gun_deep_tissue_percussion,
+                                                save: 2, 
+                                                altText: "Muscle Massage Gun Deep Tissue Percussion",
+                                                caption: "Muscle Massage Gun Deep Tissue Percussion"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: muscle_massage_gun_deep_tissue_percussion,
+                                                save: 2, 
+                                                altText: "Muscle Massage Gun Deep Tissue Percussion",
+                                                caption: "Muscle Massage Gun Deep Tissue Percussion"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: muscle_massage_gun_deep_tissue_percussion,
+                                                save: 2, 
+                                                altText: "Muscle Massage Gun Deep Tissue Percussion",
+                                                caption: "Muscle Massage Gun Deep Tissue Percussion"
+                                            },
+                                            {
+                                                href: '/',
+                                                src: muscle_massage_gun_deep_tissue_percussion,
+                                                save: 2, 
+                                                altText: "Muscle Massage Gun Deep Tissue Percussion",
+                                                caption: "Muscle Massage Gun Deep Tissue Percussion"
+                                            }
+                                        ]
+                                    }
+                                />
+                                
+                            }
+                        />
+                        <section className="coupon__box">
+                            <header className="coupon__boxHeader">
+                                <BackArrow />
+                                <span className="a__size__medium__ii a__color__tertiary">
+                                    Coupons homepage
+                                </span>
+                                <RightArrowCarrot />
+                            </header>
+                            <section className="coupon__grid">
+                                <div className="text-left">
+                                    <span className="coupon__gridSort">
+                                        Sort by: &nbsp;
                                     </span>
-                                    <RightArrowCarrot />
-                                </header>
-                                <section className="coupon__grid">
-                                    <div className="text-left">
-                                        <span className="coupon__gridSort">
-                                            Sort by: &nbsp;
-                                        </span>
-                                        <span className="d-inline-block">
-                                            <DropdownMenuPrimary
-                                                optionList={ 
-                                                    <>
-                                                        <option aria-label="newest" value="newest">Newest</option> 
-                                                        <option aria-label="oldest" value="oldest">Oldest</option>
-                                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
-                                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
-                                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
-                                                            Discount Percentage
-                                                        </option> 
-                                                    </>
+                                    <span className="d-inline-block">
+                                        <DropdownMenuPrimary
+                                            optionList={ 
+                                                <>
+                                                    <option aria-label="newest" value="newest">Newest</option> 
+                                                    <option aria-label="oldest" value="oldest">Oldest</option>
+                                                    <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                                    <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                                    <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                                        Discount Percentage
+                                                    </option> 
+                                                </>
+                                            }
+                                            squished={true}
+                                        />
+                                    </span>
+                                </div>
+                                <section className="coupon__gridInner">
+                                    <CouponBox
+                                        img={
+                                            [
+                                                {
+                                                    src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                    alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
                                                 }
-                                                squished={true}
+                                            ]
+                                        }
+                                        save={3}
+                                        caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                        button={
+                                            <CouponBtn />
+                                        }
+                                    />
+                                    <CouponBox
+                                        img={
+                                            [
+                                                {
+                                                    src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                    alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                }
+                                            ]
+                                        }
+                                        save={3}
+                                        caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                        button={
+                                            <CouponBtn />
+                                        }
+                                    />
+                                    <CouponBox
+                                        img={
+                                            [
+                                                {
+                                                    src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                    alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                }
+                                            ]
+                                        }
+                                        save={3}
+                                        caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                        button={
+                                            <CouponBtn />
+                                        }
+                                    />
+                                    <CouponBox
+                                        img={
+                                            [
+                                                {
+                                                    src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                    alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                }
+                                            ]
+                                        }
+                                        save={3}
+                                        caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                        button={
+                                            <CouponBtn 
+                                                text={"View Details"}
                                             />
-                                        </span>
+                                        }
+                                    />
+                                    <CouponBox
+                                        img={
+                                            [
+                                                {
+                                                    src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
+                                                    alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
+                                                }
+                                            ]
+                                        }
+                                        save={3}
+                                        caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
+                                        button={
+                                            <CouponBtn />
+                                        }
+                                    />
+                                    <div className="coupon__getMore d-inline-block">
+                                        Show More Coupons 
                                     </div>
-                                    <section className="coupon__gridInner">
-                                        <CouponBox
-                                            img={
-                                                [
-                                                    {
-                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
-                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
-                                                    }
-                                                ]
-                                            }
-                                            save={3}
-                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
-                                            button={
-                                                <CouponBtn />
-                                            }
-                                        />
-                                        <CouponBox
-                                            img={
-                                                [
-                                                    {
-                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
-                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
-                                                    }
-                                                ]
-                                            }
-                                            save={3}
-                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
-                                            button={
-                                                <CouponBtn />
-                                            }
-                                        />
-                                        <CouponBox
-                                            img={
-                                                [
-                                                    {
-                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
-                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
-                                                    }
-                                                ]
-                                            }
-                                            save={3}
-                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
-                                            button={
-                                                <CouponBtn />
-                                            }
-                                        />
-                                        <CouponBox
-                                            img={
-                                                [
-                                                    {
-                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
-                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
-                                                    }
-                                                ]
-                                            }
-                                            save={3}
-                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
-                                            button={
-                                                <CouponBtn 
-                                                    text={"View Details"}
-                                                />
-                                            }
-                                        />
-                                        <CouponBox
-                                            img={
-                                                [
-                                                    {
-                                                        src : wireless_earbuds_holyhigh_bluetooth_earbuds_touch,
-                                                        alt : wireless_earbuds_holyhigh_bluetooth_earbuds_touch
-                                                    }
-                                                ]
-                                            }
-                                            save={3}
-                                            caption={"Wireless Earbuds, HolyHigh Bluetooth Earbuds Touch Control True Wireless Earbuds with Hi-Fi Stereo Audio, Noise Reduction, Waterproof Ear Buds, 25H Playtime, Built-in Mic for Work/Travel/Gym"}
-                                            button={
-                                                <CouponBtn />
-                                            }
-                                        />
-                                        <div className="coupon__getMore d-inline-block">
-                                            Show More Coupons 
-                                        </div>
-                                    </section>
                                 </section>
-                                <section className="coupon__widget">
-                                    <h2>More About Amazon Coupons</h2>
-                                    <p>Enjoy coupon savings without the hassle of clipping. Amazon Coupons showcases coupon discounts from top brands within Grocery, Health &amp; Beauty, Electronics, Home Improvement, Movies, and more. Browse through the current coupon offers listed above. "Clip" the coupon by clicking on the specific deal you're interested in and add the product to your cart. The discount is automatically applied at checkout when you purchase the coupon-eligible product. Never leave the coupon book at home or walk out of the store without redeeming your discounts again. It's that easy.</p><p>New coupon offers become available frequently. Be sure to check back regularly to discover new deals to save you dollars.</p>
-                                    <p>Sign in to see all your available coupons.</p>
-                                    <div class="h_rule"></div>
-                                </section>
+                            </section>
+                            <section className="coupon__widget">
+                                <h2>More About Amazon Coupons</h2>
+                                <p>Enjoy coupon savings without the hassle of clipping. Amazon Coupons showcases coupon discounts from top brands within Grocery, Health &amp; Beauty, Electronics, Home Improvement, Movies, and more. Browse through the current coupon offers listed above. "Clip" the coupon by clicking on the specific deal you're interested in and add the product to your cart. The discount is automatically applied at checkout when you purchase the coupon-eligible product. Never leave the coupon book at home or walk out of the store without redeeming your discounts again. It's that easy.</p><p>New coupon offers become available frequently. Be sure to check back regularly to discover new deals to save you dollars.</p>
+                                <p>Sign in to see all your available coupons.</p>
+                                <div class="h_rule"></div>
                             </section>
                         </section>
                     </section>
                 </section>
             </section>
+        </section>
+    )
+    
+    return (
+        <Layout>
+            <CouponPage />
         </Layout>
     )
 }

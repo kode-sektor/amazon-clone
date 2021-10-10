@@ -30,6 +30,7 @@ import Advertising from "./pages/Advertising"
 import IndependentPublication from "./pages/IndependentPublication"
 import AmazonHub from "./pages/AmazonHub"
 import MastercardReward from "./pages/MastercardReward"
+import ShopWithPoints from "./pages/ShopWithPoints"
 
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
                     <Route path="/independent-publication" component={IndependentPublication}/>
                     <Route path="/amazon-hub" component={AmazonHub}/>
                     <Route path="/mastercard-reward" component={MastercardReward}/>
+                    <Route path="/shop-with-points" component={ShopWithPoints}/>
                 </Switch>
             </Router>
         </div>

@@ -2429,6 +2429,30 @@ ul.list__indent {
 .bxc__grid__divider hr {
     margin: 0;
 }
+.bxc__grid__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.bxc__grid__overlay .bxc__grid__overlay__link {
+    display: block;
+    height: 100%;
+    color: var(--mainlink);
+}
+.bxc__grid__text__light.bxc__grid__overlay__background {
+    background: rgba(255,255,255,.9);
+}
+.bxc__grid__valign {
+    display: inline-block !important;
+    height: 100%;
+    width: 0;
+}
+.bxc__grid__valign__bottom {
+    vertical-align: bottom;
+}
 .bannerx0__background__image {
     height: 100%;
     width: 100%;

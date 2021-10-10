@@ -28,8 +28,8 @@ import './index.css'
 
 const YourAccount = () => {
     
-    return (
-        <Layout>
+    const YourAccountPage = () => (
+        <>
             <section className="a__container">
                 <div className="a__section">
                     <h1 className="a__spacing__base">
@@ -581,6 +581,12 @@ const YourAccount = () => {
                     }
                 />
             </section>
+        </>
+    )
+
+    return (
+        <Layout>
+            <YourAccountPage />
         </Layout>
     )
 }

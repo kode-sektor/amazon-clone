@@ -56,7 +56,6 @@ import LC1RsG3OIQSS from '../../images/LC1RsG3OIQSS.jpg'
 import L7181BvRP6YLS from '../../images/L7181BvRP6YLS.jpg' 
 import L613FQhDRGLLSL from '../../images/L613FQhDRGLLSL.jpg'
 
-
 import './index.css'
 
 const MastercardReward = () => {

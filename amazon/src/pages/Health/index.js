@@ -25,8 +25,9 @@ import duracell_coppertop from '../../images/products/duracell-coppertop-aa-alka
 import './index.css'
     
 const Health = () => {
-    return (
-        <Layout>
+    
+    const HealthPage = () => (
+        <>
             <section className="bxc__grid__container bxc__grid__container__width__1500">
                 <div className="bxc__grid__row bxc__grid__row__light">
                     <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
@@ -1536,6 +1537,12 @@ const Health = () => {
                     </section>
                 </section>
             </section>
+        </>
+    )
+
+    return (
+        <Layout>
+            <HealthPage />
         </Layout>
     )
 }

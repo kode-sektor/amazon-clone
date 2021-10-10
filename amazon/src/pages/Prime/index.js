@@ -59,8 +59,8 @@ const Prime = () => {
         )
     }
 
-    return (
-        <Layout>
+    const PrimePage = () => (
+        <>
             <section className={`primeTop ${slide}`}>
                 <PrimeDropdown
                     slide={slide}
@@ -327,6 +327,12 @@ const Prime = () => {
                     </section>
                 </section>
             </section>
+        </>
+    )
+
+    return (
+        <Layout>
+            <PrimePage />
         </Layout>
     )
 }

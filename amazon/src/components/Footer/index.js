@@ -74,7 +74,7 @@ const Footer = (props) => {
                     menu={
                             [
                                 { label: "Amazon.ca Rewards Mastercard", href: "/mastercard-reward", icon: null },
-                                { label: "Shop with Points", href: "/", icon: null },
+                                { label: "Shop with Points", href: "/shop-with-points", icon: null },
                                 { label: "Reload Your Balance", href: "/", icon: null },
                                 { label: "Amazon Currency Converter", href: "/", icon: null },
                                 { label: "Gift Cards", href: "/", icon: null },

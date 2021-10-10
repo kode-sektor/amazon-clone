@@ -15,8 +15,9 @@ import profile from '../../images/profile.png'
 import './index.css'
 
 const HelpCustomer = () => {
-    return (
-        <Layout>
+
+    const HelpCustomerPage = () => (
+        <>
             <section className="switchLang">
                 <p className="mb-0">
                     Vous voulez voir cette page en français ? <Link to="/switch-language"> Cliquez ici</Link>
@@ -314,6 +315,12 @@ const HelpCustomer = () => {
                     </section>
                 </section>
             </main>
+        </>
+    )
+
+    return (
+        <Layout>
+            <HelpCustomerPage />
         </Layout>
     )
 }

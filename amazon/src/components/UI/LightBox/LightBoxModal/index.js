@@ -53,7 +53,7 @@ const LightBoxModal = ({ galleryList, imageDetails, showPrev, showNext, showPrev
             <section className="popover__panel lightbox__panel d-block">
                 <div className="popover__panel__container lightbox">
                     <header className="popover__panel__heading">
-                        <h5 className="popover__panel__title">SECOND PANEL</h5>
+                        <h5 className="popover__panel__title"></h5>
                         <Button className="popover__panel__close" outline color="secondary" onClick={lightBoxClose}>
                             <i class="popover__close"></i>
                         </Button>

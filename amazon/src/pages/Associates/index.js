@@ -39,7 +39,7 @@ const Associates = () => {
     const countrydropdownEnter = () => setCountrydropdownOpen(true)
     const countrydropdownLeave = () => setCountrydropdownOpen(false)
 
-    return (
+    const AssociatesPage = () => (
         <div className="associates--page">
             <header className="associates__header">
                 <div className="associates--wrapper d-flex">
@@ -275,6 +275,10 @@ const Associates = () => {
                 </div>
             </footer>
         </div>
+    )
+
+    return (
+        <AssociatesPage />
     )
 }
 

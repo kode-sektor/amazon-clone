@@ -34,7 +34,7 @@ const Advertising = () => {
     const toggleObjective = () => setDropdownOpenObjective(prevState => !prevState)
     const toggleMarketPlace = () => setDropdownOpenMarketPlace(prevState => !prevState)
 
-    return (
+    const AdvertisingPage = () => (
         <div className="advertising--page">
             <header className="advertising__header">
                 <Navbar className="advertising__nav">
@@ -530,6 +530,10 @@ const Advertising = () => {
                 </div>
             </footer>
         </div>
+    )
+
+    return (
+        <AdvertisingPage/>
     )
 }
 

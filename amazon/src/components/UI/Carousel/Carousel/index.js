@@ -356,25 +356,26 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 					</CarouselItem>
 				)
 			})
-		} else if (type === "affiliate") {
-			slides = items.map((item, index) => {
-				const {caption, text, src} = item
-				return (
-					<CarouselItem
-						onExiting={() => setAnimating(true)}
-						onExited={() => setAnimating(false)}
-						key={item.src}
-					>
-						<section>
-							<CarouselCaption
-								captionText={text}
-								captionHeader={caption}
-							/>
-						</section>
-					</CarouselItem>
-				)
-			})
-		}
+		} 
+		// else if (type === "affiliate") {
+		// 	slides = items.map((item, index) => {
+		// 		const {caption, text, src} = item
+		// 		return (
+		// 			<CarouselItem
+		// 				onExiting={() => setAnimating(true)}
+		// 				onExited={() => setAnimating(false)}
+		// 				key={item.src}
+		// 			>
+		// 				<section>
+		// 					<CarouselCaption
+		// 						captionText={text}
+		// 						captionHeader={caption}
+		// 					/>
+		// 				</section>
+		// 			</CarouselItem>
+		// 		)
+		// 	})
+		// }
 		else {
 			slides = items.map((item) => {
 				return (
@@ -406,14 +407,14 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 			previous={previous}
 			interval={interval}
 		>
-			{(type === "prime" || type === "affiliate") && // Carousel indicators should show for only prime slider
-				(
+			{/* {(type === "prime" || type === "affiliate") && // Carousel indicators should show for only prime slider
+				( */}
 					<CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-				)
-			}
+				{/* )
+			} */}
 			{slide()}
-			{
-				!giftCardAux || (type !== "affiliate") (
+			{/* {
+				!giftCardAux || (type !== "affiliate") ( */}
 					<>
 						<CarouselControl
 							className={carouselClass && (`${carouselClass}__control`)}
@@ -428,8 +429,8 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 							onClickHandler={next}
 						/>
 					</>
-				)
-			}
+				{/* )
+			} */}
 			{
 				// Add hr in HomeImprovement page
 				id=="homeImprovement" && (

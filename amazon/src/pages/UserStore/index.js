@@ -20,8 +20,9 @@ import faux_leather from '../../images/products/best-choice-products-faux-leathe
 import './index.css'
 
 const UserStore = () => {
-    return (
-        <Layout>
+
+    const UserStorePage = () => (
+        <>
             <section className="yourStore">
                 <div className="yourStore__center">
                     <section>
@@ -503,6 +504,12 @@ const UserStore = () => {
                     }
                 />
             </section>
+        </>
+    )
+
+    return (
+        <Layout>
+            <UserStorePage />
         </Layout>
     )
 }
