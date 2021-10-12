@@ -31,6 +31,7 @@ import IndependentPublication from "./pages/IndependentPublication"
 import AmazonHub from "./pages/AmazonHub"
 import MastercardReward from "./pages/MastercardReward"
 import ShopWithPoints from "./pages/ShopWithPoints"
+import BalanceReload from "./pages/BalanceReload"
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
                     <Route path="/amazon-hub" component={AmazonHub}/>
                     <Route path="/mastercard-reward" component={MastercardReward}/>
                     <Route path="/shop-with-points" component={ShopWithPoints}/>
+                    <Route path="/balance-reload" component={BalanceReload}/>
                 </Switch>
             </Router>
         </div>

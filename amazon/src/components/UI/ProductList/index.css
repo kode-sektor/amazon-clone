@@ -1,0 +1,8 @@
+.product__details {
+    margin-bottom: 4.5px;
+}
+.product__disclaim {
+    margin-top: 3px;
+    font-size: 10px;
+    color: var(--grey-tone-49);
+}

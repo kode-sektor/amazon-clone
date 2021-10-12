@@ -21,3 +21,11 @@
 .navBreadcrumb li:last-child:after {
     content: "";
 }
+.breadcrumb__pageNav {
+    padding: 0 16px !important;
+    margin-bottom: 0 !important;
+    margin-top: 8px !important;
+}
+.breadcrumb__pageNav .a__unordered__list li {
+    margin-right: .4235em;
+}

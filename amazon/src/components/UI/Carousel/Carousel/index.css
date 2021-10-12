@@ -30,6 +30,9 @@
     width: auto;
     margin: 0 40px;
 }
+.carousel__detailed .squished .carousel-inner {
+    height: auto;
+}
 .giftCardAux .carousel-inner {
     margin: 0;
 }
@@ -309,6 +312,11 @@
     width: 100%;
     border-radius: 5px;
     border: 1px solid var(--grey-tone-24);
+}
+.carousel__detailed__layout__inner.squished, 
+* .carousel__detailed:last-child .carousel__detailed__layout__inner.squished {
+    padding: 0;
+    border: none;
 }
 * .carousel__detailed:first-child .carousel__detailed__layout__inner {
     padding-top: 37px;

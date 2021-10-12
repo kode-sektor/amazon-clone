@@ -35,7 +35,7 @@ const DropdownMenuMini = ({optionList, squished=false}) => {
 
 // On 'http://localhost:3000/nav_cart' page
 // E:\KAY\Documents\html5\Experiment\NODE\amazon-clone\amazon\src\pages\NavCart\index.js
-const DropdownMenuCart = ({content, close}) => {
+const DropdownMenuCart = ({content, close, direction="left"}) => {
     return (
         <DropdownMenu className="productDropdown">
             <section className="a__popover__wrapper">
@@ -44,7 +44,7 @@ const DropdownMenuCart = ({content, close}) => {
                         <i className="a__icon a__icon__close"></i>
                     </button>
                     {content}
-                    <div className="a__arrow__border left">
+                    <div className={`a__arrow__border ${direction}`}>
                         <div className="a__arrow"></div>
                     </div>
                 </section>

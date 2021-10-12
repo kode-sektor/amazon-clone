@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom'
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
 import { PrimaryBtn, CartBtnSmall, CartBtn } from '../../Button'
-import Badge from '../../Badge'
+import { BestSellerAux } from '../../Badge'
 
 import './index.css'
 
-
 const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
-	 cartBtnSmall, interval=5000, addToCart=false}) => {
+	 cartBtnSmall, reorderStarPrice, interval=5000, addToCart=false}) => {
 
 	let itemLength = items.length
 
@@ -32,7 +31,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		if (animating) return;
 		const nextIndex = activeIndex === itemLength - 1 ? 0 : activeIndex + 1;
 		setActiveIndex(nextIndex);
-	};
+	}
 
 	const previous = () => {
 		if (animating) return;
@@ -64,7 +63,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 						<li className={(addToCart || viewDeal) && 'order__slider'}>
 							{
 								item.bestSellerAux && (
-									<Badge/>
+									<BestSellerAux/>
 								)
 							}
 							<figure>
@@ -116,14 +115,14 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 												}
 												{/*Reorder price and stars if on Gift cards page*/}
 												{ // For bottom (2nd) slider on Gift page
-													(carouselID === "amzn__gift__cards" && giftCardAux) && (
+													((carouselID === "amzn__gift__cards" && giftCardAux) || reorderStarPrice) && (
 														<span className={`amzn__carousel__star ${carouselID}`}></span>
 													)
 												}
 												{
 													// Only show price on bottom (2nd) slider on GiftCard Page
 													// or on Carousel of other pages
-													((carouselID !== "amzn__gift__cards" && !giftCardAux) || giftCardAux) ?
+													((carouselID !== "amzn__gift__cards" && !giftCardAux) || giftCardAux || reorderStarPrice) ?
 													(
 														<span className="amzn__carousel__count"> 1,833 </span>
 													) : 
@@ -131,8 +130,8 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 												}
 												{
 													item.price && 
-														(
-															<div className="a__spacing__micro">
+														(	
+															<div className="a__spacing__micro" style={{clear: "left"}}>
 																<span className="amzn__price">
 																	<span class="amzn__price__symbol">$</span>
 																	<span class="amzn__price__whole">40
@@ -145,12 +144,12 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 												}
 												{	// Show the stars below the price for 1st kind of slider in Gift page
 													// For top (1st) slider on Gift page
-													(carouselID === "amzn__gift__cards" && !giftCardAux) && (
+													((carouselID === "amzn__gift__cards" && !giftCardAux) && !reorderStarPrice) && (
 														<span className={`amzn__carousel__star ${carouselID}`}></span>
 													)
 												}
 												{
-													(carouselID === "amzn__gift__cards" && !giftCardAux) ?
+													(carouselID === "amzn__gift__cards" && !giftCardAux && !reorderStarPrice) ?
 													(
 														<span className="amzn__carousel__count"> (1,833) </span>
 													) : 

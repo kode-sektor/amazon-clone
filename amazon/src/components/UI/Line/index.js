@@ -21,6 +21,13 @@ const LineThree = () => {
         </>
     )
 }
+const LineFour = () => {
+    return (
+        <>
+            <hr className="a__spacing__base a__spacing__top__small a__divider__normal"/>
+        </>
+    )
+}
 
 
-export { Line, LineTwo, LineThree }
+export { Line, LineTwo, LineThree, LineFour }

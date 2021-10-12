@@ -9,7 +9,7 @@ import CardOrder from '../../components/UI/Card/CardOrder'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 
 import Layout from '../../components/Layout/index'
-import BreadCrumb from '../../components/UI/BreadCrumb'
+import { BreadCrumb } from '../../components/UI/BreadCrumb'
 import { SearchButton, CancelBtnPrimary } from '../../components/UI/Button/'
 
 import TabOrder from '../../components/UI/TabOrders'

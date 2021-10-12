@@ -225,6 +225,11 @@ const BtnPillRounded = () => (
         Sign up
     </button>
 )
+const BtnPillRoundedSm = ({text="Sign up"}) => (
+    <button className="a__button btn__pillRoundedSm a__button__oneclick w-100" type="submit">
+        {text}
+    </button>
+)
 
 const BtnPillRoundedLg = () => (
     <button className="btn__pillRoundedLg" type="submit">
@@ -268,6 +273,7 @@ const ReportAbuse = () => {
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
-    CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedLg,
-    BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, ReportAbuse
+    CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedSm,
+    BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, 
+    ReportAbuse
 }

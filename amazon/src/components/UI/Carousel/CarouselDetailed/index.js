@@ -6,13 +6,13 @@ import { Line } from '../../Line'
 // If heading is passed in argument, top slider will render
 // If there is an heading_two argument, it means bottom slider should render
 
-const CarouselDetailed = ({ heading, slider, heading_two, heading_two_link, carouselID, slider_two, squished }) => {
+const CarouselDetailed = ({ heading, slider, heading_two, heading_two_link, carouselID="", slider_two, squished="" }) => {
 
-    console.log(slider)
+    // console.log(slider)
     
     return (
         <div className="carousel__detailed">
-            <div className={`carousel__detailed__layout__inner ${carouselID} ${slider.giftCardAux ? "giftCardAux" : ""}`}>
+            <div className={`carousel__detailed__layout__inner ${carouselID} ${slider.giftCardAux ? "giftCardAux" : ""} ${squished === true && "squished"}`}>
                 {
                     (
                         Array.isArray(heading) ? 

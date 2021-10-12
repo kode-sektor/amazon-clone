@@ -5,13 +5,10 @@ import Layout from '../../components/Layout/index'
 import Slider from '../../components/UI/Carousel/Carousel'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 import { DropdownMenuPrimary, DropdownMenuCart } from '../../components/UI/DropdownMenu'
-
+import { BtnPill, CartBtn, CartBtnSecondary, CartBtnSmall } from '../../components/UI/Button'
 
 import { Nav, NavItem, NavLink, Row, Col, Dropdown } from 'reactstrap'
-
 import classnames from 'classnames'
-
-import { BtnPill, CartBtn, CartBtnSecondary, CartBtnSmall } from '../../components/UI/Button'
 
 import binoculars_tb from '../../images/thumbnails/products/gosky-10x42-roof-prism-binoculars-for-adults.jpg'
 import binoculars from '../../images/products/gosky-10x42-roof-prism-binoculars-for-adults.jpg'
@@ -22,7 +19,6 @@ import monterey_tv_stand from '../../images/products/convenience-concepts-151401
 import frosted_endtable from '../../images/products/global-furniture-clear-frosted-occasional-end-table.jpg'
 import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
 import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
-
 
 import './index.css'
 

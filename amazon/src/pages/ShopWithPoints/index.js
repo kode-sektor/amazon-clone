@@ -8,8 +8,6 @@ import storefrontca_desktop from '../../images/banner/storefrontca-desktop.jpg'
 import amex_tile from '../../images/amex-tile.jpg'
 import td_tile from '../../images/td-tile.jpg'
 
-import './index.css'
-
 const ShopWithPoints = () => {
 
     const ShopWithPoint = () => (

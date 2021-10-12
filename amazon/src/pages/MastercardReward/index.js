@@ -10,6 +10,7 @@ import LightBox from '../../components/UI/LightBox'
 import {Line, LineTwo, LineThree } from '../../components/UI/Line'
 import { BtnPill, CartBtn, ReportAbuse } from '../../components/UI/Button'
 import { DropdownMenuMini } from '../../components/UI/DropdownMenu'
+import Reviews from '../../components/UI/Reviews'
 
 import Benefit from './Benefit'
 
@@ -521,6 +522,7 @@ const MastercardReward = () => {
                                                     starOne={12}
                                                 />
                                             }
+                                            style={"rating"}
                                         />
                                     </span>&nbsp;
                                     <Link to="/" className="mastercard__ratingsCount">
@@ -728,7 +730,7 @@ const MastercardReward = () => {
                         </section>
                     </section>
                     <LineTwo/>
-                    <section className="d-flex a__spacing__extra__large__ii">
+                    {/* <section className="d-flex a__spacing__extra__large__ii">
                         <section className="mastercard__reviews">
                             <h2>Customer reviews</h2>
                             <Rating
@@ -875,7 +877,112 @@ const MastercardReward = () => {
                                 </section>
                             </section>
                         </section>
-                    </section>
+                    </section> */}
+                    <Reviews
+                        rating={
+                            <Rating
+                                avgRating={4.3}
+                                totalRating={5}
+                                globalRatings={"4,089"}
+                                starFive={72}
+                                starFour={10}
+                                starThree={4}
+                                starTwo={2}
+                                starOne={12}
+                            />
+                        }
+                        lightbox={
+                            <LightBox
+                                toggleModal={toggleModal}
+                                lightBoxPanel={lightBoxPanel}
+                                images={gallery}
+                                showLightBoxGallery={showLightBoxGallery}
+                            />
+                        }
+                        showLightBoxGallery={showLightBoxGallery}
+                        tags={
+                                [
+                                    {
+                                        text : "cash back",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "gift cards",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "easy to use",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "foreign exchange",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "mastercard",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "rewards mastercard",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "use the card",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "credit cards",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "great rewards",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "right away",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "much better",
+                                        href : "/"
+                                    },
+                                    {
+                                        text : "credit score",
+                                        href : "/"
+                                    }
+                                ]
+                        }
+                        country={"Canada"}
+                        post={
+                            [
+                                {
+                                    author : "Rusty",
+                                    rating : "1",
+                                    date : "October 28, 2019",
+                                    body : <>
+                                                To save you time, understanding, and ultimately your credit. I took the time to get all the information.<br/><br/>
+                                                Fees:<br/>
+                                                You can transfer your balance from one credit card to this one at a fee of 7.50$ for balance transfers or 1%.<br/>
+                                                HOWEVER if you let MBNA do it for you, there is no fee.<br/>
+                                                (No Annual Fee)<br/>
+                                                (ATM Fees are 1% of your total withdrawl uncapped ($7.50 min.)<br/><br/>
+                                                Warranty:<br/>
+                                                This card has no extended warranty / insurance perks whatsoever.<br/><br/>
+                                                Interest Rate:<br/>
+                                                Purchases: 19.99%<br/>
+                                                Balance transfers and access cheques: 22.99%<br/>
+                                                Cash advances: 22.99%<br/><br/>
+                                                Rewards:<br/>
+                                                5% back for the first 6 months capped at $3,000 ( Spend 3K, get $150 ). After that its 1% rewards which can only be used on Amazon. Prime members get 2.5% cash back. (So you need to spend $3,280 just to get that $79 you spent on prime back as Amazon credits.)<br/><br/>
+                                                Foreign Exchange Rates:<br/>
+                                                2.5% (one way). If you buy something from abroad or even from amazon.com. You will pay an extra 2.5%. Now if you return said item, you don't get that 2.5% back.<br/><br/>
+                                                All in all it's an OK credit card if you are a big Amazon shopper, but as far as rewards and Perks. Amazon could do better. I hope you found this review helpful. Thanks!
+                                            </>,
+                                    helpful : "17,123"
+                                }
+                            ]
+                        }
+                    />
                 </main>
                 <LightBoxModal 
                     galleryList={galleryAll}

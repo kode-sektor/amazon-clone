@@ -18,14 +18,24 @@
     border: 8px solid transparent;
 	border-bottom: 9px solid rgba(0,0,0,.2);
 }
-.a__arrow__border.left {
+.a__arrow__border {
     top: 60px;
     left: 0;
-    border-bottom-color: transparent;
     border: 8px solid transparent;
+}
+.a__arrow__border.left {
+    border-bottom-color: transparent;
 	border-bottom: 9px solid transparent;
     border-right-color: rgba(0,0,0,.2);
 	border-right: 9px solid rgba(0,0,0,.2);
+}
+.a__arrow__border.right {
+    left: auto;
+    right: -8px;
+    border-bottom-color: transparent;
+	border-bottom: 9px solid transparent;
+    border-left-color: rgba(0,0,0,.2);
+	border-left: 9px solid rgba(0,0,0,.2);
 }
 .a__arrow {
     position: absolute;
@@ -45,6 +55,14 @@
     border-bottom-color: transparent;
     border-right-color: var(--white);
 }
+.a__arrow__border.right .a__arrow {
+    top: -8px;
+    right: 1px;
+    left: auto;
+    border-right: 0;
+    border-bottom-color: transparent;
+    border-left-color: var(--white);
+}
 .popover__panel__mini {
     display: inline-block;
     font-family: "Amazon Ember", Arial,sans-serif;
@@ -63,4 +81,10 @@
     padding: 2px 12px 1px 13px;
     line-height: 19px;
     font-size: 11px;
+}
+.balance__faq{
+    padding: 80px;
+}
+.accordion__faq {
+
 }

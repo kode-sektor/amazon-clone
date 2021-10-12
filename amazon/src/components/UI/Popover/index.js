@@ -7,7 +7,7 @@ import './index.css'
 // http://localhost:3000/order_history
 // E:\KAY\Documents\html5\Experiment\NODE\amazon-clone\amazon\src\components\UI\TabOrders\index.js
 
-const Popover = ({trigger, dropdown, close}) => {
+const Popover = ({trigger, dropdown, style, close}) => {
 
     const [popoverDrop, setPopoverDrop] = useState(false)
 
@@ -22,7 +22,7 @@ const Popover = ({trigger, dropdown, close}) => {
             <DropdownToggle tag="span" className="a__size__base a__color__secondary">
                 {trigger}
             </DropdownToggle>
-            <DropdownMenu className="a__popover__dropdown">
+            <DropdownMenu className={`a__popover__dropdown a__popover__${style}`}>
                 <div class="a__arrow__border">
                     <div class="a__arrow"></div>
                 </div>

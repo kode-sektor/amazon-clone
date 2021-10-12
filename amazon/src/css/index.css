@@ -562,7 +562,7 @@ code {
 .coupon__popover .a__ordered__list, .coupon__popover ol, .coupon__popover ul {
     padding: 0;
 }
-.coupon__popover .a__unordered__list li, .coupon__popover ul li {
+.coupon__popover .a__unordered__list li, .coupon__popover ul li, .a__unordered__list li {
     list-style: disc;
 }
 .a__ordered__list li, .a__unordered__list li, 
@@ -584,10 +584,32 @@ ol.a__horizontal, ul.a__horizontal {
     display: block;
     margin-left: 0;
 }
+.a__ordered__list.a__horizontal.a__button__list, 
+.a__unordered__list.a__horizontal.a__button__list, 
+ol.a__horizontal.a__button__list, ul.a__horizontal.a__button__list {
+    margin-left: -6px;
+}
+.a__ordered__list.a__nostyle li, .a__unordered__list.a__nostyle li, 
+ol.a__nostyle li, ul.a__nostyle li {
+    list-style: none;
+}
 .a__ordered__list.a__horizontal li, .a__unordered__list.a__horizontal li, 
 ol.a__horizontal li, ul.a__horizontal li {
     display: inline-block;
     margin: 0 10px 0 0;
+}
+.a__ordered__list.a__horizontal.a__button__list li, 
+.a__unordered__list.a__horizontal.a__button__list li, 
+ol.a__horizontal.a__button__list li, ul.a__horizontal.a__button__list li {
+    margin-left: 6px;
+    margin-right: 0;
+}
+.a__input__text__addon__group__wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+.reload__custom__amount__addon__group {
+    font-size: 13px;
 }
 nav ol, 
 nav ul
@@ -1223,7 +1245,18 @@ img.mallomar-delight-feedback-icons-large-disappointed {
 .text-decoration-none {
     text-decoration: none;
 }
-
+.a__breadcrumb__divider {
+    position: relative;
+    top: -1px;
+    color: var(--grey-tone-80);
+}
+.product__description {
+    margin: 0.5em 0px 0em 25px;
+    line-height: initial;
+    font-size: small;
+    word-wrap: break-word;
+    color: var(--grey-tone-14);
+}
 
 
 

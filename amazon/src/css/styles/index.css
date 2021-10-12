@@ -177,6 +177,7 @@ file rather than small ones. Your choice
     --blue-29: #03a8e1;
     --blue-30: #d6f0fb;
     --blue-31: #d7e8ea;
+    --blue-32: #edfdff;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -225,7 +226,7 @@ file rather than small ones. Your choice
 	--ochre-45: #f6bd41;
 	--ochre-46: #f5961d;
 	--ochre-47: #de7921;
-
+	--ochre-48: #f5a623;
 
     --link: #007BFF;
 	--link-hover: #d9534f;
@@ -326,6 +327,12 @@ file rather than small ones. Your choice
     --grey-tone-77: #666;
     --grey-tone-78: #969696;
     --grey-tone-79: #a9a9a9;
+    --grey-tone-80: #949494;
+    --grey-tone-81: #979aa1;
+    --grey-tone-82: #82858a;
+    --grey-tone-83: #fef8f2;
+    --grey-tone-84: #505050;
+    --grey-tone-85: #e6e6e6;
 	
     --black: #000;
     --white: #fff;
@@ -411,11 +418,13 @@ h1, h2, h3, h4 {
 h1, h2, h3, h4 {
     text-rendering: optimizeLegibility
 }
-h1 {
+h1, .h1 {
     font-weight: 400;
     font-size: 28px;
     line-height: 1.2;
     line-height: 36px;
+    margin: 0;
+    padding: 0;
 }
 h3 {
     font-weight: 700;
@@ -451,6 +460,9 @@ hr {
 p {
 	margin: 0 0 14px 0;
     margin-bottom: 0;
+}
+p.p-bottom {
+    margin-bottom: 14px;
 }
 p:last-child {
     margin-bottom: 0;
@@ -571,6 +583,30 @@ a:hover, .a__color__button__link:hover {
 	background-color: var(--white);
 	box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
+.a__button__toggle {
+    background-color: var(--white);
+}
+.a__button.a__button__focus, .a__button:focus {
+    outline: 0;
+    border-color: var(--blue-22);
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+.a__button__toggle.a__button {
+    border-color: var(--grey-tone-11) var(--grey-tone-12) var(--grey-tone-13);
+}
+.a__button__toggle.a__button__thumbnail.a__button__selected,
+.a__button__toggle.a__button__thumbnail:hover,
+.a__button__toggle.a__button__focus,
+.a__button__toggle.a__button__thumbnail:focus {
+    border-color: var(--ochre-10);
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);    
+}
+.a__button__toggle.a__button__focus {
+    box-shadow: 0 0 3px 2px rgb(228 121 17 / 50%);
+}
+.a__button__toggle.a__button__focus, .a__button__toggle:focus, .a__button__toggle:hover {
+    border-color: var(--grey-tone-12) var(--grey-tone-81) var(--grey-tone-82);
+}
 .clipCoupon .a__button {
     background: var(--grey-tone-10);
     border: 1px solid darkgray;
@@ -620,6 +656,41 @@ a:hover, .a__color__button__link:hover {
     box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
 	/* border-radius: 7px; */
     border-radius: 2px;
+}
+.a__button.a__button__focus .a__button__inner, .a__button:focus .a__button__inner {
+    background-color: var(--blue-32);
+}
+.a__button__toggle.a__button__focus .a__button__inner, 
+.a__button__toggle:focus .a__button__inner, .a__button__toggle:hover .a__button__inner {
+    background-color: var(--grey-tone-1);
+    background-image: none;
+}
+.a__button__toggle.a__button__thumbnail .a__button__inner {
+    overflow: hidden;
+    height: auto;
+    padding: 0;
+    border-radius: 2px;
+}
+.a__button__toggle.a__button__selected .a__button__inner, 
+.a__button__toggle.a__button__selected.a__button__focus .a__button__inner, 
+.a__button__toggle.a__button__selected.a__button__focus:hover .a__button__inner, 
+.a__button__toggle.a__button__selected:focus .a__button__inner, 
+.a__button__toggle.a__button__selected:focus:hover .a__button__inner, 
+.a__button__toggle.a__button__selected:hover .a__button__inner {
+    background-color: var(--grey-tone-83);
+    background-image: none;
+}
+.a__button__toggle.a__button__thumbnail:hover .a__button__inner {
+    background-color: var(--white);
+}
+.a__button__oneclick {
+    background: var(--ochre-22);
+    border-color: var(--ochre-23);
+}
+.a__button__oneclick:hover {
+    background: var(--ochre-25);
+    border-color: var(--ochre-24);
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
 .btn.btn__quarternary {
     color: var(--grey-tone-14);
@@ -685,6 +756,24 @@ a:hover, .a__color__button__link:hover {
     font-size: 13px;
     border: 0;
 	background-color: transparent;
+}
+.a__button__toggle .a__button__text {
+    padding: 5px 10px 5px 11px;
+    line-height: 19px !important;
+    text-align: left;
+    white-space: normal;
+}
+.a__button__toggle.a__button__selected .a__button__text {
+    font-weight: 700;
+}
+.a__button__toggle.a__button__thumbnail .a__button__text {
+    padding: 0;
+}
+.a__button__text img {
+    min-width: 5px;
+}
+.a__button__toggle.a__button__thumbnail .a__button__inner img {
+    border-radius: 2px;
 }
 .btn-secondary:not(:disabled):not(.disabled):active {
 	border-color: var(-grey-tone-25) !important;
@@ -1018,6 +1107,9 @@ label, legend {
     padding-bottom: 2px;
     font-weight: 700;
 }
+.a__form__label {
+    font-weight: 700;
+}
 /*input[type="text"]:focus{
 	box-shadow: 0 0 12px rgba(51, 204, 255, 0.2);
 }
@@ -1040,232 +1132,6 @@ input[required]:after{
     position: relative;
     display: inline-block;
 	width: 100%;
-}
-.a__link__emphasis {
-    position: relative;
-    padding-right: 9px;
-}
-.a__link__emphasis:after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 1px;
-    margin-top: -3px;
-    height: 6px;
-    width: 3px;
-    background-position: -346px -86px;
-    pointer-events: none;
-}
-.a__link__emphasis:hover:after {
-    background-position: -346px -101px;
-}
-.a__icon, .a__link__emphasis:after {
-	background-image: url(../../images/amzn-sprite-4.png);
-    background-size: 400px 900px;
-    background-repeat: no-repeat;
-}
-.a__icon {
-    display: inline-block;
-    vertical-align: top;
-}
-.a__icon__premium, .a__icon__prime, .a__icon__prime__jp, 
-.a__premium__logo, .a__prime__jp__logo, .a__prime__logo {
-    width: 53px;
-    height: 15px;
-    background-position: -185px -182px;
-    vertical-align: baseline;
-}
-.a__icon__amazon__app, .a__icon__autorip, .a__icon__fba, .a__icon__fresh, 
-.a__icon__kindle__unlimited__headphones, .a__icon__logo, .a__icon__logo__china, 
-.a__icon__premium, .a__icon__premium__nav, .a__icon__prime, .a__icon__prime__campus, 
-.a__icon__prime__fresh, .a__icon__prime__headphones, .a__icon__prime__jp, 
-.a__icon__prime__jp__nav, .a__icon__prime__nav, .a__icon__prime__pass, 
-.a__icon__prime__wardrobe__badge, .a__icon__prime__wardrobe__logo, 
-.a__icon__primefresh__nav, .a__icon__share__douban, .a__icon__share__email, 
-.a__icon__share__facebook, .a__icon__share__kaixin001, .a__icon__share__line, 
-.a__icon__share__link, .a__icon__share__mixi, .a__icon__share__pengyou, 
-.a__icon__share__pinterest, .a__icon__share__qq, .a__icon__share__qzone, 
-.a__icon__share__renren, .a__icon__share__sina, .a__icon__share__sms, 
-.a__icon__share__tencent, .a__icon__share__twitter, .a__icon__share__wechat, 
-.a__icon__share__whatsapp, .a__icon__smile, .a__logo, .a__logo__china, 
-.a__premium__logo, .a__premium__nav__logo, .a__prime__jp__logo, 
-.a__prime__jp__nav__logo, .a__prime__logo, .a__prime__nav__logo, .a__share__douban, 
-.a__share__email, .a__share__facebook, .a__share__kaixin001, .a__share__line, 
-.a__share__link, .a__share__mixi, .a__share__pengyou, .a__share__pinterest, 
-.a__share__qq, .a__share__qzone, .a__share__renren, .a__share__sina, 
-.a__share__sms, .a__share__tencent, .a__share__twitter, .a__share__wechat, 
-.a__share__whatsapp {
-    background-image: url('../../images/amzn-sprite-9.png');
-    background-size: 512px 256px;
-    background-repeat: no-repeat;
-}
-.a__icon__calendar {
-    background-position: -300px -480px;
-    width: 15px;
-    height: 15px;
-}
-.a__cal__date__range__wrapper .a__icon__calendar {
-    cursor: pointer;
-    opacity: .7;
-}
-.a__icon__section__collapse, .a__icon__section__expand {
-    position: relative;
-    width: 15px;
-    height: 12px;
-    opacity: .64;
-}
-.a__icon__section__collapse {
-    background-position: -5px -82px;
-}
-.a__addon__badge, .a__icon__addon {
-    position: relative;
-	top: 1px;
-    padding: 4px 5px 4px 6px;
-    font-size: 11px;
-    line-height: 1.05;
-    font-weight: 700;
-    font-style: normal;
-    color: var(--white);
-    background-image: none !important;
-    background-color: var(--blue-5);
-    border-radius: 3px 0 0 3px;
-}
-.a__addon__badge:after, .a__addon__badge:before, 
-.a__icon__addon:after, .a__icon__addon:before {
-    content: "";
-    position: absolute;
-    right: -5px;
-    border-left-width: 0;
-}
-.a__addon__badge:before, .a__icon__addon:before {
-    width: 0;
-    height: 0;
-    bottom: 0;
-    font-size: 0;
-    line-height: 0;
-    border-style: dashed;
-    border-width: 6px;
-    border-color: rgba(206, 121, 121, 0);
-    border-bottom: 6px solid var(--blue-5);
-    border-bottom-width: 10px;
-    border-top-width: 0;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-.a__addon__badge:after, .a__icon__addon:after {
-    top: 0;
-    width: 0;
-    height: 0;
-    font-size: 0;
-    line-height: 0;
-    border-style: dashed;
-    border-width: 6px;
-    border-color: rgba(255,255,255,0);
-    border-top: 6px solid var(--blue);
-    border-bottom-width: 0;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    border-top-width: 10px;
-}
-.a__icon__popover {
-    width: 7px;
-    height: 5px;
-    margin: 5px 0 0 .385em;
-    opacity: .6;
-    vertical-align: text-top;
-    background-position: -90px -5px;
-}
-.a__icon__text__separator {
-    display: inline-block;
-    height: 14px;
-    margin: -2px .67375em 0;
-    width: 1px;
-    line-height: 0;
-    vertical-align: middle;
-	background-size: 400px 900px;
-    background-color: var(--grey-tone-24);
-    background-image: url(../../images/amzn-sprite-4.png);
-    background-repeat: no-repeat;
-}
-.a__icon__alt {
-    position: absolute;
-    display: block;
-    left: -9999px;
-    top: auto;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    line-height: 1px;
-    font-size: 1px;
-}
-[class*=a__icon__star] > .a__icon__alt {
-    clip-path: circle(0);
-    left: auto;
-    width: 100%;
-    height: 100%;
-    font-size: inherit;
-    line-height: normal;
-    opacity: 0;
-}
-.a__icon__star {
-	width: 80px;
-    height: 18px;
-}
-.a__star__4__5 {
-    background-position: -175px -368px;
-}
-.a__icon__star, .a__icon__star__medium, .a__icon__star__mini, .a__icon__star__small {
-    position: relative;
-    vertical-align: text-top;
-}
-.a__icon__star, .a__icon__star__small {
-    height: 18px;
-    width: 80px;
-}
-.a__icon.a__star__small__4__5 {
-    background-position: -84px -28px;
-}
-.a__icon__star__mini {
-    top: 3px;
-    height: 12px;
-    width: 60px;
-}
-.a__icon__star__medium {
-    top: -2px;
-    width: 95px;
-    height: 22px;
-    margin-right: 1px;
-}
-.a__icon.a__star__medium__1 {
-    background-position: -390px -228px;
-}
-.a__icon.a__star__medium__2 {
-    background-position: -99px -132px;
-}
-.a__icon.a__star__medium__3 {
-    background-position: -293px -180px;
-}
-.a__icon.a__star__medium__4 {
-    background-position: -2px -84px;
-}
-.a__icon.a__star__mini__4__5 {
-    background-position: -437px -130px;
-}
-.a__icon.a__star__1 {
-    background-position: -375px -144px;
-}
-.a__icon.a__star__3 {
-    background-position: -84px -48px;
-}
-.a__icon.a__star__4 {
-    background-position: -84px -8px;
-}
-.a__icon.a__star__5 {
-    background-position: -166px -36px;
-}
-.a__icon.a__star__4__5 {
-    background-position: -84px -28px;
 }
 .a__icon.a__accordion__radio, .a__icon.a__icon__checkbox, .a__icon.a__icon__radio, 
 .a__icon.a__icon__star, .a__icon.a__icon__star__medium, .a__icon.a__icon__star__mini, 
@@ -1319,6 +1185,15 @@ input[type=date], input[type=email] {
     margin-bottom: 0;
     z-index: 2;
 }
+.a__input__text__addon__group .a__input__text__addon + .a__input__text, 
+.a__input__text__addon__group .a__input__text__wrapper:not(:first-child), 
+.a__input__text__addon:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.a__width__base {
+    width: 113px;
+}
 .a__search input {
     padding-left: 29px;
 	width: 100%;
@@ -1362,6 +1237,12 @@ ul {
 }
 ul.list__indent {
     margin-left: 18px !important;
+}
+ul.detail__bullet__list.a__unordered__list {
+    margin: 0 0 1px 18px;
+}
+ul.detail__bullet__list li {
+    margin-bottom: 5.5px;
 }
 
 /*6. MORE SPECIFIC (like form h2 {}, )
@@ -1531,8 +1412,266 @@ ul.list__indent {
 	vertical-align: baseline;
 }
 
+.a__link__emphasis {
+    position: relative;
+    padding-right: 9px;
+}
+.a__link__emphasis:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1px;
+    margin-top: -3px;
+    height: 6px;
+    width: 3px;
+    background-position: -346px -86px;
+    pointer-events: none;
+}
+.a__link__emphasis:hover:after {
+    background-position: -346px -101px;
+}
+.a__icon, .a__link__emphasis:after {
+	background-image: url(../../images/amzn-sprite-4.png);
+    background-size: 400px 900px;
+    background-repeat: no-repeat;
+}
+.a__icon {
+    display: inline-block;
+    vertical-align: top;
+}
+.a__icon__premium, .a__icon__prime, .a__icon__prime__jp, 
+.a__premium__logo, .a__prime__jp__logo, .a__prime__logo {
+    width: 53px;
+    height: 15px;
+    background-position: -185px -182px;
+    vertical-align: baseline;
+}
+.a__icon__amazon__app, .a__icon__autorip, .a__icon__fba, .a__icon__fresh, 
+.a__icon__kindle__unlimited__headphones, .a__icon__logo, .a__icon__logo__china, 
+.a__icon__premium, .a__icon__premium__nav, .a__icon__prime, .a__icon__prime__campus, 
+.a__icon__prime__fresh, .a__icon__prime__headphones, .a__icon__prime__jp, 
+.a__icon__prime__jp__nav, .a__icon__prime__nav, .a__icon__prime__pass, 
+.a__icon__prime__wardrobe__badge, .a__icon__prime__wardrobe__logo, 
+.a__icon__primefresh__nav, .a__icon__share__douban, .a__icon__share__email, 
+.a__icon__share__facebook, .a__icon__share__kaixin001, .a__icon__share__line, 
+.a__icon__share__link, .a__icon__share__mixi, .a__icon__share__pengyou, 
+.a__icon__share__pinterest, .a__icon__share__qq, .a__icon__share__qzone, 
+.a__icon__share__renren, .a__icon__share__sina, .a__icon__share__sms, 
+.a__icon__share__tencent, .a__icon__share__twitter, .a__icon__share__wechat, 
+.a__icon__share__whatsapp, .a__icon__smile, .a__logo, .a__logo__china, 
+.a__premium__logo, .a__premium__nav__logo, .a__prime__jp__logo, 
+.a__prime__jp__nav__logo, .a__prime__logo, .a__prime__nav__logo, .a__share__douban, 
+.a__share__email, .a__share__facebook, .a__share__kaixin001, .a__share__line, 
+.a__share__link, .a__share__mixi, .a__share__pengyou, .a__share__pinterest, 
+.a__share__qq, .a__share__qzone, .a__share__renren, .a__share__sina, 
+.a__share__sms, .a__share__tencent, .a__share__twitter, .a__share__wechat, 
+.a__share__whatsapp {
+    background-image: url('../../images/amzn-sprite-9.png');
+    background-size: 512px 256px;
+    background-repeat: no-repeat;
+}
+.a__icon__calendar {
+    background-position: -300px -480px;
+    width: 15px;
+    height: 15px;
+}
+.a__cal__date__range__wrapper .a__icon__calendar {
+    cursor: pointer;
+    opacity: .7;
+}
+.a__icon__section__collapse, .a__icon__section__expand {
+    position: relative;
+    width: 15px;
+    height: 12px;
+    opacity: .64;
+}
+.a__icon__section__collapse {
+    background-position: -5px -82px;
+}
+.a__addon__badge, .a__icon__addon {
+    position: relative;
+	top: 1px;
+    padding: 4px 5px 4px 6px;
+    font-size: 11px;
+    line-height: 1.05;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--white);
+    background-image: none !important;
+    background-color: var(--blue-5);
+    border-radius: 3px 0 0 3px;
+}
+.a__addon__badge:after, .a__addon__badge:before, 
+.a__icon__addon:after, .a__icon__addon:before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    border-left-width: 0;
+}
+.a__addon__badge:before, .a__icon__addon:before {
+    width: 0;
+    height: 0;
+    bottom: 0;
+    font-size: 0;
+    line-height: 0;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: rgba(206, 121, 121, 0);
+    border-bottom: 6px solid var(--blue-5);
+    border-bottom-width: 10px;
+    border-top-width: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.a__addon__badge:after, .a__icon__addon:after {
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-style: dashed;
+    border-width: 6px;
+    border-color: rgba(255,255,255,0);
+    border-top: 6px solid var(--blue);
+    border-bottom-width: 0;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    border-top-width: 10px;
+}
+.best__seller__badge {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    background-color: var(--ochre-4) !important;
+}
+.best__seller__badge:before {
+    border-bottom-color: var(--ochre-4) !important;
+}
+.best__seller__badge:after {
+    border-top-color: var(--ochre-4) !important;
+}
+.cat__name {
+    display: inline;
+    margin-left: 5px;
+}
+.a__icon__popover {
+    width: 7px;
+    height: 5px;
+    margin: 5px 0 0 .385em;
+    opacity: .6;
+    vertical-align: text-top;
+    background-position: -90px -5px;
+}
+.a__icon__text__separator {
+    display: inline-block;
+    height: 14px;
+    margin: -2px .67375em 0;
+    width: 1px;
+    line-height: 0;
+    vertical-align: middle;
+	background-size: 400px 900px;
+    background-color: var(--grey-tone-24);
+    background-image: url(../../images/amzn-sprite-4.png);
+    background-repeat: no-repeat;
+}
+.a__icon__alt {
+    position: absolute;
+    display: block;
+    left: -9999px;
+    top: auto;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    font-size: 1px;
+}
+[class*=a__icon__star] > .a__icon__alt {
+    clip-path: circle(0);
+    left: auto;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    line-height: normal;
+    opacity: 0;
+}
+.a__icon__star {
+	width: 80px;
+    height: 18px;
+}
+.a__star__4__5 {
+    background-position: -175px -368px;
+}
+.a__icon__star, .a__icon__star__medium, .a__icon__star__mini, .a__icon__star__small {
+    position: relative;
+    vertical-align: text-top;
+}
+.a__icon__star, .a__icon__star__small {
+    height: 18px;
+    width: 80px;
+}
+.a__icon.a__star__small__4__5 {
+    background-position: -84px -28px;
+}
+.a__icon__star__mini {
+    top: 3px;
+    height: 12px;
+    width: 60px;
+}
+.a__icon__star__medium {
+    top: -2px;
+    width: 95px;
+    height: 22px;
+    margin-right: 1px;
+}
+.a__icon.a__star__medium__1 {
+    background-position: -390px -228px;
+}
+.a__icon.a__star__medium__2 {
+    background-position: -99px -132px;
+}
+.a__icon.a__star__medium__3 {
+    background-position: -293px -180px;
+}
+.a__icon.a__star__medium__4 {
+    background-position: -2px -84px;
+}
+.a__icon.a__star__mini__4__5 {
+    background-position: -437px -130px;
+}
+.a__icon.a__star__1 {
+    background-position: -375px -144px;
+}
+.a__icon.a__star__3 {
+    background-position: -84px -48px;
+}
+.a__icon.a__star__4 {
+    background-position: -84px -8px;
+}
+.a__icon.a__star__5 {
+    background-position: -166px -36px;
+}
+.a__icon.a__star__4__5 {
+    background-position: -84px -28px;
+}
+
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
+hr.bucket__divider {
+    border: none;
+    height: 44px !important;
+    margin-bottom: -18px;
+    filter: none;
+    background: 0 0!important;
+    border-top: 1px solid #CCC!important;
+    margin-bottom: -36px !important;
+    border: 0;
+    z-index: 0;
+    zoom: 1;
+}
 .columns__container {
     padding: 1rem;
     margin: 0 auto;
@@ -1756,6 +1895,11 @@ ul.list__indent {
     text-decoration: none;
     color: var(--mainlink) !important;
 }
+.welcome__link, .welcome__link:link, .welcome__link:visited {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
 .a__text__strike {
     text-decoration: line-through !important;
 }
@@ -2204,10 +2348,6 @@ ul.list__indent {
     padding-left: 24px !important;
 }
 
-.welcome__link {
-    color: var(--blue);
-    text-decoration: underline;
-}
 .a__color__alternate__background {
     background-color: var(--grey-tone-1) !important;
 }
@@ -2242,6 +2382,11 @@ ul.list__indent {
 }
 .a__expander__prompt {
     word-wrap: break-word;
+}
+.unified__widget__rcmBody {
+    margin-bottom: 26px;
+    font-size: 12px;
+    font-family: arial, helvetica, sans-serif;
 }
 
 /*9. LAYOUT & NAVIGATION
