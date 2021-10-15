@@ -462,7 +462,7 @@ p {
     margin-bottom: 0;
 }
 p.p-bottom {
-    margin-bottom: 14px;
+    margin-bottom: 14px !important;
 }
 p:last-child {
     margin-bottom: 0;
@@ -2611,6 +2611,19 @@ a:active.a__color__base {
 }
 .bxc__grid__valign__bottom {
     vertical-align: bottom;
+}
+.bxc__grid__text--beauty a {
+    color: var(--color-2) !important;
+    text-decoration: underline !important;
+}
+.bxc__grid__text--beauty a:hover {
+    color: var(--grey-tone-49) !important;
+}
+.bxc__grid__text--beauty a.a__link__emphasis:after {
+    height: 8px;
+    background-image: url('../../images/bxw-content-grid--beauty-1x.png');
+    background-size: 9px 28px;
+    background-position: -3px -2px;
 }
 .bannerx0__background__image {
     height: 100%;
