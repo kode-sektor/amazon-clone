@@ -128,6 +128,8 @@
     margin-top: 14px !important;
     border-top: 1px solid var(--grey) !important;
 }
+
+/* 
 .mastercard__reviews {
     flex-basis: 300px;
 }
@@ -234,4 +236,4 @@
     .mastercard__comments {
         padding-left: 120px;
     }
-}
+} */

@@ -7,9 +7,8 @@ import Layout from '../../components/Layout'
 import Popover from '../../components/UI/Popover'
 import Rating from '../../components/UI/Rating'
 import LightBox from '../../components/UI/LightBox'
-import {Line, LineTwo, LineThree } from '../../components/UI/Line'
-import { BtnPill, CartBtn, ReportAbuse } from '../../components/UI/Button'
-import { DropdownMenuMini } from '../../components/UI/DropdownMenu'
+import { LineTwo } from '../../components/UI/Line'
+import { CartBtn } from '../../components/UI/Button'
 import Reviews from '../../components/UI/Reviews'
 
 import Benefit from './Benefit'
@@ -61,9 +60,9 @@ import './index.css'
 
 const MastercardReward = () => {
 
-    const Mastercard = ({childProps}) => {
+    const MastercardPage = ({childProps}) => {
 
-        const {toggleModal, lightBoxPanel} = childProps
+        const { toggleModal, lightBoxPanel } = childProps
 
         const image1 = L61DDN5WdKQ
         const image2 = L71RCZ2H6p
@@ -477,14 +476,15 @@ const MastercardReward = () => {
         const showLightBoxGallery = (e, mode) => {
             e.preventDefault()
             // Click coming from the image tiles should prevent clash with gallery
+            toggleModal("show stretched", "lightBoxReview") // show modal
+
             if (mode === "carousel") {  // mode is necessary to reset lightbox panel because it handles 
                                         // 2 content : the carousel and the gallery.
                 setGalleryAll("")
             } else {
-                toggleModal("show stretched", "lightBoxReview") // show modal
                 setGalleryAll(images)   // different state to handle different content inside lightbox
             }
-        }    
+        }            
 
         return (
             <div className="a__container">
@@ -899,7 +899,6 @@ const MastercardReward = () => {
                                 showLightBoxGallery={showLightBoxGallery}
                             />
                         }
-                        showLightBoxGallery={showLightBoxGallery}
                         tags={
                                 [
                                     {
@@ -958,6 +957,7 @@ const MastercardReward = () => {
                                 {
                                     author : "Rusty",
                                     rating : "1",
+                                    title : "Let me sum up everything here.... It's a 1% Amazon rewards card",
                                     date : "October 28, 2019",
                                     body : <>
                                                 To save you time, understanding, and ultimately your credit. I took the time to get all the information.<br/><br/>
@@ -994,7 +994,7 @@ const MastercardReward = () => {
 
     return (
         <Layout>
-            <Mastercard/>
+            <MastercardPage/>
         </Layout>
     )
 }

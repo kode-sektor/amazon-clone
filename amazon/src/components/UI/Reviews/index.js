@@ -3,14 +3,18 @@ import { Link } from 'react-router-dom'
 
 import {Line, LineThree } from '../../UI/Line'
 import { BtnPill, ReportAbuse } from '../../UI/Button'
-import { DropdownMenuMini } from '../..//UI/DropdownMenu'
+import { DropdownMenuMini } from '../../UI/DropdownMenu'
+import { LineFive } from '../../UI/Line'
 
 import './index.css'
 
 const Reviews = ({rating, lightbox, showLightBoxGallery, tags, country, post}) => {
+
+    const path = window.location.pathname 
+
     return (
         <section className="d-flex a__spacing__extra__large__ii">
-            <section className="mastercard__reviews">
+            <section className="amzn__reviews">
                 <h2>Customer reviews</h2>
                 {rating}
                 <Line/>
@@ -24,36 +28,22 @@ const Reviews = ({rating, lightbox, showLightBoxGallery, tags, country, post}) =
                 />
                 <LineThree/>
             </section>
-            <section className="mastercard__comments flex-grow-1">
-                <section className="master__commentsMain a__spacing__medium">
-                    <header className="master__commentsGallery a__spacing__medium">
+            <section className="amzn__comments flex-grow-1">
+                <section className="amzn__commentsMain a__spacing__medium">
+                    <header className="amzn__commentsGallery a__spacing__medium">
                         <h3>Reviews with images</h3>
                     </header>
                     {lightbox}
                     <Link to="/" onClick={showLightBoxGallery}>
                         See all customer images
                     </Link>
-                    <section className="mastercard__tags">
+                    <section className="amzn__tags">
                         <div className="a__spacing__extra__large__ii">
                             <h3 className="a__spacing__base">Read reviews that mention</h3>
-                            <section className="mastercard__tagPanel">
-                                <Link to="/" className="mastercard__tagItem a__text__normal">
-                                    <span>cash back</span>
-                                    <span>gift cards</span>
-                                    <span>easy to use</span>
-                                    <span>foreign exchange</span>
-                                    <span>mastercard</span>
-                                    <span>rewards mastercard</span>
-                                    <span>use the card</span>
-                                    <span>credit cards</span>
-                                    <span>great rewards</span>
-                                    <span>right away</span>
-                                    <span>much better</span>
-                                    <span>credit score</span>
-                                </Link>
+                            <section className="amzn__tagPanel">
                                 {
                                     tags.map((item, index) => (
-                                        <Link to={item.href}>
+                                        <Link to={item.href} className="amzn__tagItem">
                                             <span>{item.text}</span>
                                         </Link>
                                     ))
@@ -77,41 +67,60 @@ const Reviews = ({rating, lightbox, showLightBoxGallery, tags, country, post}) =
                                 Top reviews from {country}
                             </h3>
                         </header>
-                        <section className="mastercard__userComments a__spacing__large">
+                        <section className="amzn__userComments a__spacing__large">
                             {
                                 post.map((item, index) => {
-                                    const { author, rating, date, body, helpful } = item
+                                    const { avatar, author, topReviewer, rating, title, date, body, helpful } = item
                                     return (
-                                        <article className="mastercard__userComment a__section">
+                                        <article className="amzn__userComment a__section">
                                             <header className="d-flex align-content-center">
                                                 <Link to="/" className="a__spacing__mini">
-                                                    <span className="mastercard__avatar">
-                                                        <img src="https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png" className=""/>
+                                                    <span className="amzn__avatar">
+                                                        <img src={avatar} alt="default avatar" className=""/>
                                                     </span>
-                                                    <span className="mastercard__profileName d-inline-block">
+                                                    <span className="amzn__profileName d-inline-block">
                                                         {author}
                                                     </span>
                                                 </Link>
-                                                <div className="mastercard__topFigure a__spacing__mini">
-                                                    <span className="a__size__mini font-weight-bold a__color__link">
-                                                        TOP 100 REVIEWS
-                                                    </span>
-                                                </div>
+                                                {
+                                                    topReviewer && (
+                                                        <div className="amzn__topFigure a__spacing__mini">
+                                                            <span className="a__size__mini font-weight-bold a__color__link">
+                                                                TOP {topReviewer} REVIEWS
+                                                            </span>
+                                                        </div>
+                                                    )
+                                                }
                                             </header>
-                                            <section className="mastercard__title">
-                                                <Link to="/" title={`${rating} out of 5 stars`} className="mastercard__titleStars">
-                                                    <i className={`a__icon a__icon__star__medium a__star__medium__${rating}`}>
+                                            <section className="amzn__title">
+                                                <Link to="/" title={`${rating} out of 5 stars`} className="amzn__titleStars">
+                                                    <i className={`a__icon a__icon__star a__star__${rating}`}>
                                                         <span className="a__icon__alt">{rating} Stars &amp; Up</span>
                                                     </i>
                                                 </Link>
-                                                <Link to="/" className="mastercard__titleText a__size__base a__color__base font-weight-bold">
-                                                    Let me sum up everything here.... It's a 1% Amazon rewards card.
+                                                <Link to="/" className="amzn__titleText a__size__base a__color__base font-weight-bold">
+                                                    {title}.
                                                 </Link>
                                                 <span className="d-block a__size__base a__color__secondary a__color__tertiary">
                                                     Reviewed in {country} on {date}
                                                 </span>
+                                                {
+                                                    path === "/balance-reload" && (
+                                                        <section className="amzn__reviewMeta a-row a__spacing__mini">
+                                                            <span className="a__color__secondary">
+                                                                Gift amount: 1
+                                                                <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
+                                                                Design name: Amazon One-Time Reload
+                                                            </span>
+                                                            <i className="a__icon a__icon__text__separator" role="img" aria-label="|"></i>
+                                                            <span className="a__size__mini__ii a__color__state font-weight-bold">
+                                                                Verified Purchase
+                                                            </span>
+                                                        </section>
+                                                    )
+                                                }
                                             </section>
-                                            <p className="mastercard__body a__size__base__ii a__spacing__small">
+                                            <p className="amzn__reviewBody a__size__base__ii a__spacing__small">
                                                 {body}
                                                 <div className="a__expander__header a__expander__partial__collapse__header">
                                                     <div class="a__expander__content__fade"></div>
@@ -126,7 +135,7 @@ const Reviews = ({rating, lightbox, showLightBoxGallery, tags, country, post}) =
                                                     {helpful} people found this helpful
                                                 </span>
                                             </p>
-                                            <span className="masterCard__helpful">
+                                            <span className="amzn__reviewHelpful">
                                                 <BtnPill
                                                     text={"Helpful"}
                                                 />
@@ -136,6 +145,10 @@ const Reviews = ({rating, lightbox, showLightBoxGallery, tags, country, post}) =
                                     )
                                 })
                             }
+                        </section>
+                        <section className="amzn__reviewFooter">
+                            <LineFive />
+                            <Link to="/" className="a__link__emphasis font-weight-bold">See all reviews</Link>
                         </section>
                     </section>
                 </section>

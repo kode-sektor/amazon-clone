@@ -1,0 +1,104 @@
+.amzn__reviews {
+    flex-basis: 300px;
+}
+.amzn__reviews h2 {
+    color: var(--black);
+}
+.mastercard__reviews .a__button + hr {
+    margin-top: 32px !important
+}
+.amzn__comments {
+    padding-left: 11.5%;
+}
+.amzn__commentsMain {
+    width: 90.5%;
+    max-width: 680px;
+}
+.amzn__tags {
+    width: 582px;
+    padding-top: 16px;
+}
+.amzn__tagPanel {
+    overflow: hidden;
+    max-height: 118px;
+}
+.amzn__tagItem span {
+    display: inline-block;
+    padding: 0px 14px;
+    margin: 0px 10px 14px 0px;
+    font-size: 13px;
+    line-height: 29px;
+    color: var(--color-2);
+    background-color: var(--blue-31);
+    border-bottom: solid 1px var(--grey-tone-78);
+}
+.amzn__comments .popover__panel__list option {
+    padding: 0px 2px 1px;
+    margin-left: 0;
+    line-height: 29px;
+    font-size: 13px;
+}
+.amzn__userComments {
+    min-height: 100px;
+    padding-top: 8px;
+}
+.amzn__userComment {
+    max-width: 80em;
+}
+.amzn__avatar {
+    width: 43px;
+    padding-right: 9px;
+}
+.amzn__avatar img {
+    position: relative;
+    height: 34px;
+    width: 34px;
+
+    background-color: var(--white);
+    border-radius: 34px;
+    border: 2px solid var(--white);
+}
+.amzn__profileName {
+    position: relative;
+    min-height: 34px;
+    font-size: 13px;
+    line-height: 32px;
+    color: var(--color);
+    unicode-bidi: isolate;
+}
+.amzn__topFigure {
+    padding-left: 0.385em;
+}
+.amzn__topFigure span {
+    padding: 2px;
+    letter-spacing: .5px;
+    line-height: 32px !important;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border-top: 1px dashed var(--grey-tone-79);
+    border-bottom: 1px dashed var(--grey-tone-79);
+}
+.amzn__titleStars {
+    padding-right: 0.385em;
+}
+.amzn__reviewBody {
+    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+    padding-bottom: 24px;
+}
+.amzn__reviewHelpful .a__button__text {
+    width: 77px;
+    box-sizing: content-box;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .amzn__comments {
+        padding-left: 120px;
+    }
+}

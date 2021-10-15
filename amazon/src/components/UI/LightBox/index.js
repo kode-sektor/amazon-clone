@@ -24,7 +24,6 @@ const LightBox = ({toggleModal, lightBoxPanel, images, showLightBoxGallery}) => 
     // Function to show a specific image in the lightbox, amd make lightbox visible
     const showImage = (e, gallery) => {
         showLightBoxGallery(e, "carousel")
-        toggleModal("show stretched", "lightBoxReview") // show modal
         setImageToShow(gallery)   // show image
 
         let currentIndex = images.indexOf(gallery)

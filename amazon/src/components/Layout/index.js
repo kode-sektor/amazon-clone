@@ -76,7 +76,10 @@ const Layout = (props) => {
 
     let childProps = {}
 
-    window.location.pathname === "/mastercard-reward" && (
+    switch (window.location.pathname) {
+        case "/mastercard-reward" :
+        case "/balance-reload" : 
+
         // alert('mastercard reward page')
         // React.cloneElement props for Layout (HOC) children
         childProps = {
@@ -85,7 +88,12 @@ const Layout = (props) => {
             lightBoxPanel : lightBoxPanel,
             // showLightBoxPanel : showLightBoxPanel
         }
-    )
+
+    }
+
+    // (window.location.pathname === "/mastercard-reward" ) && (
+
+    // )
 
     return (
         <>

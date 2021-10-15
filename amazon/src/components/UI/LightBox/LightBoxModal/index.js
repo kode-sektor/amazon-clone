@@ -33,7 +33,6 @@ const LightBoxModal = ({ galleryList, imageDetails, showPrev, showNext, showPrev
                                         {
                                             galleryList.map((item, index) => (
                                                 <li style={{backgroundImage : "url(" + item.img + ")"}}>
-
                                                 </li>
                                             ))
                                         }
