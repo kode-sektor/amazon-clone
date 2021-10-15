@@ -77,8 +77,8 @@ const Footer = (props) => {
                                 { label: "Shop with Points", href: "/shop-with-points", icon: null },
                                 { label: "Reload Your Balance", href: "/balance-reload", icon: null },
                                 { label: "Amazon Currency Converter", href: "/currency-converter", icon: null },
-                                { label: "Gift Cards", href: "/", icon: null },
-                                { label: "Amazon Cash", href: "/", icon: null }
+                                { label: "Gift Cards", href: "/gift-cards", icon: null },
+                                { label: "Amazon Cash", href: "/amazon-cash", icon: null }
                             ]
                         }
                 />

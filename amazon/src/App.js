@@ -33,6 +33,7 @@ import MastercardReward from "./pages/MastercardReward"
 import ShopWithPoints from "./pages/ShopWithPoints"
 import BalanceReload from "./pages/BalanceReload"
 import CurrencyConverter from "./pages/CurrencyConverter"
+import AmazonCash from "./pages/AmazonCash"
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
                     <Route path="/shop-with-points" component={ShopWithPoints}/>
                     <Route path="/balance-reload" component={BalanceReload}/>
                     <Route path="/currency-converter" component={CurrencyConverter}/>
+                    <Route path="/amazon-cash" component={AmazonCash}/>
                 </Switch>
             </Router>
         </div>
