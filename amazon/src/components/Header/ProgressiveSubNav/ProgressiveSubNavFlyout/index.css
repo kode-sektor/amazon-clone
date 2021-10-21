@@ -1,7 +1,7 @@
 .progressiveFlyoutNav {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 90%;
     left: 0px;
     right: 0px;
     width: auto;
@@ -82,5 +82,4 @@
     margin-top: 20px;
     padding-bottom: 6px;
     font-weight: 800;
-    -webkit-box-sizing: border-box;
 }

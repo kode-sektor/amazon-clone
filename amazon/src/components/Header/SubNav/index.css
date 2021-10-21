@@ -23,13 +23,34 @@
 .subNav > li > a:hover, .subNav > li > a:focus {
     text-decoration: none;
 }
-.subNav > li > a:hover {
+.subNav > li > a:hover,
+.subNav > li > a:focus {
     color: var(--ochre-5);
     border-bottom: 2px solid var(--ochre-26);
+}
+.subNav--default > li:first-child > a:hover,
+.subNav--default > li:first-child > a:focus {
+    border-bottom: none;
 }
 /* second styling for making first subnav item bold */
 .subNav > li > a.active, .subNav > li.active > a {
     font-weight: 700;
+}
+.subNav .nav__arrow {
+    position: absolute;
+    top: 14px;
+    right: 0px;
+    left: auto;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: transparent;
+    border-top: 3px solid var(--grey-tone-86);
+    border-bottom-width: 0;
+    font-size: 3px;
+    zoom: 1;
 }
 .subNav__handMade {
     position: relative;
@@ -81,4 +102,10 @@
 .subNav__handMade li:last-child a {
     font-weight: 700;
     color: var(--blue-19);
+}
+.subNav--default li a.active {
+    font-weight: normal;
+}
+.subNav--default .nav-link {
+    padding: 0;
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const BrowseBoxSimple = ({title, links}) => {
+import './index.css'
+
+const BrowseBoxSimple = ({title, links, style=""}) => { // style = "squished"
     return (
-        <section className="giftCards__season browsebox">
-            <h3 className="giftCards__browseboxTitle">{title}</h3>
-            <ul>
+        <section className="browsebox">
+            <h3 className="browsebox__title">{title}</h3>
+            <ul className={style}>  
                 {
                     links.map((item, i) => (
                         <li key={i} className={item.carat && ("seeMore")}>

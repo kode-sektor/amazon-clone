@@ -1,22 +1,62 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import { subMenu } from '../../../utilities/data'
 
+import GenericFlyoutMenu from './GenericFlyoutMenu'
+
 import handmade_logo from '../../../images/nav/handmade_logo_.png'
+import amazon_gift_cards from '../../../images/nav/amazon-gift-cards.jpg'
+import egc_gc_subnav from '../../../images/nav/egc-gc-subnav.jpg'
+import pah_gc_subnav from '../../../images/nav/pah-gc-subnav.jpg'
+import mail_gc_subnav from '../../../images/nav/mail-gc-subnav.jpg'
+import uber_gc_subnav from '../../../images/nav/uber-gc-subnav.jpg'
+import reload_gc_subnav from '../../../images/nav/reload-gc-subnav.jpg'
+import birthday_gc_subnav from '../../../images/nav/birthday-gc-subnav.jpg'
+import thankyou_gc_subnav from '../../../images/nav/thankyou-gc-subnav.jpg'
+import congrats_gc_subnav from '../../../images/nav/congrats-gc-subnav.jpg'
+import newbaby_gc_subnav from '../../../images/nav/newbaby-gc-subnav.jpg'
+import wedding_gc_subnav from '../../../images/nav/wedding-gc-subnav.jpg'
 
 import './index.css'
 
 const SubNav = () => {
 
     const [queryID, setQueryID] = useState("")
+    const [flyoutMegaMenu, setflyoutMegaMenu] = useState("")
+    const [navTempId, setNavTempId] = useState("")  // track most recent megamenu ID 
+    const [navId, setNavId] = useState("")
+
+    const menuDropdown = (e) => {
+        // console.log(e.target.id)
+        e.stopPropagation()
+        const menuID = e.target.id  // Get id of menu
+
+        setNavTempId(menuID)
+        setNavId(menuID)
+    }
+
+    const menuDropHide = (e) => {
+        setNavId("")
+    }
+    
+    // Hack to ensure megamenu keeps afloat after hovering out of menu tab but 
+    // hovering on megamenu
+    const toggleFlyoutMegaMenu = (state) => {
+        state === "exit" ? setNavId("") : setNavId(navTempId) 
+    }
 
     useEffect(() => {
+        const pageList = ["/amazon-cash"]   // Include list of pages that use the mega menu 
+
         setQueryID(window.location.pathname)
+
+        // Enables absolute positioning of the flyout
+        pageList.includes(window.location.pathname) && setflyoutMegaMenu("progressiveNav position-relative")
     }, [])
 
     return (
-        <nav>
+        <nav className={flyoutMegaMenu}>
             {
                 (queryID === "/" || queryID === "/fashion") ?     // Do not display subnav if homepage
                 ""
@@ -365,6 +405,134 @@ const SubNav = () => {
                         </NavLink>
                     </li>
                 </ul>
+                :
+                (queryID === "/amazon-cash") ? 
+                /* subNav--default class to reset active link style to normal */
+                <>
+                    <ul className="subNav subNav--default">
+                        <li>
+                            <NavLink to="/gift-cards" onMouseEnter={(e) => menuDropdown(e)} onMouseLeave={(e) => menuDropHide(e)} id="amazon-gift-cards">
+                                <img className="nav__categ__image" src={amazon_gift_cards} alt="amazon gift cards" />
+                                <span className="nav__arrow"></span>
+                            </NavLink>
+                        </li>&nbsp;&nbsp;&nbsp;
+                        <li>
+                            <NavLink to="/best-sellers">Best Sellers</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/by-occasion" onMouseEnter={(e) => menuDropdown(e)} onMouseLeave={(e) => menuDropHide(e)} id="by-occasion">
+                                By Occasion
+                                <span className="nav__arrow"></span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/redeem-gift-cards">Redeem Gift Cards</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/view-your-balance">View Your Balance</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/reload-your-balance">Reload Your Balance</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/by-brand">By Brand</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/for-business">For Businesses</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/amazon-cash">Amazon Cash</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/find-a-gift">Find a Gift</NavLink>
+                        </li>
+                    </ul>
+                    {
+                        navId === "amazon-gift-cards" ?
+                            (<GenericFlyoutMenu
+                                navId={navId}
+                                toggleFlyoutMegaMenu={toggleFlyoutMegaMenu}
+                                items={
+                                        [
+                                            {
+                                                link : "/",
+                                                img : egc_gc_subnav,
+                                                alt : "Gift Cards",
+                                                caption : "eGift Cards"
+                                            },
+                                            {
+                                                link : "/",
+                                                img : pah_gc_subnav,
+                                                alt : "Print at Home",
+                                                caption : "Print at Home"
+                                            },
+                                            {
+                                                link : "/",
+                                                img : mail_gc_subnav,
+                                                alt : "Mail",
+                                                caption : "Mail"
+                                            },
+                                            {
+                                                link : "/",
+                                                img : uber_gc_subnav,
+                                                alt : "Third-party gift cards",
+                                                caption : "Third-party gift cards"
+                                            },
+                                            {
+                                                link : "/",
+                                                img : reload_gc_subnav,
+                                                alt : "Reload",
+                                                caption : "Reload"
+                                            }
+                                        ]
+                                }
+                            />)
+                        :
+                        navId === "by-occasion" ? 
+                            (
+                                <GenericFlyoutMenu
+                                    navId={navId}
+                                    toggleFlyoutMegaMenu={toggleFlyoutMegaMenu}
+                                    items={
+                                            [
+                                                {
+                                                    link : "/",
+                                                    img : birthday_gc_subnav,
+                                                    alt : "Birthday",
+                                                    caption : "Birthday"
+                                                },
+                                                {
+                                                    link : "/",
+                                                    img : thankyou_gc_subnav,
+                                                    alt : "Thank you",
+                                                    caption : "Thank you"
+                                                },
+                                                {
+                                                    link : "/",
+                                                    img : congrats_gc_subnav,
+                                                    alt : "Congrats",
+                                                    caption : "Congrats"
+                                                },
+                                                {
+                                                    link : "/",
+                                                    img : newbaby_gc_subnav,
+                                                    alt : "New baby",
+                                                    caption : "New baby"
+                                                },
+                                                {
+                                                    link : "/",
+                                                    img : wedding_gc_subnav,
+                                                    alt : "Wedding",
+                                                    caption : "Wedding"
+                                                }
+                                            ]
+                                    }
+                                />
+                            )
+                        :
+                        ""
+                    }
+                </>
                 :
                 (queryID === "/amazon-hub" || queryID === "/shop-with-points" || queryID === "/balance-reload" || queryID === "/currency-converter") ? 
                 <ul className="subNav">

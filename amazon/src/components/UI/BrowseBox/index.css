@@ -1,0 +1,33 @@
+.browsebox {
+    margin-left: 0;
+    font-size: 12px;
+    color: var(--black);
+    text-decoration: none;
+    font-family: var(--font-tertiary);
+}
+.browsebox__title {
+    font-size: 13px;
+    padding: 0;
+    color: var(--black);
+}
+.browsebox ul {
+    margin: 0 0 10px 10px;
+    padding: 0 0 19px 0;
+}
+.browsebox ul.squished {
+    padding-bottom: 0;
+}
+.browsebox ul li {
+    line-height: 17px;
+    list-style-type: none;
+}
+.browsebox ul li.seeMore {
+    margin-top: 6px;
+    margin-bottom: -9px;
+}
+.browsebox ul li a {
+    margin-left: 0;
+    color: var(--black);
+    font-size: 12px;
+    text-decoration: none;
+}

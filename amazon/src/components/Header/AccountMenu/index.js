@@ -5,7 +5,6 @@ import { BtnPrimary } from '../../UI/Button'
 
 import './index.css'
 
-
 const AccountMenu = () => {
     return (
         <>

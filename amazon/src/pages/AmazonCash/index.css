@@ -1,0 +1,21 @@
+.amazonCash .apBrowse {
+    padding-left: 2px;
+}
+.amazonCash__hero {
+    width: 100%;
+    background-image: url('../../images/cash-hero-guilloche-2.png');
+    background-size: cover;
+    background-position: center center;
+}
+.amazon__cashBenefits {
+    width: 100%;
+    background-image: url('../../images/benefits-guilloche-on-dark.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.amazon__worksImg {
+    height: 200px;
+}
+.amazonCash__tipsIcon {
+    height: 150px;
+}

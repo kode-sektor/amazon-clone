@@ -16,7 +16,7 @@ const ProgressiveSubNav = () => {
     const [navId, setNavId] = useState("")
 
     const menuDropdown = (e) => {
-        console.log(e.target.id)
+        // console.log(e.target.id)
         const menuID = e.target.id  // Get id of menu
 
         setNavId(menuID)
