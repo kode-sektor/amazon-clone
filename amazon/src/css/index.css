@@ -1,3 +1,5 @@
+/* Styling for files that are shared across components */
+
 body {
     margin: 0;
     font-family: var(--font-primary);
@@ -1207,6 +1209,151 @@ img.mallomar-delight-feedback-icons-large-disappointed {
     padding-left: 17px;
 }
 
+.csHelp__header {
+    min-width: 996px;
+    padding: 8px 0 4px 10px;
+    background: var(--white);
+}
+.csHelp__container h1, .csHelp__container h2, 
+.csHelp__container h3, .csHelp__container h4, 
+.csHelp__container h5, .csHelp__container h6 {
+    margin: 0;
+}
+.csHelp__container ul {
+    padding: 0;
+    list-style: disc;
+}
+.csHelp__content ol, .csHelp__content ul {
+    margin: 0;
+    margin-left: 28px;
+    margin-bottom: 14px;
+    padding-left: 0;
+}
+.csHelp__content ol li, .csHelp__content ul li {
+    margin: 0;
+}
+.csHelp__content h1 {
+    margin-bottom: 14px;
+}
+.csHelp__content p {
+    margin: 0 0 14px 0;
+}
+.csHelp__headerTitleLink {
+    display: block;
+    height: 30px;
+    margin: 0 20px 0 0;
+    font-size: 24px;
+    color: var(--color-2) !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+.csHelp__headerTitleLink:hover, .csHelp__headerTitleLink:focus {
+    text-decoration: none;
+}
+.csHelp__container {
+    display: flex;
+    width: 1020px;
+    margin-bottom: 40px;
+}
+.csHelp__content {
+    flex: 0 0 640px;
+    padding: 0 20px;
+    margin: 0 151px 0 0;
+}
+.csHelp__solution {
+    font-weight: 700;
+}
+.csHelp__search {
+    height: 36px;
+    margin-bottom: 14px;
+}
+.csHelp__breadcrumb a {
+    font-size: 12px;
+    text-decoration: none;
+}
+.csHelp__breadcrumb .csHelp__breadcrumb span {
+    padding: 0 2px;
+    font-size: 14px;
+    color: var(--color-2);
+}
+.csHelp__title {
+    margin-bottom: 14px;
+}
+.csHelp--lead {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    line-height: 1.4em;
+    font-size: 16px;
+    color: var(--mid-grey);
+    border-bottom: 1px solid var(--grey-tone-24);
+}
+.csHelp__container p + p {
+    margin-top: -4px;
+}
+
+.csHelp__sidebar {
+    width: 215px;
+    padding-left: 10px;
+    border: 0;
+}
+.csHelp__sidebarModule {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--grey-tone-24);
+}
+.csHelp__sidebarModule--inner {
+    padding: 10px;
+    border-bottom: 1px solid var(--grey-tone-24);
+}
+.csHelp__sidebarModule--inner:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.csHelp__sidebarModule--inner:last-child {
+    border-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.csHelp__sidebar h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--color-2);
+}
+.csHelp__navTopics {
+    padding: 0;
+    margin: 0;
+}
+.csHelp__sidebar li {
+    margin: 0;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    list-style: none;
+    line-height: 1.4em;
+    font-size: 12px;
+    text-indent: -10px;
+}
+.csHelp__sidebar ul li a {
+    text-decoration: none;
+}
+.csHelp__sidebar ul li a, 
+.csHelp__sidebarul li a:visited {
+    color: var(--grey-tone-14)
+}
+.csHelp__navTopicLink--selected {
+    color: var(--color-2);
+    font-weight: 700;
+}
+.csHelp__sidebarThumbnail {
+    padding-left: 0;
+    padding-right: 14px;
+}
+
+
+.csHelp p:last-child {
+    margin-bottom: 14px;
+}
 
 
 

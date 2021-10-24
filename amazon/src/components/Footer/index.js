@@ -86,7 +86,7 @@ const Footer = (props) => {
                     heading={"Let Us Help You"}
                     menu={
                             [
-                                { label: "COVID-19 and Amazon", href: "/", icon: null },
+                                { label: "COVID-19 and Amazon", href: "/covid-19", icon: null },
                                 { label: "Shipping Rates & Policies", href: "/", icon: null },
                                 { label: "Amazon Prime", href: "/", icon: null },
                                 { label: "Returns Are Easy", href: "/", icon: null },

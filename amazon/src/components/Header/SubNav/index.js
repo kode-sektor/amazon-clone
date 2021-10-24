@@ -534,7 +534,7 @@ const SubNav = () => {
                     }
                 </>
                 :
-                (queryID === "/amazon-hub" || queryID === "/shop-with-points" || queryID === "/balance-reload" || queryID === "/currency-converter") ? 
+                (queryID === "/amazon-hub" || queryID === "/shop-with-points" || queryID === "/balance-reload" || queryID === "/currency-converter" || "/covid-19") ? 
                 <ul className="subNav">
                     <li>
                         <NavLink to="/todays-deals"><b>Today's Deals</b></NavLink>
