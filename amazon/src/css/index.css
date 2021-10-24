@@ -1354,6 +1354,60 @@ img.mallomar-delight-feedback-icons-large-disappointed {
 .csHelp p:last-child {
     margin-bottom: 14px;
 }
+.csHelp__landingSection {
+    width: 100%;
+    margin-bottom: 13px;
+    padding-bottom: 14px;
+    zoom: 1;
+    border-bottom: 1px solid var(--grey-tone-24);
+}
+.csHelp__landingSection:first-child {
+    margin-top: 28px;
+    padding-top: 14px;
+    border-top: 1px solid var(--grey-tone-24);
+}
+.csHelp__landingSection:last-child {
+    border: none;
+    margin-bottom: 14px;
+}
+.csHelp__content .csHelp__landingSection:after, 
+.csHelp__content .csHelp__landingSection:before {
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+.csHelp__content .csHelp__landingSection h4 {
+    padding-bottom: 0;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 700;
+}
+.csHelp__content h4 {
+    line-height: 20px;
+}
+.csHelp__landingSection .linkFarm {
+    margin-left: 0;
+}
+.csHelp__content .linkFarm li {
+    list-style: none;
+    margin-left: 10px;
+    text-indent: -10px;
+}
+.csHelp__content .csHelp__landingSection li {
+    margin-bottom: 0;
+}
+.csHelp__content .linkFarm li a {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 19px;
+}
+.csHelp__content .linkFarm li a, .csHelp__content .linkFarm li a:visited {
+    color: var(--blue-33) !important;
+}
+
+
+
 
 
 

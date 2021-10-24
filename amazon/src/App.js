@@ -35,6 +35,7 @@ import BalanceReload from "./pages/BalanceReload"
 import CurrencyConverter from "./pages/CurrencyConverter"
 import AmazonCash from "./pages/AmazonCash"
 import Covid19 from "./pages/Covid19"
+import ShippingRate from "./pages/ShippingRate"
 
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
                     <Route path="/currency-converter" component={CurrencyConverter}/>
                     <Route path="/amazon-cash" component={AmazonCash}/>
                     <Route path="/covid-19" component={Covid19}/>
+                    <Route path="/shipping-rate" component={ShippingRate}/>
                 </Switch>
             </Router>
         </div>
