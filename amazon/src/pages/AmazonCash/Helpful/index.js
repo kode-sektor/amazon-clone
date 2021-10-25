@@ -17,7 +17,7 @@ const Helpful = ({ href, img, alt, heading, body }) => {
                         </h4>
                     </section>
                     <section className="padding__bottom__base">
-                        <p className="text text-center color__dark text__size--medium p-bottom">
+                        <p className="text text-center color__dark text__size--medium p__bottom">
                             {body}
                         </p>
                     </section>

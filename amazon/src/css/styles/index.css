@@ -468,7 +468,7 @@ p {
 	margin: 0 0 14px 0;
     margin-bottom: 0;
 }
-p.p-bottom {
+p.p__bottom, .p__bottom {
     margin-bottom: 14px !important;
 }
 p:last-child {
@@ -1870,6 +1870,12 @@ hr.bucket__divider {
 .a__padding__small {
     padding: 6px 10px !important;
 }
+.a__padding__medium {
+    padding: 14px 18px!important;
+}
+.a__padding__extra__large {
+    padding: 20px 26px!important;
+}
 .a__spacing__base, .a__ws .a__ws__spacing-base {
     margin-bottom: 12px !important;
 }
@@ -1950,6 +1956,13 @@ a:active.a__color__base {
     padding: 14px 18px 18px;
     margin: 0 auto;
 }
+.page__content__container {
+    position: relative;
+    max-width: 1200px;
+    min-width: 550px;
+    margin: 0 auto;
+    zoom: 1;
+}
 .a__row{
     width: 100%;
 }
@@ -1959,7 +1972,10 @@ a:active.a__color__base {
     margin-bottom: 0;
     margin-bottom: 22px;
 }
-.a__section:last-child {
+.a__section__ii {
+    margin-bottom: 22px;
+}
+.a__section:last-child, .a__section__ii:last-child {
     margin-bottom: 0;
 }
 .section__break {
@@ -1975,6 +1991,9 @@ a:active.a__color__base {
 }
 .a__spacing__top__extra__large {
     margin-top: 32px !important;
+}
+.a__spacing__double__large {
+    margin-bottom: 48px;
 }
 .a__spacing__mini, .a__ws .a__ws__spacing-mini {
     margin-bottom: 4px !important;
@@ -2068,6 +2087,9 @@ a:active.a__color__base {
 }
 .a__color__offset__background {
     background-color: var(--grey-tone-45) !important;
+}
+.a__color__base__background {
+    background-color: var(--white) !important;
 }
 .a__box__group > .a__box {
     margin-top: -1px;

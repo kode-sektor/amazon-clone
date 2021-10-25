@@ -148,7 +148,7 @@ const AmazonCash = () => {
                                         <strong>What is Amazon Cash?</strong>
                                     </h2>
                                 </div>
-                                <p className="text__size--medium color__normal p-bottom">
+                                <p className="text__size--medium color__normal p__bottom">
                                     You can visit participating store locations to add a Gift Card Balance to your Amazon Account. Present your barcode or phone number to a cashier. (If the store has a kiosk or ATM, you can use it instead to enter your phone number.) 
                                     <br/>
                                     <br/>
@@ -177,7 +177,7 @@ const AmazonCash = () => {
                             </section>
                             <section className="padding__bottom__small d-flex">
                                 <section className="amazon__cashBenefitCol col column">
-                                    <h4 className="text text__size--medium color__white p-bottom">
+                                    <h4 className="text text__size--medium color__white p__bottom">
                                         <strong>It’s convenient</strong>
                                     </h4>
                                     <p className="text color__white text__size--medium">
@@ -185,7 +185,7 @@ const AmazonCash = () => {
                                     </p>
                                 </section>
                                 <section className="amazon__cashBenefitCol col column">
-                                    <h4 className="text text__size--medium color__white p-bottom">
+                                    <h4 className="text text__size--medium color__white p__bottom">
                                         <strong>It's interest-free</strong>
                                     </h4>
                                     <p className="text color__white text__size--medium">
@@ -193,7 +193,7 @@ const AmazonCash = () => {
                                     </p>
                                 </section>
                                 <section className="amazon__cashBenefitCol col column">
-                                    <h4 className="text text__size--medium color__white p-bottom">
+                                    <h4 className="text text__size--medium color__white p__bottom">
                                         <strong>It’s good for budgeting</strong>
                                     </h4>
                                     <p className="text color__white text__size--medium">
@@ -201,7 +201,7 @@ const AmazonCash = () => {
                                     </p>
                                 </section>
                                 <section className="amazon__cashBenefitCol col column">
-                                    <h4 className="text text__size--medium color__white p-bottom">
+                                    <h4 className="text text__size--medium color__white p__bottom">
                                         <strong>It’s secure</strong>
                                     </h4>
                                     <p className="text color__white text__size--medium">

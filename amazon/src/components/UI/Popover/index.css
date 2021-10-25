@@ -20,6 +20,9 @@
     border: none;
     background-color: transparent;
 }
+.a__popover__larger {
+    min-width: 440px;
+}
 .a__popover__rating {
     left: -70% !important;
     width: 344px;

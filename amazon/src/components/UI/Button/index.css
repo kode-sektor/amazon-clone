@@ -269,3 +269,6 @@
     background: linear-gradient(var(--ochre-43), var(--ochre-44) 80%, var(--ochre-45));
     transition: all .5s;
 }
+.a__button__cart .a__button__text {
+    line-height: 20px !important;
+}

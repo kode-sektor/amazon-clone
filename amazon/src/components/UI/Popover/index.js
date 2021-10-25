@@ -9,6 +9,8 @@ import './index.css'
 
 const Popover = ({trigger, dropdown, style, close}) => {
 
+    // style = "larger" if you want wider width
+
     const [popoverDrop, setPopoverDrop] = useState(false)
 
     const popOver = () => setPopoverDrop(popoverDrop => !popoverDrop)   // For click

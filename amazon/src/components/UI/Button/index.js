@@ -100,14 +100,14 @@ const SaveBtnPrimary = () => {
     )
 }
 
-const SearchButton = () => {
+const SearchButton = ({text="Search Orders"}) => {
     return (
         <div className="button__container">
             <span class="a__button a__button__search search__order__input">
                 <span class="a__button__inner">
                     <input class="a__button__input" type="submit"/>
                     <span class="a__button__text" aria-hidden="true">
-                        Search Orders
+                        {text}
                     </span>
                 </span>
             </span>

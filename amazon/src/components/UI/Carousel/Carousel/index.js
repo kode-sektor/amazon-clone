@@ -184,7 +184,14 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 												{(item.category || item.date) && (
 													<span className="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
 												)}
-												{cartBtnSmall && (<CartBtnSmall/>)}	
+												{
+													cartBtnSmall && 
+													(	<>
+															<br/>
+															<CartBtnSmall/>
+														</>
+													)
+												}	
 											</>
 										)
 										: 

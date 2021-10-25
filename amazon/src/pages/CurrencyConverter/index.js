@@ -144,7 +144,7 @@ const CurrencyConverter = () => {
                                                 <h2>
                                                     Amazon Currency Converter
                                                 </h2>
-                                                <p className="p-bottom">
+                                                <p className="p__bottom">
                                                     With Amazon Currency Converter, you can review and place eligible orders in your local currency at checkout. You’ll be able to see the applicable exchange rate below your order total, which includes all Amazon fees and charges related to the use of service. In some cases, your bank may still charge you a fee. Please contact your bank in regards to these fees.
                                                 </p>
                                                 <Link to="/" className="a__link__emphasis">

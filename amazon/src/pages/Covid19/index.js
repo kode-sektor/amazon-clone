@@ -64,7 +64,7 @@ const Covid19 = () => {
                             <p className="csHelp--lead">
                             Amazon's operations continue but delivery times may be longer than usual.
                             </p>
-                            <p className="p-bottom">Last updated on May 18, 2021.</p>
+                            <p className="p__bottom">Last updated on May 18, 2021.</p>
                         </section>
                         <section>
                             <h2 className="csHelp__title">

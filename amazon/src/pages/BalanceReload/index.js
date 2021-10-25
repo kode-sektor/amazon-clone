@@ -461,7 +461,7 @@ const BalanceReload = () => {
                                         <DropdownMenuCart
                                             content={
                                                 <section className="a__popover__content">
-                                                    <p className="font-weight-bold p-bottom">
+                                                    <p className="font-weight-bold p__bottom">
                                                         Manage your budget
                                                     </p>
                                                     <p>
@@ -480,7 +480,7 @@ const BalanceReload = () => {
                                         <DropdownMenuCart
                                             content={
                                                 <section className="a__popover__content">
-                                                    <p className="font-weight-bold p-bottom">
+                                                    <p className="font-weight-bold p__bottom">
                                                         Consolidate your balances
                                                     </p>
                                                     <p>
@@ -499,7 +499,7 @@ const BalanceReload = () => {
                                             <DropdownMenuCart
                                                 content={
                                                     <section className="a__popover__content">
-                                                        <p className="font-weight-bold p-bottom">
+                                                        <p className="font-weight-bold p__bottom">
                                                             Fast, easy shopping on Amazon
                                                         </p>
                                                         <p>
