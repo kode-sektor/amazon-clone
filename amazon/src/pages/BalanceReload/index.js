@@ -418,7 +418,7 @@ const BalanceReload = () => {
                                                         altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                         caption: "Amazon.ca eGift Card",
                                                         price: 40.00
-                                                    },
+                                                    }
                                                 ]
                                             }
                                     />

@@ -1,14 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton,
-    AccordionItemPanel
-} from 'react-accessible-accordion'
-
-
+import Accordian from '../../components/Footer/ModalLang/Accordion'
 import Layout from '../../components/Layout/index'
 import Popover from '../../components/UI/Popover'
 import { SearchButton } from '../../components/UI/Button'
+
+import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
+import Slider from '../../components/UI/Carousel/Carousel'
+
+import amazon_reload_1 from '../../images/amazon-reload-1.jpg'
+import amazon_reload_2 from '../../images/amazon-reload-2.jpg'
+import amazon_reload_phone_card from '../../images/amazon-reload-phone-card.jpg'
+import amazon_rewards_mastercard from '../../images/amazon-rewards-mastercard.jpg'
+import mens__fenian__claddagh__ring__gold from '../../images/mens-fenian-claddagh-ring-gold.jpg'
+import icecarats__designer__jewelry__claddagh__ring from '../../images/icecarats-designer-jewelry-claddagh-ring.jpg'
+import tree__and__birds__in__breeze__wall__decal from '../../images/tree-and-birds-in-breeze-wall-decal.jpg'
+import oreck__upholstery__tool__buster__b__white from '../../images/oreck-upholstery-tool-buster-b-white.jpg'
+import rypet__cat__halloween__costume from '../../images/rypet-cat-halloween-costume.jpg'
+import ten__yellow__gold__mens__claddagh__ring from '../../images/10k-yellow-gold-mens-claddagh-ring.jpg'
+import add__funds__amazon__gift__card__amazon__reload from '../../images/add-funds-amazon-gift-card-amazon-reload.png'
+import manage_consolidate_shopping from '../../images/manage-consolidate-shopping.png'
+import reload_wallet from '../../images/reload-wallet.png'
+import auto_reload_dollars from '../../images/auto-reload-dollars.png'
+
+import avatar from '../../images/avatar.png'
+import avatar_emily from '../../images/avatar-emily.jpg'
+import avatar_liam from '../../images/avatar-liam.jpg'
+
+import './index.css'
 
 const Returns = () => {
 
@@ -92,54 +112,45 @@ const Returns = () => {
                 </section>
             </div>
             <section className="a__spacing__small">
-                <div className="a__padding__extra__large a__color__base__background">
+                <section className="a__padding__extra__large a__color__base__background">
                     <div className="a__padding__medium">
                         <h1 className="a__section__ii">
-                            Frequently Asked Questioins
+                            Frequently Asked Questions
                         </h1>
                         <section className="a__spacing__small">
-                            <Accordion className="accordion__simple"
-                                allowZeroExpanded={true}>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            What can I return?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        You may return most new, unopened items sold and fulfilled by Amazon within 30 days of delivery for a full refund. For the 2021 holiday season, most of the items purchased between 1 October and 31 December 2021 can be returned until 31 January, 2022. 
-                                        <Link to="/">Learn more about Return Policy</Link>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
-                            <Accordion className="accordion__simple"
-                                allowZeroExpanded={true}>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            When will I get my refund?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        Usually in about 2-3 weeks. Most refunds are fully refunded in 3-5 days after we receive and process your return. Learn more about 
-                                        <Link to="/">Return Estimates</Link>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
-                            <Accordion className="accordion__simple"
-                                allowZeroExpanded={true}>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Does Amazon do replacements?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        We can only replace the exact item and version you ordered, and you are responsible to return the damaged item within 30 days. If you want to exchange for a different item, you will need to return the item and place a new order. Learn more about 
-                                    <Link to="/">Replacement Policy</Link>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
+                            <Accordian 
+                                items={
+                                        [
+                                            {
+                                                heading: "What can I return?",
+                                                panel: 
+                                                        <p>
+                                                            You may return most new, unopened items sold and fulfilled by Amazon within 30 days of delivery for a full refund. For the 2021 holiday season, most of the items purchased between 1 October and 31 December 2021 can be returned until 31 January, 2022. <Link to="/">Learn more about Return Policy</Link>
+                                                        </p>
+                                            },
+                                            {
+                                                heading: "When will I get my refund?",
+                                                panel: 
+                                                        <p>
+                                                            Usually in about 2-3 weeks. Most refunds are fully refunded in 3-5 days after we receive and process your return. Learn more about <Link to="/">Return Estimates</Link>
+                                                        </p>
+                                            },
+                                            {
+                                                heading: "Does Amazon do replacements?",
+                                                panel: 
+                                                        <>
+                                                            <p>
+                                                                We can only replace the exact item and version you ordered, and you are responsible to return the damaged item within 30 days. If you want to exchange for a different item, you will need to return the item and place a new order.</p>
+                                                            <p>Learn more about 
+                                                                <Link to="/">Replacement Policy</Link>
+                                                            </p>
+                                                        </>
+                                            }
+                                        ]
+                                }
+                                styling={"accordionSimple"}
+                                allowMultipleExpanded={true}
+                            />
                         </section>
                         <section>
                             <span className="a__color__base">
@@ -152,7 +163,234 @@ const Returns = () => {
                             </Link>
                         </section>
                     </div>
-                </div>
+                </section>
+                <section>
+                    <hr />
+                </section>
+                <section className="a__padding__extra__large">
+                    <div className="a__spacing__small">
+                        <div className="a__padding__medium">
+                            <h1 className="a__section__ii">
+                                Did you know...
+                            </h1>
+                            <section className="row a__spacing__small">
+                                <section className="col-8 a__color__base">
+                                    <p>
+                                        Been holding on to something past its return date? You can sell it online at Amazon.ca! To list a book, CD, cassette, DVD, video, or video game for sale, find its exact match on our site and click the "Sell yours here" button. It's easy.
+                                    </p>
+                                </section>
+                                <section className="col-4">
+                                    <Link to="/">
+                                        Sell your stuff!
+                                    </Link>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+                <section className="rhf__frame">
+                    <div className="rhf__border">
+                        <div className="rhf__shoveler">
+                            <div className="a__spacing__large">
+                                <CarouselDetailed 
+                                    heading={
+                                        ["Recommended popular audiobooks", "Buy it again"]
+                                    }
+                                    squished={true}
+                                    border={false}
+                                    slider={
+                                        [
+                                            <Slider 
+                                                type={"multiImage"}
+                                                carouselClass={"amzn__carousel"}
+                                                count={7}
+                                                price={true}
+                                                carouselID={"amzn__gift__cards"}
+                                                reorderStarPrice={true}
+                                                items={
+                                                        [
+                                                            {
+                                                                href: '/',
+                                                                src: amazon_rewards_mastercard,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: "1 offer from $19.00"
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: mens__fenian__claddagh__ring__gold,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: icecarats__designer__jewelry__claddagh__ring,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: tree__and__birds__in__breeze__wall__decal,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: oreck__upholstery__tool__buster__b__white,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: rypet__cat__halloween__costume,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: ten__yellow__gold__mens__claddagh__ring,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                        ]
+                                                    }
+                                            />,
+                                            <Slider 
+                                                type={"multiImage"}
+                                                carouselClass={"amzn__carousel"}
+                                                count={7}
+                                                price={true}
+                                                carouselID={"amzn__gift__cards"}
+                                                reorderStarPrice={true}
+                                                items={
+                                                        [
+                                                            {
+                                                                href: '/',
+                                                                src: amazon_rewards_mastercard,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: "1 offer from $19.00"
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: mens__fenian__claddagh__ring__gold,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: icecarats__designer__jewelry__claddagh__ring,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: tree__and__birds__in__breeze__wall__decal,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: oreck__upholstery__tool__buster__b__white,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: rypet__cat__halloween__costume,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                src: ten__yellow__gold__mens__claddagh__ring,
+                                                                altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                                caption: "Amazon.ca eGift Card",
+                                                                price: 40.00
+                                                            },
+                                                        ]
+                                                    }
+                                            />
+                                        ]
+                                    }
+                                    heading_two={"Your browsing history"}
+                                    heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
+                                    slider_two={
+                                        <Slider 
+                                            type={"multiImage"}
+                                            carouselClass={"amzn__carousel"}
+                                            count={8}
+                                            items={
+                                                [
+                                                    {
+                                                        href: '/',
+                                                        src: amazon_rewards_mastercard,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: "1 offer from $19.00"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: mens__fenian__claddagh__ring__gold,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: 40.00
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: icecarats__designer__jewelry__claddagh__ring,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: 40.00
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: tree__and__birds__in__breeze__wall__decal,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: 40.00
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: oreck__upholstery__tool__buster__b__white,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: 40.00
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: rypet__cat__halloween__costume,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: 40.00
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: ten__yellow__gold__mens__claddagh__ring,
+                                                        altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                        caption: "Amazon.ca eGift Card",
+                                                        price: 40.00
+                                                    }
+                                                ]
+                                            }
+                                        />
+                                    }
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </section>
         </>
     )

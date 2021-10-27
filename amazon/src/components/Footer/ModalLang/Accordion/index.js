@@ -7,13 +7,14 @@ import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton,
 import 'react-accessible-accordion/dist/fancy-example.css'
 import './index.css'
 
-const Accordian = ({items}) => {
+const Accordian = ({items, styling, allowZeroExpanded=false, allowMultipleExpanded=true}) => {
     return (
-        <section className="accordionContainer">
+        <section className={`accordionContainer ${styling}`}>
             {
                 items.map((item, indx) => (
                     <Accordion
-                        allowZeroExpanded={true}>
+                        allowZeroExpanded={allowZeroExpanded}
+                        allowMultipleExpanded={allowMultipleExpanded}>
                         <AccordionItem>
                             <AccordionItemHeading>
                                 <AccordionItemButton>
