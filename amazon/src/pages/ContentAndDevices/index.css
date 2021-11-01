@@ -1,0 +1,5 @@
+.contentDevices--page {
+    min-width: 983px;
+    font-size: 13px;
+    font-family: var(--font-ancillary-4);
+}

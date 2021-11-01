@@ -85,6 +85,44 @@
 .balance__faq{
     padding: 80px;
 }
-.accordion__faq {
-
+/* .accordion__faq {
+} */
+.myx__button .dropdown-menu, .myx__button__dropdown .dropdown-menu {
+    min-width: 71px;
+    max-width: none;
+    padding: 8px 0;
+    margin: 1px 0 0;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--grey-tone-14);
+    border: 1px solid var(--grey-tone-5);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 13%);
+    background-color: var(--white);
+    z-index: 1010;
+    font-family: Arial, sans-serif !important;
+}
+.myx__button .dropdown-header {
+    padding: 2px 12px 1px 13px;
+    margin-left: 1px;
+    line-height: 1.5 !important;
+    font-size: 13px;
+    white-space: nowrap;
+    outline: 0;
+    border: 1px solid transparent;
+    color: var(--grey-tone-14);
+}
+.myx__button .dropdown-header:hover, 
+.myx__button .dropdown-header:focus {
+    border-color: var(--grey-tone-91);
+    background-color: var(--grey-tone-1);
+    opacity: .7;
+    color: inherit;
+}
+.myx__button .dropdown-header.active {
+    background-color: var(--grey-tone-1);
+    border-color: var(--grey-tone-35);
+    border-left-color: var(--ochre-5);
+    border-right-color: var(--grey-tone-91);
 }

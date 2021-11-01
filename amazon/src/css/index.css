@@ -1405,7 +1405,259 @@ img.mallomar-delight-feedback-icons-large-disappointed {
 .csHelp__content .linkFarm li a, .csHelp__content .linkFarm li a:visited {
     color: var(--blue-33) !important;
 }
-
+.desktopMargin__myx {
+    min-height: 600px;
+    margin-top: 19px;
+    margin-bottom: -30px;
+}
+.navHeader__alexa__myx {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -20px;
+    width: 100%;
+    height: 38px;
+    padding-top: 7px;
+    font-size: 13px;
+    line-height: 19px;
+    color: var(--grey-tone-14);
+    border-bottom: 1px solid var(--grey-tone-24);
+    z-index: 100;
+    background: var(--white);
+    box-shadow: 0 2px 5px -3px grey;
+    border: 2px solid lime;
+}
+.navHeader__title__myx {
+    margin: 0 23px;
+    height: 100%;
+    padding: 3px 0;
+    line-height: normal;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.navHeader__title__style__myx {
+    font-family: var(--font-ancillary-4);
+    font-weight: 700 !important;
+    font-size: 13px !important;
+}
+.navOptions__alexa__myx {
+    display: flex;
+    height: 100%;
+    padding-top: 3px;
+    white-space: nowrap;
+}
+.navOptionContainer__alexa__myx {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.navOptionChildrenContainer__alexa__myx {
+    display: none;
+}
+.navOptionContainer__alexa__myx:hover .navOptionChildrenContainer__alexa__myx,
+.navOptionContainer__alexa__myx:focus .navOptionChildrenContainer__alexa__myx {
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    padding-top: 30px;
+    min-width: 160px;
+}
+.navOptionChildItem__alexa__myx {
+    height: 100%;
+    padding: 12px 20px;
+    background: var(--white);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+}
+.navOptionItem__alexa__myx {
+    height: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 100;
+}
+.navOptionItem__alexa__myx:hover,
+.navOptionItem__alexa__myx:focus {
+    border-bottom: 3px orange solid;
+}
+.navOptionItem__alexa__myx.active {
+    height: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-align: center;
+    color: var(--ochre-55);
+    cursor: default;
+    border-bottom: 3px orange solid;
+    outline: 0;
+}
+.contentTaskBarDetails__myx {
+    margin: 0 15px;
+    margin-top: 10px;
+}
+.contentTaskBarItem__myx + .contentTaskBarItem__myx {
+    margin-left: 18px;
+}
+.inline__myx {
+    display: inline-block;
+}
+.myx__search {
+    position: relative;
+    display: inline-block;
+}
+.myx__viewOptions__list__label {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--grey-tone-87);
+    margin-right: .385em;
+}
+.contentTaskBarElement__myx {
+    margin-bottom: 5px;
+}
+.myx__button {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    height: 31px;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid;
+    border-color: var(--grey-tone-88) var(--grey-tone-53) var(--grey-tone-89);
+    text-decoration: none !important;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.myx__button__inner {
+    position: relative;
+    height: 29px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(255 255 255 / 60%) inset;
+}
+.dropdown.myx__button__inner, .dropdown.myx__button {
+    overflow: visible;
+}
+span.myx__button__inner {
+    display: block;
+}
+.myx__button .myx__button__inner {
+    background: var(--grey-tone-90);
+    background: linear-gradient(top, var(--grey-tone-16), var(--grey-tone-10));
+}
+.myx__button__dark .myx__button__inner, .myx__button__search .myx__button__inner {
+    background: var(--grey-tone-43);
+    background: linear-gradient(top,var(--grey-tone-44), var(--grey-tone-39));
+}
+.myx__button__dark .myx__button__inner, .myx__button__search .myx__button__inner {
+    box-shadow: 0 1px 0 rgb(255 255 255 / 15%) inset;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+}
+.contentTaskBarItem__myx .dropDownToggle__myx .myx__button__inner {
+    background: none repeat scroll 0 0 var(--white) !important;
+}
+.myx__button__text {
+    display: block;
+    padding: 0 10px 0 11px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-family: Arial, sans-serif;
+}
+button.myx__button__text {
+    width: 100%;
+    height: 100%;
+}
+.myx__button .myx__button__text {
+    color: var(--color-2);
+}
+.myx__button__dropdown .myx__button__text {
+    position: relative;
+    overflow: hidden;
+    padding-right: 22px;
+    text-align: left;
+    text-overflow: ellipsis;
+    z-index: 10;
+}
+.myx__icon, .myx__link__emphasis:after {
+    -webkit-background-size: 400px 600px;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url('../images/amzn-aui-sprite.png');
+    background-repeat: no-repeat;
+    background-size: 400px 600px;
+}
+.myx__icon__dropdown {
+    width: 5px;
+    height: 8px;
+    background-position: -65px -5px;
+}
+.myx__button .myx__icon__dropdown {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+}
+.myx__icon__search {
+    width: 13px;
+    height: 13px;
+    opacity: .9;
+    background-position: -271px -86px;
+}
+.myx__search .myx__icon__search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -7px;
+}
+.myx__input__text, select.myx__select__multiple {
+    border-radius: 3px;
+    font-family: var(--font-ancillary-4);
+    font-size: 13px;
+    border: 1px solid var(--grey-tone-91);
+    border-top: 1px solid var(--grey-tone-6);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+    outline: 0;
+    outline-width: 0;
+}
+.myx__input__text {
+    height: 31px;
+    padding: 3px 7px;
+    line-height: normal;
+}
+.myx__search .myx__input__text {
+    height: 23px;
+    padding-left: 29px;
+}
+.myx__button__dark, .myx__button__search {
+    border-color: var(--grey-tone-40) var(--grey-tone-41) var(--grey-tone-42);
+    color: var(--white);
+    background: var(--grey-tone-39);
+}
+.myx__button__search .myx__button__text {
+    font-weight: 700;
+    color: var(--white);
+}
+.contentTaskBarElement__myx.myx__search .myx__input__text {
+    max-width: 141px;
+}
+.center__myx, .horizontalCenter__myx {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: auto !important;
+    padding-right: auto !important;
+}
+.myx__color__base {
+    color: var(--grey-tone-14) !important;
+}
+.noItemsFoundMsg__myx {
+    margin-top: 10%;
+}
 
 
 

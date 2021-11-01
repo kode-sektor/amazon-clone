@@ -9,9 +9,6 @@ import { SearchButton } from '../../components/UI/Button'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 import Slider from '../../components/UI/Carousel/Carousel'
 
-import amazon_reload_1 from '../../images/amazon-reload-1.jpg'
-import amazon_reload_2 from '../../images/amazon-reload-2.jpg'
-import amazon_reload_phone_card from '../../images/amazon-reload-phone-card.jpg'
 import amazon_rewards_mastercard from '../../images/amazon-rewards-mastercard.jpg'
 import mens__fenian__claddagh__ring__gold from '../../images/mens-fenian-claddagh-ring-gold.jpg'
 import icecarats__designer__jewelry__claddagh__ring from '../../images/icecarats-designer-jewelry-claddagh-ring.jpg'
@@ -19,16 +16,6 @@ import tree__and__birds__in__breeze__wall__decal from '../../images/tree-and-bir
 import oreck__upholstery__tool__buster__b__white from '../../images/oreck-upholstery-tool-buster-b-white.jpg'
 import rypet__cat__halloween__costume from '../../images/rypet-cat-halloween-costume.jpg'
 import ten__yellow__gold__mens__claddagh__ring from '../../images/10k-yellow-gold-mens-claddagh-ring.jpg'
-import add__funds__amazon__gift__card__amazon__reload from '../../images/add-funds-amazon-gift-card-amazon-reload.png'
-import manage_consolidate_shopping from '../../images/manage-consolidate-shopping.png'
-import reload_wallet from '../../images/reload-wallet.png'
-import auto_reload_dollars from '../../images/auto-reload-dollars.png'
-
-import avatar from '../../images/avatar.png'
-import avatar_emily from '../../images/avatar-emily.jpg'
-import avatar_liam from '../../images/avatar-liam.jpg'
-
-import './index.css'
 
 const Returns = () => {
 

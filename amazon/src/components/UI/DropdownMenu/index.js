@@ -1,5 +1,7 @@
-import React from 'react'
-import { DropdownMenu } from 'reactstrap'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 import './index.css'
 
@@ -53,4 +55,30 @@ const DropdownMenuCart = ({content, close, direction="left"}) => {
     )
 }
 
-export { DropdownMenuPrimary, DropdownMenuCart, DropdownMenuMini }
+const DropdownMyx = ({ text, dropdown }) => {
+    
+    const [dropdownOpenMyx, setDropdownOpenMyx] = useState(false)
+    const toggleMyx = () => setDropdownOpenMyx(prevState => !prevState)
+
+    return (
+        <span className="d-inline-block">
+            <Dropdown isOpen={dropdownOpenMyx} toggle={toggleMyx} className="contentTaskBarElement__myx myx__button myx__button__dropdown myx__button__inner">
+                <DropdownToggle className="myx__button__text">
+                    {text}
+                </DropdownToggle >
+                <i className="myx__icon myx__icon__dropdown"></i>
+                <DropdownMenu>
+                    {
+                        dropdown.map((item, index) => {
+                            return (
+                                <DropdownItem header key={index} className={index===0 && 'active'}>{item.dropdown}</DropdownItem>
+                            )
+                        })
+                    }
+                </DropdownMenu>
+            </Dropdown>
+        </span>
+    )
+}
+
+export { DropdownMenuPrimary, DropdownMenuCart, DropdownMenuMini, DropdownMyx }
