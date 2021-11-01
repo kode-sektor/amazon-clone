@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
+import Popover from '../Popover'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 import './index.css'
@@ -81,4 +81,20 @@ const DropdownMyx = ({ text, dropdown }) => {
     )
 }
 
-export { DropdownMenuPrimary, DropdownMenuCart, DropdownMenuMini, DropdownMyx }
+const DropdownView = ({ title, trigger, dropdown }) => (
+    <section className="dropdownView">
+        <label htmlFor="">
+            <span>{title}</span>:&nbsp;
+        </label>
+        <section className="dropdownView__select">
+            <Popover
+                trigger={trigger}
+                dropdown={dropdown}
+                close={true}
+                click={true}
+            />
+        </section>
+    </section>
+)
+
+export { DropdownMenuPrimary, DropdownMenuCart, DropdownMenuMini, DropdownMyx, DropdownView }

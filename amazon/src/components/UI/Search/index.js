@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { GoSearch } from 'react-icons/go'
+
 import './index.css'
 
 const SearchContent = () => {
@@ -22,4 +24,13 @@ const SearchContent = () => {
     )
 }
 
-export default SearchContent
+const SearchBoxOne = () => (
+    <section className="search__container">
+        <GoSearch
+            className="go__search"
+        />
+        <input className="search__box" type="search" name="search" placeholder="Search devices" autocomplete="off" value="" />
+    </section>
+)
+
+export { SearchContent, SearchBoxOne }

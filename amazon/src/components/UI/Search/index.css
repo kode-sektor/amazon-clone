@@ -1,0 +1,22 @@
+.search__container {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    width: 18em;
+    box-shadow: 0 0 0 1.5px rgb(128 128 128 / 48%);
+    border-radius: 5px;
+    background-color: var(--white);
+    transition: all 0.4s;
+}
+.search__container .go__search {
+    /* width: 5%; */
+    /* max-width: 100px; */
+    height: 30px;
+    margin-left: .6em;
+    font-size: 1em;
+    color: rgba(128, 128, 128, 0.478431);
+    transition: all 0.5s;
+}
+.search__box {
+    padding-left: .6rem !important;
+}

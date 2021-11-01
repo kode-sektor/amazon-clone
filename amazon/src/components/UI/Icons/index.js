@@ -38,4 +38,8 @@ const Pipe = () => {
     )
 }
 
-export { BackArrow, RightArrowCarrot, RightArrow, Pipe }
+const FilterSeparator = () => (
+    <div class="filter__separator"></div>
+)
+
+export { BackArrow, RightArrowCarrot, RightArrow, Pipe, FilterSeparator }

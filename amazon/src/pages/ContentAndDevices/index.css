@@ -1,5 +1,32 @@
 .contentDevices--page {
     min-width: 983px;
     font-size: 13px;
+    line-height: 19px;
+    color: var(--grey-tone-14);
     font-family: var(--font-ancillary-4);
+}
+.contentDevices__tab {
+    margin-top: -20px;
+    background-color: rgba(227,231,231,0.63) !important;
+    direction: ltr;
+}
+.actions__containerTable {
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+}
+.no__result__found {
+    min-height: 500px;
+    display: block;
+    max-height: 1000px;
+    margin: 20% 0 auto;
+    font-size: 18px;
+    text-align: center;
+    color: grey;
+    font-weight: bolder;
+}
+.no__result__found > .fa__exclamation__triangle {
+    position: relative;
+    bottom: 2px;
+    margin-right: 5px;
 }

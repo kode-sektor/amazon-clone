@@ -22,3 +22,8 @@
 .pipe {
     color: var(--grey);
 }
+.filter__separator {
+    margin-left: 1em;
+    padding-right: 1em;
+    border-left: 2px solid rgba(128, 128, 128, 0.478431);
+}

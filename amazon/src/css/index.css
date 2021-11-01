@@ -1470,6 +1470,13 @@ img.mallomar-delight-feedback-icons-large-disappointed {
     background: var(--white);
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
 }
+.navOptionChildItem__alexa__myx:hover, .navOptionChildItem__alexa__myx:focus {
+    height: 100%;
+    cursor: pointer;
+    padding: 12px 20px;
+    background: var(--grey-tone-92);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+}
 .navOptionItem__alexa__myx {
     height: 100%;
     padding-left: 23px;
@@ -1659,6 +1666,136 @@ button.myx__button__text {
     margin-top: 10%;
 }
 
+.body__inner {
+    display: inline-block;
+    min-height: 600px;
+    margin: 2%;
+    font-family: var(--font-primary);
+}
+.page__title {
+    display: flex;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+.actions__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4.5em;
+    min-width: 50vw;
+    font-size: 14px;
+    text-align: left;
+    z-index: 999;
+}
+.checkbox__container, .radio__container {
+    position: relative;
+    display: block;
+    padding-left: 2.4em;
+    margin-bottom: 12px;
+    padding-right: 12px;
+    padding-bottom: 0px !important;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+.checkbox__container input, .radio__container input {
+    position: absolute !important;
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    cursor: pointer !important;
+}
+.radio__container input {
+    width: 14px !important;
+    bottom: -3px;
+}
+.checkmark, .radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    margin-left: 8px;
+    border: 1px solid var(--grey-tone-93);
+    border-radius: 3px;
+    box-sizing: content-box;
+}
+.checkbox__container input:checked ~ .checkmark {
+    background-color: var(--white);
+    border: solid 1px var(--grey-tone-93);
+    border-radius: 3px;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.checkbox__container .checkmark:after {
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--ochre-56);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.radio__container .radio:after {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background:var(--white);
+}
+.checkbox__container input:checked ~ .checkmark:after {
+    display: block;
+}
+.radio__container input:checked ~ .radio {
+    background-color: var(--white);
+}
+.radio__container input:checked ~ .radio:after {
+    display: block;
+    background-color: var(--ochre-56);
+}
+.radio {
+    left: 1em;
+    height: 14px;
+    width: 14px;
+    margin-left: 0;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    outline: none;   
+}
+.radio__label {
+    margin-left: 10px;
+}
+.search__box {
+    box-shadow: none !important;
+    border: 0 !important;
+    outline: none !important;
+    width: 95%;
+    float: right;
+    caret-color: var(--ochre-57);
+    transition: all 0.3s;
+    padding: 0 !important;
+}
+.separator {
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid rgba(128,128,128,0.478431);
+    margin-top: 15px;
+}
+
+
+
 
 
 
@@ -1670,9 +1807,20 @@ button.myx__button__text {
         background: rgba(0,0,0,0.15);
     }
 }
+@media screen and (min-width: 768px) {
+    .body__inner {
+        min-width: 768px;
+        max-width: 1199px;
+    }
+}
 @media (min-width: 992px) {
     .langToggle.large .langLink {
         min-width: 200px;
     }
 }
-
+@media screen and (min-width: 1200px) {
+    .body__inner {
+        min-width: 1200px;
+        max-width: 1599px;
+    }
+}

@@ -235,6 +235,8 @@ file rather than small ones. Your choice
 	--ochre-53: #edb337;
 	--ochre-54: #c9baac;
 	--ochre-55: #b75907;
+	--ochre-56: #f56e00;
+	--ochre-57: #ffa800;
 
     --link: #007BFF;
 	--link-hover: #d9534f;
@@ -347,6 +349,8 @@ file rather than small ones. Your choice
     --grey-tone-89:  #adb2bb;
     --grey-tone-90:  #eff0f3;
     --grey-tone-91:  #d0d0d0;
+    --grey-tone-92:  #f1f1f1;
+    --grey-tone-93:  #808080;
 	
     --black: #000;
     --white: #fff;
