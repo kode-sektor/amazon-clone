@@ -9,8 +9,6 @@
     transition: all 0.4s;
 }
 .search__container .go__search {
-    /* width: 5%; */
-    /* max-width: 100px; */
     height: 30px;
     margin-left: .6em;
     font-size: 1em;

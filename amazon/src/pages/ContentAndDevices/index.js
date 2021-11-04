@@ -10,6 +10,8 @@ import Layout from '../../components/Layout'
 import { DropdownMyx, DropdownView } from '../../components/UI/DropdownMenu'
 import { SearchContent, SearchBoxOne } from '../../components/UI/Search'
 import { FilterSeparator } from '../../components/UI/Icons'
+import { MyxBtn } from '../../components/UI/Button'
+import Preferences from '../../components/UI/Preferences'
 
 import './index.css'
 
@@ -181,7 +183,7 @@ const ContentAndDevices = () => {
                                 </section>
                             </div>
                         </TabPane>
-                        <TabPane className="contentDevices__tab text-center myx__color__base" tabId="devices" tag="section">
+                        <TabPane tabId="devices" className="contentDevices__tab text-center myx__color__base" tag="section">
                             <section className="body__inner">
                                 <span className="page__title">
                                     Devices
@@ -202,21 +204,21 @@ const ContentAndDevices = () => {
                                                 <>
                                                     <ul className="ml-0">
                                                         <li>
-                                                            <label class="checkbox__container">
+                                                            <label className="checkbox__container">
                                                                 <input type="checkbox" checked="checked" />
                                                                 <span className="checkmark" ></span>
                                                                 <span>Amazon devices</span>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="checkbox__container">
+                                                            <label className="checkbox__container">
                                                                 <input type="checkbox" checked="checked" />
                                                                 <span className="checkmark" ></span>
                                                                 <span>Amazon apps</span>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="checkbox__container">
+                                                            <label className="checkbox__container">
                                                                 <input type="checkbox" checked="checked" />
                                                                 <span className="checkmark" ></span>
                                                                 <span>Non-Amazon devices</span>
@@ -239,40 +241,40 @@ const ContentAndDevices = () => {
                                             }
                                             dropdown={
                                                 <>
-                                                    <h5 class="dropdownView__title">
+                                                    <h5 className="dropdownView__title">
                                                         Devices and apps
                                                     </h5>
                                                     <ul className="ml-0">
                                                         <li>
-                                                            <label class="radio__container">
+                                                            <label className="radio__container">
                                                                 <input type="radio" name="today" />
                                                                 <span className="radio" ></span>
                                                                 <span className="radio__label">Today</span>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="radio__container">
+                                                            <label className="radio__container">
                                                                 <input type="radio" name="yesterday" />
                                                                 <span className="radio" ></span>
                                                                 <span className="radio__label">Yesterday</span>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="radio__container">
+                                                            <label className="radio__container">
                                                                 <input type="radio" name="this-week" />
                                                                 <span className="radio" ></span>
                                                                 <span className="radio__label">This week</span>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="radio__container">
+                                                            <label className="radio__container">
                                                                 <input type="radio" name="all-time" checked="checked" />
                                                                 <span className="radio" ></span>
                                                                 <span className="radio__label">All Time</span>
                                                             </label>
                                                         </li>
                                                         <li>
-                                                            <label class="radio__container">
+                                                            <label className="radio__container">
                                                                 <input type="radio" name="custom" />
                                                                 <span className="radio" ></span>
                                                                 <span className="radio__label">Custom</span>
@@ -293,6 +295,185 @@ const ContentAndDevices = () => {
                                     <span>No Results found</span>
                                 </section>
                             </section>
+                        </TabPane>
+                        <TabPane tabId="preferences" tag="section">
+                            <div className="settingsApp__myx">
+                                <Preferences
+                                    heading={"Digital Payment Settings"}
+                                    title={"All Kindle transactions are completed with 1-Click.  Changes made to your default 1-Click method will apply to future Amazon.ca 1-Click transactions."}
+                                    body={
+                                        <section className="settings__myx">
+                                            <div className="inline__myx editSettings__myx valign__myx">
+                                                <div className="myx__size__small myx__color__secondary">
+                                                    Your Default 1-Click Payment Method 
+                                                </div>
+                                                <div className="myx__size__medium myx__color__base"> Visa ending in 4895 </div>
+                                            </div>
+                                            <MyxBtn 
+                                                text={"Edit Payment Method"}
+                                            />
+                                        </section>
+                                    }
+                                    action={"Change your 1-Click payment setting"}
+                                />
+                                <Preferences
+                                    heading={"Country/Region Settings"}
+                                    body={
+                                        <section className="settings__myx">
+                                            <div className="inline__myx editSettings__myx valign__myx">
+                                                <div className="myx__size__small myx__color__secondary">
+                                                    Current country/region
+                                                </div>
+                                                <div className="myx__size__medium myx__color__base"> Canada </div>
+                                            </div>
+                                            <MyxBtn 
+                                                text={"Change"}
+                                            />
+                                            <div className="cor__spacing__base cor__spacing__top">
+                                                <div className="myx__spacing__base">
+                                                    <p className="myx__color__base myx__size__base myx__spacing__medium">
+                                                        You are currently linked to shop on Amazon.ca. Click 
+                                                        <Link to="/" className="myx__color__link"> here</Link> to learn more about other Amazon sites you are eligible to shop on based on your country/region of residence.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    }
+                                    action={"Change your country/region"}
+                                />
+                                <Preferences
+                                    heading={"Saved Wi-Fi Passwords"}
+                                    title={
+                                            <div className="myx__spacing__large">
+                                                Your saved Wi-Fi passwords allow you to configure compatible devices so that you won't need to re-enter your Wi-Fi password on each device. Once saved to Amazon, your Wi-Fi passwords are sent over a secured connection and are stored in an encrypted file on an Amazon server. Amazon will only use your Wi-Fi passwords to connect your compatible devices and will not share them with any third party without your permission. <Link to="/" className="a__browser__link">Learn more</Link>
+                                            </div>
+                                    }
+                                    body={
+                                        <>
+                                            <section className="settings__myx">
+                                                <section className="myx__spacing__large">
+                                                    <div className="inline__myx editSettings__myx valign__myx">
+                                                        <div className="myx__size__small myx__color__secondary">
+                                                            Your Saved Wi-Fi Passwords 
+                                                        </div>
+                                                        <div className="myx__size__medium myx__color__base"> All Devices </div>
+                                                    </div>
+                                                    <MyxBtn 
+                                                        text={"Delete"}
+                                                        disabled={true}
+                                                    />
+                                                </section>
+                                            </section>
+                                            <section className="myx__spacing__small">
+                                                <h4 className="myx__spacing__small"> Frustration-free setup </h4>
+                                                <p className="myx__spacing__large">
+                                                    Enable this setting to allow eligible devices associated with your account to automatically connect or reconnect to your network, using Wi-Fi passwords that you have saved to Amazon.
+                                                </p>
+                                            </section>
+                                            <section className="settings__myx">
+                                                <div className="inline__myx"> Frustration-Free Setup is enabled </div>&nbsp;&nbsp;
+                                                <MyxBtn 
+                                                    text={"Disable"}
+                                                />
+                                            </section>
+                                        </>
+                                    }
+                                    action={"Change your 1-Click payment setting"}
+                                />
+                                <Preferences
+                                    heading={"Automatic Book Updates"}
+                                    title={
+                                            <>
+                                                <div className="myx__spacing__small">
+                                                    With automatic book updates ON you will receive the most up to date and fully featured version of the Books you own. In order to preserve your reading progress, bookmarks, notes, highlights and annotations across different versions of books, make sure that all of your Kindle devices and reading apps have “Annotations Backup” or “Whispersync for Books” turned on.
+                                                </div>
+                                                <div className="myx__spacing__small">
+                                                    If you choose to turn it OFF, you will no longer receive book updates automatically. 
+                                                </div>
+                                            </>
+                                    }
+                                    body={
+                                        <section className="settings__myx">
+                                            <div className="inline__myx editSettings__myx valign__myx">
+                                                <div className="myx__size__small myx__color__secondary myx__spacing__small">
+                                                    Automatic Book Update
+                                                </div>
+                                                <MyxBtn 
+                                                    text={"ON"}
+                                                    type={"dropdown"}
+                                                />
+                                                <span className="myx__size__small myx__color__base wordWrap__myx customerName__myx inline__myx ng__binding">for Kay</span>
+                                            </div>
+                                        </section>
+                                    }
+                                    action={"Change your country/region"}
+                                />
+                                <Preferences
+                                    heading={"Personal Document Settings"}
+                                    title={
+                                        <>
+                                            <div className="myx__spacing-small">
+                                                Kindle Personal Documents service makes it easy to take your personal documents with you, eliminating the need to print. You and your approved contacts can send documents to your Kindle by e-mailing the documents to your Send-to-Kindle e-mail address. <Link to="/" className="a__browser__link">Learn more</Link>
+                                            </div>
+                                        </>
+                                }
+                                    body={
+                                        <section>
+                                            <h5 className="myx__spacing__small ng-scope ng-binding"> The following will help keep your Send to Kindle email address secure: </h5>
+                                            <section className="myx__spacing__large ng-scope"> 
+                                                <ul className="a__unordered__list">
+                                                    <li className="myx__color__base"> 
+                                                        &nbsp;Ensure your Send-to-Kindle email address is different than any other email addresses you use. 
+                                                    </li> 
+                                                    <li className="myx__color__base"> 
+                                                        &nbsp;Use a combination of uppercase letters, lowercase letters, and numbers. 
+                                                    </li>
+                                                    <li className="myx__color__base"> 
+                                                        &nbsp;Avoid including any personally identifiable information. 
+                                                    </li> 
+                                                </ul> 
+                                            </section>
+                                            <section className="myx__spacing__large row">
+                                                <section className="myx__spacing__small col-5">
+                                                    <h4 className="myx__spacing__small"> Personal Document Archiving </h4>
+                                                    <p>
+                                                        When this option is enabled, personal documents sent to your <b>Send-to-Kindle e-mail address</b> will also be added to your Kindle library.
+                                                    </p>
+                                                    <p>
+                                                        <Link to="/" target="_parent">Learn more</Link>
+                                                    </p>
+                                                    <p className="d-inline mb-0">Archiving is </p>
+                                                    <strong className="d-inline myx__color__state">Enabled</strong>&nbsp;
+                                                    <MyxBtn 
+                                                        text={"Edit Archive Settings"}
+                                                        mode={"myx__button__small"}
+                                                    />
+                                                </section>
+                                            </section>
+                                            <section className="myx__spacing__large">
+                                                <h4 className="myx__spacing__small"> Approved Personal Document E-mail List </h4>
+                                                <p className="myx__spacing__large">
+                                                    To prevent spam, your Kindle will only receive files from the following e-mail addresses you have authorized. <Link to="/" target="_parent">Learn more</Link>
+                                                </p>
+                                                <table class="myx__bordered myx__spacing__small"> 
+                                                    <tbody> 
+                                                        <tr> 
+                                                            <th>E-mail address</th>
+                                                            <th>Actions</th> 
+                                                        </tr> 
+                                                    </tbody>
+                                                </table>
+                                                <p>
+                                                    <Link to="/" className="myx__color__link">
+                                                        Add a new approved e-mail address
+                                                    </Link>
+                                                </p>
+                                            </section>
+                                        </section>
+                                    }
+                                    action={"Change your country/region"}
+                                />
+                            </div>
                         </TabPane>
                     </TabContent>
                 </section>

@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Button } from 'reactstrap'
+import { Button, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 import './index.css'
 
@@ -270,10 +270,48 @@ const ReportAbuse = () => {
     )
 }
 
+const MyxBtn = ({text, disabled=false, type, mode=""}) => {
+
+    // mode === "sm" or "" 
+
+    const [dropdownOpenMyx, setDropdownOpenMyx] = useState(false);
+    const toggleMx = () => setDropdownOpenMyx(prevState => !prevState);
+
+    return (
+        type==="dropdown" ? 
+            (
+                <Dropdown isOpen={dropdownOpenMyx} toggle={toggleMx} tag="span" className={`${mode}`}>
+                    <DropdownToggle className={`myx__button ${disabled && ("myx__button__disabled")} ${type==="dropdown" && ("myx__button__dropdown")}`}>
+                        <span className="myx__button__inner">
+                            <button className="myx__button__text">
+                                <span>{text}</span>
+                            </button>
+                            {type==="dropdown" && (<i className="myx__icon myx__icon__dropdown"></i>)}
+                        </span>
+                    </DropdownToggle>
+                    <DropdownMenu className="myx__popover myx__dropdown">
+                        <DropdownItem>ON</DropdownItem>
+                        <DropdownItem>OFF</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+            )
+            : 
+            (
+                <span className={`myx__button ${mode} ${disabled && ("myx__button__disabled")} ${type==="dropdown" && ("myx__button__dropdown")}`}>
+                    <span className="myx__button__inner">
+                        <button className="myx__button__text">
+                            <span>{text}</span>
+                        </button>
+                    </span>
+                </span>
+            )
+    )
+}
+
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedSm,
     BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, 
-    ReportAbuse
+    ReportAbuse, MyxBtn
 }

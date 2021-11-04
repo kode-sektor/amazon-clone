@@ -5,6 +5,15 @@
     color: var(--grey-tone-14);
     font-family: var(--font-ancillary-4);
 }
+.contentDevices--page h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.255;
+}
+.contentDevices--page h5 {
+    font-size: 13px;
+    line-height: 19px;
+}
 .contentDevices__tab {
     margin-top: -20px;
     background-color: rgba(227,231,231,0.63) !important;

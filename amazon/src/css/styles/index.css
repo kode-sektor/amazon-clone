@@ -351,6 +351,9 @@ file rather than small ones. Your choice
     --grey-tone-91:  #d0d0d0;
     --grey-tone-92:  #f1f1f1;
     --grey-tone-93:  #808080;
+    --grey-tone-94:  #716d6d;
+    --grey-tone-95:  #f0f0f0;
+    --grey-tone-96:  #f8f8f8;
 	
     --black: #000;
     --white: #fff;
@@ -527,6 +530,11 @@ meter::-webkit-meter-optimum-value {
                             #cf82bf 95%, #719fd1 95%, #719fd1 100%
     ); */
     background-size: 100% 100%;
+}
+table {
+    margin-bottom: 18px;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 
@@ -1948,6 +1956,10 @@ a:active.a__color__base {
 }
 .a__browser__link {
 	color: var(--link-2) !important;
+}
+.a__browser__link:hover, 
+.a__browser__link:focus {
+	color: var(--a) !important;
 }
 /*a__color__link is the alternative*/
 .a__color__button__link {
