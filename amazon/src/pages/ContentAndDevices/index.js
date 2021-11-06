@@ -13,11 +13,19 @@ import { FilterSeparator } from '../../components/UI/Icons'
 import { MyxBtn } from '../../components/UI/Button'
 import Preferences from '../../components/UI/Preferences'
 
+import myxpshalx from '../../images/myxpshalx.png'
+import myxpshdpv from '../../images/myxpshdpv.png'
+
+import Card from './Card'
+
 import './index.css'
 
 const ContentAndDevices = () => {
 
-    const [activeTab, setActiveTab] = useState("content");
+    const [activeTab, setActiveTab] = useState("content")
+    const [defaultSlide, setDefaultSlide] = useState(true)
+
+    const [open, setOpen] = useState(false)
 
     const toggle = tab => {
         if (activeTab !== tab) setActiveTab(tab);
@@ -25,7 +33,7 @@ const ContentAndDevices = () => {
 
     const ContentAndDevicesPage = () => (
         <section className="contentDevices--page">
-            <div className="desktopMargin__myx">
+            <div className={`desktopMargin__myx ${activeTab === "privacy-settings" ? "shrink" : ""}`}>
                 <nav className="navHeader__alexa__myx" tabs>
                     <h1 className="navHeader__title__myx navHeader__title__style__myx d-inline">
                         Manage Your Content and Devices
@@ -61,13 +69,13 @@ const ContentAndDevices = () => {
                             <div className="navOptionChildrenContainer__alexa__myx">
                                 <div className="navOptionChildItem__alexa__myx"
                                     className={classnames({ active: activeTab === 'alexa-privacy' }, "navOptionChildItem__alexa__myx" )} role="button"
-                                    onClick={() => { toggle('alexa-privacy'); }}>
-                                    Alexa Privacy
+                                    >
+                                    <Link to="/alexa-privacy">Alexa Privacy</Link>
                                 </div>
                                 <div className="navOptionChildItem__alexa__myx"
                                     className={classnames({ active: activeTab === 'amazon-devices-privacy' }, "navOptionChildItem__alexa__myx" )} role="button"
-                                    onClick={() => { toggle('amazon-devices-privacy'); }}>
-                                    Amazon Devices Privacy
+                                    >
+                                    <Link to="/amazon-devices-privacy">Amazon Devices Privacy</Link>
                                 </div>
                             </div>
                         </div>
@@ -315,6 +323,7 @@ const ContentAndDevices = () => {
                                         </section>
                                     }
                                     action={"Change your 1-Click payment setting"}
+                                    defaultSlide={defaultSlide}
                                 />
                                 <Preferences
                                     heading={"Country/Region Settings"}
@@ -378,7 +387,7 @@ const ContentAndDevices = () => {
                                             </section>
                                         </>
                                     }
-                                    action={"Change your 1-Click payment setting"}
+                                    action={"Delete Saved Wi-Fi Passwords"}
                                 />
                                 <Preferences
                                     heading={"Automatic Book Updates"}
@@ -406,7 +415,7 @@ const ContentAndDevices = () => {
                                             </div>
                                         </section>
                                     }
-                                    action={"Change your country/region"}
+                                    action={"Change your automatic book updates setting"}
                                 />
                                 <Preferences
                                     heading={"Personal Document Settings"}
@@ -471,9 +480,40 @@ const ContentAndDevices = () => {
                                             </section>
                                         </section>
                                     }
-                                    action={"Change your country/region"}
+                                    action={"Manage Send-to-Kindle email settings, personal documents, and Whispernet Delivery Options"}
                                 />
                             </div>
+                        </TabPane>
+                        <TabPane tabId="privacy-settings" className="contentPrivacySettings__tab text-center" tag="section">
+                            <section className="contentPrivacy__module ">
+                                <header className="contentPrivacy__header">
+                                    <h1 className="contentPrivacy__title">
+                                        Privacy settings
+                                    </h1>
+                                    <div className="contentPrivacy__settings">
+                                        View and manage privacy settings for Alexa and for certain Amazon Devices
+                                    </div>
+                                </header>
+                                <section className="contentPrivacy__moduleCard">
+                                    <section className="row mx-0">
+                                        <Card 
+                                            img={
+                                                <img src={myxpshalx} alt="myxpshalx" style={{height: "103px", width: "103px"}} />
+                                            }
+                                            title={"Alexa Privacy"}
+                                        />
+                                        <Card 
+                                            img={
+                                                <img src={myxpshdpv} alt="myxpshdpv" style={{height: "103px", width: "103px"}} />
+                                            }
+                                            title={"Amazon Devices Privacy"}
+                                        />
+                                    </section>
+                                </section>
+                                <section className="contentPrivacy__setting">
+                                    You can add an additional layer of security to your Amazon account by enabling <Link to="/" className="a__browser__link">Two-Step verfication</Link>
+                                </section>
+                            </section>
                         </TabPane>
                     </TabContent>
                 </section>
