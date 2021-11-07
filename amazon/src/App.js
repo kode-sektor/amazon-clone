@@ -83,6 +83,7 @@ function App() {
                     <Route path="/shipping-rate" component={ShippingRate}/>
                     <Route path="/returns" component={Returns}/>
                     <Route path="/content-and-devices" component={ContentAndDevices}/>
+                    <Route path="/alexa-privacy" component={AlexaPrivacy}/>
                 </Switch>
             </Router>
         </div>

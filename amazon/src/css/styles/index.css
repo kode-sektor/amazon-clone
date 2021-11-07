@@ -179,6 +179,7 @@ file rather than small ones. Your choice
     --blue-31: #d7e8ea;
     --blue-32: #edfdff;
     --blue-33: #007eb9;
+    --blue-34: #203d54;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -355,6 +356,9 @@ file rather than small ones. Your choice
     --grey-tone-95:  #f0f0f0;
     --grey-tone-96:  #f8f8f8;
     --grey-tone-97:  #737373;
+    --grey-tone-98:  #292b2f;
+    --grey-tone-99:  #c9c9c9;
+    --grey-tone-100:  #525252;
 	
     --black: #000;
     --white: #fff;
@@ -1027,6 +1031,10 @@ a:hover, .a__color__button__link:hover {
 .fake__link {
     color: var(--blue-10);
     cursor: pointer;
+}
+.link__default {
+    color: inherit !important;
+    text-decoration: none !important;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     /* color: pink;

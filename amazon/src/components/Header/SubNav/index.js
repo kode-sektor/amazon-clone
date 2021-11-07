@@ -46,6 +46,11 @@ const SubNav = () => {
         state === "exit" ? setNavId("") : setNavId(navTempId) 
     }
 
+    const regularSubNav = [
+        "/amazon-hub", "/shop-with-points", "/balance-reload", "/currency-converter", "/covid-19",
+        "/returns", "/alexa-privacy"
+    ]
+
     useEffect(() => {
         const pageList = ["/amazon-cash"]   // Include list of pages that use the mega menu 
 
@@ -534,7 +539,7 @@ const SubNav = () => {
                     }
                 </>
                 :
-                (queryID === "/amazon-hub" || queryID === "/shop-with-points" || queryID === "/balance-reload" || queryID === "/currency-converter" || queryID === "/covid-19" || queryID === "/returns") ? 
+                (regularSubNav.includes(queryID)) ? 
                 <ul className="subNav">
                     <li>
                         <NavLink to="/todays-deals"><b>Today's Deals</b></NavLink>

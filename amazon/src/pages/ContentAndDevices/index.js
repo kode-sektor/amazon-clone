@@ -42,40 +42,36 @@ const ContentAndDevices = () => {
                         <div className="navOptionContainer__alexa__myx">
                             <div className="navOptionItem__alexa__myx" title="Content"
                                 className={classnames({ active: activeTab === 'content' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('content'); }}>
+                                onClick={() => { toggle('content') }}>
                                 Content
                             </div>
                         </div>
                         <div className="navOptionContainer__alexa__myx">
                             <div className="navOptionItem__alexa__myx" title="Devices"
                                 className={classnames({ active: activeTab === 'devices' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('devices'); }}>
+                                onClick={() => { toggle('devices') }}>
                                 Devices
                             </div>
                         </div>
                         <div className="navOptionContainer__alexa__myx">
                             <div className="navOptionItem__alexa__myx" title="Preferences"
                                 className={classnames({ active: activeTab === 'preferences' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('preferences'); }}>
+                                onClick={() => { toggle('preferences') }}>
                                 Preferences
                             </div>
                         </div>
                         <div className="navOptionContainer__alexa__myx">
                             <div className="navOptionItem__alexa__myx" title="Privacy Settings"
                                 className={classnames({ active: activeTab === 'privacy-settings' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('privacy-settings'); }}>
+                                onClick={() => { toggle('privacy-settings') }}>
                                 Privacy Settings
                             </div>
                             <div className="navOptionChildrenContainer__alexa__myx">
-                                <div className="navOptionChildItem__alexa__myx"
-                                    className={classnames({ active: activeTab === 'alexa-privacy' }, "navOptionChildItem__alexa__myx" )} role="button"
-                                    >
-                                    <Link to="/alexa-privacy">Alexa Privacy</Link>
+                                <div className="navOptionChildItem__alexa__myx" role="button">
+                                    <Link to="/alexa-privacy" className="link__default">Alexa Privacy</Link>
                                 </div>
-                                <div className="navOptionChildItem__alexa__myx"
-                                    className={classnames({ active: activeTab === 'amazon-devices-privacy' }, "navOptionChildItem__alexa__myx" )} role="button"
-                                    >
-                                    <Link to="/amazon-devices-privacy">Amazon Devices Privacy</Link>
+                                <div className="navOptionChildItem__alexa__myx">
+                                    <Link to="/amazon-devices-privacy" className="link__default">Amazon Devices Privacy</Link>
                                 </div>
                             </div>
                         </div>

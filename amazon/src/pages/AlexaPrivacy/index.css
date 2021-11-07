@@ -1,0 +1,77 @@
+.alexa__privacy--page {
+    margin-left: -10px;
+    margin-right: -10px;
+    border: thin solid aqua;
+}
+.alexa__privacy__header {
+    background-color: var(--blue-34);
+}
+.alexa__privacy__header .navbar-nav {
+    flex-direction: row;
+    font-size: 15px;
+}
+.alexa__privacy__header .navbar-nav li {
+    position: relative;
+    color: var(--white);
+}
+.alexa__privacy__header .navbar-nav li a {
+    display: flex;
+    padding: 20px;
+    color: var(--white);
+    text-decoration: none;
+}
+.alexa__mainTabPane {
+    width: 100%;
+    padding-bottom: 150px;
+    background-image: url('../../images/statewakeword_sm.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.alexa__mainTabContent {
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    font-size: 1rem;
+}
+.alexa__mainTabImg {
+    grid-column: 3 / span 3;
+}
+.alexa__mainTabImgTitle {
+    grid-column: 6 / span 6;
+}
+.alexa__defaultTabPane {
+    padding-bottom: 200px;
+}
+.alexa__mainTabPane.wakeword, .alexa__mainTabPane.indicator, .alexa__mainTabPane.recordings {
+    background-image: url('../../images/statewakeword_sm.jpg');
+}
+.alexa__mainTabPane.mute {
+    background-image: url('../../images/laser-mic-controls-desktop.jpg');
+}
+.alexa__mainTabPane.smart {
+    background-image: url('../../images/cam-controls.png');
+}
+.alexa__defaultTabContent {
+    padding: 0;
+    font-size: inherit;
+}
+.alexa__mainTabHeading {
+    font-size: 50px;
+    color: var(--grey-tone-98);
+    font-weight: 300 !important;
+}
+.alexa__mainTabSupportHeading {
+    line-height: 1.5 !important;
+    width: 100%;
+    font-size: 24px !important;
+    font-weight: 300 !important;
+    color: var(--grey-tone-98);
+}
+.alexa__mainTabBtns {
+    height: 200px;
+    padding: 0 1rem;
+    background-color: var(--grey-tone-92);
+}
+.alexa__mainTabBtns > .nav-tabs {
+    border-bottom : 0;
+}
