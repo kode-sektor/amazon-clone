@@ -16,8 +16,11 @@ import wakeword_graphic from '../../images/wakeword-graphic.png'
 import indicators_graphic from '../../images/indicators-graphic.png'
 import cam_controls_graphic from '../../images/cam-controls-graphic.png'
 import manage_rec_graphic from '../../images/manage-rec-graphic.png'
+import security from '../../images/security.png'
+import ic_attend_maybe from '../../images/ic-attend-maybe.png'
 
 import AlexaTab from './AlexaTab'
+import AlexaFeatures from './AlexaFeatures'
 
 import './index.css'
 
@@ -119,62 +122,73 @@ const AlexaPrivacy = () => {
                             ]
                         }
                     />
-                    {/* <section className="alexa__mainTabs">
-                        <TabContent activeTab={activeTab}>
-                            <section className="alexa__mainTabPane">
-                                <section className="alexa__mainTabContent">
-                                    <div className="flex__container row">
-                                        <section className="alexa__mainTab padding__top__minibase row">
-                                            <div className="flex__container padding__left__small padding__right__small padding__bottom__xsmall col-8 offset-2">
-                                                <h1 className="alexa__mainTabHeading col-8 offset-2">
-                                                    Alexa and Echo devices are designed to protect your privacy
-                                                </h1>
-                                            </div>
-                                        </section>
-                                    </div>
+                </section>
+                <section className="alexa__features row">
+                    <section className="alexa__featuresCol col-8 offset-2">
+                        <div className="flex__container">
+                            <p className="alexa__featuresIntrotxt padding__top__xlarge padding__bottom__xlarge">
+                                Amazon designs Alexa and Echo devices with multiple layers of privacy protection. From microphone and camera controls to the ability to view and delete your voice recordings, you have transparency and control over your Alexa experience.
+                            </p>
+                        </div>
+                        <h3 className="alexa__featuresHeading padding__top__base padding__bottom__xlarge font-weight-bold text-center">
+                            Built to protect your privacy
+                        </h3>
+                        <section>
+                            <section className="alexa__gallery padding__bottom__xlarge text-center">
+                                <video className="w-100" controls="" crossorigin="anonymous" height="auto" preload="metadata" poster="https://m.media-amazon.com/images/G/01/apx/privacyhub/home_desktop/APX_PrivacyHub_052819_slate._CB1559061128_.jpg" controlslist="nodownload" data-cel-widget="osa_browse_video_0">
+                                    <source src="https://m.media-amazon.com/images/G/15/kindle/merch/2019/AUCC/PrivacyHub/AmazonPrivacy_CA_en_20190702_Fix._CB1198675309_.mp4" type="video/mp4" />
+                                    <track default="" label="English" kind="captions" src="https://m.media-amazon.com/images/G/15/kindle/merch/2019/AUCC/PrivacyHub/CA_Privacy_sizeremoved_2._CB1198675309_.vtt" srclang="en" />
+                                </video>
+                            </section>
+                            <p className="alexa__featuresIntrotxt padding__bottom__xlarge">
+                                How do I know when my device is recording? Is Alexa always listening? Explore how Alexa and Echo devices work, and learn about the features and controls that protect your privacy.
+                            </p>
+                            <section className="row">
+                                <h3 className="alexa__featuresHeading col-8 offset-2 padding__top__xlarge padding__bottom__large text-center">
+                                    Alexa and Echo devices provide transparency and control
+                                </h3>
+                            </section>
+                            <section>
+                                <AlexaFeatures
+                                    img={<img src={wakeword} alt="wake word" />}
+                                    text={"Alexa and all of our Echo devices are designed with your privacy in mind. When you want to talk to Alexa, you have to first alert your device by saying the wake word, which by default is “Alexa” or by pressing the action button on the device. Only then does your device begin recording and sending your request to Amazon's secure cloud."}
+                                />
+                                <AlexaFeatures
+                                    img={<img src={security} alt="security" />}
+                                    text={"All of your interactions with Alexa are encrypted in transit to Amazon’s cloud where they are securely stored."}
+                                />
+                                <AlexaFeatures
+                                    img={<img src={indicator} alt="indicator" />}
+                                    text={"You’ll always be able to tell when Alexa is listening to your request because a light indicator will appear on your Echo device or an audible tone will sound."}
+                                />
+                                <AlexaFeatures
+                                    img={<img src={mute} alt="mute" />}
+                                    text={"Echo smart speakers have a microphone off button that electronically disconnects the microphones."}
+                                />
+                                <AlexaFeatures
+                                    img={<img src={smart} alt="smart" />}
+                                    text={"On Echo devices with a camera, you can turn the camera and microphones off with one press of a button. Most Echo Show devices also include a built in shutter that allows you to easily cover the camera for additional peace of mind."}
+                                />
+                                <AlexaFeatures
+                                    img={<img src={recordings} alt="recordings" />}
+                                    text={"At Alexa Privacy Settings or in the Alexa app, you can view, hear, and delete your voice recordings or choose not to have your voice recordings saved. To delete by voice, just say, \"Alexa, delete what I just said\" to delete your voice recordings from the last ten minutes or \"Alexa, delete everything I've ever said\" to delete all your voice recordings."}
+                                />
+                                <section className="padding__bottom__xxlarge">
+                                    <AlexaFeatures
+                                        img={<img src={ic_attend_maybe} alt="ic attend maybe" />}
+                                        text={"Ever wonder why Alexa responded a certain way? Just say, \"Alexa, tell me what you heard\" and Alexa will read back your most recent voice request. You can also ask, \"Alexa, why did you do that?\" and Alexa will provide a short explanation about the response to your last voice request."}
+                                    />
+                                </section>
+                                <hr className="alexa__hr offset-2"
+                                />
+                                <section className="padding__top__xlarge padding__bottom__large">
+                                    <p className="alexa__featuresIntrotxt">
+                                        We want you to feel fully informed and aware of the privacy options that make the most sense for you. Simply say, “Alexa, how do I review my privacy settings?” and Alexa will send you a direct link in the Alexa app to your Alexa Privacy Settings. There, you can learn more about how different privacy features work and you can choose the privacy options that are right for you.
+                                    </p>
                                 </section>
                             </section>
-                        </TabContent>
-                        <section className="alexa__mainTabBtns">
-                            <Nav tabs className="p-0 m-0 justify-content-center">
-                                <AlexaTab
-                                    activeTab={""}
-                                    img={wakeword}
-                                    title={"Wake word / Mot d'activation"}
-                                />
-                                <AlexaTab
-                                    activeTab={""}
-                                    img={indicator}
-                                    title={"Indicators / Indicateurs"}
-                                />
-                                <AlexaTab
-                                    activeTab={""}
-                                    img={mute}
-                                    title={"Microphone controls / Contrôle des microphones"}
-                                />
-                                <AlexaTab
-                                    activeTab={""}
-                                    img={smart}
-                                    title={"Camera controls / Contrôle de la caméra"}
-                                />
-                                <AlexaTab
-                                    activeTab={""}
-                                    img={recordings}
-                                    title={"Manage voice reordings / Gérer les enregistrements vocaux"}
-                                />
-                            </Nav>
-                            <TabContent activeTab={activeTab}>
-                                <TabPane tabId="content" tag="section">
-                                </TabPane>
-                                <TabPane tabId="content" tag="section">
-                                </TabPane>
-                                <TabPane tabId="content" tag="section">
-                                </TabPane>
-                                <TabPane tabId="content" tag="section">
-                                </TabPane>
-                            </TabContent>
                         </section>
-                    </section> */}
+                    </section>
                 </section>
             </section>
         </main>

@@ -3,6 +3,9 @@
     margin-right: -10px;
     border: thin solid aqua;
 }
+.alexa__privacy--page h3 {
+    font-size: 30px;
+}
 .alexa__privacy__header {
     background-color: var(--blue-34);
 }
@@ -74,4 +77,11 @@
 }
 .alexa__mainTabBtns > .nav-tabs {
     border-bottom : 0;
+}
+.alexa__featuresIntrotxt {
+    line-height: 1.4;
+    font-size: 20px;
+}
+.alexa__featuresHeading {
+    color: var(--grey-tone-98);
 }

@@ -359,6 +359,7 @@ file rather than small ones. Your choice
     --grey-tone-98:  #292b2f;
     --grey-tone-99:  #c9c9c9;
     --grey-tone-100:  #525252;
+    --grey-tone-101:  #bec2d4;
 	
     --black: #000;
     --white: #fff;
@@ -2097,6 +2098,27 @@ a:active.a__color__base {
 }
 .padding__bottom__xlarge {
     padding-bottom: 50px;
+}
+.padding__top__xlarge {
+    padding-top: 50px;
+}
+.padding__bottom__xxlarge {
+    padding-bottom: 75px;
+}
+.padding__bottom__xxxlarge {
+    padding-bottom: 100px;
+}
+.padding__right__small {
+    padding-right: 20px;
+}
+.padding__bottom__xsmall {
+    padding-bottom: 15px;
+}
+.padding__left__small {
+    padding-left: 20px;
+}
+.padding__right__minibase {
+    padding-right: 25px;
 }
 .bg__no__repeat {
     background-repeat: no-repeat;

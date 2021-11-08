@@ -2005,28 +2005,12 @@ table.myx__bordered tr:first-child th {
     flex-flow: row wrap;
     justify-content: flex-start;
 }
-.container .padding__left__xlarge, .flex__container .padding__left__xlarge {
-    padding-left: 50px;
+.alexa__hr {
+    width: 67% !important;
+    border: 0 solid var(--grey-tone-101);
+    border-top-width: 1px;
+    text-align: center;
 }
-.container .padding__bottom__xxxlarge, .flex__container .padding__bottom__xxxlarge {
-    padding-bottom: 100px;
-}
-.container .padding__top__xxxlarge, .flex__container .padding__top__xxxlarge {
-    padding-top: 100px;
-}
-.flex__container .padding__right__small {
-    padding-right: 20px;
-}
-.container .padding__bottom__xsmall, .flex__container .padding__bottom__xsmall {
-    padding-bottom: 15px;
-}
-.container .padding__left__small, .flex__container .padding__left__small {
-    padding-left: 20px;
-}
-.flex__container .padding__right__minibase {
-    padding-right: 25px;
-}
-
 
 
 
