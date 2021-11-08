@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 
-import { Navbar, Nav, NavItem, NavLink, NavbarText, Collapse, TabContent, TabPane } from 'reactstrap'
-import classnames from 'classnames'
+import { Navbar, Nav, NavItem, NavLink } from 'reactstrap'
 
 import Layout from '../../components/Layout'
 import { StickHeader } from '../../utilities/functions'
@@ -25,12 +23,6 @@ import AlexaFeatures from './AlexaFeatures'
 import './index.css'
 
 const AlexaPrivacy = () => {
-
-    const [isOpen, setIsOpen] = useState(false);
-    const [defaultSlide, setDefaultSlide] = useState(true)
-
-    const [open, setOpen] = useState(false)
-
 
     const AlexaPrivacyPage = () => (
         <main className="a__container">

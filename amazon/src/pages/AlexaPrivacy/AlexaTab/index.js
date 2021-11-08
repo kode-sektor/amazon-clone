@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Nav, NavItem, NavLink, NavbarText, Collapse, TabContent, TabPane } from 'reactstrap'
+import { Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap'
 
 import classnames from 'classnames'
 
