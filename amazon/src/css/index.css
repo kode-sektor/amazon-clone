@@ -606,6 +606,19 @@ ol.a__horizontal.a__button__list li, ul.a__horizontal.a__button__list li {
     margin-left: 6px;
     margin-right: 0;
 }
+.a__ordered__list.a__list__link, .a__unordered__list.a__list__link, 
+ol.a__list__link, ul.a__list__link {
+    margin: -2px 0 0;
+}
+.a__ordered__list.a__list__link a, .a__unordered__list.a__list__link a, 
+ol.a__list__link a, ul.a__list__link a {
+    display: block;
+    color: var(--color);
+}
+.a__ordered__list.a__list__link li a, .a__unordered__list.a__list__link li a, 
+ol.a__list__link li a, ul.a__list__link li a {
+    padding: 2px 0;
+}
 .a__input__text__addon__group__wrapper {
     display: inline-block;
     vertical-align: middle;
@@ -2011,6 +2024,35 @@ table.myx__bordered tr:first-child th {
     border-top-width: 1px;
     text-align: center;
 }
+.a__divider__inner {
+    position: relative;
+    top: -2px;
+    height: 44px;
+    margin-bottom: -18px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    z-index: 0;
+    zoom: 1;
+}
+.a__divider__inner:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 44px;
+    background-color: transparent;
+    background: -webkit-linear-gradient(to right, var(--white),rgba(255,255,255,0), var(--white));
+    background: linear-gradient(to right, var(--white),rgba(255,255,255,0), var(--white));
+    z-index: 1;
+}
+.ss__landing__container__wide {
+    margin: auto;
+    min-width: 900px;
+    max-width: 1000px;
+}
+.a__form__label {
+    font-weight: 700;
+}
+
+
 
 
 

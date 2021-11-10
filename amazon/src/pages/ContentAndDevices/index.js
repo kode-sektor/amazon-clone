@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { FaCaretDown, FaExclamationTriangle } from 'react-icons/fa'
+import { FaCaretUp, FaCaretDown, FaExclamationTriangle } from 'react-icons/fa'
 import { TabContent, TabPane } from 'reactstrap'
-import classnames from 'classnames';
+import { Dropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
+
+import classnames from 'classnames'
 
 import Layout from '../../components/Layout'
 
@@ -15,8 +17,13 @@ import Preferences from '../../components/UI/Preferences'
 
 import myxpshalx from '../../images/myxpshalx.png'
 import myxpshdpv from '../../images/myxpshdpv.png'
+import mycd_device_privacy_alldevices_filter from '../../images/mycd-device-privacy-alldevices-filter.png'
+import mycd_device_privacy_firetv_filter from '../../images/mycd-device-privacy-firetv-filter.png'
+import mycd_device_privacy_firetablet_filter from '../../images/mycd-device-privacy-firetablet-filter.png'
+import mycd_device_privacy_kindle_filter from '../../images/mycd-device-privacy-kindle-filter.png'
 
 import Card from './Card'
+import DropdownChild from './DropdownChild'
 
 import './index.css'
 
@@ -28,12 +35,15 @@ const ContentAndDevices = () => {
     const [open, setOpen] = useState(false)
 
     const toggle = tab => {
-        if (activeTab !== tab) setActiveTab(tab);
+        if (activeTab !== tab) setActiveTab(tab)
     }
+
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const toggleDevices = () => setDropdownOpen(prevState => !prevState);
 
     const ContentAndDevicesPage = () => (
         <section className="contentDevices--page">
-            <div className={`desktopMargin__myx ${activeTab === "privacy-settings" ? "shrink" : ""}`}>
+            <div className={`desktopMargin__myx ${(activeTab === "privacy-settings" || activeTab === "amazon-devices-privacy") ? "shrink" : ""}`}>
                 <nav className="navHeader__alexa__myx" tabs>
                     <h1 className="navHeader__title__myx navHeader__title__style__myx d-inline">
                         Manage Your Content and Devices
@@ -67,11 +77,13 @@ const ContentAndDevices = () => {
                                 Privacy Settings
                             </div>
                             <div className="navOptionChildrenContainer__alexa__myx">
-                                <div className="navOptionChildItem__alexa__myx" role="button">
-                                    <Link to="/alexa-privacy" className="link__default">Alexa Privacy</Link>
-                                </div>
-                                <div className="navOptionChildItem__alexa__myx">
-                                    <Link to="/amazon-devices-privacy" className="link__default">Amazon Devices Privacy</Link>
+                                <Link to="/alexa-privacy" className="navOptionChildItem__alexa__myx link__default">
+                                    Alexa Privacy
+                                </Link>
+                                <div className="navOptionChildItem__alexa__myx" onClick={() => { toggle('amazon-devices-privacy') }} role="button">
+                                    <Link href="javascript:void(0)" className="link__default">
+                                        Amazon Devices Privacy
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -508,6 +520,122 @@ const ContentAndDevices = () => {
                                 </section>
                                 <section className="contentPrivacy__setting">
                                     You can add an additional layer of security to your Amazon account by enabling <Link to="/" className="a__browser__link">Two-Step verfication</Link>
+                                </section>
+                            </section>
+                        </TabPane>
+                        <TabPane tabId="amazon-devices-privacy" className="contentAmazonPrivacy" tag="section">
+                            <section className="contentAmazonPrivacy__module">
+                                <nav className="contentAmazonPrivacy__nav">
+                                    <Link to="/" className="breadcrumbs__modulePath">
+                                        Privacy settings
+                                    </Link>
+                                    <span className="breadcrumbs__moduleSeparator">&#62;</span>
+                                    <Link to="/" className="breadcrumbs__moduleCurrentPath">
+                                        Amazon Devices Privacy
+                                    </Link>
+                                </nav>
+                                <header className="contentAmazonPrivacy__header">
+                                    Amazon Devices Privacy
+                                </header>
+                                <section className="contentAmazonPrivacy__body">
+                                    <h3 className="contentAmazonPrivacy__subHeading">
+                                        Select device
+                                    </h3>
+                                    <section className="contentAmazonPrivacy__scroll">
+                                        <section className="contentAmazonPrivacy__dropdown">
+                                            <section className="contentAmazonPrivacy__filter">
+                                                Devices with Privacy Settings:
+                                            </section>
+                                            <section className="contentAmazonPrivacy__familyFilter">
+                                                <Dropdown className="dropdown__privacy" isOpen={dropdownOpen} toggle={toggleDevices} tag="section">
+                                                    <DropdownToggle tag="span" role="button">
+                                                        <div className="d-flex align-items-center h-100">
+                                                            <label htmlFor="">
+                                                                <img src={mycd_device_privacy_alldevices_filter} alt="mycd device privacy alldevices filter" />
+                                                                <span className="contentAmazonPrivacy__titleFilter">
+                                                                    <span>All devices</span>
+                                                                    <font> (0)</font>
+                                                                </span>
+                                                            </label>
+                                                            <div className="contentAmazonPrivacy__flexibleDropdown d-flex align-items-center flex-column">
+                                                                <FaCaretUp/>
+                                                                <FaCaretDown />
+                                                            </div>
+                                                        </div>
+                                                    </DropdownToggle>
+                                                    <DropdownMenu>
+                                                        <DropdownChild
+                                                            img={
+                                                                    <img src={mycd_device_privacy_alldevices_filter} alt="mycd device privacy alldevices filter" />
+                                                                }
+                                                            filter={
+                                                                    <span className="contentAmazonPrivacy__titleFilter">
+                                                                        <span>All devices</span>
+                                                                        <font> (0)</font>
+                                                                    </span>
+                                                            }
+                                                        />
+                                                        <DropdownChild
+                                                            img={
+                                                                    <img src={mycd_device_privacy_firetv_filter} alt="mycd device privacy firetv filter" />
+                                                                }
+                                                            filter={
+                                                                    <span className="contentAmazonPrivacy__titleFilter">
+                                                                        <span>Fire TV</span>
+                                                                        <font> (0)</font>
+                                                                    </span>
+                                                            }
+                                                        />
+                                                        <DropdownChild
+                                                            img={
+                                                                    <img src={mycd_device_privacy_firetablet_filter} alt="mycd device privacy firetablet filter" />
+                                                                }
+                                                            filter={
+                                                                    <span className="contentAmazonPrivacy__titleFilter">
+                                                                        <span>Fire Tablet</span>
+                                                                        <font> (0)</font>
+                                                                    </span>
+                                                            }
+                                                        />
+                                                        <DropdownChild
+                                                            img={
+                                                                    <img src={mycd_device_privacy_kindle_filter} alt="mycd device privacy kindle filter" />
+                                                                }
+                                                            filter={
+                                                                    <span className="contentAmazonPrivacy__titleFilter">
+                                                                        <span>Kindle</span>
+                                                                        <font> (0)</font>
+                                                                    </span>
+                                                            }
+                                                        />
+                                                    </DropdownMenu>
+                                                </Dropdown>
+                                            </section>
+                                        </section>
+                                        <section className="contentAmazonPrivacy__buttonScroller">
+                                            <div>
+                                                <span></span>
+                                            </div>
+                                        </section>
+                                        <section className="contentAmazonPrivacy__productScroller">
+                                            <span>
+                                                You don't have any Amazon devices registered to your account for which you can view and manage privacy settings from here..
+                                            </span>
+                                        </section>
+                                        <section className="contentAmazonPrivacy__buttonScrollerRight">
+                                            <div>
+                                                <span></span>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section className="contentAmazonPrivacy__faq justify-content-between">
+                                        <Link to="/" className="a__browser__link">
+                                            Frequently asked questions
+                                        </Link>
+                                        <p>
+                                            You can add an additional layer of security to your Amazon account by enabling <Link to="/" className="a__browser__link">Two-Step verfication</Link>
+                                        </p>
+                                    </section>
                                 </section>
                             </section>
                         </TabPane>

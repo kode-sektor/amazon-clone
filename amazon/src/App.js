@@ -39,6 +39,7 @@ import ShippingRate from "./pages/ShippingRate"
 import Returns from "./pages/Returns"
 import ContentAndDevices from "./pages/ContentAndDevices"
 import AlexaPrivacy from "./pages/AlexaPrivacy"
+import CustomerService from "./pages/CustomerService"
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
                     <Route path="/returns" component={Returns}/>
                     <Route path="/content-and-devices" component={ContentAndDevices}/>
                     <Route path="/alexa-privacy" component={AlexaPrivacy}/>
+                    <Route path="/customer-service" component={CustomerService}/>
                 </Switch>
             </Router>
         </div>

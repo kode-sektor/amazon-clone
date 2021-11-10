@@ -275,12 +275,12 @@ const MyxBtn = ({text, disabled=false, type, mode=""}) => {
     // mode === "sm" or "" 
 
     const [dropdownOpenMyx, setDropdownOpenMyx] = useState(false);
-    const toggleMx = () => setDropdownOpenMyx(prevState => !prevState);
+    const toggleMyx = () => setDropdownOpenMyx(prevState => !prevState);
 
     return (
         type==="dropdown" ? 
             (
-                <Dropdown isOpen={dropdownOpenMyx} toggle={toggleMx} tag="span" className={`${mode}`}>
+                <Dropdown isOpen={dropdownOpenMyx} toggle={toggleMyx} tag="span" className={`${mode}`}>
                     <DropdownToggle className={`myx__button ${disabled && ("myx__button__disabled")} ${type==="dropdown" && ("myx__button__dropdown")}`}>
                         <span className="myx__button__inner">
                             <button className="myx__button__text">

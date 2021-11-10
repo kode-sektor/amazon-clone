@@ -16,11 +16,19 @@
     position: relative;
     color: var(--white);
 }
+.alexa__privacy__header .navbar-nav li:hover,
+.alexa__privacy__header .navbar-nav li:focus {
+    border-bottom-style: solid;
+}
 .alexa__privacy__header .navbar-nav li a {
     display: flex;
     padding: 20px;
     color: var(--white);
     text-decoration: none;
+}
+.alexa__privacy__header .navbar-nav li a:hover,
+.alexa__privacy__header .navbar-nav li a:focus {
+    color: var(--blue-35);
 }
 .alexa__mainTabPane {
     width: 100%;

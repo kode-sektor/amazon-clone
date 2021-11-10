@@ -180,6 +180,7 @@ file rather than small ones. Your choice
     --blue-32: #edfdff;
     --blue-33: #007eb9;
     --blue-34: #203d54;
+    --blue-35: #70b9f0;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -238,6 +239,7 @@ file rather than small ones. Your choice
 	--ochre-55: #b75907;
 	--ochre-56: #f56e00;
 	--ochre-57: #ffa800;
+	--ochre-58: #ad5305;
 
     --link: #007BFF;
 	--link-hover: #d9534f;
@@ -360,6 +362,7 @@ file rather than small ones. Your choice
     --grey-tone-99:  #c9c9c9;
     --grey-tone-100:  #525252;
     --grey-tone-101:  #bec2d4;
+    --grey-tone-102:  #6d6c6c;
 	
     --black: #000;
     --white: #fff;
@@ -1253,7 +1256,7 @@ input[type=date], input[type=email] {
     border-bottom-left-radius: 0;
 }
 input[type=search] {
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     -webkit-appearance: textfield;
 }
 .a__width__base {
@@ -1842,7 +1845,8 @@ hr.bucket__divider {
     white-space: normal;
 }
 .a__spacing__none {
-	margin-top: 0 !important
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 .a__spacing__top__mini {
     margin-top: 4px !important;

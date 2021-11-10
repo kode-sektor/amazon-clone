@@ -48,6 +48,5 @@ const PageNavBreadCrumb = ({items}) => (
     </nav>
 )
 
-// export default { BreadCrumb, PageNavBreadCrumb }   // Wrong
-export { BreadCrumb, PageNavBreadCrumb }    // Correct
+export { BreadCrumb, PageNavBreadCrumb }   
 

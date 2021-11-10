@@ -1,0 +1,113 @@
+.customer__serviceHeader {
+    margin: auto;
+    min-width: 825px;
+    max-width: 1000px;
+}
+.customerService__title, .customerService__body {
+    margin: auto;
+    min-width: 900px;
+    max-width: 1000px;
+}
+.customer__serviceInner {
+    margin: auto;
+    min-width: 825px;
+    max-width: 1000px;
+}
+.customer__serviceTopics {
+    position: relative;
+    margin-top: 41px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--grey-tone-24);
+}
+.customer__serviceCat {
+    flex: 0 0 260px;
+    min-height: 328px;
+    padding: 12px 0 19px 16px;
+    border-right: 1px solid var(--grey-tone-24);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background: none repeat scroll 0 0 var(--grey-tone-1);
+}
+.customer__serviceCatContent {
+    /* display: none; */
+    padding: 16px 2%;
+    border-left: 1px solid var(--grey-tone-24);
+    margin-left: -1px;
+}
+.customer__serviceCat ul li {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    line-height: 26px;
+    text-indent: -5px;
+    margin: 0 15px 0 5px;
+}
+.customer__serviceCat ul li a {
+    display: block;
+    padding: 2px 0;
+    line-height: 26px;
+    text-decoration: none;
+}
+.customer__serviceCat ul li a:hover, .customer__serviceCat ul li a:focus, 
+.customer__serviceCat ul li a.active {
+    font-weight: 700;
+    color: var(--ochre-5);
+    cursor: default;
+}
+.customer__serviceCat ul li .arrow {
+    position: absolute;
+    display: none;
+    float: right;
+    top: 0;
+    right: 5px;
+    width: 8px;
+    height: 11px;
+    margin-right: 0;
+    font-size: 2em;
+    opacity: .5;
+}
+.customer__serviceContentCol {
+    width: 500px;
+}
+.customer__serviceCatContentSketch {
+    position: absolute;
+    right: -1.5em;
+    bottom: -1.5em;
+    z-index: 1;
+}
+.customer__serviceContentCol ul li {
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 0;
+    text-indent: -10px;
+}
+.customer__serviceContentCol ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--blue);
+}
+.customer__serviceContentCol ul li.more {
+    padding-top: 20px;
+}
+.customer__serviceLine {
+    position: absolute;
+    right: 224px;
+    top: 18px;
+}
+.customer__serviceContentColPri h3 {
+    line-height: 22px;
+    padding-bottom: 5px!important;
+    font-weight: 400;
+    font-size: 18px;
+}
+.customer__serviceContentColSec h3 {
+    margin-top: 11px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.customer__serviceContentColSec ul li a {
+    font-size: 13px;
+    line-height: 16px;
+}

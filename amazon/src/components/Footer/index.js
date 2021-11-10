@@ -91,7 +91,7 @@ const Footer = (props) => {
                                 { label: "Amazon Prime", href: "/prime", icon: null },
                                 { label: "Returns Are Easy", href: "/returns", icon: null },
                                 { label: "Manage your Content and Devices", href: "/content-and-devices", icon: null },
-                                { label: "Customer Service", href: "/", icon: null }
+                                { label: "Customer Service", href: "/customer-service", icon: null }
                             ]
                         }
                 />
