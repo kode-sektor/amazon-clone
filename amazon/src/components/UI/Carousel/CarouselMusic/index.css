@@ -1,0 +1,33 @@
+.amazonMusic__carousel {
+    padding: 24px 0px 12px;
+}
+.amazonMusic__carouselHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(16px);
+    height: 40px;
+    border: thin solid crimson;
+}
+
+
+
+
+
+@media (min-width: 0) {
+    .amazonMusic__carouselHeader {
+        padding-left: calc(20px);
+        padding-right: calc(20px);
+    }
+}
+@media (min-width: 480px) {
+    .amazonMusic__carouselHeader {    
+        padding-left: calc(36px);
+        padding-right: calc(36px);
+    }
+}
+@media (min-width: 1280px) {
+    .amazonMusic__carouselHeader {    
+        padding-left: calc(52px);
+        padding-right: calc(52px);
+    }
+}

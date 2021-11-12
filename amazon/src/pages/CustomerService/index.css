@@ -31,7 +31,6 @@
     background: none repeat scroll 0 0 var(--grey-tone-1);
 }
 .customer__serviceCatContent {
-    /* display: none; */
     padding: 16px 2%;
     border-left: 1px solid var(--grey-tone-24);
     margin-left: -1px;

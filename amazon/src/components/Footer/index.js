@@ -184,55 +184,60 @@ const Footer = (props) => {
                         type={"page__sub__footer"}
                         menu={
                                 [
-                                    { label: 
-                                        <>
-                                            Amazon Music<br/> 
-                                            <span className="page__sub__footer__descLink">Stream millions<br/> 
-                                                of songs
-                                            </span>
-                                        </>, 
-                                        href: "/", 
-                                        icon: null 
-                                    },
-                                    { label: 
-                                        <>
-                                            Amazon Advertising<br/> 
-                                            <span className="page__sub__footer__descLink">Find, attract, and<br/> 
-                                                engage customers
-                                            </span>
-                                        </>, 
-                                        href: "/", 
-                                        icon: null 
-                                    },
-                                    { label: 
-                                        <>
-                                            Amazon Drive<br/> 
-                                                <span className="page__sub__footer__descLink">Cloud storage<br/> 
-                                                    from Amazon
+                                    { 
+                                        label: 
+                                            <>
+                                                Amazon Music<br/> 
+                                                <span className="page__sub__footer__descLink">Stream millions<br/> 
+                                                    of songs
                                                 </span>
-                                        </>, 
-                                        href: "/", 
-                                        icon: null 
+                                            </>, 
+                                            href: "/amazon-music", 
+                                            icon: null 
                                     },
-                                    { label: 
-                                        <>
-                                            Amazon Web Services<br/> 
-                                                <span className="page__sub__footer__descLink">Scalable Cloud<br/> 
-                                                    Computing Services
+                                    { 
+                                        label: 
+                                            <>
+                                                Amazon Advertising<br/> 
+                                                <span className="page__sub__footer__descLink">Find, attract, and<br/> 
+                                                    engage customers
                                                 </span>
-                                        </>, 
-                                        href: "/", 
-                                        icon: null 
+                                            </>, 
+                                            href: "/", 
+                                            icon: null 
                                     },
-                                    { label: 
-                                        <>
-                                            Book Depository<br/> 
-                                                <span class="page__sub__footer__descLink">Books With Free<br/> 
-                                                    Delivery Worldwide
-                                                </span>
-                                        </>, 
-                                        href: "/", 
-                                        icon: null 
+                                    { 
+                                        label: 
+                                            <>
+                                                Amazon Drive<br/> 
+                                                    <span className="page__sub__footer__descLink">Cloud storage<br/> 
+                                                        from Amazon
+                                                    </span>
+                                            </>, 
+                                            href: "/", 
+                                            icon: null 
+                                    },
+                                    { 
+                                        label: 
+                                            <>
+                                                Amazon Web Services<br/> 
+                                                    <span className="page__sub__footer__descLink">Scalable Cloud<br/> 
+                                                        Computing Services
+                                                    </span>
+                                            </>, 
+                                            href: "/", 
+                                            icon: null 
+                                    },
+                                    { 
+                                        label: 
+                                            <>
+                                                Book Depository<br/> 
+                                                    <span class="page__sub__footer__descLink">Books With Free<br/> 
+                                                        Delivery Worldwide
+                                                    </span>
+                                            </>, 
+                                            href: "/", 
+                                            icon: null 
                                     }
                                 ]
                             }

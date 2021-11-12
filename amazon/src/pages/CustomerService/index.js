@@ -7,15 +7,10 @@ import { RiArrowDropRightLine } from 'react-icons/ri'
 
 import Layout from '../../components/Layout'
 
-import { CardCell, CardCellLinks } from '../../components/UI/CardCell'
-import Slider from '../../components/UI/Carousel/Carousel'
+import { CardCell } from '../../components/UI/CardCell'
 
 import order from '../../images/order.png'
-import security from '../../images/security.png'
-import prime from '../../images/prime.png'
-import address from '../../images/address.png'
 import payment from '../../images/payment.png'
-import gift_card from '../../images/gift-card.png'
 import returnn from '../../images/return.png'
 import digital_devices from '../../images/digital-devices.png'
 import prime_clear_bg from '../../images/prime-clear-bg.png'

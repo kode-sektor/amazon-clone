@@ -382,6 +382,93 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		// 		)
 		// 	})
 		// }
+		else if (type === "music") {
+			items.forEach((item, index) => {
+				const { href, src, altText, caption, tags } = item
+				tempCarousel = [
+					...tempCarousel,
+					(
+						<li>
+							<figure>
+								<Link to={href}>
+									<img className="music__carouselImg" src={src} alt={altText} />
+								</Link>
+								<figcaption>
+									<em>{caption}</em><br/>
+									{ tags && (<span>{tags}</span>) }
+								</figcaption>
+								<button className="music__carouselBtn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+										<path fill="#fff" id="ic_chevron_caretright-a" d="M10,18 C9.744,18 9.488,17.902 9.293,17.707 C8.902,17.316 8.902,16.684 9.293,16.293 L13.586,12 L9.293,7.707 C8.902,7.316 8.902,6.684 9.293,6.293 C9.684,5.902 10.316,5.902 10.707,6.293 L15.707,11.293 C16.098,11.684 16.098,12.316 15.707,12.707 L10.707,17.707 C10.512,17.902 10.256,18 10,18 Z"></path>
+									</svg>
+								</button>
+							</figure>
+						</li>
+					)
+				]
+				if ((((index + 1) % count) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
+								<CarouselItem
+									className={carouselClass ? carouselClass : ""}
+									onExiting={() => setAnimating(true)}
+									onExited={() => setAnimating(false)}
+									key={index}
+								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
+									{/* Pick the last class if 2 classes are passed 
+									e.g. "music__carousel amzn__carousel" to "amzn__carousel" */}
+									<ul className={`${carouselClass.substring(carouselClass.lastIndexOf(" "))}__cards`}>{tempCarousel}</ul>
+								</CarouselItem>
+					]
+					tempCarousel = []
+				}
+			})
+		}
+		else if (type === "music-nonagonSlide") {
+			items.forEach((item, index) => {
+				const { href, src, altText, caption, tags } = item
+				tempCarousel = [
+					...tempCarousel,
+					(
+						<li>
+							<figure>
+								<Link to={href}>
+									<img className="music__carouselImg" src={src} alt={altText} />
+								</Link>
+								<figcaption>
+									<em>{caption}</em><br/>
+									{ tags && (<span>{tags}</span>) }
+								</figcaption>
+								<button className="music__carouselBtn">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+										<path fill="#fff" id="ic_chevron_caretright-a" d="M10,18 C9.744,18 9.488,17.902 9.293,17.707 C8.902,17.316 8.902,16.684 9.293,16.293 L13.586,12 L9.293,7.707 C8.902,7.316 8.902,6.684 9.293,6.293 C9.684,5.902 10.316,5.902 10.707,6.293 L15.707,11.293 C16.098,11.684 16.098,12.316 15.707,12.707 L10.707,17.707 C10.512,17.902 10.256,18 10,18 Z"></path>
+									</svg>
+								</button>
+							</figure>
+						</li>
+					)
+				]
+				// Leave 'count' in case programmer decides to retain its use
+				if ((((index + 1) % count) === 0) || ((index + 1) % 9) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
+								<CarouselItem
+									className={carouselClass ? carouselClass : ""}
+									onExiting={() => setAnimating(true)}
+									onExited={() => setAnimating(false)}
+									key={index}
+								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
+									{/* Pick the last class if 2 classes are passed 
+									e.g. "music__carousel amzn__carousel" to "amzn__carousel" */}
+									<ul className={`${carouselClass.substring(carouselClass.lastIndexOf(" "))}__cards`}>{tempCarousel}</ul>
+								</CarouselItem>
+					]
+					tempCarousel = []
+				}
+			})
+		}
 		else {
 			slides = items.map((item) => {
 				return (
@@ -423,13 +510,13 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 				!giftCardAux || (type !== "affiliate") ( */}
 					<>
 						<CarouselControl
-							className={carouselClass && (`${carouselClass}__control`)}
+							className={carouselClass && (`${carouselClass.substring(carouselClass.lastIndexOf(" "))}__control`)}
 							direction="prev"
 							directionText="Previous"
 							onClickHandler={previous}
 						/>
 						<CarouselControl
-							className={carouselClass && (`${carouselClass}__control`)}
+							className={carouselClass && (`${carouselClass.substring(carouselClass.lastIndexOf(" "))}__control`)}
 							direction="next"
 							directionText="Next"
 							onClickHandler={next}

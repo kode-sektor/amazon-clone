@@ -40,6 +40,7 @@ import Returns from "./pages/Returns"
 import ContentAndDevices from "./pages/ContentAndDevices"
 import AlexaPrivacy from "./pages/AlexaPrivacy"
 import CustomerService from "./pages/CustomerService"
+import AmazonMusic from "./pages/AmazonMusic"
 
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
                     <Route path="/content-and-devices" component={ContentAndDevices}/>
                     <Route path="/alexa-privacy" component={AlexaPrivacy}/>
                     <Route path="/customer-service" component={CustomerService}/>
+                    <Route path="/amazon-music" component={AmazonMusic}/>
                 </Switch>
             </Router>
         </div>
