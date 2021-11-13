@@ -629,10 +629,10 @@
     top: -28px;
 }
 .amazonMusic__carousel .carousel-control-prev {
-    right: 195px;
+    right: 190px;
 }
 .amazonMusic__carousel .carousel-control-next {
-    right: 145px;
+    right: 140px;
 }
 /* .musicNonagon__carousel .carousel-control-prev {
     right: 190px;
@@ -718,6 +718,39 @@
 }
 .amazonMusic__carousel .music__btn {
     right: 50px;
+}
+.music__nonagonImgCtrl {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    top: 5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.75em;
+}
+.amznMusic__carousel__cards li:hover .music__nonagonImgCtrl, 
+.amznMusic__carousel__cards li:focus .music__nonagonImgCtrl {
+    display: flex;
+}
+.music__nonagonImgCtrl button {
+    color: var(--white);
+}
+.music__nonagonImgPlay {
+    position: relative;
+    padding: 10px;
+    background: rgba(0,0,0,.4);
+    font-size: 1.5em;
+}
+.music__nonagonImgMainCtrl {
+    margin-right: 40px;
+}
+.music__nonagonImgMainCtrl > * {
+    display: inline-block;
+    width: 40px;
 }
 
 

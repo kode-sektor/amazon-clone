@@ -1,6 +1,10 @@
 import React, { useState } from "react"
 import { Link } from 'react-router-dom'
 
+import { BiPlay } from 'react-icons/bi'
+import { AiOutlinePlus } from 'react-icons/ai'
+import { BsThreeDots } from 'react-icons/bs'
+
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
 import { PrimaryBtn, CartBtnSmall, CartBtn } from '../../Button'
@@ -453,6 +457,15 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									</svg>
 								</button>
 							</figure>
+							<section className="music__nonagonImgCtrl">
+								<div className="music__nonagonImgPlay">
+									<button><BiPlay /></button>
+								</div>
+								<div className="music__nonagonImgMainCtrl">
+									<button><AiOutlinePlus /></button>
+									<button><BsThreeDots /></button>
+								</div>
+							</section>
 						</li>
 					)
 				]
