@@ -1,12 +1,9 @@
 .carousel.slide {
     width: 100%;
-    max-width: 1500px;
-    max-height: 230px;
-    /* height: 300px;
-    margin: 0 auto; */
-
-    max-height: none;
     height: auto;
+    max-width: 1500px;
+    /* max-height: 230px; */
+    max-height: none;
 }
 .carousel__detailed .carousel.slide {
     height: auto;
@@ -18,9 +15,8 @@
 }
 .carousel-inner {
     position: relative;
-    overflow: visible;
     overflow: hidden;
-    height: calc(100vh - 99px);
+    /* height: calc(100vh - 99px); */
     height: 100%;
     margin-bottom: 0!important;
     z-index: 0;
@@ -41,10 +37,10 @@
 }
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
+    top: 0;
     height: 100%;
     width: 80px;
     max-height: 250px;
-    top: 0;
     padding-left: 3px;
     visibility: visible;
     z-index: 10;
@@ -90,9 +86,9 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin: 0;
     min-height: 220px;
     white-space: nowrap;
-    margin: 0;
 }
 .amzn__carousel__cards {
     position: relative;
@@ -103,9 +99,9 @@
 }
 .carousel__detailed .amzn__carousel__cards {
     display: flex;
+    height: 100%;
     padding: 0;
     margin: 0;
-    height: 100%;
     white-space: nowrap;
     overflow-x: visible;
     letter-spacing: -4px;
@@ -129,15 +125,15 @@
     display: inline-block;
     overflow: hidden;
     width: 160px;
-    margin-left: 33px;
     min-height: 100%;
     max-width: none;
     max-height: none;
     min-width: 0;
+    margin-left: 33px;
     list-style-type: none;
+    letter-spacing: normal;
     white-space: normal;
     text-align: left;
-    letter-spacing: normal;
 }
 .carousel__compressed .amzn__carousel__cards > li { 
     width: 120px;
@@ -177,16 +173,18 @@
 .carousel__detailed .amzn__carousel__cards figcaption {
     position: static;
 }
-.amzn__carousel__control {
+.amzn__carousel__control, 
+.musicNonagon__carousel .carousel-control-prev,  
+.musicNonagon__carousel .carousel-control-next {
     display: inline;
     position: absolute;
     top: 55px;
-    padding-left: 0;
-    background-color: var(--white);
     height: 100px;
-    line-height: 100px;
     width: 45px;
+    padding-left: 0;
+    line-height: 100px;
     text-align: center;
+    background-color: var(--white);
     box-shadow: 0 1px 3px var(--grey-tone-23);
     opacity: 0;
     -webkit-user-select: none;
@@ -308,8 +306,8 @@
 .carousel__detailed__layout__inner, 
 * .carousel__detailed:last-child .carousel__detailed__layout__inner {
     padding: 10px 30px;
-    height: 100%;
     width: 100%;
+    height: 100%;
     border-radius: 5px;
     border: 1px solid var(--grey-tone-24);
 }
@@ -337,8 +335,8 @@
 }
 .carousel__detailed__slider__header {
     margin: 0 0 20px;
-    font-size: 24px !important;
     line-height: 32px !important;
+    font-size: 24px !important;
 }
 .amzn__gift__cards .carousel__detailed__slider__header {
     margin: 0 0 4px 0 !important;
@@ -349,9 +347,9 @@
 }
 .carousel__count {
     margin-left: 2%;
-    font-size: initial;
-    font-weight: 400;
     line-height: normal;
+    font-weight: 400;
+    font-size: initial;
 }
 .amzn__carousel__caption {
     overflow: hidden;
@@ -367,9 +365,9 @@
     font-size: 21px;
     text-decoration: none;
 }
-.amzn__price__whole {
+/* .amzn__price__whole {
 
-}
+} */
 .amzn__price__decimal {
     position: absolute;
     opacity: 0;
@@ -408,8 +406,8 @@
 }
 .amzn__carousel__count {
     display: inline-block;
-    font-size: 12px !important;
     line-height: 16px !important;
+    font-size: 12px !important;
 }
 .amzn__carousel__dateOfPurchase {
     display: block;
@@ -478,11 +476,10 @@
 
 .music__carouselImg {
     display: block;
-    width: 100%;
     object-fit: cover;
-    background-size: contain;
     height: 100%;
     width: 100%;
+    background-size: contain;
 
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
@@ -503,8 +500,8 @@
 .music__carousel .amzn__carousel__cards > li figure {
     display: inline-block;
     width: 167px;
-    max-width: 167px;
     height: auto;
+    max-width: 167px;
 }
 .music__carousel .amzn__carousel__cards > li figure a {
     width: 167px;
@@ -513,7 +510,6 @@
     max-height: 167px;
     min-width: 0;
     min-height: 0;
-    border: thin solid fuchsia;
 }
 .music__carousel figcaption {
     line-height: 26px;
@@ -547,7 +543,6 @@
     right: auto;
     text-align: left;
     font-style: normal;
-    border: thin solid orange;
 }
 .music__carousel figcaption em {
     overflow: hidden;
@@ -612,27 +607,180 @@
 .amazonMusic__carousel .carousel-indicators {
     display: none;
 }
-.amazonMusic__carousel .amzn__carousel__control {
+.amazonMusic__carousel .amzn__carousel__control,
+.musicNonagon__carousel .carousel-control-prev,  
+.musicNonagon__carousel .carousel-control-next {
     top: -40px;
     right: 60px;
     left: auto;
-    line-height: normal;
+    max-height: none;
     width: 24px;
     height: 24px;
-    max-height: none;
+    padding-right: 0;
+    line-height: normal;
     box-shadow: none;
     opacity: 1;
     border-radius: 0;
-    padding-right: 0;
     clip: unset;
     background-color: transparent;
 }
-.amazonMusic__carousel .carousel-control-prev {
-    right: 110px;
+.musicNonagon__carousel .carousel-control-prev,  
+.musicNonagon__carousel .carousel-control-next {
+    top: -28px;
 }
+.amazonMusic__carousel .carousel-control-prev {
+    right: 195px;
+}
+.amazonMusic__carousel .carousel-control-next {
+    right: 145px;
+}
+/* .musicNonagon__carousel .carousel-control-prev {
+    right: 190px;
+}
+.musicNonagon__carousel .carousel-control-next {
+    right: 140px;
+} */
 .amazonMusic__carousel .carousel-control-prev-icon {
     background: url('../../../../images/arrow-left.png') no-repeat;
 }
 .amazonMusic__carousel .carousel-control-next-icon {
     background: url('../../../../images/arrow-right.png') no-repeat;
+}
+
+.musicNonagon__carousel {
+    padding: 24px 0px 12px;
+    color: var(--white);
+}
+.amznMusic__carousel__cards {
+    overflow: auto;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    max-height: 275px;
+    margin-left: 0;
+}
+.amznMusic__carousel__cards li {
+    position: relative;
+    display: inline-block;
+    padding: 8px 4px 8px 0px;
+    width: 100%;
+    height: 56px;
+    contain: content;
+    color: var(--white);
+}
+.amznMusic__carousel__cards li figure {
+    display: inline-flex;
+    align-items: center;
+    height: 56px;
+    margin: 0;
+    outline: none;
+}
+.amznMusic__carousel__cards li figure a {
+    position: relative;
+    flex-basis: 56px;
+    width: 56px;
+    height: 56px;
+}
+.music__nonagonImg {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.amznMusic__carousel__cards li figcaption {
+    flex: 3 1 0%;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 12px;
+}
+.amznMusic__carousel__cards li figcaption em {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    line-height: 22px;
+    font-style: normal;
+}
+.amznMusic__carousel__cards li figcaption span {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.amazonMusic__carousel .music__btn {
+    right: 50px;
+}
+
+
+
+
+
+
+
+@media (min-width: 0) {
+    .amznMusic__carousel__cards {
+        padding-left: calc(20px);
+        padding-right: calc(20px);
+    }
+}
+@media (min-width: 360) {
+    .amznMusic__carousel__cards {
+        padding-left: calc(20px);
+        padding-right: calc(20px);
+    }
+    .amznMusic__carousel__cards li {
+        flex: 0 0 calc((100% - 16px + 4px) / 1);
+        width: calc((100% - 16px + 4px) / 1);
+        max-width: calc((100% - 16px + 4px) / 1);
+        padding-right: 16px;
+    }
+}
+@media (min-width: 480px) {
+    .amznMusic__carousel__cards {
+        padding-left: calc(36px);
+        padding-right: calc(36px);
+    }
+    .amznMusic__carousel__cards li {
+        padding-right: 24px;
+        flex: 0 0 calc((100% - 24px + 12px) / 1);
+        width: calc((100% - 24px + 12px) / 1);
+        max-width: calc((100% - 24px + 12px) / 1);
+    }
+}
+@media (min-width: 640px) {
+    .amznMusic__carousel__cards li {
+        padding-right: 24px;
+        flex: 0 0 calc((100% - 24px + 12px) / 2);
+        width: calc((100% - 24px + 12px) / 2);
+        max-width: calc((100% - 24px + 12px) / 2);
+    }
+}
+@media (min-width: 840px) {
+    .amznMusic__carousel__cards li {
+        padding-right: 24px;
+        flex: 0 0 calc((100% - 24px + 12px) / 3);
+        width: calc((100% - 24px + 12px) / 3);
+        max-width: calc((100% - 24px + 12px) / 3);
+    }
+}
+@media (min-width: 1280px) {
+    .amznMusic__carousel__cards {
+        padding-left: calc(52px);
+        padding-right: calc(52px);
+    }
+    .amznMusic__carousel__cards li {
+        padding-right: 32px;
+        flex: 0 0 calc((100% - 32px + 20px) / 3);
+        width: calc((100% - 32px + 20px) / 3);
+        max-width: calc((100% - 32px + 20px) / 3);
+    }
 }

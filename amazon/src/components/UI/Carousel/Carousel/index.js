@@ -23,6 +23,9 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 	if (count) {
 		itemLength = Math.ceil(items.length / count)
 	}
+	if (type === "music-nonagon") {
+		itemLength = Math.ceil(items.length / 9)
+	}
 
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [animating, setAnimating] = useState(false);
@@ -37,12 +40,12 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		if (animating) return;
 		const nextIndex = activeIndex === 0 ? itemLength - 1 : activeIndex - 1;
 		setActiveIndex(nextIndex);
-	};
+	}
 
 	const goToIndex = (newIndex) => {
 		if (animating) return;
 		setActiveIndex(newIndex);
-	};
+	}
 	
 	const slide = () => {
 
@@ -383,8 +386,10 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		// 	})
 		// }
 		else if (type === "music") {
+
 			items.forEach((item, index) => {
 				const { href, src, altText, caption, tags } = item
+
 				tempCarousel = [
 					...tempCarousel,
 					(
@@ -410,7 +415,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 					slides = [
 								...slides,
 								<CarouselItem
-									className={carouselClass ? carouselClass : ""}
+									className="music__carousel amzn__carousel"
 									onExiting={() => setAnimating(true)}
 									onExited={() => setAnimating(false)}
 									key={index}
@@ -418,26 +423,28 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									{/* Forcing 6 images inside one ul (which is screen-wide) */}
 									{/* Pick the last class if 2 classes are passed 
 									e.g. "music__carousel amzn__carousel" to "amzn__carousel" */}
-									<ul className={`${carouselClass.substring(carouselClass.lastIndexOf(" "))}__cards`}>{tempCarousel}</ul>
+									<ul className="amzn__carousel__cards">{tempCarousel}</ul>
 								</CarouselItem>
 					]
 					tempCarousel = []
 				}
 			})
 		}
-		else if (type === "music-nonagonSlide") {
+		else if (type === "music-nonagon") {
+			
 			items.forEach((item, index) => {
 				const { href, src, altText, caption, tags } = item
+
 				tempCarousel = [
 					...tempCarousel,
 					(
 						<li>
 							<figure>
 								<Link to={href}>
-									<img className="music__carouselImg" src={src} alt={altText} />
+									<img className="music__nonagonImg" src={src} alt={altText} />
 								</Link>
 								<figcaption>
-									<em>{caption}</em><br/>
+									<em>{caption}</em>
 									{ tags && (<span>{tags}</span>) }
 								</figcaption>
 								<button className="music__carouselBtn">
@@ -450,11 +457,11 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 					)
 				]
 				// Leave 'count' in case programmer decides to retain its use
-				if ((((index + 1) % count) === 0) || ((index + 1) % 9) === 0) || (index + 1) === items.length) {
+				if ((((index + 1) % count) === 0) || (((index + 1) % 9) === 0) || (index + 1) === items.length) {
 					slides = [
 								...slides,
 								<CarouselItem
-									className={carouselClass ? carouselClass : ""}
+									className="musicNonagon__carousel"
 									onExiting={() => setAnimating(true)}
 									onExited={() => setAnimating(false)}
 									key={index}
@@ -462,7 +469,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									{/* Forcing 6 images inside one ul (which is screen-wide) */}
 									{/* Pick the last class if 2 classes are passed 
 									e.g. "music__carousel amzn__carousel" to "amzn__carousel" */}
-									<ul className={`${carouselClass.substring(carouselClass.lastIndexOf(" "))}__cards`}>{tempCarousel}</ul>
+									<ul className="amznMusic__carousel__cards">{tempCarousel}</ul>
 								</CarouselItem>
 					]
 					tempCarousel = []

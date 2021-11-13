@@ -308,10 +308,16 @@ const MyxBtn = ({text, disabled=false, type, mode=""}) => {
     )
 }
 
+const MusicBtn = ({ title }) => (
+    <button className="music__btn" title={title}>
+        SEE ALL
+    </button>
+)
+
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedSm,
     BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, 
-    ReportAbuse, MyxBtn
+    ReportAbuse, MyxBtn, MusicBtn
 }

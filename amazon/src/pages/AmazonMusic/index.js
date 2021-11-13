@@ -23,6 +23,7 @@ import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-le
 import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
 
 import npr_news_now from '../../images/npr-news-now.jpg'
+import sweet_home_alabama from '../../images/songs/sweet-home-alabama.jpg'
 
 import './index.css'
 
@@ -857,7 +858,147 @@ const AmazonMusic = () => {
                     }               
                 />
                 <section>
-                    
+                    <CarouselMusic
+                        heading={"Top Songs"}
+                        type={"music-nonagon"}
+                        slider={
+                                [
+                                    <Slider 
+                                        type={"music-nonagon"}
+                                        items={
+                                                [
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        src: sweet_home_alabama,
+                                                        altText: "Sweet Home Alabama",
+                                                        caption: "Sweet Home Alabama",
+                                                        tags: "Lynyrd Skynyrd"
+                                                    }
+                                                ]
+                                        }
+                                    />
+                                ]
+                        }               
+                    />
                 </section>
             </main>
         </section>

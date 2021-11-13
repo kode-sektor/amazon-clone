@@ -272,3 +272,30 @@
 .a__button__cart .a__button__text {
     line-height: 20px !important;
 }
+.music__btn {
+    position: absolute;
+    margin: 0px;
+    padding: 5px 17px;
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    word-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    vertical-align: -webkit-baseline-middle;
+    pointer-events: auto;
+    cursor: pointer;
+    outline: none;
+    border-radius: 300px;
+    white-space: normal;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--grey-tone-103);
+}
