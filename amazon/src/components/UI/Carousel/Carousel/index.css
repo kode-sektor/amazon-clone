@@ -667,14 +667,16 @@
     contain: content;
     color: var(--white);
 }
-.amznMusic__carousel__cards li figure {
+.amznMusic__carousel__cards li figure,
+.amazonMusic__footerMeta li figure {
     display: inline-flex;
     align-items: center;
     height: 56px;
     margin: 0;
     outline: none;
 }
-.amznMusic__carousel__cards li figure a {
+.amznMusic__carousel__cards li figure a,
+.amazonMusic__footerMeta li figure a {
     position: relative;
     flex-basis: 56px;
     width: 56px;
@@ -689,20 +691,27 @@
     border-radius: 4px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-.amznMusic__carousel__cards li figcaption {
+.amznMusic__carousel__cards li figcaption,
+.amazonMusic__footerMeta li figcaption {
     flex: 3 1 0%;
     overflow: hidden;
     padding-left: 16px;
     padding-right: 12px;
 }
-.amznMusic__carousel__cards li figcaption em {
+.amznMusic__carousel__cards li figcaption em,
+.amazonMusic__footerMeta li figcaption em {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     line-height: 22px;
     font-style: normal;
 }
-.amznMusic__carousel__cards li figcaption span {
+.amazonMusic__footerMeta li figcaption em {
+    font-size: 16px;
+    line-height: 20px;
+}
+.amznMusic__carousel__cards li figcaption span,
+.amazonMusic__footerMeta li figcaption span {
     display: flex;
     flex-direction: row;
     align-items: flex-end;

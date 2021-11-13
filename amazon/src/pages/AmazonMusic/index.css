@@ -57,15 +57,15 @@
     margin-right: 12px;
 }
 .amazon__musicBtn, .amazon__musicBtn:link {
+    display: inline-flex;
+    padding: 10px 24px;
+    padding-left: 16px;
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 24px;
     background-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
-    display: inline-flex;
     color: var(--white) !important;
-    padding-left: 16px;
     border: 2px solid green;
 }
 .amazon__musicBtn:hover, .amazon__musicBtn:link:hover {
@@ -234,6 +234,80 @@ ul.amazon__musicBtn__dropdown {
     padding-bottom: 104px;
     box-sizing: border-box;
     border: 2px solid salmon;
+}
+.amazonMusic__footer {
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, #000 100%);
+}
+.amazonMusic__footerDiv {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 2.5px;
+    background-color: rgba(255,255,255,0.3);
+}
+.amazonMusic__footerContainer {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row nowrap;
+    max-width: 1600px;
+    width: 100%;
+    /* height: 80px; */
+    padding: 8px 16px 0px;
+    color: var(--white);
+    z-index: 5;
+    border: 2px solid orchid;
+}
+.amazonMusic__footerMeta {
+    display: flex;
+    align-self: center;
+    flex-basis: 485px;
+    overflow: hidden;
+    color: var(--white);
+    z-index: 20;
+    border: 2px solid greenyellow;
+}
+.amazonMusic__player {
+    flex-basis: 339px;
+    align-self: center;
+    color: white;
+    text-align: center;
+    border: thin solid coral;
+}
+.amazonMusic__footerMeta li {
+    position: relative;
+    display: inline-block;
+    flex-grow: 0;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    contain: content;
+    color: var(--white);
+    border: 2px solid indianred;
+}
+.amazonMusic__footerExpand {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: rgba(0,0,0,.5);
+}
+.amazonMusic__footerExpand button {
+    font-size: 2.5em;
+    transform: rotate(90deg);
+    color: var(--white);
 }
 
 
