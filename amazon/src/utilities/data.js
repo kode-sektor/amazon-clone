@@ -213,4 +213,163 @@ const progressiveSubNav = [
     }
 ]
 
-export { countries, languages, subMenu, progressiveSubNav }
+const currencies = [
+    {
+        text : "$ AUD",
+        value : "AUD"
+    },
+    {
+        text : "€ EUR",
+        value : "EUR"
+    },
+    {
+        text : "$ USD",
+        value : "USD"
+    },
+    {
+        text : "£ GBP",
+        value : "GBP"
+    },
+    {
+        text : "$ NZD",
+        value : "NZD"
+    },
+    {
+        text : "$ SGD",
+        value : "SGD"
+    },
+    {
+        text : "$ CAD",
+        value : "CAD"
+    },
+    {
+        text : "AED",
+        value : "AED"
+    },
+    {
+        text : "$ ARS",
+        value : "ARS"
+    },
+    {
+        text : "Лв. BGN",
+        value : "BGN"
+    },
+    {
+        text : "R$ BRL",
+        value : "BRL"
+    },
+    {
+        text : "SFr. CHF",
+        value : "CHF"
+    },
+    {
+        text : "$ CLP",
+        value : "CLP"
+    },
+    {
+        text : "$ COP",
+        value : "COP"
+    },
+    {
+        text : "Kč CZK",
+        value : "CZK"
+    },
+    {
+        text : "Kr DKK",
+        value : "DKK"
+    },
+    {
+        text : "E£ EGP",
+        value : "EGP"
+    },
+    {
+        text : "$ HKD",
+        value : "HKD"
+    },
+    {
+        text : "Ft HUF",
+        value : "HUF"
+    },
+    {
+        text : "Rp IDR",
+        value : "IDR"
+    },
+    {
+        text : "₪ ILS",
+        value : "ILS"
+    },
+    {
+        text : "₹ INR",
+        value : "INR"
+    },
+    {
+        text : "¥ JPY",
+        value : "JPY"
+    },
+    {
+        text : "￦ KRW",
+        value : "KRW"
+    },
+    {
+        text : "$ MXN",
+        value : "MXN"
+    },
+    {
+        text : "RM MYR",
+        value : "MYR"
+    },
+    {
+        text : "Kr NOK",
+        value : "NOK"
+    },
+    {
+        text : "Rp IDR",
+        value : "PEN"
+    },
+    {
+        text : "₱ PHP",
+        value : "PHP"
+    },
+    {
+        text : "zł PLN",
+        value : "PLN"
+    },
+    {
+        text : "QR QAR",
+        value : "QAR"
+    },
+    {
+        text : "L RON",
+        value : "RON"
+    },
+    {
+        text : " SAR",
+        value : "SAR"
+    },
+    {
+        text : "Kr SEK",
+        value : "SEK"
+    },
+    {
+        text : "฿ THB",
+        value : "THB"
+    },
+    {
+        text : "₺ TRY",
+        value : "TRY"
+    },
+    {
+        text : "$ TWD",
+        value : "TWD"
+    },
+    {
+        text : "$ UYU",
+        value : "UYU"
+    },
+    {
+        text : "R ZAR",
+        value : "ZAR"
+    }
+]
+
+export { countries, languages, subMenu, progressiveSubNav, currencies }

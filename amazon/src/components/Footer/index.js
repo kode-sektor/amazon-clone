@@ -236,7 +236,7 @@ const Footer = (props) => {
                                                         Delivery Worldwide
                                                     </span>
                                             </>, 
-                                            href: "/", 
+                                            href: "/amazon-books", 
                                             icon: null 
                                     }
                                 ]

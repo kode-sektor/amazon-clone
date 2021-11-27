@@ -1,12 +1,11 @@
 import React from 'react'
 
+import { Row } from 'reactstrap'
+
 import Layout from '../../components/Layout'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 import { CardCell, CardCellLinks } from '../../components/UI/CardCell'
-
 import Slider from '../../components/UI/Carousel/Carousel'
-
-import { Row } from 'reactstrap'
 
 import order from '../../images/order.png'
 import security from '../../images/security.png'

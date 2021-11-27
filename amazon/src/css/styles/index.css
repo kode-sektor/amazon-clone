@@ -143,7 +143,9 @@ file rather than small ones. Your choice
     --green-5: #284d40;
 
     --brown: #ff6138;
+
     --pink: #f9f5d5;
+    --pink-2: #ff0072;
 
 
 	--blue: #004b91;
@@ -182,6 +184,7 @@ file rather than small ones. Your choice
     --blue-34: #203d54;
     --blue-35: #70b9f0;
     --blue-36: #1ad2fb;
+    --blue-37: #10bbd5;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -241,6 +244,9 @@ file rather than small ones. Your choice
 	--ochre-56: #f56e00;
 	--ochre-57: #ffa800;
 	--ochre-58: #ad5305;
+
+    --purple-1: #403042;
+    --purple-2: #4c394e;
 
     --link: #007BFF;
 	--link-hover: #d9534f;
@@ -365,6 +371,8 @@ file rather than small ones. Your choice
     --grey-tone-101:  #bec2d4;
     --grey-tone-102:  #6d6c6c;
     --grey-tone-103:  #323434;
+    --grey-tone-104:  #dad6d9;
+    --grey-tone-105:  #cacaca;
 	
     --black: #000;
     --white: #fff;
@@ -1733,6 +1741,13 @@ ul.detail__bullet__list li {
 
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
+
+.link__text {
+    padding: 5px;
+}
+.text-underline {
+    text-decoration: underline !important;
+}
 hr.bucket__divider {
     border: none;
     height: 44px !important;
