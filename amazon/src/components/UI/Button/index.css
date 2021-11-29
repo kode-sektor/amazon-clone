@@ -299,3 +299,28 @@
     user-select: none;
     background-color: var(--grey-tone-103);
 }
+.book__btn {
+    display: inline-block;
+    height: 35px;
+    min-width: 140px;
+    line-height: 35px;
+    padding: 0 17px;
+    margin: 0;
+    font-size: 14px;
+    vertical-align: middle;
+    white-space: nowrap;
+    user-select: none;
+    border: 0;
+    background: var(--blue-37);
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    touch-action: manipulation;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: none;
+    transition: background-color .2s;
+    font-family: var(--font-ancillary-3);
+    box-sizing: border-box;
+}

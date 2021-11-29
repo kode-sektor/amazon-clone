@@ -1,0 +1,134 @@
+.amazonBook__carousel {
+    flex-grow: 3;
+    width: 100%;
+    max-width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0 0 0;
+    background: var(--white);
+    font-size: 14px;
+    box-shadow: 1px 1px 0.2px rgba(0,0,0,0.1);
+}
+.amazonBook__carouselHeader {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--grey-tone-95);
+}
+.amazonBook__carouselHeading {
+    font-size: 18px;    
+}
+.book__carousel__cards {
+    display: flex;
+    max-width: 100%;
+    margin-left: 0;
+}
+.book__carousel__cards li {
+    padding: 5px 10px;
+}
+.book__carousel__cards li figure {
+    margin-bottom: 0;
+}
+.book__carousel__cards li figure > a {
+    position: relative;
+    display: inline-block;
+    height: 140px;
+    max-width: 150px;
+}
+.book__carousel__cards li figure > a img {
+    max-height: 100%;
+    margin: 0 auto;
+}
+.book__carousel__cards .savings__splat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    padding: 3px;
+    font-size: 12px;
+    z-index: 1;
+    color: var(--white);
+    text-align: left;
+    font-weight: bold;
+    pointer-events: none;
+}
+.book__carousel__cards .savings__splat:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 60px 0 0;
+    border-color: var(--pink-2) transparent transparent transparent;
+    z-index: -1;
+}
+.amazonBook__carouselCaption {
+    line-height: 20px;
+    padding-top: 5px;
+    height: 40px;
+    overflow: hidden;
+    max-width: 150px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    box-sizing: content-box;
+}
+.amazonBook__carouselCaption a {
+    border-bottom: 0;
+    color: var(--grey-tone-14);
+    text-decoration: none;
+}
+.amazonBook__carouselAuthor {
+    overflow: hidden;
+    height: 20px;
+    max-width: 150px;
+    line-height: 20px;
+    color: var(--grey-tone-57);
+    box-sizing: content-box;
+}
+.amazonBook__carouselAuthor a {
+    color: var(--grey-tone-57);
+    text-decoration: none;
+}
+.amazonBook__carouselRating {
+    display: block;
+    transform: scale(.8);
+    transform-origin: left;
+}
+.amazonBook__carouselPrices {
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+.amazonBook__carouselPrice {
+    font-size: 17px;
+    line-height: 17px;
+    padding-top: 5px;
+    color: var(--pink-2);
+}
+.amazonBook__carouselOldPrice {
+    font-size: 11px;
+    color: var(--grey-tone-28);
+    text-decoration: line-through;
+}
+.amazonBook__carouselFraction {
+    padding: 0;
+    font-size: 12px;
+    color: var(--grey-tone-14);
+    font-style: italic;
+}
+.amazonBook__carousel .amzn__carousel__control {
+    top: 0;
+    bottom: 0;
+    width: 35px;
+    font-size: 40px;
+    height: 320px;
+    max-height: none;
+    line-height: 320px;
+    background: rgba(255,255,255,0.8);
+    color: var(--grey-tone-14);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
+    clip: initial;
+}

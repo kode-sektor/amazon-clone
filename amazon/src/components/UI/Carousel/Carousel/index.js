@@ -7,7 +7,7 @@ import { BsThreeDots } from 'react-icons/bs'
 
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
-import { PrimaryBtn, CartBtnSmall, CartBtn } from '../../Button'
+import { PrimaryBtn, CartBtnSmall, CartBtn, BookBtn } from '../../Button'
 import { BestSellerAux } from '../../Badge'
 
 import './index.css'
@@ -390,7 +390,6 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		// 	})
 		// }
 		else if (type === "music") {
-
 			items.forEach((item, index) => {
 				const { href, src, altText, caption, tags } = item
 
@@ -434,8 +433,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 				}
 			})
 		}
-		else if (type === "music-nonagon") {
-			
+		else if (type === "music-nonagon") {	
 			items.forEach((item, index) => {
 				const { href, src, altText, caption, tags } = item
 
@@ -483,6 +481,68 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									{/* Pick the last class if 2 classes are passed 
 									e.g. "music__carousel amzn__carousel" to "amzn__carousel" */}
 									<ul className="amznMusic__carousel__cards">{tempCarousel}</ul>
+								</CarouselItem>
+					]
+					tempCarousel = []
+				}
+			})
+		}
+		else if (type === "books") {
+			items.forEach((item, index) => {
+				const { href, src, altText, caption, author, rating, price, oldPrice } = item
+				const save = oldPrice ? parseFloat(oldPrice) - parseFloat(price) : parseFloat(price)
+				const discount = oldPrice ? Math.floor((save / parseFloat(oldPrice)) * 100) : ""
+
+				tempCarousel = [
+					...tempCarousel,
+					(
+						<li>
+							<figure>
+								<Link to={href}>
+									<img className="" src={src} alt={altText} />
+									<div className="savings__splat">
+										{discount}%<br/>
+										off
+									</div>
+								</Link>
+								<figcaption>
+									<h3 className="amazonBook__carouselCaption">
+										<Link to="/">{caption}</Link>
+									</h3>
+									<p className="amazonBook__carouselAuthor">
+										<Link to="/">{author}</Link>
+									</p>
+									<section className="d-inline-block">
+										<Link to="/" className="amazonBook__carouselRating">
+											{rating}
+										</Link>
+									</section>
+									<section className="amazonBook__carouselPrices">
+										<span className="amazonBook__carouselPrice ">C${price}</span>&nbsp;&nbsp;
+										<span className="amazonBook__carouselOldPrice">C${oldPrice}</span>
+										<section className="amazonBook__carouselFraction">
+											<span>Save: C${save}</span>
+										</section>
+									</section>
+									<BookBtn />
+								</figcaption>
+							</figure>
+						</li>
+					)
+				]
+				if ((((index + 1) % count) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
+								<CarouselItem
+									className="book__carousel amzn__carousel"
+									onExiting={() => setAnimating(true)}
+									onExited={() => setAnimating(false)}
+									key={index}
+								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
+									{/* Pick the last class if 2 classes are passed 
+									e.g. "music__carousel amzn__carousel" to "amzn__carousel" */}
+									<ul className="book__carousel__cards">{tempCarousel}</ul>
 								</CarouselItem>
 					]
 					tempCarousel = []
@@ -557,4 +617,4 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 	);
 };
 
-export default Slider;
+export default Slider

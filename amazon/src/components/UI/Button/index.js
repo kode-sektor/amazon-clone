@@ -314,10 +314,16 @@ const MusicBtn = ({ title }) => (
     </button>
 )
 
+const BookBtn = () => (
+    <button className="book__btn">
+        Add to Basket
+    </button>
+)
+
 export { 
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedSm,
     BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, 
-    ReportAbuse, MyxBtn, MusicBtn
+    ReportAbuse, MyxBtn, MusicBtn, BookBtn
 }

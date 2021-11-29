@@ -173,6 +173,9 @@ code {
     max-height: none !important;
     height: auto !important;
 }
+.carousel-indicators {
+    display: none;
+}
 /* .miniSlider {
 
 } */
