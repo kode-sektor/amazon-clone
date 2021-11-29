@@ -7,7 +7,7 @@ import { IoClose, IoCloseSharp, IoHome } from 'react-icons/io5'
 import { AiOutlineMail, AiOutlineExclamationCircle, AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai'
 import { BsCompass } from 'react-icons/bs'
 import { FaRegUserCircle, FaShoppingBasket } from 'react-icons/fa'
-import { RiArrowDropDownLine, RiArrowDropUpLine } from 'react-icons/ri'
+import { RiArrowDropDownLine, RiArrowDropUpLine, RiArrowDropRightLine } from 'react-icons/ri'
 
 import CarouselBook from '../../components/UI/Carousel/CarouselBook'
 import Slider from '../../components/UI/Carousel/Carousel'
@@ -22,6 +22,12 @@ import the_manga_store from '../../images/the-manga-store.jpg'
 import taschen_hp from '../../images/taschen-hp.jpg'
 import languages_sidebar_blank from '../../images/languages-sidebar-blank.jpg'
 import a_clockwork_orange from '../../images/books/a-clockwork-orange.jpg'
+import read_create from '../../images/banner/read-create.jpg'
+import childrens_books from '../../images/childrens-books.png'
+import fiction_books from '../../images/fiction-books.png'
+import crime_thriller from '../../images/crime-thriller.png'
+import graphic_novels_manga from '../../images/graphic-novels-manga.png'
+import languages_blank from '../../images/languages-blank.jpg'
 
 import './index.css'
 
@@ -780,11 +786,953 @@ const AmazonBooks = () => {
                                     ]
                             } 
                         />
+                        <CarouselBook 
+                            heading={"Bestselling Books"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <section className="amazonBook__tab">
+                            <Link to="/">
+                                <img src={read_create} alt="#readcreate" />
+                            </Link>
+                        </section>
+                        <CarouselBook 
+                            heading={"Booker Prize Winner 2021"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <CarouselBook 
+                            heading={"New Releases and in the News"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <section className="amazonBook__tab">
+                            <section className="amazonBook__tabModule amazonBook__tabModule--thirds">
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <img src={childrens_books} alt="Great Books for Children" />
+                                    <div className="amazonBook__linkItem">
+                                        Great Books for Children
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <img src={fiction_books} alt="Great Fiction Selection" />
+                                    <div className="amazonBook__linkItem">
+                                        Great Fiction Selection
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <img src={crime_thriller} alt="Page-turning Crime and Thriller" />
+                                    <div className="amazonBook__linkItem">
+                                        Page-turning Crime and Thriller
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <img src={graphic_novels_manga} alt="Brilliant Manga and Graphic Novels" />
+                                    <div className="amazonBook__linkItem">
+                                        Brilliant Manga and Graphic Novels
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                            </section>
+                        </section>
+                        <section className="amazonBook__tab">
+                            <section className="amazonBook__tabModule amazonBook__tabModule--thirds">
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Our Bookmarks
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        New Releases
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Most Popular Authors
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                            </section>
+                        </section>
+                        <CarouselBook 
+                            heading={"Bestselling Preorders"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <section className="amazonBook__tab">
+                            <section className="amazonBook__tabModule amazonBook__tabModule--thirds">
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Book Club Classics
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Fiction
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Stationery
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Harry Potter
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                            </section>
+                        </section>
+                        <CarouselBook 
+                            heading={"Children's Bestselling Books"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <CarouselBook 
+                            heading={"Bestselling Food and Drink Books"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <CarouselBook 
+                            heading={"Bestsellers in Spanish"}
+                            slider={
+                                    [
+                                        <Slider 
+                                            type={"books"}
+                                            carouselClass={"book__carousel amzn__carousel"}
+                                            count={6}
+                                            items={
+                                                    [
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        },
+                                                        {
+                                                            href: '/',
+                                                            src: a_clockwork_orange,
+                                                            altText: "A clockwork orange",
+                                                            caption: "A clockwork orange",
+                                                            author: "Anthony Burgess",
+                                                            rating: <i className="a__icon a__icon__star__medium a__star__medium__4">
+                                                                        <span className="a__icon__alt">4 Stars &amp; Up</span>
+                                                                    </i>
+                                                            ,
+                                                            price: "14.39",
+                                                            oldPrice : "23.07",
+                                                            discount: ""
+
+                                                        }
+                                                        
+                                                    ]
+                                            }
+                                        />
+                                    ]
+                            } 
+                        />
+                        <section className="amazonBook__tab">
+                            <Link to="/">
+                                <img src={languages_blank} alt="Bestsellers by Language" />
+                            </Link>
+                        </section>
+                        <section className="amazonBook__tab">
+                            <section className="amazonBook__tabModule amazonBook__tabModule--thirds">
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Books in French
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Books in German
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Books in Polish
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Books in Italian
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                            </section>
+                        </section>
+                        <section className="amazonBook__tab">
+                            <section className="amazonBook__tabModule amazonBook__tabModule--thirds">
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Books in Finnish
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                                <Link className="amazonBook__tabLink" to="/">
+                                    <div className="amazonBook__linkItem">
+                                        Books in Spanish
+                                        <span className="amazonBook__caret">
+                                            <RiArrowDropRightLine />
+                                        </span>
+                                    </div>
+                                </Link>
+                            </section>
+                        </section>
+                        <section className="amazonBooks__selection text-center">
+                            <p>
+                                Welcome to Book Depository! We have more than 20 million titles and free delivery worldwide to <Link to="/">over 170 countries</Link>. We also really, really love books.
+                            </p>
+                            <p>
+                                Looking for your new favourite book? Browse some of our top categories such as 
+                                &nbsp;<Link to="/">Children's Books</Link>, 
+                                &nbsp;<Link to="/">Fiction</Link>, 
+                                &nbsp;<Link to="/">Graphic Novels, Anime &amp; Manga</Link>, 
+                                &nbsp;<Link to="/">Food &amp; Drink books</Link>, 
+                                &nbsp;<Link to="/">Crafts &amp; Hobbies</Link>, 
+                                &nbsp;<Link to="/">Art &amp; Photography</Link>, 
+                                &nbsp;<Link to="/">Biography</Link>, and 
+                                &nbsp;<Link to="/">Crime &amp; Thriller</Link>. 
+                                &nbsp;Our editors have created lovely features for you to explore: 
+                                &nbsp;<Link to="/">Adult colouring books</Link>, 
+                                &nbsp;<Link to="/">Harry Potter</Link>, 
+                                &nbsp;<Link to="/">Roald Dahl</Link>, 
+                                &nbsp;<Link to="/">Books on screen</Link>, 
+                                &nbsp;<Link to="/">Man Booker Prize winners</Link>, 
+                                &nbsp;<Link to="/">LEGO</Link>, 
+                                &nbsp;<Link to="/">Minecraft</Link> and more. 
+                            </p>
+                        </section>
                     </section>
                 </section>
             </section>
         </div>
     )
 }
-
 export default AmazonBooks

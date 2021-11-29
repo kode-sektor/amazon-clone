@@ -125,8 +125,8 @@
     height: 320px;
     max-height: none;
     line-height: 320px;
-    background: rgba(255,255,255,0.8);
     color: var(--grey-tone-14);
+    background: rgba(255,255,255,0.8);
     cursor: pointer;
     text-decoration: none;
     z-index: 2;
