@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const FooterMenu = ({heading, menu, type}) => {
     return (
@@ -8,17 +10,17 @@ const FooterMenu = ({heading, menu, type}) => {
                 {menu &&
                     menu.map((item, index) => (
                         <li key={index} className="page__footer__list">
-                            <a
+                            <Link
                                 onClick={(e) => {
                                     if (item.onClick) {
                                         e.preventDefault();
                                         item.onClick && item.onClick();
                                     }
                                 }}
-                                href={`${item.href}`}
+                                to={`${item.href}`}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         </li>
                     ))
                 }

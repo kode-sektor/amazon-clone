@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Navbar, Nav, NavItem, NavLink, NavbarBrand, NavbarToggler, Collapse,
-     UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu, NavbarText } from 'reactstrap'
+import { Navbar, Nav, NavItem, NavLink, NavbarBrand, UncontrolledDropdown, 
+        DropdownToggle, DropdownItem, DropdownMenu, NavbarText } from 'reactstrap'
 import { IoClose, IoCloseSharp, IoHome } from 'react-icons/io5'
 import { AiOutlineMail, AiOutlineExclamationCircle, AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai'
 import { BsCompass } from 'react-icons/bs'
@@ -11,7 +11,7 @@ import { RiArrowDropDownLine, RiArrowDropUpLine, RiArrowDropRightLine } from 're
 
 import CarouselBook from '../../components/UI/Carousel/CarouselBook'
 import Slider from '../../components/UI/Carousel/Carousel'
-import { BookBtn } from '../../components/UI/Button'
+import { BtnBook } from '../../components/UI/Button'
 
 import { currencies } from '../../utilities/data'
 
@@ -1748,7 +1748,7 @@ const AmazonBooks = () => {
                                     <input type="email" className="form-control" placeholder="Email Address" />
                                 </div>
                                 <div className="form-group">
-                                    <BookBtn
+                                    <BtnBook
                                         text={"Sign up now"}
                                         type="form"
                                     />

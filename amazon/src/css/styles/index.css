@@ -1330,6 +1330,13 @@ ul.detail__bullet__list li {
 /*7. ICONS
 ==============================================================================================================================================================*/
 
+.browse__back {
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-image: url('../../images/browse-back.svg');
+}
 .a__icon__dropdown {
 	position: absolute;
 	display: inline-block;

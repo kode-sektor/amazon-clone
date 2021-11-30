@@ -5,9 +5,6 @@
     /* overflow-x: hidden; */
     font-family: var(--font-ancillary-3);
 }
-.amazonBooks__header {
-
-}
 .amazonBooks__cookie {
     position: relative;
     width: 100%;
@@ -23,7 +20,6 @@
     padding: 10px;
     font-size: 2em;
     color: var(--grey-tone-14);
-    border: thin solid brown;
 }
 .amazonBooks__cookieClose button {
     font-size: 3em;
@@ -53,7 +49,6 @@
 .amazonBooks__navWrap {
     color: var(--white);
     background: url('../../images/2019-christmas-header-bg.png') var(--purple-1) repeat 0px 0px;
-    border: thin solid fuchsia;
 }
 .amazonBooks__nav {
     display: flex;
@@ -63,14 +58,12 @@
     margin-left: auto;
     padding: 0 1em;
     background-color: transparent !important;
-    border: 2px solid green;
 }
 .amazonBooks__nav .navbar-nav {
     display: flex;
     margin: 0;
     padding: 0 1.5em 0 0;
     padding-left: 1.5em;
-    border: thin solid blue;
 }
 .amazonBooks__nav .navbar-nav li {
     display: block;
@@ -90,7 +83,6 @@
     color: var(--white);
     text-decoration: none;
     padding: 0 10px;
-    border: thin solid teal;
 }
 .amazonBooks__nav .navbar-nav li a svg {
     position: relative;
@@ -151,7 +143,6 @@
     display: flex;
     width: 80%;
     flex-grow: 1;
-    border: 2px solid forestgreen;
 }
 .amazonBooks__searchForm {
     position: relative;
@@ -229,11 +220,9 @@
     padding-left: 1em;
     padding-right: 1em;
     color: var(--grey-tone-14);
-    border: 2px solid turquoise;
 }
 .amazonBooks__headerWrap .amazonBooks__headerWrapCurrency {
     flex-grow: initial;
-    border: 2px solid brown;
 }
 .amazonBooks__selectCurrencyFrm .amazonBooks__headerWrapDropdown {
     position: absolute;
@@ -258,7 +247,6 @@
     border-top: 5px solid var(--blue-37);
     box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 20%);
     z-index: 1000;
-    border: 2px solid plum;
 }
 .amazonBooks__headerCategClose {
     position: absolute;
@@ -271,7 +259,6 @@
     padding-right: 0;
     margin-bottom: 5px;
     list-style: none;
-    border: 2px solid brown;
 }
 .amazonBooks__headerCategDropdown > ul > li {
     flex-grow: 1;
@@ -301,9 +288,6 @@
     font-size: 15px;
     font-weight: bold;
     border-bottom: 1px solid var(--grey-tone-105);
-}
-.amazonBooks__topCategOption {
-
 }
 .amazonBooks__noHeader {
     padding-top: 39px;
@@ -466,7 +450,6 @@
     background: var(--white);
     box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     margin-left: 0;
-    border: thin solid yellow;
 }
 .amazonBooks__selection p {
     padding: 10px;
@@ -661,7 +644,6 @@
     display: flex;
     flex-grow: 1;
     padding: 0 15px;
-    border: thin solid brown;
 }
 .amazonBooks__mainFooterLinks > li {
     flex-grow: 1;

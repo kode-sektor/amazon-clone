@@ -7,7 +7,7 @@ import { BsThreeDots } from 'react-icons/bs'
 
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
-import { PrimaryBtn, CartBtnSmall, CartBtn, BookBtn } from '../../Button'
+import { PrimaryBtn, CartBtnSmall, CartBtn, BtnBook } from '../../Button'
 import { BestSellerAux } from '../../Badge'
 
 import './index.css'
@@ -524,7 +524,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 											<span>Save: C${save}</span>
 										</section>
 									</section>
-									<BookBtn />
+									<BtnBook />
 								</figcaption>
 							</figure>
 						</li>

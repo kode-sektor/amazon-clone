@@ -314,7 +314,7 @@ const MusicBtn = ({ title }) => (
     </button>
 )
 
-const BookBtn = ({ text="Add to Basket", type }) => (
+const BtnBook = ({ text="Add to Basket", type }) => (
     <button className={`book__btn ${type==="form" && "book__btn--btn"}`}>
         {text}
     </button>
@@ -325,5 +325,5 @@ export {
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedSm,
     BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, 
-    ReportAbuse, MyxBtn, MusicBtn, BookBtn
+    ReportAbuse, MyxBtn, MusicBtn, BtnBook
 }

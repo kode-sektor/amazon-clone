@@ -111,6 +111,7 @@ const BrowseBoxPlain = ({title, links}) => {
                     links.map((item, i) => (
                         <li key={i} className="a__spacing__micro">
                             <span className="a__list__item">
+                                <span className="browse__back" dir="auto"></span>&nbsp;
                                 <Link to={item.href} className="a__size__base a__color__base a__link__normal">
                                     <span>{item.text}</span>
                                 </Link>

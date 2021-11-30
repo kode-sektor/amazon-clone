@@ -293,7 +293,7 @@ const Footer = (props) => {
                                                     Discounts
                                                 </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/warehouse-deals", 
                                         icon: null 
                                     }
                                 ]
