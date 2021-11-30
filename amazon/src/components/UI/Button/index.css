@@ -324,3 +324,25 @@
     font-family: var(--font-ancillary-3);
     box-sizing: border-box;
 }
+.book__btn--btn {
+    display: block;
+    width: 220px;
+    margin: auto;
+    white-space: nowrap;
+    font-size: 14px;
+    user-select: none;
+    line-height: 44px;
+    height: 44px;
+    border: 0;
+    background: var(--blue-37);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    border-radius: .6rem;
+    min-width: 14rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: none;
+    transition: background-color .2s;
+    padding: 0px;
+}

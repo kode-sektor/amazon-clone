@@ -314,9 +314,9 @@ const MusicBtn = ({ title }) => (
     </button>
 )
 
-const BookBtn = () => (
-    <button className="book__btn">
-        Add to Basket
+const BookBtn = ({ text="Add to Basket", type }) => (
+    <button className={`book__btn ${type==="form" && "book__btn--btn"}`}>
+        {text}
     </button>
 )
 

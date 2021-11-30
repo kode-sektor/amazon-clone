@@ -6,11 +6,12 @@ import { Navbar, Nav, NavItem, NavLink, NavbarBrand, NavbarToggler, Collapse,
 import { IoClose, IoCloseSharp, IoHome } from 'react-icons/io5'
 import { AiOutlineMail, AiOutlineExclamationCircle, AiOutlineHeart, AiOutlineSearch } from 'react-icons/ai'
 import { BsCompass } from 'react-icons/bs'
-import { FaRegUserCircle, FaShoppingBasket } from 'react-icons/fa'
+import { FaRegUserCircle, FaShoppingBasket, FaFacebookF, FaTwitter, FaPinterestP, FaInstagram } from 'react-icons/fa'
 import { RiArrowDropDownLine, RiArrowDropUpLine, RiArrowDropRightLine } from 'react-icons/ri'
 
 import CarouselBook from '../../components/UI/Carousel/CarouselBook'
 import Slider from '../../components/UI/Carousel/Carousel'
+import { BookBtn } from '../../components/UI/Button'
 
 import { currencies } from '../../utilities/data'
 
@@ -28,6 +29,8 @@ import fiction_books from '../../images/fiction-books.png'
 import crime_thriller from '../../images/crime-thriller.png'
 import graphic_novels_manga from '../../images/graphic-novels-manga.png'
 import languages_blank from '../../images/languages-blank.jpg'
+import newsletter_icon from '../../images/newsletter-icon.svg'
+import payment_options from '../../images/payment-options.png'
 
 import './index.css'
 
@@ -71,7 +74,7 @@ const AmazonBooks = () => {
                     </button>
                 </section>
             </section>
-            <section className="amazonBooks__layout">
+            <main className="amazonBooks__layout">
                 <header>
                     <section className="amazonBooks__navWrap">
                         <Navbar className="amazonBooks__nav amazonBooks__nav--pri" color="light" expand="md" light>
@@ -1731,7 +1734,151 @@ const AmazonBooks = () => {
                         </section>
                     </section>
                 </section>
-            </section>
+            </main>
+            <footer className="amazonBooks__footer">
+                <section className="amazonBooks__footerTop">
+                    <section className="amazonBooks__newsLetter">
+                        <section className="amazonBooks__signupTxt">
+                            <img src={newsletter_icon} alt="Sign up" />
+                            <p>Learn about new offers and get more deals by joining our newsletter</p>
+                        </section>
+                        <section className="amazonBooks__newsForm">
+                            <form action="">
+                                <div className="form-group">
+                                    <input type="email" className="form-control" placeholder="Email Address" />
+                                </div>
+                                <div className="form-group">
+                                    <BookBtn
+                                        text={"Sign up now"}
+                                        type="form"
+                                    />
+                                </div>
+                            </form>
+                        </section>
+                    </section>
+                </section>
+                <section className="amazonBooks__social">
+                    <h4>Follow us</h4>
+                    <ul className="amazonBooks__socialBtns">
+                        <li>
+                            <Link to="/">
+                                <FaFacebookF />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                <FaTwitter />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                <FaPinterestP />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                <FaInstagram />
+                            </Link>
+                        </li>
+                    </ul>
+                </section>
+                <section className="amazonBooks__mainFooter">
+                    <section className="amazonBooks__mainFooterWrap ml-0">
+                        <ul className="amazonBooks__mainFooterLinks ml-0">
+                            <li>
+                                <h4 className="amazonBooks__footerTitle">Explore</h4>
+                                <ul className="ml-0">
+                                    <li>
+                                        <Link rel="nofollow" to="/">
+                                            About us
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Sitemap
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/bookmarks">
+                                            Bookmarks
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/" class="footer-sign-in-link">
+                                            Sign in/Join
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 className="amazonBooks__footerTitle">How can we help?</h4>
+                                <ul className="ml-0">
+                                    <li>
+                                        <Link rel="nofollow" to="/">
+                                            Help
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Contact us
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/bookmarks">
+                                            Where's my stuff?
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/" class="footer-sign-in-link">
+                                            Where do you deliver?
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 className="amazonBooks__footerTitle">Join us</h4>
+                                <ul className="ml-0">
+                                    <li>
+                                        <Link rel="nofollow" to="/">
+                                            Affiliates
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Jobs
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 className="amazonBooks__footerTitle">Important stuff</h4>
+                                <ul className="ml-0">
+                                    <li>
+                                        <Link rel="nofollow" to="/">
+                                            Cookies
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            Jobs
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <section className="amazonBooks__footerPayment">
+                            <section className="amazonBooks__paymentMethods">
+                                <p>We accept these payment methods </p>
+                                <img src={payment_options} alt="payment methods" />
+                            </section>
+                            <div id="copyright" className="text" title="BdiMetadata{webserver='web-bdi-fulltime-1', requestTime='0.05 sec', userSessionCurrencyCode='CAD', userSessionCountry='CA', userIp='99.253.49.209', cacheParams=BdiCacheMetadata{cacheCountry='null', cacheCurrency='null', controllerName='null', actionName='null', moduleName='null', serverScheme='null', cacheNamespace='null', cacheKey='null', generatedOn=Mon Nov 29 09:21:09 UTC 2021, cacheEnabled=true}}">
+                                © 2021&nbsp;
+                                The Book Depository Ltd.UK.<br/>Registered company number: 5124926
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </footer>
         </div>
     )
 }
