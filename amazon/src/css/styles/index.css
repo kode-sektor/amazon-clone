@@ -141,6 +141,7 @@ file rather than small ones. Your choice
     --green-3: #007600;
     --green-4: #067D62;
     --green-5: #284d40;
+    --green-6: #7fda69;
 
     --brown: #ff6138;
 
@@ -244,6 +245,7 @@ file rather than small ones. Your choice
 	--ochre-56: #f56e00;
 	--ochre-57: #ffa800;
 	--ochre-58: #ad5305;
+	--ochre-59: #f69931;
 
     --purple-1: #403042;
     --purple-2: #4c394e;
@@ -2457,6 +2459,38 @@ a:active.a__color__base {
 [data-a-badge-type=status].a__badge:focus  .a__badge__supplementary__text {
     display: block;
 }
+.s__coupon__highlight__color {
+    color: var(--color-2);
+    background-color: var(--green-6);
+}
+.s__highlighted__text__padding {
+    padding: 0 6px;
+}
+[data-a-badge-color="sx-lightning-deal-red"] {
+    color: var(--price-color) !important;
+    background-color: var(--price-color) !important;
+}
+[data-a-badge-type="deal"] .a__badge__label {
+    max-width: 140px;
+    padding: 0 10px;
+    background-color: var(--light-slate-gray);
+}
+[data-a-badge-type="deal"] .a__badge__label .a__badge__label__inner {
+    color: var(--white);
+}
+[data-a-badge-color="sx-gulfstream"] {
+    color: var(--blue-8) !important;
+    background-color: var(--blue-8) !important;
+}
+[data-a-badge-type="status"] .a__badge__label [data-a-badge-color="sx-gulfstream"] {
+    max-width: 160px !important;
+}
+[data-a-badge-color="sx-cloud"] {
+    color: var(--white) !important;
+}
+[data-a-badge-color="ac-orange"] {
+    color: var(--ochre-59) !important;
+}
 
 /*Close button*/
 .primeSticky__closeSprite {
@@ -2767,7 +2801,21 @@ a:active.a__color__base {
     height: 100%;
     color: var(--mainlink);
 }
+.bxc__grid__overlay__content {
+    position: absolute;
+    display: inline-block;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 85%;
+    white-space: nowrap;
+    color: var(--color-2);
+}
 .bxc__grid__text__light.bxc__grid__overlay__background {
+    background: rgba(255,255,255,.9);
+}
+.bxc__grid__overlay--background {
+    padding: 2px 21px 2px 21px;
     background: rgba(255,255,255,.9);
 }
 .bxc__grid__valign {

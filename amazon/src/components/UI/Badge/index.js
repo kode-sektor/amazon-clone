@@ -25,4 +25,18 @@ const BestSellerBadge = () => (
     </Link>
 )
 
-export { BestSellerAux, BestSellerBadge }
+const DealOfTheDay = ({ text="Deal of the Day" }) => (
+    <Link to="/">
+        <span className="a__badge" data-a-badge-type="deal">
+            <span className="a__badge__label" data-a-badge-color="sx-lightning-deal-red">
+                <span className="a__badge__label__inner a__text__ellipsis">
+                    <span className="a__badge__text" data-a-badge-color="sx-cloud">
+                        {text}
+                    </span>
+                </span>
+            </span>
+        </span>
+    </Link>
+)
+
+export { BestSellerAux, BestSellerBadge, DealOfTheDay }
