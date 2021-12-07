@@ -549,6 +549,34 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 				}
 			})
 		}
+		else if (type === "advertising") {
+			slides = items.map((item, index) => {
+				return (
+					<CarouselItem
+						className={carouselClass ? carouselClass + " " + item.banner : item.banner}
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={index}
+					>	
+						<section className="advertising__carousel__caption">
+							<CarouselCaption
+								captionHeader={item.heading}
+								captionText={
+									<>
+										{item.caption} 
+										<span className="d-block">
+											<Link to={item.href} className="learn__more">
+												Learn More
+											</Link>
+										</span>
+									</>
+								}
+							/>
+						</section>
+					</CarouselItem>
+				)
+			})
+		}
 		else {
 			slides = items.map((item) => {
 				return (

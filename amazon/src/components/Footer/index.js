@@ -203,7 +203,7 @@ const Footer = (props) => {
                                                     engage customers
                                                 </span>
                                             </>, 
-                                            href: "/", 
+                                            href: "/amazon-advertising", 
                                             icon: null 
                                     },
                                     { 

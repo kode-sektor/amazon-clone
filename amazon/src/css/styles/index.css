@@ -247,6 +247,10 @@ file rather than small ones. Your choice
 	--ochre-58: #ad5305;
 	--ochre-59: #f69931;
 
+    --red: #ff5a00;
+    --red-2: #ff5a00;
+    --red-3: #f25824;
+
     --purple-1: #403042;
     --purple-2: #4c394e;
 
@@ -375,6 +379,8 @@ file rather than small ones. Your choice
     --grey-tone-103:  #323434;
     --grey-tone-104:  #dad6d9;
     --grey-tone-105:  #cacaca;
+    --grey-tone-106:  #232f3f;
+    --grey-tone-107:  #f6f7f9;
 	
     --black: #000;
     --white: #fff;

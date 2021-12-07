@@ -43,6 +43,7 @@ import CustomerService from "./pages/CustomerService"
 import AmazonMusic from "./pages/AmazonMusic"
 import AmazonBooks from "./pages/AmazonBooks"
 import WarehouseDeals from "./pages/WarehouseDeals"
+import AmazonAdvertising from "./pages/AmazonAdvertising"
 
 
 function App() {
@@ -92,6 +93,7 @@ function App() {
                     <Route path="/amazon-music" component={AmazonMusic}/>
                     <Route path="/amazon-books" component={AmazonBooks}/>
                     <Route path="/warehouse-deals" component={WarehouseDeals}/>
+                    <Route path="/amazon-advertising" component={AmazonAdvertising}/>
                 </Switch>
             </Router>
         </div>

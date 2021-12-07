@@ -1,27 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
-import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
-import Slider from '../../components/UI/Carousel/Carousel'
-import { Grid_One } from '../../components/UI/Grid'
-import { CardSix, CardSeven, CardEight } from '../../components/UI/Card'
+import { BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import { CardEight } from '../../components/UI/Card'
 import SearchResult from '../../components/UI/SearchResult'
 import { SeeAllResults } from '../../components/UI/Button'
-import BirthForm from '../../components/UI/BirthForm'
 import Rating from '../../components/UI/Rating'  
 
 import Layout from '../../components/Layout/index'
 
-import shop_baby_store from '../../images/banner/shop-baby-store.png'
-import baby_registry_and_amazon_family from '../../images/baby-registry-and-amazon-family.png'
-
-import university_personal_care from '../../images/banner/university-personal-care.jpg'
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
-import loreal_paris from "../../images/banner/l'oreal-paris.jpg"
 
-import cetaphil from '../../images/brand/cetaphil.jpg'
-import duracell_coppertop from '../../images/products/duracell-coppertop-aa-alkaline-batteries.jpg'
 import shop_cat from '../../images/shop-cat.jpg'
 import laptops_and_tablets from '../../images/laptops-and-tablets.jpg'
 import kitchen from '../../images/kitchen.jpg'
