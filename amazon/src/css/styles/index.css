@@ -186,6 +186,11 @@ file rather than small ones. Your choice
     --blue-35: #70b9f0;
     --blue-36: #1ad2fb;
     --blue-37: #10bbd5;
+    --blue-38: #0073c7;
+
+    --teal: #009596;
+
+    --purple: #bb2cac;
 
 	--ochre: #febd69;
 	--ochre-2: #deb406;
@@ -246,6 +251,7 @@ file rather than small ones. Your choice
 	--ochre-57: #ffa800;
 	--ochre-58: #ad5305;
 	--ochre-59: #f69931;
+	--ochre-60: #e15a00;
 
     --red: #ff5a00;
     --red-2: #ff5a00;
@@ -381,6 +387,7 @@ file rather than small ones. Your choice
     --grey-tone-105:  #cacaca;
     --grey-tone-106:  #232f3f;
     --grey-tone-107:  #f6f7f9;
+    --grey-tone-108:  #606c7b;
 	
     --black: #000;
     --white: #fff;
@@ -1757,6 +1764,13 @@ ul.detail__bullet__list li {
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
 
+.color__normal {
+    color: var(--grey-tone-108);
+}
+h1.color__normal, h2.color__normal, h3.color__normal,
+h4.color__normal, h5.color__normal, h6.color__normal {
+    color: var(--grey-tone-106);
+}
 .link__text {
     padding: 5px;
 }
@@ -2126,6 +2140,9 @@ a:active.a__color__base {
 .padding__left__large {
     padding-left: 40px;
 }
+.padding__right__large {
+    padding-right: 40px;
+}
 .padding__top__small {
     padding-top: 20px;
 }
@@ -2152,6 +2169,9 @@ a:active.a__color__base {
 }
 .padding__left__small {
     padding-left: 20px;
+}
+.padding__left__mini {
+    padding-left: 10px;
 }
 .padding__right__minibase {
     padding-right: 25px;
@@ -3067,6 +3087,10 @@ p.abstract:after{
     padding: 1rem;
     margin: 0 auto;
 }
+.columns__container .container {
+    padding-left: 0;
+    padding-right: 0;
+}
 .columns__container--full__width, .columns__container--full-width {
     max-width: 100%;
 }
@@ -3109,6 +3133,15 @@ p.abstract:after{
     font-weight: 400;
     padding: .5rem 0;
     transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+a.link__type__normal__new {
+    padding: .5rem;
+    color: var(--grey-tone-106);
+    background: rgba(0,0,0,0);
+    border: none;
+}
+a.link__type__normal__new:focus, a.link__type__normal__new:hover {
+    color: var(--ochre-60);
 }
 .column a.link__type__normal {
     text-transform: none;
@@ -3229,6 +3262,15 @@ p.abstract:after{
     }
     .columns__container--limit-width {
         max-width: 1140px;
+    }
+    .d-grid {
+        display: grid;
+    }
+    .columns__container--33-66 {
+        grid-template-columns: 1fr 2fr;
+    }
+    .columns__container--66-33 {
+        grid-template-columns: 2fr 1fr;
     }
 }
 

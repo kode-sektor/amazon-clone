@@ -4,10 +4,26 @@ import { Link } from 'react-router-dom'
 import { BiSearch } from 'react-icons/bi'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import { RiInformationLine } from 'react-icons/ri'
+import { HiOutlineArrowCircleRight } from 'react-icons/hi'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 
+import { Card, CardTwo, CardThree } from './Card'
+
 import amazon_ads from '../../images/amazon-ads.png'
+import homepage_hero_tile01_2 from '../../images/homepage-hero-tile01.2.png'
+import homepage_hero_tile02_2 from '../../images/homepage-hero-tile02.2.png'
+import homepage_hero_tile03_2 from '../../images/homepage-hero-tile03.2.png'
+import doritos_twitch from '../../images/doritos-twitch.png'
+import two_women_enjoying_music from '../../images/two-women-enjoying-music.jpg'
+import macdonalds_mcdelivery from '../../images/macdonalds-mcdelivery.jpg'
+import person_holding_device from '../../images/person-holding-device.jpg'
+import my_best_advice_amy_lanzi_thumbnail from '../../images/my-best-advice-amy-lanzi-thumbnail.jpg'
+import blog_thumbnail_1092x730 from '../../images/blog-thumbnail-1092x730.jpg'
+import holding_package_looking_at_device from '../../images/holding-package-looking-at-device.png'
+import person_with_pet_looking_at_laptop from '../../images/person-with-pet-looking-at-laptop.jpg'
+import credit_card_shopping_online from '../../images/credit-card-shopping-online.jpg'
+
 
 import './index.css'
 
@@ -392,6 +408,214 @@ const AmazonAdvertising = () => {
                                 ]
                         }
                     />
+                </section>
+                <section className="amazonAdvertising__goals padding__top__xxlarge padding__bottom__xxlarge padding__left__large padding__right__large">
+                    <section className="columns__container columns__container--single columns__container--full-width d-grid">
+                        <section className="container">
+                            <header className="columns__container columns__container--single columns__container--limit-width d-grid">
+                                <div>
+                                    <div className="goalbar"></div>
+                                </div>
+                                <h2 className="heading__size--normal color__normal">
+                                    Your goals. Our solutions.
+                                </h2>
+                                <section>
+                                    <Link to="/" className="link__type__button__secondary">
+                                        Explore all products &nbsp;
+                                        <HiOutlineArrowCircleRight />
+                                    </Link>
+                                </section>
+                            </header>
+                        </section>
+                        <section className="container">
+                            <section className="columns__container columns__container--third columns__container--limit-width">
+                                <Card
+                                    img={<img src={homepage_hero_tile01_2} alt="A person wearing sunglasses and smiling" />}
+                                    title={"Sponsored Products"}
+                                    link={"/"}
+                                    linkTxt={
+                                        <>
+                                            Nearly three out of four Amazon customers use Amazon to discover new products or brands (74%).<sup><strong>1</strong></sup>&nbsp;
+                                        </>
+                                    }
+                                />
+                                <Card
+                                    img={
+                                        <img src={homepage_hero_tile02_2} alt="Otto Farrant posing as Alex Rider Jack Ryan from the IMBD TV series Alex Rider. " />
+                                    }
+                                    title={"Streaming TV ads"}
+                                    link={"/"}
+                                    linkTxt={
+                                        <>
+                                            135 million unduplicated US viewers on Amazon Streaming TV ads and Twitch.<sup><strong>2</strong></sup>&nbsp;
+                                        </>
+                                    }
+                                />
+                                <Card
+                                    img={<img src={homepage_hero_tile03_2} alt="A person wearing headphones and smiling while holding a device" />}
+                                    title={"Audio ads"}
+                                    link={"/"}
+                                    linkTxt={
+                                        <>
+                                            55 million globally on Amazon Music.<sup><strong>3</strong></sup>&nbsp;
+                                        </>
+                                    }
+                                />
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section className="amazonAdvertising__goals padding__top__xxlarge padding__bottom__xxlarge padding__left__large padding__right__large">
+                    <section className="columns__container columns__container--single columns__container--full-width">
+                        <section className="container">
+                            <header className="columns__container columns__container--single columns__container--limit-width d-grid">
+                                <div>
+                                    <div className="goalbar goalbar--blue"></div>
+                                </div>
+                                <h2 className="heading__size--normal color__normal">
+                                    Meet our customers
+                                </h2>
+                            </header>
+                        </section>
+                        <section className="container">
+                            <CardTwo
+                                img={<img src={doritos_twitch} alt="A person wearing sunglasses and smiling" />}
+                                title={"The snack brand leveraged Twitch’s ad solutions and presented more than 50 live gaming events over the course of one year."}
+                                link={"/"}
+                                linkTxt={
+                                    <>
+                                        How Doritos won over the gaming community by working with Twitch
+                                    </>
+                                }
+                            />
+                            <CardTwo
+                                img={
+                                    <img src={two_women_enjoying_music} alt="Two women enjoying music" />
+                                }
+                                title={"A smart home and lighting company leveraged Amazon’s free brand solutions to bring their products to life with rich visuals and inspiring content."}
+                                link={"/"}
+                                linkTxt={
+                                    <>
+                                        Govee engages customers through Stores and Posts to build their brand presence on Amazon
+                                    </>
+                                }
+                            />
+                            <CardTwo
+                                img={<img src={macdonalds_mcdelivery} alt="Image of McDonald’s McDelivery " />}
+                                title={"McDonald’s Canada established McDelivery as a food delivery leader in Canada with the help of Amazon Ads."}
+                                link={"/"}
+                                linkTxt={
+                                    <>
+                                        How McDelivery drove engagement and shifted brand perception
+                                    </>
+                                }
+                            />
+                        </section>
+                    </section>
+                </section>
+                <section className="amazonAdvertising__goals padding__top__xxlarge padding__bottom__xxlarge padding__left__large padding__right__large">
+                    <section className="columns__container columns__container--single columns__container--full-width d-grid">
+                        <section className="container">
+                            <header className="columns__container columns__container--single columns__container--limit-width d-grid">
+                                <div>
+                                    <div className="goalbar goalbar--purple"></div>
+                                </div>
+                                <h2 className="heading__size--normal color__normal">
+                                    Explore where the industry is heading
+                                </h2>
+                            </header>
+                        </section>
+                        <section className="container">
+                            <section className="columns__container columns__container--third columns__container--limit-width">
+                                <Card
+                                    img={<img src={person_holding_device} alt="Image of a person holding a device" />}
+                                    title={"Learn how brands can scale and measure their connections with audiences by using Amazon Marketing Cloud at unBoxed 2021."}
+                                    link={"/"}
+                                    linkTxt={
+                                        <>
+                                            Find ways to better understand your insights and audiences using Amazon Marketing Cloud
+                                        </>
+                                    }
+                                    type={"alt"}
+                                />
+                                <Card
+                                    img={
+                                        <img src={my_best_advice_amy_lanzi_thumbnail} alt="Head shot of Amy Lanzi" />
+                                    }
+                                    title={"Publicis Groupe’s, Amy Lanzi, discusses rethinking the marketing funnel, creating meaningful connections between brands and consumers, and what makes people buy."}
+                                    link={"/"}
+                                    linkTxt={
+                                        <>
+                                            Winning the marketing mission and the need for balanced KPIs
+                                        </>
+                                    }
+                                    type={"alt"}
+                                />
+                                <Card
+                                    img={<img src={blog_thumbnail_1092x730} alt="A person with wavy hair holding on to their headphones and device" />}
+                                    title={"How to reach and resonate with audio-engaged customers in an increasingly voice-powered world."}
+                                    link={"/"}
+                                    linkTxt={
+                                        <>
+                                            Diving deep with Amazon Connected Audio Customers
+                                        </>
+                                    }
+                                    type={"alt"}
+                                />
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section className="amazonAdvertising__goals amazonAdvertising__industry padding__bottom__xxlarge padding__left__large padding__right__large">
+                    <section className="columns__container columns__container--single columns__container--full-width d-grid">
+                        <section className="container">
+                            <div className="columns__container columns__container--66-33 d-grid">
+                                <div className="container">
+                                    <header className="columns__container columns__container--single columns__container--limit-width d-grid">
+                                        <div>
+                                            <div className="goalbar goalbar--teal"></div>
+                                        </div>
+                                        <h2 className="heading__size--normal color__normal">
+                                            Get ready for the holiday season <HiOutlineArrowCircleRight />
+                                        </h2>
+                                    </header>
+                                    <section className="columns__container">
+                                        <section>
+                                            <CardThree
+                                                img={<img src={holding_package_looking_at_device} alt="A person holding a package and looking at a device" />}
+                                                link={"/"}
+                                                linkTxt={
+                                                    <>
+                                                        A person holding a package and looking at a device
+                                                    </>
+                                                }
+                                            />
+                                            <CardThree
+                                                img={
+                                                    <img src={person_with_pet_looking_at_laptop} alt="A person with their pet looking at a laptop" />
+                                                }
+                                                link={"/"}
+                                                linkTxt={
+                                                    <>
+                                                        How will customers shop during the 2021 holiday season?
+                                                    </>
+                                                }
+                                            />
+                                            <CardThree
+                                                img={<img src={credit_card_shopping_online} alt="A person with a credit card shopping online" />}
+                                                link={"/"}
+                                                linkTxt={
+                                                    <>
+                                                        How beauty brands can connect with shoppers as they research, consider and purchase products
+                                                    </>
+                                                }
+                                            />
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
                 </section>
             </main>
         </div>

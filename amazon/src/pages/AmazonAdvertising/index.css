@@ -471,6 +471,50 @@
     background-image: url('../../images/forward_circle_direction_arrow_icon.jpg');
 }
 
+.amazonAdvertising__goals {
+    width: 100%;
+    background-image: url('../../images/card-horizontal.jpg');
+    background-size: initial;
+    background-position: top center;
+}
+.goalbar {
+    width: 3.125rem;
+    border-top: solid;
+    border-top-width: .75rem;
+    border-radius: .78rem;
+    border-top-color: var(--red);
+}
+.goalbar.goalbar--blue {
+    border-top-color: var(--blue-38);
+}
+.goalbar.goalbar--purple {
+    border-top-color: var(--purple);
+}
+.goalbar.goalbar--teal {
+    border-top-color: var(--teal);
+}
+.amazonAdvertising--page h2 {
+    font-size: 2rem;
+    margin: 0 0 .5rem;
+    line-height: 1.4;
+}
+.amazonAdvertising--page a.link__type__button__secondary {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--grey-tone-106);
+    cursor: pointer;
+    /* text-decoration: none; */
+    text-transform: initial;
+    background: rgba(0,0,0,0);
+    border: none;
+}
+.amazonAdvertising--page a.link__type__button__secondary:after {
+    content: none;
+    padding-left: 0;
+}
+
+
 
 
 
