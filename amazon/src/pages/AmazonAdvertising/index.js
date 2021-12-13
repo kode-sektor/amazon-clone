@@ -5,10 +5,12 @@ import { BiSearch } from 'react-icons/bi'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import { RiInformationLine } from 'react-icons/ri'
 import { HiOutlineArrowCircleRight } from 'react-icons/hi'
+import { FaYoutube, FaLinkedin, FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
 
 import Slider from '../../components/UI/Carousel/Carousel'
-
 import { Card, CardTwo, CardThree } from './Card'
+
+import { startYear, currentYear } from '../../utilities/data'
 
 import amazon_ads from '../../images/amazon-ads.png'
 import homepage_hero_tile01_2 from '../../images/homepage-hero-tile01.2.png'
@@ -23,6 +25,11 @@ import blog_thumbnail_1092x730 from '../../images/blog-thumbnail-1092x730.jpg'
 import holding_package_looking_at_device from '../../images/holding-package-looking-at-device.png'
 import person_with_pet_looking_at_laptop from '../../images/person-with-pet-looking-at-laptop.jpg'
 import credit_card_shopping_online from '../../images/credit-card-shopping-online.jpg'
+import additive_graphic_line_picton_blue from '../../images/additive-graphic-line-picton-blue.png'
+import library_blue from '../../images/library-blue.png'
+import amplification_blue from '../../images/amplification-blue.png'
+import certification_blue from '../../images/certification-blue.png'
+import blog_blue from '../../images/blog-blue.png'
 
 
 import './index.css'
@@ -617,7 +624,421 @@ const AmazonAdvertising = () => {
                         </section>
                     </section>
                 </section>
+                <section className="padding__left padding__right">
+                    <section className="columns__wrapper">
+                        <section className="container">
+                            <section className="columns__wrapper padding__bottom__small">
+                                <section className="columns__container">
+                                    <div className="align__center">
+                                        <img src={additive_graphic_line_picton_blue} alt="" />
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section className="amazonAdvertising__start padding__left__base padding__right__base padding__top__large padding__bottom__xxlarge">
+                        <section className="columns__wrapper">
+                            <section className="columns__container columns__container--fourth columns__container--limit-width">
+                                <section className="amazonAdvertising__cardImg text-center">
+                                    <Link to="/">
+                                        <img src={library_blue} alt="Library" />
+                                    </Link>
+                                    <div>
+                                        <Link to="/" className="link__type__button__secondary">
+                                            Insights &nbsp;
+                                            <HiOutlineArrowCircleRight />
+                                        </Link>
+                                    </div>
+                                </section>
+                                <section className="amazonAdvertising__cardImg text-center">
+                                    <Link to="/">
+                                        <img src={amplification_blue} alt="Product announcements" />
+                                    </Link>
+                                    <div>
+                                        <Link to="/" className="link__type__button__secondary">
+                                            Product announcements &nbsp;
+                                            <HiOutlineArrowCircleRight />
+                                        </Link>
+                                    </div>
+                                </section>
+                                <section className="amazonAdvertising__cardImg text-center">
+                                    <Link to="/">
+                                        <img src={certification_blue} alt="Learning console" />
+                                    </Link>
+                                    <div>
+                                        <Link to="/" className="link__type__button__secondary">
+                                            Learning console &nbsp;
+                                            <HiOutlineArrowCircleRight />
+                                        </Link>
+                                    </div>
+                                </section>
+                                <section className="amazonAdvertising__cardImg text-center">
+                                    <Link to="/">
+                                        <img src={blog_blue} alt="Blog" />
+                                    </Link>
+                                    <div>
+                                        <Link to="/" className="link__type__button__secondary">
+                                            Blog &nbsp;
+                                            <HiOutlineArrowCircleRight />
+                                        </Link>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section className="amazonAdvertising__places padding__top__large padding__right__large padding__bottom__large padding__left__large">
+                        <section className="columns__wrapper">
+                            <section className="columns__container columns__container--single columns__container--limit-width">
+                                <section className="container padding__top__xxxlarge">
+                                    <div className="columns__wrapper">
+                                        <section className="columns__container columns__container--half columns__container--full-width">
+                                            <section className="padding__left__small padding__top__small ">
+                                                <div className="column">
+                                                    <section className="padding__top__xlarge">
+                                                        <h3 className="heading__size--normal color__white">
+                                                            Let’s go places, together
+                                                        </h3>
+                                                    </section>
+                                                    <section className="padding__bottom__mini">
+                                                        <p className="text color__white text-left text__size--normal">
+                                                            Ready to create your next campaign?
+                                                        </p>
+                                                    </section>
+                                                    <section>
+                                                        <Link to="/" className="link__type__button__secondary__sec">
+                                                            Here’s how to get started &nbsp;
+                                                            <HiOutlineArrowCircleRight />
+                                                        </Link>
+                                                    </section>
+                                                </div>
+                                            </section>
+                                            <section></section>
+                                        </section>
+                                    </div>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
             </main>
+            <footer className="amazonAdvertising__footer">
+                <section className="amazonAdvertising__footerMinor">
+                    <div className="columns__wrapper">
+                        <div className="columns__container">
+                            <p className="text color__white text__size--xtra-small">
+                                Sources: 
+                            </p>
+                            <p className="text color__white text__size--xtra-small">
+                            <sup>1</sup> Amazon internal, 2020, <sup>2 </sup>Amazon internal, 2021, <sup>3 </sup>Amazon internal, 2020
+                            </p>
+                        </div>
+                    </div>
+                </section>                     
+                <section className="amazonAdvertising__footerMain">
+                    <section className="amazonAdvertising__footerInner">
+                        <section className="amazonAdvertising__footerMainNav">
+                            <section className="amazonAdvertising__footerSelect">
+                                <section className="amazonAdvertising__footerCountry">
+                                    <select name="" id="">
+                                        <option data-locale="de-de" value="de-de">
+                                            Deutsch
+                                        </option>
+                                        <option selected="" data-locale="en-ca" value="en-ca">
+                                            English (Canada)
+                                        </option>
+                                        <option data-locale="en-gb" value="en-gb">
+                                            English (UK)
+                                        </option>
+                                        <option data-locale="en-us" value="en-us">
+                                            English (US)
+                                        </option>
+                                        <option data-locale="es-es" value="es-es">
+                                            Español (España)
+                                        </option>
+                                        <option data-locale="es-mx" value="es-mx">
+                                            Español (México)
+                                        </option>
+                                        <option data-locale="fr-ca" value="fr-ca">
+                                            Français (Canada)
+                                        </option>
+                                        <option data-locale="fr-fr" value="fr-fr">
+                                            Français (France)
+                                        </option>
+                                        <option data-locale="it-it" value="it-it">
+                                            Italiano
+                                        </option>
+                                        <option data-locale="nl-nl" value="nl-nl">
+                                            Nederlands
+                                        </option>
+                                        <option data-locale="pt-br" value="pt-br">
+                                            Português (Brasil)
+                                        </option>
+                                        <option data-locale="sv-se" value="sv-se">
+                                            Svenska
+                                        </option>
+                                        <option data-locale="ar-ae" value="ar-ae">
+                                            العربية
+                                        </option>
+                                        <option data-locale="zh-cn" value="zh-cn">
+                                            中文
+                                        </option>
+                                        <option data-locale="ja-jp" value="ja-jp">
+                                            日本語
+                                        </option>
+                                        <option data-locale="ko-kr" value="ko-kr">
+                                            한국어
+                                        </option>
+                                    </select>
+                                </section>
+                            </section>
+                            <section className="amazonAdvertising__nav">
+                                <ul>
+                                    <li>
+                                        <h6 className="amazonAdvertising__navTitle">Ad products</h6>
+                                        <ul>
+                                            <li>
+                                                <Link to="/" title="Sponsored Products">
+                                                    Sponsored Products
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Sponsored Brands">
+                                                    Sponsored Brands
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Sponsored Display">
+                                                    Sponsored Display
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Amazon DSP">
+                                                    Amazon DSP
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Video ads">
+                                                    Video ads
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Audio ads">
+                                                    Audio ads
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Custom advertising solutions">
+                                                     Custom advertising solutions
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h6 className="amazonAdvertising__navTitle">Brand shopping experiences</h6>
+                                        <ul>
+                                            <li>
+                                                <Link to="/" title="Stores">
+                                                    Stores
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Posts">
+                                                    Posts
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Amazon Live">
+                                                    Amazon Live
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                        <h6 className="amazonAdvertising__navTitle">Ad tech</h6>
+                                        <ul>
+                                            <li>
+                                                <Link to="/" title="Amazon DSP">
+                                                    Amazon DSP
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Amazon Attribution">
+                                                    Amazon Attribution
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Amazon Marketing Cloud">
+                                                    Amazon Marketing Cloud
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Sizmek Ad Suite">
+                                                    Sizmek Ad Suite
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h6 className="amazonAdvertising__navTitle">Industries</h6>
+                                        <ul>
+                                            <li>
+                                                <Link to="/" title="Automotive">
+                                                    Automotive
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Consumer electronics">
+                                                    Consumer electronics
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Entertainment">
+                                                    Entertainment
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Fashion">
+                                                    Fashion
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Financial services">
+                                                    Financial services
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Grocery">
+                                                    Grocery
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Publishing">
+                                                    Publishing
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Toys and games">
+                                                    Toys and games
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h6 className="amazonAdvertising__navTitle">Learn</h6>
+                                        <ul>
+                                            <li>
+                                                <Link to="/" title="Blog">
+                                                    Blog
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Learning console">
+                                                    Learning console
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Product announcements">
+                                                    Product announcements
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Insights">
+                                                    Insights
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Ad specs and policies">
+                                                    Ad specs and policies
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="FAQ">
+                                                    FAQ
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                        <h6 className="amazonAdvertising__navTitle">Partners</h6>
+                                        <ul>
+                                            <li>
+                                                <Link to="/" title="Partner directory">
+                                                    Partner directory
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/" title="Partner Network">
+                                                    Partner Network
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section className="amazonAdvertising__footerMeta">
+                            <ul className="amazonAdvertising__smLinks">
+                                <li>
+                                    <Link to="/" title="Amazon Advertising on LinkedIn">
+                                        <FaLinkedin />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" title="Amazon Advertising on LinkedIn">
+                                        <FaTwitter />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" title="Amazon Advertising on LinkedIn">
+                                        <FaInstagram />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" title="Amazon Advertising on LinkedIn">
+                                        <FaYoutube />
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" title="Amazon Advertising on LinkedIn">
+                                        <FaFacebookF />
+                                    </Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <ul className="amazonAdvertising__footerLinks">
+                            <li>
+                                <Link to="/" title="Conditions of Use">
+                                    Conditions of Use
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" title="Privacy notice">
+                                    Privacy notice
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" title="Interest-Based Ads">
+                                    Interest-Based Ads
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" title="Advertising Preferences">
+                                    Advertising Preferences
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" title="Cookie Policy">
+                                    Cookie Policy
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/" title="Careers">
+                                    Careers
+                                </Link>
+                            </li>
+                        </ul>
+                        <section className="amazonAdvertising__copy">
+                            © Copyright {startYear}–{currentYear}, Amazon
+                        </section>
+                    </section>
+                </section>                     
+            </footer>
         </div>
     )
 }

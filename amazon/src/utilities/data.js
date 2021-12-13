@@ -1,3 +1,8 @@
+
+const startYear = "2015"
+
+const currentYear = new Date().getFullYear()
+
 const countries = [
     {
         icon : "",
@@ -372,4 +377,4 @@ const currencies = [
     }
 ]
 
-export { countries, languages, subMenu, progressiveSubNav, currencies }
+export { countries, languages, subMenu, progressiveSubNav, currencies, startYear, currentYear }

@@ -7,6 +7,12 @@
     background-color: var(--white);
     -webkit-font-smoothing: antialiased;
 }
+.amazonAdvertising--page h3 {
+    margin: 0 0 .5rem;
+    line-height: 1.4;
+    font-weight: 700;
+    background-color: rgba(0,0,0,0);
+}
 .amazonAdvertising__header {
     position: relative;
     top: 0;
@@ -333,6 +339,7 @@
 .amazonAdvertising__slider .carousel-indicators {
     margin-left: 20%;
     margin-right: 20%;
+    text-align: center;
 }
 .amazonAdvertising__slider .carousel-indicators li {
     display: inline-block;
@@ -477,6 +484,10 @@
     background-size: initial;
     background-position: top center;
 }
+.amazonAdvertising__goals.amazonAdvertising__industry {
+    background-image: url('../../images/holiday-bg13.png');
+    background-size: cover;
+}
 .goalbar {
     width: 3.125rem;
     border-top: solid;
@@ -512,6 +523,182 @@
 .amazonAdvertising--page a.link__type__button__secondary:after {
     content: none;
     padding-left: 0;
+}
+.amazonAdvertising__start {
+    background-color: var(--white);
+}
+.amazonAdvertising__places {
+    width: 100%;
+    background-image: url('../../images/banner/home-page-footer-background02.png');
+    background-size: cover;
+    background-position: center center;
+}
+.amazonAdvertising__cardImg img {
+    height: 100px;
+    width: auto;
+}
+
+.amazonAdvertising__footerMinor {
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    vertical-align: top;
+    background-color: var(--grey-tone-106);
+    border: 2px solid orange;
+}
+.amazonAdvertising__footerMain {
+    padding: 40px 0;
+    background: url('../../images/footer-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid crimson;
+}
+.amazonAdvertising__footerInner {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 1rem;
+    margin: 0 auto;
+}
+.amazonAdvertising__footerMainNav {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border: thin solid pink;
+}
+.amazonAdvertising__footerSelect {
+    width: 100%;
+    display: block;
+    text-align: start;
+    border: 2px solid green;
+}
+.amazonAdvertising__footerCountry {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 64px;
+    border: 2px solid brown;
+}
+.amazonAdvertising__footerCountry select {
+    -webkit-appearance: none;
+    max-width: 100%;
+    height: 2rem;
+    padding-left: 25px;
+    margin-bottom: 0;
+    filter: brightness(0) invert(1);
+    font-weight: 700;
+    background: url('../../images/gear.svg') no-repeat;
+    border: none;
+    background-position: left 0 top 55%;
+}
+.amazonAdvertising__nav {
+    width: 100%;
+    flex-basis: 75%;
+}
+.amazonAdvertising__nav > ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 3rem 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+.amazonAdvertising__nav > ul li {
+    display: block;
+    list-style: none;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-left: 0;
+    line-height: 1.5;
+    padding: 0 1rem;
+}
+.amazonAdvertising__navTitle {
+    margin: 0;
+    padding: .5rem 0;
+    display: inline-block;
+    color: var(--red-3);
+    font-weight: 700;
+}
+.amazonAdvertising__nav > ul > li > .amazonAdvertising__navTitle:nth-of-type(n + 2) {
+    padding-top: 2.25rem;;
+}
+.amazonAdvertising__nav > ul > li > ul {
+    margin: 0;
+    padding: 0;
+}
+.amazonAdvertising__nav > ul > li > ul > li {
+    display: block;
+    list-style: none;
+    padding: 0;
+    padding-left: 0;
+    line-height: 1.5;
+}
+.amazonAdvertising__nav > ul > li > ul > li a {
+    display: block;
+    padding: .25rem 0;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .25s;
+}
+.amazonAdvertising__nav > ul > li > ul > li a:hover,
+.amazonAdvertising__nav > ul > li > ul > li a:focus {
+    color: var(--red-3);
+}
+.amazonAdvertising__smLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--white);
+}
+.amazonAdvertising__smLinks li a {
+    display: block;
+    padding: .5rem .2rem;
+    margin: 0 .5rem;
+    margin-left: 0;
+    line-height: 1;
+    font-size: 1.3em;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white);
+    transition: all .25s;
+}
+.amazonAdvertising__footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 0;
+    border: 2px solid cyan;
+}
+.amazonAdvertising__footerLinks li a {
+    display: block;
+    padding: .5rem 0;
+    padding-left: .1rem;
+    color: var(--white);
+    transition: all .25s;
+    text-decoration: none;
+}
+.amazonAdvertising__footerLinks li a:after {
+    content: "|";
+    padding: .2rem;
+    color: var(--white);
+}
+.amazonAdvertising__footerLinks li a:last-child:after {
+    content: "";
+}
+.amazonAdvertising__copy {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+    font-weight: 400;
+    text-align: start;
 }
 
 

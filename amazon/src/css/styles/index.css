@@ -388,6 +388,7 @@ file rather than small ones. Your choice
     --grey-tone-106:  #232f3f;
     --grey-tone-107:  #f6f7f9;
     --grey-tone-108:  #606c7b;
+    --grey-tone-109:  #fafafb;
 	
     --black: #000;
     --white: #fff;
@@ -2155,6 +2156,9 @@ a:active.a__color__base {
 .padding__top__xlarge {
     padding-top: 50px;
 }
+.padding__top__xxxlarge {
+    padding-top: 100px;
+}
 .padding__bottom__xxlarge {
     padding-bottom: 75px;
 }
@@ -2175,6 +2179,12 @@ a:active.a__color__base {
 }
 .padding__right__minibase {
     padding-right: 25px;
+}
+.padding__left__base {
+    padding-left: 30px;
+}
+.padding__right__base {
+    padding-right: 30px;
 }
 .bg__no__repeat {
     background-repeat: no-repeat;
@@ -3110,17 +3120,15 @@ p.abstract:after{
     font-weight: 400;
     background-color: rgba(0,0,0,0);
 }
-.column .text {
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: rgba(0,0,0,0);
-}
 .column .text.color__normal {
     color: var(--mid-grey);
 }
 .column .text__size--medium {
     font-size: 1.313rem;
     font-weight: 300;
+}
+.text__size--normal {
+    font-size: 1.125rem;
 }
 .column a.link__type__button__secondary, .column a.link__type__normal {
     cursor: pointer;
@@ -3133,6 +3141,14 @@ p.abstract:after{
     font-weight: 400;
     padding: .5rem 0;
     transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+.column a.link__type__button__secondary__sec {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: rgba(0,0,0,0);
+    border: none;
+    color: var(--grey-tone-109);
 }
 a.link__type__normal__new {
     padding: .5rem;
@@ -3195,7 +3211,7 @@ a.link__type__normal__new:focus, a.link__type__normal__new:hover {
 .column h4.color__white, .column h5.color__white, .column h6.color__white {
     color: var(--white);
 }
-.column .text.color__white {
+.column .text.color__white, .text.color__white {
     color: var(--white);
 }
 .column b, .column strong {

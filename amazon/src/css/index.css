@@ -176,6 +176,9 @@ code {
 .carousel-indicators {
     display: none;
 }
+.amazonAdvertising__slider .carousel-indicators {
+    display: block;
+}
 /* .miniSlider {
 
 } */
