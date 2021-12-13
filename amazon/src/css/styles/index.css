@@ -142,8 +142,12 @@ file rather than small ones. Your choice
     --green-4: #067D62;
     --green-5: #284d40;
     --green-6: #7fda69;
+    --green-7: #00635D;
 
     --brown: #ff6138;
+    --brown-1: #382110;
+    --brown-2: #58371F;
+    --brown-3: #1a0f07;
 
     --pink: #f9f5d5;
     --pink-2: #ff0072;
@@ -187,6 +191,8 @@ file rather than small ones. Your choice
     --blue-36: #1ad2fb;
     --blue-37: #10bbd5;
     --blue-38: #0073c7;
+    --blue-39: #3b5998;
+    --blue-40: #4e69a2;
 
     --teal: #009596;
 
@@ -252,6 +258,9 @@ file rather than small ones. Your choice
 	--ochre-58: #ad5305;
 	--ochre-59: #f69931;
 	--ochre-60: #e15a00;
+	--ochre-61: #f5d47a;
+	--ochre-62: #b38b22;
+	--ochre-63: #f8c15d;
 
     --red: #ff5a00;
     --red-2: #ff5a00;
@@ -366,29 +375,36 @@ file rather than small ones. Your choice
     --grey-tone-84: #505050;
     --grey-tone-85: #e6e6e6;
     --grey-tone-86: #a0a0a0;
-    --grey-tone-87:  #777575;
-    --grey-tone-88:  #bcc1c8;
-    --grey-tone-89:  #adb2bb;
-    --grey-tone-90:  #eff0f3;
-    --grey-tone-91:  #d0d0d0;
-    --grey-tone-92:  #f1f1f1;
-    --grey-tone-93:  #808080;
-    --grey-tone-94:  #716d6d;
-    --grey-tone-95:  #f0f0f0;
-    --grey-tone-96:  #f8f8f8;
-    --grey-tone-97:  #737373;
-    --grey-tone-98:  #292b2f;
-    --grey-tone-99:  #c9c9c9;
-    --grey-tone-100:  #525252;
-    --grey-tone-101:  #bec2d4;
-    --grey-tone-102:  #6d6c6c;
-    --grey-tone-103:  #323434;
-    --grey-tone-104:  #dad6d9;
-    --grey-tone-105:  #cacaca;
-    --grey-tone-106:  #232f3f;
-    --grey-tone-107:  #f6f7f9;
-    --grey-tone-108:  #606c7b;
-    --grey-tone-109:  #fafafb;
+    --grey-tone-87: #777575;
+    --grey-tone-88: #bcc1c8;
+    --grey-tone-89: #adb2bb;
+    --grey-tone-90: #eff0f3;
+    --grey-tone-91: #d0d0d0;
+    --grey-tone-92: #f1f1f1;
+    --grey-tone-93: #808080;
+    --grey-tone-94: #716d6d;
+    --grey-tone-95: #f0f0f0;
+    --grey-tone-96: #f8f8f8;
+    --grey-tone-97: #737373;
+    --grey-tone-98: #292b2f;
+    --grey-tone-99: #c9c9c9;
+    --grey-tone-100: #525252;
+    --grey-tone-101: #bec2d4;
+    --grey-tone-102: #6d6c6c;
+    --grey-tone-103: #323434;
+    --grey-tone-104: #dad6d9;
+    --grey-tone-105: #cacaca;
+    --grey-tone-106: #232f3f;
+    --grey-tone-107: #f6f7f9;
+    --grey-tone-108: #606c7b;
+    --grey-tone-109: #fafafb;
+    --grey-tone-110: #181818;
+    --grey-tone-111: #32362d;
+    --grey-tone-112: #f4f2e9;
+    --grey-tone-113: #d8d8d8;
+    --grey-tone-114: #d6d0c4;
+    --grey-tone-115: #f4f1ea;
+    --grey-tone-116: #ede6d6;
 	
     --black: #000;
     --white: #fff;
@@ -1066,6 +1082,97 @@ a:hover, .a__color__button__link:hover {
     color: inherit !important;
     text-decoration: none !important;
 }
+.fbSignInButton {
+    display: inline-flex;
+}
+.gr__button {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--grey-tone-14);
+    border: 1px solid var(--grey-tone-114);
+    border-radius: 3px;
+    background-color: var(--grey-tone-115);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    appearance: none;
+}
+.gr__button:hover, .gr__button:focus {
+    color: var(--grey-tone-14);
+    background-color: var(--grey-tone-116);
+    text-decoration: none;
+}
+.gr__button:active {
+    background-color: var(--grey-tone-114);
+}
+.gr__button--auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    line-height: 2 !important;
+    font-weight: normal;
+}
+.gr__button--dark {
+    color: var(--white);
+    font-weight: normal;
+    background-color: var(--brown-1);
+    border: 1px solid var(--brown-1);
+}
+.gr__button--dark:hover {
+    background-color: var(--brown-2);
+    border: 1px solid var(--brown-1);
+    color: var(--white);
+}
+.gr__button--dark:active {
+    background-color: var(--brown-3);
+    border: 1px solid var(--brown-1);
+    color: var(--white);
+}
+.gr__button--facebook {
+    font-weight: normal;
+    color: var(--white);
+    background-color: var(--blue-39);
+    border-color: var(--blue-39);
+}
+.gr__button--facebook:hover, .gr__button--facebook:focus {
+    background-color: var(--blue-40);
+    border-color: var(--blue-40);
+    color: var(--white);
+}
+.gr__button--amazon {
+    color: var(--black);
+    font-weight: normal;
+    background-color: var(--ochre-61);
+    border: 1px solid var(--ochre-62);
+}
+.gr__button--amazon:hover, .gr__button--amazon:focus {
+    background-color: var(--ochre-63);
+}
+.gr__button--apple {
+    color: var(--black);
+    font-weight: normal;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+.gr__button--apple:hover, .gr__button--apple:focus {
+    background-color: var(--white);
+}
+.gr__button--fullWidth {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box !important;
+}
+a.gr__button {
+    color: var(--grey-tone-14);
+}
+a.gr__button--dark, a.gr__button--red, a.gr__button--teal {
+    color: var(--white);
+}
+
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     /* color: pink;
     font-size: .8em;
@@ -1345,7 +1452,27 @@ ul.detail__bullet__list li {
 
 /*7. ICONS
 ==============================================================================================================================================================*/
-
+.gr__button--facebook__icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    background: url('../../images/icon_facebook.svg') no-repeat;
+}
+.gr__button--amazon__icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    margin-left: -0.5em;
+    background: url('../../images/icon-amazon-a.svg') no-repeat;
+    background-size: 100% 100%;
+}
+.gr__button--apple__icon {
+    width: 31px;
+    height: 31px;
+    margin-left: -1.5em;
+    background: url('../../images/share-apple-circle.svg') no-repeat;
+    background-size: 100% 100%;
+}
 .browse__back {
     display: inline-block;
     width: 6px;

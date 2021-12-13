@@ -31,7 +31,6 @@ import amplification_blue from '../../images/amplification-blue.png'
 import certification_blue from '../../images/certification-blue.png'
 import blog_blue from '../../images/blog-blue.png'
 
-
 import './index.css'
 
 const AmazonAdvertising = () => {

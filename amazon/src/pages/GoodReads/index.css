@@ -1,0 +1,96 @@
+.goodreads--page {
+    position: relative;
+    min-height: 100%;
+    color: var(--grey-tone-110);
+}
+.goodreads--page * {
+    box-sizing: content-box;
+}
+.goodreads__header {
+    position: static;
+    min-width: 970px;
+    line-height: 18px;
+    height: 370px;
+    padding: 0;
+    font-size: 12px;
+    background-color: var(--grey-tone-111);
+    background-image: url('../../images/banner/desktop-background-best-books.png');
+    background-position: center 75px;
+    background-repeat: no-repeat;
+    background-size: auto 295px;
+    border: 0;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__headerNav {
+    position: static;
+    height: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-color: var(--grey-tone-112);
+    border: 2px solid blue;
+}
+.goodreads__signedOut {
+    width: 970px;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+}
+.goodreads__navTitle {
+    height: 65px;
+    padding-top: 10px;
+}
+.goodreads__mastHead {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 370px;
+    z-index: 1;
+}
+.goodreads__newAcct {
+    position: sticky;
+    padding: 24px;
+    width: 250px;
+    margin: 14px 6px 0 0;
+    background: var(--white);
+    border: 1px solid var(--grey-tone-113);
+    border-radius: 10px;
+    font-family: "Merriweather", "Georgia", serif;
+}
+.goodreads__newAcct h2 {
+    margin: 0 0 10px;
+    color: var(--black);
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 14px;
+    text-align: center;
+}
+.goodreads__newAcctSm {
+    margin-left: 0;
+}
+.goodreads__newAcctSm > li {
+    margin-bottom: 14px;
+}
+.goodreads__legal {
+    padding-right: 24px;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: center;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    color: var(--grey-tone-28);
+}
+.goodreads__newAcctSm > li > a {
+    text-decoration: none;
+}
+.gr__hyperlink {
+    color: var(--green-7);
+}
+.goodreads__signIn {
+    padding-top: 24px;
+    margin-top: 24px;
+    font-size: 16px;
+    text-align: center;
+    border-top: 1px solid var(--grey-tone-113);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}

@@ -253,7 +253,7 @@ const Footer = (props) => {
                                                 &amp; recommendations
                                             </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/good-reads", 
                                         icon: null 
                                     },
                                     { label: 
