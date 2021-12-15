@@ -43,6 +43,12 @@ import to_kill_a_mocking_bird from '../../images/thumbnails/to-kill-a-mocking-bi
 import nineteen_eightyfour from '../../images/thumbnails/1984.jpg'
 import harry_potter_and_the_sorcerers_stone from '../../images/thumbnails/harry-potter-and-the-sorcerers-stone.jpg'
 import the_great_gatsby from '../../images/thumbnails/the-great-gatsby.jpg'
+import footer_facebook from '../../images/footer-facebook.svg'
+import footer_twitter from '../../images/footer-twitter.svg'
+import footer_linkedin from '../../images/footer-linkedin.svg'
+import footer_instagram from '../../images/footer-instagram.svg'
+import badge_ios_desktop_homepage from '../../images/badge-ios-desktop-homepage.svg'
+import badge_android_desktop_home from '../../images/badge-android-desktop-home.png'
 
 import './index.css'
 
@@ -814,6 +820,106 @@ const GoodReads = () => {
                     </aside>
                 </section>
             </main>
+            <footer className="goodreads__footer">
+                <div className="container">
+                    <div className="row flex-nowrap">
+                        <section className="col-md-8 col-lg-6">
+                            <div className="row flex-nowrap">
+                                <section className="col-md-3 col-lg-4">
+                                    <h3 className="goodreads__footerHeading">Company</h3>
+                                    <ul className="goodreads__footerListLinks">
+                                        <li>
+                                            <Link to="/">About us</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Careers</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Terms</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Privacy</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Interest Based Ads</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Ad Preferences</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Help</Link>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section className="col-md-3 col-lg-4">
+                                    <h3 className="goodreads__footerHeading">Work with us</h3>
+                                    <ul className="goodreads__footerListLinks">
+                                        <li>
+                                            <Link to="/">Authors</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Advertise</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">Authors &amp; ads blog</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">API</Link>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section className="col-md-3 col-lg-4">
+                                    <h3 className="goodreads__footerHeading">Connect</h3>
+                                    <ul className="goodreads__footerSocials ml-0">
+                                        <li>
+                                            <Link to="/">
+                                                <img src={footer_facebook} alt="Goodreads on Facebook" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">
+                                                <img src={footer_twitter} alt="Goodreads on Twitter" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">
+                                                <img src={footer_instagram} alt="Goodreads on Instagram" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/">
+                                                <img src={footer_linkedin} alt="Goodreads on LinkedIn" />
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </section>
+                        <section className="col-md-4 col-lg-6 d-flex justify-content-end">
+                            <section className="goodreads__footerAppStore d-inline-block ml-auto">
+                                <ul className="ml-0 d-flex">
+                                    <li>
+                                        <Link to="/">
+                                            <img src={badge_ios_desktop_homepage} alt="Download app for iOS" />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/">
+                                            <img src={badge_android_desktop_home} alt="Download app for Android" />
+                                        </Link>
+                                    </li>
+                                </ul>
+                                <ul className="goodreads__footerAppCopy">
+                                    <li>© 2021 Goodreads, Inc.</li>
+                                    <li>
+                                        <Link to="/">Mobile version</Link>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </footer>
         </section>
     )
 }
