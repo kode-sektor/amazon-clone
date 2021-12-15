@@ -2,9 +2,27 @@
     position: relative;
     min-height: 100%;
     color: var(--grey-tone-110);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
 }
 .goodreads--page * {
     box-sizing: content-box;
+}
+.goodreads--page h2 {
+    font-weight: normal;
+}
+.goodreads--page p {
+    margin: 18px 0;
+}
+.goodreads--page input[type=text], .goodreads--page input[type=number], 
+.goodreads--page input[type=search], .goodreads--page input[type=email], 
+.goodreads--page input[type=number], .goodreads--page input[type=password], 
+.goodreads--page textarea {
+    color: var(--grey-tone-14);
+    border: var(--grey-tone-117) 1px solid;
+    border-radius: 3px;
+    background-color: var(--white);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    resize: none;
 }
 .goodreads__header {
     position: static;
@@ -83,9 +101,6 @@
 .goodreads__newAcctSm > li > a {
     text-decoration: none;
 }
-.gr__hyperlink {
-    color: var(--green-7);
-}
 .goodreads__signIn {
     padding-top: 24px;
     margin-top: 24px;
@@ -93,4 +108,398 @@
     text-align: center;
     border-top: 1px solid var(--grey-tone-113);
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__page {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-repeat: repeat-x;
+    background-image: none;
+    border: 2px solid salmon;
+}
+.goodreads__pageContent {
+    display: flex;
+    width: 960px;
+    margin: 0px auto;
+    font-size: 12px;
+    text-align: left;
+    background: var(--white);
+}
+.goodreads__pageContentPri {
+    width: 625px;
+    padding-right: 10px;
+    padding-left: 8px;
+    border: 2px solid lime;
+}
+.goodreads__sellingPoint {
+    width: 280px;
+    margin: 0 40px 10px 0;
+    font-size: 13px;
+    border: thin solid crimson;
+}
+.goodreads__sellingPoint:last-child {
+    margin-right: 10px;
+}
+.goodreads__sellingPoint h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--black);
+    clear: both;
+    background-color: transparent;
+}
+.goodreads__sellingPoint p {
+    padding: 0;
+    margin: 18px 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--grey-tone-14);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__discovery {
+    padding: 15px 0 20px 0;
+    clear: both;
+    border-radius: 10px;
+    background-color: var(--grey-tone-112);
+}
+.goodreads__discovery h2 {
+    margin: 0 0 15px 15px;
+    color: var(--black);
+    font-size: 18px;
+}
+.goodreads__discover {
+    height: 170px;
+    margin-top: 20px;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-image: url('../../images/vertical-stroke.png');
+    border: thin solid tan;
+}
+.goodreads__liked {
+    margin-left: 15px;
+}
+.goodreads__discovered {
+    overflow: hidden;
+    width: 200px;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+.goodreads__liked p:first-child, .goodreads__discovered p:first-child {
+    margin-top: 0;
+}
+.goodreads__discoveryImg li {
+    margin: 0 12px 0 0;
+}
+.goodreads__discoveryImg img {
+    height: 120px;
+    width: 80px;
+}
+.goodreads__discovered .goodreads__discoveryImg p {
+    width: 110px;
+    margin: 0;
+    font-weight: bold;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__discoveryBoxArrow {
+    height: 177px;
+    vertical-align: middle;
+    text-align: center;
+    border: thin solid brown;
+}
+.goodreads__discoveryBoxArrow img {
+    display: inline-block;
+    margin-top: 88.5px;
+    margin-left: 150px;
+    transform: translateY(-50%);
+    border: thin solid indigo;
+}
+.goodreads__browseBox {
+    margin: 25px 0;
+}
+.goodreads__browseBox h2, .goodreads__featuredTeaserBox h3  {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+    cursor: auto;
+}
+.goodreads__browseBox h2:first-child {
+    margin-top: 0;
+}
+.goodreads__searchbox {
+    position: relative;
+    margin: 12px 0;
+}
+.goodreads__searchbox .goodreads__sitesearch input {
+    width: 300px;
+    padding: 5px;
+    height: 17px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: none;
+    border: 1px solid #999;
+}
+.goodreads__sitesearchField {
+    resize: none;
+    background: url('../../images/magnifying-glass.png') no-repeat 99% center;
+}
+.goodreads__category {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--grey-tone-14);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__category > ul > li {
+    flex: 0 0 25%;
+}
+.goodreads__category > ul > li > ul > li a {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.goodreads__teaserbox {
+    margin: 24px 0;
+    font-size: 14px;
+}
+.goodreads__teaserbox h2, .goodreads__choiceAwards h2 {
+    margin: 0 0 10px 0;
+    color: var(--black);
+    font-size: 18px;
+}
+.goodreads__teaserSlide {
+    position: relative;
+    /* overflow: hidden; */
+    width: 67%;
+}
+.goodreads__teaserSlide > ul {
+    position: relative;
+    margin-left: 0;
+}
+.goodreads__teaserSlide > ul > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    /* width: 100%;
+    height: 100%; */
+    opacity: 0;
+    animation-duration: 10s;
+}
+.goodreads__teaserSlide > ul > li:first-child {
+    animation: sliderFade 200s 0s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(2) {
+    animation: sliderFade 200s 10s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(3) {
+    animation: sliderFade 200s 20s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(4) {
+    animation: sliderFade 200s 30s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(5) {
+    animation: sliderFade 200s 40s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(6) {
+    animation: sliderFade 200s 50s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(7) {
+    animation: sliderFade 200s 60s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(8) {
+    animation: sliderFade 200s 70s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(9) {
+    animation: sliderFade 200s 80s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(10) {
+    animation: sliderFade 200s 90s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(11) {
+    animation: sliderFade 200s 100s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(12) {
+    animation: sliderFade 200s 110s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(13) {
+    animation: sliderFade 200s 120s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(14) {
+    animation: sliderFade 200s 130s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(15) {
+    animation: sliderFade 200s 140s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(16) {
+    animation: sliderFade 200s 150s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(17) {
+    animation: sliderFade 200s 160s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(18) {
+    animation: sliderFade 200s 170s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(19) {
+    animation: sliderFade 200s 180s infinite linear both;
+}
+.goodreads__teaserSlide > ul > li:nth-child(20) {
+    animation: sliderFade 200s 190s infinite linear both;
+}
+.goodreads__teasterTb {
+    display: inline-block;
+    margin-right: 10px;
+}
+.goodreads__teasterTb img {
+    max-width: 300px;
+}
+.goodreads__quoteTxt {
+    padding: 0px 5px 10px 0px;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: "Merriweather", "Georgia", serif;
+}
+.goodreads__author {
+    font-weight: bold;
+    color: var(--grey-tone-14);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__quoteBoxLinks {
+    width: 33%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.goodreads__choiceAwards {
+    margin: 24px 0;
+}
+.goodreads__choiceLinks {
+    display: flex;
+}
+.goodreads__choiceLogoContainer img {
+    position: relative;
+    padding: 10px 20px 0px 0px;
+}
+.goodreads__choiceLinkList {
+    flex-grow: 1;
+    word-wrap: break-word;
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color:  var(--grey-tone-14);
+    border: thin solid green;
+}
+.goodreads__choiceLinkList li {
+    margin: 0.8em 0;
+    break-inside: avoid;
+    list-style-type: none;
+}
+.goodreads__choiceLinkList li:first-child {
+    margin-top: 0;
+}
+.goodreads__pageContentSec {
+    display: inline-block;
+    width: 300px;
+    margin-left: 8px;
+    padding-top: 157px;
+}
+.goodreads__asideMain {
+    padding-bottom: 16px;
+}
+.goodreads__asideMain h3 {
+    line-height: 18px;
+    margin: 4px 0px 4px 0px;
+    margin-top: 0px;
+    font-size: 16px;
+    color: var(--brown-1);
+    text-align: left;
+    font-weight: normal;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__asideTitle {
+    display: block;
+    margin: 16px 0;
+    font-weight: bold;
+    font-family: "Merriweather", "Georgia", serif;
+}
+.goodreads__likesComments {
+    margin: 8px 0;
+}
+.goodreads__metaText {
+    line-height: 1.15;
+    font-size: 12px;
+    color: var(--grey-tone-50);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+.goodreads__featuredTeaserBox {
+    width: 300px;
+    margin: 24px 0;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: left;
+    color: var(--grey-tone-110);
+    cursor: default !important;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 2px solid lime;
+}
+.goodreads__featuredTeaserList {
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    min-height: 40px;
+    margin: 0;
+    padding: 2px 0;
+    border-bottom: 1px solid var(--grey-tone-118);
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.goodreads__featuredTeaserImg {
+    overflow: hidden;
+    max-width: 120px;
+    max-height: 40px;
+}
+.goodreads__featuredTeaserImg a img {
+    max-height: 40px;
+}
+.goodreads__featuredTeaserTitle {
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: normal;
+}
+.goodreads__featuredTeaserTitle a {
+    color: var(--green-7);
+}
+.goodreads__featuredTeaserTitle a:hover, 
+.goodreads__featuredTeaserTitle a:focus {
+    color: var(--green-7);
+    text-decoration: underline;
+}
+.goodreds__featuredTeaserMeta {
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--grey-tone-28);
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+
+
+
+
+@keyframes sliderFade {
+    0% {
+        opacity: 0; 
+    }
+    /* Finish changes here */
+    1%, 4% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    /* Between 5% and 100%, nothing changes */
+    100% {
+        opacity: 0;
+    }
 }

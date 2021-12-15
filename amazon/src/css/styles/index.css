@@ -405,6 +405,8 @@ file rather than small ones. Your choice
     --grey-tone-114: #d6d0c4;
     --grey-tone-115: #f4f1ea;
     --grey-tone-116: #ede6d6;
+    --grey-tone-117: #dcd6cc;
+    --grey-tone-118: #ebece7;
 	
     --black: #000;
     --white: #fff;
@@ -1099,6 +1101,10 @@ a:hover, .a__color__button__link:hover {
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
     appearance: none;
 }
+.gr__button--small {
+    font-size: 11px;
+    padding: 4px 12px;
+}
 .gr__button:hover, .gr__button:focus {
     color: var(--grey-tone-14);
     background-color: var(--grey-tone-116);
@@ -1171,7 +1177,13 @@ a.gr__button {
 a.gr__button--dark, a.gr__button--red, a.gr__button--teal {
     color: var(--white);
 }
-
+.gr__hyperlink, .gr__hyperlink:hover, .gr__hyperlink:focus {
+    color: var(--green-7);
+    text-decoration: none;
+}
+.gr__hyperlink:hover, .gr__hyperlink:focus {
+    text-decoration: underline;
+}
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     /* color: pink;
