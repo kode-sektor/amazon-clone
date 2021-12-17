@@ -261,6 +261,7 @@ file rather than small ones. Your choice
 	--ochre-61: #f5d47a;
 	--ochre-62: #b38b22;
 	--ochre-63: #f8c15d;
+	--ochre-64: #f5c518;
 
     --red: #ff5a00;
     --red-2: #ff5a00;
@@ -408,6 +409,7 @@ file rather than small ones. Your choice
     --grey-tone-117: #dcd6cc;
     --grey-tone-118: #ebece7;
     --grey-tone-119: #f9f8f4;
+    --grey-tone-120: #121212;
 	
     --black: #000;
     --white: #fff;
@@ -437,6 +439,7 @@ file rather than small ones. Your choice
     --font-ancillary-2: 'Roboto Slab', sans-serif;
     --font-ancillary-3: 'Roboto Condensed', sans-serif;
     --font-ancillary-4: Arial, sans-serif;
+    --font-ancillary-5: Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* Fonts */

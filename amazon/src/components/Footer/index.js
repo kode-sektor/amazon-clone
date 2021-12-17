@@ -263,7 +263,7 @@ const Footer = (props) => {
                                                 &amp; Celebrities
                                             </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/imdb", 
                                         icon: null 
                                     },
                                     { label: 

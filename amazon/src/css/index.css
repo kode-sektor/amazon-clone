@@ -2059,6 +2059,76 @@ table.myx__bordered tr:first-child th {
 }
 
 
+.ipc__button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    overflow: hidden;
+    min-width: 3rem;
+    max-width: 100%;
+    padding: 0 16px 0 16px;
+    font-size: .875rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    will-change: transform, opacity;
+    outline: none;
+    line-height: inherit;
+    user-select: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    border-radius: 4px;
+    letter-spacing: .02em;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: Roboto,Helvetica,Arial,sans-serif;;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+.ipc__button--default-height {
+    min-height: 2.25rem;
+}
+.ipc__text__button, .ipc__outline__button {
+    padding: 0 12px 0 12px;
+}
+.ipc__button--single-padding {
+    padding: 0 1rem;
+}
+.ipc__button--center-align-content {
+    justify-content: center;
+}
+.ipc__button:not(:disabled) {
+    background-color: #f5c518;
+}
+.ipc__text__button:not(:disabled), .ipc__outline__button:not(:disabled) {
+    background-color: rgba(0,0,0,0);
+}
+.ipc__button__icon--pre {
+    margin-right: 4px;
+    margin-left: -6px;
+    transition: opacity 0.2s;
+}
+.ipc__icon {
+    vertical-align: middle;
+}
+.ipc__button__text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ipc__button__icon--pre {
+    opacity: 0.54;
+}
+.imdb__navItem:hover .ipc__button__icon--pre, .imdb__navItem:focus .ipc__button__icon--pre {
+    opacity: 1;
+}
+
 
 
 
@@ -2087,5 +2157,15 @@ table.myx__bordered tr:first-child th {
     .body__inner {
         min-width: 1200px;
         max-width: 1599px;
+    }
+}
+@media (hover: hover) and (pointer: fine) {
+    .ipc__button:hover, .ipc__button:link {
+        text-decoration: none;
+    }
+}
+@media (hover: hover) and (pointer: fine) {
+    .ipc__button:active {
+        outline: 0;
     }
 }

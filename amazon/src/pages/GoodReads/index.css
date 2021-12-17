@@ -47,7 +47,6 @@
     background-position: center;
     background-repeat: repeat-x;
     background-color: var(--grey-tone-112);
-    border: 2px solid blue;
 }
 .goodreads__signedOut {
     width: 970px;
@@ -116,7 +115,6 @@
     text-align: center;
     background-repeat: repeat-x;
     background-image: none;
-    border: 2px solid salmon;
 }
 .goodreads__pageContent {
     display: flex;
@@ -130,13 +128,11 @@
     width: 625px;
     padding-right: 10px;
     padding-left: 8px;
-    border: 2px solid lime;
 }
 .goodreads__sellingPoint {
     width: 280px;
     margin: 0 40px 10px 0;
     font-size: 13px;
-    border: thin solid crimson;
 }
 .goodreads__sellingPoint:last-child {
     margin-right: 10px;
@@ -165,8 +161,8 @@
 }
 .goodreads__discovery h2 {
     margin: 0 0 15px 15px;
-    color: var(--black);
     font-size: 18px;
+    color: var(--black);
 }
 .goodreads__discover {
     height: 170px;
@@ -174,7 +170,6 @@
     background-position: bottom;
     background-repeat: repeat-x;
     background-image: url('../../images/vertical-stroke.png');
-    border: thin solid tan;
 }
 .goodreads__liked {
     margin-left: 15px;
@@ -205,14 +200,12 @@
     height: 177px;
     vertical-align: middle;
     text-align: center;
-    border: thin solid brown;
 }
 .goodreads__discoveryBoxArrow img {
     display: inline-block;
     margin-top: 88.5px;
     margin-left: 150px;
     transform: translateY(-50%);
-    border: thin solid indigo;
 }
 .goodreads__browseBox {
     margin: 25px 0;
@@ -238,7 +231,7 @@
     border-radius: 5px;
     background-color: var(--white);
     box-shadow: none;
-    border: 1px solid #999;
+    border: 1px solid var(--grey-tone-28);
 }
 .goodreads__sitesearchField {
     resize: none;
@@ -268,7 +261,6 @@
 }
 .goodreads__teaserSlide {
     position: relative;
-    /* overflow: hidden; */
     width: 67%;
 }
 .goodreads__teaserSlide > ul {
@@ -281,8 +273,6 @@
     top: 0;
     display: flex;
     align-items: flex-start;
-    /* width: 100%;
-    height: 100%; */
     opacity: 0;
     animation-duration: 10s;
 }
@@ -388,7 +378,6 @@
     font-size: 14px;
     line-height: 18px;
     color:  var(--grey-tone-14);
-    border: thin solid green;
 }
 .goodreads__choiceLinkList li {
     margin: 0.8em 0;
@@ -441,7 +430,6 @@
     color: var(--grey-tone-110);
     cursor: default !important;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border: 2px solid lime;
 }
 .goodreads__featuredTeaserList {
     display: flex;
