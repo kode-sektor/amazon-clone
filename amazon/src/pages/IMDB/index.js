@@ -4,10 +4,26 @@ import { Link } from 'react-router-dom'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import { BiMenu } from 'react-icons/bi'
 import { AiOutlineSearch } from 'react-icons/ai'
+import { FaDesktop, FaUserFriends } from 'react-icons/fa'
+import { IoMdFilm } from 'react-icons/io'
+import { BiBuildings } from 'react-icons/bi'
+import { MdLabelOutline } from 'react-icons/md'
+import { RiFileSearchLine, RiPlayCircleLine } from 'react-icons/ri'
+import { MdKeyboardArrowRight } from 'react-icons/md'
+
+import Slider from '../../components/UI/Carousel/Carousel'
 
 import imdb from '../../images/imdb.png'
 import imdbpro from '../../images/imdbpro.png'
 import plus_ribbon from '../../images/plus-ribbon.png'
+import the_gilded_age from '../../images/imdb/the-gilded-age.jpg'
+import the_gilded_age_lg from '../../images/imdb/the-gilded-age-lg.jpg'
+import the_witcher_stars_debate_the_scariest_monster_in_season_two from '../../images/imdb/the-witcher-stars-debate-the-scariest-monster-in-season-two.jpg'
+import the_witcher from '../../images/imdb/the-witcher.jpg'
+import imdbpro_navbar_menu from '../../images/imdb/imdbpro-navbar-menu.png'
+import the_lost_city from '../../images/imdb/the-lost-city.jpg'
+import most_memorable_spiderman_moments from '../../images/imdb/most-memorable-spiderman-moments.jpg'
+import fantastic_beasts_the_secrets_of_dumbledore from '../../images/imdb/fantastic-beasts-the-secrets-of-dumbledore.jpg'
 
 import './index.css'
 
@@ -18,6 +34,9 @@ const IMDB = () => {
 
     const imdbdropdown = () => setImdbdropdownOpen(imdbdropdownOpen => !imdbdropdownOpen) 
     const imdbprodropdown = () => setImdbprodropdownOpen(imdbprodropdownOpen => !imdbprodropdownOpen) 
+
+    const imdbproEnter = () => setImdbprodropdownOpen(true)
+    const imdbproLeave = () => setImdbprodropdownOpen(false)
 
     return (
         <div className="imdb--page">
@@ -44,27 +63,50 @@ const IMDB = () => {
                                                 </div>
                                             </DropdownToggle>
                                             <DropdownMenu>
-                                                <DropdownItem header>
-                                                    Header
+                                                <DropdownItem>
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <AiOutlineSearch />&nbsp;
+                                                    </span>
+                                                    All
                                                 </DropdownItem>
                                                 <DropdownItem>
-                                                    Some Action
-                                                </DropdownItem>
-                                                <DropdownItem text>
-                                                    Dropdown Item Text
-                                                </DropdownItem>
-                                                <DropdownItem disabled>
-                                                    Action (disabled)
-                                                </DropdownItem>
-                                                <DropdownItem divider />
-                                                <DropdownItem>
-                                                    Foo Action
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <IoMdFilm />&nbsp;
+                                                    </span>
+                                                    Titles
                                                 </DropdownItem>
                                                 <DropdownItem>
-                                                    Bar Action
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <FaDesktop />&nbsp;
+                                                    </span>
+                                                    TV Episodes
                                                 </DropdownItem>
                                                 <DropdownItem>
-                                                    Quo Action
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <FaUserFriends />
+                                                    </span>
+                                                    Celebs
+                                                </DropdownItem>
+                                                <DropdownItem>
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <BiBuildings />
+                                                    </span>
+                                                    Companies
+                                                </DropdownItem>
+                                                <DropdownItem>
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <MdLabelOutline />
+                                                    </span>
+                                                    Keywords
+                                                </DropdownItem>
+                                                <DropdownItem>
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <RiFileSearchLine />
+                                                    </span>
+                                                    Advanced Search &nbsp;&nbsp;&nbsp;
+                                                    <span className="imdb__dropdownIcon d-inline-block">
+                                                        <MdKeyboardArrowRight />
+                                                    </span>
                                                 </DropdownItem>
                                             </DropdownMenu>
                                         </Dropdown>
@@ -78,36 +120,35 @@ const IMDB = () => {
                                 </button>
                             </form>
                         </section>
-                        <div className="imdb__navItem order-4">
-                            <Dropdown isOpen={imdbprodropdownOpen} toggle={imdbprodropdown}>
+                        <div className="imdb__imdbPro imdb__navItem order-4">
+                            <Dropdown isOpen={imdbprodropdownOpen} onMouseOver={imdbproEnter} onMouseLeave={imdbproLeave} toggle={imdbprodropdown}>
                                 <DropdownToggle tag="span" className="ipc__button ipc__button--default-height ipc__text__button ipc__button--single-padding px-0">
                                     <div className="ipc__button__text">
                                         <img className="imdb__imdbproImg" src={imdbpro} alt="imdbpro" />
                                     </div>
                                 </DropdownToggle>
                                 <DropdownMenu>
-                                    <DropdownItem header>
-                                        Header
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Some Action
-                                    </DropdownItem>
-                                    <DropdownItem text>
-                                        Dropdown Item Text
-                                    </DropdownItem>
-                                    <DropdownItem disabled>
-                                        Action (disabled)
-                                    </DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>
-                                        Foo Action
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Bar Action
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Quo Action
-                                    </DropdownItem>
+                                    <div>
+                                        <Link to="/" className="imdb__proAdlink">
+                                            <div className="d-inline-block">
+                                                <img src={imdbpro_navbar_menu} className="imdb__proAdImage" alt="" />
+                                            </div>
+                                            <section className="imdb__proAdContent">
+                                                <div className="imdb__proAdTitle">
+                                                    The essential resource for entertainment professionals
+                                                </div>
+                                                <p>Find industry contacts &amp; talent representation</p>
+                                                <p>Access in-development titles not available on IMDb</p>
+                                                <p>Get the latest news from leading industry trades</p>
+                                                <p>Claim your page and control your brand across IMDb &amp; Amazon</p>
+                                                <div className="imdbpro__newBtn">
+                                                    <button className="btn">
+                                                        Try IMDbPro free
+                                                    </button>
+                                                </div>
+                                            </section>
+                                        </Link>
+                                    </div>
                                 </DropdownMenu>
                             </Dropdown>
                         </div>
@@ -130,7 +171,117 @@ const IMDB = () => {
                     </section>
                 </nav>
             </header>
-            
+            <main className="imdb__main">
+                <div className="imdb__mainContainer position-relative w-100 mx-auto">
+                    <section className="imdb__carousel">
+                        <div className="imdb__carouselContainer">
+                            <section className="imdb__mainSlider">
+                                <Slider 
+                                    type={"imdb"}
+                                    carouselClass={"amzn__carousel"}
+                                    items={
+                                        [
+                                            {
+                                                href: '/',
+                                                img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                imgAppendix: <img src={the_gilded_age} alt="the gilded age" />,
+                                                caption: "The Gilded Age",
+                                                captionSubheading: "Watch the Trailer",
+                                                runtime: "2:07"
+                                            },
+                                            {
+                                                href: '/',
+                                                img: <img src={the_witcher_stars_debate_the_scariest_monster_in_season_two} alt="'The Witcher' Stars Debate the Scariest Monster in Season 2" />,
+                                                imgAppendix: <img src={the_witcher} alt="The Witcher" />,
+                                                caption: "'The Witcher' Stars Debate the Scariest Monster in Season 2",
+                                                captionSubheading: "See What's in Store For Ciri and Yennefer",
+                                                runtime: "3:31"
+                                            }
+                                        ]
+                                    }
+                                />
+                            </section>
+                            <section className="imdb__slideList">
+                                <h3 className="imdb__slideListHeading imdb__upNext">
+                                    Up Next
+                                </h3>
+                                <ul className="imdb__galleryList">
+                                    <li>
+                                        <figure className="ipc__media ipc__media--baseAlt">
+                                            <img className="h-100" src={the_lost_city} alt="The Lost City" />
+                                        </figure>
+                                        <Link to="/" className="imdb__galleryListLink">
+                                            <section className="imdb__galleryListPlay">
+                                                <div className="imdb__carouselCirclePlay d-inline-flex display-5">
+                                                    <RiPlayCircleLine />
+                                                </div>
+                                                <span className="imdb__galleryRuntime">
+                                                    2:29
+                                                </span>
+                                            </section>
+                                            <section className="imdb__galleryTitle">
+                                                Sandra Bullock and Channing Tatum Team Up in 'The Lost City'
+                                            </section>
+                                            <section className="imdb__galleryCaption">
+                                                Watch the Trailer
+                                            </section>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <figure className="ipc__media ipc__media--baseAlt">
+                                            <img className="h-100" src={most_memorable_spiderman_moments} alt="Most Memorable Spider-Man Moments" />
+                                        </figure>
+                                        <Link to="/" className="imdb__galleryListLink">
+                                            <section className="imdb__galleryListPlay">
+                                                <div className="imdb__carouselCirclePlay d-inline-flex display-5">
+                                                    <RiPlayCircleLine />
+                                                </div>
+                                                <span className="imdb__galleryRuntime">
+                                                    2:26
+                                                </span>
+                                            </section>
+                                            <section className="imdb__galleryTitle">
+                                                Spider-Man's Greatest Movie Moments Ranked
+                                            </section>
+                                            <section className="imdb__galleryCaption">
+                                                Count Down the 8 Best Franchise Moments
+                                            </section>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <figure className="ipc__media ipc__media--baseAlt">
+                                            <img className="h-100" src={fantastic_beasts_the_secrets_of_dumbledore} alt="Fantastic Beasts: The Secrets of Dumbledore" />
+                                        </figure>
+                                        <Link to="/" className="imdb__galleryListLink">
+                                            <section className="imdb__galleryListPlay">
+                                                <div className="imdb__carouselCirclePlay d-inline-flex display-5">
+                                                    <RiPlayCircleLine />
+                                                </div>
+                                                <span className="imdb__galleryRuntime">
+                                                    2:25
+                                                </span>
+                                            </section>
+                                            <section className="imdb__galleryTitle">
+                                                'Fantastic Beasts: The Secrets of Dumbledore'
+                                            </section>
+                                            <section className="imdb__galleryCaption">
+                                                Watch the Official Trailer
+                                            </section>
+                                        </Link>
+                                    </li>
+                                </ul>
+                                <h3 className="imdb__browseTrailers">
+                                    Browse trailers 
+                                    <span>
+                                        <MdKeyboardArrowRight /> 
+                                    </span>
+                                </h3>
+                            </section>
+                        </div>
+                    </section>
+                    
+                </div>
+            </main>
         </div>
     )
 }

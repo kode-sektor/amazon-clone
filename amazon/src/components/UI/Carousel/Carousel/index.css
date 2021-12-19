@@ -120,6 +120,7 @@
     vertical-align: top;
     text-align: center;
     list-style: none;
+    box-shadow: none;
 }
 .carousel__detailed .amzn__carousel__cards > li {
     display: inline-block;
@@ -186,9 +187,41 @@
     text-align: center;
     background-color: var(--white);
     box-shadow: 0 1px 3px var(--grey-tone-23);
-    opacity: 0;
+    /* opacity: 0; */
     -webkit-user-select: none;
     transition: opacity 1s;
+}
+.imdb__carousel .amzn__carousel__control {
+    top: 30%;
+    height: 64px;
+    padding: 0 6px;
+    box-shadow: none;
+    border-radius: 4px;
+    clip: initial;
+    line-height: normal;
+    border-color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(18,18,18,0.45);
+}
+.imdb__carousel .amzn__carousel__control .carousel-control-prev-icon,
+.imdb__carousel .amzn__carousel__control .carousel-control-next-icon {
+    background-size: contain;
+    background-position: center;
+}
+.imdb__carousel .amzn__carousel__control .carousel-control-prev-icon {
+    background-image: url('../../../../images/arrow-left-white.png');
+}
+.imdb__carousel .amzn__carousel__control .carousel-control-next-icon {
+    background-image: url('../../../../images/arrow-right-white.png');
+}
+.imdb__carousel .amzn__carousel__control:hover .carousel-control-prev-icon, 
+.imdb__carousel .amzn__carousel__control:focus .carousel-control-prev-icon {
+    background-image: url('../../../../images/arrow-left-yellow.png');
+}
+.imdb__carousel .amzn__carousel__control:hover .carousel-control-next-icon, 
+.imdb__carousel .amzn__carousel__control:focus .carousel-control-next-icon {
+    background-image: url('../../../../images/arrow-right-yellow.png');
 }
 .carousel__detailed .amzn__carousel__control, 
 .coupon__shoveler .amzn__carousel__control {

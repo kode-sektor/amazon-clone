@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 
 import { BiPlay } from 'react-icons/bi'
 import { AiOutlinePlus } from 'react-icons/ai'
+import { BiBookmarkPlus } from 'react-icons/bi'
 import { BsThreeDots } from 'react-icons/bs'
+import { RiPlayCircleLine } from 'react-icons/ri'
 
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
@@ -572,6 +574,59 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									</>
 								}
 							/>
+						</section>
+					</CarouselItem>
+				)
+			})
+		}
+		else if (type === "imdb") {
+			slides = items.map((item, index) => {
+				const { img, imgAppendix, caption, captionSubheading, runtime } = item
+				return (
+					<CarouselItem
+						className={carouselClass}
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={index}
+					>	
+						<section className="position-relative h-100">
+							<figure className="d-flex">
+								<section className="imdb__appendixImg">
+									<div className="imdb__appendixRibbon">
+										<span className="d-block h-100">
+											<BiBookmarkPlus />
+										</span>
+									</div>
+									<section className="imdb__appendixImgContainer">
+										{imgAppendix}
+									</section>
+								</section>
+								<section className="imdb__carouselFeatured">
+									<section className="imdb__carouselFeaturedImg">
+										{img}
+									</section>
+									<section className="imdb__carouselFeaturedOverlay">
+										<figcaption>
+											<div className="imdb__carouselCirclePlay display-4">
+												<RiPlayCircleLine />
+											</div>
+											<section className="imdb__carouselFeaturedTitle">
+												<section className="imdb__carouselFeaturedTxt">
+													<span className="imdb__carouselFeaturedName">
+														{caption}
+													</span>
+													<span className="imdb__carouselRuntime">
+														{runtime}
+													</span>
+												</section>
+												<section className="imdbcarouselFeaturedSlide">
+													{captionSubheading}
+												</section>
+											</section>
+										</figcaption>
+									</section>
+								</section>
+							</figure>
 						</section>
 					</CarouselItem>
 				)

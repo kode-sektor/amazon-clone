@@ -2065,7 +2065,7 @@ table.myx__bordered tr:first-child th {
     align-items: center;
     justify-content: center;
     height: 36px;
-    overflow: hidden;
+    /* overflow: hidden; */
     min-width: 3rem;
     max-width: 100%;
     padding: 0 16px 0 16px;
@@ -2087,8 +2087,6 @@ table.myx__bordered tr:first-child th {
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
     font-family: Roboto,Helvetica,Arial,sans-serif;;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
 }
 .ipc__button--default-height {
@@ -2124,6 +2122,35 @@ table.myx__bordered tr:first-child th {
 }
 .ipc__button__icon--pre {
     opacity: 0.54;
+}
+.ipc__media {
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+}
+.ipc__media:before {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.ipc__media--baseAlt {
+    color: rgba(255,255,255,0.1);
+    background: var(--grey-tone-120);
+}
+.ipc__media--baseAlt:before {
+    background: rgba(255, 255, 255, 0.15);
+}
+.ipc__media__icon, .ipc__media__img .ipc__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+.ipc__media__img .ipc__image {
+    width: 100%;
 }
 .imdb__navItem:hover .ipc__button__icon--pre, .imdb__navItem:focus .ipc__button__icon--pre {
     opacity: 1;
