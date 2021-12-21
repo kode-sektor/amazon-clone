@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import { Link } from 'react-router-dom'
 
 import { BiPlay } from 'react-icons/bi'
-import { AiOutlinePlus } from 'react-icons/ai'
+import { AiOutlinePlus, AiFillStar } from 'react-icons/ai'
 import { BiBookmarkPlus } from 'react-icons/bi'
-import { BsThreeDots } from 'react-icons/bs'
+import { BsThreeDots, BsFillPlayFill } from 'react-icons/bs'
 import { RiPlayCircleLine } from 'react-icons/ri'
+import { IoMdPhotos } from 'react-icons/io'
+import { GrUnorderedList } from 'react-icons/gr'
 
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
@@ -249,13 +251,12 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									key={index}
 								>
 									{/* Forcing 6 images inside one ul (which is screen-wide) */}
-									<ul className={`${carouselClass}__cards`}>{tempCarousel}</ul>
+									<ul className={carouselClass && `${carouselClass}__cards`}>{tempCarousel}</ul>
 								</CarouselItem>
 					]
 					tempCarousel = []
 				}
 			})
-
 		} else if (type === "prime") {
 			slides = items.map((item, index) => {
 				return (
@@ -630,6 +631,156 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 						</section>
 					</CarouselItem>
 				)
+			})
+		}
+		else if (type === "imdbSecondary") {
+			slides = items.map((item, index) => {
+				const { href, img, img_two, list, runtime } = item
+				return (
+					<CarouselItem
+						className={carouselClass}
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={index}
+					>	
+					{/* Always try to wrap the main content of the slider with a parent tag
+					because the main transpiled element ".carousel-item" usually has a 
+					"display: none" ruling. Without this extra parent, you may have to resort
+					to styling that same ".carousel-item" parent with a different display property
+					like "flex", "block" etc. which would eventually mess up the carousel */}
+						<section>
+							<figure>
+								{img}
+								<Link to="/">
+									<div className="imdb__slideSecOverlay"></div>
+									<section className="imdb__lockupContent">
+										<span className="imdb__slideSecIcon">
+											{
+												list ? <GrUnorderedList/> : <IoMdPhotos />
+											}	
+										</span>
+										{
+											list ? "List" : "Photos"
+										}
+									</section>
+								</Link>
+								<figcaption>
+									<Link to="/">
+										Most Anticipated New TV Shows Coming in 2022
+									</Link>
+								</figcaption>
+							</figure>
+							<figure>
+								{img_two}
+								<Link to="/">
+									<div className="imdb__slideSecOverlay"></div>
+									{
+										runtime ? (
+											<section className="imdb__lockupContent">
+												<span className=""imdb__slideSecIcon>
+													<RiPlayCircleLine />
+												</span>
+												{runtime}
+											</section>
+										) : 
+										(
+											<section className="imdb__lockupContent">
+												<span className="imdb__slideSecIcon">
+													<IoMdPhotos />
+												</span>
+												Photos
+											</section>
+										)
+									}
+								</Link>
+								<figcaption>
+									<Link to="/">
+										Most Anticipated New TV Shows Coming in 2022
+									</Link>
+								</figcaption>
+							</figure>
+						</section>
+					</CarouselItem>
+				)
+			})
+		}
+		else if (type === "imdbFav") {
+
+			items.forEach((item, index) => {
+				count = count ? count : 6
+				const { href, title, src, alt, rating } = item
+
+				tempCarousel = [
+					...tempCarousel,
+					(
+						<li className="ipc__poster__card">
+							<figure>
+								<button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+									<BiBookmarkPlus />
+								</button>
+								<Link key={index} to={href} className="ipc__poster ipc__media ipc__image__media__ratio--poster-27x40 ipc__media--poster-m ipc__media--baseAlt ipc__poster__poster__image ipc__media__img w-100">
+									<img className="ipc__image" src={src} alt={alt} />
+								</Link>
+								<figcaption>
+									<section className="ipc__poster__card__rating__star__group">
+										<span className="ipc__rating__star ipc__rating__star--baseAlt ipc__rating__star--imdb">
+											<span className="ipc__icon">
+												<AiFillStar />
+											</span>
+											{rating}
+										</span>
+										<button className="ipc__rate__button ipc__rate__button--unrated ipc__rate__button--baseAlt">
+											<span className="ipc__rating__star ipc__rating__star--baseAlt ipc__rating__star--rate">
+											<AiFillStar />
+											</span>
+										</button>
+									</section>
+									<section className="imdb__figcaption">
+										<Link className="ipc__poster__card__title ipc__poster__card__title--clamp-2 ipc-poster-card__title--clickable" >
+											Spider-Man: No Way Home
+										</Link>
+									</section>
+								</figcaption>
+							</figure>
+							<section className="imdb__mediaCta ipc__poster__card__actions">
+								<button class="ipc__button ipc__button--full-width justify-content-center ipc__button--default-height ipc__button--core-baseAlt ipc__button--theme-baseAlt ipc__button--on-accent2 ipc__secondary__button">
+										<AiOutlinePlus />&nbsp;&nbsp;
+										<div className="ipc__button__text">
+											Watchlist
+										</div>
+								</button>
+								<div className="imdb__trailerBtn">
+									<Link to="/" className="ipc__button ipc__text__button ipc__button--single-padding ipc__button--default-height justify-content-center ipc__button--core-baseAlt">
+										<span className="ipc__button__icon--pre">
+											<BsFillPlayFill />
+										</span>
+										<span className="ipc__button__text">
+											Trailer
+										</span>
+									</Link>
+								</div>
+							</section>	
+						</li>
+					)
+				]
+				
+				// Only wrap with <Carousel> once the number of multiple images reaches. 
+				// In this case (6). Or wrap on last cycle. That makes one screen-wide slider.
+				if ((((index + 1) % count) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
+								<CarouselItem
+									className={carouselClass ? carouselClass : ""}
+									onExiting={() => setAnimating(true)}
+									onExited={() => setAnimating(false)}
+									key={index}
+								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
+									<ul className="imdb__cards">{tempCarousel}</ul>
+								</CarouselItem>
+					]
+					tempCarousel = []
+				}
 			})
 		}
 		else {

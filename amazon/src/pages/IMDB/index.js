@@ -10,6 +10,7 @@ import { BiBuildings } from 'react-icons/bi'
 import { MdLabelOutline } from 'react-icons/md'
 import { RiFileSearchLine, RiPlayCircleLine } from 'react-icons/ri'
 import { MdKeyboardArrowRight } from 'react-icons/md'
+import { BiBookmarkPlus } from 'react-icons/bi'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 
@@ -24,6 +25,9 @@ import imdbpro_navbar_menu from '../../images/imdb/imdbpro-navbar-menu.png'
 import the_lost_city from '../../images/imdb/the-lost-city.jpg'
 import most_memorable_spiderman_moments from '../../images/imdb/most-memorable-spiderman-moments.jpg'
 import fantastic_beasts_the_secrets_of_dumbledore from '../../images/imdb/fantastic-beasts-the-secrets-of-dumbledore.jpg'
+import house_of_the_dragon_poster from '../../images/imdb/house-of-the-dragon-poster.jpg'
+import new_holiday_picks from '../../images/imdb/new-holiday-picks.jpg'
+import spiderman_no_way_home from '../../images/imdb/spiderman-no-way-home.jpg'
 
 import './index.css'
 
@@ -180,24 +184,24 @@ const IMDB = () => {
                                     type={"imdb"}
                                     carouselClass={"amzn__carousel"}
                                     items={
-                                        [
-                                            {
-                                                href: '/',
-                                                img: <img src={the_gilded_age_lg} alt="the gilded age" />,
-                                                imgAppendix: <img src={the_gilded_age} alt="the gilded age" />,
-                                                caption: "The Gilded Age",
-                                                captionSubheading: "Watch the Trailer",
-                                                runtime: "2:07"
-                                            },
-                                            {
-                                                href: '/',
-                                                img: <img src={the_witcher_stars_debate_the_scariest_monster_in_season_two} alt="'The Witcher' Stars Debate the Scariest Monster in Season 2" />,
-                                                imgAppendix: <img src={the_witcher} alt="The Witcher" />,
-                                                caption: "'The Witcher' Stars Debate the Scariest Monster in Season 2",
-                                                captionSubheading: "See What's in Store For Ciri and Yennefer",
-                                                runtime: "3:31"
-                                            }
-                                        ]
+                                            [
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    imgAppendix: <img src={the_gilded_age} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    captionSubheading: "Watch the Trailer",
+                                                    runtime: "2:07"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_witcher_stars_debate_the_scariest_monster_in_season_two} alt="'The Witcher' Stars Debate the Scariest Monster in Season 2" />,
+                                                    imgAppendix: <img src={the_witcher} alt="The Witcher" />,
+                                                    caption: "'The Witcher' Stars Debate the Scariest Monster in Season 2",
+                                                    captionSubheading: "See What's in Store For Ciri and Yennefer",
+                                                    runtime: "3:31"
+                                                }
+                                            ]
                                     }
                                 />
                             </section>
@@ -279,7 +283,139 @@ const IMDB = () => {
                             </section>
                         </div>
                     </section>
-                    
+                    <section className="imdb__carousel">
+                        <h3 className="imdb__title">
+                            Featured today
+                        </h3>
+                        <div className="imdb__carouselContainer justify-content-start">
+                            <section className="imdb__sliderSec ipc__page-section--baseAlt m-0">
+                                <section className="imdb__slideSec">
+                                    <Slider 
+                                         type={"imdbSecondary"}
+                                         carouselClass={"amzn__carousel"}
+                                         items={
+                                                [
+                                                    {
+                                                        href: '/',
+                                                        img: <img src={house_of_the_dragon_poster} alt="house of the dragon poster" />,
+                                                        img_two: <img src={new_holiday_picks} alt="'new holiday picks" />,
+                                                        list: true
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        img: <img src={house_of_the_dragon_poster} alt="house of the dragon poster" />,
+                                                        img_two: <img src={new_holiday_picks} alt="'new holiday picks" />,
+                                                        runtime: "1:23"
+                                                    }
+                                                ]
+                                         }
+                                    />
+                                </section>
+                            </section>
+                        </div>
+                    </section>
+                    <section className="imdb__watchlist">
+                        <header>
+                            <h3 className="imdb__watchlistHeader imdb__title">What to Watch</h3>
+                            <Link to="/" className="imdb__recommendation ipc__text__button ipc__button ipc__button--core-baseAlt ipc__button--on-accent2">
+                                Get more recommendations
+                                <MdKeyboardArrowRight />
+                            </Link>
+                        </header>
+                        <section className="imdb__watchMain">
+                            <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                                <h3 className="ipc__title__text">
+                                    From your watchlist
+                                    <span className="ipc__title__link__chevron">
+                                        <MdKeyboardArrowRight />
+                                    </span>
+                                </h3>
+                            </Link>
+                            <section className="imdb__loggedState ipc__page__section ipc__page__section--baseAlt">
+                                <div className="ipc__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                    <BiBookmarkPlus />
+                                </div>
+                                <section className="imdb__signin">
+                                    <div className="font-weight-bold">
+                                        Sign in to access your Watchlist
+                                    </div>
+                                    <div>   
+                                        Save shows and movies to keep track of what you want to watch.
+                                    </div>
+                                </section>
+                                <Link to="/" className="imdb__signinBtn ipc__button ipc__button--double-padding ipc__button--default-height justify-content-center ipc__button ipc__button--core-accent1">
+                                    <div className="ipc__button__text">Sign in to IMDb</div>
+                                </Link>
+                            </section>
+                        </section>
+                    </section>
+                    <section className="imdb__favourites">
+                        <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item ipc__page__grid__item--span-3">
+                            <div>
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                                    <h3 className="ipc__title__text">
+                                        Fan Favorites
+                                        <span className="ipc__title__link__chevron">
+                                            <MdKeyboardArrowRight />
+                                        </span>
+                                    </h3>
+                                    <div className="ipc__title__description">This week's top TV and movies</div>
+                                </Link>
+                            </div>
+                            <section className="ipc__shoveler imdb__favSlider">
+                                <Slider 
+                                    type={"imdbFav"}
+                                    count={6}
+                                    items={
+                                            [
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                            ]
+                                        }
+                                />
+                            </section>
+                        </section>
+                    </section>
                 </div>
             </main>
         </div>

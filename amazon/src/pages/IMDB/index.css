@@ -321,7 +321,15 @@
     justify-content: center;
     background: var(--black);
 }
-.imdb__mainSlider {
+.imdb__carouselContainer--sec {
+    display: block;
+    grid-column: span 2;
+    width: auto;
+    margin: 0;
+    padding: 1.5rem 0;
+    color: var(--white);
+}
+.imdb__mainSlider, .imdb__sliderSec {
     position: relative;
     flex: 846 1 0%;
     overflow: hidden;
@@ -608,7 +616,86 @@
 .imdb__browseTrailers {
     padding: 16px 16px 0px;
 }
+.imdb__title {
+    display: block;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: .00735em;
+    font-weight: 600;
+    color: var(--ochre-64);
+    -webkit-font-smoothing: auto;
+}
+.imdb__sliderSec {
+    position: relative;
+    flex: 0 0 67.7%;
+    padding: 24px 0;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    min-height: 4rem;
+    overscroll-behavior-x: contain;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: left .5s ease-out;
+    border: thin solid orange;
+}
+.imdb__watchlist header {
+    grid-column: span 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+    padding-bottom: 0.75rem;
+}
+.imdb__watchlistHeader {
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
+    color: var(--ochre-64);
+}
+.imdb__recommendation {
+    justify-content: center;
+    min-height: 2.25rem;
+    margin-left: calc(0.5rem);
+    padding: 0 1rem;
+}
+.imdb__recommendation svg {
+    width: 24px;
+    height: 24px;
+}
+.imdb__watchMain {
+    display: block;
+    grid-column: span 3;
+    width: auto;
+    margin: 0 0 8px;
+    padding: 1.5rem 0;
+    color: var(--white);
+    background: var(--black);
+}
+.imdb__loggedState {
+    margin: 0 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.imdb__loggedState .ipc__watchlist__ribbon svg {
+    width: 42px;
+    height: 45px;
+}
+.imdb__signin {
+    margin-top: 0.5rem;
+}
+.imdb__signinBtn {
+    margin-top: 2rem;
+}
+.imdb__favourites {
 
+}
+.imdb__favSlider {
+    padding: 0 1.5em;
+}
+                            
 
 
 
@@ -646,6 +733,9 @@
         height: 72px;
         margin: 0px 16px 0px 0px;
     }
+    .imdb__sliderSec {
+        padding: 1rem 0;
+    }
 }
 @media screen and (min-width: 1024px) {
     .imdb__headerInner {
@@ -663,6 +753,14 @@
         order: 6;
         display: inline-flex;
     }
+    .imdb__sliderSec {
+        padding: 1.5rem 0;
+    }
+    .imdb__watchlist header {
+        grid-column: span 3;
+        width: auto;
+    }
+    
 }
 @media screen and (min-width: 1280px) {
     .imdb__headerInner {
@@ -671,7 +769,7 @@
     .imdb__mainContainer {
         max-width: 1280px;
     }
-    .imdb__carouselContainer {
+    .imdb__carouselContainer, .imdb__watchlist, .imdb__favourites {
         grid-template-columns: calc(33.33333% - .66667 * 1.5rem - -2rem) 
             calc(33.33333% - .66667 * 1.5rem - -.5rem) 
             calc(33.33333% - .66667 * 1.5rem - -.5rem);
