@@ -28,6 +28,7 @@ import fantastic_beasts_the_secrets_of_dumbledore from '../../images/imdb/fantas
 import house_of_the_dragon_poster from '../../images/imdb/house-of-the-dragon-poster.jpg'
 import new_holiday_picks from '../../images/imdb/new-holiday-picks.jpg'
 import spiderman_no_way_home from '../../images/imdb/spiderman-no-way-home.jpg'
+import woman_in_white from '../../images/imdb/woman-in-white.jpg'
 
 import './index.css'
 
@@ -349,7 +350,7 @@ const IMDB = () => {
                             </section>
                         </section>
                     </section>
-                    <section className="imdb__favourites">
+                    <section className="imdb__classic">
                         <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item ipc__page__grid__item--span-3">
                             <div>
                                 <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
@@ -365,6 +366,7 @@ const IMDB = () => {
                             <section className="ipc__shoveler imdb__favSlider">
                                 <Slider 
                                     type={"imdbFav"}
+                                    carouselClass="amzn__carousel"
                                     count={6}
                                     items={
                                             [
@@ -409,7 +411,73 @@ const IMDB = () => {
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
+                                                }
+                                            ]
+                                        }
+                                />
+                            </section>
+                        </section>
+                    </section>
+                    <section className="imdb__classic">
+                        <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item ipc__page__grid__item--span-3">
+                            <header className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                                <h3 className="ipc__title__text">
+                                    More to watch
+                                </h3>
+                                <div className="ipc__title__description">IMDb helps you select the perfect next show or movie to watch.
+                                </div>
+                            </header>
+                            <section className="ipc__sub__grid ipc__sub__grid--page-span-3">
+                                <Link to="/" className="ipc__button ipc__button--single-padding ipc__button--default-height ipc__button--core-baseAlt ipc__button--theme-baseAlt ipc__outline__button ipc__sub__grid__item ipc__sub__grid__item--span-3 justify-content-center" role="button">
+                                    <div className="ipc__button__text">Watch Guide</div>
+                                </Link>
+                                <Link to="/" className="ipc__button ipc__button--single-padding ipc__button--default-height ipc__button--core-baseAlt ipc__button--theme-baseAlt ipc__outline__button ipc__sub__grid__item ipc__sub__grid__item--span-3 justify-content-center" role="button">
+                                    <div className="ipc__button__text">Most Popular</div>
+                                </Link>
+                            </section>
+                        </section>
+                    </section>
+                    <section className="imdb__classic imdb__exclusiveVids">
+                        <header>
+                            <h3 className="imdb__watchlistHeader imdb__title">Exclusive videos</h3>
+                        </header>
+                        <section className="ipc__page__section ipc__page__section--baseAlt">
+                            <section className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                                <h3 className="ipc__title__text">
+                                    IMDb Originals
+                                </h3>
+                                <div className="ipc__title__description">
+                                    Celebrity interviews, trending entertainment stories, and expert analysis
+                                </div>
+                            </section>
+                            <section className="ipc__shoveler imdb__originalSlider">
+                                <Slider 
+                                    type={"imdbOriginals"}
+                                    carouselClass="amzn__carousel"
+                                    count={6}
+                                    items={
+                                            [
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: woman_in_white,
+                                                    alt: "Woman in white",
+                                                    rating: "9.1"
                                                 },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: woman_in_white,
+                                                    alt: "Woman in white",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: '/',
+                                                    src: woman_in_white,
+                                                    alt: "Woman in white",
+                                                    rating: "9.1"
+                                                }
                                             ]
                                         }
                                 />

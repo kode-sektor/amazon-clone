@@ -191,7 +191,9 @@
     -webkit-user-select: none;
     transition: opacity 1s;
 }
-.imdb__carousel .amzn__carousel__control {
+.imdb__carousel .amzn__carousel__control,
+.imdb__favSlider .amzn__carousel__control,
+.imdb__originalSlider .amzn__carousel__control {
     top: 30%;
     height: 64px;
     padding: 0 6px;
@@ -205,22 +207,38 @@
     background-color: rgba(18,18,18,0.45);
 }
 .imdb__carousel .amzn__carousel__control .carousel-control-prev-icon,
-.imdb__carousel .amzn__carousel__control .carousel-control-next-icon {
+.imdb__carousel .amzn__carousel__control .carousel-control-next-icon,
+.imdb__favSlider .amzn__carousel__control .carousel-control-prev-icon,
+.imdb__favSlider .amzn__carousel__control .carousel-control-next-icon,
+.imdb__originalSlider .amzn__carousel__control .carousel-control-prev-icon,
+.imdb__originalSlider .amzn__carousel__control .carousel-control-next-icon {
     background-size: contain;
     background-position: center;
 }
-.imdb__carousel .amzn__carousel__control .carousel-control-prev-icon {
+.imdb__carousel .amzn__carousel__control .carousel-control-prev-icon, 
+.imdb__favSlider .amzn__carousel__control .carousel-control-prev-icon,
+.imdb__originalSlider .amzn__carousel__control .carousel-control-prev-icon {
     background-image: url('../../../../images/arrow-left-white.png');
 }
-.imdb__carousel .amzn__carousel__control .carousel-control-next-icon {
+.imdb__carousel .amzn__carousel__control .carousel-control-next-icon,
+.imdb__favSlider .amzn__carousel__control .carousel-control-next-icon,
+.imdb__originalSlider .amzn__carousel__control .carousel-control-next-icon {
     background-image: url('../../../../images/arrow-right-white.png');
 }
 .imdb__carousel .amzn__carousel__control:hover .carousel-control-prev-icon, 
-.imdb__carousel .amzn__carousel__control:focus .carousel-control-prev-icon {
+.imdb__carousel .amzn__carousel__control:focus .carousel-control-prev-icon,
+.imdb__favSlider .amzn__carousel__control:hover .carousel-control-prev-icon,
+.imdb__favSlider .amzn__carousel__control:focus .carousel-control-prev-icon,
+.imdb__originalSlider .amzn__carousel__control:hover .carousel-control-prev-icon,
+.imdb__originalSlider .amzn__carousel__control:focus .carousel-control-prev-icon {
     background-image: url('../../../../images/arrow-left-yellow.png');
 }
 .imdb__carousel .amzn__carousel__control:hover .carousel-control-next-icon, 
-.imdb__carousel .amzn__carousel__control:focus .carousel-control-next-icon {
+.imdb__carousel .amzn__carousel__control:focus .carousel-control-next-icon,
+.imdb__favSlider .amzn__carousel__control:hover .carousel-control-next-icon,
+.imdb__favSlider .amzn__carousel__control:focus .carousel-control-next-icon,
+.imdb__originalSlider .amzn__carousel__control:hover .carousel-control-next-icon,
+.imdb__originalSlider .amzn__carousel__control:focus .carousel-control-next-icon {
     background-image: url('../../../../images/arrow-right-yellow.png');
 }
 .carousel__detailed .amzn__carousel__control, 
@@ -847,7 +865,9 @@
     margin-right: 0.5rem;
     transition: color 0.15s;    
 }
-.imdb__sliderSec .amzn__carousel__control {
+.imdb__sliderSec .amzn__carousel__control,
+.imdb__favSlider .amzn__carousel__control,
+.imdb__originalSlider .amzn__carousel__control {
     top: 25%;
 }
 .imdb__sliderSec .amzn__carousel figcaption {
@@ -885,6 +905,11 @@
     color: var(--white);
     border-radius: 0 0 4px 4px;
     background: var(--grey-tone-122);
+}
+.imdb__originalSlider .imdb__cards li {
+    margin-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
 }
 .imdb__cards li:last-child {
     margin-right: 0;
@@ -945,7 +970,39 @@
     width: 24px;
     height: 24px;
 }
-
+.imdb__originalSlider li figure {
+    margin-bottom: 0;
+    flex-direction: column;
+}
+.imdb__originalSlider li figcaption {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;
+    color: var(--white);
+    /* background: var(--black);
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 65%, rgba(0,0,0,0.35) 83.5%, rgba(0,0,0,0.75) 100%); */
+    border: 2px solid rgb(230, 230, 230);
+}
+.imdb__originalSlider li figcaption a {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    text-decoration: none;
+}
+.imdb__originalSlider li figcaption a svg {
+    min-width: 2rem;
+    min-height: 2rem;
+    margin-right: 0.5rem;
+    color: var(--white);
+    transition: color 0.15s;
+}
 
 
 

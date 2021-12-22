@@ -560,6 +560,9 @@
     padding: 18px 8px 0px;
     text-decoration: none;
 }
+.imdb__galleryListLink:hover {
+    text-decoration: none;
+}
 .imdb__galleryListPlay {
     position: relative;
     flex: 0 1 0%;
@@ -572,6 +575,10 @@
     width: 32px;
     margin-right: 8px;
     color: var(--white);
+}
+.imdb__galleryListLink:hover .imdb__carouselCirclePlay svg, 
+.imdb__galleryListLink:focus .imdb__carouselCirclePlay svg {
+    color: var(--ochre-64);
 }
 .imdb__galleryRuntime {
     display: inline-block;
@@ -641,7 +648,7 @@
     transition: left .5s ease-out;
     border: thin solid orange;
 }
-.imdb__watchlist header {
+.imdb__watchlist header, .imdb__exclusiveVids header {
     grid-column: span 1;
     display: flex;
     align-items: flex-end;
@@ -650,7 +657,7 @@
     padding-bottom: 0.75rem;
 }
 .imdb__watchlistHeader {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 0px;
     color: var(--ochre-64);
@@ -692,8 +699,11 @@
 .imdb__favourites {
 
 }
-.imdb__favSlider {
+.imdb__favSlider, .imdb__originalSlider {
     padding: 0 1.5em;
+}
+.imdb__exclusiveVids {
+    background: var(--black);
 }
                             
 
@@ -756,7 +766,7 @@
     .imdb__sliderSec {
         padding: 1.5rem 0;
     }
-    .imdb__watchlist header {
+    .imdb__watchlist header, .imdb__exclusiveVids header {
         grid-column: span 3;
         width: auto;
     }
@@ -769,7 +779,7 @@
     .imdb__mainContainer {
         max-width: 1280px;
     }
-    .imdb__carouselContainer, .imdb__watchlist, .imdb__favourites {
+    .imdb__carouselContainer, .imdb__watchlist, .imdb__classic {
         grid-template-columns: calc(33.33333% - .66667 * 1.5rem - -2rem) 
             calc(33.33333% - .66667 * 1.5rem - -.5rem) 
             calc(33.33333% - .66667 * 1.5rem - -.5rem);
