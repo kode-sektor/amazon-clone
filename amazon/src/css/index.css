@@ -2551,6 +2551,49 @@ ipc__poster, .ipc__photo, .ipc__slate {
     color: var(--white) !important;
     font-family: var(--font-ancillary-5);
 }
+.ipc__tabs {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    font-size: .875rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.375rem;
+    letter-spacing: .00714em;
+    font-weight: 500;
+    text-transform: inherit;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.ipc__tab {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    padding: 0 24px;
+    min-width: 90px;
+    outline: 0;
+    text-transform: none;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.15s, font-weight 0;
+}
+.ipc__tab.ipc__tab--active,
+.ipc__tab.active {
+    font-weight: 600;
+    border-bottom: 4px solid var(--ochre-67);
+}
+.ipc__tabs--on-baseAlt .ipc__tab:hover {
+    background-color: rgba(255,255,255,0.08);
+}
 
 
 

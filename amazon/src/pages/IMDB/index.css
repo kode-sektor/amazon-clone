@@ -705,6 +705,15 @@
 .imdb__exclusiveVids {
     background: var(--black);
 }
+.imdb__exploreTabs {
+    padding-bottom: 16px;
+    padding-left: 24px;
+    border: thin solid bisque;
+}
+.imdb__exploreTabs .ipc__tab {
+    color: var(--white);
+    font-weight: 600;
+}
                             
 
 
