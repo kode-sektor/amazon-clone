@@ -193,7 +193,8 @@
 }
 .imdb__carousel .amzn__carousel__control,
 .imdb__favSlider .amzn__carousel__control,
-.imdb__originalSlider .amzn__carousel__control {
+.imdb__originalSlider .amzn__carousel__control,
+.imdb__spherical .amzn__carousel__control {
     top: 30%;
     height: 64px;
     padding: 0 6px;
@@ -970,9 +971,9 @@
     width: 24px;
     height: 24px;
 }
-.imdb__originalSlider li figure {
-    margin-bottom: 0;
+.imdb__originalSlider li figure, .imdb__spherical li figure {
     flex-direction: column;
+    margin-bottom: 0;
 }
 .imdb__originalSlider li figcaption {
     position: absolute;
@@ -1003,6 +1004,58 @@
     color: var(--white);
     transition: color 0.15s;
 }
+.imdb__cards li figure:hover figcaption a svg {
+    color: var(--ochre-64);
+}
+.imdb__captionedRibbon .ipc__poster__watchlist__ribbon {
+    position: static;
+    left: auto;
+    top: auto;
+    font-size: 1.5rem;
+}
+.imdb__originalSlider .amzn__carousel__cards > li {
+    max-width: none;
+    max-height: none;
+}
+.imdb__spherical li {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+}
+.imdb__spherical li a {
+    border-radius: 50%;
+    text-decoration: none;
+}
+.imdb__spherical figcaption > div:first-child {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 1.25rem;
+    margin-top: 0.75rem;
+    line-height: 1em;
+    letter-spacing: 0.03125em;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--white);
+}
+.imdb__spherical figcaption > div:last-child {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    line-height: 1em;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.01786em;
+    text-transform: none;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none !important;
+}
+
+
+
 
 
 

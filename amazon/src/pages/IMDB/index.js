@@ -15,6 +15,7 @@ import { MdLabelOutline } from 'react-icons/md'
 import { RiFileSearchLine, RiPlayCircleLine } from 'react-icons/ri'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { BiBookmarkPlus } from 'react-icons/bi'
+import { HiTicket } from 'react-icons/hi'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 
@@ -301,7 +302,7 @@ const IMDB = () => {
                             <section className="imdb__sliderSec ipc__page-section--baseAlt m-0">
                                 <section className="imdb__slideSec">
                                     <Slider 
-                                         type={"imdbSecondary"}
+                                         type={"imdb-secondary"}
                                          carouselClass={"amzn__carousel"}
                                          items={
                                                 [
@@ -333,7 +334,7 @@ const IMDB = () => {
                             </Link>
                         </header>
                         <section className="imdb__watchMain">
-                            <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                            <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
                                 <h3 className="ipc__title__text">
                                     From your watchlist
                                     <span className="ipc__title__link__chevron">
@@ -362,7 +363,7 @@ const IMDB = () => {
                     <section className="imdb__classic">
                         <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item ipc__page__grid__item--span-3">
                             <div>
-                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
                                     <h3 className="ipc__title__text">
                                         Fan Favorites
                                         <span className="ipc__title__link__chevron">
@@ -374,49 +375,49 @@ const IMDB = () => {
                             </div>
                             <section className="ipc__shoveler imdb__favSlider">
                                 <Slider 
-                                    type={"imdbFav"}
+                                    type={"imdb-fav"}
                                     carouselClass="amzn__carousel"
                                     count={6}
                                     items={
                                             [
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: 'Spider-Man: No Way Home',
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: 'Spider-Man: No Way Home',
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: 'Spider-Man: No Way Home',
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: 'Spider-Man: No Way Home',
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: 'Spider-Man: No Way Home',
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: 'Spider-Man: No Way Home',
                                                     src: spiderman_no_way_home,
                                                     alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     rating: "9.1"
@@ -461,31 +462,34 @@ const IMDB = () => {
                             </section>
                             <section className="ipc__shoveler imdb__originalSlider">
                                 <Slider 
-                                    type={"imdbOriginals"}
+                                    type={"imdb-originals"}
                                     carouselClass="amzn__carousel"
                                     count={6}
                                     items={
                                             [
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
                                                     src: woman_in_white,
                                                     alt: "Woman in white",
-                                                    rating: "9.1"
+                                                    rating: "9.1",
+                                                    runtime: "4:10"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
                                                     src: woman_in_white,
                                                     alt: "Woman in white",
-                                                    rating: "9.1"
+                                                    rating: "9.1",
+                                                    runtime: "4:10"
                                                 },
                                                 {
                                                     href: '/',
-                                                    title: '/',
+                                                    title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
                                                     src: woman_in_white,
                                                     alt: "Woman in white",
-                                                    rating: "9.1"
+                                                    rating: "9.1",
+                                                    runtime: "4:10"
                                                 }
                                             ]
                                         }
@@ -535,49 +539,49 @@ const IMDB = () => {
                                 <TabPane tabId="prime-video" tag="section">
                                     <section className="ipc__shoveler imdb__favSlider">
                                         <Slider 
-                                            type={"imdbFav"}
+                                            type={"imdb-fav"}
                                             carouselClass="amzn__carousel"
                                             count={6}
                                             items={
                                                     [
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
@@ -590,49 +594,49 @@ const IMDB = () => {
                                 <TabPane tabId="hayu" tag="section">
                                     <section className="ipc__shoveler imdb__favSlider">
                                         <Slider 
-                                            type={"imdbFav"}
+                                            type={"imdb-fav"}
                                             carouselClass="amzn__carousel"
                                             count={6}
                                             items={
                                                     [
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
@@ -645,49 +649,49 @@ const IMDB = () => {
                                 <TabPane tabId="stack-tv" tag="section">
                                     <section className="ipc__shoveler imdb__favSlider">
                                         <Slider 
-                                            type={"imdbFav"}
+                                            type={"imdb-fav"}
                                             carouselClass="amzn__carousel"
                                             count={6}
                                             items={
                                                     [
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
@@ -700,49 +704,49 @@ const IMDB = () => {
                                 <TabPane tabId="super-channel" tag="section">
                                     <section className="ipc__shoveler imdb__favSlider">
                                         <Slider 
-                                            type={"imdbFav"}
+                                            type={"imdb-fav"}
                                             carouselClass="amzn__carousel"
                                             count={6}
                                             items={
                                                     [
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
@@ -755,49 +759,49 @@ const IMDB = () => {
                                 <TabPane tabId="acorn-tv" tag="section">
                                     <section className="ipc__shoveler imdb__favSlider">
                                         <Slider 
-                                            type={"imdbFav"}
+                                            type={"imdb-fav"}
                                             carouselClass="amzn__carousel"
                                             count={6}
                                             items={
                                                     [
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
@@ -810,49 +814,49 @@ const IMDB = () => {
                                 <TabPane tabId="hollywood-suite" tag="section">
                                     <section className="ipc__shoveler imdb__favSlider">
                                         <Slider 
-                                            type={"imdbFav"}
+                                            type={"imdb-fav"}
                                             carouselClass="amzn__carousel"
                                             count={6}
                                             items={
                                                     [
                                                         {
-                                                            href: '/',
-                                                            title: '/',
+                                                            href: 'Spider-Man: No Way Home',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
                                                         },
                                                         {
                                                             href: '/',
-                                                            title: '/',
+                                                            title: 'Spider-Man: No Way Home',
                                                             src: spiderman_no_way_home,
                                                             alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                             rating: "9.1"
@@ -863,6 +867,385 @@ const IMDB = () => {
                                     </section>
                                 </TabPane>
                             </TabContent>
+                        </section>
+                    </section>
+                    <section className="imdb__classic imdb__exclusiveVids ipc__page__grid__item--span-3">
+                        <header className="ipc__page__grid__item--span-3">
+                            <h3 className="imdb__watchlistHeader imdb__title">Explore Movies &amp; TV shows</h3>
+                        </header>
+                        <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item ipc__page__grid__item--span-3">
+                            <div>
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
+                                    <h3 className="ipc__title__text">
+                                        In theatres
+                                        <span className="ipc__title__link__chevron">
+                                            <MdKeyboardArrowRight />
+                                        </span>
+                                    </h3>
+                                    <div className="ipc__title__description">Showtimes near you</div>
+                                </Link>
+                            </div>
+                            <section className="ipc__shoveler imdb__favSlider">
+                                <Slider 
+                                    type={"imdb-fav"}
+                                    carouselClass="amzn__carousel"
+                                    count={6}
+                                    items={
+                                            [
+                                                {
+                                                    href: '/',
+                                                    title: 'Spider-Man: No Way Home',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: 'Spider-Man: No Way Home',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: 'Spider-Man: No Way Home',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: 'Spider-Man: No Way Home',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: 'Spider-Man: No Way Home',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    title: 'Spider-Man: No Way Home',
+                                                    src: spiderman_no_way_home,
+                                                    alt: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
+                                                    rating: "9.1"
+                                                }
+                                            ]
+                                        }
+                                />
+                            </section>
+                        </section>
+                        <section className="imdb__boxOffice ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item--span-3">
+                            <div>
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
+                                    <h3 className="ipc__title__text">
+                                        Top box office (US)
+                                        <span className="ipc__title__link__chevron">
+                                            <MdKeyboardArrowRight />
+                                        </span>
+                                    </h3>
+                                    <div className="ipc__title__description">Weekend of December 17-19</div>
+                                </Link>
+                            </div>
+                            <ul className="imdb__boxList ml-0">
+                                <li>
+                                    <div className="mt-auto mb-auto">1</div>
+                                    <div className="imdb__stroke"></div>
+                                    <div className="imdb__boxRibbon">
+                                        <button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                            <BiBookmarkPlus />
+                                        </button>
+                                    </div>
+                                    <Link to="/" className="imdb__boxTitle">
+                                        <section className="imdb__boxTitleText">
+                                            Spider-Man: No Way Home
+                                        </section>
+                                        <section className="imdb__boxPrice">
+                                            $260M
+                                        </section>
+                                    </Link>
+                                    <span className="imdb__boxOfficeIcon">
+                                        <Link to="/" className="ipc__icon__link ipc__icon__link--baseAlt ipc__icon__link--onAccent2" title="Spider-Man: No Way Homeshowtimes link" role="button">
+                                            <HiTicket />
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div className="mt-auto mb-auto">2</div>
+                                    <div className="imdb__stroke"></div>
+                                    <div className="imdb__boxRibbon">
+                                        <button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                            <BiBookmarkPlus />
+                                        </button>
+                                    </div>
+                                    <Link to="/" className="imdb__boxTitle">
+                                        <section className="imdb__boxTitleText">
+                                            Spider-Man: No Way Home
+                                        </section>
+                                        <section className="imdb__boxPrice">
+                                            $260M
+                                        </section>
+                                    </Link>
+                                    <span className="imdb__boxOfficeIcon">
+                                        <Link to="/" className="ipc__icon__link ipc__icon__link--baseAlt ipc__icon__link--onAccent2" title="Spider-Man: No Way Homeshowtimes link" role="button">
+                                            <HiTicket />
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div className="mt-auto mb-auto">3</div>
+                                    <div className="imdb__stroke"></div>
+                                    <div className="imdb__boxRibbon">
+                                        <button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                            <BiBookmarkPlus />
+                                        </button>
+                                    </div>
+                                    <Link to="/" className="imdb__boxTitle">
+                                        <section className="imdb__boxTitleText">
+                                            Spider-Man: No Way Home
+                                        </section>
+                                        <section className="imdb__boxPrice">
+                                            $260M
+                                        </section>
+                                    </Link>
+                                    <span className="imdb__boxOfficeIcon">
+                                        <Link to="/" className="ipc__icon__link ipc__icon__link--baseAlt ipc__icon__link--onAccent2" title="Spider-Man: No Way Homeshowtimes link" role="button">
+                                            <HiTicket />
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div className="mt-auto mb-auto">4</div>
+                                    <div className="imdb__stroke"></div>
+                                    <div className="imdb__boxRibbon">
+                                        <button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                            <BiBookmarkPlus />
+                                        </button>
+                                    </div>
+                                    <Link to="/" className="imdb__boxTitle">
+                                        <section className="imdb__boxTitleText">
+                                            Spider-Man: No Way Home
+                                        </section>
+                                        <section className="imdb__boxPrice">
+                                            $260M
+                                        </section>
+                                    </Link>
+                                    <span className="imdb__boxOfficeIcon">
+                                        <Link to="/" className="ipc__icon__link ipc__icon__link--baseAlt ipc__icon__link--onAccent2" title="Spider-Man: No Way Homeshowtimes link" role="button">
+                                            <HiTicket />
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div className="mt-auto mb-auto">5</div>
+                                    <div className="imdb__stroke"></div>
+                                    <div className="imdb__boxRibbon">
+                                        <button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                            <BiBookmarkPlus />
+                                        </button>
+                                    </div>
+                                    <Link to="/" className="imdb__boxTitle">
+                                        <section className="imdb__boxTitleText">
+                                            Spider-Man: No Way Home
+                                        </section>
+                                        <section className="imdb__boxPrice">
+                                            $260M
+                                        </section>
+                                    </Link>
+                                    <span className="imdb__boxOfficeIcon">
+                                        <Link to="/" className="ipc__icon__link ipc__icon__link--baseAlt ipc__icon__link--onAccent2" title="Spider-Man: No Way Homeshowtimes link" role="button">
+                                            <HiTicket />
+                                        </Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div className="mt-auto mb-auto">6</div>
+                                    <div className="imdb__stroke"></div>
+                                    <div className="imdb__boxRibbon">
+                                        <button className="ipc__watchlist__ribbon ipc__poster__watchlist__ribbon ipc__watchlist__ribbon--baseAlt ipc__watchlist__ribbon--m">
+                                            <BiBookmarkPlus />
+                                        </button>
+                                    </div>
+                                    <Link to="/" className="imdb__boxTitle">
+                                        <section className="imdb__boxTitleText">
+                                            Spider-Man: No Way Home
+                                        </section>
+                                        <section className="imdb__boxPrice">
+                                            $260M
+                                        </section>
+                                    </Link>
+                                    <span className="imdb__boxOfficeIcon">
+                                        <Link to="/" className="ipc__icon__link ipc__icon__link--baseAlt ipc__icon__link--onAccent2" title="Spider-Man: No Way Homeshowtimes link" role="button">
+                                            <HiTicket />
+                                        </Link>
+                                    </span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item ipc__page__grid__item--span-3">
+                            <div>
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
+                                    <h3 className="ipc__title__text">
+                                        Coming soon to theaters (US)
+                                        <span className="ipc__title__link__chevron">
+                                            <MdKeyboardArrowRight />
+                                        </span>
+                                    </h3>
+                                    <div className="ipc__title__description">Trailers for upcoming reasons</div>
+                                </Link>
+                            </div>
+                            <section className="ipc__shoveler">
+                                <section className="imdb__originalSlider">
+                                    <Slider 
+                                        type={"imdb-originals"}
+                                        carouselClass="amzn__carousel"
+                                        count={6}
+                                        items={
+                                                [
+                                                    {
+                                                        href: '/',
+                                                        title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
+                                                        src: woman_in_white,
+                                                        alt: "Woman in white",
+                                                        rating: "9.1",
+                                                        runtime: "4:10",
+                                                        bookmark: true
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
+                                                        src: woman_in_white,
+                                                        alt: "Woman in white",
+                                                        rating: "9.1",
+                                                        runtime: "4:10",
+                                                        bookmark: true
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
+                                                        src: woman_in_white,
+                                                        alt: "Woman in white",
+                                                        rating: "9.1",
+                                                        runtime: "4:10",
+                                                        bookmark: true
+                                                    }
+                                                ]
+                                            }
+                                        />
+                                    </section>
+                                </section>
+                        </section>                    
+                    </section>
+                    <section className="ipc__page__grid ipc__page__grid--bias-left imdb__exclusiveVids">
+                        <section className="ipc__page__grid__item ipc__page__grid__item--span-3">
+                            <header>
+                                <h3 className="imdb__watchlistHeader imdb__title">More to explore</h3>
+                            </header>
+                            <section className="ipc__page__section ipc__page__section--baseAlt">
+                                <section className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ">
+                                    <h3 className="ipc__title__text">
+                                        Editor's picks
+                                    </h3>
+                                </section>
+                                <div className="imdb__carouselContainer justify-content-start">
+                                    
+                                    {/* Add "imdb__slideSec--stretch" class if you want it to be in 3's */}
+                                    <section className="imdb__sliderSec imdb__sliderSec--stretch ipc__page-section--baseAlt m-0">
+                                        <section className="imdb__slideSec imdb__originalSlider">   
+                                            <Slider 
+                                                type={"imdb-secondary-regular"}
+                                                carouselClass={"amzn__carousel"}
+                                                count={3}
+                                                items={
+                                                        [
+                                                            {
+                                                                href: '/',
+                                                                img: <img src={house_of_the_dragon_poster} alt="house of the dragon poster" />,
+                                                                list: true,
+                                                                caption: "Most Anticipated New TV Shows Coming in 2022"
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                img: <img src={house_of_the_dragon_poster} alt="house of the dragon poster" />,
+                                                                caption: "Most Anticipated New TV Shows Coming in 2022"
+                                                            },
+                                                            {
+                                                                href: '/',
+                                                                img: <img src={house_of_the_dragon_poster} alt="house of the dragon poster" />,
+                                                                vote: true,
+                                                                caption: "Most Anticipated New TV Shows Coming in 2022"
+                                                            }
+                                                        ]
+                                                }
+                                            />
+                                        </section>
+                                    </section>
+                                </div>
+                            </section>
+                        </section>
+                        <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item--span-3">
+                            <div>
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
+                                    <h3 className="ipc__title__text">
+                                        Born Today
+                                        <span className="ipc__title__link__chevron">
+                                            <MdKeyboardArrowRight />
+                                        </span>
+                                    </h3>
+                                    <div className="ipc__title__description">People born on December 22</div>
+                                </Link>
+                            </div>
+                            <section className="imdb__slideSec imdb__spherical">
+                                <Slider 
+                                    type={"imdb-spheres"}
+                                    carouselClass={"amzn__carousel"}
+                                    count={6}
+                                    items={
+                                            [
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    age: "85"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    age: "85"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    age: "85"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    age: "85"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    age: "85"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    img: <img src={the_gilded_age_lg} alt="the gilded age" />,
+                                                    caption: "The Gilded Age",
+                                                    age: "85"
+                                                }
+                                            ]
+                                    }
+                                />
+                            </section>
                         </section>
                     </section>
                 </div>

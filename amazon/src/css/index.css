@@ -2311,8 +2311,11 @@ table.myx__bordered tr:first-child th {
     font-size: 0.8em;
     font-size: 1.2em;
     margin-left: 0.5em;
-    color: var(--ochre-64);
+    color: var(--white);
     transition: color 0.15s;
+}
+a:hover .ipc__title__link__chevron, a:focus .ipc__title__link__chevron {
+    color: var(--ochre-64);
 }
 .ipc__button--double-padding {
     padding: 0 2rem;
@@ -2594,6 +2597,55 @@ ipc__poster, .ipc__photo, .ipc__slate {
 .ipc__tabs--on-baseAlt .ipc__tab:hover {
     background-color: rgba(255,255,255,0.08);
 }
+.ipc__icon__link, .ipc__icon__button, .ipc__icon__border__button {
+    text-decoration: none;
+    appearance: none;
+    background: transparent;
+}
+.ipc__icon__link, .ipc__icon__button {
+    border: none;
+}
+.ipc__icon__link, .ipc__icon__button, .ipc__icon__border__button {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: .75rem;
+    line-height: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ipc__icon__link--baseAlt, .ipc__icon__button--baseAlt {
+    color: var(--white);
+}
+.ipc__icon__link--baseAlt.ipc__icon__link--onAccent2, 
+.ipc__icon__link--baseAlt.ipc__icon__button--onAccent2, 
+.ipc__icon__button--baseAlt.ipc__icon__link--onAccent2, 
+.ipc__icon__button--baseAlt.ipc__icon__button--onAccent2 {
+    color: var(--blue-41);
+}
+.ipc__icon__link:before, .ipc__icon__link:after, 
+.ipc__icon__button:before, .ipc__icon__button:after, 
+.ipc__icon__border__button:before, .ipc__icon__border__button:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    background: currentColor;
+    transform-origin: center center;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1),opacity 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+.ipc__media.ipc__image__media__ratio--avatar:before {
+    padding-bottom: 100%;
+}
+
 
 
 
@@ -2675,6 +2727,10 @@ ipc__poster, .ipc__photo, .ipc__slate {
         min-width: calc(25% - .91667 * 1rem - .08333rem);
         margin-right: 1rem;
     }
+    .ipc__page__grid.ipc__page__grid--bias-left {
+        grid-template-columns: calc(33.33333% - .66667 * 1rem - -1.33333rem) 
+            calc(33.33333% - .66667 * 1rem - -.33333rem) calc(33.33333% - .66667 * 1rem - -.33333rem);
+    }
 }
 @media screen and (min-width: 1200px) {
     .body__inner {
@@ -2686,6 +2742,10 @@ ipc__poster, .ipc__photo, .ipc__slate {
     .ipc__sub__grid {
         grid-gap: 1.5rem;
         grid-template-columns: repeat(12, calc(8.33333% - .91667 * 1.5rem - 0rem));
+    }
+    .ipc__page__grid.ipc__page__grid--bias-left {
+        grid-template-columns: calc(33.33333% - .66667 * 1.5rem - -2rem) 
+            calc(33.33333% - .66667 * 1.5rem - -.5rem) calc(33.33333% - .66667 * 1.5rem - -.5rem);
     }
 }
 @media screen and (min-width: 480px) and (min-width: 1024px) {
@@ -2718,6 +2778,28 @@ ipc__poster, .ipc__photo, .ipc__slate {
     .ipc__text__button.ipc__button--core-baseAlt:hover, 
     .ipc__outline__button.ipc__button--core-baseAlt:hover {
         background: rgba(255,255,255,0.08);
+    }
+    .ipc__icon__link--baseAlt:hover, .ipc__icon__link--baseAlt:visited, 
+    .ipc__icon__link--baseAlt:link, .ipc__icon__button--baseAlt:hover, 
+    .ipc__icon__button--baseAlt:visited, .ipc__icon__button--baseAlt:link {
+        color: var(--white);
+    }
+    .ipc__icon__link--baseAlt.ipc__icon__link--onAccent2:hover, 
+    .ipc__icon__link--baseAlt.ipc__icon__link--onAccent2:visited, 
+    .ipc__icon__link--baseAlt.ipc__icon__link--onAccent2:link, 
+    .ipc__icon__link--baseAlt.ipc__icon__button--onAccent2:hover, 
+    .ipc__icon__link--baseAlt.ipc__icon__button--onAccent2:visited, 
+    .ipc__icon__link--baseAlt.ipc__icon__button--onAccent2:link, 
+    .ipc__icon__button--baseAlt.ipc__icon__link--onAccent2:hover, 
+    .ipc__icon__button--baseAlt.ipc__icon__link--onAccent2:visited, 
+    .ipc__icon__button--baseAlt.ipc__icon__link--onAccent2:link, 
+    .ipc__icon__button--baseAlt.ipc__icon__button--onAccent2:hover, 
+    .ipc__icon__button--baseAlt.ipc__icon__button--onAccent2:visited, 
+    .ipc__icon__button--baseAlt.ipc__icon__button--onAccent2:link {
+        color: var(--blue-41);
+    }
+    .ipc__icon__link--baseAlt:hover:before, .ipc__icon__button--baseAlt:hover:before {
+        opacity: 0.08;
     }
 }
 
