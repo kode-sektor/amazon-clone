@@ -702,7 +702,8 @@
 .imdb__signinBtn {
     margin-top: 2rem;
 }
-.imdb__favSlider, .imdb__originalSlider, .imdb__spherical {
+.imdb__favSlider, .imdb__originalSlider, .imdb__spherical,
+.imdb__news {
     padding: 0 1.5em;
 }
 .imdb__exclusiveVids {

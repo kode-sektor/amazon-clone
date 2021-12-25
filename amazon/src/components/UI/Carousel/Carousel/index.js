@@ -1030,6 +1030,55 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 				}
 			})
 		}
+		else if (type === "imdb-news") {
+
+			items.forEach((item, index) => {
+				count = count ? count : 3
+				const { href, img, caption, date, source } = item
+
+				tempCarousel = [
+					...tempCarousel,
+					(
+						<li className="ipc__poster__card">
+							<Link to={href}>
+								<figure className="ipc__slate">
+									<section className="imdb__newsImg ipc__media ipc__media__img ipc__media--baseAlt ipc__image__media__ratio--poster-27x40">
+										{img}
+									</section>
+									<figcaption className="flex-grow-1 pl-3">
+										<section className="imdb__newsHeadline">
+											{caption}
+										</section>
+										<section className="imdb__newsMeta">
+											<span>{date}</span>
+											<span className="imdb__newsSource">{source}</span>
+										</section>
+									</figcaption>
+								</figure>
+							</Link>
+						</li>
+					)
+				]
+				
+				// Only wrap with <Carousel> once the number of multiple images reaches. 
+				// In this case (6). Or wrap on last cycle. That makes one screen-wide slider.
+				if ((((index + 1) % count) === 0) || (index + 1) === items.length) {
+					slides = [
+								...slides,
+								<CarouselItem
+									className={carouselClass ? carouselClass : ""}
+									onExiting={() => setAnimating(true)}
+									onExited={() => setAnimating(false)}
+									key={index}
+								>
+									{/* Forcing 6 images inside one ul (which is screen-wide) */}
+									<ul className="imdb__cards">{tempCarousel}</ul>
+								</CarouselItem>
+					]
+					tempCarousel = []
+				}
+			})
+		}
 		else {
 			slides = items.map((item) => {
 				return (

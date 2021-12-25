@@ -34,6 +34,7 @@ import house_of_the_dragon_poster from '../../images/imdb/house-of-the-dragon-po
 import new_holiday_picks from '../../images/imdb/new-holiday-picks.jpg'
 import spiderman_no_way_home from '../../images/imdb/spiderman-no-way-home.jpg'
 import woman_in_white from '../../images/imdb/woman-in-white.jpg'
+import sarah_jessica_parker from '../../images/imdb/sarah-jessica-parker.jpg'
 
 import './index.css'
 
@@ -1245,6 +1246,52 @@ const IMDB = () => {
                                             ]
                                     }
                                 />
+                            </section>
+                        </section>
+                        <section className="ipc__page__section ipc__page__section--baseAlt ipc__page__grid__item--span-3">
+                            <div>
+                                <Link to="/" className="ipc__title d-inline-block ipc__title--subsection-title ipc__title--baseAlt ipc__title__link__wrapper">
+                                    <h3 className="ipc__title__text">
+                                        Top News
+                                        <span className="ipc__title__link__chevron">
+                                            <MdKeyboardArrowRight />
+                                        </span>
+                                    </h3>
+                                </Link>
+                            </div>
+                            <section className="ipc__shoveler">
+                                <section className="imdb__news imdb__carousel">
+                                    <Slider 
+                                        type={"imdb-news"}
+                                        carouselClass={"amzn__carousel"}
+                                        count={3}
+                                        items={
+                                                [
+                                                    {
+                                                        href: '/',
+                                                        img: <img className="ipc__image" src={sarah_jessica_parker} alt="Sarah Jessica Parker, Cynthia Nixon, Kristin Davis Address Chris Noth Sexual Assault Allegations" />,
+                                                        caption: "Sarah Jessica Parker, Cynthia Nixon, Kristin Davis Address Chris Noth Sexual Assault Allegations",
+                                                        source: "Variety - TV News",
+                                                        date: "Dec 20"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        img: <img className="ipc__image" src={sarah_jessica_parker} alt="Sarah Jessica Parker, Cynthia Nixon, Kristin Davis Address Chris Noth Sexual Assault Allegations" />,
+                                                        caption: "Sarah Jessica Parker, Cynthia Nixon, Kristin Davis Address Chris Noth Sexual Assault Allegations",
+                                                        source: "Variety - TV News",
+                                                        date: "Dec 20"
+                                                    },
+                                                    {
+                                                        href: '/',
+                                                        img: <img className="ipc__image" src={sarah_jessica_parker} alt="Sarah Jessica Parker, Cynthia Nixon, Kristin Davis Address Chris Noth Sexual Assault Allegations" />,
+                                                        caption: "Sarah Jessica Parker, Cynthia Nixon, Kristin Davis Address Chris Noth Sexual Assault Allegations",
+                                                        source: "Variety - TV News",
+                                                        date: "Dec 20"
+                                                    }
+                                                ]
+                                        }
+                                    />
+                                </section>
                             </section>
                         </section>
                     </section>
