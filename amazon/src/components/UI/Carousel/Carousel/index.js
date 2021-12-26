@@ -19,7 +19,7 @@ import { BestSellerAux } from '../../Badge'
 import './index.css'
 
 const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
-	 cartBtnSmall, reorderStarPrice, interval=5000, addToCart=false}) => {
+	 cartBtnSmall, reorderStarPrice, interval=5000, addToCart=false, onlyCaption=false }) => {
 
 	let itemLength = items.length
 
@@ -797,45 +797,62 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 								<Link key={index} to={href} className="ipc__poster ipc__media ipc__image__media__ratio--poster-27x40 ipc__media--poster-m ipc__media--baseAlt ipc__poster__poster__image ipc__media__img w-100">
 									<img className="ipc__image" src={src} alt={alt} />
 								</Link>
-								<figcaption>
-									<section className="ipc__poster__card__rating__star__group">
-										<span className="ipc__rating__star ipc__rating__star--baseAlt ipc__rating__star--imdb">
-											<span className="ipc__icon">
-												<AiFillStar />
-											</span>
-											{rating}
-										</span>
-										<button className="ipc__rate__button ipc__rate__button--unrated ipc__rate__button--baseAlt">
-											<span className="ipc__rating__star ipc__rating__star--baseAlt ipc__rating__star--rate">
-											<AiFillStar />
-											</span>
-										</button>
-									</section>
-									<section className="imdb__figcaption">
-										<Link className="ipc__poster__card__title ipc__poster__card__title--clamp-2 ipc-poster-card__title--clickable" >
-											{title}
-										</Link>
-									</section>
-								</figcaption>
+								{
+									onlyCaption ? (
+										<figcaption>
+											<section className="imdb__figcaption">
+												<Link className="ipc__poster__card__title ipc__poster__card__title--clamp-2 ipc-poster-card__title--clickable" >
+													{title}
+												</Link>
+											</section>
+										</figcaption>
+									) : 
+									(
+										<figcaption>
+											<section className="ipc__poster__card__rating__star__group">
+												<span className="ipc__rating__star ipc__rating__star--baseAlt ipc__rating__star--imdb">
+													<span className="ipc__icon">
+														<AiFillStar />
+													</span>
+													{rating}
+												</span>
+												<button className="ipc__rate__button ipc__rate__button--unrated ipc__rate__button--baseAlt">
+													<span className="ipc__rating__star ipc__rating__star--baseAlt ipc__rating__star--rate">
+														<AiFillStar />
+													</span>
+												</button>
+											</section>
+											<section className="imdb__figcaption">
+												<Link className="ipc__poster__card__title ipc__poster__card__title--clamp-2 ipc-poster-card__title--clickable" >
+													{title}
+												</Link>
+											</section>
+										</figcaption>
+									)
+								}
 							</figure>
-							<section className="imdb__mediaCta ipc__poster__card__actions">
-								<button class="ipc__button ipc__button--full-width justify-content-center ipc__button--default-height ipc__button--core-baseAlt ipc__button--theme-baseAlt ipc__button--on-accent2 ipc__secondary__button">
-										<AiOutlinePlus />&nbsp;&nbsp;
-										<div className="ipc__button__text">
-											Watchlist
+							{
+								!onlyCaption && (
+									<section className="imdb__mediaCta ipc__poster__card__actions">
+										<button class="ipc__button ipc__button--full-width justify-content-center ipc__button--default-height ipc__button--core-baseAlt ipc__button--theme-baseAlt ipc__button--on-accent2 ipc__secondary__button">
+												<AiOutlinePlus />&nbsp;&nbsp;
+												<div className="ipc__button__text">
+													Watchlist
+												</div>
+										</button>
+										<div className="imdb__trailerBtn">
+											<Link to="/" className="ipc__button ipc__text__button ipc__button--single-padding ipc__button--default-height justify-content-center ipc__button--core-baseAlt">
+												<span className="ipc__button__icon--pre">
+													<BsFillPlayFill />
+												</span>
+												<span className="ipc__button__text">
+													Trailer
+												</span>
+											</Link>
 										</div>
-								</button>
-								<div className="imdb__trailerBtn">
-									<Link to="/" className="ipc__button ipc__text__button ipc__button--single-padding ipc__button--default-height justify-content-center ipc__button--core-baseAlt">
-										<span className="ipc__button__icon--pre">
-											<BsFillPlayFill />
-										</span>
-										<span className="ipc__button__text">
-											Trailer
-										</span>
-									</Link>
-								</div>
-							</section>	
+									</section>		
+								)
+							}
 						</li>
 					)
 				]
@@ -863,7 +880,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 
 			items.forEach((item, index) => {
 				count = count ? count : 3
-				const { href, title, src, alt, runtime, bookmark} = item
+				const { href, title, src, alt, runtime, bookmark, date, price } = item
 
 				tempCarousel = [
 					...tempCarousel,
@@ -895,10 +912,10 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 												</div>
 												<Link to="/" className="imdb__boxTitle">
 													<section className="imdb__boxTitleText">
-														Spider-Man: No Way Home
+														{date}
 													</section>
 													<section className="imdb__boxPrice">
-														$260M
+														{title}
 													</section>
 												</Link>
 											</section>

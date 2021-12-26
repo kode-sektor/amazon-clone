@@ -295,7 +295,10 @@
 }
 
 .imdb__main {
+    position: relative;
     display: block;
+    min-height: 67vh;
+    min-width: 300px;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -303,11 +306,8 @@
     text-decoration: inherit;
     text-transform: inherit;
     -webkit-font-smoothing: auto;
-    min-height: 67vh;
-    min-width: 300px;
-    position: relative;
-    background: var(--black);
     color: var(--white);
+    background: var(--black);
     font-family: var(--font-ancillary-5);
 }
 .imdb__carousel {
@@ -703,7 +703,7 @@
     margin-top: 2rem;
 }
 .imdb__favSlider, .imdb__originalSlider, .imdb__spherical,
-.imdb__news {
+.imdb__news, .imdb__carousel {
     padding: 0 1.5em;
 }
 .imdb__exclusiveVids {
@@ -757,18 +757,6 @@
 .imdb__boxList > li:hover, .imdb__boxList > li:focus {
     opacity: .8;
 }
-.imdb__boxTitleText {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.imdb__boxPrice {
-    line-height: 1.5em;
-    font-size: .75rem;
-    letter-spacing: 0.16667em;
-    font-weight: 600;
-    color: rgba(255,255,255,0.7);
-    text-transform: uppercase;
-}
 .imdb__boxRibbon svg {
     font-size: 1.5em;
 }
@@ -782,9 +770,64 @@
     width: 48px;
     height: 48px;
 }
+.imdb__recentlyViewed {
+    padding-top: 24px;
+    border: thin solid tomato;
+}
 
-
-
+.imdb__footer {
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 0.03125em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    -webkit-font-smoothing: auto;
+    border: thin solid saddlebrown;
+    background: var(--black);
+    font-family: var(--font-ancillary-5);
+}
+.imdb__footerContent {
+    max-width: 360px;
+    margin: 0 auto;
+}
+.imdb__footerSocials {
+    margin: 16px 0;
+}
+.imdb__footerMainLinks  ul > li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.imdb__footerMainLinks  ul > li a {
+    color: var(--white) !important;
+}
+.imdb__footerMainLinks ul > li a svg {
+    width: 24px;
+    height: 24px;
+}
+.imdb__footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    margin: 16px;
+    background: url('../../images/imdb/an-amazon-company.png') no-repeat center;
+}
+.imdb__footerCopy {
+    margin: .5em 0;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.03333em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: inherit;
+    text-transform: inherit;
+    -webkit-font-smoothing: auto;
+}
 
 
 
@@ -834,6 +877,9 @@
     .imdb__sliderSec {
         padding: 1rem 0;
     }
+    .imdb__footerContent {
+        max-width: 600px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .imdb__headerInner {
@@ -862,6 +908,9 @@
         grid-template-columns: calc(33.33333% - .66667 * 1rem - -1.33333rem) 
             calc(33.33333% - .66667 * 1rem - -.33333rem) calc(33.33333% - .66667 * 1rem - -.33333rem);
     }
+    .imdb__footer .imdb__footerContent {
+        max-width: 1024px;
+    }
     
 }
 @media screen and (min-width: 1280px) {
@@ -887,5 +936,8 @@
     }
     .imdb__galleryList > li {
         flex-basis: 148px;
+    }
+    .imdb__footerContent {
+        max-width: 1280px;
     }
 }

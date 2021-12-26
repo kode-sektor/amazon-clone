@@ -909,6 +909,7 @@
     flex-direction: column;
     width: 100%;
     min-width: auto;
+    max-width: 16.6667%;
     padding-bottom: 0px;
     margin: 0 20px .25rem 0;
     color: var(--white);
@@ -916,12 +917,16 @@
     background: var(--grey-tone-122);
 }
 .imdb__originalSlider .imdb__cards li {
+    max-width: 33.3333%;
     margin-bottom: 0;
     background-color: transparent;
     border-radius: 0;
 }
 .imdb__cards li:last-child {
     margin-right: 0;
+}
+.imdb__carousel .imdb__cards li {
+    max-width: 33.3333%;
 }
 .imdb__cards li figure {
     overflow: hidden;
@@ -982,6 +987,18 @@
 .imdb__originalSlider li figure, .imdb__spherical li figure {
     flex-direction: column;
     margin-bottom: 0;
+}
+.imdb__boxPrice {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.imdb__boxTitleText {
+    line-height: 1.5em;
+    font-size: .75rem;
+    letter-spacing: 0.16667em;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
 }
 .imdb__originalSlider li figcaption {
     position: absolute;

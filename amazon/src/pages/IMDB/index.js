@@ -7,15 +7,17 @@ import { TabContent, TabPane } from 'reactstrap'
 import classnames from 'classnames'
 
 import { BiMenu } from 'react-icons/bi'
-import { AiOutlineSearch } from 'react-icons/ai'
-import { FaDesktop, FaUserFriends } from 'react-icons/fa'
+import { AiOutlineSearch, AiOutlineTwitter, AiOutlineYoutube } from 'react-icons/ai'
+import { FaDesktop, FaUserFriends, FaTwitch } from 'react-icons/fa'
 import { IoMdFilm } from 'react-icons/io'
-import { BiBuildings } from 'react-icons/bi'
+import { BiBuildings, BiLinkExternal } from 'react-icons/bi'
 import { MdLabelOutline } from 'react-icons/md'
 import { RiFileSearchLine, RiPlayCircleLine } from 'react-icons/ri'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { BiBookmarkPlus } from 'react-icons/bi'
 import { HiTicket } from 'react-icons/hi'
+import { ImFacebook2 } from 'react-icons/im'
+import { FiInstagram } from 'react-icons/fi'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 
@@ -35,6 +37,9 @@ import new_holiday_picks from '../../images/imdb/new-holiday-picks.jpg'
 import spiderman_no_way_home from '../../images/imdb/spiderman-no-way-home.jpg'
 import woman_in_white from '../../images/imdb/woman-in-white.jpg'
 import sarah_jessica_parker from '../../images/imdb/sarah-jessica-parker.jpg'
+import sandra_bullock_in_the_unforgivable from '../../images/imdb/sandra-bullock-in-the-unforgivable.jpg'
+
+import { currentYear } from '../../utilities/data'
 
 import './index.css'
 
@@ -473,24 +478,21 @@ const IMDB = () => {
                                                     title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
                                                     src: woman_in_white,
                                                     alt: "Woman in white",
-                                                    rating: "9.1",
-                                                    runtime: "4:10"
+                                                    runtime: "4:10",
                                                 },
                                                 {
                                                     href: '/',
                                                     title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
                                                     src: woman_in_white,
                                                     alt: "Woman in white",
-                                                    rating: "9.1",
-                                                    runtime: "4:10"
+                                                    runtime: "4:10",
                                                 },
                                                 {
                                                     href: '/',
                                                     title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
                                                     src: woman_in_white,
                                                     alt: "Woman in white",
-                                                    rating: "9.1",
-                                                    runtime: "4:10"
+                                                    runtime: "4:10",
                                                 }
                                             ]
                                         }
@@ -1109,28 +1111,28 @@ const IMDB = () => {
                                                 [
                                                     {
                                                         href: '/',
-                                                        title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
+                                                        title: "Scream",
                                                         src: woman_in_white,
                                                         alt: "Woman in white",
-                                                        rating: "9.1",
+                                                        date: "Jan 14",
                                                         runtime: "4:10",
                                                         bookmark: true
                                                     },
                                                     {
                                                         href: '/',
-                                                        title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
+                                                        title: "Scream",
                                                         src: woman_in_white,
                                                         alt: "Woman in white",
-                                                        rating: "9.1",
+                                                        date: "Jan 14",
                                                         runtime: "4:10",
                                                         bookmark: true
                                                     },
                                                     {
                                                         href: '/',
-                                                        title: "The Rise of the 'The Lost Daughter' Star Olivia Colman",
+                                                        title: "Scream",
                                                         src: woman_in_white,
                                                         alt: "Woman in white",
-                                                        rating: "9.1",
+                                                        date: "Jan 14",
                                                         runtime: "4:10",
                                                         bookmark: true
                                                     }
@@ -1292,11 +1294,191 @@ const IMDB = () => {
                                         }
                                     />
                                 </section>
+                                <section className="ipc__chip__list ml-3 mt-3">
+                                    <Link to="/" className="ipc__chip ipc__chip--on-baseAlt">
+                                        Top News
+                                    </Link>
+                                    <Link to="/" className="ipc__chip ipc__chip--on-baseAlt">
+                                        Movie news
+                                    </Link>
+                                    <Link to="/" className="ipc__chip ipc__chip--on-baseAlt">
+                                        TV news
+                                    </Link>
+                                    <Link to="/" className="ipc__chip ipc__chip--on-baseAlt">
+                                        Celebrity news
+                                    </Link>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section className="imdb__classic imdb__recentlyViewed ipc__page__background ipc__page__background--baseAlt">
+                        <section className="ipc__page__section">
+                            <header className="d-flex justify-content-between pr-4">
+                                <section className="ipc__title ipc__title--title ipc__title--baseAlt ipc__title--on-textPrimary">
+                                    <span className="ipc__title__text">Recently viewed</span>
+                                </section>
+                                <span>
+                                    <Link to="/" className="ipc__link ipc__link--baseAlt">
+                                        Clear all
+                                    </Link>
+                                </span>
+                            </header>
+                            <section className="ipc__shoveler imdb__favSlider">
+                                <Slider 
+                                    type={"imdb-fav"}
+                                    onlyCaption={true}
+                                    carouselClass="amzn__carousel"
+                                    count={6}
+                                    items={
+                                            [
+                                                {
+                                                    href: '/',
+                                                    title: 'The Unforgivable',
+                                                    src: sandra_bullock_in_the_unforgivable,
+                                                    alt: "Sandra Bullock in The Unforgivable (2021)"
+                                                }
+                                            ]
+                                        }
+                                />
                             </section>
                         </section>
                     </section>
                 </div>
             </main>
+            <footer className="imdb__footer">
+                <section className="imdb__footerContent">
+                    <section className="imdb__footerMainLinks">
+                        <section className="imdb__footerSocials">
+                            <ul className="ipc__inline__list d-inline">
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                        <ImFacebook2 />
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                        <FiInstagram />
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                        <FaTwitch />
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                        <AiOutlineTwitter />
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                        <AiOutlineYoutube />
+                                    </Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <ul className="ipc__inline__list d-inline">
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Get the IMDb App
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Help
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Site Index
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        IMDbPro
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Box Office Mojo
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        IMDbDeveloper
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Press Room
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Advertising
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Jobs
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Conditions of Use
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                                <li className="ipc__inline__list__item">
+                                    <Link className="ipc__link ipc__link--touch-target ipc__link--baseAlt" to="/">
+                                        Interest-Based Ads
+                                        <span className="ipc__link__launch__icon">
+                                            <BiLinkExternal />
+                                        </span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="imdb__footerLogo">
+                            <span className="sr-only">
+                                an amazon company
+                            </span>
+                        </section>
+                        <section className="imdb__footerCopy">
+                            &copy; 1990 - {currentYear} by IMDb.com, Inc.
+                        </section>
+                    </section>
+                </section>
+            </footer>
         </div>
     )
 }

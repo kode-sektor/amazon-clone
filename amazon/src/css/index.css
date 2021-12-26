@@ -2645,9 +2645,96 @@ ipc__poster, .ipc__photo, .ipc__slate {
 .ipc__media.ipc__image__media__ratio--avatar:before {
     padding-bottom: 100%;
 }
-
-
-
+.ipc__chip__list {
+    display: block;
+    flex-wrap: nowrap;
+    overflow: auto;
+    white-space: nowrap;
+}
+.ipc__chip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: .25rem .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    letter-spacing: .01786em;
+    font-weight: 400;
+    color: var(--white) !important;
+    text-decoration: none !important;
+    border-radius: 1rem;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+.ipc__chip:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: currentColor;
+}
+.ipc__chip--on-baseAlt:hover:before, .ipc__chip--on-baseAlt-accent1:hover:before,
+.ipc__chip--on-baseAlt-accent2:hover:before {
+    opacity: .08;
+}
+.ipc__chip--on-baseAlt:active:before, .ipc__chip--on-baseAlt-accent1:active:before, 
+.ipc__chip--on-baseAlt-accent2:active:before {
+    opacity: .32;
+}
+.ipc__chip--on-baseAlt, .ipc__chip--on-baseAlt:hover, 
+.ipc__chip--on-baseAlt:active, .ipc__chip--on-baseAlt:focus {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.64);
+}
+.ipc__chip__list > .ipc__chip {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.ipc__page__background {
+    margin: 0;
+    padding: 0;
+}
+.ipc__page__background--baseAlt {
+    background: var(--black);
+    color: var(--white);
+}
+.ipc__link {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+a.ipc__link--baseAlt:link, .ipc__link--baseAlt, .ipc__link--baseAlt:hover, 
+.ipc__link--baseAlt:focus, .ipc__link--baseAlt:visited {
+    color: var(--blue-41);
+}
+.ipc__inline__list__item {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ipc__link__launch__icon {
+    fill: currentColor;
+    margin-left: 0.25em;
+}
+.imdb__footerMainLinks .ipc__link__launch__icon svg {
+    width: 16px;
+    height: 16px;
+}
+.ipc__link--touch-target {
+    display: inline-block;
+    padding: .5rem;
+}
 
 
 
@@ -2800,6 +2887,10 @@ ipc__poster, .ipc__photo, .ipc__slate {
     }
     .ipc__icon__link--baseAlt:hover:before, .ipc__icon__button--baseAlt:hover:before {
         opacity: 0.08;
+    }
+    .ipc__chip__list {
+        display: inline-flex;
+        flex-wrap: wrap;
     }
 }
 
