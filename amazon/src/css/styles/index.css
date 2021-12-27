@@ -422,6 +422,7 @@ file rather than small ones. Your choice
     --grey-tone-123: #2e2d2b;
     --grey-tone-124: #e4e4e4;
     --grey-tone-125: #f8f7f5;
+    --grey-tone-126: #5f5b53;
 	
     --black: #000;
     --white: #fff;
@@ -452,6 +453,8 @@ file rather than small ones. Your choice
     --font-ancillary-3: 'Roboto Condensed', sans-serif;
     --font-ancillary-4: Arial, sans-serif;
     --font-ancillary-5: Roboto, Helvetica, Arial, sans-serif;
+    --font-ancillary-6: "Circular Pro", Verdana, sans-serif;
+    --font-ancillary-7: "Corda Std", Georgia, serif;
 }
 
 /* Fonts */
@@ -466,6 +469,19 @@ file rather than small ones. Your choice
         url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), 
         url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), 
         url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); 
+}
+@font-face {
+	font-family: "Corda Std"; 
+	src: url("../font/corda/Corda-Bold.otf"),
+        url("../font/corda/Corda-BoldItalic.otf"),
+        url("../font/corda/Corda-ExtraLight.otf"),
+        url("../font/corda/Corda-ExtraLightItalic.otf"),
+        url("../font/corda/Corda-Italic.otf"),
+        url("../font/corda/Corda-Light.otf"),
+        url("../font/corda/Corda-LightItalic.otf"),
+        url("../font/corda/Corda-Medium.otf"),
+        url("../font/corda/Corda-MediumItalic.otf"),
+        url("../font/corda/Corda-Regular.otf")
 }
 
 

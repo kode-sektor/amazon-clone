@@ -4,7 +4,32 @@
     max-width: 1500px;
     color: var(--grey-tone-123);
     box-sizing: border-box;
-    font-family: "Circular Pro",Verdana,sans-serif;
+    font-family: var(--font-ancillary-6);
+}
+.wholefoods--page h2 {
+    display: block;
+    margin: 0;
+    font-weight: 500;
+    color: var(--grey-tone-123);
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-ancillary-7);
+}
+.wholefoods--page p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    font-weight: 350;
+    line-height: 1.5;
+    color: var(--grey-tone-123);
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-ancillary-6);
+}
+.wholefoods__grid {
+    display: grid;
+    grid-template-columns: repeat(25,1fr);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .wholefoods--page p {
     margin-top: 0;
@@ -248,4 +273,152 @@
     justify-content: center;
     align-items: center;
     color: var(--green-9) !important;
+}
+
+.wholefoods__container {
+    position: relative;
+    top: -4px;
+}
+.wholefoods__banner {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+}
+.wholefoods__gridC {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    grid-column-start: 1;
+    grid-column-end: 26;
+    z-index: -1;
+}
+.wholefoods__gridCBanner {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 66%;
+    background-image: url('../../images/wholefoods-banner.jpg');
+}
+.wholefoods__bannerPanel {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.wholefoods__bannerP {
+    padding: 30px 60px;
+    margin: 60px 0;
+    background-color: var(--white);
+}
+p.wholefoods__bannerText {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.wholefoods__bannerCta {
+    margin-top: 20px;
+    line-height: 0;
+    font-size: 1rem;
+}
+.wholefoods__btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: .75rem 1.875rem .625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: normal;
+    border-bottom: .125rem solid transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: var(--font-ancillary-6);
+}
+.wholefoods__btn.wholefoods__btn--primary {
+    color: var(--white);
+    background-color: var(--green-9);
+}
+.wholefoods__btn.wholefoods__btn--secondary {
+    color: var(--green-9);
+    border-color: var(--green-9);
+    background-color: transparent;
+}
+.wholefoods__btn.wholefoods__btn--external {
+    position: relative;
+    padding-right: 3.5rem;
+}
+.wholefoods__btn--external:after {
+    position: absolute;
+    content: '';
+    right: calc(56px - 1.875rem);
+    top: calc(12px - .1875rem);
+    height: 1rem;
+    width: 1rem;
+    background-image: url("../../images/link-external.svg");
+    background-position: center;
+    background-size: contain;
+}
+.wholefoods__disclaimer {
+    width: 100%;
+    margin-top: 20px;
+    font-weight: 350;
+    color: var(--grey-tone-126);
+    font-family: var(--font-ancillary-6);
+}
+.wholefoods__bannerNav {
+    display: block;
+    list-style: none;
+    width: 100%;
+    padding: 20px 60px;
+    margin: -20px 0 0;
+    font-size: 0;
+    text-align: center;
+    background-color: var(--tahini-grey);
+}
+.wholefoods__bannerNav li {
+    display: inline-block;
+    font-size: 0;
+    padding: 20px 10px 10px;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .wholefoods__bannerTitle {
+        font-size: 4.375rem;
+    }
+    .wholefoods--page h2 {
+        font-size: 4.375rem;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .wholefoods__interstitial {
+        margin-bottom: 120px;
+    }
+    .wholefoods--page h2 {
+        font-size: 4.375rem;
+        line-height: 4.75rem;
+    }
+    .wholefoods__gridCBanner {
+        display: block;
+    }
+    .wholefoods__bannerTitle {
+        font-size: 4.375rem;
+        line-height: 4.75rem;
+    }
+    .wholefoods__disclaimer p {
+        margin: 0;
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
 }

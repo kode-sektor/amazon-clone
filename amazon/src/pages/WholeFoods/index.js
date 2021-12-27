@@ -18,19 +18,19 @@ import './index.css'
 
 const WholeFoods = () => {
 
-    const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
+    const [storedropdownOpen, setstoredropdownOpen] = useState(false)    // flag dropdown
     // const [countryDropDown, setCountryDropDown] = useState(false)
 
     // Show or Hide Language Modal
-    // toggleModal is a parent function because while true that a click on the 'Canada' 
+    // toggleModal is a parent function because while true that a click on the 'Canada'
     // button shows it, a click on the parent modal is also responsible for hiding both
-    // the parent modal and this langModal. Thus its more correct that the function of 
+    // the parent modal and this langModal. Thus its more correct that the function of
     // this langModal is moved to the parent Module (Layout/index.js)
 
     // Flag dropdown
-    const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
-    const flagdropdownEnter = () => setFlagdropdownOpen(true)
-    const flagdropdownLeave = () => setFlagdropdownOpen(false)
+    const storedropdown = () => setstoredropdownOpen(storedropdownOpen => !storedropdownOpen)
+    // const storedropdownEnter = () => setstoredropdownOpen(true)
+    // const storedropdownLeave = () => setstoredropdownOpen(false)
 
     return (
         <div className="wholefoods--page">
@@ -84,7 +84,7 @@ const WholeFoods = () => {
                         <section className="wholefoods__navSearchWrapper">
                             <div className="wholefoods__navSearchContainer">
                                 <form action="">
-                                <UncontrolledDropdown isOpen={flagdropdownOpen} toggle={flagdropdown} tag="span" className="">
+                                <UncontrolledDropdown isOpen={storedropdownOpen} toggle={storedropdown} tag="span" className="">
                                     <DropdownToggle className="btn__no__style p-0">
                                         <button className="wholefoods__searchIcon">
                                             <BsSearch />
@@ -186,6 +186,57 @@ const WholeFoods = () => {
                     </div>
                 </section>
             </header>
+            <main className="wholefoods__container">
+                <section className="wholefoods__interstitial">
+                    <section className="wholefoods__banner">
+                        <section className="wholefoods__grid">
+                            <section className="wholefoods__gridC">
+                                <div className="wholefoods__gridCBanner"></div>
+                            </section>
+                            <section className="wholefoods__bannerPanel">
+                                <section className="wholefoods__bannerP">
+                                    <h2 className="wholefoods__bannerTitle">
+                                        Start the Countdown, Skip the Cooking
+                                    </h2>
+                                    <p className="wholefoods__bannerText">
+                                        Ring in 2022 and revel in the celebration without all the work in the kitchen. Our menu packs all the festive treats you need to end the year with a flourish.
+                                    </p>
+                                    <div className="wholefoods__bannerCta">
+                                        <Link className="wholefoods__btn wholefoods__btn--primary">
+                                            Order Now
+                                        </Link>
+                                    </div>
+                                    <section className="wholefoods__disclaimer">
+                                        <p>Order between October 27 and December 29. Must provide 48-hour notice for all catering orders. Cancellations require 24-hour notice.</p>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <ul className="wholefoods__bannerNav">
+                        <li>
+                            <Link to="/" className="wholefoods__btn wholefoods__btn--secondary wholefoods__btn--external">
+                                Get delivery &amp; pickup
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className="wholefoods__btn wholefoods__btn--secondary">
+                                See weekly sales
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className="wholefoods__btn wholefoods__btn--secondary">
+                                Browse products
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className="wholefoods__btn wholefoods__btn--secondary">
+                                Find a store
+                            </Link>
+                        </li>
+                    </ul>
+                </section>
+            </main>
         </div>
     )
 }
