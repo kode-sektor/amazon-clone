@@ -46,6 +46,7 @@ import WarehouseDeals from "./pages/WarehouseDeals"
 import AmazonAdvertising from "./pages/AmazonAdvertising"
 import GoodReads from "./pages/GoodReads"
 import IMDB from "./pages/IMDB"
+import WholeFoods from "./pages/WholeFoods"
 
 
 function App() {
@@ -98,6 +99,7 @@ function App() {
                     <Route path="/amazon-advertising" component={AmazonAdvertising}/>
                     <Route path="/good-reads" component={GoodReads}/>
                     <Route path="/imdb" component={IMDB}/>
+                    <Route path="/wholefoods" component={WholeFoods}/>
                 </Switch>
             </Router>
         </div>

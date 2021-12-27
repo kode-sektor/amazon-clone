@@ -649,7 +649,6 @@
     overflow: auto;
     scroll-behavior: smooth;
     transition: left .5s ease-out;
-    border: thin solid orange;
 }
 .imdb__sliderSec--stretch {
     flex-basis: 100%;
@@ -712,7 +711,6 @@
 .imdb__exploreTabs {
     padding-bottom: 16px;
     padding-left: 24px;
-    border: thin solid bisque;
 }
 .imdb__exploreTabs .ipc__tab {
     color: var(--white);
@@ -772,7 +770,6 @@
 }
 .imdb__recentlyViewed {
     padding-top: 24px;
-    border: thin solid tomato;
 }
 
 .imdb__footer {
@@ -787,7 +784,6 @@
     text-decoration: inherit;
     text-transform: inherit;
     -webkit-font-smoothing: auto;
-    border: thin solid saddlebrown;
     background: var(--black);
     font-family: var(--font-ancillary-5);
 }

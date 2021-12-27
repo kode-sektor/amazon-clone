@@ -142,7 +142,10 @@ file rather than small ones. Your choice
     --green-4: #067D62;
     --green-5: #284d40;
     --green-6: #7fda69;
-    --green-7: #00635D;
+    --green-7: #00635d;
+    --green-8: #2c8746;
+    --green-9: #004e36;
+    --green-10: #006f46;
 
     --brown: #ff6138;
     --brown-1: #382110;
@@ -416,6 +419,9 @@ file rather than small ones. Your choice
     --grey-tone-120: #121212;
     --grey-tone-121: #1f1f1f;
     --grey-tone-122: #1a1a1a;
+    --grey-tone-123: #2e2d2b;
+    --grey-tone-124: #e4e4e4;
+    --grey-tone-125: #f8f7f5;
 	
     --black: #000;
     --white: #fff;
@@ -643,6 +649,25 @@ a:hover, .a__color__button__link:hover {
 /* li a {
 	display: block;
 } */
+button.no__style, .btn__no__style {
+    width: 100% !important;
+    text-align: left !important;
+    background: transparent !important;
+    box-shadow: 0px 0px 0px transparent !important;
+    border: 0px solid transparent !important;
+    text-shadow: 0px 0px 0px transparent !important;
+}
+button.no__style:hover, button.no__style:focus,
+.btn__no__style:hover, .btn__no__style:focus {
+    background: transparent !important;
+    box-shadow: 0px 0px 0px transparent !important;
+    border: 0px solid transparent !important;
+    text-shadow: 0px 0px 0px transparent !important;  
+}
+button.no__style:active, .btn__no__style:active {
+    outline: none !important;
+    border: none !important;
+}
 .btn.btn__quarternary {
     border: 1px solid var(--light-slate-gray);
     border-radius: 3px;

@@ -1,0 +1,251 @@
+.wholefoods--page {
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: 1500px;
+    color: var(--grey-tone-123);
+    box-sizing: border-box;
+    font-family: "Circular Pro",Verdana,sans-serif;
+}
+.wholefoods--page p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+.wholefoods__header {
+    position: relative;
+}
+.wholefoods__alert {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    overflow: hidden;
+    text-align: center;
+    opacity: 1;
+    z-index: 11;
+    background-color: var(--green-8);
+    transition: max-height .5s ease;
+}
+.wholefoods__alertContent {
+    grid-column: 4/span 17;
+    grid-row: 1;
+    padding: 20px 0;
+}
+.wholefoods__alertContent p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 350;
+    text-align: center;
+    color: var(--white);
+}
+.wholefoods__link {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--white) !important;
+}
+.wholefoods__link span {
+    border-bottom: .125rem solid transparent;
+}
+.wholefoods__alertClose {
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    padding: 20px;
+    grid-column: span 2/-2;
+    grid-row: 1;
+    z-index: 1;
+}
+.wholefoods__alertClose svg {
+    font-size: 1.5em;
+    color: var(--white);
+}
+.wholefoods__nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 4%;
+    background: var(--green-9);
+    z-index: 11;
+}
+.wholefoods__nav > a {
+    display: block;
+    height: 2.3125rem;
+    width: 9rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../images/whole-foods.svg')
+}
+.wholefoods__navDivider {
+    content: '';
+    display: block;
+    height: 3.5625rem;
+    margin: 10px 20px;
+    border-right: 1px solid var(--white);
+}
+.wholefoods__globalMenu {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+}
+.wholefoods__globalMenu li {
+    list-style-type: none;
+    margin-right: 30px;
+    color: var(--white);
+}
+.wholefoods__globalMenu li:first-child {
+    margin-left: 0;
+}
+.wholefoods__globalMenu li a {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+.wholefoods__navSearch {
+    align-self: center;
+    justify-self: flex-end;
+    min-width: auto;
+    margin-left: auto;
+}
+.wholefoods__navSearchWrapper {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--green-9);
+}
+.wholefoods__navSearchContainer {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    max-width: 25rem;
+    transition: max-width .25s ease-in-out;
+}
+.wholefoods__navSearch form {
+    display: flex;
+    align-items: center;
+    padding: .5rem .6875rem;
+    border-radius: .125rem;
+    background-color: var(--white);
+}
+.wholefoods__navSearch form input {
+    flex: 1;
+    height: 26px;
+    padding: 1px 2px;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 350;
+    color: var(--grey-tone-123);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.wholefoods__navSearch form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: .9em;
+}
+.wholefoods__navSearch form input::-moz-placeholder { /* Firefox 19+ */
+    font-size: .9em;
+}
+.wholefoods__navSearch form input:-ms-input-placeholder { /* IE 10+ */
+    font-size: .9em;
+}
+.wholefoods__navSearch form input:-moz-placeholder { /* Firefox 18- */
+    font-size: .9em;
+}
+.wholefoods__searchIcon {
+    pointer-events: none;
+}
+.wholefoods__navSearch .dropdown {
+    white-space: nowrap;
+}
+.wholefoods__navDropdown {
+    position: absolute;
+    top: 40px !important;
+    left: -11px !important;
+    right: -11px !important;
+    overflow: hidden;
+    width: auto;
+    max-height: 800px;
+    min-width: 0;
+    padding: 1px 0;
+    font-size: initial;
+    color: var(--grey-tone-123);
+    opacity: 1;
+    z-index: 15;
+    transform: none !important;
+    transition: max-height .4s ease-in-out,opacity .4s ease-in-out;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0px;
+    background-color: var(--white);
+    border: 2px solid blue;
+}
+.wholefoods__navTitle {
+    margin: 0 20px 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grey-tone-124);
+}
+.wholefoods__navDropdown > ul {
+    overflow-y: scroll;
+    max-height: 55vh;
+    margin: 0;
+    padding: 0 20px;
+}
+.wholefoods__navDropdown > ul li a {
+    text-decoration: none;
+}
+.wholefoods__itemLine {
+    display: grid;
+    align-items: center;
+    gap: 0.625rem;
+    grid-template-columns: 4.375rem 1fr;
+    margin: 0.625rem 0;
+}
+.wholefoods__itemTitle {
+    line-height: 1.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--grey-tone-123);
+    border: none;
+}
+.wholefoods__itemTitle:hover, .wholefoods__itemTitle:focus {
+    color: var(--green-10);
+    text-decoration: underline;
+}
+.wholefoods__navLogin {
+    position: relative;
+    display: inline-flex;
+    align-self: center;
+    margin-left: 30px;
+}
+.wholefoods__navLogin a {
+    color: var(--white);
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+.wholefoods__store {
+    position: relative;
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(25,1fr);
+    z-index: 10;
+    background-color: var(--grey-tone-125);
+}
+.wholefoods__storeBlock {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: 2/-2;
+    min-height: 2.625rem;
+}
+.wholefoods__storeBlock a {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--green-9) !important;
+}

@@ -57,7 +57,6 @@ const DropdownMenuLang = ({ type, optionList }) => {
                             </>
                         )
                     }              
-                                 
                 </div>
             </DropdownMenu>
         )

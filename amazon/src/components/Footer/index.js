@@ -311,7 +311,7 @@ const Footer = (props) => {
                                                 Real Food
                                             </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/wholefoods", 
                                         icon: null },
                                     { 
                                         label: 
