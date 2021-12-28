@@ -13,6 +13,8 @@ import search_coffee from '../../images/img-search-coffee.png'
 import search_chicken from '../../images/img-search-chicken.png'
 import search_cheese from '../../images/img-search-cheese.png'
 import search_tea from '../../images/img-search-tea.png'
+import  wholefoods_interstitial_banner from '../../images/wholefoods-interstitial-banner.jpg'
+import  wholefoods_interstitial_banner_two from '../../images/wholefoods-interstitial-banner-two.jpg'
 
 import './index.css'
 
@@ -235,6 +237,44 @@ const WholeFoods = () => {
                             </Link>
                         </li>
                     </ul>
+                </section>
+                <section className="wholefoods__interstitialSec">
+                    <section className="wholefoods__panel wholefoods__panel--white wholefoods__panel--shadow">
+                        <header>
+                            <h2 className="wholefoods__bannerTitle">Start the Countdown, Skip the Cooking</h2>
+                        </header>
+                        <p className="wholefoods__bannerText">
+                            Ring in 2022 and revel in the celebration without all the work in the kitchen. Our menu packs all the festive treats you need to end the year with a flourish.
+                        </p>
+                        <div className="wholefoods__bannerCta mt-0">
+                            <Link className="wholefoods__btn wholefoods__btn--primary" to="/">
+                                See all sales
+                            </Link>
+                        </div>
+                        <section className="wholefoods__disclaimer">
+                            <p>*Valid 12/26-12/31/21. Restrictions apply.</p>
+                        </section>
+                    </section>
+                    <img className="wholefoods__interstitImg" src={wholefoods_interstitial_banner} alt="wholefoods interstitial banner" />
+                </section>
+                <section className="wholefoods__interstitialSec">
+                    <section className="wholefoods__panel wholefoods__panel--white wholefoods__panel--shadow">
+                        <header>
+                            <h2 className="wholefoods__bannerTitle">Ace New Year’s Eve with our caviar guide.</h2>
+                        </header>
+                        <p className="wholefoods__bannerText">
+                            Toast to the new year in style. Get the lowdown on our favorite caviar picks and perfect pairings, plus tips for how to buy and serve.
+                        </p>
+                        <div className="wholefoods__bannerCta mt-0">
+                            <Link className="wholefoods__btn wholefoods__btn--primary" to="/">
+                                See the guide
+                            </Link>
+                        </div>
+                        <section className="wholefoods__disclaimer">
+                            <p>*Valid 12/26-12/31/21. Restrictions apply.</p>
+                        </section>
+                    </section>
+                    <img className="wholefoods__interstitImg" src={wholefoods_interstitial_banner} alt="wholefoods interstitial banner" />
                 </section>
             </main>
         </div>

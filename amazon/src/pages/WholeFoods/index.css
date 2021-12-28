@@ -318,6 +318,10 @@ p.wholefoods__bannerText {
     margin-top: 20px;
     margin-bottom: 0;
 }
+.wholefoods__interstitialSec p.wholefoods__bannerText {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 .wholefoods__bannerCta {
     margin-top: 20px;
     line-height: 0;
@@ -378,7 +382,7 @@ p.wholefoods__bannerText {
     margin: -20px 0 0;
     font-size: 0;
     text-align: center;
-    background-color: var(--tahini-grey);
+    background-color: var(--grey-tone-125);
 }
 .wholefoods__bannerNav li {
     display: inline-block;
@@ -386,6 +390,28 @@ p.wholefoods__bannerText {
     padding: 20px 10px 10px;
     margin-top: 0;
 }
+.wholefoods__interstitialSec {
+    display: grid;
+    grid-template-columns: repeat(25,1fr);
+    grid-template-rows: 1fr min-content;
+    margin-bottom: 120px;
+}
+.wholefoods__panel {
+    padding: 30px 60px;
+    background-color: transparent;
+}
+.wholefoods__panel.wholefoods__panel--white {
+    background-color: var(--white);
+}
+.wholefoods__panel--shadow {
+    box-shadow: 30px 0 30px rgb(0 0 0 / 10%);
+}
+.wholefoods__interstitialSec header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
 
 
 
@@ -418,7 +444,29 @@ p.wholefoods__bannerText {
     }
     .wholefoods__disclaimer p {
         margin: 0;
-        font-size: .875rem;
         line-height: 1.25rem;
+        font-size: .875rem;
+    }
+    .wholefoods__interstitialSec .wholefoods__panel {
+        grid-column: 3/span 10;
+        grid-row: 2/3;
+        z-index: 1;
+    }
+    .wholefoods__interstitialSec:nth-of-type(odd) .wholefoods__panel {
+        grid-column: 14/-2;
+        grid-row: 2/3;
+        z-index: 1;
+    }
+    .wholefoods__interstitialSec .wholefoods__bannerTitle {
+        font-size: 3.25rem;
+        line-height: 3.5rem;
+    }
+    .wholefoods__interstitImg {
+        grid-column: 6/-3;
+        grid-row: 1/3;
+    }
+    .wholefoods__interstitImg:nth-of-type(odd) {
+        grid-column: 1/21;
+        grid-row: 1/3;
     }
 }
