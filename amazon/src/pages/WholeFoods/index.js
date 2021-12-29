@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from 'reactstrap';
 
 import { RiCloseFill } from 'react-icons/ri'
 import { BsSearch, BsArrowRight } from 'react-icons/bs'
@@ -35,13 +35,6 @@ import './index.css'
 const WholeFoods = () => {
 
     const [storedropdownOpen, setstoredropdownOpen] = useState(false)    // flag dropdown
-    // const [countryDropDown, setCountryDropDown] = useState(false)
-
-    // Show or Hide Language Modal
-    // toggleModal is a parent function because while true that a click on the 'Canada'
-    // button shows it, a click on the parent modal is also responsible for hiding both
-    // the parent modal and this langModal. Thus its more correct that the function of
-    // this langModal is moved to the parent Module (Layout/index.js)
 
     // Flag dropdown
     const storedropdown = () => setstoredropdownOpen(storedropdownOpen => !storedropdownOpen)

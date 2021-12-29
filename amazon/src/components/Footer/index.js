@@ -214,7 +214,7 @@ const Footer = (props) => {
                                                         from Amazon
                                                     </span>
                                             </>, 
-                                            href: "/", 
+                                            href: "/amazon-drive", 
                                             icon: null 
                                     },
                                     { 
