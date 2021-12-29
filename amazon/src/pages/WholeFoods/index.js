@@ -5,6 +5,9 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from
 
 import { RiCloseFill } from 'react-icons/ri'
 import { BsSearch, BsArrowRight } from 'react-icons/bs'
+import { FaFacebook } from 'react-icons/fa'
+import { AiFillTwitterCircle, AiOutlineInstagram, AiFillYoutube } from 'react-icons/ai'
+import { TiSocialPinterestCircular } from 'react-icons/ti'
 
 import Slider from '../../components/UI/Carousel/Carousel'
 
@@ -433,6 +436,208 @@ const WholeFoods = () => {
                     </section>
                 </section>
             </main>
+            <footer className="wholefoods__footer">
+                <section className="wholefoods__footerPry">
+                    <ul>
+                        <li>
+                            <h4 className="wholefoods__footerHead">Shopping</h4>
+                            <ul>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Weekly Sales</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Browse Products</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link wholefoods__link--external">
+                                        <span>Delivery and Pickup</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Meals and Catering</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Amazon Prime at Whole Foods</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link wholefoods__link--external">
+                                        <span>Gift Cards</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Special Diets</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Tips and Ideas</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Recipes</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4 className="wholefoods__footerHead">Mission in Action</h4>
+                            <ul>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Responsible Sourcing</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Quality Standards</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Community Giving</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Environmental Stewardship</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4 className="wholefoods__footerHead">About</h4>
+                            <ul>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>About Whole Foods Market</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Our Values</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Departments</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Environmental Stewardship</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Information and Potential Suppliers</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Careers</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>Newsroom</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4 className="wholefoods__footerHead">Need Help?</h4>
+                            <ul>
+                                <li>
+                                    <Link to="/" className="wholefoods__link">
+                                        <span>About Visit customer care</span>
+                                    </Link>
+                                </li>
+                            </ul>
+                            <section className="wholefoods__socials">
+                                <h4 className="wholefoods__footerHead mt-0">About</h4>
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <Link to="/" target="_blank" rel="noreferrer">
+                                                <FaFacebook />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" target="_blank" rel="noreferrer">
+                                                <AiFillTwitterCircle />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" target="_blank" rel="noreferrer">
+                                                <AiOutlineInstagram />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" target="_blank" rel="noreferrer">
+                                                <TiSocialPinterestCircular />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" target="_blank" rel="noreferrer">
+                                                <AiFillYoutube />
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <Link to="/" className="wholefoods__btn">
+                                    Sign up for email
+                                </Link>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+                <section className="wholefoods__footerSec">
+                    <section className="wholefoods__footerSecContainer">
+                        <ul>
+                            <li>
+                                <Link to="/" className="wholefoods__link">
+                                    Copyright 2021 Whole Foods Market IP. L.P.
+                                </Link>
+                            </li>
+                            <li><hr/></li>
+                            <li>
+                                <nav className="wholefoods__footerSecNav">
+                                    <ul>
+                                        <li>
+                                            <Link to="/" className="wholefoods__link">Privacy Notice</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" className="wholefoods__link">Conditions of Use</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" className="wholefoods__link">Interest-Based Ads</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" className="wholefoods__link">Site Map</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" className="wholefoods__link">Site Information</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/" className="wholefoods__link">Legal</Link>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
         </div>
     )
 }
