@@ -6,6 +6,8 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from
 import { RiCloseFill } from 'react-icons/ri'
 import { BsSearch, BsArrowRight } from 'react-icons/bs'
 
+import Slider from '../../components/UI/Carousel/Carousel'
+
 import search_salmon from '../../images/img-search-salmon.png'
 import search_milk from '../../images/img-search-milk.png'
 import search_bread from '../../images/img-search-bread.png'
@@ -15,6 +17,15 @@ import search_cheese from '../../images/img-search-cheese.png'
 import search_tea from '../../images/img-search-tea.png'
 import  wholefoods_interstitial_banner from '../../images/wholefoods-interstitial-banner.jpg'
 import  wholefoods_interstitial_banner_two from '../../images/wholefoods-interstitial-banner-two.jpg'
+import  all_caviar from '../../images/all-caviar.jpg'
+import  extra_twenty_sparkling_wine from '../../images/extra-twenty-sparkling-wine.jpg'
+import  off_holiday_cheeses from '../../images/off-holiday-cheeses.jpg'
+import  amazon_returns_instore from '../../images/amazon-returns-instore.jpg'
+import  organic_hot_cocoa from '../../images/organic-hot-cocoa.jpg'
+import  waterfront_red from '../../images/waterfront-red.jpg'
+import  prime_member_scanning_wfm_app from '../../images/prime-member-scanning-wfm-app.jpg'
+import  shopper_putting_order_in_car_trunk from '../../images/shopper-putting-order-in-car-trunk.jpg'
+import  avocado_on_white from '../../images/avocado-on-white.jpg'
 
 import './index.css'
 
@@ -241,10 +252,10 @@ const WholeFoods = () => {
                 <section className="wholefoods__interstitialSec">
                     <section className="wholefoods__panel wholefoods__panel--white wholefoods__panel--shadow">
                         <header>
-                            <h2 className="wholefoods__bannerTitle">Start the Countdown, Skip the Cooking</h2>
+                            <h2 className="wholefoods__bannerTitle">Save 30% on raw, cooked and breaded shrimp.*</h2>
                         </header>
                         <p className="wholefoods__bannerText">
-                            Ring in 2022 and revel in the celebration without all the work in the kitchen. Our menu packs all the festive treats you need to end the year with a flourish.
+                            Prime members, make your New Year's Eve spread one to remember with 30% off shrimp from December 26 through 31*.
                         </p>
                         <div className="wholefoods__bannerCta mt-0">
                             <Link className="wholefoods__btn wholefoods__btn--primary" to="/">
@@ -274,7 +285,152 @@ const WholeFoods = () => {
                             <p>*Valid 12/26-12/31/21. Restrictions apply.</p>
                         </section>
                     </section>
-                    <img className="wholefoods__interstitImg" src={wholefoods_interstitial_banner} alt="wholefoods interstitial banner" />
+                    <img className="wholefoods__interstitImg" src={wholefoods_interstitial_banner_two} alt="wholefoods interstitial banner two" />
+                </section>
+                <section className="wholeFoodsComponent">
+                    <ul className="ml-0">
+                        <li>
+                            <Link to="/">
+                                <section className="wholeFoodsComp__image">
+                                    <img src={all_caviar} alt="all caviar" />
+                                </section>
+                                <h2 className="wholeFoodsComponent__title">
+                                    <span>All Caviar 25% off. See terms.</span>
+                                </h2>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                <section className="wholeFoodsComp__image">
+                                    <img src={extra_twenty_sparkling_wine} alt="extra twenty sparkling wine" />
+                                </section>
+                                <h2 className="wholeFoodsComponent__title">
+                                    <span>Extra 20% off select sparkling wines. See terms.</span>
+                                </h2>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                <section className="wholeFoodsComp__image">
+                                    <img src={off_holiday_cheeses} alt="off holiday cheeses" />
+                                </section>
+                                <h2 className="wholeFoodsComponent__title">
+                                    <span>Take 30% off holiday cheeses 12/26 – 12/30. See terms.</span>
+                                </h2>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                <section className="wholeFoodsComp__image">
+                                    <img src={amazon_returns_instore} alt="amazon returns instore" />
+                                </section>
+                                <h2 className="wholeFoodsComponent__title">
+                                    <span>Easy Amazon returns in-store. Learn more.</span>
+                                </h2>
+                            </Link>
+                        </li>
+                    </ul>
+                </section>
+                <section className="wholeFoods__carousel wholeFoods__cmsGrid">
+                    <div className="wholeFoods__carouselBar"></div>
+                    <section className="wholeFoods__carouselC">
+                        <div>
+                            <h2 className="wholeFoods__carouselHeader">
+                                Discover Our Latest &amp; Greatest
+                            </h2>
+                            <p>Check out limited-time-only finds and seasonal favorites that are hot right now.</p>
+                        </div>
+                    </section>
+                    <section className="wholeFoods__slider">
+                        <Slider 
+                            type={"wholefoods"}
+                            carouselClass={"amzn__carousel"}
+                            items={
+                                [
+                                    {
+                                        href_one: "/",
+                                        href_two: "/",
+                                        href_three: "/",
+                                        img_one: <img src={organic_hot_cocoa} alt="carousel image" />,
+                                        img_two: <img src={organic_hot_cocoa} alt="carousel image" />,
+                                        img_three: <img src={organic_hot_cocoa} alt="carousel image" />,
+                                        caption_one: "Only Through December: 365 by Whole Food Market Organic Hot Cocoa Flavored Ice Cream  Sandwiches",
+                                        caption_two: "Only Through December: 365 by Whole Food Market Organic Hot Cocoa Flavored Ice Cream  Sandwiches",
+                                        caption_three: "Only Through December: 365 by Whole Food Market Organic Hot Cocoa Flavored Ice Cream  Sandwiches"
+                                    },
+                                    {
+                                        href_one: "/",
+                                        href_two: "/",
+                                        href_three: "/",
+                                        img_one: <img src={organic_hot_cocoa} alt="carousel image" />,
+                                        img_two: <img src={organic_hot_cocoa} alt="carousel image" />,
+                                        img_three: <img src={organic_hot_cocoa} alt="carousel image" />,
+                                        caption_one: "Only Through December: 365 by Whole Food Market Organic Hot Cocoa Flavored Ice Cream  Sandwiches",
+                                        caption_two: "Only Through December: 365 by Whole Food Market Organic Hot Cocoa Flavored Ice Cream  Sandwiches",
+                                        caption_three: "Only Through December: 365 by Whole Food Market Organic Hot Cocoa Flavored Ice Cream  Sandwiches"
+                                    }
+                                ]
+                            }
+                        />
+                    </section>
+                </section>
+                <section className="wholefoods__interstitialSec wholefoods__interstitialSec--secondary wholeFoods__cmsGrid">
+                    <section className="wholefoods__galleryContent">
+                        <h2>Our purpose is to nourish people &amp; the planet.</h2>
+                    </section>
+                    <img className="img__bannerSec" src={waterfront_red} alt="waterfront end" />
+                </section>
+                <section className="wholefoods__montage wholefoods__grid wholeFoods__cmsGrid wholefoods__interstitialSec">
+                    <section>
+                        <section className="wholefoods__panel wholefoods__panel--shadow wholefoods__panel--white">
+                            <h2 class="wholefoods__bannerTitle">More of what you love with Prime.</h2>
+                            <p class="wholefoods__bannerText">
+                                With a Prime membership, there’s a whole lot more to love about Whole Foods Market, from discounts all over the store to convenient delivery or pickup.*
+                            </p>
+                            <div className="wholefoods__bannerCta mt-0">
+                                <Link className="wholefoods__btn wholefoods__btn--primary" to="/">
+                                    Learn more
+                                </Link>
+                            </div>
+                            <section className="wholefoods__disclaimer">
+                                <p>
+                                    *Exclusively for Prime members in select ZIP codes. <br />
+                                    **Excludes alcohol.
+                                </p>
+                            </section>
+                        </section>
+                    </section>
+                    <section>
+                        <img src={prime_member_scanning_wfm_app} alt="Prime member scanning the WFM app" />
+                        <h3 className="wholeFoodsComponent__title__ii">
+                            Save more every time you shop.
+                        </h3>
+                        <p>
+                            Members always get an extra 10% off in-store sales.** Plus, deals on seasonal favorites and items chosen just for you.
+                        </p>
+                        <p className="wholefoods__link__ii">
+                            <Link to="/">
+                                <span>See all sales</span>
+                            </Link>
+                        </p>
+                    </section>
+                    <section>
+                        <img src={shopper_putting_order_in_car_trunk} alt="shopper putting order in car trunk" />
+                        <h3 className="wholeFoodsComponent__title__ii">
+                            Save time with delivery or pickup.
+                        </h3>
+                        <p>
+                            Get your groceries delivered to your door or ready for you to pick up — when it works for you.
+                        </p>
+                        <p className="wholefoods__link__ii">
+                            <Link to="/">
+                                <span>Show me how</span>
+                            </Link>
+                        </p>
+                    </section>
+                    <section>
+                        <img src={avocado_on_white} alt="avocado on white" />
+                    </section>
                 </section>
             </main>
         </div>

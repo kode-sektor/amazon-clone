@@ -716,7 +716,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 						<li>
 							<figure>
 								{img}
-								<Link to="/">
+								<Link to={href}>
 									<div className="imdb__slideSecOverlay"></div>
 									{
 										!runtime && (
@@ -1094,6 +1094,68 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 					]
 					tempCarousel = []
 				}
+			})
+		}
+		else if (type === "wholefoods") {
+
+			slides = items.map((item, index) => {
+				const { href_one, img_one, caption_one,
+						href_two, img_two, caption_two,
+						href_three, img_three, caption_three
+				 }  = item
+				return (
+					<CarouselItem
+						className={carouselClass}
+						onExiting={() => setAnimating(true)}
+						onExited={() => setAnimating(false)}
+						key={index}
+					>	
+						<ul className="wholesaleFoods__cards">
+							<li>
+								<section className="d-flex w-100">
+									{img_one}
+								</section>
+								<section className="wholefoods__carouselTxt">
+									<p>
+										<Link to={href_one} className="wholefoods__link">
+											<span>
+												{caption_one}
+											</span>
+										</Link>
+									</p>
+								</section>
+							</li>
+							<li>
+								<section className="d-flex w-100">
+									{img_two}
+								</section>
+								<section className="wholefoods__carouselTxt">
+									<p>
+										<Link to={href_two} className="wholefoods__link">
+											<span>
+												{caption_two}
+											</span>
+										</Link>
+									</p>
+								</section>
+							</li>
+							<li>
+								<section className="d-flex w-100">
+									{img_three}
+								</section>
+								<section className="wholefoods__carouselTxt">
+									<p>
+										<Link to={href_three} className="wholefoods__link">
+											<span>
+												{caption_three}
+											</span>
+										</Link>
+									</p>
+								</section>
+							</li>
+						</ul>
+					</CarouselItem>
+				)
 			})
 		}
 		else {
