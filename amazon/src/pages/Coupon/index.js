@@ -11,7 +11,7 @@ import { UncontrolledDropdown, DropdownToggle } from 'reactstrap'
 import { CouponBtn } from '../../components/UI/Button'
 import CouponBox from '../../components/UI/CouponBox'
 import Slider from '../../components/UI/Carousel/Carousel'
-import CouponCarousel from '../../components/UI/Carousel/CouponCarousel'
+import CarouselCoupon from '../../components/UI/Carousel/CarouselCoupon'
 
 import Layout from '../../components/Layout'
 
@@ -206,7 +206,7 @@ const Coupon = () => {
                         </Link>
                     </p>
                     <section>
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Electronics &amp; Wireless</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -274,7 +274,7 @@ const Coupon = () => {
                                 />
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Toys &amp; Games</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -342,7 +342,7 @@ const Coupon = () => {
                                 />
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Home, Garden &amp; Tools</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -410,7 +410,7 @@ const Coupon = () => {
                                 />
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Grocery</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -478,7 +478,7 @@ const Coupon = () => {
                                 />
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Pets</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -546,7 +546,7 @@ const Coupon = () => {
                                 />
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Fashion &amp; Accessories</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -614,7 +614,7 @@ const Coupon = () => {
                                 />
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Beauty</>}
                             sort={"Sort by Category"}
                             optionList={ 
@@ -683,7 +683,7 @@ const Coupon = () => {
                                 
                             }
                         />
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Health &amp; Personal Care</>}
                             sort={"Sort by Category"}
                             optionList={ 

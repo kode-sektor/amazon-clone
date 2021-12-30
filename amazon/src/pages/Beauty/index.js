@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
-import CouponCarousel from '../../components/UI/Carousel/CouponCarousel'
+import CarouselCoupon from '../../components/UI/Carousel/CarouselCoupon'
 import Slider from '../../components/UI/Carousel/Carousel'
 import { GridOne } from '../../components/UI/Grid'
 import { CardSix, CardSeven } from '../../components/UI/Card'
@@ -698,7 +698,7 @@ const Beauty = () => {
                         />
                     </section>
                     <section>
-                        <CouponCarousel
+                        <CarouselCoupon
                             heading={<>Toys &amp; Games</>}
                             sort={"Sort by Category"}
                             optionList={ 

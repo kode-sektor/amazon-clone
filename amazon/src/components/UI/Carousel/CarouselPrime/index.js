@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-const PrimeCarousel = ({heading, link, slider, squished}) => {
+const CarouselPrime = ({heading, link, slider, squished}) => {
     return (
         <section className="prime__carousel">
             {slider}
@@ -9,4 +8,4 @@ const PrimeCarousel = ({heading, link, slider, squished}) => {
     )
 }
 
-export default PrimeCarousel
+export default CarouselPrime

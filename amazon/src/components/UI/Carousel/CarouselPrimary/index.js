@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const PrimaryCarousel = ({ heading, link, slider, squished }) => {
+const CarouselPrimary = ({ heading, link, slider, squished }) => {
     return (
         <div className={squished ? "primary__slider squished" : "primary__slider"}>
             <div className="primary__layout__inner">
@@ -17,4 +17,4 @@ const PrimaryCarousel = ({ heading, link, slider, squished }) => {
     )
 }
 
-export default PrimaryCarousel
+export default CarouselPrimary

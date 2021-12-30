@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
+import PrimaryCarousel from '../../components/UI/Carousel/CarouselPrimary'
 import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import Slider from '../../components/UI/Carousel/Carousel'
 import { GridOne } from '../../components/UI/Grid'

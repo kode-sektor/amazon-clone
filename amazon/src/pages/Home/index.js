@@ -5,7 +5,7 @@ import Layout from '../../components/Layout/index'
 import { CardOne, CardTwo, CardThree, CardFour, CardFive, CardVideo } from '../../components/UI/Card'
 
 import Slider from '../../components/UI/Carousel/Carousel'
-import PrimaryCarousel from '../../components/UI/Carousel/PrimaryCarousel'
+import CarouselPrimary from '../../components/UI/Carousel/CarouselPrimary'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 
 import user_avatar from '../../images/user-avatar.jpg'
@@ -234,7 +234,7 @@ const Home = () => {
                     />
                 </section>
                 <section className="secondary__layout">
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Browse stores, programs, and more"}
                         link={"Explore more"}
                         slider={
@@ -284,7 +284,7 @@ const Home = () => {
                         }
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Today's Deals"}
                         link={"See all deals"}
                         slider={
@@ -391,7 +391,7 @@ const Home = () => {
                         }
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Related to items that you've viewed"}
                         link={"See more"}
                         slider={
@@ -495,7 +495,7 @@ const Home = () => {
                         cardClass={"fluid__card"}
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Inspired by your purchases"}
                         slider={
                             <Slider 
@@ -544,7 +544,7 @@ const Home = () => {
                         }
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Inspired by your shopping trends"}
                         slider={
                             <Slider 
@@ -587,7 +587,7 @@ const Home = () => {
                         }
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Inspired by your shopping trends in Home, Garden & Tools"}
                         slider={
                             <Slider 
@@ -630,7 +630,7 @@ const Home = () => {
                         }
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Recommended items other customers often buy again"}
                         slider={
                             <Slider 
@@ -707,7 +707,7 @@ const Home = () => {
                         supportingTxt={"Explore toys and games to play with the family."}
                     />
                     <hr className="card__break"/>
-                    <PrimaryCarousel 
+                    <CarouselPrimary 
                         heading={"Most wished for in Video Games"}
                         squished={true}
                         slider={

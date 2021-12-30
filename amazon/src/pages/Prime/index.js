@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import PrimeDropdown from '../../components/UI/PrimeDropdown/index'
 
-import PrimeCarousel from '../../components/UI/Carousel/PrimeCarousel'
+import CarouselPrime from '../../components/UI/Carousel/CarouselPrime'
 import MiniSlider from '../../components/UI/Carousel/MiniSlider'
 import Slider from '../../components/UI/Carousel/Carousel'
 import Layout from '../../components/Layout/index'
@@ -128,7 +128,7 @@ const Prime = () => {
                         </section>
                     </header>
                     <section className="prime__body">
-                        <PrimeCarousel
+                        <CarouselPrime
                             slider={
                                 <Slider 
                                     type={"prime"}

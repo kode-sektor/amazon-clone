@@ -4,7 +4,7 @@ import './index.css'
 
 import { DropdownMenuMini } from '../../../UI/DropdownMenu'
 
-const CouponCarousel = ({heading, sort, optionList, slider}) => {
+const CarouselCoupon = ({heading, sort, optionList, slider}) => {
     return (
         <section className="coupon__shoveler">
             <header className="coupon__shovelerHeading d-flex mx-0 justify-content-between">
@@ -26,4 +26,4 @@ const CouponCarousel = ({heading, sort, optionList, slider}) => {
     )
 }
 
-export default CouponCarousel
+export default CarouselCoupon
