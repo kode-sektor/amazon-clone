@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { BrowseBoxSimple, BrowseCheckbox, BrowseBoxPrimary, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import SearchResult from '../../components/UI/SearchResult'
-import { Grid_One } from '../../components/UI/Grid'
+import { GridOne } from '../../components/UI/Grid'
 import { CardSix, CardSeven, BxcGrid } from '../../components/UI/Card'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
@@ -402,7 +402,7 @@ const Electronics = () => {
                         </div>
                     </section>
                     <section>
-                        <Grid_One   
+                        <GridOne   
                             title={"Featured categories"}
                             item={  /* Usually in 5's */
                                 [

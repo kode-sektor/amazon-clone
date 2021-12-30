@@ -1303,7 +1303,7 @@ a[href='mailto:'] {
 /*Indicate external links but override if your site*/
 
 a[href^='http:'] {
-	background: url() no-repeat right top;
+	/* background: url() no-repeat right top; */
 	padding-right: 10px;
 }
 a[href^='http://www.yoursite.com'], a[href^='http:yoursite.com'] {
@@ -1343,13 +1343,13 @@ input[type=checkbox] {
     bottom: -3px;
 }
 input:required, input[required] {
-	background-image: url();
+	/* background-image: url(); */
 }
 input:focus:invalid {
-	background-image: url();
+	/* background-image: url(); */
 }
 input:focus:valid {
-	background-image: url();
+	/* background-image: url(); */
 }
 input[required]:invalid, input[pattern]:invalid {
 	/border-color: #A53403;

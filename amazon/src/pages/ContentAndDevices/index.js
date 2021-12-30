@@ -30,7 +30,7 @@ import './index.css'
 const ContentAndDevices = () => {
 
     const [activeTab, setActiveTab] = useState("content")
-    const [defaultSlide, setDefaultSlide] = useState(true)
+    const [defaultSlide] = useState(true)
 
     const [open, setOpen] = useState(false)
 

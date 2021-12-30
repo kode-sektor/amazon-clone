@@ -6,7 +6,7 @@ import { DropdownMenuPrimary } from '../../components/UI/DropdownMenu'
 
 import CouponModal from '../../components/UI/Modal/CouponModal'
 
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu } from 'reactstrap'
+import { UncontrolledDropdown, DropdownToggle } from 'reactstrap'
 
 import { CouponBtn } from '../../components/UI/Button'
 import CouponBox from '../../components/UI/CouponBox'

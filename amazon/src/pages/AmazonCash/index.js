@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from '../../components/Layout'
-import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import { BrowseBoxSimple } from '../../components/UI/BrowseBox'
 
 import Helpful from './Helpful'
 

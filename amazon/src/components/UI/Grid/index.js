@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 
-const Grid_One = ({title, item}) => {
+const GridOne = ({title, item}) => {
     return (
         <section className="octopus__pc__category__card__v2">
             <header>
@@ -48,4 +48,4 @@ const Grid_One = ({title, item}) => {
     )
 }
 
-export { Grid_One }
+export { GridOne }

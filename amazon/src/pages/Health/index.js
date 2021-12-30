@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 import Slider from '../../components/UI/Carousel/Carousel'
-import { Grid_One } from '../../components/UI/Grid'
+import { GridOne } from '../../components/UI/Grid'
 import { CardSix, CardSeven } from '../../components/UI/Card'
 import SearchResult from '../../components/UI/SearchResult'
 import { SeeAllResults } from '../../components/UI/Button'
@@ -393,7 +393,7 @@ const Health = () => {
                             </section>
                         </section>
                         <section>
-                            <Grid_One   
+                            <GridOne   
                                 title={"Featured categories"}
                                 item={  /* Usually in 5's */
                                     [

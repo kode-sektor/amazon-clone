@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { BrowseBoxSimple, BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
-import { Grid_One } from '../../components/UI/Grid'
+import { GridOne } from '../../components/UI/Grid'
 import { CardSix, CardSeven } from '../../components/UI/Card'
 import SearchResult from '../../components/UI/SearchResult'
 import { SeeAllResults } from '../../components/UI/Button'
@@ -645,7 +645,7 @@ const Sports = () => {
                         </div>
                     </section>
                     <section>
-                        <Grid_One   
+                        <GridOne   
                             title={"Featured categories"}
                             item={  /* Usually in 5's */
                                 [

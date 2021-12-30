@@ -1583,11 +1583,11 @@ span.myx__button__inner {
 }
 .myx__button .myx__button__inner {
     background: var(--grey-tone-90);
-    background-image: linear-gradient(top, var(--grey-tone-16), var(--grey-tone-10));
+    background-image: linear-gradient(to top, var(--grey-tone-16), var(--grey-tone-10));
 }
 .myx__button__dark .myx__button__inner, .myx__button__search .myx__button__inner {
     background: var(--grey-tone-43);
-    background: linear-gradient(top,var(--grey-tone-44), var(--grey-tone-39));
+    background: linear-gradient(to top,var(--grey-tone-44), var(--grey-tone-39));
 }
 .myx__button__dark .myx__button__inner, .myx__button__search .myx__button__inner {
     box-shadow: 0 1px 0 rgb(255 255 255 / 15%) inset;
@@ -2000,7 +2000,7 @@ table.myx__bordered tr td:first-child, table.myx__bordered tr th:first-child {
 table.myx__bordered tr:first-child th {
     background: var(--grey-tone-95);
     background: var(--grey-tone-1);
-    background-image: linear-gradient(top,var(--grey-tone-96), var(--grey-tone-9));
+    background-image: linear-gradient(to top,var(--grey-tone-96), var(--grey-tone-9));
     box-shadow: 0 1px 0 rgb(255 255 255 / 50%) inset;
     border-color: var(--grey-tone-35);
     border-bottom: 1px solid var(--grey-tone-24);
@@ -2557,7 +2557,7 @@ ipc__poster, .ipc__photo, .ipc__slate {
 .ipc__tabs {
     position: relative;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     list-style: none;
     overflow-x: auto;
     overflow-y: hidden;

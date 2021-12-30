@@ -10,7 +10,7 @@ import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
 
 import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
 import Palette from '../../components/UI/Palette'
-import { Grid_One } from '../../components/UI/Grid'
+import { GridOne } from '../../components/UI/Grid'
 import { CardSix } from '../../components/UI/Card'
 
 import monterey_tv_stand from '../../images/products/convenience-concepts-151401W-designs2Go-monterey-tv-stand.jpg'
@@ -657,7 +657,7 @@ const HomeImprovement = () => {
                         </section>
                     </section>
                     <section>
-                        <Grid_One   
+                        <GridOne   
                             title={"Featured categories"}
                             item={  /* Usually in 5's */
                                 [
