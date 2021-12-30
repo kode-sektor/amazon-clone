@@ -35,10 +35,8 @@ const OrderHistory = () => {
     // Click on 'buy-again' should automatically activate tab
     windowId = (params.get("buy-again") === "true" ? "2" : "1") 
 
-    const [queryId, setQueryId] = useState(windowId)
-    
     const [activeTab, setActiveTab] = useState(windowId || '1')
-    const [initTab, setInitTab] = useState(true)    // default active tab style
+    // const [initTab, setInitTab] = useState(true)    // default active tab style
     const [fullWidthClass, setFullWidthClass] = useState(windowId === "2" ? "stretch" : "")   // layout adjustment
 
     const toggle = tab => {

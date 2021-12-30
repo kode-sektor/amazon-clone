@@ -72,7 +72,9 @@
     z-index: 1;
 }
 .octopus__pc__item__image__background__v3 {
-    background-image: radial-gradient(50% 50%, rgba(55, 62, 62, 0.00) 50%,
+    /* background-image: radial-gradient(50% 50%, rgba(55, 62, 62, 0.00) 50%,
+        rgba(55, 62, 62, 0.01) 74%, rgba(55, 62, 62, 0.05) 100%); */
+    background-image: radial-gradient(circle at center, rgba(55, 62, 62, 0.00) 50%,
         rgba(55, 62, 62, 0.01) 74%, rgba(55, 62, 62, 0.05) 100%);
 }
 .apb__browse__searchresults__product {

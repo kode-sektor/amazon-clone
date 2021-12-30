@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import Layout from '../../components/Layout/index'
 
@@ -15,7 +14,6 @@ import monterey_tv_stand from '../../images/products/convenience-concepts-151401
 import frosted_endtable from '../../images/products/global-furniture-clear-frosted-occasional-end-table.jpg'
 import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
 import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
-
 
 import './index.css'
 

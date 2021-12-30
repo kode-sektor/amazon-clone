@@ -25,7 +25,7 @@ const StickHeader = ({ children, sticky=false, className="", ...rest }) => {
         return function() {
             observer.unobserve(cachedRef)
         }
-    }, [])
+    }, [ref, isSticky])
     
     return (
         // 'sticky-top' is 'position: sticky' class from bootstrap

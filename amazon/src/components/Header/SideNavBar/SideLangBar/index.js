@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { RiArrowDropRightLine } from "react-icons/ri"
-
 import { RightArrow } from '../../../UI/Icons'
 
 import SideNav from 'react-simple-sidenav'

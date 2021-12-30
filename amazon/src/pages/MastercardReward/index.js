@@ -470,7 +470,7 @@ const MastercardReward = () => {
             }
         ]
 
-        const [gallery, setGallery] = useState(images)
+        const [gallery] = useState(images)
         const [galleryAll, setGalleryAll] = useState("")
 
         const showLightBoxGallery = (e, mode) => {
@@ -522,7 +522,7 @@ const MastercardReward = () => {
                                                     starOne={12}
                                                 />
                                             }
-                                            style={"rating"}
+                                            styling={"rating"}
                                         />
                                     </span>&nbsp;
                                     <Link to="/" className="mastercard__ratingsCount">

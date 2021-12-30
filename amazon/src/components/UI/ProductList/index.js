@@ -89,7 +89,7 @@ const ProductList = ({ amount, name, date, manufacturer, asin, modelno, rank }) 
                                         starOne={4}
                                     />
                                 }
-                                style={"rating"}
+                                styling={"rating"}
                             />
                         </span>
                         &nbsp; &nbsp; &nbsp;

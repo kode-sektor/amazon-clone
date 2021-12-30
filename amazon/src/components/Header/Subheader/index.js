@@ -19,7 +19,7 @@ const Subheader = (props) => {
     const [primedropdownOpen, setPrimedropdownOpen] = useState(false);    // Prime dropdown
 
     // Prime dropdown
-    const primedropdown = () => setPrimedropdownOpen(primedropdownOpen => !primedropdownOpen);
+    // const primedropdown = () => setPrimedropdownOpen(primedropdownOpen => !primedropdownOpen);
     const primedropdownEnter = () => setPrimedropdownOpen(true);
     const primedropdownLeave = () => setPrimedropdownOpen(false);
 

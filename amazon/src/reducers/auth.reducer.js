@@ -16,7 +16,7 @@ const initState = {
     formMsg : ''
 };
 
-export default (state = initState, action) => {
+const reducedFunction = (state = initState, action) => {
 
     switch (action.type) {
         case authConstants.LOGIN_REQUEST :
@@ -25,7 +25,10 @@ export default (state = initState, action) => {
                 authenticating: true
             }
         break;
+        default : 
+            state = initState
     }
     return state;
 }
 
+export default reducedFunction;

@@ -64,7 +64,7 @@ const Returns = () => {
                                                     </span>
                                                 </>
                                             }
-                                            style={"larger"}
+                                            styling={"larger"}
                                         />
                                     </span>
                                 </p>

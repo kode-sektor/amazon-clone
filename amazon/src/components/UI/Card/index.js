@@ -545,7 +545,7 @@ const CardEight = ({items, link, type=""}) => {
                                                         dropdown={
                                                             item.ratingGraph
                                                         }
-                                                        style={"rating"}
+                                                        styling={"rating"}
                                                     />
                                                 </span>
                                                 &nbsp;

@@ -10,7 +10,7 @@ import Layout from '../../components/Layout/index'
 import { JoinPrimeBtn } from '../../components/UI/Button'
 import PrimeHeader from '../../components/UI/PrimeHeader'
 
-import amzn__prime__faded from '../../images/prime-logo.png'
+import amzn_prime_faded from '../../images/prime-logo.png'
 
 import originals_the_boys from '../../images/amazon-originals-the-boys.jpg'
 import amazon_originals_hanna from '../../images/amazon-originals-hanna.jpg'
@@ -21,6 +21,9 @@ import shawn_mendes_illuminate from '../../images/amazon-music-shawn-mendes-illu
 import imagine_dragons_everything from '../../images/amazon-music-imagine-dragons-everything.jpg'
 import amazon_music_everything_now from '../../images/amazon-music-everything-now.jpg'
 import amazon_music_more_life from '../../images/amazon-music-more-life.jpg'
+
+import sticky_nav_prime from '../../images/sticky-nav-prime.svg'
+import arrow_down from '../../images/arrow-down.svg'
 
 import './index.css'
 
@@ -50,7 +53,7 @@ const Prime = () => {
             return function() {
                 observer.unobserve(cachedRef)
             }
-        }, [])
+        }, [ref])
         
         return (
             <section ref={ref} {...rest}>
@@ -68,13 +71,13 @@ const Prime = () => {
                 />
                 <div className={`prime__emergencyHeader ${isSticky ? "isSticky" : ""}`}>
                     <section className="prime__emergencyLogo">
-                        <img src="https://m.media-amazon.com/images/G/15/marketing/prime/detail_page/StickyNav_01_PrimeLogo_156x70._CB485945464_.svg" className="sticky-nav-prime-logo"/>                
+                        <img src={sticky_nav_prime} className="sticky-nav-prime-logo" alt="sticky nav prime" />                
                     </section>
                     <div className="prime__seeMore align-self-end">
                         <div className="prime__emergencyMembership">See more plans</div>
                         <div className="text-center" onClick={slideUp}>
                             <div className="plan__expander__icon">
-                                <img src="https://m.media-amazon.com/images/G/15/marketing/prime/detail_page/StickyNav_02_DownArrow_50x30._CB485936756_.svg"/>
+                                <img src={arrow_down} alt="arrow down"/>
                             </div>
                         </div>
                     </div>
@@ -120,7 +123,7 @@ const Prime = () => {
                                 <div className="sprite white__arrow__small"></div>
                             </p>
                             <div className="prime__header__logo">
-                                <img src={amzn__prime__faded} alt={amzn__prime__faded} />
+                                <img src={amzn_prime_faded} alt={amzn_prime_faded} />
                             </div>
                         </section>
                     </header>

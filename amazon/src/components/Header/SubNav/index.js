@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-
-import { subMenu } from '../../../utilities/data'
+import { NavLink } from 'react-router-dom'
 
 import GenericFlyoutMenu from './GenericFlyoutMenu'
 

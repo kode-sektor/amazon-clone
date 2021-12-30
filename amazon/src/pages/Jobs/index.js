@@ -20,8 +20,6 @@ import './index.css'
 
 const Jobs = (props) => {
 
-    const { modal, toggleModal, modalLangProps} = props
-
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
     // const [countryDropDown, setCountryDropDown] = useState(false)
 
@@ -33,8 +31,6 @@ const Jobs = (props) => {
 
     // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
-    const flagdropdownEnter = () => setFlagdropdownOpen(true)
-    const flagdropdownLeave = () => setFlagdropdownOpen(false)
 
     return (
         <div className="mainContent jobs">
@@ -218,7 +214,7 @@ const Jobs = (props) => {
                 <div className="container">
                     <div className="row">
                         <section className="employeeProfile__picture col-6 offset-3 offset-sm-0 col-sm-4">
-                            <img src={employee_profile_image_of_georgia} className="rounded-circle img-fluid" alt="employee profile image of Georgia"/>
+                            <img src={employee_profile_image_of_georgia} className="rounded-circle img-fluid" alt="employee profile of Georgia"/>
                         </section>
                         <section className="employeeProfile__info col-12 col-sm-8">
                             <h2 className="employeeProfile__name">Georgia</h2>
@@ -371,7 +367,7 @@ const Jobs = (props) => {
                                         optionList={ 
                                             languages.map(item => (
                                                 <li>
-                                                    <button type="button" value="Start machine" value={item.language} className="dropdown-item dropdownMenuLang">
+                                                    <button type="button" value={item.language} className="dropdown-item dropdownMenuLang">
                                                     {item.text}
                                                     </button>
                                                 </li>

@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { CancelBtnLink } from '../../components/UI/Button'
-
-import Subnav from '../../components/Header/SubNav'
 
 import your_orders_box from '../../images/your-orders-box.png'
 import return_and_refunds_box from '../../images/return-and-refunds-box.png'

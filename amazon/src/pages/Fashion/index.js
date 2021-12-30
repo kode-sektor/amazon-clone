@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Layout from '../../components/Layout'
 import ProgressiveSubNav from '../../components/Header/ProgressiveSubNav'
 
-import university_personal_care from '../../images/banner/university-personal-care.jpg'
 import women from '../../images/nav/women.gif'
 import men from '../../images/nav/men.gif'
 import girls from '../../images/nav/girls.gif'
@@ -56,7 +55,7 @@ const Fashion = () => {
                                             <ol className="sl__sobe__carousel__viewport__row__inner">
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
-                                                        <img src={women} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
+                                                        <img src={women} className="sl__sobe__carousel__sub__card__img" alt="women" style={{"max-width" : "75%",
     "max-height" : "75%"}} />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
