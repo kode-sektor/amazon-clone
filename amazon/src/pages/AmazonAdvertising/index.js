@@ -507,7 +507,7 @@ const AmazonAdvertising = () => {
                                 }
                             />
                             <CardTwo
-                                img={<img src={macdonalds_mcdelivery} alt="Image of McDonald’s McDelivery " />}
+                                img={<img src={macdonalds_mcdelivery} alt="McDonald’s McDelivery " />}
                                 title={"McDonald’s Canada established McDelivery as a food delivery leader in Canada with the help of Amazon Ads."}
                                 link={"/"}
                                 linkTxt={
@@ -534,7 +534,7 @@ const AmazonAdvertising = () => {
                         <section className="container">
                             <section className="columns__container columns__container--third columns__container--limit-width">
                                 <Card
-                                    img={<img src={person_holding_device} alt="Image of a person holding a device" />}
+                                    img={<img src={person_holding_device} alt="person holding a device" />}
                                     title={"Learn how brands can scale and measure their connections with audiences by using Amazon Marketing Cloud at unBoxed 2021."}
                                     link={"/"}
                                     linkTxt={

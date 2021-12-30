@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { Navbar, Nav, NavItem, NavLink, NavbarText,
-        Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'        
+import { Navbar, Nav, NavItem, NavLink, Dropdown, 
+        DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'        
 import { FaYoutube, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { RiFacebookCircleFill } from 'react-icons/ri'
 
 import { languages } from '../../utilities/data'
 
-import { PrimaryBtn__ii } from '../../components/UI/Button'
+import { PrimaryBtnII } from '../../components/UI/Button'
 import DropdownMenuLang from '../../components/UI/DropdownMenuCountries'
 import Tile from '../../components/UI/Tile'
 
@@ -67,7 +67,7 @@ const Advertising = () => {
                                 <Link to="/">Sign In</Link>
                             </li>
                             <li className="advertising__buttonRegister">
-                                <PrimaryBtn__ii
+                                <PrimaryBtnII
                                     text={"Register"}
                                 />
                             </li>
@@ -81,7 +81,7 @@ const Advertising = () => {
                                         optionList={
                                             languages.map(item => (
                                                 <li>
-                                                    <button type="button" value="Start machine" value={item.language} className="dropdown-item">
+                                                    <button type="button" value={item.language} className="dropdown-item">
                                                         {item.text}
                                                     </button>
                                                 </li>
@@ -317,7 +317,7 @@ const Advertising = () => {
                                         </header>
                                     </section>
                                     <section className="column columns__column padding__left__xlarge padding__right__xlarge align-center">
-                                        <img className="mw-100" src={two_X_image_hero_pink} alt="2 X image hero pink"/>
+                                        <img className="mw-100" src={two_X_image_hero_pink} alt="2 X img hero pink"/>
                                     </section>
                                 </div>
                             </div>

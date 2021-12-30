@@ -17,7 +17,7 @@ const LightBox = ({ toggleModal, galleryList, lightBoxPanel, images, showLightBo
     // Looping through our images array to create img elements
     const imageCards = images.slice(0, 4).map((image) => (
         <div className="master__commentsThumbnail">
-            <img className="image-card" onClick={(e) => showImage(e, image)} src={image.img} />
+            <img className="image-card" onClick={(e) => showImage(e, image)} src={image.img} alt="lightbox" />
         </div>
     ))
 

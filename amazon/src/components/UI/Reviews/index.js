@@ -124,7 +124,7 @@ const Reviews = ({ rating, lightbox, showLightBoxGallery, tags, country, post })
                                                 {body}
                                                 <div className="a__expander__header a__expander__partial__collapse__header">
                                                     <div class="a__expander__content__fade"></div>
-                                                    <Link to="javascript:void(0)" className="a__declarative">
+                                                    <Link className="a__declarative disabled">
                                                         <i className="a__icon a__icon__extender__expand"></i>
                                                         <span className="a__expander__prompt">Read more</span>
                                                     </Link>

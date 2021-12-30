@@ -2,14 +2,13 @@ import React, { useState } from 'react'
 
 import { DropdownMenu } from 'reactstrap'
 
-
 const CouponModal = () => {
 
     let path = ""
     path = window.location.pathname
     path = (path === "/promotions/details") ? ("promoModal") : ("")
 
-    const [couponShow, setCouponShow] = useState(path)
+    const [ couponShow ] = useState(path)
 
     return (
         <DropdownMenu className={`coupon__popover ${couponShow}`}>

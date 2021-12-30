@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { Row, Col } from 'reactstrap'
@@ -7,11 +6,10 @@ import { Row, Col } from 'reactstrap'
 import { OrderButton, BuyAgainBtn, PrimaryBtn } from '../../UI/Button'
 import Popover from '../Popover'
 
-import './index.css'
-
 import kichly_cheese_greater from '../../../images/thumbnails/products/kichly-cheese-grater-for-kitchen-stainless-steel.jpg'
 import gift_icon from '../../../images/thumbnails/icons/gift-icon.png'
 
+import './index.css'
 
 const TabOrder = ({tabHeading, tabBody, mode}) => {
 

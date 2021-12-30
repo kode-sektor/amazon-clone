@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import LightBoxModal from '../../components/UI/LightBox/LightBoxModal'
-
 import Layout from '../../components/Layout'
 import Popover from '../../components/UI/Popover'
 import Rating from '../../components/UI/Rating'
@@ -21,6 +19,7 @@ import marketing_page_extra_1_cb from '../../images/marketing-page-extra-1-cb.pn
 import marketing_page_gc_cb from '../../images/marketing-page-gc-cb.png'
 import marketing_page_instant_use from '../../images/marketing-page-instant-use.png'
 import dp_footer_comp_all from '../../images/dp-footer-comp-all.png'
+import avatar from '../../images/avatar.png'
 
 import L61DDN5WdKQ from '../../images/L61DDN5WdKQ.jpg'
 import L71RCZ2H6p from '../../images/L71RCZ2H6p.jpg'
@@ -470,7 +469,7 @@ const MastercardReward = () => {
             }
         ]
 
-        const [gallery, setGallery] = useState(images)
+        const [gallery] = useState(images)
         const [galleryAll, setGalleryAll] = useState("")
 
         const showLightBoxGallery = (e, mode) => {
@@ -961,6 +960,7 @@ const MastercardReward = () => {
                         post={
                             [
                                 {
+                                    avatar : avatar,
                                     author : "Rusty",
                                     rating : "1",
                                     title : "Let me sum up everything here.... It's a 1% Amazon rewards card",

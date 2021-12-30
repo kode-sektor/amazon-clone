@@ -167,7 +167,7 @@ const PrimaryBtn = ({text="Add to Cart", slug, width="100%", mTop=""}) => {
     }
 }
 
-const PrimaryBtn__ii = ({text="Register"}) => (
+const PrimaryBtnII = ({text="Register"}) => (
     <Link to="/" className="primary__btn__ii">
         {text}
     </Link>
@@ -324,6 +324,6 @@ export {
     BtnPill, BtnPrimary, CancelBtnLink, CancelBtnPrimary, SaveBtnPrimary, JoinPrimeBtn,
     SearchButton, OrderButton, BuyAgainBtn, PrimaryBtn, CartBtn, CartBtnSmall, CartBtnSecondary,
     CouponBtn, SeeAllResults, LocationButton, SecondaryButton, BtnPillRounded, BtnPillRoundedSm,
-    BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtn__ii, 
+    BtnPillRoundedLg, BtnPillRoundedObscureLg, BtnSquarePrimary, ApplyToSellBtn, PrimaryBtnII, 
     ReportAbuse, MyxBtn, MusicBtn, BtnBook
 }

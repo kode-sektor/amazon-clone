@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 import './index.css'
 
-const BrowseBoxSimple = ({title, links, style=""}) => { // style = "squished"
+const BrowseBoxSimple = ({title, links, styling=""}) => { // style = "squished"
     return (
         <section className="browsebox">
             <h3 className="browsebox__title">{title}</h3>
-            <ul className={style}>  
+            <ul className={styling}>  
                 {
                     links.map((item, i) => (
                         <li key={i} className={item.carat && ("seeMore")}>

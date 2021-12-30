@@ -67,7 +67,7 @@ const AmazonCash = () => {
                                 }
                             ]
                         }
-                        style="squished"
+                        styling="squished"
                     />
                     <BrowseBoxSimple
                         title={"Amazon Payment Products"}
@@ -87,7 +87,7 @@ const AmazonCash = () => {
                                 }
                             ]
                         }
-                        style="squished"
+                        styling="squished"
                     />
                     <BrowseBoxSimple
                         title={"Gift Cards"}
@@ -107,7 +107,7 @@ const AmazonCash = () => {
                                 }
                             ]
                         }
-                        style="squished"
+                        styling="squished"
                     />
                 </section>
                 <section className="apBrowse flex-fill">

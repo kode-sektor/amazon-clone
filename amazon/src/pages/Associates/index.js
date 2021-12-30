@@ -21,8 +21,6 @@ import Slider from '../../components/UI/Carousel/Carousel'
 
 const Associates = () => {
 
-    const [isOpen, setIsOpen] = useState(false)
-
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
     const [countrydropdownOpen, setCountrydropdownOpen] = useState(false)    // account dropdown
 

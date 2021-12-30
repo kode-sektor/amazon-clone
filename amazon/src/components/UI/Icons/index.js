@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import back_arrow from '../../../images/amazon-back-arrow.png'
 import right_arrow_carrot from '../../../images/amazon-right-arrow-carrot.jpg'

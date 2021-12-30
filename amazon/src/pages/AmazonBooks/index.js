@@ -156,7 +156,7 @@ const AmazonBooks = () => {
                         <Navbar className="amazonBooks__headerWrap">
                             <Nav navbar>
                                 <NavItem className="position-relative">
-                                    <NavLink href="javascript:void(0)">
+                                    <NavLink>
                                         Shop by Category &nbsp;
                                         {
                                             !dropDownShopCategory && (

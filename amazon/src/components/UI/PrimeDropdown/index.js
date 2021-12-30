@@ -24,8 +24,8 @@ const PrimeDropdown = ({slideUp}) => {
             <section className="primeSticky__card">
                 <div className="primeSticky__cardInner">
                     <section className="primeSticky__cardHeader">
-                        <img src={primeAmazon} className="primeSticky__primeLogo"/>
-                        <img src={primeAmazonMain} className="primeSticky__primePlan"/>
+                        <img src={primeAmazon} className="primeSticky__primeLogo" alt="prime amazon" />
+                        <img src={primeAmazonMain} className="primeSticky__primePlan" alt="prime amazon main" />
                         <div className="primeSticky__headerTitle">
                             There's something for everyone                
                         </div>
