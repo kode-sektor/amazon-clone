@@ -26,9 +26,6 @@ const Associates = () => {
     const [flagdropdownOpen, setFlagdropdownOpen] = useState(false)    // flag dropdown
     const [countrydropdownOpen, setCountrydropdownOpen] = useState(false)    // account dropdown
 
-	// Toggle dropdowns
-    const toggle = () => setIsOpen(!isOpen)    // For main navigation expand / collapse
-
     // Flag dropdown
     const flagdropdown = () => setFlagdropdownOpen(flagdropdownOpen => !flagdropdownOpen) 
     const flagdropdownEnter = () => setFlagdropdownOpen(true)

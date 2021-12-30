@@ -32,8 +32,6 @@ const ContentAndDevices = () => {
     const [activeTab, setActiveTab] = useState("content")
     const [defaultSlide] = useState(true)
 
-    const [open, setOpen] = useState(false)
-
     const toggle = tab => {
         if (activeTab !== tab) setActiveTab(tab)
     }
@@ -50,30 +48,30 @@ const ContentAndDevices = () => {
                     </h1>
                     <section className="navOptions__alexa__myx">
                         <div className="navOptionContainer__alexa__myx">
-                            <div className="navOptionItem__alexa__myx" title="Content"
-                                className={classnames({ active: activeTab === 'content' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('content') }}>
+                            <div className={classnames({ active: activeTab === 'content' }, "navOptionItem__alexa__myx" )} role="button"
+                                onClick={() => { toggle('content') }}
+                                title="Content">
                                 Content
                             </div>
                         </div>
                         <div className="navOptionContainer__alexa__myx">
-                            <div className="navOptionItem__alexa__myx" title="Devices"
-                                className={classnames({ active: activeTab === 'devices' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('devices') }}>
+                            <div className={classnames({ active: activeTab === 'devices' }, "navOptionItem__alexa__myx" )} role="button"
+                                onClick={() => { toggle('devices') }}
+                                title="Devices">
                                 Devices
                             </div>
                         </div>
                         <div className="navOptionContainer__alexa__myx">
-                            <div className="navOptionItem__alexa__myx" title="Preferences"
-                                className={classnames({ active: activeTab === 'preferences' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('preferences') }}>
+                            <div className={classnames({ active: activeTab === 'preferences' }, "navOptionItem__alexa__myx" )}          role="button"
+                                onClick={() => { toggle('preferences') }}
+                                title="Preferences">
                                 Preferences
                             </div>
                         </div>
                         <div className="navOptionContainer__alexa__myx">
-                            <div className="navOptionItem__alexa__myx" title="Privacy Settings"
-                                className={classnames({ active: activeTab === 'privacy-settings' }, "navOptionItem__alexa__myx" )} role="button"
-                                onClick={() => { toggle('privacy-settings') }}>
+                            <div className={classnames({ active: activeTab === 'privacy-settings' }, "navOptionItem__alexa__myx" )} role="button"
+                                onClick={() => { toggle('privacy-settings') }}
+                                title="Privacy Settings">
                                 Privacy Settings
                             </div>
                             <div className="navOptionChildrenContainer__alexa__myx">
@@ -81,7 +79,7 @@ const ContentAndDevices = () => {
                                     Alexa Privacy
                                 </Link>
                                 <div className="navOptionChildItem__alexa__myx" onClick={() => { toggle('amazon-devices-privacy') }} role="button">
-                                    <Link href="javascript:void(0)" className="link__default">
+                                    <Link style={{pointerEvents: "none"}} className="link__default">
                                         Amazon Devices Privacy
                                     </Link>
                                 </div>

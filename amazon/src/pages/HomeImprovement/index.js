@@ -36,20 +36,18 @@ const HomeImprovement = () => {
     windowId = (params.get("buy-again") === "true" ? "2" : "1") 
 
     const [pageId, setPageId] = useState("")
-    const [queryId, setQueryId] = useState(windowId)
     
     const [activeTab, setActiveTab] = useState(windowId || '1')
 
     const toggle = tab => {
         if (activeTab !== tab) { 
             setActiveTab(tab)
-            // setInitTab(false)   // On click of any tab, reset automatic styling of first nav tab
         }
     }
 
     useEffect (() => {
         setPageId(pageClass)
-    })
+    }, [pageClass])
 
     const HomeImprovementPage = () => (
         <section className={`a__container ${pageId}`}>

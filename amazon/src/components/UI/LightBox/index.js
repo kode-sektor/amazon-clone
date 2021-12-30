@@ -4,7 +4,7 @@ import LightBoxModal from './LightBoxModal'
 
 import './index.css'
 
-const LightBox = ({toggleModal, lightBoxPanel, images, showLightBoxGallery}) => {
+const LightBox = ({ toggleModal, galleryList, lightBoxPanel, images, showLightBoxGallery }) => {
 
     // MAIN LIGHTBOX
     // Holds Images Cards and Lightbox
@@ -71,10 +71,11 @@ const LightBox = ({toggleModal, lightBoxPanel, images, showLightBoxGallery}) => 
 
     return (
         <>
-            <section className="a__spacing__small a__spacing__top__small">
+            <section className="a__spacing__small a__spacing__top__small" style={{border: "2px solid red"}}>
                 {imageCards}
             </section>
             <LightBoxModal
+                galleryList={galleryList}
                 imageDetails={imageToShow}
                 showPrev={showPrev}
                 showNext={showNext}

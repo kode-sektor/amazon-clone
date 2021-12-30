@@ -89,7 +89,7 @@ const Handmade = () => {
                             <section className="amazon__handmadeCards">
                                 <section className="amazon__handmadeCard col-4 text-center">
                                     <div className="amazon__handmadeCardImg">
-                                        <img src={marketplace_illustrations} title={"marketplace illustrations"}/>
+                                        <img src={marketplace_illustrations} title="marketplace illustrations" alt="marketplace illustrations" />
                                     </div>
                                     <h3 className="amazon__handmadeCardHead">
                                         Artisan only
@@ -100,7 +100,7 @@ const Handmade = () => {
                                 </section>
                                 <section className="amazon__handmadeCard col-4 text-center">
                                     <div className="amazon__handmadeCardImg">
-                                        <img src={entrepreneurs_bulb} title={"entrepreneurs bulb"}/>
+                                        <img src={entrepreneurs_bulb} title="entrepreneurs bulb" alt="entrepreneurs bulb" />
                                     </div>
                                     <h3 className="amazon__handmadeCardHead">
                                         No hidden fees
@@ -111,7 +111,7 @@ const Handmade = () => {
                                 </section>
                                 <section className="amazon__handmadeCard col-4 text-center">
                                     <div className="amazon__handmadeCardImg">
-                                        <img src={enhanced_content} title={"enhanced content"}/>
+                                        <img src={enhanced_content} title="enhanced content" alt="enhanced content" />
                                     </div>
                                     <h3 className="amazon__handmadeCardHead">
                                         Custom Profile

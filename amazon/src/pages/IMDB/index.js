@@ -509,27 +509,27 @@ const IMDB = () => {
                         <section className="ipc__page__section ipc__page__section--baseAlt pt-0">
                             <nav className="imdb__exploreTabs">
                                 <ul className="ipc__tabs ipc__tabs--on-baseAlt ml-0">
-                                    <li className="ipc__tab" className={classnames({ active: activeTab === "prime-video" }, "ipc__tab")}
+                                    <li className={classnames({ active: activeTab === "prime-video" }, "ipc__tab")}
                                         onClick={() => toggle("prime-video")} role="button">
                                         <span>PRIME VIDEO</span>
                                     </li>
-                                    <li className="ipc__tab" className={classnames({ active: activeTab === "hayu" }, "ipc__tab")}
+                                    <li className={classnames({ active: activeTab === "hayu" }, "ipc__tab")}
                                         onClick={() => toggle("hayu")} role="button">
                                         <span>HAYU</span>
                                     </li>
-                                    <li className="ipc__tab" className={classnames({ active: activeTab === "stack-tv" }, "ipc__tab")}
+                                    <li className={classnames({ active: activeTab === "stack-tv" }, "ipc__tab")}
                                         onClick={() => toggle("stack-tv")} role="button">
                                         <span>STACKTV</span>
                                     </li>
-                                    <li className="ipc__tab" className={classnames({ active: activeTab === "super-channel" }, "ipc__tab")} 
+                                    <li className={classnames({ active: activeTab === "super-channel" }, "ipc__tab")} 
                                         onClick={() => toggle("super-channel")} role="button">
                                         <span>SUPER CHANNEL</span>
                                     </li>
-                                    <li className="ipc__tab" className={classnames({ active: activeTab === "acorn-tv" }, "ipc__tab")}
+                                    <li className={classnames({ active: activeTab === "acorn-tv" }, "ipc__tab")}
                                         onClick={() => toggle("acorn-tv")} role="button">
                                         <span>ACORN TV</span>
                                     </li>
-                                    <li className="ipc__tab" className={classnames({ active: activeTab === "hollywood-suite" }, "ipc__tab")}
+                                    <li className={classnames({ active: activeTab === "hollywood-suite" }, "ipc__tab")}
                                         onClick={() => toggle("hollywood-suite")} role="button">
                                         <span>HOLLYWOOD SUITE</span>
                                     </li>

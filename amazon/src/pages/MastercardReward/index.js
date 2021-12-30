@@ -470,7 +470,7 @@ const MastercardReward = () => {
             }
         ]
 
-        const [gallery] = useState(images)
+        const [gallery, setGallery] = useState(images)
         const [galleryAll, setGalleryAll] = useState("")
 
         const showLightBoxGallery = (e, mode) => {
@@ -478,10 +478,12 @@ const MastercardReward = () => {
             // Click coming from the image tiles should prevent clash with gallery
             toggleModal("show stretched", "lightBoxReview") // show modal
 
+            // "carousel" is click coming from an image item
             if (mode === "carousel") {  // mode is necessary to reset lightbox panel because it handles 
                                         // 2 content : the carousel and the gallery.
                 setGalleryAll("")
             } else {
+                // click coming from "See all customer images"
                 setGalleryAll(images)   // different state to handle different content inside lightbox
             }
         }            
@@ -897,8 +899,12 @@ const MastercardReward = () => {
                                 lightBoxPanel={lightBoxPanel}
                                 images={gallery}
                                 showLightBoxGallery={showLightBoxGallery}
+                                galleryList={galleryAll}
                             />
                         }
+
+                        // For click on "See all customer images"
+                        showLightBoxGallery={showLightBoxGallery}
                         tags={
                                 [
                                     {
@@ -984,10 +990,6 @@ const MastercardReward = () => {
                         }
                     />
                 </main>
-                <LightBoxModal 
-                    galleryList={galleryAll}
-                    lightBoxPanel={lightBoxPanel}
-                />
             </div>
         )
     }

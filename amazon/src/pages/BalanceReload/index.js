@@ -87,7 +87,7 @@ const BalanceReload = () => {
             }
         ]
 
-        const [gallery, setGallery] = useState(images)
+        const [gallery] = useState(images)
         const [galleryAll, setGalleryAll] = useState("")
 
         const showLightBoxGallery = (e, mode) => {
@@ -132,7 +132,7 @@ const BalanceReload = () => {
                                                         <span className="a__button__inner">
                                                             <input type="text" className="a__button__input" />
                                                             <span className="a__button__text">
-                                                                <img src={amazon_reload_1} />
+                                                                <img src={amazon_reload_1} alt="amazon reload 1" />
                                                             </span>
                                                         </span>
                                                     </span>
@@ -144,7 +144,7 @@ const BalanceReload = () => {
                                                         <span className="a__button__inner">
                                                             <input type="text" className="a__button__input" />
                                                             <span className="a__button__text">
-                                                                <img src={amazon_reload_2}/>
+                                                                <img src={amazon_reload_2} alt="amazon reload 2"/>
                                                             </span>
                                                         </span>
                                                     </span>
@@ -641,6 +641,7 @@ const BalanceReload = () => {
                                             toggleModal={toggleModal}
                                             lightBoxPanel={lightBoxPanel}
                                             images={gallery}
+                                            galleryList={galleryAll}
                                             showLightBoxGallery={showLightBoxGallery}
                                         />
                                     }

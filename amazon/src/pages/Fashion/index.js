@@ -55,43 +55,43 @@ const Fashion = () => {
                                             <ol className="sl__sobe__carousel__viewport__row__inner">
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
-                                                        <img src={women} className="sl__sobe__carousel__sub__card__img" alt="women" style={{"max-width" : "75%",
-    "max-height" : "75%"}} />
+                                                        <img src={women} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
+    "max-height" : "75%"}} alt="women" />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
                                                 </li>
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
                                                         <img src={men} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
-    "max-height" : "75%"}} />
+    "max-height" : "75%"}} alt="men" />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
                                                 </li>
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
                                                         <img src={girls} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
-    "max-height" : "75%"}} />
+    "max-height" : "75%"}} alt="girls" />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
                                                 </li>
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
                                                         <img src={boys} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
-    "max-height" : "75%"}} />
+    "max-height" : "75%"}} alt="boys" />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
                                                 </li>
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
                                                         <img src={baby} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
-    "max-height" : "75%"}} />
+    "max-height" : "75%"}} alt="baby" />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
                                                 </li>
                                                 <li className="sl__sobe__carousel__sub__card">
                                                     <Link to="/" className="sl__sobe__carousel__sub__card__image">
                                                         <img src={luggage} className="sl__sobe__carousel__sub__card__img" style={{"max-width" : "75%",
-    "max-height" : "75%"}} />
+    "max-height" : "75%"}} alt="luggage" />
                                                     <div className="sl__sobe__carousel__sub__card__image__overlay"></div>
                                                     </Link>
                                                 </li>

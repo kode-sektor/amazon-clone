@@ -8,7 +8,7 @@ import { LineFive } from '../../UI/Line'
 
 import './index.css'
 
-const Reviews = ({rating, lightbox, showLightBoxGallery, tags, country, post}) => {
+const Reviews = ({ rating, lightbox, showLightBoxGallery, tags, country, post }) => {
 
     const path = window.location.pathname 
 
