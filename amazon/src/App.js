@@ -48,6 +48,7 @@ import GoodReads from "./pages/GoodReads"
 import IMDB from "./pages/IMDB"
 import WholeFoods from "./pages/WholeFoods"
 import AmazonDrive from "./pages/AmazonDrive"
+import AmazonPhotos from "./pages/AmazonPhotos"
 
 
 function App() {
@@ -102,6 +103,7 @@ function App() {
                     <Route path="/imdb" component={IMDB}/>
                     <Route path="/wholefoods" component={WholeFoods}/>
                     <Route path="/amazon-drive" component={AmazonDrive}/>
+                    <Route path="/amazon-photos" component={AmazonPhotos}/>
                 </Switch>
             </Router>
         </div>

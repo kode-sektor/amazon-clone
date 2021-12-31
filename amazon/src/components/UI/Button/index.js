@@ -251,10 +251,10 @@ const BtnSquarePrimary = ({icon, text}) => (
     </span>
 )
 
-const ApplyToSellBtn = ({size}) => {
+const ApplyToSellBtn = ({size, text="Apply to sell"}) => {
     return (
         <Button className={`apply__to__sellBtn ${size}`}>
-            Apply to sell
+            {text}
         </Button>
     )
 }

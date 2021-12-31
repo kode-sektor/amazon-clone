@@ -273,7 +273,7 @@ const Footer = (props) => {
                                                     Free With Prime
                                                 </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/amazon-photos", 
                                         icon: null 
                                     },
                                     { label: 

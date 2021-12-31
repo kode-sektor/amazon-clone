@@ -346,7 +346,7 @@ code {
     width: 895px;
     margin-left: auto;
     margin-right: auto;
-    font-family: arial;
+    font-family: Arial;
 }
 .popover__panel__main {
     overflow-x: hidden;
@@ -2058,7 +2058,6 @@ table.myx__bordered tr:first-child th {
     font-weight: 700;
 }
 
-
 .ipc__button {
     position: relative;
     display: inline-flex;
@@ -2086,7 +2085,7 @@ table.myx__bordered tr:first-child th {
     user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    font-family: Roboto,Helvetica,Arial,sans-serif;;
+    font-family: var(--font-ancillary-5);
     box-sizing: border-box;
 }
 .ipc__button::before, .ipc__button::after {
@@ -2357,7 +2356,7 @@ a:hover .ipc__title__link__chevron, a:focus .ipc__title__link__chevron {
     text-transform: inherit;
     -webkit-font-smoothing: auto;
     border: none;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-family: var(--font-ancillary-5);
 }
 .ipc__title.ipc__title--baseAlt .ipc__title__description, 
 .ipc__title.ipc__title--baseAlt .ipc__title__subtext {
@@ -2525,7 +2524,7 @@ a:hover .ipc__title__link__chevron, a:focus .ipc__title__link__chevron {
     min-width: calc(75% - .75 * .5rem - .25rem);
     margin-right: .5rem;
 }
-ipc__poster, .ipc__photo, .ipc__slate {
+.ipc__poster, .ipc__photo, .ipc__slate {
     display: inline-flex;
     position: relative;
     text-decoration: none;
