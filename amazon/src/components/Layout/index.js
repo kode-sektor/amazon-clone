@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -39,7 +39,7 @@ const Layout = (props) => {
     //                                                     }
                                                     // )
 
-    const [showDeliverToMenu] = useState(true)
+    const [showDeliverToMenu, setShowDeliverToMenu] = useState(true)
 
     const toggleModal = (status, mode, modalLangProp = modalLangProps) => { 
         setModal(status)  // Hide Modal on hover on Modal itself ("hide" or "show")
@@ -71,6 +71,22 @@ const Layout = (props) => {
             case "lightBoxReview" : 
                 (status === "hide") ? setLightBoxPanel(false) : setLightBoxPanel(true)
                 break
+            default : 
+                setModalLangProps(
+                    {
+                        modalLangPanel : "",
+                        title : "",
+                        legend : "",
+                        body : "",
+                        legendAux : "",
+                        bodyAux : "",
+                        cta : "",
+                        classname : ""       
+                    }
+                )
+                setDeliveryAddressPanel("hide")
+                setLightBoxPanel(false)
+                setShowDeliverToMenu(true)
         }
     }
 
@@ -80,15 +96,18 @@ const Layout = (props) => {
         case "/mastercard-reward" :
         case "/balance-reload" : 
 
-        // alert('mastercard reward page')
-        // React.cloneElement props for Layout (HOC) children
-        childProps = {
-            // modal={modal} will be used only if a toggle is needed in any child element
-            toggleModal : toggleModal,
-            lightBoxPanel : lightBoxPanel,
-            // showLightBoxPanel : showLightBoxPanel
-        }
+            // alert('mastercard reward page')
+            // React.cloneElement props for Layout (HOC) children
+            childProps = {
+                // modal={modal} will be used only if a toggle is needed in any child element
+                toggleModal : toggleModal,
+                lightBoxPanel : lightBoxPanel,
+                // showLightBoxPanel : showLightBoxPanel
+            }
+            break
 
+        default : 
+            childProps = {}
     }
 
     // (window.location.pathname === "/mastercard-reward" ) && (

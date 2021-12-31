@@ -6,7 +6,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { BtnPillRounded, BtnPillRoundedLg, BtnPillRoundedObscureLg } from '../../components/UI/Button'
 
 import Slider from '../../components/UI/Carousel/Carousel'
-import TestimonialCarousel from '../../components/UI/Carousel/TestimonialCarousel'
+import CarouselTestimonial from '../../components/UI/Carousel/CarouselTestimonial'
 
 import amazon_ca_half_logo from '../../images/amazon-ca-half-logo.svg'
 import prime_boxes from '../../images/prime-boxes-6-sm.png'
@@ -244,7 +244,7 @@ const SellerAmazon = () => {
                     </section>
                     <section className="sellerAmazon__testimonialSlider">
                         <div className="has__max__width">
-                            <TestimonialCarousel
+                            <CarouselTestimonial
                                 slider={
                                     <Slider
                                         type={"testimonial"}

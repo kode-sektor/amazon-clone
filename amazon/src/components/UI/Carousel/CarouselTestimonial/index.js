@@ -2,7 +2,7 @@ import React from 'react'
 
 import './index.css'
 
-const TestimonialCarousel = ({slider}) => {
+const CarouselTestimonial = ({slider}) => {
     return (
         <section className="carouselTestimonial">
             {slider}
@@ -10,4 +10,4 @@ const TestimonialCarousel = ({slider}) => {
     )
 }
 
-export default TestimonialCarousel
+export default CarouselTestimonial

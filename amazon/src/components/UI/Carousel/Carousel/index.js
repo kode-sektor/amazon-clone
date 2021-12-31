@@ -8,8 +8,6 @@ import { BsThreeDots, BsFillPlayFill } from 'react-icons/bs'
 import { RiPlayCircleLine } from 'react-icons/ri'
 import { IoMdPhotos } from 'react-icons/io'
 import { GrUnorderedList } from 'react-icons/gr'
-import { HiTicket } from 'react-icons/hi'
-
 
 import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators
 } from "reactstrap";
@@ -66,7 +64,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		if (type === "multi-image") {
 
 			items.forEach((item, index) => {
-				const { dealOfTheDay, href, caption, extraCaption, price, priceRange, 
+				const { dealOfTheDay, href, src, altText, caption, extraCaption, price, priceRange, 
 					percentOff, category, prime, date, similarItems, buyingOptions, viewDeal } = item
 
 				tempCarousel = [
@@ -80,8 +78,8 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 								)
 							}
 							<figure>
-								<Link key={index} to={item.href}>
-									<img src={item.src} alt={item.altText} />
+								<Link key={index} to={href}>
+									<img src={src} alt={altText} />
 								</Link>
 								<figcaption>
 									{
@@ -112,18 +110,18 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 											</section>
 										)
 									}
-									{item.caption ? 
+									{caption ? 
 										(
 											<>
 												{
 													
 												}
-												<Link to={item.href}>
+												<Link to={href}>
 													<div className="amzn__carousel__caption">{item.caption}</div>
 												</Link>
-												{item.extraCaption && 
+												{extraCaption && 
 													(<span className="amzn__extra__caption d-block">
-														{item.extraCaption}
+														{extraCaption}
 													</span>)
 												}
 												{/*Reorder price and stars if on Gift cards page*/}
@@ -142,7 +140,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 													""
 												}
 												{
-													item.price && 
+													price && 
 														(	
 															<div className="a__spacing__micro" style={{clear: "left"}}>
 																<span className="amzn__price">
@@ -170,7 +168,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 												}
 												<span className="amzn__carousel__offers"> </span>
 												{
-													item.category && !giftCardAux &&
+													category && !giftCardAux &&
 													(
 														<Link to="/" className="a__size__small a__link__normal amzn__best__seller" >
 															<i className="a__icon a__icon__addon amzn__icon__bestSeller">
@@ -178,7 +176,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 															</i>
 															<span className="a__size__small a__color__secondary">in&nbsp; 
 																<span className="a__color__link amzn__carousel__delivery">
-																	{item.category}
+																	{category}
 																</span>
 															</span>
 															&nbsp;
@@ -186,15 +184,15 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 													)
 												}
 												{
-													carouselID !== "amzn__gift__cards" && item.price && 
+													carouselID !== "amzn__gift__cards" && price && 
 													(<span className="a__color__price d-block">$269.99</span>)
 												}
-												{item.prime && (	// Only on Order Page
+												{prime && (	// Only on Order Page
 													<span className="amzn__prime__badge d-block">
 														<span className="amzn__prime__badge__icon"></span>&nbsp;
 													</span>
 												)}
-												{(item.category || item.date) && (
+												{(category || date) && (
 													<span className="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
 												)}
 												{
@@ -360,7 +358,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 									{item.caption}
 								</p>
 								<section className="carouselTestimonial__quoteAttribution d-flex align-items-center">
-									<img src={item.avatar} />
+									<img src={item.avatar} alt="carousel testimonial avatar" />
 									<cite className="carouselTestimonial__citation d-flex flex-column">
 										<strong>{item.author}</strong>
 										<span>{item.title}</span>
@@ -368,7 +366,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 								</section>
 							</blockquote>
 							<Link to="/" className="carouselTestimonial__videoLink">
-								<img src={item.img}/>
+								<img src={item.img} alt="carousel testimonial video display" />
 							</Link>
 						</section>
 					</CarouselItem>
@@ -653,7 +651,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 						<section>
 							<figure>
 								{img}
-								<Link to="/">
+								<Link to={href}>
 									<div className="imdb__slideSecOverlay"></div>
 									<section className="imdb__lockupContent">
 										<span className="imdb__slideSecIcon">
@@ -880,7 +878,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 
 			items.forEach((item, index) => {
 				count = count ? count : 3
-				const { href, title, src, alt, runtime, bookmark, date, price } = item
+				const { href, title, src, alt, runtime, bookmark, date } = item
 
 				tempCarousel = [
 					...tempCarousel,
@@ -1215,7 +1213,7 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 			} */}
 			{
 				// Add hr in HomeImprovement page
-				id=="homeImprovement" && (
+				id === "homeImprovement" && (
 					<section className="position-relative" style={{clear: "both", paddingTop: "42px"}}>
 						<hr className="a__divider__normal"/>
 						<Link to="/" className="float-right">Restrictions Apply</Link>
