@@ -1954,6 +1954,12 @@ ul.detail__bullet__list li {
 /*8. HELPER STYLES
 ==============================================================================================================================================================*/
 
+.image > img {
+    max-width: 100%;
+}
+.font__size__medium {
+    font-size: 30px!important;
+}
 .font__size__xlarge {
     font-size: 60px !important;
 }
@@ -2321,6 +2327,9 @@ a:active.a__color__base {
 .padding__top__xmini {
     padding-top: 5px;
 }
+.padding__top__xsmall {
+    padding-top: 15px;
+}
 .padding__bottom__mini {
     padding-bottom: 10px;
 }
@@ -2377,6 +2386,9 @@ a:active.a__color__base {
 }
 .padding__left__xsmall {
     padding-left: 15px;
+}
+.padding__right__xsmall {
+    padding-right: 15px;
 }
 .padding__right__minibase {
     padding-right: 25px;

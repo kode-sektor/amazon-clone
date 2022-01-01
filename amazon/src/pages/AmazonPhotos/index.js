@@ -6,6 +6,11 @@ import { ApplyToSellBtn } from '../../components/UI/Button'
 
 import amazon_photos_logo from '../../images/amazon-photos-logo.png'
 import photos_landing_page from '../../images/photos-landing-page.png'
+import auto_backup from '../../images/auto-backup.png'
+import this_day_np from '../../images/this-day-np.png'
+import dps_2 from '../../images/dps-2.png'
+import access_across_devices from '../../images/access-across-devices.png'
+import uk_prime from '../../images/uk-prime.png'
 
 import './index.css'
 
@@ -79,6 +84,77 @@ const AmazonPhotos = () => {
                             </section>
                         </section>
                     </section>
+                </section>
+                <section className="photos__benefits padding__top__xxxlarge padding__right__minibase padding__bottom__xxlarge padding__left__minibase">
+                    <div className="has__max__width">
+                        <figure className="photos__benefit flex__container padding__left__xsmall padding__right__xsmall padding__top__xsmall padding__bottom__xsmall ">
+                            <section className="image text-center w-100">
+                                <img src={auto_backup} alt="auto backup" />
+                            </section>
+                                <figcaption className="flex__container padding__left__xsmall padding__right__xsmall padding__top__mini font__size__regular text-center">
+                                Secure backup of full-resolution photos
+                            </figcaption>
+                        </figure>
+                        <figure className="photos__benefit flex__container padding__left__xsmall padding__right__xsmall padding__top__xsmall padding__bottom__xsmall ">
+                            <section className="image text-center w-100">
+                                <img src={this_day_np} alt="this day np" />
+                            </section>
+                                <figcaption className="flex__container padding__left__xsmall padding__right__xsmall padding__top__mini font__size__regular text-center">
+                                Revisit past years with This Day
+                            </figcaption>
+                        </figure>
+                        <figure className="photos__benefit flex__container padding__left__xsmall padding__right__xsmall padding__top__xsmall padding__bottom__xsmall ">
+                            <section className="image text-center w-100">
+                                <img src={dps_2} alt="personalise fire TV" />
+                            </section>
+                                <figcaption className="flex__container padding__left__xsmall padding__right__xsmall padding__top__mini font__size__regular text-center">
+                                Personalise your Fire TV and Echo Show
+                            </figcaption>
+                        </figure>
+                        <figure className="photos__benefit flex__container padding__left__xsmall padding__right__xsmall padding__top__xsmall padding__bottom__xsmall ">
+                            <section className="image text-center w-100">
+                                <img src={access_across_devices} alt="access across devices" />
+                            </section>
+                                <figcaption className="flex__container padding__left__xsmall padding__right__xsmall padding__top__mini font__size__regular text-center">
+                                Available across all of your devices
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section className="flex__container padding__top__minibase padding__bottom__minibase">
+                    <div className="photos__prime has__max__width">
+                        <section className="photos__primeImg flex__container padding__left__base padding__right__base padding__top__small padding__bottom__small">
+                            <div className="image text-center w-100">
+                                <img src={uk_prime} alt="uk prime" />
+                            </div>
+                        </section>
+                        <section className="photos__primeMore flex__container padding__top__small padding__bottom__small">
+                            <h3 className="flex__container padding__left__small font-weight-normal font__size__medium heading">
+                                <strong>Get more with Prime</strong>
+                            </h3>
+                            <section className="flex__container padding__left__small padding__right__small padding__top__xsmall padding__bottom__xsmall">
+                                <ul className="photos__primeList">
+                                    <li>
+                                        Unlimited photo storage and 5 GB for video
+                                    </li>
+                                    <li>
+                                        Share photos and videos with up to five family members using Family Vault
+                                    </li>
+                                    <li>
+                                        Search and sort your photos by people, places and things with advanced image recognition
+                                    </li>
+                                </ul>
+                            </section>
+                            <section className="flex__container padding__left__small align__items__stretch">
+                                <Link className="photo__link font__size__regular">
+                                    <u>
+                                        <strong>Get Prime</strong>
+                                    </u>
+                                    <strong> ▸</strong>
+                                </Link>
+                            </section>
+                        </section>
+                    </div>
                 </section>
             </section>
         </main>
