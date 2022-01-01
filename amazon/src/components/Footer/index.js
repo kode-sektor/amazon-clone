@@ -321,7 +321,7 @@ const Footer = (props) => {
                                                 you can trust
                                             </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/amazon-renewed", 
                                         icon: null },
                                     { 
                                         label: 

@@ -248,7 +248,7 @@ const AmazonPhotos = () => {
                 </section>
             </section>
             <section className="bxc__grid--spacing-large">
-                <div className="bxc__grid__container bxc__grid__container--width-1500">
+                <div className="bxc__grid__container bxc__grid__container__width__1500">
                     <section className="bxc__grid__row">
                         <section className="bxc__grid__column bxc__grid__column--12-of-12">
                             <p>
