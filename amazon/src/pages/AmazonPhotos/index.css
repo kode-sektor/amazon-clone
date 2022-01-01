@@ -54,7 +54,6 @@
     list-style: none;
     font-family: var(--font-primary);
     cursor: pointer;
-    border: thin solid palegoldenrod;
 }
 .photos__links > li a {
     display: block;
@@ -74,11 +73,9 @@
     flex: 0 0 auto;
     background-color: var(--blue-23);
     width: 100%;
-    border: 2px solid aquamarine;
 }
 .photos__bannerItem {
     width: 50%;
-    border: thin solid peru;
 }
 .photos__bannerTitle {
     flex-grow: 1;
@@ -94,7 +91,6 @@
 .photos__bannerTitle--subtitle {
     width: 79.16666666666667%;
     flex: 0 1 79.16666666666667%;
-    border: thin solid brown;
 }
 .photos__bannerItem .apply__to__sellBtn {
     display: inline-block;
@@ -117,7 +113,6 @@
 .photos__benefit {
     width: 25%;
     margin-bottom: 0;
-    border: thin solid khaki;
 }
 .photos__benefit img {
     height: 200px;
@@ -131,18 +126,16 @@
 .photos__primeMore {
     width: 54.166666666666664%;
 }
-.photos__primeMore .heading {
+.photos--page .heading {
     align-items: center;
     margin: 0;
     line-height: 1.2;
     text-transform: none;
     color: var(--blue-8);
-    border:thin solid yellow;
 }
 .photos__primeMore .heading strong {
     display: block;
     line-height: 1.2;
-    border: 4px solid thistle;
 }
 .photos__primeList {
     padding-left: 20px;
@@ -159,4 +152,36 @@
 }
 .photo__link:hover, .photo__link:focus {
     color: inherit;
+}
+.photo__headingPlan {
+    border: 2px solid var(--grey-tone-21);
+}
+.photos__tabular > * {
+    color: var(--blue-8);
+}
+.photos__tabular {
+    width: 75%;
+    margin: 0 auto;
+}
+.photos__tabularC {
+    width: 33.33%;
+}
+.photos__tabularC:nth-child(2) {
+    border: 2px solid var(--blue-23);
+}
+.photos__cost {
+    line-height: 1.5em;
+}
+.photos__questions {
+    border: 3px solid var(--grey-tone-60);
+    border-radius: 20px;
+}
+.photos__questionAvatar img {
+    height: 100px;
+}
+.photos__answers {
+    width: 70.83333333333333%;
+}
+.photos__answers header {
+    line-height: 45px;
 }

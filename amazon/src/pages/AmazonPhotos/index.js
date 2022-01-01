@@ -11,6 +11,7 @@ import this_day_np from '../../images/this-day-np.png'
 import dps_2 from '../../images/dps-2.png'
 import access_across_devices from '../../images/access-across-devices.png'
 import uk_prime from '../../images/uk-prime.png'
+import screenshot_avatar from '../../images/screenshot-avatar.png'
 
 import './index.css'
 
@@ -156,6 +157,106 @@ const AmazonPhotos = () => {
                         </section>
                     </div>
                 </section>
+                <section className="flex__container padding__top__xxxlarge padding__bottom__xxxlarge align-items-stretch w-100">
+                    <div className="has__max__width">
+                        <header className="flex__container flex-start align-items-stretch w-100 padding__left__large padding__right__large padding__top__minibase padding__bottom__minibase align-items-stretch flex__start align-center">
+                            <h3 className="photo__headingPlan font__size__medium font-weight-bold heading w-50 m-auto">
+                                Need more space for your memories? Plans start at $2.79/month for 100 GB
+                            </h3>
+                        </header>
+                        <section className="photos__tabular">
+                            <section className="flex__container padding__top__base padding__bottom__base">
+                                <section className="photos__tabularC flex__container padding__right__mini align-items-stretch align-content-start">
+                                    <header className="flex__container align-items-stretch align-content-start justify-content-center text-center font__size__medium w-100">
+                                        <strong>5 GB</strong>
+                                    </header>
+                                    <section className="photos__cost flex__container align-items-stretch align-content-start justify-content-center text-center w-100">
+                                        Free
+                                    </section>
+                                    <section className="flex__container padding__top__minibase padding__bottom__minibase align-items-stretch">
+                                        <ul className="photos__primeList">
+                                            <li className="font-size-regular">
+                                                All Amazon customers get 5 GB of storage
+                                            </li>
+                                            <li className="font-size-regular">
+                                                Prime members get unlimited photo storage and 5 GB for video
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <section className="photos__tabularC flex__container padding__right__mini align-items-stretch align-content-start">
+                                    <header className="flex__container align-items-stretch align-content-start justify-content-center text-center font__size__medium w-100">
+                                        <strong>100 GB</strong>
+                                    </header>
+                                    <section className="photos__cost flex__container align-items-stretch align-content-start justify-content-center text-center w-100">
+                                        $2.79 per month
+                                    </section>
+                                    <section className="flex__container padding__top__minibase padding__bottom__minibase align-items-stretch">
+                                        <ul className="photos__primeList">
+                                            <li className="font-size-regular">
+                                                If you like taking photos
+                                            </li>
+                                            <li className="font-size-regular">
+                                                Store about 14 hours of 1080p HD video
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <section className="photos__tabularC flex__container padding__right__mini align-items-stretch align-content-start">
+                                    <header className="flex__container align-items-stretch align-content-start justify-content-center text-center font__size__medium w-100">
+                                        <strong>1 TB</strong>
+                                    </header>
+                                    <section className="photos__cost flex__container align-items-stretch align-content-start justify-content-center text-center w-100">
+                                        $13.99 per month
+                                    </section>
+                                    <section className="flex__container padding__top__minibase padding__bottom__minibase align-items-stretch">
+                                        <ul className="photos__primeList">
+                                            <li className="font-size-regular">
+                                                If you love taking photos
+                                            </li>
+                                            <li className="font-size-regular">
+                                                Store about 140 hours of 1080p HD video
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <section className="flex__container justify-content-center align__items__stretch w-100">
+                            <Link className="photo__link font__size__regular">
+                                <u>
+                                    <strong>Explore Plans</strong>
+                                </u>
+                                <strong> ▸</strong>
+                            </Link>
+                        </section>
+                    </div>
+                </section>
+                <section className="flex__container align-items-stretch align-content-start padding__left__base padding__right__base padding__top__base padding__bottom__large">
+                    <section className="photos__questions flex__container padding__top__mini padding__bottom__mini justify-content-center align-content-start align-items-stretch col-8 m-auto px-0">
+                        <figure className="photos__questionAvatar padding__left__minibase padding__right__minibase align-items-center align-content-center justify-content-center">
+                            <img src={screenshot_avatar} alt="amazon photos avatar" />
+                        </figure>
+                        <section className="photos__answers flex__container padding__left__minibase padding__right__minibase align-items-end align-content-center">
+                            <header className="font__size__medium">
+                                <strong>Still have questions? <br /></strong>
+                                We've got answers. <br />
+                                <Link to="/">Visit Help & Customer Support ▸ </Link>
+                            </header>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section className="bxc__grid--spacing-large">
+                <div className="bxc__grid__container bxc__grid__container--width-1500">
+                    <section className="bxc__grid__row">
+                        <section className="bxc__grid__column bxc__grid__column--12-of-12">
+                            <p>
+                                Amazon Photos lets you back up, organize, and share all of the photos and videos from your phone, computer, and other devices. You can access all your photos on nearly any device and share them with family and friends. This photo storage app keeps your photos and videos safe, even if your phone is lost or damaged. Once your photos are stored in Amazon Photos, you can delete them from your device to make room on your phone. Once your photos have been saved to Amazon Photos, you can access them from nearly any device. Finally get the photos from your old laptop, your phone, and your desktop together in one safe place.
+                            </p>
+                        </section>
+                    </section>
+                </div>
             </section>
         </main>
     )

@@ -2393,6 +2393,9 @@ a:active.a__color__base {
 .padding__right__minibase {
     padding-right: 25px;
 }
+.padding__left__minibase {
+    padding-left: 25px;
+}
 .padding__left__base {
     padding-left: 30px;
 }
