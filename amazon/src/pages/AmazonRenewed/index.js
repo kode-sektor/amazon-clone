@@ -23,6 +23,14 @@ import power_and_hand_tools from '../../images/nav/power-and-hand-tools.jpg'
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import amazon_renewed_banner from '../../images/amazon-renewed-banner.jpg'
+import renewed_computers from '../../images/renewed-computers.jpg'
+import renewed_tablets from '../../images/renewed-tablets.jpg'
+import renewed_smartphones from '../../images/renewed-smartphones.jpg'
+import renewed_cameras from '../../images/renewed-cameras.jpg'
+import renewed_headphones from '../../images/renewed-headphones.jpg'
+import renewed_home_and_kitchen from '../../images/renewed-home-and-kitchen.jpg'
+import renewed_video_games from '../../images/renewed-video-games.jpg'
+import renewed_tools_and_home_improvement from '../../images/renewed-tools-and-home-improvement.jpg'
 
 import './index.css'
     
@@ -455,27 +463,53 @@ const AmazonRenewed = () => {
                             </h1>
                         </section>
                         
-                        
                         <section className="bxc__grid__spacing__large">
-                            <section className="bxc__grid__container bxc__grid__container__width__1500">
-                                <div className="bxc__grid__row bxc__grid__row__light">
-                                    <div className="bxc__grid__column bxc__grid__column__12__of__12 bxc__grid__column__light">
-                                        <div className="bxc__grid__content bxc__grid__content__light">
-                                            <div className="bxc__grid__image bxc__grid__image__light">
-                                                <Link to="/">
-                                                    <img src={home_improvement} alt="Home Improvement"/>
-                                                </Link>
-                                            </div>
+                            
+
+                            <section className="bxc__grid__row bxc__grid__row__light">
+                                <section className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                    <div className="bxc__grid__content bxc__grid__content__light">
+                                        <div className="bxc__grid__image bxc__grid__image__light">
+                                            <Link to="/">
+                                                <img src={renewed_computers} alt="Renewed Computers"/>
+                                            </Link>
                                         </div>
                                     </div>
-                                </div>
+                                </section>
+                                <section className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                    <div className="bxc__grid__content bxc__grid__content__light">
+                                        <div className="bxc__grid__image bxc__grid__image__light">
+                                            <Link to="/">
+                                                <img src={renewed_tablets} alt="Renewed Tablets"/>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                    <div className="bxc__grid__content bxc__grid__content__light">
+                                        <div className="bxc__grid__image bxc__grid__image__light">
+                                            <Link to="/">
+                                                <img src={renewed_smartphones} alt="Renewed Smartphones"/>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
+                                    <div className="bxc__grid__content bxc__grid__content__light">
+                                        <div className="bxc__grid__image bxc__grid__image__light">
+                                            <Link to="/">
+                                                <img src={renewed_cameras} alt="Renewed Cameras"/>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </section>
                             </section>
                             <section className="bxc__grid__row bxc__grid__row__light">
                                 <section className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
                                     <div className="bxc__grid__content bxc__grid__content__light">
                                         <div className="bxc__grid__image bxc__grid__image__light">
                                             <Link to="/">
-                                                <img src={power_and_hand_tools} alt="Power and handtools"/>
+                                                <img src={renewed_headphones} alt="Renewed Headphones"/>
                                             </Link>
                                         </div>
                                     </div>
@@ -484,7 +518,7 @@ const AmazonRenewed = () => {
                                     <div className="bxc__grid__content bxc__grid__content__light">
                                         <div className="bxc__grid__image bxc__grid__image__light">
                                             <Link to="/">
-                                                <img src={power_and_hand_tools} alt="Power and handtools"/>
+                                                <img src={renewed_home_and_kitchen} alt="Renewed Home & Kitchen"/>
                                             </Link>
                                         </div>
                                     </div>
@@ -493,7 +527,7 @@ const AmazonRenewed = () => {
                                     <div className="bxc__grid__content bxc__grid__content__light">
                                         <div className="bxc__grid__image bxc__grid__image__light">
                                             <Link to="/">
-                                                <img src={power_and_hand_tools} alt="Power and handtools"/>
+                                                <img src={renewed_video_games} alt="Renewed Video Games"/>
                                             </Link>
                                         </div>
                                     </div>
@@ -502,7 +536,7 @@ const AmazonRenewed = () => {
                                     <div className="bxc__grid__content bxc__grid__content__light">
                                         <div className="bxc__grid__image bxc__grid__image__light">
                                             <Link to="/">
-                                                <img src={power_and_hand_tools} alt="Power and handtools"/>
+                                                <img src={renewed_tools_and_home_improvement} alt="Renewed Tools & Home Improvement"/>
                                             </Link>
                                         </div>
                                     </div>
