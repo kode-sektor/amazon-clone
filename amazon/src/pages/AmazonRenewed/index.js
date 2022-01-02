@@ -1,25 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap'
-import classnames from 'classnames'
-
 import Layout from '../../components/Layout/index'
 import Slider from '../../components/UI/Carousel/Carousel'
-import CarouselDetailed from '../../components/UI/Carousel/CarouselDetailed'
-
-import { BrowseBoxPrimary, BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
-import Palette from '../../components/UI/Palette'
-import { GridOne } from '../../components/UI/Grid'
-import { CardSix } from '../../components/UI/Card'
-
-import monterey_tv_stand from '../../images/products/convenience-concepts-151401W-designs2Go-monterey-tv-stand.jpg'
-import frosted_endtable from '../../images/products/global-furniture-clear-frosted-occasional-end-table.jpg'
-import leather_swivel from '../../images/products/furmax-bar-stools-modern-pu-leather-swivel.jpg'
-import faux_leather from '../../images/products/best-choice-products-faux-leather-modern-convertible.jpg'
-
-import home_improvement from '../../images/banner/home-improvement.jpg'
-import power_and_hand_tools from '../../images/nav/power-and-hand-tools.jpg'
+import CarouselCoupon from '../../components/UI/Carousel/CarouselCoupon'
+import SearchResult from '../../components/UI/SearchResult'
+import { SeeAllResults } from '../../components/UI/Button'
+import { BrowseCheckbox, BrowseBoxPlain } from '../../components/UI/BrowseBox'
+import { CardEight } from '../../components/UI/Card'
+import Rating from '../../components/UI/Rating'  
 
 import white_usb_charger from '../../images/products/white-usb-charger.jpg'
 import amazon_renewed_banner from '../../images/amazon-renewed-banner.jpg'
@@ -31,6 +20,16 @@ import renewed_headphones from '../../images/renewed-headphones.jpg'
 import renewed_home_and_kitchen from '../../images/renewed-home-and-kitchen.jpg'
 import renewed_video_games from '../../images/renewed-video-games.jpg'
 import renewed_tools_and_home_improvement from '../../images/renewed-tools-and-home-improvement.jpg'
+
+import selfie_stick_tripod from '../../images/coupons/selfie-stick-tripod-ubeesize-51.jpg'
+import arccra_iphone_charger from '../../images/coupons/arccra-iphone-charger.jpg'
+import fast_wireless_charger from '../../images/coupons/fast-wireless-charger-nanami.jpg'
+import lisen_phone_holder_car from '../../images/coupons/lisen-phone-holder-car.jpg'
+import upgraded_1080p_webcam_2021 from '../../images/coupons/2021-upgraded-1080p-webcam.jpg'
+import getihu_car_phone from '../../images/coupons/getihu-car-phone-holder-universal.jpg'
+import cuisinart_brand from '../../images/cuisinart-brand.jpg'
+import vitamix_brand from '../../images/vitamix-brand.jpg'
+import garmin_brand from '../../images/garmin-brand.jpg'
 
 import './index.css'
     
@@ -68,7 +67,6 @@ const AmazonRenewed = () => {
                         </section>
                     </section>
                 </section>
-    
                 <section className="d-flex mx-0 flex-fill pet">
                     <section className="fashion__browsebox browserBox">
                         <BrowseBoxPlain
@@ -237,216 +235,6 @@ const AmazonRenewed = () => {
                                 ]
                             }
                         />
-                        <BrowseCheckbox
-                            title={"From Our Brands"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Our Brands"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"Featured Brands"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Joomer"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Affresh"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Honeywell"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "HONEYWELL"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "TESSAN"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "BRITA"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Cricut"
-                                    }
-                                ]
-                            }
-                        />
-                        <Palette/>
-                        <BrowseBoxPlain
-                            title={"Avg. Customer Review"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : <>
-                                                    <div aria-label="4 Stars &amp; Up">
-                                                        <i className="a__icon a__icon__star__medium a__star__medium__4">
-                                                            <span className="a__icon__alt">4 Stars &amp; Up</span>
-                                                        </i>
-                                                        <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
-                                                    </div>
-                                                </>
-                                    },
-                                    {
-                                        href : "/",
-                                        text : <>
-                                                    <div aria-label="4 Stars &amp; Up">
-                                                        <i className="a__icon a__icon__star__medium a__star__medium__3">
-                                                            <span className="a__icon__alt">3 Stars &amp; Up</span>
-                                                        </i>
-                                                        <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
-                                                    </div>
-                                                </>
-                                    },
-                                    {
-                                        href : "/",
-                                        text : <>
-                                                    <div aria-label="4 Stars &amp; Up">
-                                                        <i className="a__icon a__icon__star__medium a__star__medium__2">
-                                                            <span className="a__icon__alt">2 Stars &amp; Up</span>
-                                                        </i>
-                                                        <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
-                                                    </div>
-                                                </>
-                                    },
-                                    {
-                                        href : "/",
-                                        text : <>
-                                                    <div aria-label="4 Stars &amp; Up">
-                                                        <i className="a__icon a__icon__star__medium a__star__medium__1">
-                                                            <span className="a__icon__alt">1 Stars &amp; Up</span>
-                                                        </i>
-                                                        <span className="a__size__small a__color__base" dir="auto"> &amp; Up</span>
-                                                    </div>
-                                                </>
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxPlain
-                            title={"New Arrivals"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Last 30 days"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Last 90 days"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseBoxPlain
-                            title={"Price"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Under $25"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$25 to $50"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$50 to $100"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$100 to $200"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "$200 & Above"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"Deals"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Today's Deals"
-                                    }
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"Seller"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Amazon.ca"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Layger"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "NAZO MART"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Botley Store"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Nation cenral"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Warehouse Deals"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Fastmedia ship USA"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "Dealz R us"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "2CA61 BYLF"
-                                    },
-                                    {
-                                        href : "/",
-                                        text : "BuyTradeExpedite"
-                                    },
-                                ]
-                            }
-                        />
-                        <BrowseCheckbox
-                            title={"Availability"}
-                            ticked={true}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "Include Out of Stock"
-                                    }
-                                ]
-                            }
-                        />
                     </section>
                     <section className="apBrowse flex-fill">
                         <section className="bxc__grid__spacing__large">
@@ -462,10 +250,7 @@ const AmazonRenewed = () => {
                                 Shop by category
                             </h1>
                         </section>
-                        
                         <section className="bxc__grid__spacing__large">
-                            
-
                             <section className="bxc__grid__row bxc__grid__row__light">
                                 <section className="bxc__grid__column bxc__grid__column__3__of__12 bxc__grid__column__light">
                                     <div className="bxc__grid__content bxc__grid__content__light">
@@ -544,195 +329,120 @@ const AmazonRenewed = () => {
                             </section>
                         </section>
                         <section>
-                            <GridOne   
-                                title={"Featured categories"}
-                                item={  /* Usually in 5's */
-                                    [
-                                        {
-                                            img : white_usb_charger,
-                                            caption : 
-                                                <>
-                                                    Accessories &amp; Supplies
-                                                </>
-                                            ,
-                                            categories: [
-                                                    {
-                                                        link : "/",
-                                                        caption : "Cell Phone Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Computer Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Home Audio &amp; Video Accessories"
-                                                    }
-                                            ]
-                                        },
-                                        {
-                                            img : white_usb_charger,
-                                            caption : 
-                                                <>
-                                                    Accessories &amp; Supplies
-                                                </>
-                                            ,
-                                            categories: [
-                                                    {
-                                                        link : "/",
-                                                        caption : "Cell Phone Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Computer Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Home Audio &amp; Video Accessories"
-                                                    }
-                                            ]
-                                        },
-                                        {
-                                            img : white_usb_charger,
-                                            caption : 
-                                                <>
-                                                    Accessories &amp; Supplies
-                                                </>
-                                            ,
-                                            categories: [
-                                                    {
-                                                        link : "/",
-                                                        caption : "Cell Phone Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Computer Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Home Audio & Video Accessories"
-                                                    }
-                                            ]
-                                        },
-                                        {
-                                            img : white_usb_charger,
-                                            caption : 
-                                                <>
-                                                    Accessories &amp; Supplies
-                                                </>
-                                            ,
-                                            categories: [
-                                                    {
-                                                        link : "/",
-                                                        caption : "Cell Phone Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Computer Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Home Audio & Video Accessories"
-                                                    }
-                                            ]
-                                        },
-                                        {
-                                            img : white_usb_charger,
-                                            caption : 
-                                                <>
-                                                    Accessories &amp; Supplies
-                                                </>
-                                            ,
-                                            categories: [
-                                                    {
-                                                        link : "/",
-                                                        caption : "Cell Phone Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Computer Accessories"
-                                                    },
-                                                    {
-                                                        link : "/",
-                                                        caption : "Home Audio & Video Accessories"
-                                                    }
+                            <CarouselCoupon
+                                heading={<>Renewed Coupons</>}
+                                sort={"Sort by Category"}
+                                optionList={ 
+                                    <>
+                                        <option aria-label="newest" value="newest">Newest</option> 
+                                        <option aria-label="oldest" value="oldest">Oldest</option>
+                                        <option aria-label="expiringSoon" value="expiringSoon">Expiring Soon</option>
+                                        <option aria-label="mostPopular" value="mostPopular" selected="selected">Most Popular</option> 
+                                        <option aria-label="highToLowDiscountValue" value="highToLowDiscountValue">
+                                            Discount Percentage
+                                        </option> 
+                                    </>
+                                }
+                                slider={
+                                    <Slider 
+                                        type={"coupon"}
+                                        carouselClass={"amzn__carousel"}
+                                        count={6}
+                                        items={
+                                            [
+                                                {
+                                                    href: '/',
+                                                    src: getihu_car_phone,
+                                                    save: 2, 
+                                                    altText: "Getihu Car Phone",
+                                                    caption: "Getihu Car Phone"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    src: selfie_stick_tripod,
+                                                    save: 2, 
+                                                    altText: "Selfie Stick Tripod",
+                                                    caption: "Selfie Stick Tripod"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    src: arccra_iphone_charger,
+                                                    save: 2, 
+                                                    altText: "Arccra iPhone Charger",
+                                                    caption: "Arccra iPhone Charger"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    src: fast_wireless_charger,
+                                                    save: 2, 
+                                                    altText: "Fast Wireless Charger",
+                                                    caption: "Fast Wireless Charger"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    src: lisen_phone_holder_car,
+                                                    save: 2, 
+                                                    altText: "Lisen Phoneholder Car",
+                                                    caption: "Lisen Phoneholder Car"
+                                                },
+                                                {
+                                                    href: '/',
+                                                    src: upgraded_1080p_webcam_2021,
+                                                    save: 2, 
+                                                    altText: "Upgraded 1080p Webcam 2021",
+                                                    caption: "Upgraded 1080p Webcam 2021"
+                                                }
                                             ]
                                         }
-                                    ]
+                                    />
                                 }
                             />
                         </section>
-                        <section>
-                            <CardSix
-                                title={"Recommended for you"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
+                        <section className="bxc__grid__spacing__large">
+                            <section className="bxc__grid__container__width__1500">
+                                <section className="bxc__grid__row">
+                                    <section className="bxc__grid__column bxc__grid__column__12__of__12">
+                                        <h1>Featured Brands</h1>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <section className="bxc__grid__row">
+                            <section className="bxc__grid__column bxc__grid__column__4__of__12">
+                                <section className="bxc__grid__image">
+                                    <Link to="/">
+                                        <img src={cuisinart_brand} alt="Renewed Cuisinart" />
+                                    </Link>
+                                </section>
+                            </section>
+                            <section className="bxc__grid__column bxc__grid__column__4__of__12">
+                                <section className="bxc__grid__image">
+                                    <Link to="/">
+                                        <img src={vitamix_brand} alt="Renewed Vitamix" />
+                                    </Link>
+                                </section>
+                            </section>
+                            <section className="bxc__grid__column bxc__grid__column__4__of__12">
+                                <section className="bxc__grid__image">
+                                    <Link to="/">
+                                        <img src={garmin_brand} alt="Renewed Garmin" />
+                                    </Link>
+                                </section>
+                            </section>
                         </section>
                         <section>
-                            <CardSix
+                            <div className="a__cardui">
+                                <div className="a__cardui__body px-0">
+                                    <SearchResult
+                                        range={"1-12"}
+                                        total={"40,000"}
+                                        title={"Amazon Warehouse Deals"}
+                                    />
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <CardEight
                                 title={"Best Sellers"}
                                 link={"/"}
                                 items={
@@ -742,12 +452,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
                                                 count : "2,817",
-                                                bestSeller : 1
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -755,12 +485,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
                                                 count : "2,817",
-                                                bestSeller : 2
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -768,36 +518,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
                                                 count : "2,817",
-                                                bestSeller : 3
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         }
                                     ]
@@ -805,8 +551,8 @@ const AmazonRenewed = () => {
                             />
                         </section>
                         <section>
-                            <CardSix
-                                title={"Most Wished For"}
+                            <CardEight
+                                title={"Best Sellers"}
                                 link={"/"}
                                 items={
                                     [
@@ -815,9 +561,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
+                                                rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
+                                                count : "2,817",
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -825,11 +594,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
-                                                count : "2,817"
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
+                                                count : "2,817",
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -837,44 +627,41 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
+                                                count : "2,817",
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         }
                                     ]
                                 }
-                            />  
+                            />
                         </section>
                         <section>
-                            <CardSix
-                                title={"Hot New Releases"}
+                            <CardEight
+                                title={"Best Sellers"}
                                 link={"/"}
                                 items={
                                     [
@@ -883,11 +670,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
-                                                count : "2,817"
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
+                                                count : "2,817",
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -895,11 +703,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
-                                                count : "2,817"
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
+                                                count : "2,817",
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -907,44 +736,41 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
+                                                count : "2,817",
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         }
                                     ]
                                 }
                             />
                         </section>
-                        <section>
-                            <CardSix
-                                title={"Under $25"}
+                        <section className="last">
+                            <CardEight
+                                title={"Best Sellers"}
                                 link={"/"}
                                 items={
                                     [
@@ -953,12 +779,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
                                                 count : "2,817",
-                                                bestSeller : 1
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -966,12 +812,32 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
                                                 count : "2,817",
-                                                bestSeller : 2
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         },
                                         {
@@ -979,260 +845,42 @@ const AmazonRenewed = () => {
                                                 img : white_usb_charger,
                                                 alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
                                                 title : "Apple AirPods with Charging Case",
+                                                // amazonChoice : true,
+                                                dealOftheDay : "Deal of the Day", // Value could also be "Limited Time Deal"
+                                                author : "Adele",
                                                 price : 159,
                                                 price_fraction : 98,
                                                 old_price : 177.00,
+                                                couponDiscount : 8.04,
                                                 rating : "4__5",
+                                                ratingGraph : <Rating
+                                                                dropdown={true}     // dropdown===true shows the footer
+                                                                avgRating={4.3}
+                                                                totalRating={5}
+                                                                globalRatings={"3,670"}
+                                                                starFive={85}
+                                                                starFour={6}
+                                                                starThree={3}
+                                                                starTwo={1}
+                                                                starOne={4}
+                                                            />,
                                                 count : "2,817",
-                                                bestSeller : 3
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
+                                                prime : true,
+                                                buyingPrice : 55.79,
+                                                offers : 3,
+                                                manufacturer : "Apple",
+                                                shipping_link : "/",
+                                                arrival_link : "/"
                                             }
                                         }
                                     ]
                                 }
                             />
                         </section>
-                        <section>
-                            <CardSix
-                                title={"Most Gifted"}
-                                link={"/"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section>   
-                            <CardSix
-                                title={"Featured Deals"}
-                                link={"/"}
-                                type={"featured"}
-                                items={ 
-                                    [   
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 1,
-                                                percentage_off : 20
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 2
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                bestSeller : 3
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
-                        </section>
-                        <section className="text__appendage">
-                            <h2>About Books at Amazon.ca</h2>
-                            <p>Amazon.ca is committed to providing the best online shopping experience for books throughout Canada.  Find your next great read at Amazon.ca.  Fiction-lovers will find the bestselling books in literature & fiction, mysteries & thrillers, science fiction & fantasy, and romance. Amazon.ca has a great selection of children’s books and books for teens—from classic storybooks to popular series.</p>
-                            <p>Those who are more into facts and figures will discover popular nonfiction books covering a vast array of topics like current events, economics, history, politics, and the latest biographies and memoirs.  And let’s not forget young readers.  Students can discover great textbook deals on millions of new and used titles in our Textbook Store, as well as test prep resources, study guides, and dictionaries. Amazon.ca also carries professional reference books on everything from the national electric code to business law.  No matter your profession, Amazon.ca strives to carry the books you need.</p>
-                            <p>Amazon.ca also has an extensive selection of cookbooks, craft books, and home improvement manuals for home chefs and do-it-yourself enthusiasts. Whether you looking for a specific textbook on quantum physics, an irresistible new cookbook, or the next title on your book club’s reading list, with everyday low prices on millions of titles, Amazon.ca is sure to have the book you’re looking for at a great price.</p>
-                        </section>
-                        <section>
-                            <CardSix
-                                title={"Lightning Deals"}
-                                link={"/"}
-                                type={"lightning"}
-                                items={
-                                    [
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                old_price : 177.00,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817",
-                                                percentage_off : 20
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        },
-                                        {
-                                            item : {
-                                                img : white_usb_charger,
-                                                alt : "Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release",
-                                                title : "Apple AirPods with Charging Case",
-                                                price : 159,
-                                                price_fraction : 98,
-                                                deal : 43,
-                                                rating : "4__5",
-                                                count : "2,817"
-                                            }
-                                        }
-                                    ]
-                                }
-                            />
+                        <section className="a__cardui">
+                            <section className="a__cardui__body">
+                                <SeeAllResults />
+                            </section>
                         </section>
                     </section>
                 </section>

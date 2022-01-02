@@ -448,7 +448,6 @@ const WarehouseDeals = () => {
                                 </div>
                             </section>
                         </section>
-                        
                         <section>
                             <CardEight
                                 title={"Best Sellers"}
