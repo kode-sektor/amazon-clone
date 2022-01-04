@@ -50,6 +50,7 @@ import WholeFoods from "./pages/WholeFoods"
 import AmazonDrive from "./pages/AmazonDrive"
 import AmazonPhotos from "./pages/AmazonPhotos"
 import AmazonRenewed from "./pages/AmazonRenewed"
+import AmazonWebServices from "./pages/AmazonWebServices"
 
 
 function App() {
@@ -106,6 +107,7 @@ function App() {
                     <Route path="/amazon-drive" component={AmazonDrive}/>
                     <Route path="/amazon-photos" component={AmazonPhotos}/>
                     <Route path="/amazon-renewed" component={AmazonRenewed}/>
+                    <Route path="/amazon-web-services" component={AmazonWebServices}/>
                 </Switch>
             </Router>
         </div>

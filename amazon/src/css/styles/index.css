@@ -197,6 +197,8 @@ file rather than small ones. Your choice
     --blue-39: #3b5998;
     --blue-40: #4e69a2;
     --blue-41: #5799ef;
+    --blue-42: #1e2832;
+    --blue-43: #a166ff;
 
     --teal: #009596;
 
@@ -268,7 +270,12 @@ file rather than small ones. Your choice
 	--ochre-64: #f5c518;
 	--ochre-65: #f7dd95;
 	--ochre-66: #f1c241;
-	--ochre-67: #F3C517;
+	--ochre-67: #f3c517;
+	--ochre-68: #f8991d;
+	--ochre-69: #e76d0c;
+	--ochre-70: #e15500;
+	--ochre-71: #ec7211;
+	--ochre-72: #f67c1b;
 
     --red: #ff5a00;
     --red-2: #ff5a00;
@@ -646,6 +653,9 @@ a, a:link, a:visited {
 }
 a:active, a:hover {
     outline: 0;
+}
+a.disabled, button.disabled {
+    pointer-events: none;
 }
 a:focus {
     text-decoration: none;

@@ -30,6 +30,7 @@ import getihu_car_phone from '../../images/coupons/getihu-car-phone-holder-unive
 import cuisinart_brand from '../../images/cuisinart-brand.jpg'
 import vitamix_brand from '../../images/vitamix-brand.jpg'
 import garmin_brand from '../../images/garmin-brand.jpg'
+import sell_on_renewed from '../../images/sell-on-renewed.jpg'
 
 import './index.css'
     
@@ -201,12 +202,17 @@ const AmazonRenewed = () => {
                             }
                         />
                         <BrowseCheckbox
-                            title={"Subscription Option"}
+                            title={"Shipping Option"}
                             links={
                                 [
                                     {
                                         href : "/",
-                                        text : "Subscribe & Save"
+                                        text : <>
+                                                    FREE Shipping"
+                                                    <div className="a__section a__spacing__top__mini">
+                                                        <span className="a__size__base a__color__base" dir="auto">All customers get FREE Shipping on orders over $35 shipped by Amazon</span>           
+                                                    </div>
+                                                </>
                                     }
                                 ]
                             }
@@ -224,17 +230,19 @@ const AmazonRenewed = () => {
                                 ]
                             }
                         />
-                        <BrowseBoxPlain
-                            title={"Shipping Option"}
-                            links={
-                                [
-                                    {
-                                        href : "/",
-                                        text : "FREE Shipping"
-                                    }
-                                ]
-                            }
-                        />
+                        <section className="bxc__grid__spacing__large">
+                            <section className="bxc__grid__container bxc__grid__container__width__1500">
+                                <section className="bxc__grid__row">
+                                    <section className="bxc__grid__column bxc__grid__column__12__of__12">
+                                        <div className="bxc__grid__image">
+                                            <Link to="">
+                                                <img src={sell_on_renewed} alt="Learn how to sell on Renewed" />
+                                            </Link>
+                                        </div>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
                     </section>
                     <section className="apBrowse flex-fill">
                         <section className="bxc__grid__spacing__large">

@@ -225,7 +225,7 @@ const Footer = (props) => {
                                                         Computing Services
                                                     </span>
                                             </>, 
-                                            href: "/", 
+                                            href: "/amazon-web-services", 
                                             icon: null 
                                     },
                                     { 
