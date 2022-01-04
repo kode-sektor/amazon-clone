@@ -10,6 +10,9 @@ import placeholder_flexibility from '../../images/placeholder-flexibility.png'
 import video_placeholder_cost_savings from '../../images/video-placeholder-cost-savings.png'
 import video_placeholder_global from '../../images/video-placeholder-global.png'
 import aws_types_of_cloud_computing_infrastructure from '../../images/aws-types-of-cloud-computing-infrastructure.png'
+import aws_types_of_cloud_computing_platform from '../../images/aws-types-of-cloud-computing-platform.png'
+import aws_types_of_cloud_computing_software from '../../images/aws-types-of-cloud-computing-software.png'
+
 
 import './index.css'
 
@@ -410,14 +413,16 @@ const AmazonWebServices = () => {
                                 <Row>
                                     <Col xs="3">
                                         <figure>
-                                            <img src={aws_types_of_cloud_computing_infrastructure} alt="aws types of cloud computing infrastructure" />
+                                            <img src={aws_types_of_cloud_computing_platform} alt="aws types of cloud computing platform.png" />
                                         </figure>
                                     </Col>
                                     <Col xs="9">
-                                        <h2 className="websServices__benefitTitle">Deploy globally in minutes</h2>
+                                        <h2 className="websServices__benefitTitle">
+                                            Platform as a Service (PaaS)
+                                        </h2>
                                         <section className="webServices__benefitPara">
                                             <p>
-                                                With the cloud, you can expand to new geographic regions and deploy globally in minutes. For example, AWS has infrastructure all over the world, so you can deploy your application in multiple physical locations with just a few clicks. Putting applications in closer proximity to end users reduces latency and improves their experience.
+                                                PaaS removes the need for you to manage underlying infrastructure (usually hardware and operating systems), and allows you to focus on the deployment and management of your applications. This helps you be more efficient as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting involved in running your application.
                                             </p>
                                         </section>
                                     </Col>
@@ -427,31 +432,16 @@ const AmazonWebServices = () => {
                                 <Row>
                                     <Col xs="3">
                                         <figure>
-                                            <img src={aws_types_of_cloud_computing_infrastructure} alt="aws types of cloud computing infrastructure" />
+                                            <img src={aws_types_of_cloud_computing_software} alt="aws types of cloud computing software.png" />
                                         </figure>
                                     </Col>
                                     <Col xs="9">
-                                        <h2 className="websServices__benefitTitle">Deploy globally in minutes</h2>
+                                        <h2 className="websServices__benefitTitle">
+                                            Software as a Service (SaaS)
+                                        </h2>
                                         <section className="webServices__benefitPara">
                                             <p>
-                                                With the cloud, you can expand to new geographic regions and deploy globally in minutes. For example, AWS has infrastructure all over the world, so you can deploy your application in multiple physical locations with just a few clicks. Putting applications in closer proximity to end users reduces latency and improves their experience.
-                                            </p>
-                                        </section>
-                                    </Col>
-                                </Row>
-                            </article>
-                            <article className="webServices__illustration d-flex">
-                                <Row>
-                                    <Col xs="3">
-                                        <figure>
-                                            <img src={aws_types_of_cloud_computing_infrastructure} alt="aws types of cloud computing infrastructure" />
-                                        </figure>
-                                    </Col>
-                                    <Col xs="9">
-                                        <h2 className="websServices__benefitTitle">Deploy globally in minutes</h2>
-                                        <section className="webServices__benefitPara">
-                                            <p>
-                                                With the cloud, you can expand to new geographic regions and deploy globally in minutes. For example, AWS has infrastructure all over the world, so you can deploy your application in multiple physical locations with just a few clicks. Putting applications in closer proximity to end users reduces latency and improves their experience.
+                                                SaaS provides you with a complete product that is run and managed by the service provider. In most cases, people referring to SaaS are referring to end-user applications (such as web-based email). With a SaaS offering, you don’t have to think about how the service is maintained or how the underlying infrastructure is managed. You only need to think about how you will use that particular software.
                                             </p>
                                         </section>
                                     </Col>
