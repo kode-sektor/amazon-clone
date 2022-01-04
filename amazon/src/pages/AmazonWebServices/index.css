@@ -255,13 +255,13 @@
     background-color: var(--black);
     font-family: var(--font-ancillary-4);
 }
-.webServices__users {
+.webServices__pane {
     margin-bottom: 30px;
     padding: 30px 30px;
     padding-top: 0px;
     margin-top: 0px;
 }
-.webServices__usersTitle {
+.webServices__paneTitle {
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 40px;
@@ -273,6 +273,95 @@
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 16px;
+}
+.webServices__benefits > .webServices__paneTitle {
+    margin-bottom: 50px;
+}
+.webServices__illustration {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.webServices__illustrator {
+    position: relative;
+    width: 45.83333%;
+    min-height: 2px;
+}
+.webServices__illustrator figure,
+.webServices__illustration figure {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 15px 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    line-height: 0;
+    text-align: center;
+}
+.webServices__illustrator--secondary figure,
+.webServices__illustration figure {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.webServices__benefitTxt {
+    width: 45.83333%;
+    min-height: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: thin solid plum;
+}
+.websServices__benefitTitle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.webServices__benefitPara {
+    margin-bottom: 10px;
+}
+.webServices__benefitPara p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.webServices__benefitPara p + p {
+    padding-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.webServices__bgPattern, .webServices__bgPatternTop {
+    position: relative;
+    display: block;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px 30px;
+    background-image: url('../../images/aws-corners-bottom.png');
+    height: 50px;
+    border: 2px solid red;
+}
+.webServices__bgPatternTop {
+    background-position: top;
+    padding-left: 10px;
+    background-image: url('../../images/aws-corners-top.png');
+    padding-right: 10px;
+}
+.webServices__paneTitle--list {
+    margin-top: 5px;
+}
+.webServices__pane--list p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.webServices__pane--list .webServices__benefitPara p {
+    text-align: left;
+}
+.webServices__pane--list .webServices__illustration {
+    padding-bottom: 60px;
+}
+.webServices__pane--list .webServices__paneTitle--list + 
+.webServices__illustration ~ .webServices__illustration {
+    padding-bottom: 30px;
+    text-align: left;
 }
 
 
@@ -312,6 +401,10 @@
     }
     .webService__desc {
         position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .webServices__container > section {
         padding-left: 10px;
         padding-right: 10px;
     }
