@@ -12,6 +12,7 @@ import video_placeholder_global from '../../images/video-placeholder-global.png'
 import aws_types_of_cloud_computing_infrastructure from '../../images/aws-types-of-cloud-computing-infrastructure.png'
 import aws_types_of_cloud_computing_platform from '../../images/aws-types-of-cloud-computing-platform.png'
 import aws_types_of_cloud_computing_software from '../../images/aws-types-of-cloud-computing-software.png'
+import siemens_logo from '../../images/siemens-logo.png'
 
 
 import './index.css'
@@ -449,6 +450,56 @@ const AmazonWebServices = () => {
                             </article>
                             <section className="webServices__bgPattern"></section>
                         </section>
+                    </section>
+                </section>
+                <section className="webServices__service">
+                    <h1 className="webServices__serviceTitle">
+                        Helping customers innovate faster
+                    </h1>
+                    <section className="webServices__serviceContainer">
+                        <nav className="webServices__serviceNav">
+                            <ul>
+                                <li className="active">
+                                    Manufacturing
+                                </li>
+                                <li>
+                                    Financial Services
+                                </li>
+                                <li>
+                                    Fitness
+                                </li>
+                                <li>
+                                    Real Estate
+                                </li>
+                                <li>
+                                    Healthcare
+                                </li>
+                                <li>
+                                    Gaming
+                                </li>
+                                <li>
+                                    Media &amp; Entertainment
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section className="webServices__hero">
+                        <div className="webServices__container">
+                            <section className="col-6">
+                                <figure>
+                                    <img src={siemens_logo} alt="siemens logo" />
+                                </figure>
+                                <h2>
+                                    Siemens Innovates in Energy, Healthcare, and Manufacturing Using AWS
+                                </h2>
+                                <p>
+                                    Learn how Siemens used AWS to adapt its culture, encourage innovation, and drive results for its business.
+                                </p>
+                                <Link to="/" className="webServices__serviceLearn">
+                                    Learn More <AiOutlineDoubleRight />
+                                </Link>
+                            </section>
+                        </div>
                     </section>
                 </section>
             </main>
