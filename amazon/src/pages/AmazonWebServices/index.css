@@ -309,7 +309,7 @@
     padding-right: 10px;
     border: thin solid plum;
 }
-.websServices__benefitTitle {
+.webServices__benefitTitle {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -364,10 +364,12 @@
     text-align: left;
 }
 .webServices__service {
-    padding: 10px 0;
+    padding: 50px 0 10px;
+    background-color: var(--light-slate-gray);
 }
 .webServices__serviceTitle {
     margin-bottom: 15px;
+    font-size: 40px;
     text-align: center;
     color: var(--white);
 }
@@ -385,6 +387,7 @@
 }
 .webServices__serviceNav > ul > li {
     display: inline-block;
+    margin: 15px 0;
     padding: 15px 10px 0;
     font-size: 18px;
     text-align: center;
@@ -415,6 +418,35 @@
     font-size: 16px;
     color: var(--white) !important;
 }
+.webServices__pros {
+    background-color: var(--light-slate-gray);
+}
+.webServices__pro {
+    margin-top: 30px;
+}
+.webServices__proText {
+    display: flex;
+    margin: 30px 0;
+}
+.webServices__proText > li {
+    width: 33.3333%;
+    padding: 10px;
+    color: var(--white);
+}
+.webServices__proHeading {
+    height: 80px;
+}
+.webServices__proText > li p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+.webServices__proText > li p:last-of-type {
+    margin-bottom: 30px;
+}
+.webServices__learnMore {
+    font-size: 14px
+}
+
 
 
 
@@ -450,16 +482,11 @@
     .webServices__container {
         max-width: 1200px;
     }
-    .webServices__ccContainer {
+    .webServices__ccContainer, .webService__desc {
         position: relative;
         padding-left: 10px;
         padding-right: 10px;
         border: thin solid indigo;
-    }
-    .webService__desc {
-        position: relative;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     .webServices__container > section {
         padding-left: 10px;

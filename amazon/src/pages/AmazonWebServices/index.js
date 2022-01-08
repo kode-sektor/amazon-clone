@@ -13,7 +13,7 @@ import aws_types_of_cloud_computing_infrastructure from '../../images/aws-types-
 import aws_types_of_cloud_computing_platform from '../../images/aws-types-of-cloud-computing-platform.png'
 import aws_types_of_cloud_computing_software from '../../images/aws-types-of-cloud-computing-software.png'
 import siemens_logo from '../../images/siemens-logo.png'
-
+import web_services_cloud_computing from '../../images/web-services-cloud-computing.png'
 
 import './index.css'
 
@@ -377,21 +377,6 @@ const AmazonWebServices = () => {
                                         <Link to="/">Learn more <AiOutlineDoubleRight/></Link>
                                     </small>
                                 </p>
-                                {/* <section className="webServices__illustrator">
-                                    <figure>
-                                        <img src={video_placeholder_cost_savings} alt="video placeholder cost savings" />
-                                    </figure>
-                                </section>
-                                <section className="webServices__benefitTxt text-left">
-                                    <h2 className="websServices__benefitTitle">
-                                        Cost savings
-                                    </h2>
-                                    <section className="webServices__benefitPara">
-                                        <p>
-                                            The cloud allows you to trade capital expenses (such as data centers and physical servers) for variable expenses, and only pay for IT as you consume it. Plus, the variable expenses are much lower than what you would pay to do it yourself because of the economies of scale. 
-                                        </p>
-                                    </section> 
-                                </section>*/}
                             </article>
                             <article className="webServices__illustration d-flex">
                                 <Row>
@@ -482,25 +467,94 @@ const AmazonWebServices = () => {
                                 </li>
                             </ul>
                         </nav>
-                    </section>
-                    <section className="webServices__hero">
-                        <div className="webServices__container">
-                            <section className="col-6">
-                                <figure>
-                                    <img src={siemens_logo} alt="siemens logo" />
-                                </figure>
-                                <h2>
-                                    Siemens Innovates in Energy, Healthcare, and Manufacturing Using AWS
-                                </h2>
-                                <p>
-                                    Learn how Siemens used AWS to adapt its culture, encourage innovation, and drive results for its business.
-                                </p>
-                                <Link to="/" className="webServices__serviceLearn">
-                                    Learn More <AiOutlineDoubleRight />
-                                </Link>
+                        <section className="webServices__hero">
+                            <div className="webServices__container">
+                                <section className="col-6">
+                                    <figure>
+                                        <img src={siemens_logo} alt="siemens logo" />
+                                    </figure>
+                                    <h2>
+                                        Siemens Innovates in Energy, Healthcare, and Manufacturing Using AWS
+                                    </h2>
+                                    <p>
+                                        Learn how Siemens used AWS to adapt its culture, encourage innovation, and drive results for its business.
+                                    </p>
+                                    <Link to="/" className="webServices__serviceLearn">
+                                        Learn More <AiOutlineDoubleRight />
+                                    </Link>
+                                </section>
+                            </div>
+                        </section>
+                        <section className="webServices__pros">
+                            <section className="webServices__container">
+                                <section>
+                                    <section className="webServices__pro">
+                                        <img src={web_services_cloud_computing} alt="web services cloud computing" />
+                                    </section>
+                                    <ul className="webServices__proText">
+                                        <li>
+                                            <h4 className="webServices__proHeading text-center">
+                                                Pioneering Across Industries
+                                            </h4>
+                                            <p className="text-center">
+                                                Siemens is a more than 170-year-old company that started with an idea for improving the telegraph machine. Since its founding, the company has become a transformational leader across the energy, healthcare, and manufacturing industries. <br />
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h4 className="webServices__proHeading text-center">
+                                                Democratizing Innovation
+                                            </h4>
+                                            <p className="text-center">
+                                                Siemens encourages a culture of experimentation to discover new business opportunities and realize untapped customer value. The company uses AWS to adopt more agile development processes, including decentralized development teams, democratized data, and startup-like working methods. <br />
+                                            </p>
+
+                                        </li>
+                                        <li>
+                                            <h4 className="webServices__proHeading text-center">
+                                                Continuing a Tradition of Transformation
+                                            </h4>
+                                            <p className="text-center">
+                                                Siemens’ cultural transformation has delivered business results. These include bringing industrial IOT to railways and factories, developing intelligent building infrastructure, and using machine learning in its cybersecurity platform. <br />
+                                            </p>
+
+                                        </li>
+                                    </ul>
+                                </section>
                             </section>
-                        </div>
+                        </section>
                     </section>
+                </section>
+                <section className="webServices__pane">
+                    <article className="webServices__container text-center">
+                        <section className="webServices__benefits">
+                            <section className="webServices__bgPatternTop"></section>
+                            <section className="webServices__illustration d-flex justify-content-between align-items-center">
+                                <section class="webServices__benefitTxt text-left w-50">
+                                    <h2 class="webServices__benefitTitle">Cloud services</h2>
+                                    <section class="webServices__benefitPara">
+                                        <p>
+                                            AWS has more services, and more features within those services, than any other cloud provider, including compute, storage, databases, networking, data lakes and analytics, machine learning and artificial intelligence, IoT, security, and much more.
+                                        </p>
+                                    </section>
+                                    <p className="webServices__learnMore">
+                                        <Link to="/">Learn more <AiOutlineDoubleRight/></Link>
+                                    </p>
+                                </section>
+                                <section class="webServices__benefitTxt text-left w-50">
+                                    <h2 class="webServices__benefitTitle">Cloud solutions</h2>
+                                    <section class="webServices__benefitPara">
+                                        <p>
+                                            AWS provides a comprehensive portfolio of solutions that help you solve common problems and build faster using the AWS platform. Every AWS Solution comes with detailed architecture, a deployment guide, and instructions for both automated and manual deployment.
+                                        </p>
+                                    </section>
+                                    <p className="webServices__learnMore">
+                                        <Link to="/">Learn more <AiOutlineDoubleRight/></Link>
+                                    </p>
+                                </section>
+                            </section>
+                            <section class="webServices__bgPattern"></section>
+                        </section>
+                    </article>
                 </section>
             </main>
         </section>
