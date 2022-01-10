@@ -476,6 +476,7 @@
 }
 .webServices__footer {
     line-height: 22px;
+    font-size: 14px;
 }
 .webServices__footerPri {
     background-color: var(--light-slate-gray);
@@ -515,10 +516,34 @@
 }
 .webServices__footerColBox {
     margin-bottom: 15px;
-    font-size: 14px;
     color: var(--white);
 }
-
+.webServices__footerSec {
+    background-color: var(--grey-tone-127);
+}
+.webServices__footerSmallLinks {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    color: var(--white);
+}
+.webServices__footerSmallLinks > li {
+    margin-right: 6px;
+}
+.webServices__footerSmallLinks > li a {
+    color: var(--white);
+}
+.webServices__footerSmallLinks > li:not(:last-child) a:after {
+    content: "|";
+    margin-left: 6px;
+}
+.webServices__footerMinor {
+    padding-top: 5px;
+    background-color: var(--grey-tone-22);
+}
+.webServices__footerSmallLinks li, .webServices__footerSmallLinks li a {
+    color: var(--light-slate-gray);
+} 
 
 
 

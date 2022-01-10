@@ -808,7 +808,39 @@ const AmazonWebServices = () => {
                         </section>
                     </div>
                 </section>
-                section.webServices
+                <section className="webServices__footerSec">
+                    <div className="webServices__container d-flex">
+                        <ul className="webServices__footerSmallLinks">
+                            <li>Language</li>
+                            <li><Link to="/" id="">عربي</Link></li>
+                            <li><Link to="/" id="">Bahasa Indonesia</Link></li>
+                            <li><Link to="/" id="">Deutsch</Link></li>
+                            <li><Link to="/" id="">English</Link></li>
+                            <li><Link to="/" id="">Español</Link></li>
+                            <li><Link to="/" id="">Français</Link></li>
+                            <li><Link to="/" id="">Italiano</Link></li>
+                            <li><Link to="/" id="">Português</Link></li>
+                            <li><Link to="/" id="">Tiếng Việt</Link></li>
+                            <li><Link to="/" id="">Türkçe</Link></li>
+                            <li><Link to="/" id="">Ρусский</Link></li>
+                            <li><Link to="/" id="">ไทย</Link></li>
+                            <li><Link to="/" id="">日本語</Link></li>
+                            <li><Link to="/" id="">한국어</Link></li>
+                            <li><Link to="/" id="">中文 (简体)</Link></li>
+                            <li><Link to="/" id="">中文 (繁體)</Link></li>
+                        </ul>
+                    </div>
+                </section>
+                <section className="webServices__footerMinor">
+                    <div className="webServices__container d-flex">
+                        <ul className="webServices__footerSmallLinks">
+                            <li><Link to="/" id="">Privacy</Link></li>
+                            <li><Link to="/" id="">Site Terms</Link></li>
+                            <li><Link to="/" id="">Cookie Preferences </Link></li>
+                            <li>© 2022, Amazon Web Services, Inc. or its affiliates. All rights reserved.</li>
+                        </ul>
+                    </div>
+                </section>
             </footer>
         </section>
     )
