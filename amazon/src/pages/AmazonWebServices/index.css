@@ -298,7 +298,8 @@
     text-align: center;
 }
 .webServices__illustrator--secondary figure,
-.webServices__illustration figure {
+.webServices__illustration figure,
+.webServices__cloudComputing {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -351,6 +352,9 @@
     margin-bottom: 10px;
     font-size: 15px;
     text-align: center;
+}
+.webServices__pane--list p:nth-last-child() {
+    margin-bottom: 0;
 }
 .webServices__pane--list .webServices__benefitPara p {
     text-align: left;
@@ -446,7 +450,74 @@
 .webServices__learnMore {
     font-size: 14px
 }
+.webServices__paneTitle--sec {
+    margin: 0 !important;
+    font-size: 34px;
+}
+.webServices__cloudCompute {
+    padding: 15px 15px;
+}
+.webServices__ccHeading {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-align: left;
+    color: var(--white);
+}
+.webServices__cloudCompute .webServices__benefitPara {
+    margin-top: 10px;
+}
+.webServices__cta {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.webServices__footer {
+    line-height: 22px;
+}
+.webServices__footerPri {
+    background-color: var(--light-slate-gray);
+}
 
+.webServices__footerCol {
+    width: 20%;
+    padding: 10px;
+}
+.webServices__footerTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--grey-tone-22);
+}
+.webServices__footerCol > ul {
+    margin-left: 0;
+    margin-top: 15px;
+}
+.webServices__footerCol > ul > li {
+    margin-bottom: 5px;
+}
+.webServices__footerCol > ul > li a {
+    font-size: 14px;
+    color: var(--grey-tone-22);   
+}
+.webServices__smLinks {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.webServices__smLinks li a {
+    width: 29px;
+    padding: 0 5px 0 0;
+    margin-right: 7.5px;
+}
+.webServices__footerColBox {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: var(--white);
+}
 
 
 
@@ -467,6 +538,12 @@
         font-size: 14px;
         display: inline-block;
         vertical-align: top;
+    }
+    .webServices__benefits--sec {
+        width: 66.66667%;
+        min-height: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

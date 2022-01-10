@@ -4,6 +4,18 @@ import { AiFillCaretDown, AiOutlineSearch, AiOutlineDoubleRight } from 'react-ic
 import { Row, Col } from 'reactstrap'
 import Popover from '../../components/UI/Popover'
 
+import { BiMenu } from 'react-icons/bi'
+import { AiOutlineTwitter, AiOutlineMail } from 'react-icons/ai'
+import { FaDesktop, FaPodcast, FaTwitch } from 'react-icons/fa'
+import { IoMdFilm } from 'react-icons/io'
+import { BiBuildings, BiLinkExternal } from 'react-icons/bi'
+import { MdLabelOutline } from 'react-icons/md'
+import { RiFileSearchLine, RiPlayCircleLine } from 'react-icons/ri'
+import { MdKeyboardArrowRight } from 'react-icons/md'
+import { BiBookmarkPlus } from 'react-icons/bi'
+import { TiSocialYoutubeCircular } from 'react-icons/ti'
+import { FaFacebookF } from 'react-icons/fa'
+
 import aws_poster_vid from '../../images/aws-poster-vid.png'
 import placeholder_agility from '../../images/placeholder-agility.png'
 import placeholder_flexibility from '../../images/placeholder-flexibility.png'
@@ -556,7 +568,248 @@ const AmazonWebServices = () => {
                         </section>
                     </article>
                 </section>
+                <section className="webServices__pane webServices__pane--list">
+                    <section className="webServices__container text-center">
+                        <section className="webServices__benefits">
+                            <h1 className="webServices__paneTitle webServices__paneTitle--sec">
+                                Learn more about cloud computing on AWS
+                            </h1>
+                            <section className="webServices__cloudComputing row">
+                                <Col xs="4">
+                                    <section className="webServices__cloudCompute">
+                                        <h3 className="webServices__ccHeading">Pricing</h3>
+                                        <section className="webServices__benefitPara">
+                                            <p>
+                                                AWS offers a pay-as-you-go approach for pricing. <br /> 
+                                                Pricing for each service is unique. <br />
+                                            </p>
+                                            <p className="webServices__learnMore">
+                                                <Link to="/">Learn more <AiOutlineDoubleRight/></Link>
+                                            </p>
+                                        </section>
+                                    </section>
+                                </Col>
+                                <Col xs="4">
+                                    <section className="webServices__cloudCompute">
+                                        <h3 className="webServices__ccHeading">Products</h3>
+                                        <section className="webServices__benefitPara">
+                                            <p>
+                                                AWS has over 175 fully featured services for a wide range of technologies, industries, and use cases. <br />
+                                            </p>
+                                            <p className="webServices__learnMore">
+                                                <Link to="/">Learn more <AiOutlineDoubleRight/></Link>
+                                            </p>
+                                        </section>
+                                    </section>
+                                </Col>
+                                <Col xs="4">
+                                    <section className="webServices__cloudCompute">
+                                        <h3 className="webServices__ccHeading">Global infrastructure</h3>
+                                        <section className="webServices__benefitPara">
+                                            <p>
+                                                AWS has the most extensive, reliable, and secure global cloud infrastructure. <br />
+                                            </p>
+                                            <p className="webServices__learnMore">
+                                                <Link to="/">Learn more <AiOutlineDoubleRight/></Link>
+                                            </p>
+                                        </section>
+                                    </section>
+                                </Col>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section className="webServices__pane mb-0">
+                    <section className="webServices__container text-center">
+                        <section className="webServices__benefits webServices__benefits--sec m-auto">
+                            <h1 className="webServices__paneTitle webServices__paneTitle--sec">
+                                Ready to get started with AWS?
+                            </h1>
+                            <section className="webServices__cta row">
+                                <Col xs="4" className="m-auto">
+                                    <Link className="webServices__account">
+                                        <span>Create an AWS account</span>
+                                    </Link>
+                                </Col>
+                            </section>
+                        </section>
+                    </section>
+                </section>                       
             </main>
+            <footer className="webServices__footer"> 
+                <section className="webServices__footerPri">
+                    <div className="webServices__container d-flex">
+                        <section className="webServices__footerCol">
+                            <h3 className="webServices__footerTitle">Learn About AWS</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What is AWS?</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What Is Cloud Computing?</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS Inclusion, Diversity &amp; Equity</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What Is DevOps?</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What Is a Container?</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What Is a Data Lake?</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS Cloud Security</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What's New</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Blogs</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Press Releases</Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="webServices__footerCol">
+                            <h3 className="webServices__footerTitle">Resources for AWS</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Getting Started</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Training and Certification</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS Solutions Portfolio</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Architecture Center</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Product and Technical FAQs</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Analyst Reports</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS Partner Network</Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="webServices__footerCol">
+                            <h3 className="webServices__footerTitle">Developers on AWS</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Developer Center</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">SDKs &amp; Tools</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">.NET on AWS</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Python on AWS</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Java on AWS</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">PHP on AWS</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">JavaScript on AWS</Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="webServices__footerCol">
+                            <h3 className="webServices__footerTitle">Learn About AWS</h3>
+                            <ul>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Contact Us</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS Careers</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">File a Support Ticket</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Knowledge Center</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS re:Post</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">AWS Support Overview</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Legal</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">What's New</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Blogs</Link>
+                                </li>
+                                <li>
+                                    <Link to="/" rel="noopener" target="_blank">Press Releases</Link>
+                                </li>
+                            </ul>
+                        </section>
+                        <section className="webServices__footerCol">
+                            <section className="webServices__cta">
+                                <Link className="webServices__account">
+                                    <span>Create an AWS account</span>
+                                </Link>
+                            </section>
+                            <section className="webServices__smLinks">
+                                <ul className="ml-0 d-inline">
+                                    <li className="ipc__inline__list__item">
+                                        <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                            <AiOutlineTwitter />
+                                        </Link>
+                                    </li>
+                                    <li className="ipc__inline__list__item">
+                                        <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                            <FaFacebookF />
+                                        </Link>
+                                    </li>
+                                    <li className="ipc__inline__list__item">
+                                        <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                            <FaTwitch />
+                                        </Link>
+                                    </li>
+                                    <li className="ipc__inline__list__item">
+                                        <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                            <TiSocialYoutubeCircular />
+                                        </Link>
+                                    </li>
+                                    <li className="ipc__inline__list__item">
+                                        <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                            <FaPodcast />
+                                        </Link>
+                                    </li>
+                                    <li className="ipc__inline__list__item">
+                                        <Link className="ipc__icon__link ipc__icon__link--baseAlt" to="/">
+                                            <AiOutlineMail />
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section className="webServices__footerColBox">
+                                Amazon is an Equal Opportunity Employer:&nbsp;
+                                <i>Minority / Women / Disability / Veteran / Gender Identity / Sexual Orientation / Age.</i>
+                            </section>
+                        </section>
+                    </div>
+                </section>
+                section.webServices
+            </footer>
         </section>
     )
 }
