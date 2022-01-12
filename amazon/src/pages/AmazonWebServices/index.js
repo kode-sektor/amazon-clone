@@ -4,17 +4,9 @@ import { AiFillCaretDown, AiOutlineSearch, AiOutlineDoubleRight } from 'react-ic
 import { Row, Col } from 'reactstrap'
 import Popover from '../../components/UI/Popover'
 
-import { BiMenu } from 'react-icons/bi'
 import { AiOutlineTwitter, AiOutlineMail } from 'react-icons/ai'
-import { FaDesktop, FaPodcast, FaTwitch } from 'react-icons/fa'
-import { IoMdFilm } from 'react-icons/io'
-import { BiBuildings, BiLinkExternal } from 'react-icons/bi'
-import { MdLabelOutline } from 'react-icons/md'
-import { RiFileSearchLine, RiPlayCircleLine } from 'react-icons/ri'
-import { MdKeyboardArrowRight } from 'react-icons/md'
-import { BiBookmarkPlus } from 'react-icons/bi'
+import {  FaPodcast, FaTwitch, FaFacebookF } from 'react-icons/fa'
 import { TiSocialYoutubeCircular } from 'react-icons/ti'
-import { FaFacebookF } from 'react-icons/fa'
 
 import aws_poster_vid from '../../images/aws-poster-vid.png'
 import placeholder_agility from '../../images/placeholder-agility.png'

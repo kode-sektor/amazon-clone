@@ -51,6 +51,7 @@ import AmazonDrive from "./pages/AmazonDrive"
 import AmazonPhotos from "./pages/AmazonPhotos"
 import AmazonRenewed from "./pages/AmazonRenewed"
 import AmazonWebServices from "./pages/AmazonWebServices"
+import Shopbop from "./pages/Shopbop"
 
 
 function App() {
@@ -108,6 +109,7 @@ function App() {
                     <Route path="/amazon-photos" component={AmazonPhotos}/>
                     <Route path="/amazon-renewed" component={AmazonRenewed}/>
                     <Route path="/amazon-web-services" component={AmazonWebServices}/>
+                    <Route path="/shopbop" component={Shopbop}/>
                 </Switch>
             </Router>
         </div>

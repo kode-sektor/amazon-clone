@@ -225,7 +225,7 @@ const Footer = (props) => {
                                                         Computing Services
                                                     </span>
                                             </>, 
-                                            href: "/--ochre-73", 
+                                            href: "/amazon-web-services", 
                                             icon: null 
                                     },
                                     { 
@@ -283,7 +283,7 @@ const Footer = (props) => {
                                                     Fashion Brands
                                                 </span>
                                         </>, 
-                                        href: "/", 
+                                        href: "/shopbop", 
                                         icon: null 
                                     },
                                     { label: 

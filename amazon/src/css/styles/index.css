@@ -432,6 +432,7 @@ file rather than small ones. Your choice
     --grey-tone-125: #f8f7f5;
     --grey-tone-126: #5f5b53;
     --grey-tone-127: #242f3e;
+    --grey-tone-128: #faf9f9;
 	
     --black: #000;
     --white: #fff;
@@ -481,7 +482,8 @@ file rather than small ones. Your choice
 }
 @font-face {
 	font-family: "Corda Std"; 
-	src: url("../font/corda/Corda-Bold.otf"),
+	src: url("../font/corda/Corda-Regular.otf"),
+        url("../font/corda/Corda-Bold.otf"),
         url("../font/corda/Corda-BoldItalic.otf"),
         url("../font/corda/Corda-ExtraLight.otf"),
         url("../font/corda/Corda-ExtraLightItalic.otf"),
@@ -489,8 +491,26 @@ file rather than small ones. Your choice
         url("../font/corda/Corda-Light.otf"),
         url("../font/corda/Corda-LightItalic.otf"),
         url("../font/corda/Corda-Medium.otf"),
-        url("../font/corda/Corda-MediumItalic.otf"),
-        url("../font/corda/Corda-Regular.otf")
+        url("../font/corda/Corda-MediumItalic.otf");
+}
+@font-face {
+	font-family: "Corda Std Bold"; 
+	src: url("../font/corda/Corda-Bold.otf"),
+}
+@font-face {
+    font-family: "GT-America-Standard";
+    src: url("../font/gt-america-font/gt-america-regular/gt-america-regular.ttf"),
+        url("../font/gt-america-font/gt-america-regular/gt-america-regular.otf");
+}
+@font-face {
+    font-family: "GT-America-Standard-Bold";
+    src: url("../font/gt-america-font/gt-america-bold/gt-america-bold.otf"),
+        url("../font/gt-america-font/gt-america-bold/gt-america-bold.ttf");
+}
+@font-face {
+    font-family: "GT-America-Standard-Bold-Italic";
+    src: url("../font/gt-america-font/gt-america-bold-italic/gt-america-bold-italic.otf"),
+        url("../font/gt-america-font/gt-america-bold-italic/gt-america-bold-italic.ttf");
 }
 
 * {
