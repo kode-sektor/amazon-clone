@@ -8,6 +8,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import rebrand_hearts from '../../images/rebrand-hearts.png'
 import shopbop_bag from '../../images/shopbop-bag.png'
 import rebrand_shopbop_logo from '../../images/rebrand-shopbop-logo.png'
+import shopbop_welcome from '../../images/shopbop-welcome.jpg'
 
 import './index.css'
 
@@ -118,6 +119,51 @@ const Shopbop = () => {
                     </nav>
                 </section>
             </header>
+            <main className="shopbop__body">
+                <section className="shopbop__welcome">
+                    <section className="shopbop__welcomeTo">
+                        <header className="shopbop__welcomeHeader">
+                            Welcome To
+                            <section className="shopbop__welcomeLogo">
+                                <img src={rebrand_shopbop_logo} alt="" />
+                            </section>
+                        </header>
+                        <section className="shopbop__container">
+                            <p>
+                                We're the ultimate destination for style inspiration and discovery, offering the latest from 1,000+ established and emerging designers, daily new arrivals, and can't-miss styling tips. Your perfect wardrobe starts (and ends) here.
+                            </p>
+                        </section>
+                        <section className="shopbop__container">
+                            <p>
+                                Get emails about new arrivals from designers you love, and when your favorite items are selling out or going on sale.
+                            </p>
+                        </section>
+                        <section className="shopbop__container text-center">
+                            <form action="" className="shopbob__mailing">
+                                <input type="email" placeholder="Enter your email address" value={""} />
+                                <input type="submit" value="Subscribe" />
+                            </form>
+                        </section>
+                        <ul className="shopbop__containerLinks">
+                            <li>
+                                <Link to="/">What's New</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Customer Service</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Size Guide</Link>
+                            </li>
+                            <li>
+                                <Link to="/">Account</Link>
+                            </li>
+                        </ul>
+                    </section>
+                    <section className="shopbop__posterImg">
+                        <img src={shopbop_welcome} alt="shopbop welcome" />
+                    </section>
+                </section>
+            </main>
         </div>
     )
 }

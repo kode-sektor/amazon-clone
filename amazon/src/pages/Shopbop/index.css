@@ -208,3 +208,116 @@
 .shopbop__search {
     font-size: 1.5em;
 }
+.shopbop__body {
+    position: relative;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shopbop__welcome {
+    display: flex;
+    width: 1024px;
+    height: 564px;
+    padding-top: 20px;
+    margin: 0;
+    font-size: 14px;
+    background-color: var(--white);
+    border: 2px solid plum;
+}
+.shopbop__welcomeTo {
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid peru;
+}
+.shopbop__welcomeHeader {
+    padding: 5.5rem 5.5rem 2rem;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0 0 13px;
+    font-weight: 300;
+    color: var(--black);
+    border: thin solid orchid;
+}
+.shopbop__welcomeLogo img {
+    height: 45px;
+    width: 181px;
+}
+.shopbop__container {
+    padding: 0rem 5.5rem;
+}
+.shopbop__container p {
+    height: 78px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: var(--black);
+}
+.shopbob__mailing input[type="email"] {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 200px;
+    padding: .1em;
+    padding-left: 10px;
+    margin-bottom: 1em;
+    line-height: 12px;
+    margin: 0;
+    font-size: 10px;
+    font-weight: 300;
+    vertical-align: top;
+    color: var(--black);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--grey-tone-129);
+    background-color: var(--white);
+    box-shadow: none;
+    border: .1em solid var(--black);
+    border-radius: 0;
+    transition: border linear .2s, box-shadow linear .2s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+.shopbob__mailing input[type="submit"] {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    margin: 0;
+    padding: .1em;
+    padding-left: 10px;
+    margin-bottom: 1em;
+    font-size: 12px;
+    line-height: 14px;
+    vertical-align: middle;
+    border-radius: 0;
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    box-shadow: inset 0 .1em .1em rgba(0,0,0,0.075);
+    background-color: var(--red-4);
+    transition: border linear .2s,box-shadow linear .2s;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+.shopbop__containerLinks {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 5.5rem 2rem;
+    margin-left: 0;
+    border: thin solid green;
+}
+.shopbop__containerLinks li {
+    margin: 0.5rem;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.shopbop__containerLinks li a {
+    color: var(--red-4);
+}
+.shopbop__posterImg img {
+    max-width: none;
+}
