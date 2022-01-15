@@ -321,3 +321,15 @@
 .shopbop__posterImg img {
     max-width: none;
 }
+.shopbop__seo {
+    margin-top: 2rem;
+}
+.shopbop__seo img {
+    vertical-align: middle;
+}
+.seoLinks {
+    margin-bottom: 26px;
+}
+.shopbop__seo ul li {
+    display: inline;
+}
