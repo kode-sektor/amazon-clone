@@ -71,7 +71,6 @@
     font-size: 12px;
     text-align: center;
     vertical-align: middle;
-    border: thin solid indigo;
 }
 .shopbop__headerFree a {
     color: var(--black);
@@ -88,7 +87,6 @@
     padding: 20px 0 50px 6px;
     margin: 0 5px 0 auto;
     cursor: pointer;
-    border: thin solid yellow;
 
     position: relative;
     padding: 12px 0 0 6px;
@@ -103,7 +101,6 @@
     align-items: center;
     margin: 0 5px 0 5px;
     cursor: pointer;
-    border: thin solid yellowgreen;
 }
 .shopbop__hearts a {
     width: 32px;
@@ -144,7 +141,6 @@
     height: 88px;
     margin: 0 auto;
     z-index: 10;
-    border: thin solid gold;
 }
 .shopbop__logo a {
     display: block;
@@ -176,7 +172,6 @@
     color: var(--black);
     text-transform: uppercase;
     box-sizing: border-box;
-    border: 2px solid black;
 }
 .shopbop__navList > ul > li {
     display: inline-flex;
@@ -222,12 +217,10 @@
     margin: 0;
     font-size: 14px;
     background-color: var(--white);
-    border: 2px solid plum;
 }
 .shopbop__welcomeTo {
     flex-direction: column;
     text-align: center;
-    border: 2px solid peru;
 }
 .shopbop__welcomeHeader {
     padding: 5.5rem 5.5rem 2rem;
@@ -236,7 +229,6 @@
     margin: 0 0 13px;
     font-weight: 300;
     color: var(--black);
-    border: thin solid orchid;
 }
 .shopbop__welcomeLogo img {
     height: 45px;
@@ -306,7 +298,6 @@
     justify-content: center;
     padding: 2.5rem 5.5rem 2rem;
     margin-left: 0;
-    border: thin solid green;
 }
 .shopbop__containerLinks li {
     margin: 0.5rem;
@@ -330,6 +321,60 @@
 .seoLinks {
     margin-bottom: 26px;
 }
+.seoLinks a {
+    text-decoration: none;
+}
 .shopbop__seo ul li {
     display: inline;
+}
+.shopbop__footer {
+    width: 1024px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 12px;
+}
+.shopbop__footerPri {
+    display: flex;
+}
+.shopbop__services {
+    display: inline-block;
+    width: 20%;
+    font-size: 12px;
+    line-height: 26px;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    color: var(--black);
+    box-sizing: border-box;
+}
+.shopbob__servicesHeader {
+    list-style: none;
+    color: var(--black);
+    line-height: 24px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.shopbop__services li:not(.shopbob__servicesHeader) {
+    line-height: 24px;
+    letter-spacing: .15px;
+}
+.shopbop__services li:not(.shopbob__servicesHeader) a:hover,
+.shopbop__services li:not(.shopbob__servicesHeader) a:focus {
+    font-weight: 600;
+    text-decoration: none;
+}
+.shopbop__footerSecLinks {
+    margin-top: 58px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+.shopbop__footerSpecialLinks {
+    font-size: .9em;
+    font-weight: bold;
+    text-decoration: underline !important;
 }

@@ -10,6 +10,7 @@ import shopbop_bag from '../../images/shopbop-bag.png'
 import rebrand_shopbop_logo from '../../images/rebrand-shopbop-logo.png'
 import shopbop_welcome from '../../images/shopbop-welcome.jpg'
 import arrow_transparent from '../../images/arrow-transparent.gif'
+import rebrand_heart_small_filled from '../../images/rebrand-heart-small-filled.png'
 
 import './index.css'
 
@@ -658,6 +659,156 @@ const Shopbop = () => {
                     </ul>
                 </section>
             </main>
+            <footer className="shopbop__footer">
+                <section className="shopbop__footerPri">
+                    <ul className="shopbop__services">
+                        <li className="shopbob__servicesHeader">
+                            Services
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Customer Service
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Gift Certificates
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Give Us Your Feedback
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className="shopbop__services">
+                        <li className="shopbob__servicesHeader">
+                            Information
+                        </li>
+                        <li>
+                            <Link to="/">
+                                About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Careers
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Affiliate Program
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className="shopbop__services">
+                        <li className="shopbob__servicesHeader">
+                            Personalize
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Account
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                My Loyalty
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                My&nbsp;
+                                <img style={{"verticalAlign" : "middle"}} src={rebrand_heart_small_filled} alt="Heart" />
+                                s
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                My Wish List
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                My Designers
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                My Reviews
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className="shopbop__services">
+                        <li className="shopbob__servicesHeader">
+                            Connect
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Mobile
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Instagram
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Facebook
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Pinterest
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Weibo
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Sign up for Shopbop emails
+                            </Link>
+                        </li>
+                    </ul>
+                    <ul className="shopbop__services">
+                        <li className="shopbob__servicesHeader">
+                            Location
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Canada (change)
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Free Shipping
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/">
+                                Free Returns
+                            </Link>
+                        </li>
+                    </ul>
+                </section>
+                <section className="shopbop__footerSec">
+                    <section className="shopbop__footerSecLinks">
+                        © 1999-2022&nbsp;
+                        <Link to="/">BOP LLC</Link>
+                        . All Rights Reserved.&nbsp;
+                        <Link to="/" className="shopbop__footerSpecialLinks">Privacy Notice</Link>&nbsp;
+                        <Link to="/" className="shopbop__footerSpecialLinks">Conditions of Use</Link>
+                    </section>
+                </section>
+                <section>
+                    <Link to="/">
+                        中文版 Shopbop！使用您最熟悉的语言尽享精彩购物体验
+                    </Link>
+                </section>
+            </footer>
         </div>
     )
 }
