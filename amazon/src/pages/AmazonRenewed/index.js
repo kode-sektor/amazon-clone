@@ -46,14 +46,6 @@ const AmazonRenewed = () => {
 
     const [pageId, setPageId] = useState("")
     
-    const [activeTab, setActiveTab] = useState(windowId || '1')
-
-    const toggle = tab => {
-        if (activeTab !== tab) { 
-            setActiveTab(tab)
-        }
-    }
-
     useEffect (() => {
         setPageId(pageClass)
     }, [pageClass])

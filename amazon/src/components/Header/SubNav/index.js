@@ -47,7 +47,7 @@ const SubNav = () => {
     const regularSubNav = [
         "/amazon-hub", "/shop-with-points", "/balance-reload", "/currency-converter", "/covid-19",
         "/returns", "/alexa-privacy", "/customer-service", "/amazon-drive", "/amazon-photos",
-        "/amazon-renewed"
+        "/amazon-renewed", "/conditions-of-use"
     ]
 
     useEffect(() => {

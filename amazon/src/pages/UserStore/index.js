@@ -273,7 +273,7 @@ const UserStore = () => {
                     squished={true}
                     slider={
                         <Slider 
-                            type={"multiImage"}
+                            type={"multi-image"}
                             carouselClass={"amzn__carousel"}
                             count={6}
                             items={
@@ -360,7 +360,7 @@ const UserStore = () => {
                     squished={true}
                     slider={
                         <Slider 
-                            type={"multiImage"}
+                            type={"multi-image"}
                             carouselClass={"amzn__carousel"}
                             count={6}
                             items={
@@ -445,7 +445,7 @@ const UserStore = () => {
                     heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                     slider_two={
                         <Slider 
-                            type={"multiImage"}
+                            type={"multi-image"}
                             carouselClass={"amzn__carousel"}
                             count={8}
                             items={[

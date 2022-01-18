@@ -7,7 +7,6 @@ import { DealOfTheDay } from '../Badge'
 
 import './index.css'
 
-
 const CardOne = ({name, date, img, cardClass=""}) => {
     return (
         <section className={`sub__layout__card__grid ${cardClass}`}>
@@ -229,9 +228,9 @@ const CardSix = ({items, title, link, type=""}) => {
                 <ul className={`octopus__pc__card__list octopus__pc__card__height__v3 ${type}`}>
                 {
                     items.map((entry, index) => {
-                        const {item} = entry
+                        const { item } = entry
                         return (
-                            <li className="octopus__pc__item octopus__pc__item__v3 d-inline-block">
+                            <li key={index} className="octopus__pc__item octopus__pc__item__v3 d-inline-block">
                                 <div className="octopus__pc__item__block octopus__pc__asin__block a__spacing__none">
                                     <Link to="/" className="octopus__pc__item__link">
                                         <section className="octopus__pc__item__image__section octopus__pc__item__image__section__v3">
@@ -251,7 +250,7 @@ const CardSix = ({items, title, link, type=""}) => {
                                         <section className="octopus__pc__asin__info__section">
                                             <div className={`a__spacing__none octopus__pc__asin__price__section ${type}`}>
                                                 <section className="octopus__pc__asin__price">
-                                                    <span className={`a__price  ${type}`} data-a-size="l" data-a-color="base">
+                                                    <span className={`a__price ${type}`} data-a-size="l" data-a-color="base">
                                                         <span className="a__price__symbol">$</span>
                                                         {
                                                             item.price && (

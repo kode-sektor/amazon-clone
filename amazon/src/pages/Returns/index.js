@@ -188,7 +188,7 @@ const Returns = () => {
                                     slider={
                                         [
                                             <Slider 
-                                                type={"multiImage"}
+                                                type={"multi-image"}
                                                 carouselClass={"amzn__carousel"}
                                                 count={7}
                                                 price={true}
@@ -249,7 +249,7 @@ const Returns = () => {
                                                     }
                                             />,
                                             <Slider 
-                                                type={"multiImage"}
+                                                type={"multi-image"}
                                                 carouselClass={"amzn__carousel"}
                                                 count={7}
                                                 price={true}
@@ -315,7 +315,7 @@ const Returns = () => {
                                     heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                                     slider_two={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={8}
                                             items={

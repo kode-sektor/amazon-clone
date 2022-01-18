@@ -21,7 +21,6 @@ import gift_certificate_workplace from '../../images/gift-certificate-workplace.
 import gift_certificate_wedding from '../../images/gift-certificate-wedding.jpg'
 import gift_certificate_just_because from '../../images/gift-certificate-just-because.jpg'
 import gift_five_dollar_extra_credit from '../../images/gift-5-dollar-extra-credit.jpg'
-
 import amzn_premium_gift_card from '../../images/amazon-premium-gift-card.jpg'
 
 import './index.css'
@@ -333,11 +332,10 @@ const GiftCards = () => {
                             carouselID={"amzn__gift__cards"}
                             slider={
                                 <Slider 
-                                    type={"multiImage"}
+                                    type={"multi-image"}
                                     carouselClass={"amzn__carousel"}
                                     carouselID={"amzn__gift__cards"}
                                     count={5}
-                                    price={true}
                                     items={
                                             [
                                                 {
@@ -346,7 +344,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -354,7 +352,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -362,7 +360,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -370,7 +368,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -378,7 +376,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 }
                                             ]
                                         }
@@ -393,11 +391,10 @@ const GiftCards = () => {
                             carouselID={"amzn__gift__cards"}
                             slider={
                                 <Slider 
-                                    type={"multiImage"}
+                                    type={"multi-image"}
                                     carouselClass={"amzn__carousel"}
                                     carouselID={"amzn__gift__cards"}
                                     count={5}
-                                    price={true}
                                     items={
                                             [
                                                 {
@@ -406,7 +403,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -414,7 +411,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -422,7 +419,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -430,7 +427,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -438,7 +435,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 }
                                             ]
                                         }
@@ -453,11 +450,10 @@ const GiftCards = () => {
                             carouselID={"amzn__gift__cards"}
                             slider={
                                 <Slider 
-                                    type={"multiImage"}
+                                    type={"multi-image"}
                                     carouselClass={"amzn__carousel"}
                                     carouselID={"amzn__gift__cards"}
                                     count={5}
-                                    price={true}
                                     items={
                                             [
                                                 {
@@ -466,7 +462,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -474,7 +470,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -482,7 +478,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -490,7 +486,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 },
                                                 {
                                                     href: '/',
@@ -498,7 +494,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00"
                                                 }
                                             ]
                                         }
@@ -522,12 +518,11 @@ const GiftCards = () => {
                             carouselID={"amzn__gift__cards"}
                             slider={
                                 <Slider 
-                                    type={"multiImage"}
+                                    type={"multi-image"}
                                     carouselClass={"amzn__carousel"}
                                     carouselID={"amzn__gift__cards"}
                                     giftCardAux={true} // To prevent clashing with 'category'
                                     count={3}
-                                    price={true}
                                     items={
                                             [
                                                 {
@@ -536,7 +531,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00,
+                                                    price: "40.00",
                                                     /* This is used for bestseller badge at the top of the image
                                                     Set value as the category of product, and not a boolean */
                                                     bestSellerAux: "Gift Cards" 
@@ -547,7 +542,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00",
                                                 },
                                                 {
                                                     href: '/',
@@ -555,7 +550,7 @@ const GiftCards = () => {
                                                     altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                     caption: "Amazon.ca eGift Card",
                                                     extraCaption: "Amazon.com.ca, Inc.",
-                                                    price: 40.00
+                                                    price: "40.00",
                                                 }
                                             ]
                                     }

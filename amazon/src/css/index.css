@@ -1006,7 +1006,7 @@ nav ul
     width: 40px;
     height: 45px;
     margin: 12px;
-    background: url('../images//nav/hamburger-menu-white.svg') 0px no-repeat;
+    background: url('../images/nav/hamburger-menu-white.svg') 0px no-repeat;
     background-size: 35px 40px;
     cursor: pointer;
 }
@@ -1028,7 +1028,7 @@ nav.navbar .navbar-brand {
 .secondaryHeader .logo {
     height: 27px;
     margin-top: 15px;
-    background: url('../images//nav/amazon-jobs.svg') center center no-repeat;
+    background: url('../images/nav/amazon-jobs.svg') center center no-repeat;
     background-size: 100px;
 }
 
@@ -1866,7 +1866,7 @@ button.expander__myx {
     margin-right: 0;
 }
 a.expander__myx .toggle__myx, button.expander__myx .toggle__myx {
-    margin: -5px 0 0!important;
+    margin: -5px 0 0 !important;
 }
 a.expander__myx .toggle__myx, button.expander__myx .toggle__myx {
     position: absolute;
@@ -2403,10 +2403,6 @@ a:hover .ipc__title__link__chevron, a:focus .ipc__title__link__chevron {
     vertical-align: middle;
     border-radius: 4px;
     box-sizing: border-box;
-
-    align-items: center;
-    justify-content: center;
-    line-height: inherit;
 }
 .ipc__rate__button:not(:disabled) {
     background-color: transparent;
@@ -2416,20 +2412,20 @@ a:hover .ipc__title__link__chevron, a:focus .ipc__title__link__chevron {
 }
 .ipc__rate__button::before, .ipc__rate__button::after {
     position: absolute;
-    border-radius: 50%;
-    opacity: 0;
-    pointer-events: none;
     content: "";
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
 }
 .ipc__rate__button::before {
     transition: opacity 15ms linear;
     z-index: 1;
 }
 .ipc__rate__button::before, .ipc__rate__button::after {
-    width: 200%;
-    height: 200%;
     top: calc(50% - 100%);
     left: calc(50% - 100%);
+    width: 200%;
+    height: 200%;
 }
 .ipc__rate__button--baseAlt::before, .ipc__rate__button--baseAlt::after {
     background-color: var(--white);

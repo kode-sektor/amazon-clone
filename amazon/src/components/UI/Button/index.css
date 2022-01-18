@@ -272,6 +272,9 @@
 .a__button__cart .a__button__text {
     line-height: 20px !important;
 }
+.a__button__cart.a__button__cartPri .a__button__text {
+    line-height: 29px !important;
+}
 .music__btn {
     position: absolute;
     margin: 0px;

@@ -1,12 +1,11 @@
 .primeTop {
     position: fixed;
-    top: calc(-100% + 115px);
+    top: calc(-100% + 95px);
     width: 100%;
     z-index: 100;
     border-bottom: var(--blue-7);
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    font-family: 'Amazon Ember', Tahoma, sans-serif;
 }
 .primeTop.slideUp {
     animation: slideUp .75s 0s forwards ease;
@@ -19,12 +18,12 @@
         top: 0%;
     }
     to {
-        top: calc(-100% + 115px);
+        top: calc(-100% + 95px);
     }
 }
 @keyframes slideDown {
     from {
-        top: calc(-100% + 115px);
+        top: calc(-100% + 95px);
     }
     to {
         top: 0%;

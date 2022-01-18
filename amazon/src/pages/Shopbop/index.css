@@ -84,17 +84,10 @@
 }
 .shopbop__signin {
     position: relative;
-    padding: 20px 0 50px 6px;
     margin: 0 5px 0 auto;
-    cursor: pointer;
-
-    position: relative;
     padding: 12px 0 0 6px;
     line-height: 17px;
     cursor: pointer;
-}
-.shopbop__signin a {
-    /* color: var(--black); */
 }
 .shopbop__hearts {
     position: relative;
@@ -171,7 +164,6 @@
     text-align: left;
     color: var(--black);
     text-transform: uppercase;
-    box-sizing: border-box;
 }
 .shopbop__navList > ul > li {
     display: inline-flex;
@@ -182,7 +174,6 @@
     color: var(--black);
     text-align: center;
     text-transform: uppercase;
-    box-sizing: border-box;
     cursor: pointer;
 }
 .shopbop__navList > ul > li a {
@@ -197,7 +188,6 @@
     background: transparent;
     z-index: 1031;
     text-transform: uppercase;
-    box-sizing: border-box;
     transition: all 225ms ease-in-out;
 }
 .shopbop__search {

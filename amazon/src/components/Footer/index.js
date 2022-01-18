@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link as LinkScroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 import { UncontrolledDropdown, DropdownToggle, Button } from 'reactstrap';
 
@@ -341,10 +342,10 @@ const Footer = (props) => {
             </section>
             <section className="page__footer__minor">
                 <ul className="page__footer__minor__list">
-                    <li><a href="/">Conditions of Use</a></li>
-                    <li><a href="/">Privacy Notice</a></li>
-                    <li><a href="/">Interest-Based Ads</a></li>
-                    <li><a href="/">&copy; 2008-2021, Amazon.com, Inc. or its affiliates</a></li>
+                    <li><Link to="/conditions-of-use">Conditions of Use</Link></li>
+                    <li><Link to="/privacy">Privacy Notice</Link></li>
+                    <li><Link to="/interest-ads">Interest-Based Ads</Link></li>
+                    <li><Link to="/">&copy; 2008-2021, Amazon.com, Inc. or its affiliates</Link></li>
                 </ul>
             </section>
             <ModalLang

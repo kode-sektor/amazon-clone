@@ -658,7 +658,7 @@ const Health = () => {
                                 carouselID={"amzn__gift__cards"}
                                 slider={
                                     <Slider 
-                                        type={"multiImage"}
+                                        type={"multi-image"}
                                         carouselClass={"amzn__carousel"}
                                         carouselID={"amzn__gift__cards"}
                                         count={5}
@@ -671,7 +671,7 @@ const Health = () => {
                                                         altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                         caption: "Duracell Coppertop AA Alkaline Batteries - 20…",
                                                         extraCaption: "Duracell",
-                                                        price: 40.00
+                                                        price: "40.00"
                                                     },
                                                     {
                                                         href: '/',
@@ -679,7 +679,7 @@ const Health = () => {
                                                         altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                         caption: "Duracell Coppertop AA Alkaline Batteries - 20…",
                                                         extraCaption: "Duracell",
-                                                        price: 40.00
+                                                        price: "40.00"
                                                     },
                                                     {
                                                         href: '/',
@@ -687,7 +687,7 @@ const Health = () => {
                                                         altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                         caption: "Duracell Coppertop AA Alkaline Batteries - 20…",
                                                         extraCaption: "Duracell",
-                                                        price: 40.00
+                                                        price: "40.00"
                                                     },
                                                     {
                                                         href: '/',
@@ -695,7 +695,7 @@ const Health = () => {
                                                         altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                         caption: "Duracell Coppertop AA Alkaline Batteries - 20…",
                                                         extraCaption: "Duracell",
-                                                        price: 40.00
+                                                        price: "40.00"
                                                     },
                                                     {
                                                         href: '/',
@@ -703,7 +703,7 @@ const Health = () => {
                                                         altText: "Amazon.ca Gift Cards in a Premium Greeting Card (Various Designs)",
                                                         caption: "Duracell Coppertop AA Alkaline Batteries - 20…",
                                                         extraCaption: "Duracell",
-                                                        price: 40.00
+                                                        price: "40.00"
                                                     }
                                                 ]
                                             }

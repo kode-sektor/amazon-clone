@@ -1027,6 +1027,7 @@ button.no__style:active, .btn__no__style:active {
 }
 .a__button.a__button__small {
     height: 22px;
+    line-height: 22px;
 }
 .a__button__primary .a__button__text {
     color: var(--color-2);
@@ -1044,7 +1045,7 @@ button.no__style:active, .btn__no__style:active {
 .a__button.a__button__small .a__button__text {
     font-size: 11px;
     height: 20px;
-    line-height: 20px;
+    line-height: 20px !important;
 	padding: 0 6px 0 7px;
 }
 .a__button__input {
@@ -1115,7 +1116,7 @@ button.no__style:active, .btn__no__style:active {
     padding: 0 30px 0 31px;
 }
 .prime__emergencyCtaJoin .a__button__inner .a__button__text {
-    line-height: 44px;
+    line-height: 44px !important;
     font-size: 16px;
     padding: 0 25px 0 25px;
 }

@@ -431,7 +431,7 @@ const HomeImprovement = () => {
                                 squished={true}
                                 slider={
                                     <Slider 
-                                        type={"multiImage"}
+                                        type={"multi-image"}
                                         id={"homeImprovement"}
                                         carouselClass={"amzn__carousel"}
                                         carouselID={"amzn__gift__cards"}
@@ -488,7 +488,7 @@ const HomeImprovement = () => {
                                 squished={true}
                                 slider={
                                     <Slider 
-                                        type={"multiImage"}
+                                        type={"multi-image"}
                                         id={"homeImprovement"}
                                         carouselClass={"amzn__carousel"}
                                         carouselID={"amzn__gift__cards"}
@@ -545,7 +545,7 @@ const HomeImprovement = () => {
                                 squished={true}
                                 slider={
                                     <Slider 
-                                        type={"multiImage"}
+                                        type={"multi-image"}
                                         id={"homeImprovement"}
                                         carouselClass={"amzn__carousel"}
                                         carouselID={"amzn__gift__cards"}

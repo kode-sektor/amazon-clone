@@ -481,7 +481,7 @@ const NavCart = () => {
                 heading={"Buy it Again"}
                 slider={
                     <Slider 
-                        type={"multiImage"}
+                        type={"multi-image"}
                         carouselClass={"amzn__carousel"}
                         count={6}
                         price={true}
@@ -569,7 +569,7 @@ const NavCart = () => {
                 heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                 slider_two={
                     <Slider 
-                        type={"multiImage"}
+                        type={"multi-image"}
                         carouselClass={"amzn__carousel"}
                         count={8}
                         items={[

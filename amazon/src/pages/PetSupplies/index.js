@@ -354,7 +354,7 @@ const Health = () => {
                                     <PrimaryCarousel 
                                         slider={
                                             <Slider 
-                                                type={"multiImage"}
+                                                type={"multi-image"}
                                                 carouselClass={"amzn__carousel"}
                                                 count={6}
                                                 items={[

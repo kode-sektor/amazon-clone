@@ -16,7 +16,7 @@ import { BestSellerAux } from '../../Badge'
 
 import './index.css'
 
-const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
+const Slider = ({ type, count, items, carouselClass, carouselID, id, giftCardAux,
 	 cartBtnSmall, reorderStarPrice, interval=5000, addToCart=false, onlyCaption=false }) => {
 
 	let itemLength = items.length
@@ -64,8 +64,8 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 		if (type === "multi-image") {
 
 			items.forEach((item, index) => {
-				const { dealOfTheDay, href, src, altText, caption, extraCaption, price, priceRange, 
-					percentOff, category, prime, date, similarItems, buyingOptions, viewDeal } = item
+				const { dealOfTheDay, href, src, altText, caption, extraCaption, price, priceRange, rating,
+					ratingCount, pricePerUnit, percentOff, category, prime, date, similarItems, buyingOptions, viewDeal } = item
 
 				tempCarousel = [
 					...tempCarousel,
@@ -110,109 +110,130 @@ const Slider = ({type, count, items, carouselClass, carouselID, id, giftCardAux,
 											</section>
 										)
 									}
-									{caption ? 
-										(
-											<>
-												{
-													
-												}
-												<Link to={href}>
-													<div className="amzn__carousel__caption">{item.caption}</div>
-												</Link>
-												{extraCaption && 
-													(<span className="amzn__extra__caption d-block">
-														{extraCaption}
-													</span>)
-												}
-												{/*Reorder price and stars if on Gift cards page*/}
-												{ // For bottom (2nd) slider on Gift page
-													((carouselID === "amzn__gift__cards" && giftCardAux) || reorderStarPrice) && (
-														<span className={`amzn__carousel__star ${carouselID}`}></span>
-													)
-												}
-												{
-													// Only show price on bottom (2nd) slider on GiftCard Page
-													// or on Carousel of other pages
-													((carouselID !== "amzn__gift__cards" && !giftCardAux) || giftCardAux || reorderStarPrice) ?
-													(
-														<span className="amzn__carousel__count"> 1,833 </span>
-													) : 
-													""
-												}
-												{
-													price && 
-														(	
-															<div className="a__spacing__micro" style={{clear: "left"}}>
-																<span className="amzn__price">
-																	<span class="amzn__price__symbol">$</span>
-																	<span class="amzn__price__whole">40
-																		<span class="amzn__price__decimal">.</span>
-																	</span>
-																	<span class="amzn__price__fraction">00</span>
-																</span>
-															</div>
-														)
-												}
-												{	// Show the stars below the price for 1st kind of slider in Gift page
-													// For top (1st) slider on Gift page
-													((carouselID === "amzn__gift__cards" && !giftCardAux) && !reorderStarPrice) && (
-														<span className={`amzn__carousel__star ${carouselID}`}></span>
-													)
-												}
-												{
-													(carouselID === "amzn__gift__cards" && !giftCardAux && !reorderStarPrice) ?
-													(
-														<span className="amzn__carousel__count"> (1,833) </span>
-													) : 
-													""
-												}
-												<span className="amzn__carousel__offers"> </span>
-												{
-													category && !giftCardAux &&
-													(
-														<Link to="/" className="a__size__small a__link__normal amzn__best__seller" >
-															<i className="a__icon a__icon__addon amzn__icon__bestSeller">
-																#1 Best Seller
-															</i>
-															<span className="a__size__small a__color__secondary">in&nbsp; 
-																<span className="a__color__link amzn__carousel__delivery">
-																	{category}
-																</span>
+									{
+										caption ? 
+											(
+												<>
+													{
+														
+													}
+													<Link to={href}>
+														<div className="amzn__carousel__caption">{item.caption}</div>
+													</Link>
+													{extraCaption && 
+														(<span className="amzn__extra__caption d-block">
+															{extraCaption}
+														</span>)
+													}
+													{/*Reorder price and stars if on Gift cards page*/}
+													{ // For bottom (2nd) slider on Gift page
+														((carouselID === "amzn__gift__cards" && giftCardAux) || reorderStarPrice || rating) && (
+															// <span className={`amzn__carousel__star ${carouselID}`}></span>
+															<span className={`a__icon a__icon__star__small a__star__small__${reorderStarPrice || rating}`}>
+																&nbsp;&nbsp;
 															</span>
-															&nbsp;
-														</Link>
-													)
-												}
-												{
-													carouselID !== "amzn__gift__cards" && price && 
-													(<span className="a__color__price d-block">$269.99</span>)
-												}
-												{prime && (	// Only on Order Page
-													<span className="amzn__prime__badge d-block">
-														<span className="amzn__prime__badge__icon"></span>&nbsp;
-													</span>
-												)}
-												{(category || date) && (
-													<span className="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
-												)}
-												{
-													cartBtnSmall && 
-													(	<>
-															<br/>
-															<CartBtnSmall/>
-														</>
-													)
-												}	
-											</>
-										)
-										: 
-										(
-											<div className="amzn__carousel__card">
-												<span className="amzn__carousel__price">$188.99 </span>
-												<span className="amzn__carousel__oldprice">$269.99 </span>
-												<span className="amzn__carousel__deal">Deal has ended </span>
-											</div> 
-										)	
+														)
+													}
+													{
+														// Only show price on bottom (2nd) slider on GiftCard Page
+														// or on Carousel of other pages
+														((carouselID !== "amzn__gift__cards" && !giftCardAux) || giftCardAux || reorderStarPrice) &&
+														(
+															// <span className="amzn__carousel__count">&nbsp; 1,833 </span>
+															<span className="amzn__carousel__count">&nbsp; {ratingCount} </span>
+														) 
+													}
+													{
+														price &&
+															(	
+																<>
+																<br />
+																<div className="a__spacing__micro" style={{clear: "left"}}>
+																	<span className="amzn__price">
+																		<span class="amzn__price__symbol">$</span>
+																		<span class="amzn__price__whole">
+																			{price.substring(0, price.indexOf("."))}
+																			<span class="amzn__price__decimal">.</span>
+																		</span>
+																		<span class="amzn__price__fraction">
+																			{price.substring(price.indexOf("."))}
+																		</span>
+																	</span>
+																</div>
+																</>
+															)
+													}
+													{
+														pricePerUnit && (
+															<Link to="/">
+																&nbsp;
+																<span className="a__size__mini a__color__base">
+																	(${pricePerUnit})
+																</span>
+															</Link>
+														)
+													}
+													{	// Show the stars below the price for 1st kind of slider in Gift page
+														// For top (1st) slider on Gift page
+														((carouselID === "amzn__gift__cards" && !giftCardAux) && !reorderStarPrice) && (
+															<span className={`amzn__carousel__star ${carouselID}`}></span>
+														)
+													}
+													{
+														(carouselID === "amzn__gift__cards" && !giftCardAux && !reorderStarPrice) ?
+														(
+															<span className="amzn__carousel__count"> (1,833) </span>
+														) : 
+														""
+													}
+													<span className="amzn__carousel__offers"> </span>
+													{
+														category && !giftCardAux &&
+														(
+															<Link to="/" className="a__size__small a__link__normal amzn__best__seller" >
+																<i className="a__icon a__icon__addon amzn__icon__bestSeller">
+																	#1 Best Seller
+																</i>
+																<span className="a__size__small a__color__secondary">in&nbsp; 
+																	<span className="a__color__link amzn__carousel__delivery">
+																		{category}
+																	</span>
+																</span>
+																&nbsp;
+															</Link>
+														)
+													}
+													{/* {
+														carouselID !== "amzn__gift__cards" && price && 
+														(<span className="a__color__price d-block">$269.99</span>)
+													} */}
+													{prime && (	// Only on Order Page
+														<span className="amzn__prime__badge d-block">
+															<span className="amzn__prime__badge__icon"></span>&nbsp;
+															FREE One-day
+														</span>
+													)}
+													{(category || date) && (
+														<span className="a__size__small a__color__secondary amzn__carousel__dateOfPurchase">Purchased Jan 2021 </span>
+													)}
+													{
+														cartBtnSmall && 
+														(	<>
+																<br/>
+																<CartBtnSmall/>
+															</>
+														)
+													}	
+												</>
+											)
+											: 
+											(
+												<div className="amzn__carousel__card">
+													<span className="amzn__carousel__price">$188.99 </span>
+													<span className="amzn__carousel__oldprice">$269.99 </span>
+													<span className="amzn__carousel__deal">Deal has ended </span>
+												</div> 
+											)	
 									} 
 								</figcaption>
 							</figure>

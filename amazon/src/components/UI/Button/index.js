@@ -31,7 +31,7 @@ const BtnPill = ({text="Learn more", stretch=""}) => (
 // style can be "a__button__cart" or "add__to__cart"
 const CartBtn = ({text="Proceed to Checkout", stretch="w-100"}) => {
     return (
-        <button className={`a__button a__button__normal d-block ${stretch} a__button__primary a__button__cart`}>
+        <button className={`a__button a__button__normal d-block ${stretch} a__button__primary a__button__cart a__button__cartPri`}>
             <span className="a__button__inner d-block">
                 <input name="proceedToRetailCheckout" data-feature-id="proceed-to-checkout-action" className="a__button__input" type="submit" value="Proceed to checkout"/>
                 <span className="a__button__text" aria-hidden="true">

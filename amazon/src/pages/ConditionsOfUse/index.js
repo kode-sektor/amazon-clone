@@ -20,7 +20,7 @@ const Covid19 = () => {
                 <div className="row">
                     <h1 className="col-9 csHelp__headerTitle">
                         <Link to="/help-customer-service" className="csHelp__headerTitleLink">
-                            Help &amp; Customer Service
+                            Help and Customer Service
                         </Link>
                     </h1>
                 </div>
@@ -46,89 +46,71 @@ const Covid19 = () => {
                     </div>
                     <p className="csHelp__breadcrumb mb-0">
                         <Link to="/">
-                            Shipping and Delivery
+                            Security and Privacy
                         </Link>&nbsp;
                         <span>›</span>&nbsp;
                         <Link to="/">
-                            General Shipping Information
+                            Legal Policies
                         </Link>&nbsp;
                         <span>›</span>
                     </p>
                     <article className="csHelp__help">
                         <h1 className="csHelp__title">
-                            Amazon And Our Planet
+                            Amazon.ca Conditions of Use
                         </h1>
                         <section>
-                            <p className="csHelp--lead">
-                            Amazon's operations continue but delivery times may be longer than usual.
-                            </p>
-                            <p className="p__bottom">Last updated on May 18, 2021.</p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                Can I place an order? Will Amazon deliver the package?
-                            </h2>
-                            <p>
-                                Yes, however, delivery times are longer than usual. Please avoid using delivery addresses for buildings that may be closed due to the current provisions (e.g. schools).
-                            </p>
-                            <p>
-                                You can learn more about Amazon's actions to help customers, communities, and employees affected by COVID-19 on our blog, here:
-                            </p>
-                            <p>
-                                <Link to="/">
-                                    You can learn more about Amazon's actions to help customers, communities, and employees affected by COVID-19 on our blog, here:
-                                </Link>
+                            <p className="csHelp--lead"></p>
+                            <p className="p__bottom">
+                                <b>Last updated: October 15, 2020.</b>
                             </p>
                         </section>
+                        <p>
+                            Welcome to www.amazon.ca. Amazon.com.ca, Inc., and/or its affiliates ("Amazon.ca") provide Web site features and other products and services to you when you visit or shop at Amazon.ca, use Amazon.ca products or services, use Amazon.ca applications for mobile, or use software provided by Amazon.ca in connection with any of the foregoing (collectively, "Amazon.ca Services"). Amazon.ca provides the Amazon.ca Services subject to the following conditions.
+                        </p>
+                        <p className="p__bottom">
+                            <b>By using Amazon.ca Services, you agree to these conditions. Please read them carefully.</b>
+                        </p>
+                        <p>
+                            We offer a wide range of Amazon.ca Services, and sometimes additional terms may apply. When you use an Amazon.ca Service, you will also be subject to the guidelines, terms and agreements applicable to that Amazon.ca Service ("Service Terms"). If these Conditions of Use are inconsistent with the Service Terms, those Service Terms will control. We offer a wide range of Amazon.ca Services, and sometimes additional terms may apply. When you use an Amazon.ca Service (for example, Your Profile, Gift Cards, Amazon Video, Your Media Library, Amazon devices, or <Link to="/">Amazon applications</Link>), you will also be subject to the guidelines, terms and agreements applicable to that Amazon.ca Service ("Service Terms"). If these Conditions of Use are inconsistent with the Service Terms, those Service Terms will control.
+                        </p>
                         <section>
                             <h2 className="csHelp__title">
-                                What's the status of my order and delivery? Can I change the address on my order?
+                                PRIVACY
                             </h2>
                             <p>
-                                You can track your order and deliveries from <Link to="/">Your Orders</Link> on Amazon.ca or the Amazon Mobile Shopping app. You can change the delivery address for an order until it ships. Once your order has shipped, you can find tracking information in your order details. If an order includes multiple items, each may have separate delivery dates and tracking information.
+                                Please review our <Link to="/">Privacy Notice</Link>, which also governs your use of the Amazon.ca Services, to understand our practices.
                             </p>
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                Why are some items, Prime and Non-Prime, taking longer to ship?
+                                ELECTRONIC COMMUNICATIONS
                             </h2>
                             <p>
-                                In some cases, supply chain challenges and mandatory health and safety restrictions related to the COVID-19 pandemic are affecting our shipping and delivery. However, we are committed to free shipping all year. We continue to make updates to our logistics, transportation, supply chain, and other processes, while adhering to extensive health and safety measures to protect our associates as they pick, pack and ship products, to meet our demand and improve delivery speeds. We’ve also added capacity in our network and hired employees to supplement our current workforce.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                Can I still make returns?
-                            </h2>
-                            <p>
-                                Yes, we're still processing returns. To start a return and learn more about returns, please visit the <Link to="/">Online Returns Centre</Link>.
+                                When you use any Amazon.ca Service, or send emails, text messages, and other communications from your desktop or mobile device to us, you may be communicating with us electronically. You consent to receive communications from us electronically, such as emails, texts, mobile push notices, or notices and messages on this site or through the other Amazon.ca Services, such as our Message Centre, and you can retain copies of these communications for your records. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing
                             </p>
                         </section>
                         <section>
                             <h2>
-                                Is it safe to receive orders?
+                                COPYRIGHT
                             </h2>
                             <p>
-                                Health Canada maintains guidance on COVID-19 prevention and risks as well as its main modes of transmission.
+                                All content included in or made available through any Amazon.ca Service, such as text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software is the property of Amazon.ca or its content suppliers and protected by Canadian and international copyright laws. The compilation of all content included in or made available through any Amazon.ca Service is the exclusive property of Amazon.ca and protected by Canadian and international copyright laws.
                             </p>
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                What is Amazon doing about price gouging?
+                                TRADEMARKS
                             </h2>
                             <p>
-                                There is no place for price gouging on Amazon. We are working to ensure that no one artificially raises prices on basic need products during a global health crisis and have blocked or removed thousands of items, in line with our long-standing policy. We actively monitor our store and remove offers that violate our policy.
-                            </p>
-                            <p>
-                                You can submit a pricing concern to us by clicking Report incorrect product information on the product detail page, then select Other product details, then Price issue. While we are not able to respond directly to all reports, we appreciate your feedback.
+                                <Link to="/">Click here to see a non-exhaustive list of Amazon trademarks</Link>. In addition, graphics, logos, page headers, button icons, scripts, and service names included in or made available through any Amazon.ca Service are trademarks or trade dress of Amazon.com, Inc., or its affiliates, in the United States and other countries. Amazon.com, Inc.'s or its affiliates trademarks and trade dress may not be used in connection with any product or service that is not Amazon.com, Inc.'s or its affiliates', in any manner that is likely to cause confusion among customers, or in any manner that disparages or discredits Amazon.com, Inc. or its affiliates. All other trademarks not owned by Amazon.com, Inc. or its affiliates that appear in any Amazon.ca Service are the property of their respective owners, who may or may not be affiliated with, connected to, or sponsored by Amazon.com, Inc. or its affiliates
                             </p>
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                What is Amazon doing to keep customers and employees safe?
+                                PATENTS
                             </h2>
                             <p>
-                                We prioritize the safety and health of our employees and have invested $11.5 billion USD globally to provide a safe workplace, which is why at the onset of the pandemic we moved quickly to make more than 150 COVID-19 related process changes. We swiftly introduced mandatory masks and personal protective equipment in all of our fulfillment centres, sort centres and delivery stations, temperature screening, enhanced cleaning, and we staggered shifts and start times to make sure social distancing was happening. We also redeployed team members from their typical roles to act as safety ambassadors to perform critical COVID-related efforts.
+                                One or more patents owned by Amazon.ca apply to the Amazon.ca Services and to the features and services accessible via the Amazon.ca Services. Portions of the Amazon Services operate under licence of one or more patents. <Link to="/">Click here to see a non-exhaustive list of applicable Amazon.ca patents and applicable licenced patents.</Link>
                             </p>
                             <p>
                                 Learn more about what we are doing to ensure the safety and support of our customers, communities, and employees during this difficult time on the <Link to="/">Amazon Day 1 blog</Link>.
@@ -136,29 +118,30 @@ const Covid19 = () => {
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                Is it possible to reduce contact with drivers when they deliver my orders?
+                                LICENCE AND ACCESS
                             </h2>
                             <p>
-                                Yes. Amazon's delivery partners have been advised to reduce contact with customers by placing packages at the customer's doorstep and stepping back. If an ID check is required, these are now performed at a distance.
-                            </p>
-                            <p>
-                                In some cases, you can also choose a safe location where the driver can leave your package if you are not able to answer the door.
+                                Subject to your compliance with these Conditions of Use and any Service Terms, and your payment of any applicable fees, Amazon.ca or its content providers grant you a limited, non-exclusive, non-transferable, non-sublicensable licence to access and make personal and non-commercial use of the Amazon.ca Services. This licence does not include any resale or commercial use of any Amazon.ca Service or its contents; any collection and use of any product listings, descriptions, or prices; any derivative use of any Amazon.ca Service or its contents; any downloading copying, or other use of account information for the benefit of any third party; or any use of data mining, robots, or similar data-gathering and extraction tools. All rights not expressly granted to you in these Conditions of Use or any Service Terms are reserved and retained by Amazon.ca or its licensors, suppliers, publishers, rightsholders, or other content providers. No Amazon.ca Service, nor any part of any Amazon.ca Service, may be reproduced, duplicated, copied, sold, resold, visited, or otherwise exploited for any commercial purpose without the express written consent of Amazon.ca. You may not frame or utilize framing techniques to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of Amazon.ca without express written consent. You may not use any meta tags or any other "hidden text" utilizing Amazon.ca's name or trademarks without the express written consent of Amazon.ca. You may not misuse the Amazon.ca Services. You may use the Amazon.ca Services only as permitted by law. The licences granted by Amazon.ca terminate if you do not comply with these Conditions of Use or any Service Terms.
                             </p>
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                Are Amazon Pickup locations available for delivery?
+                                YOUR ACCOUNT
                             </h2>
                             <p>
-                                Yes, we are working with location partners to ensure that where possible Amazon Hub Locker and Pickup Points remain available. If the Locker you chose for delivery closes unexpectedly, you will be notified so that your parcel can be redirected to a home address or you can cancel your order for a refund. If your preferred location is temporarily unavailable, you can search for available locations <Link to="/">here</Link>.
+                                You may need your own Amazon account to use certain Amazon.ca Services, and you may be required to be logged in to the account and have a valid payment method associated with it. If there is a problem charging your selected payment method, we may charge any other valid payment method associated with your account. Click <Link to="/">here</Link> to manage your payment options. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your account, and you agree to accept responsibility for all activities that occur under your account or password. Amazon.ca does sell products for children, but it sells them to adults who can purchase with a credit card or other permitted payment method. If you are under the age of majority in your province or territory of residence, you may use the Amazon.ca Services only with involvement of a parent or guardian. Amazon.ca reserves the right to refuse service, terminate accounts, terminate your rights to use Amazon.ca Services, remove or edit content, or cancel orders in its sole discretion.
                             </p>
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                Is Amazon still delivering Large and Bulky items?
+                                REVIEWS, COMMENTS, COMMUNICATIONS, AND OTHER CONTENT
                             </h2>
                             <p>
-                                Yes. Amazon's delivery partners have been advised to reduce contact with customers by placing packages at the customer's doorstep and stepping back. Out of an abundance of caution, we are also pausing in-home delivery and services until further notice.
+                                You may post reviews, comments, photos, videos, and other content; send e-cards and other communications; and submit suggestions, ideas, comments, questions, or other information, so long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights (including publicity rights), or otherwise injurious to third parties or objectionable, and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam" or unsolicited commercial electronic messages. You may not use a false email address, impersonate any person or entity, or otherwise mislead as to the origin of a card or other content. Amazon.ca reserves the right (but not the obligation) to remove or edit such content, but does not regularly review posted content.
+                            </p>
+
+                            <p>
+                                If you do post content or submit material, and unless we indicate otherwise, you grant Amazon.ca a nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicencable right to use, reproduce, modify, adapt, publish, perform, translate, create derivative works from, distribute and display such content throughout the world in any media. You grant Amazon.ca and sublicencees the right to use the name that you submit in connection with such content, if they choose. You represent and warrant that you own or otherwise control all of the rights to the content that you post; that the content is accurate; that use of the content you supply does not violate this policy and will not cause injury to any person or entity; and that you will indemnify Amazon.ca for all claims resulting from content you supply. Amazon.ca has the right but not the obligation to monitor and edit or remove any activity or content. Amazon.ca takes no responsibility and assumes no liability for any content posted by you or any third party.
                             </p>
                         </section>
                         <section className="a__box__group a__spacing__top__base">
@@ -185,44 +168,26 @@ const Covid19 = () => {
                             <Link to="/">All Help Topics</Link>
                         </section>
                         <section className="csHelp__sidebarModule--inner">
-                            <h3>General Shipping Information</h3>
+                            <h3>Legal Policies</h3>
                             <ul className="csHelp__navTopics">
+                                <li><b>Amazon.ca Conditions of Use</b></li>
                                 <li>
-                                    <Link to="/customer-display">FAQs about orders and the COVID-19 virus</Link>
+                                    <Link to="/customer-display">Amazon.ca Privacy Notice</Link>
                                 </li>
                                 <li>
-                                    <Link to="/customer-display">Fulfilled by Amazon</Link>
+                                    <Link to="/customer-display">
+                                        Non-Exhaustive List of Applicable Amazon/Affiliate Patents and Applicable Licensed Patents
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/customer-display">International Shipping</Link>
+                                    <Link to="/customer-display">
+                                        Non-Exhaustive List of Amazon Trademarks
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/customer-display">Replace a Missing Packing Slip</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">Packaging Programs</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">How are Shipping and Delivery Dates Calculated?</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">Shipping to Prisons</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">Shipping to Remote Locations in Canada</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">Two-Day Shipping within Canada</Link>
-                                </li>
-                                <li className="csHelp__navTopicLink--selected">Amazon Certified Frustration-Free Packaging</li>
-                                <li>
-                                    <Link to="/customer-display">Sign for an Order</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">Amazon Photo on Delivery</Link>
-                                </li>
-                                <li>
-                                    <Link to="/customer-display">About Deliveries Shipped with Amazon</Link>
+                                    <Link to="/customer-display">
+                                        Amazon.ca Gift Card and Electronic Message Customization Service Terms
+                                    </Link>
                                 </li>
                             </ul>
                         </section>

@@ -228,7 +228,7 @@ const OrderHistory = () => {
                                     squished={true}
                                     slider={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={5}
                                             order={true}
@@ -305,7 +305,7 @@ const OrderHistory = () => {
                                     squished={true}
                                     slider={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={5}
                                             addToCart={true}
@@ -382,7 +382,7 @@ const OrderHistory = () => {
                                     squished={true}
                                     slider={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={5}
                                             price={true}
@@ -464,7 +464,7 @@ const OrderHistory = () => {
                                     squished={true}
                                     slider={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={6}
                                             price={true}
@@ -566,7 +566,7 @@ const OrderHistory = () => {
                                     squished={true}
                                     slider={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={6}
                                             price={true}
@@ -650,7 +650,7 @@ const OrderHistory = () => {
                                     heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                                     slider_two={
                                         <Slider 
-                                            type={"multiImage"}
+                                            type={"multi-image"}
                                             carouselClass={"amzn__carousel"}
                                             count={8}
                                             items={[
@@ -801,7 +801,7 @@ const OrderHistory = () => {
                             squished={true}
                             slider={
                                 <Slider 
-                                    type={"multiImage"}
+                                    type={"multi-image"}
                                     carouselClass={"amzn__carousel"}
                                     count={6}
                                     price={true}
@@ -885,7 +885,7 @@ const OrderHistory = () => {
                             heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                             slider_two={
                                 <Slider 
-                                    type={"multiImage"}
+                                    type={"multi-image"}
                                     carouselClass={"amzn__carousel"}
                                     count={8}
                                     items={[
@@ -950,7 +950,7 @@ const OrderHistory = () => {
                         squished={true}
                         slider={
                             <Slider 
-                                type={"multiImage"}
+                                type={"multi-image"}
                                 carouselClass={"amzn__carousel"}
                                 count={6}
                                 price={true}
@@ -1034,7 +1034,7 @@ const OrderHistory = () => {
                         heading_two_link={<>View or edit your browsing history &nbsp; &nbsp;›</>}
                         slider_two={
                             <Slider 
-                                type={"multiImage"}
+                                type={"multi-image"}
                                 carouselClass={"amzn__carousel"}
                                 count={8}
                                 items={[
