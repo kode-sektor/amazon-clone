@@ -1228,6 +1228,9 @@ img.mallomar-delight-feedback-icons-large-disappointed {
     padding-left: 17px;
 }
 
+.csHelp {
+    font-size: 14px;
+}
 .csHelp__header {
     min-width: 996px;
     padding: 8px 0 4px 10px;

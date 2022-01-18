@@ -239,7 +239,7 @@ const Covid19 = () => {
                                 To begin an arbitration proceeding, you must send a letter requesting arbitration and describing your claim to our registered agent Corporation Service Company, 300 Deschutes Way SW, Suite 304, Tumwater, WA 98501. The arbitration will be conducted by the American Arbitration Association (AAA) under its rules, including the AAA's Supplementary Procedures for Consumer-Related Disputes. The AAA's rules are available at www.adr.org or by calling 1-800-778-7879. Payment of all filing, administration and arbitrator fees will be governed by the AAA's rules. We will reimburse those fees for claims totalling less than $10,000 unless the arbitrator determines the claims are frivolous. Likewise, Amazon.ca will not seek attorneys' fees and costs in arbitration unless the arbitrator determines the claims are frivolous. You may choose to have the arbitration conducted by telephone, based on written submissions, or in person in the county where you live or at another mutually agreed location.
                             </p>
                             <p>
-                                <b>We each agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated or representative action</b>. If for any reason a claim proceeds in court rather than in arbitration <b>we each waive any right to a jury trial</b>. We also both agree that you or we may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
+                                <b>We each agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a className, consolidated or representative action</b>. If for any reason a claim proceeds in court rather than in arbitration <b>we each waive any right to a jury trial</b>. We also both agree that you or we may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
                             </p>
                         </section>
                         <section>
@@ -256,6 +256,132 @@ const Covid19 = () => {
                                 Please review our other policies, such as our pricing <Link to="/">policy</Link>, posted on the Amazon.ca site. These policies also govern your use of Amazon.ca Services. We reserve the right to make changes to our site, policies, Service Terms, and these Conditions of Use at any time. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition.
                             </p>
                         </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                OUR ADDRESS
+                            </h2>
+                            <p></p>
+                            <pre>
+                                Amazon.com.ca, Inc. <br />
+                                &emsp; &emsp; P.O. Box 81226 <br />
+                                &emsp; &emsp; Seattle, WA 98108-1226 <br />
+                                &emsp; &emsp; USA
+                            </pre>
+                            <p></p>
+                            <p>
+                                <Link to="/" target="_blank">https://www.amazon.ca</Link>
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                ADDITIONAL AMAZON SOFTWARE TERMS
+                            </h2>
+                            <p>
+                                The following terms (“Software Terms”) apply to any software (including any updates or upgrades to the software) and any related documentation we make available to you in connection with Amazon.ca Services (the "Amazon Software").
+                            </p>
+                            <p>
+                                <br />
+                            </p>
+                            <ol>
+                                <li>
+                                    <span className="a__list__item"> 
+                                        <strong>Use of the Amazon Software</strong>. You may use Amazon Software solely for purposes of enabling you to use the Amazon.ca Services as provided by Amazon.ca, and as permitted by these Conditions of Use and any Service Terms. You may not incorporate any portion of the Amazon Software into other programs or compile any portion of it in combination with other programs, or otherwise copy (except to exercise rights granted in this section), modify, create derivative works of, distribute, assign any rights to, or licence the Amazon Software in whole or in part. All software used in any Amazon Service is the property of Amazon.ca or its software suppliers and is protected by Canadian and international copyright laws.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <strong>Use of Third Party Services</strong>. When you use the Amazon Software, you may also be using the services of one or more third parties, such as a wireless carrier or a mobile software provider. Your use of these third party services may be subject to the separate policies, terms of use, and fees of these third parties.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <strong>No Reverse Engineering</strong>. You may not reverse engineer, decompile or disassemble, tamper with, or bypass any security associated with the Amazon Software, whether in whole or in part.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <strong>Updates</strong>. We may offer automatic or manual updates to the Amazon Software at any time and without notice to you.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <strong>Export Regulations</strong>. You must comply with all export and re-export restrictions and regulations of the U.S. Department of Commerce, Foreign Affairs and International Trade Canada, and other U.S. and Canadian agencies and authorities that may apply to the Amazon Software.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <strong>Conflicts</strong>. In the event of any conflict between these Conditions of Use and any other Amazon or third-party terms applicable to any portion of Amazon Software, such as open-source licence terms, such other terms will control as to that portion of the Amazon Software and to the extent of the conflict.
+                                    </span>
+                                </li>
+                            </ol>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                NOTICE AND PROCEDURE FOR MAKING CLAIMS OF INTELLECTUAL PROPERTY INFRINGEMENT
+                            </h2>
+                            <p>
+                                If you believe that your intellectual property rights have been infringed, please submit your complaint using our online form. This form may be used to report all types of intellectual property claims including, but not limited to, copyright, trademark, and patent claims.
+                            </p>
+                            <p>
+                                We respond quickly to the concerns of rights owners about any alleged infringement, and we terminate repeat infringers in appropriate circumstances.
+                            </p>
+                            <p>
+                                We offer the following alternative to our online form for copyright complaints only. You may submit written claims of copyright infringement to our Copyright Agent at:
+                            </p>
+                            <pre>
+                                Copyright Agent <br />
+                                Amazon.ca Legal Department <br />
+                                P.O. Box 81226 <br />
+                                Seattle, WA 98108 <br />
+                                USA <br />
+                                Phone: (206) 266-4064 <br />
+                                Email: copyright@amazon.com <br /> <br />
+
+                                Courier address: <br />
+                                Copyright Agent <br />
+                                Amazon.ca Legal Department <br />
+                                2021 7th Avenue <br />
+                                Seattle, WA 98121 <br />
+                                USA
+                            </pre>
+                            <p></p>
+                            <p>
+                                Written claims concerning copyright infringement must include the following information:
+                            </p>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        A physical or electronic signature of the person authorized to act on behalf of the owner of the copyright interest;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        A description of the copyrighted work that you claim has been infringed upon;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        A description of where the material that you claim is infringing is located on the site;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        Your address, telephone number, and email address;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        A statement by you that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.
+                                    </span>
+                                </li>
+                            </ul>
+                        </section>
+
                         <section className="a__box__group a__spacing__top__base">
                             <div className="a__box a__width__extra__large text-left">
                                 <div className="a__box__inner">
