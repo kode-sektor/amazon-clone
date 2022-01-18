@@ -144,6 +144,118 @@ const Covid19 = () => {
                                 If you do post content or submit material, and unless we indicate otherwise, you grant Amazon.ca a nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicencable right to use, reproduce, modify, adapt, publish, perform, translate, create derivative works from, distribute and display such content throughout the world in any media. You grant Amazon.ca and sublicencees the right to use the name that you submit in connection with such content, if they choose. You represent and warrant that you own or otherwise control all of the rights to the content that you post; that the content is accurate; that use of the content you supply does not violate this policy and will not cause injury to any person or entity; and that you will indemnify Amazon.ca for all claims resulting from content you supply. Amazon.ca has the right but not the obligation to monitor and edit or remove any activity or content. Amazon.ca takes no responsibility and assumes no liability for any content posted by you or any third party.
                             </p>
                         </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                INTELLECTUAL PROPERTY COMPLAINTS
+                            </h2>
+                            <p>
+                                Amazon.ca respects the intellectual property of others. If you believe that your intellectual property rights are being infringed, please follow our <Link to="/">Notice and Procedure for Making Claims of Copyright Infringement.</Link>
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                RISK OF LOSS
+                            </h2>
+                            <p>
+                                Risk of loss and title for items purchased from Amazon.ca pass to you upon our delivery to the carrier or, if such items must cross an international border, then risk of loss and title pass to you when they clear customs in Canada.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                RETURNS, REFUNDS AND TITLE
+                            </h2>
+                            <p>
+                                Amazon.ca does not take title to returned items until the item arrives at our fulfillment centre. At our discretion, a refund may be issued without requiring a return. In this situation, Amazon.ca does not take title to the refunded item. If we receive items that do not meet the requirements of our return policies, including items returned past the eligible return window, opened items or damaged items, we may charge a restocking fee or issue a partial refund. Details about the restocking fees and partial refunds can be found on our <Link to="/">Refunds help page</Link>. For more information about our returns and refunds in general, please see our O<Link to="/">nline Returns Centre</Link>.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                PRODUCT DESCRIPTIONS
+                            </h2>
+                            <p>
+                                Amazon.ca attempts to be as accurate as possible. However, Amazon.ca does not warrant that product descriptions or other content of any Amazon.ca Service is accurate, complete, reliable, current, or error-free. If a product offered by Amazon.ca itself is not as described, your sole remedy is to return it in unused condition.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                PRICING
+                            </h2>
+                            <p>
+                                "List Price" means the suggested retail price of a product as provided by a manufacturer, supplier, or seller. We regularly check List Prices against prices recently found on Amazon.ca and other retailers. Certain products may have a "Was Price" displayed, which is determined using recent price history of the product on Amazon.ca.
+                            </p>
+                            <p>
+                                With respect to items sold by Amazon.ca, we cannot confirm the price of an item until you offer to purchase the item by placing an order. Despite our best efforts, a small number of the items in our catalogue may be mispriced. If the correct price of an item sold by Amazon.ca is higher than our stated price, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation. Other merchants may follow different policies in the event of a mispriced item.
+                            </p>
+                            <p>
+                                We generally do not charge your credit card until after your order has entered the shipping process or, for digital products, until we make the digital product available to you.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                APP PERMISSIONS
+                            </h2>
+                            <p>
+                                When you use apps created by Amazon.ca, such as the Amazon App or Kindle App, you may grant certain permissions to us for your device. Most mobile devices provide you with information about these permissions.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                SANCTIONS AND EXPORT POLICY
+                            </h2>
+                            <p>
+                                You may not use any Amazon.ca Service if you are the subject of U.S. sanctions or of sanctions consistent with U.S. law imposed by the governments of the country where you are using Amazon.ca Services. You must comply with all U.S. or other export and re-export restrictions that may apply to goods, software (including Amazon Software), technology, and services.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                OTHER BUSINESSES
+                            </h2>
+                            <p>
+                                Parties other than Amazon.ca operate stores, provide services or software, or sell product lines through the Amazon.ca Services. In addition, we provide links to the sites of affiliated companies and certain other businesses. If you purchase any of the products or services offered by these businesses or individuals, you are purchasing directly from those third parties, not from Amazon. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any of these businesses or individuals (including the content of their Web sites). Amazon.ca does not assume any responsibility or liability for the actions, product, and content of all these and any other third parties. You should carefully review their privacy statements and other conditions of use.
+                            </p>
+                            <p>
+                                THE LAWS OF CERTAIN JURISDICTIONS, INCLUDING QUEBEC'S CONSUMER PROTECTION ACT, DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR CONDITIONS OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE BELOW DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MIGHT NOT APPLY TO YOU, AND YOU MIGHT HAVE ADDITIONAL RIGHTS.
+                            </p>
+                            <p>
+                                THE AMAZON.CA SERVICES AND ALL INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) AND OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE AMAZON SERVICES ARE PROVIDED BY AMAZON.CA ON AN "AS IS" AND "AS AVAILABLE" BASIS, UNLESS OTHERWISE SPECIFIED IN WRITING. AMAZON.CA MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE AMAZON.CA SERVICES OR THE INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE AMAZON.CA SERVICES, UNLESS OTHERWISE SPECIFIED IN WRITING. YOU EXPRESSLY AGREE THAT YOUR USE OF THE AMAZON.CA SERVICES IS AT YOUR SOLE RISK.
+                            </p>
+                            <p>
+                                TO THE FULL EXTENT PERMISSIBLE BY LAW, AMAZON.CA DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. AMAZON.CA DOES NOT WARRANT THAT THE AMAZON.CA SERVICES, INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE AMAZON.CA SERVICES; ITS SERVERS OR ELECTRONIC COMMUNICATIONS SENT FROM AMAZON.CA ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. TO THE FULL EXTENT PERMISSIBLE BY LAW, AMAZON.CA WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF ANY AMAZON.CA SERVICE OR FROM ANY INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH ANY AMAZON.CA SERVICE, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND CONSEQUENTIAL DAMAGES, UNLESS OTHERWISE SPECIFIED IN WRITING.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                DISPUTES
+                            </h2>
+                            <p>
+                                (Not applicable to Quebec consumers) <b>Any dispute or claim relating in any way to your use of any Amazon.ca Service, or to any products or services sold or distributed by Amazon.ca or through Amazon.ca Services will be resolved by binding arbitration, rather than in court</b>, except that you may assert claims in small claims court if your claims qualify. The U.S. Federal Arbitration Act and U.S. federal arbitration law apply to this agreement.
+                            </p>
+                            <p>
+                                <b>
+                                    There is no judge or jury in arbitration, and court review of an arbitration award is limited. However, an arbitrator can award on an individual basis the same damages and relief as a court (including injunctive and declaratory relief or statutory damages), and must follow the terms of these Conditions of Use as a court would.
+                                </b>
+                            </p>
+                            <p>
+                                To begin an arbitration proceeding, you must send a letter requesting arbitration and describing your claim to our registered agent Corporation Service Company, 300 Deschutes Way SW, Suite 304, Tumwater, WA 98501. The arbitration will be conducted by the American Arbitration Association (AAA) under its rules, including the AAA's Supplementary Procedures for Consumer-Related Disputes. The AAA's rules are available at www.adr.org or by calling 1-800-778-7879. Payment of all filing, administration and arbitrator fees will be governed by the AAA's rules. We will reimburse those fees for claims totalling less than $10,000 unless the arbitrator determines the claims are frivolous. Likewise, Amazon.ca will not seek attorneys' fees and costs in arbitration unless the arbitrator determines the claims are frivolous. You may choose to have the arbitration conducted by telephone, based on written submissions, or in person in the county where you live or at another mutually agreed location.
+                            </p>
+                            <p>
+                                <b>We each agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated or representative action</b>. If for any reason a claim proceeds in court rather than in arbitration <b>we each waive any right to a jury trial</b>. We also both agree that you or we may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                APPLICABLE LAW
+                            </h2>
+                            <p>
+                                (Not applicable to Quebec consumers) By using any Amazon.ca Service, you agree that the U.S. Federal Arbitration Act, applicable U.S. federal law, and the laws of the state of Washington, United States, without regard to principles of conflict of laws, will govern these Conditions of Use and any dispute of any sort that might arise between you and Amazon.ca.
+                            </p>
+                            <p>
+                                For Quebec consumers: These Conditions of Use and any dispute of any sort that might arise between you and Amazon.ca shall be governed by the laws of the Province of Quebec, without reference to its conflict of laws provisions, and the laws of Canada applicable therein, and any disputes will be submitted to the courts of competent jurisdiction of the District of Montreal (Quebec).
+                            </p>
+                            <p>
+                                Please review our other policies, such as our pricing <Link to="/">policy</Link>, posted on the Amazon.ca site. These policies also govern your use of Amazon.ca Services. We reserve the right to make changes to our site, policies, Service Terms, and these Conditions of Use at any time. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition.
+                            </p>
+                        </section>
                         <section className="a__box__group a__spacing__top__base">
                             <div className="a__box a__width__extra__large text-left">
                                 <div className="a__box__inner">
