@@ -343,7 +343,7 @@ const Footer = (props) => {
             <section className="page__footer__minor">
                 <ul className="page__footer__minor__list">
                     <li><Link to="/conditions-of-use">Conditions of Use</Link></li>
-                    <li><Link to="/privacy">Privacy Notice</Link></li>
+                    <li><Link to="/privacy-notice">Privacy Notice</Link></li>
                     <li><Link to="/interest-ads">Interest-Based Ads</Link></li>
                     <li><Link to="/">&copy; 2008-2021, Amazon.com, Inc. or its affiliates</Link></li>
                 </ul>

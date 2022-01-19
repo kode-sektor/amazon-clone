@@ -53,6 +53,7 @@ import AmazonRenewed from "./pages/AmazonRenewed"
 import AmazonWebServices from "./pages/AmazonWebServices"
 import Shopbop from "./pages/Shopbop"
 import ConditionsOfUse from "./pages/ConditionsOfUse"
+import PrivacyNotice from "./pages/PrivacyNotice"
 
 
 function App() {
@@ -112,6 +113,7 @@ function App() {
                     <Route path="/amazon-web-services" component={AmazonWebServices}/>
                     <Route path="/shopbop" component={Shopbop}/>
                     <Route path="/conditions-of-use" component={ConditionsOfUse}/>
+                    <Route path="/privacy-notice" component={PrivacyNotice}/>
                 </Switch>
             </Router>
         </div>

@@ -12,7 +12,7 @@ import profile from '../../images/profile.png'
 
 import Layout from '../../components/Layout'
 
-const Covid19 = () => {
+const ConditionsOfUse = () => {
 
     const CovidPage = () => (
         <main className="csHelp">
@@ -551,4 +551,4 @@ const Covid19 = () => {
     )
 }
 
-export default Covid19
+export default ConditionsOfUse
