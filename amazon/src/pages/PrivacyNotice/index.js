@@ -322,254 +322,492 @@ const PrivacyNotice = () => {
                         </section>
                         <section>
                             <h2 className="csHelp__title">
-                                REVIEWS, COMMENTS, COMMUNICATIONS, AND OTHER CONTENT
+                                What Choices Do I Have?
                             </h2>
                             <p>
-                                You may post reviews, comments, photos, videos, and other content; send e-cards and other communications; and submit suggestions, ideas, comments, questions, or other information, so long as the content is not illegal, obscene, threatening, defamatory, invasive of privacy, infringing of intellectual property rights (including publicity rights), or otherwise injurious to third parties or objectionable, and does not consist of or contain software viruses, political campaigning, commercial solicitation, chain letters, mass mailings, or any form of "spam" or unsolicited commercial electronic messages. You may not use a false email address, impersonate any person or entity, or otherwise mislead as to the origin of a card or other content. Amazon.ca reserves the right (but not the obligation) to remove or edit such content, but does not regularly review posted content.
+                                If you have any questions as to how we collect and use your personal information, please contact our Customer Service. Many of our Amazon Services also include settings that provide you with options as to how your information is being used.right (but not the obligation) to remove or edit such content, but does not regularly review posted content.
                             </p>
-
-                            <p>
-                                If you do post content or submit material, and unless we indicate otherwise, you grant Amazon.ca a nonexclusive, royalty-free, perpetual, irrevocable, and fully sublicencable right to use, reproduce, modify, adapt, publish, perform, translate, create derivative works from, distribute and display such content throughout the world in any media. You grant Amazon.ca and sublicencees the right to use the name that you submit in connection with such content, if they choose. You represent and warrant that you own or otherwise control all of the rights to the content that you post; that the content is accurate; that use of the content you supply does not violate this policy and will not cause injury to any person or entity; and that you will indemnify Amazon.ca for all claims resulting from content you supply. Amazon.ca has the right but not the obligation to monitor and edit or remove any activity or content. Amazon.ca takes no responsibility and assumes no liability for any content posted by you or any third party.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                INTELLECTUAL PROPERTY COMPLAINTS
-                            </h2>
-                            <p>
-                                Amazon.ca respects the intellectual property of others. If you believe that your intellectual property rights are being infringed, please follow our <Link to="/">Notice and Procedure for Making Claims of Copyright Infringement.</Link>
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                RISK OF LOSS
-                            </h2>
-                            <p>
-                                Risk of loss and title for items purchased from Amazon.ca pass to you upon our delivery to the carrier or, if such items must cross an international border, then risk of loss and title pass to you when they clear customs in Canada.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                RETURNS, REFUNDS AND TITLE
-                            </h2>
-                            <p>
-                                Amazon.ca does not take title to returned items until the item arrives at our fulfillment centre. At our discretion, a refund may be issued without requiring a return. In this situation, Amazon.ca does not take title to the refunded item. If we receive items that do not meet the requirements of our return policies, including items returned past the eligible return window, opened items or damaged items, we may charge a restocking fee or issue a partial refund. Details about the restocking fees and partial refunds can be found on our <Link to="/">Refunds help page</Link>. For more information about our returns and refunds in general, please see our O<Link to="/">nline Returns Centre</Link>.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                PRODUCT DESCRIPTIONS
-                            </h2>
-                            <p>
-                                Amazon.ca attempts to be as accurate as possible. However, Amazon.ca does not warrant that product descriptions or other content of any Amazon.ca Service is accurate, complete, reliable, current, or error-free. If a product offered by Amazon.ca itself is not as described, your sole remedy is to return it in unused condition.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                PRICING
-                            </h2>
-                            <p>
-                                "List Price" means the suggested retail price of a product as provided by a manufacturer, supplier, or seller. We regularly check List Prices against prices recently found on Amazon.ca and other retailers. Certain products may have a "Was Price" displayed, which is determined using recent price history of the product on Amazon.ca.
-                            </p>
-                            <p>
-                                With respect to items sold by Amazon.ca, we cannot confirm the price of an item until you offer to purchase the item by placing an order. Despite our best efforts, a small number of the items in our catalogue may be mispriced. If the correct price of an item sold by Amazon.ca is higher than our stated price, we will, at our discretion, either contact you for instructions before shipping or cancel your order and notify you of such cancellation. Other merchants may follow different policies in the event of a mispriced item.
-                            </p>
-                            <p>
-                                We generally do not charge your credit card until after your order has entered the shipping process or, for digital products, until we make the digital product available to you.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                APP PERMISSIONS
-                            </h2>
-                            <p>
-                                When you use apps created by Amazon.ca, such as the Amazon App or Kindle App, you may grant certain permissions to us for your device. Most mobile devices provide you with information about these permissions.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                SANCTIONS AND EXPORT POLICY
-                            </h2>
-                            <p>
-                                You may not use any Amazon.ca Service if you are the subject of U.S. sanctions or of sanctions consistent with U.S. law imposed by the governments of the country where you are using Amazon.ca Services. You must comply with all U.S. or other export and re-export restrictions that may apply to goods, software (including Amazon Software), technology, and services.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                OTHER BUSINESSES
-                            </h2>
-                            <p>
-                                Parties other than Amazon.ca operate stores, provide services or software, or sell product lines through the Amazon.ca Services. In addition, we provide links to the sites of affiliated companies and certain other businesses. If you purchase any of the products or services offered by these businesses or individuals, you are purchasing directly from those third parties, not from Amazon. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any of these businesses or individuals (including the content of their Web sites). Amazon.ca does not assume any responsibility or liability for the actions, product, and content of all these and any other third parties. You should carefully review their privacy statements and other conditions of use.
-                            </p>
-                            <p>
-                                THE LAWS OF CERTAIN JURISDICTIONS, INCLUDING QUEBEC'S CONSUMER PROTECTION ACT, DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR CONDITIONS OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE BELOW DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MIGHT NOT APPLY TO YOU, AND YOU MIGHT HAVE ADDITIONAL RIGHTS.
-                            </p>
-                            <p>
-                                THE AMAZON.CA SERVICES AND ALL INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) AND OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE AMAZON SERVICES ARE PROVIDED BY AMAZON.CA ON AN "AS IS" AND "AS AVAILABLE" BASIS, UNLESS OTHERWISE SPECIFIED IN WRITING. AMAZON.CA MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE AMAZON.CA SERVICES OR THE INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE AMAZON.CA SERVICES, UNLESS OTHERWISE SPECIFIED IN WRITING. YOU EXPRESSLY AGREE THAT YOUR USE OF THE AMAZON.CA SERVICES IS AT YOUR SOLE RISK.
-                            </p>
-                            <p>
-                                TO THE FULL EXTENT PERMISSIBLE BY LAW, AMAZON.CA DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. AMAZON.CA DOES NOT WARRANT THAT THE AMAZON.CA SERVICES, INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE AMAZON.CA SERVICES; ITS SERVERS OR ELECTRONIC COMMUNICATIONS SENT FROM AMAZON.CA ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. TO THE FULL EXTENT PERMISSIBLE BY LAW, AMAZON.CA WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF ANY AMAZON.CA SERVICE OR FROM ANY INFORMATION, CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) OR OTHER SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH ANY AMAZON.CA SERVICE, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND CONSEQUENTIAL DAMAGES, UNLESS OTHERWISE SPECIFIED IN WRITING.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                DISPUTES
-                            </h2>
-                            <p>
-                                (Not applicable to Quebec consumers) <b>Any dispute or claim relating in any way to your use of any Amazon.ca Service, or to any products or services sold or distributed by Amazon.ca or through Amazon.ca Services will be resolved by binding arbitration, rather than in court</b>, except that you may assert claims in small claims court if your claims qualify. The U.S. Federal Arbitration Act and U.S. federal arbitration law apply to this agreement.
-                            </p>
-                            <p>
-                                <b>
-                                    There is no judge or jury in arbitration, and court review of an arbitration award is limited. However, an arbitrator can award on an individual basis the same damages and relief as a court (including injunctive and declaratory relief or statutory damages), and must follow the terms of these Conditions of Use as a court would.
-                                </b>
-                            </p>
-                            <p>
-                                To begin an arbitration proceeding, you must send a letter requesting arbitration and describing your claim to our registered agent Corporation Service Company, 300 Deschutes Way SW, Suite 304, Tumwater, WA 98501. The arbitration will be conducted by the American Arbitration Association (AAA) under its rules, including the AAA's Supplementary Procedures for Consumer-Related Disputes. The AAA's rules are available at www.adr.org or by calling 1-800-778-7879. Payment of all filing, administration and arbitrator fees will be governed by the AAA's rules. We will reimburse those fees for claims totalling less than $10,000 unless the arbitrator determines the claims are frivolous. Likewise, Amazon.ca will not seek attorneys' fees and costs in arbitration unless the arbitrator determines the claims are frivolous. You may choose to have the arbitration conducted by telephone, based on written submissions, or in person in the county where you live or at another mutually agreed location.
-                            </p>
-                            <p>
-                                <b>We each agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a className, consolidated or representative action</b>. If for any reason a claim proceeds in court rather than in arbitration <b>we each waive any right to a jury trial</b>. We also both agree that you or we may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                APPLICABLE LAW
-                            </h2>
-                            <p>
-                                (Not applicable to Quebec consumers) By using any Amazon.ca Service, you agree that the U.S. Federal Arbitration Act, applicable U.S. federal law, and the laws of the state of Washington, United States, without regard to principles of conflict of laws, will govern these Conditions of Use and any dispute of any sort that might arise between you and Amazon.ca.
-                            </p>
-                            <p>
-                                For Quebec consumers: These Conditions of Use and any dispute of any sort that might arise between you and Amazon.ca shall be governed by the laws of the Province of Quebec, without reference to its conflict of laws provisions, and the laws of Canada applicable therein, and any disputes will be submitted to the courts of competent jurisdiction of the District of Montreal (Quebec).
-                            </p>
-                            <p>
-                                Please review our other policies, such as our pricing <Link to="/">policy</Link>, posted on the Amazon.ca site. These policies also govern your use of Amazon.ca Services. We reserve the right to make changes to our site, policies, Service Terms, and these Conditions of Use at any time. If any of these conditions shall be deemed invalid, void, or for any reason unenforceable, that condition shall be deemed severable and shall not affect the validity and enforceability of any remaining condition.
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                OUR ADDRESS
-                            </h2>
                             <p></p>
-                            <pre>
-                                Amazon.com.ca, Inc. <br />
-                                &emsp; &emsp; P.O. Box 81226 <br />
-                                &emsp; &emsp; Seattle, WA 98108-1226 <br />
-                                &emsp; &emsp; USA
-                            </pre>
-                            <p></p>
-                            <p>
-                                <Link to="/" target="_blank">https://www.amazon.ca</Link>
-                            </p>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                ADDITIONAL AMAZON SOFTWARE TERMS
-                            </h2>
-                            <p>
-                                The following terms (“Software Terms”) apply to any software (including any updates or upgrades to the software) and any related documentation we make available to you in connection with Amazon.ca Services (the "Amazon Software").
-                            </p>
-                            <p>
-                                <br />
-                            </p>
-                            <ol>
-                                <li>
-                                    <span className="a__list__item"> 
-                                        <strong>Use of the Amazon Software</strong>. You may use Amazon Software solely for purposes of enabling you to use the Amazon.ca Services as provided by Amazon.ca, and as permitted by these Conditions of Use and any Service Terms. You may not incorporate any portion of the Amazon Software into other programs or compile any portion of it in combination with other programs, or otherwise copy (except to exercise rights granted in this section), modify, create derivative works of, distribute, assign any rights to, or licence the Amazon Software in whole or in part. All software used in any Amazon Service is the property of Amazon.ca or its software suppliers and is protected by Canadian and international copyright laws.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span className="a__list__item">
-                                        <strong>Use of Third Party Services</strong>. When you use the Amazon Software, you may also be using the services of one or more third parties, such as a wireless carrier or a mobile software provider. Your use of these third party services may be subject to the separate policies, terms of use, and fees of these third parties.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span className="a__list__item">
-                                        <strong>No Reverse Engineering</strong>. You may not reverse engineer, decompile or disassemble, tamper with, or bypass any security associated with the Amazon Software, whether in whole or in part.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span className="a__list__item">
-                                        <strong>Updates</strong>. We may offer automatic or manual updates to the Amazon Software at any time and without notice to you.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span className="a__list__item">
-                                        <strong>Export Regulations</strong>. You must comply with all export and re-export restrictions and regulations of the U.S. Department of Commerce, Foreign Affairs and International Trade Canada, and other U.S. and Canadian agencies and authorities that may apply to the Amazon Software.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span className="a__list__item">
-                                        <strong>Conflicts</strong>. In the event of any conflict between these Conditions of Use and any other Amazon or third-party terms applicable to any portion of Amazon Software, such as open-source licence terms, such other terms will control as to that portion of the Amazon Software and to the extent of the conflict.
-                                    </span>
-                                </li>
-                            </ol>
-                        </section>
-                        <section>
-                            <h2 className="csHelp__title">
-                                NOTICE AND PROCEDURE FOR MAKING CLAIMS OF INTELLECTUAL PROPERTY INFRINGEMENT
-                            </h2>
-                            <p>
-                                If you believe that your intellectual property rights have been infringed, please submit your complaint using our online form. This form may be used to report all types of intellectual property claims including, but not limited to, copyright, trademark, and patent claims.
-                            </p>
-                            <p>
-                                We respond quickly to the concerns of rights owners about any alleged infringement, and we terminate repeat infringers in appropriate circumstances.
-                            </p>
-                            <p>
-                                We offer the following alternative to our online form for copyright complaints only. You may submit written claims of copyright infringement to our Copyright Agent at:
-                            </p>
-                            <pre>
-                                Copyright Agent <br />
-                                Amazon.ca Legal Department <br />
-                                P.O. Box 81226 <br />
-                                Seattle, WA 98108 <br />
-                                USA <br />
-                                Phone: (206) 266-4064 <br />
-                                Email: copyright@amazon.com <br /> <br />
-
-                                Courier address: <br />
-                                Copyright Agent <br />
-                                Amazon.ca Legal Department <br />
-                                2021 7th Avenue <br />
-                                Seattle, WA 98121 <br />
-                                USA
-                            </pre>
-                            <p></p>
-                            <p>
-                                Written claims concerning copyright infringement must include the following information:
-                            </p>
                             <ul>
                                 <li>
                                     <span className="a__list__item">
-                                        A physical or electronic signature of the person authorized to act on behalf of the owner of the copyright interest;
+                                        As described above, you can choose not to provide certain information, but then you might not be able to take advantage of many of the Amazon Services.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="a__list__item">
-                                        A description of the copyrighted work that you claim has been infringed upon;
+                                        You can add or update certain information on pages such as those referenced in What <Link to="/">Information Can I Access?</Link>. When you update information, we usually keep a copy of the prior version for our records.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="a__list__item">
-                                        A description of where the material that you claim is infringing is located on the site;
+                                        If you do not want to receive email or other communications from us, please adjust your <Link to="/">Customer Communication Preferences</Link>. If you don’t want to receive in-app notifications from us, please adjust your notification settings in the app or device.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="a__list__item">
-                                        Your address, telephone number, and email address;
+                                        If you do not want to see interest-based ads, please adjust your <Link to="/">Advertising Preferences</Link>.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="a__list__item">
-                                        A statement by you that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law;
+                                        The Help feature on most browsers and devices will tell you how to prevent your browser or device from accepting new cookies or other identifiers, how to have the browser notify you when you receive a new cookie, or how to block cookies altogether. Because cookies and identifiers allow you to take advantage of some essential features of Amazon Services, we recommend that you leave them turned on. For instance, if you block or otherwise reject our cookies, you will not be able to add items to your Shopping Cart, proceed to Checkout, or use any Services that require you to Sign in. For more information about cookies and other identifiers, see our <Link to="/">Cookies Notice</Link>.
                                     </span>
                                 </li>
                                 <li>
                                     <span className="a__list__item">
-                                        A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.
+                                        If you want to browse our websites without linking the browsing history to your account, you may do so by logging out of your account <Link to="/">here</Link> and blocking cookies on your browser.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        You will also be able to opt out of certain other types of data usage by updating your settings on the applicable Amazon website (e.g., in "Manage Your Content and Devices"), device, or application. For more information <Link to="/">click here</Link>. Most non-Amazon devices also provide users with the ability to change device permissions (e.g., disable/access location services, contacts). For most devices, these controls are located in the device's settings menu. If you have questions about how to change your device permissions on devices manufactured by third parties, we recommend you contact your mobile service carrier or your device manufacturer.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        If you are a seller, you can add or update certain information in <Link to="/">Seller Central</Link>, update your account information by accessing your <Link to="/">Seller Account Information</Link>, and adjust your email or other communications you receive from us by updating your <Link to="/">Notification Preferences</Link>.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                    If you are an author, you can add or update the information you have provided in the Author Portal and Author Central by accessing your accounts in the <Link to="/">Author Portal</Link> and <Link to="/">Author Central</Link>, respectively.
+                                    </span>
+                                </li>
+                            </ul>
+                            <p>
+                                In addition, to the extent required by applicable law, you may have the right to request access to or correction of your personal data. If you wish to do any of these things, please go to <Link to="/">Request My Personal Information</Link> or contact Customer Service. Depending on your data choices, certain services may be limited or unavailable.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                Are Children Allowed to Use Amazon Services?
+                            </h2>
+                            <p>
+                                Amazon does not sell products for purchase by children. We sell children's products for purchase by adults. If you are under 18, you may use Amazon Services only with the involvement of a parent or guardian.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                Conditions of Use, Notices, and Revisions
+                            </h2>
+                            <p>
+                                If you choose to use Amazon Services, your use and any dispute over privacy is subject to this Notice and our <Link to="/">Conditions of Use</Link>, including limitations on damages, resolution of disputes, and application of the law of the state of Washington
+                            </p>
+                            <p>
+                                If you have any concern about privacy at Amazon, please <Link to="/">Contact Us</Link> with a thorough description, and we will try to resolve the issue for you.Further, the Amazon Canada Privacy Officer can be contacted at canada-privacy-officer@amazon.com or by mail at ATTN: Amazon.ca Privacy Officer, 120 Bremner Blvd, Toronto, ON M5J 0A1.
+                            </p>
+                            <p>
+                                Our business changes constantly, and our Privacy Notice will change also. You should check our website frequently to see recent changes. Unless stated otherwise, our current Privacy Notice applies to all information that we have about you and your account. We stand behind the promises we make, however, and will never materially change our policies and practices to make them less protective of customer information collected in the past without the consent of affected customers.
+                            </p>
+                        </section>
+                        <section>
+                            <h2 className="csHelp__title">
+                                Related Practices and Information
+                            </h2>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" target="_self">Conditions of Use</Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" target="_self">Seller Program Policies</Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" target="_self">Help department</Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" target="_self">Most Recent Purchases</Link>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        <Link to="/" target="_self">Your Profile and Community Guidelines</Link>
                                     </span>
                                 </li>
                             </ul>
                         </section>
 
+                        <section>
+                            <h2 className="csHelp__title">
+                                Examples of Information Collected
+                            </h2>
+                            <p>
+                                <strong>
+                                    Information You Give Us When You Use Amazon Services
+                                </strong>
+                            </p>
+                            <p>You provide information to us when you:</p>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        search or shop for products or services in our stores;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        add or remove an item from your cart, or place an order through or use Amazon Services;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        download, stream, view, or use content on a device or through a service or application on a device;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        provide information in Your Account (and you might have more than one if you have used more than one email address or mobile number when shopping with us) or Your Profile;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        talk to or otherwise interact with our Alexa Voice service;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        upload your contacts;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        configure your settings on, provide data access permissions for, or interact with an Amazon device or service;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        provide information in your <Link to="/">Seller Account, Kindle Direct Publishing (KDP), Developer account</Link>, or any other account we make available that allows you to develop or offer software, goods, or services to Amazon customers;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        offer your products or services on or through Amazon Services;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        communicate with us by phone, email, or otherwise;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        complete a questionnaire, a support ticket, or a contest entry form;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        upload or stream images, videos or other files to Prime Photos, Amazon Drive, or other Amazon Services;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        use our services such as Prime Video;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        compile Playlists, Watchlists, <Link to="/">Wish Lists</Link> or other gift registries;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        participate in Discussion Boards or other community features;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        provide and rate <Link to="/">Reviews</Link>;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        specify a Special Occasion Reminder; or
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        employ <Link to="/">Product Availability Alerts</Link>, such as Available to Order Notifications.
+                                    </span>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>
+                                <strong>
+                                    As a result of those actions, you might supply us with such information as:
+                                </strong>
+                            </p>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        identifying information such as your name, address, and phone numbers;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        payment information;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        your age;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        your location information;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        your IP address;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        people, addresses and phone numbers listed in your Addresses;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        email addresses of your friends and other people;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        content of reviews and emails to us;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        personal description and photograph in Your Profile;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        voice recordings when you speak to Alexa;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        images and videos collected or stored in connection with Amazon Services;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        information and documents regarding identity, including Social Security and driver's licence numbers;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        corporate and financial information;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        credit history information; and
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        device log files and configurations, including Wi-Fi credentials, if you choose to automatically    synchronize them with your other Amazon devices.
+                                    </span>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>
+                                <strong>
+                                    Automatic Information
+                                </strong>
+                            </p>
+                            <p>Examples of the information we collect and analyze include:</p>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        the internet protocol (IP) address used to connect your computer to the internet;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        login, email address, and password;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        the location of your device or computer;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        content interaction information, such as content downloads, streams, and playback details, including duration and number of simultaneous streams and downloads, and network details for streaming and download quality, including information about your internet service provider;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        device metrics such as when a device is in use, application usage, connectivity data, and any errors or event failures;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        Amazon Services metrics (e.g., the occurrences of technical errors, your interactions with service features and content, your settings preferences and backup information, location of your device running an application, information about uploaded images and files such as the file name, dates, times and location of your images);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        version and time zone settings;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        purchase and content use history, which we sometimes aggregate with similar information from other customers to create features like Top Sellers;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        the full Uniform Resource Locator (URL) clickstream to, through, and from our websites, including date and time; products and content you viewed or searched for; page response times, download errors, length of visits to certain pages, and page interaction information (such as scrolling, clicks, and mouse overs);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        phone numbers used to call our customer service number; and
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        images or videos when you shop in our stores, or stores using Amazon Services.
+                                    </span>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>
+                                We may also use device identifiers, cookies, and other technologies on devices, applications, and our web pages to collect browsing, usage, or other technical information.
+                            </p>
+                            <p>
+                                <strong>
+                                    Information from Other Sources
+                                </strong>
+                            </p>
+                            <p>Examples of the information we collect and analyze include:</p>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        updated delivery and address information from our carriers or other third parties, which we use to correct our records and deliver your next purchase or communication more easily;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        account information, purchase or redemption information, and page-view information from some merchants with which we operate co-branded businesses or for which we provide technical, fulfillment, advertising, or other services;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        information about your interactions with products and services offered by our subsidiaries;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        search results and links, including paid listings (such as Sponsored Links);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        information about internet-connected devices and services linked with Alexa; and
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        credit history information from credit bureaus, which we use to help prevent and detect fraud and to offer certain credit or financial services to some customers.
+                                    </span>
+                                </li>
+                            </ul>
+                            <p></p>
+                            <p>
+                                <strong>
+                                    Information You Can Access
+                                </strong>
+                            </p>
+                            <p>Examples of information you can access through Amazon Services include:</p>
+                            <p></p>
+                            <ul>
+                                <li>
+                                    <span className="a__list__item">
+                                        status of recent orders (including subscriptions);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        your complete order history;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        personally identifiable information (including name, email, password, and address book);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        payment settings (including payment card information, promotional certificate and gift card balances, and 1-Click settings);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        email notification settings (including Product Availability Alerts, Delivers, Special Occasion Reminders and newsletters);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        recommendations and the products you recently viewed that are the basis for recommendations (including Recommended for You and Improve Your Recommendations);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        shopping lists and gift registries (including Wish Lists and Baby and Wedding Registries);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        your content, devices, services, and related settings, and communications and personalized advertising preferences;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        content that you recently viewed;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        voice recordings associated with your account;
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        Your Profile (including your product Reviews, Recommendations, Reminders and personal profile);
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        If you are a seller, you can access your account and other information, and adjust your communications preferences, by updating your account in <Link to="/">Seller Central</Link>.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        If you are an author, you can access your account and other information, and update your accounts, on the <Link to="/">Kindle Direct Publishing (KDP)</Link> or <Link to="/">Author Central</Link> website, as applicable.
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="a__list__item">
+                                        If you are a developer participating in our Developer Services Program, you can access your account and other information, and adjust your communications preferences, by updating your accounts in the <Link to="/">Developer Services Portal</Link>.
+                                    </span>
+                                </li>
+                            </ul>
+                        </section>
                         <section className="a__box__group a__spacing__top__base">
                             <div className="a__box a__width__extra__large text-left">
                                 <div className="a__box__inner">
