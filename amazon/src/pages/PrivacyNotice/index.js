@@ -14,7 +14,7 @@ import Layout from '../../components/Layout'
 
 const PrivacyNotice = () => {
 
-    const CovidPage = () => (
+    const PrivacyNoticePage = () => (
         <main className="csHelp">
             <header className="csHelp__header">
                 <div className="row">
@@ -974,7 +974,7 @@ const PrivacyNotice = () => {
 
     return (
         <Layout>
-            <CovidPage/>
+            <PrivacyNoticePage/>
         </Layout>
     )
 }

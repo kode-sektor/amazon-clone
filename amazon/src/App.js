@@ -54,6 +54,7 @@ import AmazonWebServices from "./pages/AmazonWebServices"
 import Shopbop from "./pages/Shopbop"
 import ConditionsOfUse from "./pages/ConditionsOfUse"
 import PrivacyNotice from "./pages/PrivacyNotice"
+import InterestAds from "./pages/InterestAds"
 
 
 function App() {
@@ -114,6 +115,7 @@ function App() {
                     <Route path="/shopbop" component={Shopbop}/>
                     <Route path="/conditions-of-use" component={ConditionsOfUse}/>
                     <Route path="/privacy-notice" component={PrivacyNotice}/>
+                    <Route path="/interest-ads" component={InterestAds}/>
                 </Switch>
             </Router>
         </div>
